@@ -8,7 +8,7 @@ menu:
   main:
     name: "BPMN 2.0"
     identifier: "get-started-pa"
-    pre: "Get started developing Process Applications with Camunda BPM. Learn how to model a BPMN 2.0 process using the Camunda Modeler, add some Java classes, add an HTML Task Form and deploy the process application to the Apache Tomcat application server."
+    pre: "Learn how to model a BPMN 2.0 process using the Camunda Modeler, add a Java Class and HTML Forms. Package it as a web application and deploy it on Apache Tomcat Server."
     
 ---
 

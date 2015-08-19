@@ -7,7 +7,7 @@ menu:
   main:
     name: "Java EE 6"
     identifier: "get-started-java-ee"
-    pre: "Get started with developing Process Applications with Camunda BPM and Java EE. Learn how to use JSF, CDI, EJBs and JPA in your process application."
+    pre: "Get started with using Camunda in a Java EE Web Application. Learn how to use JSF, CDI, EJBs and JPA in your process application."
 
 ---
 

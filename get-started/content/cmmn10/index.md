@@ -8,7 +8,7 @@ menu:
   main:
     name: "CMMN 1.0"
     identifier: "get-started-cmmn"
-    pre: "Get started developing a Case Application containing a CMMN 1.0 case. Learn how to specify tasks, milestones and sentries. Deploy the application to the Apache Tomcat application server."
+    pre: "Learn how to create a CMMN 1.0 Case Definition featuring Human Tasks, Sentries and Milestones. Package it as a web application and deploy it on Apache Tomcat Server."
 
 ---
 
