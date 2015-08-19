@@ -1,0 +1,14 @@
+---
+baseurl: "http://stage.docs.camunda.org/get-started/"
+languageCode: "en-us"
+title: "Getting started with Camunda BPM"
+theme: "camunda"
+
+blackfriday:
+  plainIdAnchors: true
+
+params:
+  github:
+    repositoryName: "camunda/camunda-docs-static"
+    branch: "master"
+...
