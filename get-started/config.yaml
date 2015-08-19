@@ -8,6 +8,18 @@ blackfriday:
   plainIdAnchors: true
 
 params:
+  sections:
+    - id: "get-started"
+      name: "Get Started"
+      url: "http://stage.docs.camunda.org/get-started/"
+    - id: "manual"
+      name: "Manual"
+      url: "http://stage.docs.camunda.org/"
+    - id: "enterprise"
+      name: "Enterprise"
+      url: "http://stage.docs.camunda.org/enterprise"
+  section:
+    id: "get-started"
   github:
     repositoryName: "camunda/camunda-docs-static"
     branch: "master"
