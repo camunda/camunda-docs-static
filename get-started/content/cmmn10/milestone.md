@@ -154,7 +154,7 @@ To register the listener with the milestone, update the milestone in `loan-appro
 </cmmn:definitions>
 ```
 
-# Re-build and deploy
+# Re-build and Deploy
 
 When you are done, save all resources, perform a Maven build and redeploy the process application.
 

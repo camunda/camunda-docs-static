@@ -1,6 +1,6 @@
 ---
 
-title: 'Setup a Maven project for Camunda'
+title: 'Setup a Java Project for BPMN 2.0'
 weight: 20
 
 menu:
