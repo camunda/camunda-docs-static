@@ -1,4 +1,9 @@
-RewriteEngine on
+RewriteEngine ON
 
-RewriteRule ^$ /manual/master [R]
-RewriteRule ^/manual/ /manual/master [R]
+RewriteRule ^$ /manual/
+
+RewriteCond %{DOCUMENT_ROOT}/manual/master -d
+RewriteRule ^manual/$ /manual/master [R=301,L]
+
+RewriteCond %{DOCUMENT_ROOT}/manual/master !-d
+RewriteRule ^manual/$ /manual/latest [R=301,L]
