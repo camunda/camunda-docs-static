@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /7.0/
+Disallow: /stable/
+Disallow: /latest/enterprise/
+Disallow: /latest/single-page
