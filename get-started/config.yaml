@@ -1,5 +1,5 @@
 ---
-baseurl: "/get-started"
+baseurl: "/get-started/"
 languageCode: "en-us"
 title: "Getting started with Camunda BPM"
 theme: "camunda"
