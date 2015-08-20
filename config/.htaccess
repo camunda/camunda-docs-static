@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^$ /manual [R]
+RewriteRule ^/manual$ /manual/7.4 [R]
