@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /7.0/
-Disallow: /stable/
-Disallow: /latest/enterprise/
-Disallow: /latest/single-page
+Disallow: /7.1/
+Disallow: /7.2/
+Disallow: /7.3/
