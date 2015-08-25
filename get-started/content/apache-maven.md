@@ -17,11 +17,25 @@ Most Camunda artifacts are pushed to <a href="http://search.maven.org/#browse%7C
 
 **Camunda Bom (Bill of Materials)**
 
+Community Edition:
+
 ```xml
 <dependency>
   <groupId>org.camunda.bpm</groupId>
   <artifactId>camunda-bom</artifactId>
   <version>7.3.0</version>
+  <scope>import</scope>
+  <type>pom</type>
+</dependency>
+```
+
+Enterprise Edition:
+
+```xml
+<dependency>
+  <groupId>org.camunda.bpm</groupId>
+  <artifactId>camunda-bom</artifactId>
+  <version>7.3.0-ee</version>
   <scope>import</scope>
   <type>pom</type>
 </dependency>
@@ -69,6 +83,8 @@ Most Camunda artifacts are pushed to <a href="http://search.maven.org/#browse%7C
 
 **Camunda Nexus**
 
+Community Edition:
+
 ```xml
 <repositories>
   <repository>
@@ -76,6 +92,20 @@ Most Camunda artifacts are pushed to <a href="http://search.maven.org/#browse%7C
     <name>camunda-bpm-nexus</name>
     <url>
       https://app.camunda.com/nexus/content/groups/public
+    </url>
+  </repository>
+</repositories>
+```
+
+Enterprise Edition:
+
+```xml
+<repositories>
+  <repository>
+    <id>camunda-bpm-nexus</id>
+    <name>camunda-bpm-nexus</name>
+    <url>
+      https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee
     </url>
   </repository>
 </repositories>
