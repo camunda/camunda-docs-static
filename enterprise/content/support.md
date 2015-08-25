@@ -22,11 +22,12 @@ To create a new support ticket, follow the instructions below. To shorten the pr
 
 * Go to our [JIRA support system](https://app.camunda.com/jira/browse/SUPPORT)
 * Select `Create Issue`
-* Select `Support` as project and choose the desired issue type.
-* Give the ticket a meaningful `Summary`
-* You can give your ticket a `Priority` depending on how urgent the issue is for you. Provide us with a date in case of important `deadlines` that need to be reached.
-* Enter a detailed `description` of your issue. In case of Bug Reports please use the template (Reproduce steps, Problem, Expected behavior, etc.).
-* `Attachments` like screenshots, log files or BPMN files help us to find and reproduce your bug faster.
+* Select `Support` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
+* Give the ticket a meaningful **summary**
+* You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you. Provide us with a date in case of important **deadlines** that need to be reached.
+* Enter a detailed **description** of your issue. In case of Bug Reports please use the template (Reproduce steps, Problem, Expected behavior, etc.). Make use of the [JIRA text formatting]({{< relref "#text-formatting" >}}) in order to represent code snippets in a better readable way.
+* **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster.
+* For bug reprots and help requests it is important to know which **environment** you use. Inform us about the used Camunda BPM platform version, application server, database and everything else that seems to be important for your issue.
 
 
 ## Issue Types
@@ -77,7 +78,7 @@ Depending on the impact of a bug on your system you can prioritize issues. Pleas
   <tr>
     <td>L1 <img class="img-responsive" src="../img/jira-blocker.png"/>blocker</td>
     <td>Core components (i.e., process engine) of Camunda BPM do not work at all/produce critical errors that prevent usage in production mode.</td>
-    <td><b>Bug Tickets only! Production mode only!</b>></td>
+    <td><b>Bug Tickets only! Production mode only!</b></td>
   </tr>
   <tr>
     <td>L2 <img class="img-responsive" src="../img/jira-major.png"/>critical</td>
