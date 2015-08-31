@@ -8,7 +8,51 @@ menu:
     name: "Download"
     identifier: "enterprise-download"
 
+downloads:
+  versions:
+    - number: "7.1.10"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13591"
+      date: "12.05.2015"
+    - number: "7.2.6"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13790"
+      date: "11.08.2015"
+    - number: "7.3.2"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13892"
+      date: "01.07.2015"
+
+  currentdev: "7.4.0"
+  currentalpha: "alpha1"
+
+  server:
+    - path: "tomcat" 
+      name: "Apache Tomcat"
+      weight: 1
+    - path: "jboss" 
+      name: "JBoss AS 7"
+      weight: 2
+    - path: "glassfish" 
+      name: "GlassFish"
+      weight: 3
+    - path: "ibm-was"
+      name: "IBM WebSphere"
+      weight: 4
+    - path: "oracle-wls" 
+      name: "Oracle WebLogic"
+      weight: 5
+    - path: "wildfly" 
+      name: "WildFly"
+      weight: 6
+
+  formats:
+    - zip
+    - tar.gz
+    - war
+
+
+
 ---
+
+
 
 
 # What Should I Download?
@@ -22,14 +66,15 @@ Furthermore we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle"
 
 This page contains the latest versions of all supported branches. In addition we provide alpha releases of the current development branch. Please note that a alpha release is not fully tested and just a snapshot of the current development state.
 
-## Apache Tomcat
-
 <!---
   Valify
   1. Versions Dropdown contain the latest supported releases
   2. Release date and notes depending on selected version
   3. Download buttons (.zip/tar.gz/war) should reference to download location depending on the selcted version and application server
 -->
+
+
+{{< ee-download . />}}
 
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -89,6 +134,10 @@ This page contains the latest versions of all supported branches. In addition we
     </div>
   </div>
 </div>
+
+
+## Apache Tomcat
+
 
 [Previous Releases](http://camunda.org/enterprise-release/camunda-bpm/tomcat/) | [Community Edition](http://camunda.org/download/)
 
