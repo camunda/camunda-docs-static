@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /7.0/
-Disallow: /7.1/
-Disallow: /7.2/
-Disallow: /7.3/
