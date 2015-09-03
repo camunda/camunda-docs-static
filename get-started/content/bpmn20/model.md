@@ -12,7 +12,8 @@ menu:
     
 ---
 
-In this section you learn how to create your first BPMN 2.0 process with the camunda Modeler.
+In this section you learn how to create your first BPMN 2.0 process with the Camunda Modeler.
+
 
 # Create a new BPMN Diagram
 
@@ -37,6 +38,7 @@ When editing Labels, you can add line breaks by hitting `Shift + Enter`.
 
 Add a User Task to the process. Name it *Approve Loan*. Add an End Event named *Loan Request Approved*.
 
+
 # Configure a User Task
 
 {{< img src="../img/eclipse-simple-process-property.png" >}}
@@ -47,6 +49,7 @@ Select the User Task on the canvas. This updates the selection in the Properties
 Type *john*.
 
 When you are done, save your changes.
+
 
 # Configure Properties for Execution
 

@@ -14,6 +14,7 @@ menu:
 
 In this step, we use Java Code to instantiate the case definition, then, deploy and test the application.
 
+
 # Java Code
     
 In order to directly create a case instance after deployment, add the following method to your `LoanApprovalApplication` class:
@@ -43,6 +44,7 @@ public class LoanApprovalApplication extends ServletProcessApplication {
 }
 ```
 
+
 # Build the Web Application with Maven
     
 A Process Application is an ordinary Java Web Application and is deployed in exactly the same way.
@@ -53,6 +55,7 @@ Select the `pom.xml` in the Package Explorer, perform a right-click and select `
 If the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
 {{< /note >}}
     
+
 # Deploy to Apache Tomcat
     
 In order to deploy the process application, copy-paste the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
@@ -80,7 +83,8 @@ org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl deployProcessApplica
 INFORMATION: Process Application Loan Approval CMMN successfully deployed.
 </pre>
 
-# Verify the deployment with Camunda Tasklist
+
+# Verify the Deployment with Camunda Tasklist
 
 Now use Camunda Tasklist to check if the case was instantiated. Go to Camunda Tasklist (<a href="http://localhost:8080/camunda/app/tasklist" target="_blank">http://localhost:8080/camunda/app/tasklist</a>).
 

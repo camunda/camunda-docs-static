@@ -14,6 +14,7 @@ menu:
 
 In the next step, we want to add a HTML based Task Form to the application.
 
+
 # Add a Start Form
 
 Go back to eclipse and add a folder named `src/main/webapp/forms`. Inside this folder, add a file named `request-loan.html`. Add the following content:
@@ -41,6 +42,7 @@ Open the process with the modeler plugin. Click on the start event. In the prope
 
 {{< img src="../img/eclipse-configure-start-form.png" >}}
 
+
 # Add a Task Form
 
 The Task Form can be added and configured the same way. Add a file named `approve-loan.html` to the `src/main/webapp/forms` directory and add the following content:
@@ -66,6 +68,7 @@ The Task Form can be added and configured the same way. Add a file named `approv
 ```
 
 After that, open the process with the modeler plugin again. Click on the user task. In the properties view, insert `embedded:app:forms/approve-loan.html` into the `Form Key` property field.
+
 
 # Re-Build and Deploy
 

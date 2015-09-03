@@ -11,7 +11,7 @@ menu:
 
 ---
 
-This tutorial guides you through your first steps of using camunda BPM in a Spring web application.
+This tutorial guides you through your first steps of using Camunda BPM in a Spring web application.
 
 <dl class="dl-horizontal">
   <dt>
@@ -24,7 +24,7 @@ This tutorial guides you through your first steps of using camunda BPM in a Spri
     Configure
   </dt>
   <dd>
-    the camunda process engine and embed it inside your application.
+    the Camunda process engine and embed it inside your application.
   </dd>
   <dt>
     Deploy
@@ -42,21 +42,22 @@ This tutorial guides you through your first steps of using camunda BPM in a Spri
     Adapt
   </dt>
   <dd>
-    your project to use a Shared Process Engine and deploy it to the camunda BPM enhanced Tomcat server.
+    your project to use a Shared Process Engine and deploy it to the Camunda BPM enhanced Tomcat server.
   </dd>
 </dl>
 
 **Target Audience**:
-In this tutorial we assume that you are familiar with the basics of Java web application development and the Spring Framework. We also assume that you have installed an eclipse distribution and the camunda Modeler.
+In this tutorial we assume that you are familiar with the basics of Java web application development and the Spring Framework. We also assume that you have installed an eclipse distribution and the Camunda Modeler.
 
 {{< get-code repo="camunda-get-started-spring" >}}
 
-# Set up a Java Project
+
+# Set Up a Java Project
 
 We will start by setting up a Spring web application as an Apache Maven Project inside eclipse. This consists of four steps:
 
 1. Create a new Maven Project in Eclipse
-2. Add the camunda & Spring framework dependencies
+2. Add the Camunda & Spring framework dependencies
 3. Add the web.xml file for bootstrapping the Spring container
 4. Add a Spring application context XML configuration file
 
@@ -69,14 +70,14 @@ First, we set up a new Apache Maven based project in eclipse. Let's call it *loa
 {{< img src="../img/spring-framework/eclipse-new-project.png" >}}
 
 {{< note title="Hint" class="info" >}}
-If you are unfamiliar with setting up a Maven project, read the [Set up your Project]({{< relref "get-started/bpmn20.md#set-up-your-project" >}}) section of the BPMN 2.0 tutorial.
+If you are unfamiliar with setting up a Maven project, read the [Set up your Project]({{< relref "bpmn20/project-setup.md" >}}) section of the BPMN 2.0 tutorial.
 {{< /note >}}     
 
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
 
-## Add camunda BPM & Spring Framework dependencies
+## Add Camunda BPM & Spring Framework Dependencies
 
-The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project. We add both the camunda BPM and the Spring Framework dependencies:    
+The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project. We add both the Camunda BPM and the Spring Framework dependencies:    
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -92,7 +93,7 @@ The next step consists of setting up the Maven dependencies for the new project.
     <spring.version>3.1.2.RELEASE</spring.version>
   </properties>
 
-  <!-- import camunda BOM to ensure correct versions of camunda projects -->
+  <!-- import Camunda BOM to ensure correct versions of Camunda projects -->
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -134,7 +135,7 @@ The next step consists of setting up the Maven dependencies for the new project.
 </project>
 ```
 
-## Add web.xml file for bootstrapping the Spring container
+## Add web.xml File for Bootstrapping the Spring Container
 
 Next, we add a `web.xml` file for bootstrapping the spring container. In order to do so, first add a folder named `WEB-INF` to the (preexisting) `src/main/webapp` folder of your Maven project. Inside this folder, add a file named `web.xml`:
 
@@ -157,7 +158,7 @@ Next, we add a `web.xml` file for bootstrapping the spring container. In order t
 
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`
 
-## Add a Spring application context XML configuration file
+## Add a Spring Application Context XML Configuration File
 
 Next, we add a Spring ApplicationContext XML file to the same `src/main/webapp/WEB-INF` folder. The file must be named `applicationContext.xml`. We start with an empty file:
 
@@ -193,6 +194,7 @@ INFORMATION: Root WebApplicationContext: initialization completed in 187 ms
 This means that you have set up your Spring web application correctly.
 
 {{< get-tag repo="camunda-get-started-spring" tag="Step-1" >}}
+
 
 # Configure an Embedded Process Engine
 
@@ -257,6 +259,7 @@ INFORMATION: ProcessEngine engine created
 
 {{< get-tag repo="camunda-get-started-spring" tag="Step-2" >}}
 
+
 # Add a Spring Bean Service Task
 
 Now that we know how to bootstrap the process engine in a Spring Application context, we can add a BPMN 2.0 process
@@ -267,23 +270,22 @@ model and interact with the process form inside our Spring beans. In this sectio
 3. Start a process instance from a Spring bean.
 4. Invoke a Spring bean from a BPMN 2.0 Service task.
 
+## Model an Executable BPMN 2.0 Process
 
-## Model an executable BPMN 2.0 process
-
-We start by modeling an executable process using the camunda Modeler. The process should look as depicted in the screenshot to the left.
+We start by modeling an executable process using the Camunda Modeler. The process should look as depicted in the screenshot to the left.
 
 {{< img src="../img/spring-framework/process-model.png" >}}
 
 {{< note title="Hint" class="info" >}}
 If you are unfamiliar with modeling an executable process, you can read the
-[Model a Process]({{< relref "get-started/bpmn20.md#model-a-process" >}}) section of the Developing Process Applications tutorial.
+[Model a Process]({{< relref "bpmn20/model.md" >}}) section of the Developing Process Applications tutorial.
 {{< /note >}}
       
 When you are done, save the process model.
       
-## Use Spring auto-deployment for BPMN 2.0 processes
+## Use Spring Auto-Deployment for BPMN 2.0 Processes
 
-For the process to be deployed, we use the auto-deployment feature provided by the camunda engine Spring integration. In order to use this feature, modify the definition of the `processEngineConfiguration` bean inside your `src/main/webapp/WEB-INF/applicationContext.xml` file:
+For the process to be deployed, we use the auto-deployment feature provided by the Camunda engine Spring integration. In order to use this feature, modify the definition of the `processEngineConfiguration` bean inside your `src/main/webapp/WEB-INF/applicationContext.xml` file:
 
 ```xml
 <bean id="processEngineConfiguration" class="org.camunda.bpm.engine.spring.SpringProcessEngineConfiguration">
@@ -296,7 +298,7 @@ For the process to be deployed, we use the auto-deployment feature provided by t
 </bean>
 ```
 
-## Start a process instance from a Spring bean
+## Start a Process Instance from a Spring Bean
 
 The next step consists of starting a process instance from a Spring Bean. We will simply add a Spring Bean to the application context which injects to the process engine and starts a single process instance from an `afterPropertiesSet()` Method:
 
@@ -338,11 +340,11 @@ We add the Spring bean to the applicationContext.xml file:
 </beans>
 ```
 
-## Invoke a Spring bean from a BPMN 2.0 Service task
+## Invoke a Spring Bean from a BPMN 2.0 Service Task
 
 {{< img src="../img/spring-framework/service-task.png" >}}
 
-Referencing a Spring Bean from a BPMN 2.0 Service Task is simple. As shown in the screenshot to the left, we have to select the service task in the camunda Modeler and provide an expression in the *Expression Delegate* Field. We type `${calculateInterestService}`.
+Referencing a Spring Bean from a BPMN 2.0 Service Task is simple. As shown in the screenshot to the left, we have to select the service task in the Camunda Modeler and provide an expression in the *Expression Delegate* Field. We type `${calculateInterestService}`.
 
 Finally, we add the Java class implementing the `JavaDelegate` interface.
 
@@ -387,22 +389,24 @@ INFORMATION: Root WebApplicationContext: initialization completed in 1960 ms
 
 {{< get-tag repo="camunda-get-started-spring" tag="Step-3" >}}
 
+
 # Done!
 
 This marks the end of this tutorial. You have successfully set up a Spring Application with an embedded process engine. You can deploy this project to virtually any application server.
     
 Where to go from here?
 
-* Read the documentation about [Spring integration]({{< relref "user-guide/spring-framework-integration/index.md" >}}) in the camunda BPM platform in the User Guide.
-* Explore the [BPMN 2.0 Implementation Reference]({{< relref "reference/bpmn20/index.md" >}}).
+* Read the documentation about [Spring integration](/manual/master/user-guide/spring-framework-integration/index.md") in the Camunda BPM platform in the User Guide.
+* Explore the [BPMN 2.0 Implementation Reference](/manual/master/reference/bpmn20/index.md).
 
-# Alternative Configuration: Using shared Process Engine
+
+# Alternative Configuration: Using Shared Process Engine
 
 So far, we explored how to set up an embedded process engine inside a web application using the Spring Framework. You can also use the Spring Framework to develop applications that use a shared process engine. As opposed to the embedded process engine, the shared process engine is controlled independently from an application and is started / stopped by the runtime container (like Apache Tomcat). This allows multiple applications (or a single modular application) to use the same process engine. You can also re-deploy individual applications independently from the process engine.
 
 In order to configure the loanapproval-spring example to work with an embedded process engine, you have to change three things:
 
-First, we need to set the scope of the Maven dependency of the camunda-engine dependency to `provided`. On the camunda BPM platform the process engine library is provided as a shared library and does not need to be bundled with the application:
+First, we need to set the scope of the Maven dependency of the camunda-engine dependency to `provided`. On the Camunda BPM platform the process engine library is provided as a shared library and does not need to be bundled with the application:
 
 ```xml
 <dependency>
@@ -480,7 +484,7 @@ And third, the `applicationContext.xml` file is adjusted so that the shared proc
     "spring-web": "The Spring web artifact declaratively pulls in the Spring core libraries.",
     "com.h2database": "We use an embedded H2 database for the process engine",
     "springsource-repo": "Repository for Spring artifacts.",
-    "camunda-bpm-nexus" : "camunda nexus providing the Maven artifacts."
+    "camunda-bpm-nexus" : "Camunda nexus providing the Maven artifacts."
 
     },
     "web.xml":

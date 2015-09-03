@@ -17,6 +17,7 @@ The condition(s) defining when the milestone is reached are modeled using Sentri
 
 {{< img src="../img/cmmn-3.png" >}}
 
+
 # Defining a Milestone and a Sentry
 
 Go back to eclipse and the CMMN model file. Insert the following XML:
@@ -72,6 +73,7 @@ Go back to eclipse and the CMMN model file. Insert the following XML:
 ```
 
 The above does not only add a milestone but also a *sentry*. Sentries are used to capture conditions within a case and can trigger other events to occur. Here we have expressed that the milestone *Approved* is reached when both tasks have successfully completed, and if the application was sufficient and the customer received a good rating for creditworthiness.
+
 
 # Milestone Listener
 
@@ -154,6 +156,7 @@ To register the listener with the milestone, update the milestone in `loan-appro
 </cmmn:definitions>
 ```
 
+
 # Re-build and Deploy
 
 When you are done, save all resources, perform a Maven build and redeploy the process application.
@@ -181,7 +184,7 @@ INFORMATION: Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transit
 
 Our lifecycle listener has been notified, showing that the milestone has actually occurred.
 
-To learn more about milestones, consider checking the [Milestone section]({{< relref "reference/cmmn10/milestone.md" >}}) in our CMMN implementation guide.
+To learn more about milestones, consider checking the [Milestone section](/manual/master/reference/cmmn10/milestone.md) in our CMMN implementation guide.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-5" >}}
 

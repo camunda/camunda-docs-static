@@ -11,7 +11,7 @@ menu:
 
 ---
 
-This tutorial guides you through setting up camunda BPM and developing your first process application with Java EE 6.
+This tutorial guides you through setting up Camunda BPM and developing your first process application with Java EE 6.
 You will learn to
 
 <dl class="dl-horizontal">
@@ -19,19 +19,19 @@ You will learn to
     Install
   </dt>
   <dd>
-    the camunda BPM platform on your machine. In this tutorial we use the JBoss based distribution.
+    the Camunda BPM platform on your machine. In this tutorial we use the JBoss based distribution.
   </dd>
   <dt>
     Set up
   </dt>
   <dd>
-    an Apache Maven-based process application inside eclipse and deploy it to the camunda BPM platform.
+    an Apache Maven-based process application inside eclipse and deploy it to the Camunda BPM platform.
   </dd>
   <dt>
     Create Task Forms
   </dt>
   <dd>
-    We will explore how to use JSF forms in camunda BPM.
+    We will explore how to use JSF forms in Camunda BPM.
   </dd>
   <dt>
     JPA
@@ -47,6 +47,7 @@ You will learn to
   </dd>
 </dl>
 
+
 # Download and Installation
 
 {{< note title="Before you start" class="info" >}}
@@ -60,24 +61,24 @@ Make sure you have the following set of tools installed:
 
 ## Install Camunda BPM platform
 
-First, download a distribution of the camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the JBoss AS 7 based distribution. Download it [here](http://camunda.org/download/).
+First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the JBoss AS 7 based distribution. Download it [here](http://camunda.org/download/).
 
 After having downloaded the distribution, unpack it inside a directory of your choice. We will call that directory
 `$CAMUNDA_HOME`.
 
-After you have successfully unpacked your distribution of the camunda BPM platform, execute the script named
+After you have successfully unpacked your distribution of the Camunda BPM platform, execute the script named
 `start-camunda.bat` for Windows users, respectively `start-camunda.sh` for Unix users.
 
 This script will start the application server and open a welcome screen in your Web browser.
 If the page does not open, go to http://localhost:8080/camunda-welcome/index.html.
 
 {{< note title="Getting Help" class="info" >}}
-If you have trouble setting up the camunda BPM platform, you can ask for assistance in the [Forum](http://camunda.org/community/forum.html).
+If you have trouble setting up the Camunda BPM platform, you can ask for assistance in the [Forum](http://camunda.org/community/forum.html).
 {{< /note >}}
 
 ## Install Camunda Modeler
 
-Follow the instructions in the [camunda Modeler]({{< relref "installation/eclipse-plugin.md" >}}) section.
+Follow the instructions in the [Camunda Modeler](/manual/master/installation/eclipse-plugin/eclipse-plugin.md) section.
 
 {{< get-code repo="camunda-get-started-javaee" >}}
 
@@ -125,7 +126,7 @@ The next step consists of setting up the Maven dependencies for your new process
   <version>0.1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <!-- import camunda BOM to ensure correct versions of camunda projects -->
+  <!-- import Camunda BOM to ensure correct versions of Camunda projects -->
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -140,14 +141,14 @@ The next step consists of setting up the Maven dependencies for your new process
 
   <dependencies>
 
-    <!-- camunda engine dependency -->
+    <!-- Camunda engine dependency -->
     <dependency>
       <groupId>org.camunda.bpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
     </dependency>
 
-    <!-- camunda cdi beans -->
+    <!-- Camunda cdi beans -->
     <dependency>
       <groupId>org.camunda.bpm</groupId>
       <artifactId>camunda-engine-cdi</artifactId>
@@ -193,9 +194,9 @@ The next step consists of setting up the Maven dependencies for your new process
 </project>
 ```
 
-As dependencies you need the camunda engine and camunda engine CDI package. The CDI package provide you with beans to easily interact with the process engine and the ability to resolve CDI beans from inside the BPMN process XML.
+As dependencies you need the Camunda engine and Camunda engine CDI package. The CDI package provide you with beans to easily interact with the process engine and the ability to resolve CDI beans from inside the BPMN process XML.
 
-We also use the camunda EJB client to interact with the process engine, which provides a default implementation of the `EjbProcessApplication`. This dependency is not necessary if you want to implement your own `EjbProcessApplication`.
+We also use the Camunda EJB client to interact with the process engine, which provides a default implementation of the `EjbProcessApplication`. This dependency is not necessary if you want to implement your own `EjbProcessApplication`.
 
 The JBoss JavaEE spec dependency helps us to develop the application. It is only necessary during development so the `scope` is set to provided. The JBoss AS already contains this interfaces.
 
@@ -203,13 +204,13 @@ Now you can perform the first build. Select the `pom.xml` in the Package Explore
   
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-1" >}}
 
-## Add a WEB-INF/beans.xml deployment descriptor
+## Add a WEB-INF/beans.xml Deployment Descriptor
   
 After we have all of our maven dependencies configured, we can add our first deployment descriptor. The `WEB-INF/beans.xml` is used to configure a CDI application. It's presence is always mandatory but it can be empty, as it is in our case. For further information, please see [this explanation](http://www.cdi-spec.org/faq/).
 
 This file needs to be added to the `src/main/webapp/WEB-INF` folder of the Maven project.
 
-## Add a WEB-INF/faces-config.xml deployment descriptor
+## Add a WEB-INF/faces-config.xml Deployment Descriptor
   
 The next step is to configure the JSF component. This is done by adding the `WEB-INF/faces-config.xml` to your project. We use the default configuration, so you only have to add the file without any additional configuration.
   
@@ -225,7 +226,7 @@ This file needs to be added to the `src/main/webapp/WEB-INF` folder of the Maven
 </faces-config>
 ```
 
-## Add a META-INF/persistence.xml deployment descriptor
+## Add a META-INF/persistence.xml Deployment Descriptor
   
 To configure JPA, we add the `META-INF/persistence.xml` file. We use the same data source as the process engine which is configured inside the `standalone.xml` of the JBoss distribution.
 
@@ -253,7 +254,7 @@ This file needs to be added to the `src/main/resources/META-INF` folder of the M
 </persistence>
 ```
 
-## Add a META-INF/processes.xml deployment descriptor
+## Add a META-INF/processes.xml Deployment Descriptor
   
 The last step for setting up the process application is adding the `META-INF/processes.xml` deployment descriptor file. This file allows us to provide a declarative configuration of the deployment(s) that this process application makes to the process engine.
   
@@ -279,9 +280,10 @@ At this point you have successfully set up the process application you can start
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-2" >}}
 
+
 # Model a Process
 
-In this section we model our sample process with the camunda Modeler.
+In this section we model our sample process with the Camunda Modeler.
 
 ## Create a new BPMN 2.0 Diagram
 
@@ -424,6 +426,7 @@ It is best practice to perform a `clean install` build to make sure all resource
 If you open the Tasklist and start a new process instance for the pizza order process, the JSF form is displayed.
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-4" >}}
+
 
 # Add EJB Service Task
 
@@ -577,6 +580,7 @@ Build, deploy and execute the process. After completing the *Persist Order* step
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-5" >}}
 
+
 # Add JSF Task Form
 
 {{< img src="../img/javaee/approve-order.png" >}}
@@ -639,7 +643,7 @@ public class ApproveOrderController implements Serializable {
 
 ## Extend Order Business Logic
 
-The order business logic is extended to provide a method to load an order entity from the database by order id, to merge a detached order entity and to complete the task form. For that, the task form is injected, which is provided by the camunda CDI artifact.
+The order business logic is extended to provide a method to load an order entity from the database by order id, to merge a detached order entity and to complete the task form. For that, the task form is injected, which is provided by the Camunda CDI artifact.
 
 Please note that the merging of the detached order entity and the completion of the task form are intentionally placed in one method. This ensures that both operations are executed in a single transaction. An error during that transaction will rollback both changes.
 
@@ -650,7 +654,7 @@ public class OrderBusinessLogic {
 
   // ...
 
-  // Inject task form available through the camunda cdi artifact
+  // Inject task form available through the Camunda cdi artifact
   @Inject
   private TaskForm taskForm;
 
@@ -771,6 +775,7 @@ When you are done, save all resources, perform a Maven build and redeploy the pr
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-6" >}}
 
+
 # Complete the Process
 
 ## Add Prepare Pizza Task Form
@@ -862,6 +867,7 @@ When you are done, save all resources, perform a Maven build and redeploy the pr
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-8" >}}
 
+
 # Done
 
 Congratulations, you have now successfully deployed your Java EE Process Application!
@@ -869,7 +875,7 @@ Congratulations, you have now successfully deployed your Java EE Process Applica
 Where to go from here?
 
 * [Learn more about BPMN](http://camunda.org/bpmn/tutorial.html)
-* [BPMN 2.0 Implementation Reference]({{< relref "reference/bpmn20/index.md" >}})
+* [BPMN 2.0 Implementation Reference](/manual/master/reference/bpmn20/index.md)
 
 
   <script type="text/ng-template" id="code-annotations">
@@ -879,7 +885,7 @@ Where to go from here?
       "camunda-engine": "The process engine is the component responsible for picking up your BPMN 2.0 processes and executing them.",
       "javax.servlet-api": "The servlet API is required for compilation",
       "false" : "With Servlet 3.0 we do not need a web.xml file. Maven needs to catch up.",
-      "camunda-bpm-nexus" : "camunda nexus providing the Maven artifacts."
+      "camunda-bpm-nexus" : "Camunda nexus providing the Maven artifacts."
 
       },
       "processes.xml":
@@ -891,4 +897,3 @@ Where to go from here?
       }
     }
   </script>
-

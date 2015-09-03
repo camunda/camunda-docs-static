@@ -14,6 +14,7 @@ menu:
 
 Now you are ready to set up your first process application project in eclipse.
 
+
 # Create a new Maven Project in Eclipse
 
 In eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
@@ -26,7 +27,7 @@ On the second page (see screenshot), configure the Maven coordinates for the pro
  
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* View.
 
-# Add camunda Maven Dependencies
+# Add Camunda Maven Dependencies
 
 The next step consists of setting up the Maven dependencies for your new process application. Add the following dependencies to the `pom.xml` file of your project:
 
@@ -84,6 +85,7 @@ The next step consists of setting up the Maven dependencies for your new process
 
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`.
 
+
 # Add a Process Application Class
 
 Next, you need to create a package, e.g. `org.camunda.bpm.getstarted.loanapproval` and add a Process Application class to it. The Process Application class constitutes the interface between your application and the process engine.
@@ -100,7 +102,8 @@ public class LoanApprovalApplication extends ServletProcessApplication {
 }
 ```
 
-# Add a META-INF/processes.xml deployment descriptor
+
+# Add a META-INF/processes.xml Deployment Descriptor
 
 The last step to set up the process application is to add the `META-INF/processes.xml` deployment descriptor file. This file allows us to provide a declarative configuration of the deployment(s) this process application makes to the process engine.
 
@@ -125,7 +128,7 @@ This file needs to be added to the `src/main/resources/META-INF` folder of the M
 ```
 
 {{< note title="Empty META-INF/processes.xml" class="info" >}}
-You can leave the META-INF/processes.xml file empty. In that case, default values are used. See the <a href="ref:/guides/user-guide/#process-applications-the-processesxml-deployment-descriptor-empty-processesxml">Empty Processes.xml</a> section of the <a href="ref:/guides/user-guide/">User Guide</a> for more information
+You can leave the META-INF/processes.xml file empty. In that case, default values are used. See the <a href="/manual/master/user-guide/process-applications/the-processes-xml-deployment-descriptor.md#empty-processes-xml">Empty Processes.xml</a> section of the <a href="/manual/master/user-guide/index.md">User Guide</a> for more information
 {{< /note >}}
 
 At this point you have successfully set up the process application and you can start modeling the first process.

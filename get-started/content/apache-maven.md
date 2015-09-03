@@ -15,9 +15,10 @@ This page lists the most commonly used Apache Maven Coordinates for Camunda.
 
 Most Camunda artifacts are pushed to <a href="http://search.maven.org/#browse%7C-1675593179">maven central</a>.
 
-**Camunda Bom (Bill of Materials)**
 
-Community Edition:
+# Camunda Bom (Bill of Materials)
+
+## Community Edition:
 
 ```xml
 <dependency>
@@ -29,7 +30,7 @@ Community Edition:
 </dependency>
 ```
 
-Enterprise Edition:
+## Enterprise Edition:
 
 ```xml
 <dependency>
@@ -45,7 +46,8 @@ Enterprise Edition:
   Please import the Camunda BOM if you use multiple Camunda projects. The BOM defines versions for all Camunda projects. This way it is ensured that no incompatible versions are imported.
 {{< /note >}}
 
-**Camunda Engine**
+
+# Camunda Engine
 
 ```xml
 <dependency>
@@ -54,7 +56,8 @@ Enterprise Edition:
 </dependency>
 ```
 
-**Camunda Engine Spring Integration**
+
+# Camunda Engine Spring Integration
 
 ```xml
 <dependency>
@@ -63,7 +66,8 @@ Enterprise Edition:
 </dependency>
 ```
 
-**Camunda Engine CDI Integration**
+
+# Camunda Engine CDI Integration
 
 ```xml
 <dependency>
@@ -72,7 +76,8 @@ Enterprise Edition:
 </dependency>
 ```
 
-**Process Aplication Ejb Client**
+
+# Process Aplication Ejb Client
 
 ```xml
 <dependency>
@@ -81,9 +86,10 @@ Enterprise Edition:
 </dependency>
 ```
 
-**Camunda Nexus**
 
-Community Edition:
+# Camunda Nexus
+
+## Community Edition:
 
 ```xml
 <repositories>
@@ -97,7 +103,7 @@ Community Edition:
 </repositories>
 ```
 
-Enterprise Edition:
+## Enterprise Edition:
 
 ```xml
 <repositories>
@@ -111,8 +117,9 @@ Enterprise Edition:
 </repositories>
 ```
 
-**Other Camunda Modules:**
 
-* [Camunda Spin]({{< relref "" >}})
-* [Camunda Connect]({{< relref "" >}})
-* [Templating Engines]({{< relref "" >}})
+# Other Camunda Modules:
+
+* [Camunda Spin](/manual/master/reference/spin/index.md)
+* [Camunda Connect](/manual/master/reference/connect/index.md#maven-coordinates)
+* [Templating Engines](/manual/master/user-guide/process-engine/templating.md#install-a-template-engine-for-an-embedded-process-engine)

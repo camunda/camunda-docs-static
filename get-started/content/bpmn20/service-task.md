@@ -14,9 +14,10 @@ menu:
 
 In the last section of this tutorial we learn how to invoke a Java Class from a BPMN 2.0 Service Task.
 
+
 # Add a Service Task to the Process
 
-Use the camunda modeler plugin in eclipse to add a service task after the user task. The service task can be dropped on a sequence flow (see screenshot).
+Use the Camunda modeler plugin in eclipse to add a service task after the user task. The service task can be dropped on a sequence flow (see screenshot).
 
 {{< img src="../img/eclipse-add-service-task.png" >}}
 
@@ -36,6 +37,7 @@ public class ProcessRequestDelegate implements JavaDelegate {
 }
 ```
 <div class="app-source" data-source-code="ProcessRequestDelegate" annotate="code-annotations"></div>
+
 
 # Configure the Class in the Process
 

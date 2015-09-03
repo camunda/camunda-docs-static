@@ -18,6 +18,7 @@ Now you are ready to set up your first process application project in eclipse.
 CMMN is a modeling language for *cases*, whereas BPMN is a language for <i>processes</i>. This tutorial is about cases. However, due to Camunda's BPMN-focused heritage, the Java project contains classes and files with names like `ProcessApplication` and `processes.xml`. These are in fact generally applicable and can be used with both processes as well as cases.
 {{< /note >}}
 
+
 # Create a new Maven Project in Eclipse
 
 In eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
@@ -31,6 +32,7 @@ On the second page (see screenshot), configure the Maven coordinates for the pro
 Since we are setting up a WAR Project, make sure to select `Packaging: war`.
       
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
+
       
 # Camunda Maven Dependencies
   
@@ -92,6 +94,7 @@ Now you can perform the first build. Select the `pom.xml` in the Package Explore
       
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-1" >}}
 
+
 # The Process Application Class
   
 Next, you need to create a package, e.g., `org.camunda.bpm.getstarted.loanapproval`, and add a Process Application class to it. The Process Application class constitutes the interface between your application and the process engine.
@@ -107,6 +110,7 @@ public class LoanApprovalApplication extends ServletProcessApplication {
   // empty implementation
 }
 ```
+
 
 # The Deployment Descriptor
   

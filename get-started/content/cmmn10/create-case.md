@@ -14,7 +14,8 @@ menu:
 
 In this section you learn how to create your first CMMN 1.0 case in XML. Don't worry, the XML is not going to be complex.
 
-# Create an empty CMMN 1.0 File
+
+# Create an Empty CMMN 1.0 File
   
 In the eclipse *Package Explorer* select the `src/main/resources` folder. Right-click and select `New > Other ...`. Select *File*. Click Next.
 
@@ -40,6 +41,7 @@ Open the newly created file and copy-paste the following contents into it:
 ```
 
 This snippet declares a *case plan model*, the essential part of any CMMN case definition.
+
 
 # Add Human Tasks
 
@@ -107,6 +109,6 @@ In addition, the customer's creditworthiness has to be assessed. We add another 
 
 Note how there is no direct relation between the two plan items. There is no sequence flow connecting the two tasks as in BPMN. In CMMN, this expresses that the tasks can be executed concurrently.
   
-To learn more about human tasks, consider checking the [Human Task section]({{< relref "reference/cmmn10/tasks/human-task.md" >}}) of our CMMN implementation guide.
+To learn more about human tasks, consider checking the [Human Task section](/manual/master/reference/cmmn10/task/human-task.md) of our CMMN implementation guide.
   
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-3" >}}

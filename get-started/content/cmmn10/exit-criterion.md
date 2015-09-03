@@ -16,6 +16,7 @@ When a loan application is not sufficient, for example because it has formal err
 
 {{< img src="../img/cmmn-complete.png" >}}
 
+
 # Add an Exit Sentry
 
 In the CMMN XML file, add the following sentry definition and register it for the *Provide Customer Rating* human task:
@@ -84,6 +85,7 @@ In the CMMN XML file, add the following sentry definition and register it for th
 </cmmn:definitions>
 ```
 
+
 # Re-build and Deploy
 
 Again, rebuild and redeploy the project.
@@ -94,6 +96,6 @@ Go to Tasklist and access the `demo` user's tasks. As before, check the task *Ch
 
 You will notice that the task *Provide Customer Rating* has disappeared from the Tasklist. That is because the sentry has been triggered and the task's exit criterion has been fulfilled. Also, you can check the Tomcat console. This time, there is no log entry for the milestone.
 
-To learn more about sentries, consider checking the [Sentry section]({{< relref "reference/cmmn10/sentry.md" >}}) in our CMMN implementation guide.
+To learn more about sentries, consider checking the [Sentry section](/manual/master/reference/cmmn10/sentry.md) in our CMMN implementation guide.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-6" >}}

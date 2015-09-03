@@ -14,6 +14,7 @@ menu:
 
 The next step consists in building, deploying and testing the process.
 
+
 # Build the Web Application with Maven
 
 Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-0.0.1-SNAPSHOT.war` In the `target/` folder of your Maven project.
@@ -21,6 +22,7 @@ Select the `pom.xml` in the Package Explorer, perform a right-click and select `
 {{< note title="Hint" class="info" >}}
 If the `loan-approval-0.0.1-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
 {{< /note >}}
+
 
 # Deploy to Apache Tomcat
 
@@ -47,32 +49,35 @@ org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl deployProcessApplica
 INFORMATION: Process Application Loan Approval App successfully deployed.
 </pre>
 
-# Verify the deployment with Cockpit
+
+# Verify the Deployment with Cockpit
 
 Now use Cockpit to check if the process is successfully deployed. Go to <a href="http://localhost:8080/camunda/app/cockpit" target="_blank">http://localhost:8080/camunda/app/cockpit</a>. Log in with demo / demo. Your process *Loan Approval* is visible on the start screen.
 
 {{< img src="../img/cockpit-loan-approval.png" >}}
 
-# Start a process instance
 
-Next, go to camunda Tasklist (<a href="http://localhost:8080/camunda/app/tasklist" target="_blank">http://localhost:8080/camunda/app/tasklist</a>). Click on the <button class="btn btn-default btn-xs"><i class="glyphicon glyphicon-list-alt"></i> Start process</button> button to start a process instance. This opens a dialog where you can select *Loan Approval* from the list. Now you can set variables for the process instance using a generic form.
+# Start a Process Instance
+
+Next, go to Camunda Tasklist (<a href="http://localhost:8080/camunda/app/tasklist" target="_blank">http://localhost:8080/camunda/app/tasklist</a>). Click on the <button class="btn btn-default btn-xs"><i class="glyphicon glyphicon-list-alt"></i> Start process</button> button to start a process instance. This opens a dialog where you can select *Loan Approval* from the list. Now you can set variables for the process instance using a generic form.
 
 {{< img src="../img/start-form-generic.png" >}}
 
 The generic form can be used whenever you have not added a dedicated form for a User Task or a Start Event.
 Click on the <button class="btn btn-default btn-xs">Add a variable</button> button to get a new row. Fill in the form as shown in the screenshot. When you are done, click <button class="btn btn-default btn-xs">Start</button>.
 
-If you now go back to <a href="http://localhost:8080/camunda/app/cockpit" target="_blank">camunda Cockpit</a>, you see the newly created process instance that is waiting in the User Task.
+If you now go back to <a href="http://localhost:8080/camunda/app/cockpit" target="_blank">Camunda Cockpit</a>, you see the newly created process instance that is waiting in the User Task.
 
 # Configure Process Start Authorizations
 
-To allow the user *john* to see the process definition *Loan Approval* you have to go to camunda Admin (<a href="http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6" target="_blank">http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6</a>). Next, click on the button <button class="btn btn-default btn-xs">Create New</button> to add a new authorization on the resource *process definition*. Now you can give the user *john* all permissions on process definition *approve-loan*. When you are done, submit the new authorization.
+To allow the user *john* to see the process definition *Loan Approval* you have to go to Camunda Admin (<a href="http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6" target="_blank">http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6</a>). Next, click on the button <button class="btn btn-default btn-xs">Create New</button> to add a new authorization on the resource *process definition*. Now you can give the user *john* all permissions on process definition *approve-loan*. When you are done, submit the new authorization.
 
 {{< img src="../img/create-process-definition-authorization.png" >}}
 
-For further details about authorizations and how to manage them please read the following sections in the user guide: <a href="ref:/guides/user-guide/#process-engine-authorization-service" target="_blank">Authorization Service</a> and <a href="ref:/guides/user-guide/#admin-authorization-management-authorizations" target="_blank">Authorizations</a>
+For further details about authorizations and how to manage them please read the following sections in the user guide: <a href="/manual/master/user-guide/process-engine/authorization-service.md" target="_blank">Authorization Service</a> and <a href="/manual/master/webapps/admin/authorization-management.md" target="_blank">Authorizations</a>
 
-# Work on the task
+
+# Work on the Task
 
 Log out of the Admin. Go to Tasklist (<a href="http://localhost:8080/camunda/app/tasklist" target="_blank">http://localhost:8080/camunda/app/tasklist</a>) and log back in with the user credentials "john / john". Now you see the *Approve Loan* task in your Tasklist. Select the task and click on the `Diagram` tab. This displays the process diagram highlighting the User Task that is waiting for you to work on it.
 
