@@ -74,7 +74,7 @@ To allow the user *john* to see the process definition *Loan Approval* you have 
 
 {{< img src="../img/create-process-definition-authorization.png" >}}
 
-For further details about authorizations and how to manage them please read the following sections in the user guide: <a href="/manual/master/user-guide/process-engine/authorization-service.md" target="_blank">Authorization Service</a> and <a href="/manual/master/webapps/admin/authorization-management.md" target="_blank">Authorizations</a>
+For further details about authorizations and how to manage them please read the following sections in the user guide: <a href="/manual/master/user-guide/process-engine/authorization-service" target="_blank">Authorization Service</a> and <a href="/manual/master/webapps/admin/authorization-management" target="_blank">Authorizations</a>
 
 
 # Work on the Task

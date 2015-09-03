@@ -128,7 +128,7 @@ This file needs to be added to the `src/main/resources/META-INF` folder of the M
 ```
 
 {{< note title="Empty META-INF/processes.xml" class="info" >}}
-You can leave the META-INF/processes.xml file empty. In that case, default values are used. See the <a href="/manual/master/user-guide/process-applications/the-processes-xml-deployment-descriptor.md#empty-processes-xml">Empty Processes.xml</a> section of the <a href="/manual/master/user-guide/index.md">User Guide</a> for more information
+You can leave the META-INF/processes.xml file empty. In that case, default values are used. See the <a href="/manual/master/user-guide/process-applications/the-processes-xml-deployment-descriptor/#empty-processes-xml">Empty Processes.xml</a> section of the <a href="/manual/master/user-guide">User Guide</a> for more information
 {{< /note >}}
 
 At this point you have successfully set up the process application and you can start modeling the first process.

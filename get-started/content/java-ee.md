@@ -78,7 +78,7 @@ If you have trouble setting up the Camunda BPM platform, you can ask for assista
 
 ## Install Camunda Modeler
 
-Follow the instructions in the [Camunda Modeler](/manual/master/installation/eclipse-plugin/eclipse-plugin.md) section.
+Follow the instructions in the [Camunda Modeler](/manual/master/installation/eclipse-plugin) section.
 
 {{< get-code repo="camunda-get-started-javaee" >}}
 
@@ -875,7 +875,7 @@ Congratulations, you have now successfully deployed your Java EE Process Applica
 Where to go from here?
 
 * [Learn more about BPMN](http://camunda.org/bpmn/tutorial.html)
-* [BPMN 2.0 Implementation Reference](/manual/master/reference/bpmn20/index.md)
+* [BPMN 2.0 Implementation Reference](/manual/master/reference/bpmn20)
 
 
   <script type="text/ng-template" id="code-annotations">

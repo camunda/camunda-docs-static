@@ -262,4 +262,4 @@ If you are a BPMN tool vendor and would like your tool to integrate (better) wit
 
 ## User Guide for Cycle
 
-Please find additional information about cycle in the [user guide](/manual/master/webapps/cycle/index.md).
+Please find additional information about cycle in the [user guide](/manual/master/webapps/cycle).

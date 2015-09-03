@@ -184,7 +184,7 @@ INFORMATION: Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transit
 
 Our lifecycle listener has been notified, showing that the milestone has actually occurred.
 
-To learn more about milestones, consider checking the [Milestone section](/manual/master/reference/cmmn10/milestone.md) in our CMMN implementation guide.
+To learn more about milestones, consider checking the [Milestone section](/manual/master/reference/cmmn10/milestone) in our CMMN implementation guide.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-5" >}}
 

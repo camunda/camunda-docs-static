@@ -396,8 +396,8 @@ This marks the end of this tutorial. You have successfully set up a Spring Appli
     
 Where to go from here?
 
-* Read the documentation about [Spring integration](/manual/master/user-guide/spring-framework-integration/index.md") in the Camunda BPM platform in the User Guide.
-* Explore the [BPMN 2.0 Implementation Reference](/manual/master/reference/bpmn20/index.md).
+* Read the documentation about [Spring integration](/manual/master/user-guide/spring-framework-integration") in the Camunda BPM platform in the User Guide.
+* Explore the [BPMN 2.0 Implementation Reference](/manual/master/reference/bpmn20).
 
 
 # Alternative Configuration: Using Shared Process Engine

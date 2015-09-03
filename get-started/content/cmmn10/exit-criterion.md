@@ -96,6 +96,6 @@ Go to Tasklist and access the `demo` user's tasks. As before, check the task *Ch
 
 You will notice that the task *Provide Customer Rating* has disappeared from the Tasklist. That is because the sentry has been triggered and the task's exit criterion has been fulfilled. Also, you can check the Tomcat console. This time, there is no log entry for the milestone.
 
-To learn more about sentries, consider checking the [Sentry section](/manual/master/reference/cmmn10/sentry.md) in our CMMN implementation guide.
+To learn more about sentries, consider checking the [Sentry section](/manual/master/reference/cmmn10/sentry) in our CMMN implementation guide.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-6" >}}

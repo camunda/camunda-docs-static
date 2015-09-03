@@ -109,6 +109,6 @@ In addition, the customer's creditworthiness has to be assessed. We add another 
 
 Note how there is no direct relation between the two plan items. There is no sequence flow connecting the two tasks as in BPMN. In CMMN, this expresses that the tasks can be executed concurrently.
   
-To learn more about human tasks, consider checking the [Human Task section](/manual/master/reference/cmmn10/task/human-task.md) of our CMMN implementation guide.
+To learn more about human tasks, consider checking the [Human Task section](/manual/master/reference/cmmn10/tasks/human-task) of our CMMN implementation guide.
   
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-3" >}}

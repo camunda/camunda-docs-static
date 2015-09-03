@@ -41,4 +41,4 @@ If you have trouble setting up the Camunda BPM platform, you can ask for assista
 
 # Camunda Modeler
 
-Follow the instructions in the [Camunda Modeler](/manual/master/installation/eclipse-plugin/eclipse-plugin.md) section.
+Follow the instructions in the [Camunda Modeler](/manual/master/installation/eclipse-plugin) section.
