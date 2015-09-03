@@ -8,7 +8,7 @@ Edit the file `config/banners.html`:
 
 add or remove a div with the attribute `data-banner`.
 
-This is an example of a "<blockquote>"-style, html based banner. It will be visualized with a bar on the left.
+This is an example of a blockquote-style, html based banner. It will be visualized with a bar on the left.
 
 ```html
 <div data-banner>
