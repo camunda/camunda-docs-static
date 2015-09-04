@@ -7,7 +7,7 @@ menu:
   main:
     name: "Apache Maven"
     identifier: "get-started-maven"
-    pre: "The most commonly used Apache Maven Coodinates for Camunda."
+    pre: "The most commonly used Apache Maven Coordinates for Camunda."
 
 ---
 
