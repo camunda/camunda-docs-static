@@ -2,12 +2,8 @@ RewriteEngine ON
 
 RewriteRule ^$ /manual/
 
-RewriteCond %{DOCUMENT_ROOT}/manual/master -d
-RewriteRule ^manual/$ /manual/master [R=301,L]
-
-RewriteCond %{DOCUMENT_ROOT}/manual/master !-d
 RewriteRule ^manual/$ /manual/latest [R=301,L]
 
-RewriteRule ^manual/master/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.4-SNAPSHOT [R=301,L]
+RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.4-SNAPSHOT [R=301,L]
 RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.4 [R=301,L]
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
