@@ -1,6 +1,6 @@
 ---
 
-title: 'Calling an EJB from the BPMN 2.0 Process'
+title: 'Invoke an EJB from a BPMN 2.0 Service Task'
 weight: 50
 
 menu:
@@ -8,7 +8,7 @@ menu:
     name: "EJB Service Task"
     parent: "get-started-java-ee"
     identifier: "get-started-java-ee-service-task"
-    pre: "Learn how to use JSF, CDI, EJBs and JPA in your process application."
+    pre: "Invoke an EJB from a BPMN 2.0 Service Task."
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 
-title: 'Configuring a Start Form in the BPMN 2.0 Process'
+title: 'Start a BPMN Process using a JSF Form'
 weight: 40
 
 menu:
   main:
-    name: "Start Form"
+    name: "JSF Start Form"
     parent: "get-started-java-ee"
     identifier: "get-started-java-ee-start-form"
-    pre: "Add and configure a Start Form in the BPMN 2.0 Process."
+    pre: "Start a BPMN Process using a JSF Form"
 
 ---
 

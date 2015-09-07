@@ -8,7 +8,7 @@ menu:
     name: "Complete Process"
     parent: "get-started-java-ee"
     identifier: "get-started-java-ee-complete-process"
-    pre: "Learn how to complete the BPMN 2.0 Process in this Java EE process application."
+    pre: "Implement the remaining parts of the Application."
 
 ---
 

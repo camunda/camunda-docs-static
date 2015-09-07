@@ -1,14 +1,14 @@
 ---
 
-title: 'Configuring the Task Form in the BPMN 2.0 Process'
+title: 'Implement a JSF Task Form for a BPMN User Task.'
 weight: 60
 
 menu:
   main:
-    name: "Task Form"
+    name: "JSF Task Form"
     parent: "get-started-java-ee"
     identifier: "get-started-java-ee-task-form"
-    pre: "Add and configure a JSF Task Form in the BPMN 2.0 process."
+    pre: "Complete a User Task using a JSF Task Form."
 
 ---
 

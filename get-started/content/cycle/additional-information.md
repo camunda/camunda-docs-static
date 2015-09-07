@@ -7,11 +7,10 @@ menu:
     name: "Additional Information"
     parent: "get-started-cycle"
     identifier: "get-started-cycle-additional-information"
-    pre: "Additional information to Camunda Cycle and for Tool Vendors."
+    pre: "Additional information on Camunda Cycle and for Tool Vendors."
 ---
 
 In the last section of this tutorial we give additional information to Camunda Cycle and for Tool Vendors.
-
 
 # Additional Information
 
