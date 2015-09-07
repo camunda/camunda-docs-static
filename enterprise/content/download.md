@@ -34,11 +34,13 @@ downloads:
     - tar.gz
     - war
 
-
-  currentdev: "7.4.0"
-  currentalpha: "alpha1"
-
   branches:
+  - branch: "7.4"
+    releases:
+    - number: "7.4.0-alpha1"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14191"
+      date: "2015.07.31"
+
   - branch: "7.3"
     releases:
     - number: "7.3.2"
