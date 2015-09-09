@@ -27,7 +27,9 @@ RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started
 RewriteRule ^guides/getting-started-guides /get-started/ [R=301,L]
 
 # Manual (User Guide)
+RewriteRule ^(7.3|7.2|7.1|7.0)/api-references/javadoc/(.*) /javadoc/camunda-bpm-platform/$1/$2 [R=301,L]
 RewriteRule ^(7.3|7.2|7.1|7.0)/(.*) /manual/$1/$2 [R=301,L]
+RewriteRule ^latest/api-references/javadoc/(.*) /javadoc/camunda-bpm-platform/7.3/$1 [R=301,L]
 RewriteRule ^latest/(.*) /manual/7.3/$1 [R=301,L]
 RewriteRule ^guides/(.*) /manual/7.3/guides/$1 [R=301,L]
 RewriteRule ^api-references/javadoc/(.*) /javadoc/camunda-bpm-platform/7.3/$1 [R=301,L]
