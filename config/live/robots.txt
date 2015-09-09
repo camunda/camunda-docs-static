@@ -1,5 +1,6 @@
 User-agent: *
-Disallow: /7.0/
-Disallow: /7.1/
-Disallow: /7.2/
-Disallow: /7.3/
+Disallow: /manual/7.0/
+Disallow: /manual/7.1/
+Disallow: /manual/7.2/
+Disallow: /manual/7.3/
+Disallow: /manual/develop/
