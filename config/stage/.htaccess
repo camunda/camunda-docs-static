@@ -1,3 +1,6 @@
+# Disable auto index
+Options -Indexes
+
 RewriteEngine ON
 
 RewriteRule ^$ /manual/
@@ -14,7 +17,7 @@ RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1
 RewriteRule ^manual/$ /manual/develop/ [R=301,L]
 
 # Redirect /manual/X to /manual/develop if folder X does not exits
-RewriteCond %{REQUEST_URI} ^/manual/([^/]+)/
+RewriteCond %{REQUEST_URI} ^/manual/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
 RewriteRule ^manual/(.*) /manual/develop/$1 [R=301,L]
 
