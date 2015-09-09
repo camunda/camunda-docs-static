@@ -2,11 +2,15 @@ RewriteEngine ON
 
 RewriteRule ^$ /manual/
 
-RewriteRule ^manual/$ /manual/develop [R=301,L]
+# Javadoc legacy? (found in old docs htaccess)
+RewriteRule ^latest/api-references/java/ /manual/7.3/reference/javadoc/
 
+# Javadoc
 RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.4-SNAPSHOT [R=301,L]
 RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.4 [R=301,L]
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
+
+RewriteRule ^manual/(.*) /manual/develop/$1 [R=301,L]
 
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
