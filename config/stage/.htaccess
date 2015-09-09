@@ -1,6 +1,3 @@
-# Disable auto index
-Options -Indexes
-
 RewriteEngine ON
 
 RewriteRule ^$ /manual/
