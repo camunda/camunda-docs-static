@@ -22,5 +22,5 @@ params:
     id: "enterprise"
   github:
     repositoryName: "camunda/camunda-docs-static"
-    branch: "master"
+    branch: "master/enterprise"
 ...
