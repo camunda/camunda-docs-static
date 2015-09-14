@@ -10,22 +10,22 @@ menu:
 
 downloads:
   servers:
-    - path: "tomcat" 
+    - path: "tomcat"
       name: "Apache Tomcat"
       weight: 1
-    - path: "jboss" 
+    - path: "jboss"
       name: "JBoss AS 7"
       weight: 2
-    - path: "glassfish" 
+    - path: "glassfish"
       name: "GlassFish"
       weight: 3
     - path: "ibm-was"
       name: "IBM WebSphere"
       weight: 4
-    - path: "oracle-wls" 
+    - path: "oracle-wls"
       name: "Oracle WebLogic"
       weight: 5
-    - path: "wildfly" 
+    - path: "wildfly"
       name: "WildFly"
       weight: 6
 
@@ -375,8 +375,6 @@ downloads:
 ---
 
 
-
-
 # What Should I Download?
 
 Not sure which distribution to download? Find more information about the [Full Distribution]({{< relref "user-guide/introduction.md#download-full-distribution" >}}) and the [Standalone Web Application]({{< relref "user-guide/introduction.md#download-standalone-web-application-distribution" >}}) in our user guide.
@@ -409,16 +407,63 @@ The following drawing illustrates the different release types for the community 
 Find more information about our versioning semantic [here](http://semver.org/).
 
 
+# Camunda Cycle
+
+With Camunda BPM 7.2.0 we have migrated Camunda Cycle into a standalone project. We did this to reduce the tight coupling between Camunda Cycle and the Camunda BPM platform. This eases our development efforts for Cycle and allows others to increase participation.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="/manual/latest/installation/cycle">Cycle for Tomcat</a></td>
+      <td>3.1.0</td>
+      <td>18.12.2014</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+[Previous Releases](http://camunda.org/enterprise-release/camunda-cycle/tomcat/)
+
+
 # Enterprise Extensions
 
 ## XSLT Extension
 
+Please note that this feature can be used from camunda BPM 7.2.x onwards.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="/manual/latest/user-guide/process-engine/templating/#use-xslt-as-template-engine">XSLT Extension</a></td>
+      <td>1.0.2</td>
+      <td>22.05.2015</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/1.0.2/camunda-bpm-ee-xslt-extension-1.0.2.zip">download zip file</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 [Previous Releases](http://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/)
-
-
-# Camunda Cycle
-
-[Previous Releases](http://camunda.org/enterprise-release/camunda-cycle/tomcat/)
 
 
 # Camunda Web Modeler
@@ -430,5 +475,28 @@ The Camunda Web Modeler is stripped down to fulfill all necessary tasks in proce
 {{< note title="Licensing Information" class="info" >}}
   Please note that the Camunda Web Modeler is an optional part of the Camunda BPM platform. It is licensed differently and separately. It is only available for enterprise subscription customers.
 {{< /note >}}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+      <th class="col-md-2">Installation Guide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td>8.6.0</td>
+      <td>14.04.2015</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/8.6.0/camunda-web-modeler-8.6.0.0.zip">download zip file</a>
+      </td>
+      <td>
+        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/8.6.0/administratorenhandbuch-camunda-web-modeler-version-86.pdf" target="_blank">download pdf (German)</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 [Previous Releases](http://camunda.org/enterprise-release/camunda-web-modeler/)
