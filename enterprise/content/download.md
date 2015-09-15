@@ -82,7 +82,7 @@ downloads:
     releases:
     - number: "7.2.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14190"
-      date: "2015.09.15"
+      date: "2015.09.14"
 
     - number: "7.2.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13790"
@@ -394,6 +394,14 @@ This page contains the latest versions of all supported branches. In addition we
 
 {{< ee-download >}}
 
+
+## Additional Information
+
+* [Maven Coordinates](/get-started/apache-maven)
+* [Update and Migration Guide](/manual/latest/update)
+* [Getting Started](/get-started)
+* [Examples](/manual/latest/examples)
+* [Supported Environments](/manual/latest/introduction/supported-environments)
 
 
 ## Community vs. Enterprise Releases
