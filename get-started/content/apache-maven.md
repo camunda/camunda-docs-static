@@ -13,7 +13,7 @@ menu:
 
 This page lists the most commonly used Apache Maven Coordinates for Camunda.
 
-Most Camunda artifacts are pushed to <a href="http://search.maven.org/#browse%7C-1675593179">maven central</a>.
+Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#browse%7C-1675593179).
 
 
 # Camunda Bom (Bill of Materials)
@@ -120,6 +120,6 @@ Most Camunda artifacts are pushed to <a href="http://search.maven.org/#browse%7C
 
 # Other Camunda Modules:
 
-* [Camunda Spin](/manual/master/reference/spin)
-* [Camunda Connect](/manual/master/reference/connect/#maven-coordinates)
-* [Templating Engines](/manual/master/user-guide/process-engine/templating/#install-a-template-engine-for-an-embedded-process-engine)
+* [Camunda Spin](/manual/latest/reference/spin)
+* [Camunda Connect](/manual/latest/reference/connect/#maven-coordinates)
+* [Templating Engines](/manual/latest/user-guide/process-engine/templating/#install-a-template-engine-for-an-embedded-process-engine)

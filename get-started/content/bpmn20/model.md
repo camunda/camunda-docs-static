@@ -9,7 +9,7 @@ menu:
     parent: "get-started-pa"
     identifier: "get-started-pa-model"
     pre: "Learn the basics of handling the Camunda Modeler for Eclipse and learn how to model and configure a fully executable process."
-    
+
 ---
 
 In this section you learn how to create your first BPMN 2.0 process with the Camunda Modeler.
@@ -23,6 +23,7 @@ Go to the folder *BPMN* and select *BPMN 2.0 Diagram*. Click Next.
 {{< img src="../img/eclipse-new-bpmn-diagram.png" >}}
 
 On the second page, you must specify the file name of the process. Insert `loan-approval.bpmn`. Click Finish.
+
 
 # Start with a Simple Process
 

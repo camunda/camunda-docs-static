@@ -9,7 +9,7 @@ menu:
     parent: "get-started-pa"
     identifier: "get-started-pa-setup"
     pre: "Setup an Apache Maven-based process application inside eclipse and deploy it."
-    
+
 ---
 
 Now you are ready to set up your first process application project in eclipse.
@@ -24,7 +24,7 @@ In eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*.
 On the first page of the *New Maven Project Wizard* select *Create a simple project (skip archetype selection)*. Click Next.
 
 On the second page (see screenshot), configure the Maven coordinates for the project. Since we are setting up a WAR Project, make sure to select `Packaging: war`.
- 
+
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* View.
 
 # Add Camunda Maven Dependencies
@@ -128,7 +128,7 @@ This file needs to be added to the `src/main/resources/META-INF` folder of the M
 ```
 
 {{< note title="Empty META-INF/processes.xml" class="info" >}}
-You can leave the META-INF/processes.xml file empty. In that case, default values are used. See the <a href="/manual/master/user-guide/process-applications/the-processes-xml-deployment-descriptor/#empty-processes-xml">Empty Processes.xml</a> section of the <a href="/manual/master/user-guide">User Guide</a> for more information
+You can leave the `META-INF/processes.xml` file empty. In that case, default values are used. See the [Empty Processes.xml](/manual/latest/user-guide/process-applications/the-processes-xml-deployment-descriptor/#empty-processes-xml) section of the [User Guide](/manual/latest/user-guide) for more information
 {{< /note >}}
 
 At this point you have successfully set up the process application and you can start modeling the first process.

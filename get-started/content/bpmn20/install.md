@@ -9,7 +9,7 @@ menu:
     parent: "get-started-pa"
     identifier: "get-started-pa-install"
     pre: "Install Camunda BPM Platform and Camunda Modeler on your machine."
-    
+
 ---
 
 First you need to setup your development environment and install Camunda BPM Platform and Camunda Modeler.
@@ -41,4 +41,4 @@ If you have trouble setting up the Camunda BPM platform, you can ask for assista
 
 # Camunda Modeler
 
-Follow the instructions in the [Camunda Modeler](/manual/master/installation/eclipse-plugin) section.
+Follow the instructions in the [Camunda Modeler](/manual/latest/installation/eclipse-plugin) section.
