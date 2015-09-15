@@ -46,6 +46,7 @@ downloads:
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14191"
       date: "2015.07.31"
 
+
   - branch: "7.3"
     releases:
     - number: "7.3.2"
@@ -79,6 +80,10 @@ downloads:
 
   - branch: "7.2"
     releases:
+    - number: "7.2.7"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14190"
+      date: "2015.09.15"
+
     - number: "7.2.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13790"
       date: "2015.08.11"
@@ -377,7 +382,7 @@ downloads:
 
 # What Should I Download?
 
-Not sure which distribution to download? Find more information about the [Full Distribution]({{< relref "user-guide/introduction.md#download-full-distribution" >}}) and the [Standalone Web Application]({{< relref "user-guide/introduction.md#download-standalone-web-application-distribution" >}}) in our user guide.
+Not sure which distribution to download? Find more information about the [Full Distribution](/manual/latest/introduction/downloading-camunda/#full-distribution) and the [Standalone Web Application](/manual/latest/introduction/downloading-camunda/#standalone-web-application-distribution) in our user guide.
 
 Furthermore we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle" >}}), the [Camunda Web Modeler]({{< relref "#camunda-web-modeler" >}}) and [Camunda Enterprise Extensions]({{< relref "#enterprise-extensions" >}}) on this page.
 
