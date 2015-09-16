@@ -26,7 +26,7 @@ These are the minimum requirements for Forward Engineering. If you want to use t
 * Import and Storage of BPMN 2.0 execution attributes
 * Import and Storage of additional execution attributes (according to the <a href="http://www.omg.org/spec/BPMN/2.0/">BPMN 2.0 Specification</a>, you are allowed to extend the BPMN 2.0 XML with additional attributes, which Camunda BPM does to simplify process application development)
 
-These are the minimum requirements for Roundtrip Engineering. If your modeler complies with them, you can use it on a simple file base, meaning that you would just use the File or Subversion Connector in Camunda Cycle to add the BPMN 2.0 Files exported from your modeler to the roundtrip. This is of course less convenient than what we have just described using Signavio. Unfortunately, none of the other BPMN 2.0 tools we know currently offer an API that Cycle could connect with (if you are a Tool Vendor, please see <a href="{{< relref "roundtrip-other-tools.md#information-for-tool-vendors" >}}">this section</a>).
+These are the minimum requirements for Roundtrip Engineering. If your modeler complies with them, you can use it on a simple file base, meaning that you would just use the File or Subversion Connector in Camunda Cycle to add the BPMN 2.0 Files exported from your modeler to the roundtrip. This is of course less convenient than what we have just described using Signavio. Unfortunately, none of the other BPMN 2.0 tools we know currently offer an API that Cycle could connect with (if you are a Tool Vendor, please see [this section]({{< relref "cycle/additional-information.md#information-for-tool-vendors" >}})).
 
 Here is an overview of BPMN 2.0 modelers we know, and the requirements they comply with (information given without any warranty):
 
@@ -150,4 +150,4 @@ Here is an overview of BPMN 2.0 modelers we know, and the requirements they comp
   </tr>
 </table>
 
-If this overview is in any way incorrect or outdated, please <a href="mailto:community@camunda.org">let us know</a>!
+If this overview is in any way incorrect or outdated, please [send us a mail](mailto:community@camunda.org)!

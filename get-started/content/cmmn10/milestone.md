@@ -9,7 +9,7 @@ menu:
     parent: "get-started-cmmn"
     identifier: "get-started-cmmn-milestone"
     pre: "Use a sentry to decide when a certain milestone is reached."
-    
+
 ---
 
 The next step consists in adding a *milestone*. In CMMN, milestones express that a certain intermediate goal in the case has been reached.
@@ -169,11 +169,11 @@ Now you can open the Tasklist and access the `demo` user's tasks. First click on
 
 {{< img src="../img/tasklist-check-application-variable.png" >}}
 
-Click <button class="btn btn-xs btn-primary" type="submit">Complete</button>.
+Click {{< button name="primary" text="Complete" >}}.
 
 {{< img src="../img/tasklist-provide-rating-variable.png" >}}
 
-Next, complete the task `Provide Customer Rating`. Again, click on `Add a variable` and name the variable `rating`. Set the type to `Integer` and the value to `4`. Click <button class="btn btn-xs btn-primary" type="submit">Complete</button>.
+Next, complete the task `Provide Customer Rating`. Again, click on `Add a variable` and name the variable `rating`. Set the type to `Integer` and the value to `4`. Click {{< button name="primary" text="Complete" >}}.
 
 Now open the Tomcat console. You have completed the tasks and set the variables accordingly so that the milestone has occurred. On the console, you should see the following log entries:
 
@@ -184,7 +184,7 @@ INFORMATION: Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transit
 
 Our lifecycle listener has been notified, showing that the milestone has actually occurred.
 
-To learn more about milestones, consider checking the [Milestone section](/manual/master/reference/cmmn10/milestone) in our CMMN implementation guide.
+To learn more about milestones, consider checking the [Milestone section](/manual/latest/reference/cmmn10/milestone) in our CMMN implementation guide.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-5" >}}
 

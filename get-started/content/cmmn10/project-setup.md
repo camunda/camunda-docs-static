@@ -9,13 +9,13 @@ menu:
     parent: "get-started-cmmn"
     identifier: "get-started-cmmn-setup"
     pre: "Setup an Apache Maven-based process application inside eclipse and deploy it."
-    
+
 ---
 
-Now you are ready to set up your first process application project in eclipse. 
+Now you are ready to set up your first process application project in eclipse.
 
 {{< note title="Terminology - Process vs. Case" class="info" >}}
-CMMN is a modeling language for *cases*, whereas BPMN is a language for <i>processes</i>. This tutorial is about cases. However, due to Camunda's BPMN-focused heritage, the Java project contains classes and files with names like `ProcessApplication` and `processes.xml`. These are in fact generally applicable and can be used with both processes as well as cases.
+CMMN is a modeling language for *cases*, whereas BPMN is a language for *processes*. This tutorial is about cases. However, due to Camunda's BPMN-focused heritage, the Java project contains classes and files with names like `ProcessApplication` and `processes.xml`. These are in fact generally applicable and can be used with both processes as well as cases.
 {{< /note >}}
 
 
@@ -24,18 +24,18 @@ CMMN is a modeling language for *cases*, whereas BPMN is a language for <i>proce
 In eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
 
 {{< img src="../img/eclipse-new-project.png" >}}
-      
+
 On the first page of the *New Maven Project Wizard* select "*Create a simple project (skip archetype selection)*". Click Next.
-      
+
 On the second page (see screenshot), configure the Maven coordinates for the project.
-      
+
 Since we are setting up a WAR Project, make sure to select `Packaging: war`.
-      
+
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
 
-      
+
 # Camunda Maven Dependencies
-  
+
 The next step consists of setting up the Maven dependencies for your new process application. Add the following dependencies to the `pom.xml` file of your project:
 
 ```xml
@@ -89,16 +89,16 @@ The next step consists of setting up the Maven dependencies for your new process
 
 </project>
 ```
-      
+
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`
-      
+
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-1" >}}
 
 
 # The Process Application Class
-  
+
 Next, you need to create a package, e.g., `org.camunda.bpm.getstarted.loanapproval`, and add a Process Application class to it. The Process Application class constitutes the interface between your application and the process engine.
-      
+
 ```java
 package org.camunda.bpm.getstarted.cmmn.loanapproval;
 
@@ -113,11 +113,11 @@ public class LoanApprovalApplication extends ServletProcessApplication {
 
 
 # The Deployment Descriptor
-  
+
 The last step to set up the process application is to add the `META-INF/processes.xml` deployment descriptor file. This file allows us to provide a declarative configuration of the deployment(s) this process application makes to the process engine.
-      
+
 This file needs to be added to the `src/main/resources/META-INF` folder of the Maven project.
-      
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 

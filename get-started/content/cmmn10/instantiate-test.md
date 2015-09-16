@@ -9,14 +9,14 @@ menu:
     parent: "get-started-cmmn"
     identifier: "get-started-cmmn-instantiate-and-test"
     pre: "Use Java Code to instantiate the case definition, then, deploy and test the application."
-    
+
 ---
 
 In this step, we use Java Code to instantiate the case definition, then, deploy and test the application.
 
 
 # Java Code
-    
+
 In order to directly create a case instance after deployment, add the following method to your `LoanApprovalApplication` class:
 
 ```java
@@ -46,22 +46,22 @@ public class LoanApprovalApplication extends ServletProcessApplication {
 
 
 # Build the Web Application with Maven
-    
+
 A Process Application is an ordinary Java Web Application and is deployed in exactly the same way.
 
 Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-cmmn-0.1.0-SNAPSHOT.war` In the `target/` folder of your Maven project.
 
-{{< note title="Hint" class="info" >}}    
+{{< note title="Hint" class="info" >}}
 If the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
 {{< /note >}}
-    
+
 
 # Deploy to Apache Tomcat
-    
+
 In order to deploy the process application, copy-paste the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
-    
+
 Check the log file of the Apache Tomcat server. If you see the following log message, the deployment was successful:
-    
+
 <pre class="console">
 org.camunda.bpm.application.impl.ServletProcessApplicationDeployer onStartup
 INFORMATION: Detected @ProcessApplication class org.camunda.bpm.getstarted.cmmn.loanapproval.LoanApprovalApplication
@@ -86,7 +86,7 @@ INFORMATION: Process Application Loan Approval CMMN successfully deployed.
 
 # Verify the Deployment with Camunda Tasklist
 
-Now use Camunda Tasklist to check if the case was instantiated. Go to Camunda Tasklist (<a href="http://localhost:8080/camunda/app/tasklist" target="_blank">http://localhost:8080/camunda/app/tasklist</a>).
+Now use Camunda Tasklist to check if the case was instantiated. Go to Camunda Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)).
 
 {{< img src="../img/tasklist-overview.png" >}}
 
@@ -94,8 +94,8 @@ Log in with demo / demo. After you have logged in, click on the filter *My Tasks
 
 {{< img src="../img/tasklist-check-application.png" >}}
 
-The Tasklist displays a generic form that can be used whenever you have not added a dedicated form for a Human Task. You can use it to add variables to the case. For now, we leave it empty. Just click <button class="btn btn-xs btn-primary" type="submit">Complete</button>.
+The Tasklist displays a generic form that can be used whenever you have not added a dedicated form for a Human Task. You can use it to add variables to the case. For now, we leave it empty. Just click {{< button name="primary" text="Complete" >}}.
 
 Do the same with the task *Provide Customer Rating*. Both tasks have now completed and there is no more work to be done in this case instance.
-    
+
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-4" >}}

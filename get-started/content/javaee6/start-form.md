@@ -40,7 +40,7 @@ Go back to eclipse and add a file named `placeorder.xhtml` to the `src/main/weba
     <h1>Select your pizza</h1>
     <h:form id="submitForm">
       <h:panelGrid columns="2">
-        
+
           <label for="pizza">Pizza</label>
           <h:selectOneMenu id="pizza" value="#{processVariables['pizza']}">
               <f:selectItem itemValue="Margarita" itemLabel="Margarita"/>
@@ -48,17 +48,17 @@ Go back to eclipse and add a file named `placeorder.xhtml` to the `src/main/weba
               <f:selectItem itemValue="Tonno" itemLabel="Tonno"/>
               <f:selectItem itemValue="Prosciutto" itemLabel="Prosciutto"/>
           </h:selectOneMenu>
-        
-        
+
+
           <label for="customer">Customer</label>
           <!-- create process variables using the processVariables map. -->
           <h:inputText id="customer" value="#{processVariables['customer']}" required="true" />
-        
-        
+
+
           <label for="address">Address</label>
           <!-- create process variables using the processVariables map. -->
           <h:inputText id="address" value="#{processVariables['address']}" required="true" />
-        
+
       </h:panelGrid>
 
       <!-- The button starts a new process instance. This ends the conversation and redirects us to the tasklist.
@@ -79,6 +79,7 @@ The JSF view creates a simple input form for a customer name, address and a pizz
 The user input inside the form fields are saved as a map of process variables inside the conversation.
 
 When the form is submitted, the `camundaTaskForm.completeProcessInstanceForm()` method starts a new process instance by the process definition key which was determined by the `startProcessInstanceByKeyForm()` method. Additionally, the process variables set by the user are passed to the process instance.
+
 
 # Configure the Start Form in the Process
 

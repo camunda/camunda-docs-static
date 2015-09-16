@@ -26,7 +26,7 @@ We will now add a process model from our BPMN modeler to the roundtrip and creat
 
 {{< img src="../img/signavio.png" >}}
 
-The guys from Signavio have created a web-based BPMN modeler. If you don't know it yet, you should <a href="http://www.signavio.com/camunda">take a look at it</a>. It's extremely intuitive to use (so it's perfectly suitable for Business users) and offers several helpful collaboration features, including a sophisticated API, which is why Cycle currently works best with Signavio.
+The guys from Signavio have created a web-based BPMN modeler. If you don't know it yet, you should [take a look at it](http://www.signavio.com/camunda). It's extremely intuitive to use (so it's perfectly suitable for Business users) and offers several helpful collaboration features, including a sophisticated API, which is why Cycle currently works best with Signavio.
 
 ## Forward: From Signavio to Camunda Modeler
 
@@ -62,7 +62,7 @@ Hit "Create" and choose the location you want the BPMN 2.0 XML File to be stored
 
 Cycle now shows you that your roundtrip consists of the BPMN diagram stored in Signavio (left side) and the BPMN 2.0 File stored in your file repository (right side). You can also see that the two process models are currently in sync, and the date and time since the last sync has been made.
 
-You can now either check out the BPMN 2.0 - XML from your Subversion or open it directly in your local drive. In both cases, you can now edit it inside your Eclipse IDE by using the <a href="http://camunda.org/bpmn/tool/">Camunda Modeler</a>.
+You can now either check out the BPMN 2.0 - XML from your Subversion or open it directly in your local drive. In both cases, you can now edit it inside your Eclipse IDE by using the [Camunda Modeler](http://camunda.org/bpmn/tool/).
 
 ## Reverse: From Camunda Modeler to Signavio
 
@@ -70,7 +70,7 @@ You can now either check out the BPMN 2.0 - XML from your Subversion or open it 
 
 {{< img src="../img/cycle-edited.png" >}}
 
-Assuming that you have edited the BPMN 2.0 XML with the [Camunda Modeler](/manual/master/installation/eclipse-plugin/), e.g. because you enriched it with execution attributes, added objects or removed some, you should bring those changes back into Signavio: First, your Business Analyst probably wants to know about the changes and approve them, and second, if you want to change the BPMN diagram in Signavio, you should synchronize it with the file you have changed in the Camunda Modeler first, so that the next forward engineering sync from Signavio to the Camunda Modeler does not overwrite all the changes you have made.
+Assuming that you have edited the BPMN 2.0 XML with the [Camunda Modeler](/manual/latest/installation/eclipse-plugin/), e.g. because you enriched it with execution attributes, added objects or removed some, you should bring those changes back into Signavio: First, your Business Analyst probably wants to know about the changes and approve them, and second, if you want to change the BPMN diagram in Signavio, you should synchronize it with the file you have changed in the Camunda Modeler first, so that the next forward engineering sync from Signavio to the Camunda Modeler does not overwrite all the changes you have made.
 
 When you have Edited the BPMN 2.0 XML with the Camunda Modeler, Cycle will you tell you that the two process models are not in sync any more.
 

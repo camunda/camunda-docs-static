@@ -86,11 +86,13 @@ When the user approves or disapproves the order, it is directly set on the cache
 
 On form submit, the `approveOrderController.submitForm()` method calls the EJB `mergeOrderAndCompleteTask` method with the cached order entity. The EJB will merge the updated order entity if necessary and completes the task form.
 
+
 # Configure the Task Form in the Process
 
 {{< img src="../img/pizza-order-process-task-form.png" >}}
 
 Open the process with the modeler plugin. Click on the approve order user task. In the properties view, set the `Form Key` property to `app:approveorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the `app` location.
+
 
 # Configure the Conditional Sequence Flows in the Process
 
