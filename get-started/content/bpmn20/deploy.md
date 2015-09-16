@@ -66,7 +66,7 @@ Next, go to Camunda Tasklist ([http://localhost:8080/camunda/app/tasklist](http:
 The generic form can be used whenever you have not added a dedicated form for a User Task or a Start Event.
 Click on the *Add a variable* button to get a new row. Fill in the form as shown in the screenshot. When you are done, click *Start*.
 
-If you now go back to [Camunda Cockpit](http://localhost:8080/camunda/app/cockpi), you see the newly created process instance that is waiting in the User Task.
+If you now go back to [Camunda Cockpit](http://localhost:8080/camunda/app/cockpit), you see the newly created process instance that is waiting in the User Task.
 
 # Configure Process Start Authorizations
 
