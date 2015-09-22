@@ -500,13 +500,13 @@ The Camunda Web Modeler is stripped down to fulfill all necessary tasks in proce
   </thead>
   <tbody>
     <tr class="well">
-      <td>8.6.0</td>
-      <td>14.04.2015</td>
+      <td>9.2.1</td>
+      <td>12.07.2015</td>
       <td>
-        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/8.6.0/camunda-web-modeler-8.6.0.0.zip">download zip file</a>
+        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/camunda-web-modeler-9.2.1.zip">download zip file</a>
       </td>
       <td>
-        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/8.6.0/administratorenhandbuch-camunda-web-modeler-version-86.pdf" target="_blank">download pdf (German)</a>
+        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/administratorenhandbuch-camunda-web-modeler-version-92.pdf" target="_blank">download pdf (German)</a>
       </td>
     </tr>
   </tbody>
