@@ -1,5 +1,10 @@
 RewriteEngine ON
 
+# Redirect to HTTPS if not already
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+
+# Default site is the manual
 RewriteRule ^$ /manual/
 
 # Javadoc legacy? (found in old docs htaccess)
