@@ -46,8 +46,6 @@ downloads:
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14194"
       date: "2015.09.30"
 
-  - branch: "7.4"
-    releases:
     - number: "7.4.0-alpha1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14191"
       date: "2015.07.31"
@@ -489,7 +487,7 @@ Please note that this feature can be used from camunda BPM 7.2.x onwards.
 
 The Camunda Modeler is an open source BPMN 2.0 modeling tool which can be integrated in your Eclipse IDE as plugin or can be used as standalone modeling tool.
 
-* [Camunda Modeler Eclipse Plugin](manual/latest/installation/eclipse-plugin/)
+* [Camunda Modeler Eclipse Plugin](/manual/latest/installation/eclipse-plugin/)
 * [Camunda Modeler Standalone Version](https://camunda.org/bpmn/tool/)
 
 
