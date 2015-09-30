@@ -479,6 +479,14 @@ Please note that this feature can be used from camunda BPM 7.2.x onwards.
 [Previous Releases](http://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/)
 
 
+# Camunda Modeler
+
+The Camunda Modeler is an open source BPMN 2.0 modeling tool which can be integrated in your Eclipse IDE as plugin or can be used as standalone modeling tool.
+
+* [Camunda Modeler Eclipse Plugin](https://camunda.org/download/modeler/)
+* [Camunda Modeler Standalone Version](https://camunda.org/bpmn/tool/)
+
+
 # Camunda Web Modeler
 
 The Camunda Web Modeler is an OEM version of the Signavio Process Editor. It allows you to edit BPMN 2.0 process models with your web browser. In comparison to the Camunda Modeler it is targeted at less technical people, e.g. business analysts or requirements engineers.
