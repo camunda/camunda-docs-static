@@ -43,11 +43,11 @@ downloads:
   - branch: "7.4"
     releases:
     - number: "7.4.0-alpha2"
-      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14194"
+      note: "http://blog.camunda.org/2015/09/camunda-740-alpha2-released.html"
       date: "2015.09.30"
 
     - number: "7.4.0-alpha1"
-      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14191"
+      note: "http://blog.camunda.org/2015/07/camunda-bpm-740-alpha-1-released.html"
       date: "2015.07.31"
 
 
