@@ -443,14 +443,14 @@ With Camunda BPM 7.2.0 we have migrated Camunda Cycle into a standalone project.
       <td>3.1.0</td>
       <td>18.12.2014</td>
       <td>
-        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-[Previous Releases](http://camunda.org/enterprise-release/camunda-cycle/tomcat/)
+[Previous Releases](https://camunda.org/enterprise-release/camunda-cycle/tomcat/)
 
 
 # Enterprise Extensions
@@ -474,13 +474,13 @@ Please note that this feature can be used from camunda BPM 7.2.x onwards.
       <td>1.0.2</td>
       <td>22.05.2015</td>
       <td>
-        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/1.0.2/camunda-bpm-ee-xslt-extension-1.0.2.zip">download zip file</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/1.0.2/camunda-bpm-ee-xslt-extension-1.0.2.zip">download zip file</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-[Previous Releases](http://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/)
+[Previous Releases](https://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/)
 
 
 # Camunda Modeler
@@ -515,13 +515,13 @@ The Camunda Web Modeler is stripped down to fulfill all necessary tasks in proce
       <td>9.2.1</td>
       <td>12.07.2015</td>
       <td>
-        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/camunda-web-modeler-9.2.1.zip">download zip file</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/camunda-web-modeler-9.2.1.zip">download zip file</a>
       </td>
       <td>
-        <a class="btn btn-sm btn-default" href="http://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/administratorenhandbuch-camunda-web-modeler-version-92.pdf" target="_blank">download pdf (German)</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/administratorenhandbuch-camunda-web-modeler-version-92.pdf" target="_blank">download pdf (German)</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-[Previous Releases](http://camunda.org/enterprise-release/camunda-web-modeler/)
+[Previous Releases](https://camunda.org/enterprise-release/camunda-web-modeler/)

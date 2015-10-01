@@ -15,7 +15,7 @@ First you need to setup your development environment and install Camunda Cycle.
 
 # Setup
 
-You can download Cycle from the [Download Area](http://camunda.org/download/cycle/). After starting the server, a webpage where you have to create an initial user should open automatically. You can also open http://localhost:8180/cycle and create a new user.
+You can download Cycle from the [Download Area](https://camunda.org/download/cycle/). After starting the server, a webpage where you have to create an initial user should open automatically. You can also open http://localhost:8180/cycle and create a new user.
 Since your process models will be stored in certain repositories, you should set up the respective connectors. In the upper right menu, navigate to "Connectors". Hit the "New"-Button, and follow the steps below depending on what kind of connector you want to set up.
 
 ## File Connector
