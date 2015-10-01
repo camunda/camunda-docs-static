@@ -42,8 +42,12 @@ downloads:
   branches:
   - branch: "7.4"
     releases:
+    - number: "7.4.0-alpha2"
+      note: "http://blog.camunda.org/2015/10/camunda-740-alpha2-released.html"
+      date: "2015.09.30"
+
     - number: "7.4.0-alpha1"
-      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14191"
+      note: "http://blog.camunda.org/2015/07/camunda-bpm-740-alpha-1-released.html"
       date: "2015.07.31"
 
 
@@ -477,6 +481,14 @@ Please note that this feature can be used from camunda BPM 7.2.x onwards.
 </table>
 
 [Previous Releases](http://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/)
+
+
+# Camunda Modeler
+
+The Camunda Modeler is an open source BPMN 2.0 modeling tool which can be integrated in your Eclipse IDE as plugin or can be used as standalone modeling tool.
+
+* [Camunda Modeler Eclipse Plugin](/manual/latest/installation/eclipse-plugin/)
+* [Camunda Modeler Standalone Version](https://camunda.org/bpmn/tool/)
 
 
 # Camunda Web Modeler
