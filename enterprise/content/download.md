@@ -391,7 +391,7 @@ Not sure which distribution to download? Find more information about the [Full D
 Furthermore we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle" >}}), the [Camunda Web Modeler]({{< relref "#camunda-web-modeler" >}}) and [Camunda Enterprise Extensions]({{< relref "#enterprise-extensions" >}}) on this page.
 
 
-# Full Distributions and Standalone Web Applications
+# Full Distributions and Standalone Web Applications of the Enterprise Edition
 
 This page contains the latest versions of all supported branches. In addition we provide alpha releases of the current development branch. Please note that a alpha release is not fully tested and just a snapshot of the current development state.
 
