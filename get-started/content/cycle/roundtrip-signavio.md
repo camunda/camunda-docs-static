@@ -62,7 +62,7 @@ Hit "Create" and choose the location you want the BPMN 2.0 XML File to be stored
 
 Cycle now shows you that your roundtrip consists of the BPMN diagram stored in Signavio (left side) and the BPMN 2.0 File stored in your file repository (right side). You can also see that the two process models are currently in sync, and the date and time since the last sync has been made.
 
-You can now either check out the BPMN 2.0 - XML from your Subversion or open it directly in your local drive. In both cases, you can now edit it inside your Eclipse IDE by using the [Camunda Modeler](http://camunda.org/bpmn/tool/).
+You can now either check out the BPMN 2.0 - XML from your Subversion or open it directly in your local drive. In both cases, you can now edit it inside your Eclipse IDE by using the [Camunda Modeler](https://camunda.org/bpmn/tool/).
 
 ## Reverse: From Camunda Modeler to Signavio
 
