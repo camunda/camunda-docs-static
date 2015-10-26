@@ -2,6 +2,10 @@
 
 Contains all un-versioned sections of the documentation
 
+## Building
+
+See [Hugo installation](https://github.com/camunda/camunda-docs-manual#installing-hugo) for installing Hugo to compile the documentation.
+
 ## Adding a Banner
 
 Edit the file `config/banners.html`:
