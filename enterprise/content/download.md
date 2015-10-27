@@ -36,7 +36,7 @@ downloads:
 
   selected:
     branch: "7.3"
-    version: "7.3.2"
+    version: "7.3.3"
     server: "tomcat"
 
   branches:
@@ -53,6 +53,10 @@ downloads:
 
   - branch: "7.3"
     releases:
+    - number: "7.3.3"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13990"
+      date: "2015.10.26"
+
     - number: "7.3.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13892"
       date: "2015.07.01"
