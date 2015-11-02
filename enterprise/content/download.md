@@ -523,6 +523,7 @@ The Camunda Web Modeler is stripped down to fulfill all necessary tasks in proce
       </td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/administratorenhandbuch-camunda-web-modeler-version-92.pdf" target="_blank">download pdf (German)</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/Administrators-manual-camunda-web-modeler-version-92.pdf" target="_blank">download pdf (English)</a>
       </td>
     </tr>
   </tbody>
