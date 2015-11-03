@@ -522,8 +522,8 @@ The Camunda Web Modeler is stripped down to fulfill all necessary tasks in proce
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/camunda-web-modeler-9.2.1.zip">download zip file</a>
       </td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/administratorenhandbuch-camunda-web-modeler-version-92.pdf" target="_blank">download pdf (German)</a>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/Administrators-manual-camunda-web-modeler-version-92.pdf" target="_blank">download pdf (English)</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/administratorenhandbuch-camunda-web-modeler-version-92.pdf" target="_blank">German</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/Administrators-manual-camunda-web-modeler-version-92.pdf" target="_blank">English</a>
       </td>
     </tr>
   </tbody>
