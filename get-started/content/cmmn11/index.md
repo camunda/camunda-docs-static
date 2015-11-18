@@ -1,14 +1,14 @@
 ---
 
-title: 'Get started with Camunda and CMMN 1.0'
+title: 'Get started with Camunda and CMMN 1.1'
 layout: 'section-list'
 weight: 20
 
 menu:
   main:
-    name: "CMMN 1.0"
+    name: "CMMN 1.1"
     identifier: "get-started-cmmn"
-    pre: "Learn how to create a CMMN 1.0 Case Definition featuring Human Tasks, Sentries and Milestones. Package it as a web application and deploy it on Apache Tomcat Server."
+    pre: "Learn how to create a CMMN 1.1 Case Definition featuring Human Tasks, Sentries and Milestones. Package it as a web application and deploy it on Apache Tomcat Server."
 
 ---
 

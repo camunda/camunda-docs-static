@@ -24,13 +24,22 @@ Go back to eclipse and the CMMN model file. Insert the following XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61" targetNamespace="http://cmmn.org" xmlns:cmmn="http://www.omg.org/spec/CMMN/20131201/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
+                  targetNamespace="http://cmmn.org"
+                  xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+
   <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false" name="Loan Application" id="CasePlanModel">
+    <cmmn:casePlanModel autoComplete="false"
+                        name="Loan Application"
+                        id="CasePlanModel">
       <!-- Plan Items -->
       <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
       <cmmn:planItem definitionRef="HumanTask_2" id="PI_HumanTask_2"/>
-      <cmmn:planItem definitionRef="Milestone_1" entryCriteriaRefs="Sentry_1" id="PI_Milestone_1"/>
+      <cmmn:planItem definitionRef="Milestone_1" id="PI_Milestone_1">
+        <cmmn:entryCriterion sentryRef="Sentry_1" />
+      </cmmn:planItem>
 
       <!-- Sentries -->
       <cmmn:sentry id="Sentry_1">
@@ -42,33 +51,36 @@ Go back to eclipse and the CMMN model file. Insert the following XML:
         </cmmn:planItemOnPart>
         <cmmn:ifPart>
           <cmmn:condition>
-            <cmmn:body><![CDATA[${applicationSufficient && rating > 3}]]></cmmn:body>
+            <![CDATA[${applicationSufficient && rating > 3}]]>
           </cmmn:condition>
         </cmmn:ifPart>
       </cmmn:sentry>
 
       <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true" name="Check Application" id="HumanTask_1" camunda:assignee="demo">
+      <cmmn:humanTask isBlocking="true"
+                      name="Check Application"
+                      id="HumanTask_1"
+                      camunda:assignee="demo">
         <cmmn:defaultControl>
           <cmmn:manualActivationRule>
-            <cmmn:condition>
-              <cmmn:body>${false}</cmmn:body>
-            </cmmn:condition>
+            <cmmn:condition>${false}</cmmn:condition>
           </cmmn:manualActivationRule>
         </cmmn:defaultControl>
       </cmmn:humanTask>
-      <cmmn:humanTask isBlocking="true" name="Provide Customer Rating" id="HumanTask_2" camunda:assignee="demo">
+      <cmmn:humanTask isBlocking="true"
+                      name="Provide Customer Rating"
+                      id="HumanTask_2"
+                      camunda:assignee="demo">
         <cmmn:defaultControl>
           <cmmn:manualActivationRule>
-            <cmmn:condition>
-              <cmmn:body>${false}</cmmn:body>
-            </cmmn:condition>
+            <cmmn:condition>${false}</cmmn:condition>
           </cmmn:manualActivationRule>
         </cmmn:defaultControl>
       </cmmn:humanTask>
       <cmmn:milestone name="Approved" id="Milestone_1"/>
     </cmmn:casePlanModel>
   </cmmn:case>
+
 </cmmn:definitions>
 ```
 
@@ -100,17 +112,26 @@ public class LifecycleListener implements CaseExecutionListener {
 }
 ```
 
-To register the listener with the milestone, update the milestone in `loan-approval.cmmn10.xml` as follows:
+To register the listener with the milestone, update the milestone in `loan-approval.cmmn11.xml` as follows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61" targetNamespace="http://cmmn.org" xmlns:cmmn="http://www.omg.org/spec/CMMN/20131201/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
+                  targetNamespace="http://cmmn.org"
+                  xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+
   <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false" name="Loan Application" id="CasePlanModel">
+    <cmmn:casePlanModel autoComplete="false"
+                        name="Loan Application"
+                        id="CasePlanModel">
       <!-- Plan Items -->
       <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
       <cmmn:planItem definitionRef="HumanTask_2" id="PI_HumanTask_2"/>
-      <cmmn:planItem definitionRef="Milestone_1" entryCriteriaRefs="Sentry_1" id="PI_Milestone_1"/>
+      <cmmn:planItem definitionRef="Milestone_1" id="PI_Milestone_1">
+        <cmmn:entryCriterion sentryRef="Sentry_1" />
+      </cmmn:planItem>
 
       <!-- Sentries -->
       <cmmn:sentry id="Sentry_1">
@@ -122,37 +143,41 @@ To register the listener with the milestone, update the milestone in `loan-appro
         </cmmn:planItemOnPart>
         <cmmn:ifPart>
           <cmmn:condition>
-            <cmmn:body><![CDATA[${applicationSufficient && rating > 3}]]></cmmn:body>
+            <![CDATA[${applicationSufficient && rating > 3}]]>
           </cmmn:condition>
         </cmmn:ifPart>
       </cmmn:sentry>
 
       <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true" name="Check Application" id="HumanTask_1" camunda:assignee="demo">
+      <cmmn:humanTask isBlocking="true"
+                      name="Check Application"
+                      id="HumanTask_1"
+                      camunda:assignee="demo">
         <cmmn:defaultControl>
           <cmmn:manualActivationRule>
-            <cmmn:condition>
-              <cmmn:body>${false}</cmmn:body>
-            </cmmn:condition>
+            <cmmn:condition>${false}</cmmn:condition>
           </cmmn:manualActivationRule>
         </cmmn:defaultControl>
       </cmmn:humanTask>
-      <cmmn:humanTask isBlocking="true" name="Provide Customer Rating" id="HumanTask_2" camunda:assignee="demo">
+      <cmmn:humanTask isBlocking="true"
+                      name="Provide Customer Rating"
+                      id="HumanTask_2"
+                      camunda:assignee="demo">
         <cmmn:defaultControl>
           <cmmn:manualActivationRule>
-            <cmmn:condition>
-              <cmmn:body>${false}</cmmn:body>
-            </cmmn:condition>
+            <cmmn:condition>${false}</cmmn:condition>
           </cmmn:manualActivationRule>
         </cmmn:defaultControl>
       </cmmn:humanTask>
       <cmmn:milestone name="Approved" id="Milestone_1">
         <cmmn:extensionElements>
-          <camunda:caseExecutionListener event="occur" class="org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener" />
+          <camunda:caseExecutionListener event="occur"
+            class="org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener" />
         </cmmn:extensionElements>
       </cmmn:milestone>
     </cmmn:casePlanModel>
   </cmmn:case>
+
 </cmmn:definitions>
 ```
 
@@ -184,7 +209,7 @@ INFORMATION: Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transit
 
 Our lifecycle listener has been notified, showing that the milestone has actually occurred.
 
-To learn more about milestones, consider checking the [Milestone section](/manual/latest/reference/cmmn10/milestone) in our CMMN implementation guide.
+To learn more about milestones, consider checking the [Milestone section](/manual/latest/reference/cmmn11/milestone) in our CMMN implementation guide.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-5" >}}
 

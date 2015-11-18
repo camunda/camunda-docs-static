@@ -1,6 +1,6 @@
 ---
 
-title: 'Setup a Java Project for CMMN 1.0'
+title: 'Setup a Java Project for CMMN 1.1'
 weight: 20
 
 menu:

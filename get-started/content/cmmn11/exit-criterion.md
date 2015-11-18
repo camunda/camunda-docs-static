@@ -23,13 +23,24 @@ In the CMMN XML file, add the following sentry definition and register it for th
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61" targetNamespace="http://cmmn.org" xmlns:cmmn="http://www.omg.org/spec/CMMN/20131201/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
+        targetNamespace="http://cmmn.org"
+        xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+
   <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false" name="Loan Application" id="CasePlanModel">
+    <cmmn:casePlanModel autoComplete="false"
+                        name="Loan Application"
+                        id="CasePlanModel">
       <!-- Plan Items -->
       <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
-      <cmmn:planItem definitionRef="HumanTask_2" exitCriteriaRefs="Sentry_2" id="PI_HumanTask_2"/>
-      <cmmn:planItem definitionRef="Milestone_1" entryCriteriaRefs="Sentry_1" id="PI_Milestone_1"/>
+      <cmmn:planItem definitionRef="HumanTask_2" id="PI_HumanTask_2">
+        <cmmn:exitCriterion sentryRef="Sentry_2" />
+      </cmmn:planItem>
+      <cmmn:planItem definitionRef="Milestone_1" id="PI_Milestone_1">
+        <cmmn:entryCriterion sentryRef="Sentry_1" />
+      </cmmn:planItem>
 
       <!-- Sentries -->
       <cmmn:sentry id="Sentry_1">
@@ -41,7 +52,7 @@ In the CMMN XML file, add the following sentry definition and register it for th
         </cmmn:planItemOnPart>
         <cmmn:ifPart>
           <cmmn:condition>
-            <cmmn:body><![CDATA[${applicationSufficient && rating > 3}]]></cmmn:body>
+            <![CDATA[${applicationSufficient && rating > 3}]]>
           </cmmn:condition>
         </cmmn:ifPart>
       </cmmn:sentry>
@@ -50,38 +61,40 @@ In the CMMN XML file, add the following sentry definition and register it for th
           <cmmn:standardEvent>complete</cmmn:standardEvent>
         </cmmn:planItemOnPart>
         <cmmn:ifPart>
-          <cmmn:condition>
-            <cmmn:body>${!applicationSufficient}</cmmn:body>
-          </cmmn:condition>
+          <cmmn:condition>${!applicationSufficient}</cmmn:condition>
         </cmmn:ifPart>
       </cmmn:sentry>
 
       <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true" name="Check Application" id="HumanTask_1" camunda:assignee="demo">
+      <cmmn:humanTask isBlocking="true"
+                      name="Check Application"
+                      id="HumanTask_1"
+                      camunda:assignee="demo">
         <cmmn:defaultControl>
           <cmmn:manualActivationRule>
-            <cmmn:condition>
-              <cmmn:body>${false}</cmmn:body>
-            </cmmn:condition>
+            <cmmn:condition>${false}</cmmn:condition>
           </cmmn:manualActivationRule>
         </cmmn:defaultControl>
       </cmmn:humanTask>
-      <cmmn:humanTask isBlocking="true" name="Provide Customer Rating" id="HumanTask_2" camunda:assignee="demo">
+      <cmmn:humanTask isBlocking="true"
+                      name="Provide Customer Rating"
+                      id="HumanTask_2"
+                      camunda:assignee="demo">
         <cmmn:defaultControl>
           <cmmn:manualActivationRule>
-            <cmmn:condition>
-              <cmmn:body>${false}</cmmn:body>
-            </cmmn:condition>
+            <cmmn:condition>${false}</cmmn:condition>
           </cmmn:manualActivationRule>
         </cmmn:defaultControl>
       </cmmn:humanTask>
       <cmmn:milestone name="Approved" id="Milestone_1">
         <cmmn:extensionElements>
-          <camunda:caseExecutionListener event="occur" class="org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener" />
+          <camunda:caseExecutionListener event="occur"
+            class="org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener" />
         </cmmn:extensionElements>
       </cmmn:milestone>
     </cmmn:casePlanModel>
   </cmmn:case>
+
 </cmmn:definitions>
 ```
 
@@ -96,6 +109,6 @@ Go to Tasklist and access the `demo` user's tasks. As before, check the task *Ch
 
 You will notice that the task *Provide Customer Rating* has disappeared from the Tasklist. That is because the sentry has been triggered and the task's exit criterion has been fulfilled. Also, you can check the Tomcat console. This time, there is no log entry for the milestone.
 
-To learn more about sentries, consider checking the [Sentry section](/manual/latest/reference/cmmn10/sentry) in our CMMN implementation guide.
+To learn more about sentries, consider checking the [Sentry section](/manual/latest/reference/cmmn11/sentry) in our CMMN implementation guide.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-6" >}}

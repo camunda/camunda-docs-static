@@ -70,7 +70,7 @@ INFORMATION: Found process application file at .../webapps/loan-approval-cmmn-0.
 org.camunda.bpm.container.impl.deployment.DeployProcessArchiveStep logDeploymentSummary
 INFORMATION: Deployment summary for process archive 'loan-approval-cmmn':
 
-        loanapplication.cmmn10.xml
+        loanapplication.cmmn11.xml
 
 org.camunda.bpm.engine.impl.application.ProcessApplicationManager logRegistration
 INFORMATION: ProcessApplication 'Loan Approval CMMN' registered for DB deployments [8e894d4e-8071-11e4-9712-28d24461aeb0].
