@@ -2,7 +2,7 @@
 
 Contains all un-versioned sections of the documentation
 
-**Important:** _do NOT change the content of `themes/cmaunda` directory directly!_ Instead, Change the [theme](//github.com/camunda/camunda-docs-theme).
+**Important:** _do NOT change the content of `themes/camunda` directory directly!_ Instead, Change the [theme](//github.com/camunda/camunda-docs-theme).
 
 ## Building
 
