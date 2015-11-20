@@ -27,6 +27,11 @@ RewriteRule ^manual/(.*) /manual/7.3/$1 [R=301,L]
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/enterprise /enterprise/ [R=301,L]
 
+# CMMN 1.0
+RewriteRule ^get-started/cmmn10/(.*) /get-started/cmmn11/$1 [R=301,L]
+RewriteRule ^manual/develop/reference/cmmn10/(.*) /manual/develop/reference/cmmn11/$1 [R=301,L]
+RewriteRule ^manual/latest/reference/cmmn10/(.*) /manual/latest/reference/cmmn11/$1 [R=301,L]
+
 # Get Started
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started/ [R=301,L]
 RewriteRule ^guides/getting-started-guides /get-started/ [R=301,L]
