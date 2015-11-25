@@ -32,9 +32,29 @@ First, we need to set the scope of the Maven dependency of the camunda-engine de
 </dependency>
 ```
 
-Furthermore, you can delete the dependencies `org.springframework:spring-jdbc` and `com.h2database:h2`.
+Furthermore, you can delete the dependencies `org.springframework:spring-jdbc`, `com.h2database:h2`, and `org.slf4j:slf4j-jdk14`.
 
 Second, you need to add a `META-INF/processes.xml` file to your application.
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<process-application
+    xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <process-archive name="loan-approval">
+    <process-engine>default</process-engine>
+    <properties>
+      <property name="isDeleteUponUndeploy">false</property>
+      <property name="isScanForProcessDefinitions">true</property>
+    </properties>
+  </process-archive>
+
+</process-application>
+```
+
+And third, the `applicationContext.xml` file is adjusted so that the shared process engine is looked up and a `SpringServletProcessApplication` is bootstrapped:
 
 ```xml
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -66,26 +86,6 @@ Second, you need to add a `META-INF/processes.xml` file to your application.
   <bean id="calculateInterestService" class="org.camunda.bpm.getstarted.loanapproval.CalculateInterestService" />
 
 </beans>
-```
-
-And third, the `applicationContext.xml` file is adjusted so that the shared process engine is looked up and a `SpringServletProcessApplication` is bootstrapped:
-
-```xml
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<process-application
-    xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-  <process-archive name="loan-approval">
-    <process-engine>default</process-engine>
-    <properties>
-      <property name="isDeleteUponUndeploy">false</property>
-      <property name="isScanForProcessDefinitions">true</property>
-    </properties>
-  </process-archive>
-
-</process-application>
 ```
 
 {{< get-tag repo="camunda-get-started-spring" tag="Bonus" >}}

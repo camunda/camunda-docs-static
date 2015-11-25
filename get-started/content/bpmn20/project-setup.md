@@ -8,16 +8,16 @@ menu:
     name: "Project Setup"
     parent: "get-started-pa"
     identifier: "get-started-pa-setup"
-    pre: "Setup an Apache Maven-based process application inside eclipse and deploy it."
+    pre: "Setup an Apache Maven-based process application inside Eclipse and deploy it."
 
 ---
 
-Now you are ready to set up your first process application project in eclipse.
+Now you are ready to set up your first process application project in Eclipse.
 
 
 # Create a new Maven Project in Eclipse
 
-In eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
+In Eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
 
 {{< img src="../img/eclipse-new-project.png" >}}
 
@@ -45,7 +45,7 @@ The next step consists of setting up the Maven dependencies for your new process
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
-        <version>7.3.0</version>
+        <version>7.4.0</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -85,6 +85,7 @@ The next step consists of setting up the Maven dependencies for your new process
 
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`.
 
+{{< get-tag repo="camunda-get-started" tag="Step-1" >}}
 
 # Add a Process Application Class
 

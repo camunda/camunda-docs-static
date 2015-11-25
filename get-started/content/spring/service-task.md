@@ -27,17 +27,17 @@ model and interact with the process form inside our Spring beans. In this sectio
 
 ## Model an Executable BPMN 2.0 Process
 
-We start by modeling an executable process using the Camunda Modeler. The process should look as depicted in the screenshot to the left.
+We start by modeling an executable process using the Camunda Modeler. The process should look as depicted in the screenshot below.
 
 {{< img src="../img/process-model.png" >}}
 
 {{< note title="Hint" class="info" >}}
 If you are unfamiliar with modeling an executable process, you can read the
-[Model a Process]({{< relref "bpmn20/model.md" >}}) section of the Developing Process Applications tutorial.
+[Model a Process]({{< relref "bpmn20/model.md" >}}) section of the *Developing Process Applications* tutorial.
 {{< /note >}}
-      
-When you are done, save the process model.
-      
+
+When you are done, save the process model in the `src/main/resources` folder of your Eclipse project. Make sure to refresh the Eclipse project afterwards.
+
 ## Use Spring Auto-Deployment for BPMN 2.0 Processes
 
 For the process to be deployed, we use the auto-deployment feature provided by the Camunda engine Spring integration. In order to use this feature, modify the definition of the `processEngineConfiguration` bean inside your `src/main/webapp/WEB-INF/applicationContext.xml` file:
@@ -99,7 +99,7 @@ We add the Spring bean to the applicationContext.xml file:
 
 {{< img src="../img/service-task.png" >}}
 
-Referencing a Spring Bean from a BPMN 2.0 Service Task is simple. As shown in the screenshot to the left, we have to select the service task in the Camunda Modeler and provide an expression in the *Expression Delegate* Field. We type `${calculateInterestService}`.
+Referencing a Spring Bean from a BPMN 2.0 Service Task is simple. As shown in the screenshot above, we have to select the service task in the Camunda Modeler and provide an expression. Set *Implementation Type* to *Delegate Expression* and type `${calculateInterestService}` in the *Delegate Expression* field. Again, save the model and refresh the Eclipse project.
 
 Finally, we add the Java class implementing the `JavaDelegate` interface.
 
@@ -133,13 +133,13 @@ And register it as a Spring Bean in the application context.
 ```
 
 If you redeploy the application, you should see the following message in the logfile, meaning that the service task was executed.
-  
+
 <pre class="console">
-org.camunda.bpm.engine.impl.ProcessEngineImpl <init>
-INFORMATION: ProcessEngine engine created
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-00001 Process Engine engine created.
 Spring Bean invoked
-org.springframework.web.context.ContextLoader initWebApplicationContext
-INFORMATION: Root WebApplicationContext: initialization completed in 1960 ms
+INFO org.springframework.web.context.ContextLoader.initWebApplicationContext
+Root WebApplicationContext: initialization completed in 3050 ms
 </pre>
 
 {{< get-tag repo="camunda-get-started-spring" tag="Step-3" >}}
