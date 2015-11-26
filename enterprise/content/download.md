@@ -43,10 +43,6 @@ downloads:
   - branch: "7.4"
     releases:
 
-    - number: "7.4.0"
-      note: ""
-      date: "2015.11.25"
-
     - number: "7.4.0-alpha3"
       note: "http://blog.camunda.org/post/2015/11/ReleaseCandidateAvailable/"
       date: "2015.11.20"
