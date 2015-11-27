@@ -24,7 +24,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 <dependency>
   <groupId>org.camunda.bpm</groupId>
   <artifactId>camunda-bom</artifactId>
-  <version>7.3.0</version>
+  <version>7.4.0</version>
   <scope>import</scope>
   <type>pom</type>
 </dependency>
@@ -36,7 +36,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 <dependency>
   <groupId>org.camunda.bpm</groupId>
   <artifactId>camunda-bom</artifactId>
-  <version>7.3.0-ee</version>
+  <version>7.4.0-ee</version>
   <scope>import</scope>
   <type>pom</type>
 </dependency>
@@ -120,6 +120,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 
 # Other Camunda Modules:
 
+* [DMN Engine](/manual/latest/user-guide/dmn-engine/embed/#maven-coordinates)
 * [Camunda Spin](/manual/latest/reference/spin)
 * [Camunda Connect](/manual/latest/reference/connect/#maven-coordinates)
 * [Templating Engines](/manual/latest/user-guide/process-engine/templating/#install-a-template-engine-for-an-embedded-process-engine)
