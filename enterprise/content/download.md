@@ -43,7 +43,7 @@ downloads:
   - branch: "7.4"
     releases:
     - number: "7.4.0"
-      note: "http://blog.camunda.org/post/2015/11/camunda-bpm-740-released.html"
+      note: "http://blog.camunda.org/post/2015/11/camunda-bpm-740-released/"
       date: "2015.11.30"
 
     - number: "7.4.0-alpha3"
