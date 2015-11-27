@@ -35,14 +35,13 @@ downloads:
     - war
 
   selected:
-    branch: "7.3"
-    version: "7.3.3"
+    branch: "7.4"
+    version: "7.4.0"
     server: "tomcat"
 
   branches:
   - branch: "7.4"
     releases:
-
     - number: "7.4.0"
       note: "http://blog.camunda.org/post/2015/11/camunda-bpm-740-released.html"
       date: "2015.11.30"
