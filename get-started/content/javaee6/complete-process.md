@@ -1,7 +1,7 @@
 ---
 
 title: 'Complete the BPMN 2.0 Process'
-weight: 70
+weight: 80
 
 menu:
   main:
@@ -23,7 +23,7 @@ In the last section of this tutorial we learn how to complete the BPMN 2.0 Proce
 
 If the user approves the pizza order the pizza has to be prepared. So we add a user task form in which the user can confirm that preparation of the pizza has been completed.
 
-Go back to eclipse and add a file named `preparepizza.xhtml` to the `src/main/webapp` folder. Add the following content:
+Go back to Eclipse and add a file named `preparepizza.xhtml` to the `src/main/webapp` folder. Add the following content:
 
 ```html
 <!DOCTYPE HTML>
@@ -55,9 +55,9 @@ Go back to eclipse and add a file named `preparepizza.xhtml` to the `src/main/we
 
 A new conversation is started again before the view is rendered and the task is completed after the form has been submitted. The form only contains a single button.
 
-{{< img src="../img/pizza-order-prepare-pizza.png" >}}
+{{< img src="../img/pizza-order-process-prepare-pizza.png" >}}
 
-Open the process with the modeler plugin. Click on the prepare pizza user task. In the properties view, set the `Form Key` property to `app:preparepizza.jsf`.
+Open the process with Camunda Modeler. Click on the prepare pizza user task. In the properties view, set the `Form Key` property to `app:preparepizza.jsf`.
 
 When you are done, save all resources, perform a Maven build and redeploy the process application.
 
@@ -100,7 +100,7 @@ public class OrderBusinessLogic {
 
 {{< img src="../img/pizza-order-process-send-rejection-email.png" >}}
 
-Open the process with the modeler plugin. Click on the reject email service task. In the properties view, set the `Expression` property to `${orderBusinessLogic.rejectOrder(execution)}`.
+Open the process with Camunda Modeler. Click on the reject email service task. In the properties view, set the `Expression` property to `${orderBusinessLogic.rejectOrder(execution)}`.
 
 When you are done, save all resources, perform a Maven build and redeploy the process application.
 
