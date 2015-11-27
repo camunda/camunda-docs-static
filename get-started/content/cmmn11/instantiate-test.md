@@ -63,24 +63,21 @@ In order to deploy the process application, copy-paste the `loan-approval-cmmn-0
 Check the log file of the Apache Tomcat server. If you see the following log message, the deployment was successful:
 
 <pre class="console">
-org.camunda.bpm.application.impl.ServletProcessApplicationDeployer onStartup
-INFORMATION: Detected @ProcessApplication class org.camunda.bpm.getstarted.cmmn.loanapproval.LoanApprovalApplication
-org.camunda.bpm.container.impl.deployment.ParseProcessesXmlStep parseProcessesXmlFiles
-INFORMATION: Found process application file at .../webapps/loan-approval-cmmn-0.1.0-SNAPSHOT/WEB-INF/classes/META-INF/processes.xml
-org.camunda.bpm.container.impl.deployment.DeployProcessArchiveStep logDeploymentSummary
-INFORMATION: Deployment summary for process archive 'loan-approval-cmmn':
+INFO org.apache.catalina.startup.HostConfig.deployWAR
+Deploying web application archive ...\webapps\loan-approval-cmmn-0.1.0-SNAPSHOT.war
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-07015 Detected @ProcessApplication class 'org.camunda.bpm.getstarted.cmmn.loanapproval.LoanApprovalApplication'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-08024 Found processes.xml file at .../webapps/loan-approval-cmmn-0.1.0-SNAPSHOT/WEB-INF/classes/META-INF/processes.xml
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-08023 Deployment summary for process archive 'loan-approval-cmmn':
 
-        loanapplication.cmmn11.xml
+        loan-approval.cmmn11.xml
 
-org.camunda.bpm.engine.impl.application.ProcessApplicationManager logRegistration
-INFORMATION: ProcessApplication 'Loan Approval CMMN' registered for DB deployments [8e894d4e-8071-11e4-9712-28d24461aeb0].
-Deployment does not provide any process definitions.
-Will execute case definitions
-
-        loan_application[version: 1, id: loan_application:1:8ea0ccf0-8071-11e4-9712-28d24461aeb0]
-
-org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl deployProcessApplication
-INFORMATION: Process Application Loan Approval CMMN successfully deployed.
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-08050 Process application Loan Approval App CMMN successfully deployed
+INFO org.apache.catalina.startup.HostConfig.deployWAR
+Deployment of web application archive ...\webapps\loan-approval-cmmn-0.1.0-SNAPSHOT.war has finished in 1,335 ms
 </pre>
 
 
