@@ -359,10 +359,10 @@ Please note that this feature can be used from camunda BPM 7.2.x onwards.
 
 # Camunda Modeler
 
-The Camunda Modeler is an open source BPMN 2.0 modeling tool which can be integrated in your Eclipse IDE as plugin or can be used as standalone modeling tool.
+The Camunda Modeler is an open source process modeling tool. It allows you to edit BPMN process diagrams and DMN decision tables. The Eclipse based BPMN Modeler can be integrated in your Eclipse IDE as plugin.
 
-* [Camunda Modeler Eclipse Plugin](/manual/latest/installation/eclipse-plugin/)
-* [Camunda Modeler Standalone Version](https://camunda.org/bpmn/tool/)
+* [Camunda Modeler](http://camunda.org/download/modeler/)
+* [Deprecated: Camunda Modeler Eclipse Plugin](/manual/latest/modeler/eclipse-plugin/update-sites/)
 
 
 # Camunda Web Modeler
