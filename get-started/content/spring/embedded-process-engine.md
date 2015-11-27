@@ -58,22 +58,26 @@ Add the following Spring beans configuration to the `src/main/webapp/WEB-INF/app
 After you added these definitions to the Spring Application context, perform a full Maven build and redeploy the application. In the logfile of the Apache Tomcat server you should be able to see the initialization of the process-engine:
 
 <pre class="console">
-org.camunda.bpm.engine.impl.db.sql.DbSqlSession executeSchemaResource
-INFORMATION: performing create on engine with resource org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql
-org.camunda.bpm.engine.impl.db.sql.DbSqlSession executeSchemaResource
-INFORMATION: performing create on history with resource org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql
-org.camunda.bpm.engine.impl.db.sql.DbSqlSession executeSchemaResource
-INFORMATION: performing create on identity with resource org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql
-org.camunda.bpm.engine.impl.db.sql.DbSqlSession executeSchemaResource
-INFORMATION: performing create on case.engine with resource org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql
-org.camunda.bpm.engine.impl.db.sql.DbSqlSession executeSchemaResource
-INFORMATION: performing create on case.history with resource org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql
-org.camunda.bpm.engine.impl.SchemaOperationsProcessEngineBuild checkHistoryLevel
-INFORMATION: No historyLevel property found in database.
-org.camunda.bpm.engine.impl.SchemaOperationsProcessEngineBuild dbCreateHistoryLevel
-Creating historyLevel property in database with value: audit
-org.camunda.bpm.engine.impl.ProcessEngineImpl <init>
-INFORMATION: ProcessEngine engine created
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03067 No history level property found in database
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelAudit(name=audit, id=2)
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-00001 Process Engine engine created.
 </pre>
 
 {{< get-tag repo="camunda-get-started-spring" tag="Step-2" >}}

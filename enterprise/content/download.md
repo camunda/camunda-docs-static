@@ -35,13 +35,17 @@ downloads:
     - war
 
   selected:
-    branch: "7.3"
-    version: "7.3.3"
+    branch: "7.4"
+    version: "7.4.0"
     server: "tomcat"
 
   branches:
   - branch: "7.4"
     releases:
+    - number: "7.4.0"
+      note: "http://blog.camunda.org/post/2015/11/camunda-bpm-740-released.html"
+      date: "2015.11.30"
+
     - number: "7.4.0-alpha3"
       note: "http://blog.camunda.org/post/2015/11/ReleaseCandidateAvailable/"
       date: "2015.11.20"
@@ -354,10 +358,10 @@ Please note that this feature can be used from camunda BPM 7.2.x onwards.
 
 # Camunda Modeler
 
-The Camunda Modeler is an open source BPMN 2.0 modeling tool which can be integrated in your Eclipse IDE as plugin or can be used as standalone modeling tool.
+The Camunda Modeler is an open source process modeling tool. It allows you to edit BPMN process diagrams and DMN decision tables. The Eclipse based BPMN Modeler can be integrated in your Eclipse IDE as plugin.
 
-* [Camunda Modeler Eclipse Plugin](/manual/latest/installation/eclipse-plugin/)
-* [Camunda Modeler Standalone Version](https://camunda.org/bpmn/tool/)
+* [Camunda Modeler](http://camunda.org/download/modeler/)
+* [Deprecated: Camunda Modeler Eclipse Plugin](/manual/latest/modeler/eclipse-plugin/update-sites/)
 
 
 # Camunda Web Modeler
@@ -381,14 +385,14 @@ The Camunda Web Modeler is stripped down to fulfill all necessary tasks in proce
   </thead>
   <tbody>
     <tr class="well">
-      <td>9.2.1</td>
-      <td>12.07.2015</td>
+      <td>9.3.0</td>
+      <td>29.10.2015</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/camunda-web-modeler-9.2.1.zip">download zip file</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.3.0/camunda-web-modeler-9.3.0.9.zip">download zip file</a>
       </td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/administratorenhandbuch-camunda-web-modeler-version-92.pdf" target="_blank">German</a>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.2.1/Administrators-manual-camunda-web-modeler-version-92.pdf" target="_blank">English</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.3.0/administratorenhandbuch-camunda-web-modeler-version-93.pdf" target="_blank">German</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-web-modeler/9.3.0/administrators-manual-camunda-web-modeler-version-93.pdf" target="_blank">English</a>
       </td>
     </tr>
   </tbody>

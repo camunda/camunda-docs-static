@@ -8,28 +8,24 @@ menu:
     name: "Model a Process"
     parent: "get-started-pa"
     identifier: "get-started-pa-model"
-    pre: "Learn the basics of handling the Camunda Modeler for Eclipse and learn how to model and configure a fully executable process."
+    pre: "Learn the basics of handling the Camunda Modeler and learn how to model and configure a fully executable process."
 
 ---
 
-In this section you learn how to create your first BPMN 2.0 process with the Camunda Modeler.
-
+In this section you learn how to create your first BPMN 2.0 process with the Camunda Modeler. Start up Camunda Modeler now.
 
 # Create a new BPMN Diagram
 
-In the eclipse *Package Explorer* select the `src/main/resources` folder. Right-click and select *New > Other ...*.
-Go to the folder *BPMN* and select *BPMN 2.0 Diagram*. Click Next.
+Create new BPMN diagram by clicking *File > New File > BPMN Diagram*.
 
-{{< img src="../img/eclipse-new-bpmn-diagram.png" >}}
-
-On the second page, you must specify the file name of the process. Insert `loan-approval.bpmn`. Click Finish.
+{{< img src="../img/modeler-new-bpmn-diagram.png" >}}
 
 
 # Start with a Simple Process
 
-Start by modeling a simple process. From the Palette on the right hand side of the canvas, drag a *Start Event* onto the canvas.
+Start by modeling a simple process.
 
-{{< img src="../img/eclipse-simple-process.png" >}}
+{{< img src="../img/modeler-step1.png" >}}
 
 Double-click on the Start Event. A text box opens. Type "Loan Request Received".
 
@@ -37,12 +33,19 @@ Double-click on the Start Event. A text box opens. Type "Loan Request Received".
 When editing Labels, you can add line breaks by hitting `Shift + Enter`.
 {{< /note >}}
 
-Add a User Task to the process. Name it *Approve Loan*. Add an End Event named *Loan Request Approved*.
+Click on the start event. From its context menu, select the activity shape (oval) and drag it to a good position. Name it *Approve Loan*. Change the activity's type to *User Task* by clicking on it and using the wrench button.
+
+{{< img src="../img/modeler-step2.png" >}}
+
+Add an End Event named *Loan Request Approved*.
+
+{{< img src="../img/modeler-step3.png" >}}
+
 
 
 # Configure a User Task
 
-{{< img src="../img/eclipse-simple-process-property.png" >}}
+{{< img src="../img/modeler-step4.png" >}}
 
 Next, Open the properties view. If the properties view is not visible, select it from the menu: *Window / Show View / Other ...* This opens a dialog. From the dialog select *Properties*.
 
@@ -54,16 +57,22 @@ When you are done, save your changes.
 
 # Configure Properties for Execution
 
-{{< img src="../img/eclipse-simple-process-config.png" >}}
+{{< img src="../img/modeler-step5.png" >}}
 
-Since we are modeling an executable process, we should give it an ID and set the `isExecutable` property to `true`. Open the properties view and click on a free spot of the modeling canvas. This displays the properties of the process itself.
+Since we are modeling an executable process, we should give it an ID and set the `isExecutable` property to `true`. On the right hand side of the canvas, you find the properties panel. Click on a free spot of the modeling canvas. This displays the properties of the process itself.
 
-First, configure an ID for the process. Type *approve-loan* in the property field *Process Id*. The property ID is used by the process engine as identifier for the executable process and it is best practice to set it to a human-readable name.
+First, configure an ID for the process. Type *approve-loan* in the property field *Id*. The property ID is used by the process engine as identifier for the executable process and it is best practice to set it to a human-readable name.
 
 Second, configure the Name of the process. Type *Loan Approval* in the property field *Name*.
 
-Finally, check the box of the *Is Executable* property. If you do not check this box, the process definition is ignored by the process engine.
+Finally, check the box of the *Executable* property. If you do not check this box, the process definition is ignored by the process engine.
 
-When you are done, save your changes.
+# Save the BPMN Diagram
+
+{{< img src="../img/modeler-save-diagram.png" >}}
+
+When you are done, save your changes by clicking *File > Save File As..*. In the dialogue that pops up, navigate to the loan application project directory (by default this is in your Eclipse workspace path). In the project directory, place the model in the `src/main/resources` folder.
+
+Return to Eclipse. Right-click the project folder and click *Refresh*. This synchronizes the new BPMN file with Eclipse.
 
 {{< get-tag repo="camunda-get-started" tag="Step-3" >}}

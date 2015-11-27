@@ -18,14 +18,14 @@ In the last section of this tutorial we learn how to invoke a Java Class from a 
 
 # Add a Service Task to the Process
 
-Use the Camunda modeler plugin in eclipse to add a service task after the user task. The service task can be dropped on a sequence flow (see screenshot).
+Use the Camunda Modeler to add a service task after the user task. The service task can be dropped on a sequence flow (see screenshot).
 
-{{< img src="../img/eclipse-add-service-task.png" >}}
+{{< img src="../img/modeler-service-task1.png" >}}
 
 
 # Add a JavaDelegate Implementation
 
-Now we need to add the actual service task implementation. Add a class named `ProcessRequestDelegate` implementing the `JavaDelegate` interface:
+Now we need to add the actual service task implementation. In the Eclipse project, add a class named `ProcessRequestDelegate` implementing the `JavaDelegate` interface:
 
 ```java
 public class ProcessRequestDelegate implements JavaDelegate {
@@ -42,15 +42,15 @@ public class ProcessRequestDelegate implements JavaDelegate {
 
 # Configure the Class in the Process
 
-Use the properties view to reference the Service Task in the process (see screenshot). You need to provide the fully qualified classname of your class in the `class` property field.
+Use the properties view to reference the Service Task in the process (see screenshot). You need to provide the fully qualified classname of your class in the *Java Class* property field.
 
-{{< img src="../img/eclipse-configure-service.png" >}}
+{{< img src="../img/modeler-service-task2.png" >}}
 
-Build, deploy and execute the process. After completing the *Approve Application* step, check the logfile of the Apache Tomcat server:
+Save the process model and update it in Eclipse. Build, deploy and execute the process application. After completing the *Approve Application* step, check the logfile of the Apache Tomcat server:
 
 <pre class="console">
-org.camunda.bpm.getstarted.loanapproval.ProcessRequestDelegate execute
-INFORMATION: Processing request by 'AC-343422'...
+INFO org.camunda.bpm.getstarted.loanapproval.ProcessRequestDelegate.execute
+Processing request by 'GFPE-23232323'...
 </pre>
 
 {{< note title="Classloading with a shared process engine" >}}

@@ -31,22 +31,17 @@ In order to deploy the process application, copy-paste the `loan-approval-0.0.1-
 Check the log file of the Apache Tomcat server. If you see the following log message, the deployment was successful:
 
 <pre class="console">
-org.camunda.bpm.application.impl.ServletProcessApplicationDeployer onStartup
-INFORMATION: Detected @ProcessApplication class org.camunda.bpm.getstarted.loanapproval.LoanApprovalApplication
-org.camunda.bpm.container.impl.deployment.ParseProcessesXmlStep parseProcessesXmlFiles
-INFORMATION: Found process application file at .../webapps/loan-approval-0.1.0-SNAPSHOT/WEB-INF/classes/META-INF/processes.xml
-org.camunda.bpm.container.impl.deployment.DeployProcessArchiveStep logDeploymentSummary
-INFORMATION: Deployment summary for process archive 'loan-approval':
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-07015 Detected @ProcessApplication class 'org.camunda.bpm.getstarted.loanapproval.LoanApprovalApplication'
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-08024 Found processes.xml file at ../webapps/loan-approval-0.1.0-SNAPSHOT/WEB-INF/classes/META-INF/processes.xml
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-08023 Deployment summary for process archive 'loan-approval':
 
         loan-approval.bpmn
 
-org.camunda.bpm.engine.impl.application.ProcessApplicationManager logRegistration
-INFORMATION: ProcessApplication 'Loan Approval App' registered for DB deployments [4ab4d156-7543-11e4-86ad-28d2448a9975]. Will execute process definitions
-
-        approve-loan[version: 1, id: approve-loan:1:4abf58a8-7543-11e4-86ad-28d2448a9975]
-Deployment does not provide any case definitions.
-org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl deployProcessApplication
-INFORMATION: Process Application Loan Approval App successfully deployed.
+INFO org.camunda.commons.logging.BaseLogger.logInfo
+ENGINE-08050 Process application Loan Approval App successfully deployed
 </pre>
 
 
@@ -73,6 +68,10 @@ If you now go back to [Camunda Cockpit](http://localhost:8080/camunda/app/cockpi
 To allow the user *john* to see the process definition *Loan Approval* you have to go to Camunda Admin ([http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6](http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6)). Next, click on the button *Create New* to add a new authorization on the resource *process definition*. Now you can give the user *john* all permissions on process definition *approve-loan*. When you are done, submit the new authorization.
 
 {{< img src="../img/create-process-definition-authorization.png" >}}
+
+Now create a second authorization for the *process instance* resource. Set the permission to *CREATE*.
+
+{{< img src="../img/create-process-instance-authorization.png" >}}
 
 For further details about authorizations and how to manage them please read the following sections in the user guide: [Authorization Service](/manual/latest/user-guide/process-engine/authorization-service) and [Authorizations](/manual/latest/webapps/admin/authorization-management).
 

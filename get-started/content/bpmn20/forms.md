@@ -9,7 +9,7 @@ menu:
     parent: "get-started-pa"
     identifier: "get-started-pa-forms"
     pre: "Add simple HTML based Forms to the Process."
-    
+
 ---
 
 In the next step, we want to add a HTML based Task Form to the application.
@@ -38,9 +38,9 @@ Go back to eclipse and add a folder named `src/main/webapp/forms`. Inside this f
 </form>
 ```
 
-Open the process with the modeler plugin. Click on the start event. In the properties view, insert `embedded:app:forms/request-loan.html` into the `Form Key` property field. This means that we want to use an `embedded` form inside the Tasklist and that the form is loaded from the `app`lication.
+Open the process with the modeler. Click on the start event. In the properties view, insert `embedded:app:forms/request-loan.html` into the `Form Key` property field. This means that we want to use an `embedded` form inside the Tasklist and that the form is loaded from the `app`lication. Save the diagram and refresh the Eclipse project.
 
-{{< img src="../img/eclipse-configure-start-form.png" >}}
+{{< img src="../img/modeler-start-form.png" >}}
 
 
 # Add a Task Form
