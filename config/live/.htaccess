@@ -11,12 +11,12 @@ RewriteRule ^$ /manual/
 RewriteRule ^latest/api-references/java/ /manual/7.3/reference/javadoc/
 
 # Javadoc
-RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.4-SNAPSHOT [R=301,L]
+RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.5-SNAPSHOT [R=301,L]
 RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.4 [R=301,L]
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
 
 # Manual without version
-RewriteRule ^manual/$ /manual/7.3/ [R=301,L]
+RewriteRule ^manual/$ /manual/7.4/ [R=301,L]
 
 # Redirect /manual/X to /manual/7.3 if folder X does not exits
 RewriteCond %{REQUEST_URI} ^/manual/([^/]+)
