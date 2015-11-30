@@ -1,7 +1,7 @@
 ---
 
 title: 'Invoke an EJB from a BPMN 2.0 Service Task'
-weight: 50
+weight: 60
 
 menu:
   main:
@@ -162,113 +162,8 @@ Use the properties view of the Persist Service Task in the process (see screensh
 Build, deploy and execute the process. After completing the *Persist Order* step, check the logfile of the JBoss AS server. It will show an insert for the new order entity:
 
 <pre class="console">
-11:36:11,659 INFO  [stdout] (http-/127.0.0.1:8080-1) Hibernate: insert into OrderEntity (address, approved, customer, pizza, version, id) values (?, ?, ?, ?, ?, ?)
+  INFO  [stdout] Hibernate: insert into OrderEntity (address, approved, customer, pizza, version, id) values (?, ?, ?, ?, ?, ?)
 </pre>
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-5" >}}
 
-
-# Add JSF Task Form
-
-{{< img src="../img/approve-order.png" >}}
-
-After the order has been persisted, a user can approve the order. For that, a task form is needed to display the order information.
-
-## Add a CDI Controller Bean
-
-To update the persisted entity we use a named CDI Bean `ApproveOrderController`. To gather the persisted order entity, we get the order id from the process variables of the `businessProcess`. With the id we can load the order entity trough the order business logic. After the order has been updated, the detached entity state is merged by the order business logic.
-
-```java
-package org.camunda.bpm.getstarted.pizza;
-
-import org.camunda.bpm.engine.cdi.BusinessProcess;
-import org.camunda.bpm.engine.cdi.jsf.TaskForm;
-
-import javax.enterprise.context.ConversationScoped;
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import java.io.IOException;
-import java.io.Serializable;
-
-@Named
-@ConversationScoped
-public class ApproveOrderController implements Serializable {
-
-  private static  final long serialVersionUID = 1L;
-
-  // Inject the BusinessProcess to access the process variables
-  @Inject
-  private BusinessProcess businessProcess;
-
-  // Inject the EntityManager to access the persisted order
-  @PersistenceContext
-  private EntityManager entityManager;
-
-  // Inject the OrderBusinessLogic to update the persisted order
-  @Inject
-  private OrderBusinessLogic orderBusinessLogic;
-
-  // Caches the OrderEntity during the conversation
-  private OrderEntity orderEntity;
-
-  public OrderEntity getOrderEntity() {
-    if (orderEntity == null) {
-      // Load the order entity from the database if not already cached
-      orderEntity = orderBusinessLogic.getOrder((Long) businessProcess.getVariable("orderId"));
-    }
-    return orderEntity;
-  }
-
-  public void submitForm() throws IOException {
-    // Persist updated order entity and complete task form
-    orderBusinessLogic.mergeOrderAndCompleteTask(orderEntity);
-  }
-}
-```
-
-## Extend Order Business Logic
-
-The order business logic is extended to provide a method to load an order entity from the database by order id, to merge a detached order entity and to complete the task form. For that, the task form is injected, which is provided by the Camunda CDI artifact.
-
-Please note that the merging of the detached order entity and the completion of the task form are intentionally placed in one method. This ensures that both operations are executed in a single transaction. An error during that transaction will rollback both changes.
-
-```java
-@Stateless
-@Named
-public class OrderBusinessLogic {
-
-  // ...
-
-  // Inject task form available through the Camunda cdi artifact
-  @Inject
-  private TaskForm taskForm;
-
-  public void persistOrder(DelegateExecution delegateExecution) {
-    // ...
-  }
-
-  public OrderEntity getOrder(Long orderId) {
-    // Load order entity from database
-    return entityManager.find(OrderEntity.class, orderId);
-  }
-
-  /*
-    Merge updated order entity and complete task form in one transaction. This ensures
-    that both changes will rollback if an error occurs during transaction.
-   */
-  public void mergeOrderAndCompleteTask(OrderEntity orderEntity) {
-    // Merge detached order entity with current persisted state
-    entityManager.merge(orderEntity);
-    try {
-      // Complete user task from
-      taskForm.completeTask();
-    } catch (IOException e) {
-      // Rollback both transactions on error
-      throw new RuntimeException("Cannot complete task", e);
-    }
-  }
-
-}
-```

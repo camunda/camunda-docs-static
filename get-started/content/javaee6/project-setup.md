@@ -43,7 +43,7 @@ As we are setting up a WAR Project, make sure to select `Packaging: war`.
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
 
 ## Add Maven Dependencies
-  
+
 The next step consists of setting up the Maven dependencies for your new process application. Add the following dependencies to the `pom.xml` file of your project:
 
 ```xml
@@ -64,7 +64,7 @@ The next step consists of setting up the Maven dependencies for your new process
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
-        <version>7.3.0</version>
+        <version>7.4.0</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -133,21 +133,21 @@ We also use the Camunda EJB client to interact with the process engine, which pr
 The JBoss JavaEE spec dependency helps us to develop the application. It is only necessary during development so the `scope` is set to provided. The JBoss AS already contains this interfaces.
 
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`
-  
+
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-1" >}}
 
 ## Add a WEB-INF/beans.xml Deployment Descriptor
-  
+
 After we have all of our maven dependencies configured, we can add our first deployment descriptor. The `WEB-INF/beans.xml` is used to configure a CDI application. It's presence is always mandatory but it can be empty, as it is in our case. For further information, please see [this explanation](http://www.cdi-spec.org/faq/).
 
 This file needs to be added to the `src/main/webapp/WEB-INF` folder of the Maven project.
 
 ## Add a WEB-INF/faces-config.xml Deployment Descriptor
-  
+
 The next step is to configure the JSF component. This is done by adding the `WEB-INF/faces-config.xml` to your project. We use the default configuration, so you only have to add the file without any additional configuration.
-  
+
 This file needs to be added to the `src/main/webapp/WEB-INF` folder of the Maven project.
-  
+
 ```xml
 <?xml version="1.0" encoding='UTF-8'?>
 <faces-config version="2.0" xmlns="http://java.sun.com/xml/ns/javaee"
@@ -159,11 +159,11 @@ This file needs to be added to the `src/main/webapp/WEB-INF` folder of the Maven
 ```
 
 ## Add a META-INF/persistence.xml Deployment Descriptor
-  
+
 To configure JPA, we add the `META-INF/persistence.xml` file. We use the same data source as the process engine which is configured inside the `standalone.xml` of the JBoss distribution.
 
 Additionally, we configure the H2 database to drop the database schema on redeployment and to log SQL queries. This configuration is useful during development.
-  
+
 This file needs to be added to the `src/main/resources/META-INF` folder of the Maven project.
 
 ```xml
@@ -187,11 +187,11 @@ This file needs to be added to the `src/main/resources/META-INF` folder of the M
 ```
 
 ## Add a META-INF/processes.xml Deployment Descriptor
-  
+
 The last step for setting up the process application is adding the `META-INF/processes.xml` deployment descriptor file. This file allows us to provide a declarative configuration of the deployment(s) that this process application makes to the process engine.
-  
+
 This file needs to be added to the `src/main/resources/META-INF` folder of the Maven project.
-  
+
 ```xml
 <process-application
   xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"

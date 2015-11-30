@@ -203,8 +203,8 @@ Next, complete the task `Provide Customer Rating`. Again, click on `Add a variab
 Now open the Tomcat console. You have completed the tasks and set the variables accordingly so that the milestone has occurred. On the console, you should see the following log entries:
 
 <pre class="console">
-org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener notify
-INFORMATION: Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transition: occur
+INFO org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener
+Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transition: occur
 </pre>
 
 Our lifecycle listener has been notified, showing that the milestone has actually occurred.

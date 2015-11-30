@@ -1,7 +1,7 @@
 ---
 
 title: 'Start a BPMN Process using a JSF Form'
-weight: 40
+weight: 50
 
 menu:
   main:
@@ -85,9 +85,9 @@ When the form is submitted, the `camundaTaskForm.completeProcessInstanceForm()` 
 
 {{< img src="../img/pizza-order-process-start-form.png" >}}
 
-Open the process with the modeler plugin. Click on the start event. In the properties view, set the `Form Key` property to `app:placeorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the application.
+Open the process with Camunda Modeler. Click on the start event. In the properties view, set the `Form Key` property to `app:placeorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the application.
 
-When you are done, save all resources, perform a Maven build and redeploy the process application.
+When you are done, save all resources, refresh the Eclipse project, perform a Maven build, and redeploy the process application.
 
 {{< note title="Hint" class="info" >}}
 It is best practice to perform a `clean install` build to make sure all resources are replaced with their newest version.
