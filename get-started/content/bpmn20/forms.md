@@ -67,7 +67,7 @@ The Task Form can be added and configured the same way. Add a file named `approv
 </form>
 ```
 
-After that, open the process with the modeler plugin again. Click on the user task. In the properties view, insert `embedded:app:forms/approve-loan.html` into the `Form Key` property field.
+After that, open the process with the modeler again. Click on the user task. In the properties view, insert `embedded:app:forms/approve-loan.html` into the `Form Key` property field.
 
 
 # Re-Build and Deploy

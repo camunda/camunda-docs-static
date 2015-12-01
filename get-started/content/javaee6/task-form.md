@@ -200,7 +200,7 @@ Open the process with the modeler. Click on the *Approve Order* user task. In th
 
 {{< img src="../img/pizza-order-process-no.png" >}}
 
-Open the process with the modeler plugin. In the properties view, set the `Condition` property of the conditional sequence flows after the exclusive gateway to `${orderBusinessLogic.getOrder(orderId).approved}` respectively `${not orderBusinessLogic.getOrder(orderId).approved}`.
+Open the process with the modeler. In the properties view, set the `Condition` property of the conditional sequence flows after the exclusive gateway to `${orderBusinessLogic.getOrder(orderId).approved}` respectively `${not orderBusinessLogic.getOrder(orderId).approved}`.
 
 When you are done, save all resources, perform a Maven build and redeploy the process application. You can now approve the pizza order from the tasklist.
 

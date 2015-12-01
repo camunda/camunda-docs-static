@@ -70,7 +70,7 @@ If the user disapproves the pizza order an email is sent to inform the customer.
 The EJB is extended with a method which logs an informative message for the rejection of the order.
 
 ```html
- @Stateless
+@Stateless
 @Named
 public class OrderBusinessLogic {
 
