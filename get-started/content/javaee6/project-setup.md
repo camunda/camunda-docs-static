@@ -8,16 +8,16 @@ menu:
     name: "Project Setup"
     parent: "get-started-java-ee"
     identifier: "get-started-java-ee-project-setup"
-    pre: "Setup an Apache Maven-based Java EE process application inside eclipse."
+    pre: "Set up an Apache Maven-based Java EE process application inside Eclipse."
 
 ---
 
-Now you are ready to set up your first process application project in eclipse.
+Now you are ready to set up your first process application project in Eclipse.
 
 
 # Set up your project
 
-Now you are ready to set up your Java EE process application project in eclipse. Setting up a process application project consists of 6 steps:
+Now you are ready to set up your Java EE process application project in Eclipse. Setting up a process application project consists of 6 steps:
 
 1. Create a new Maven Project in Eclipse
 2. Add the Maven dependencies
@@ -32,7 +32,7 @@ In the following sections, we go through this process step by step.
 
 {{< img src="../img/maven-project-settings.png" >}}
 
-In eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
+In Eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
 
 On the first page of the *New Maven Project Wizard* select &quot;*Create a simple project (skip archetype selection)*&quot;. Click Next.
 

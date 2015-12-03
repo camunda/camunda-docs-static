@@ -26,7 +26,7 @@ We will now add a process model from our BPMN modeler to the roundtrip and creat
 
 {{< img src="../img/signavio.png" >}}
 
-The guys from Signavio have created a web-based BPMN modeler. If you don't know it yet, you should [take a look at it](http://www.signavio.com/camunda). It's extremely intuitive to use (so it's perfectly suitable for Business users) and offers several helpful collaboration features, including a sophisticated API, which is why Cycle currently works best with Signavio.
+Signavio is a web based modeler for BPMN 2.0 processes.
 
 ## Forward: From Signavio to Camunda Modeler
 

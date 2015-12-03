@@ -8,7 +8,7 @@ menu:
     name: "Model a Process"
     parent: "get-started-java-ee"
     identifier: "get-started-java-ee-model"
-    pre: "Learn the basics of handling the Camunda Modeler for Eclipse and learn how to model and configure a fully executable process."
+    pre: "Learn the basics of handling the Camunda Modeler and learn how to model and configure a fully executable process."
 
 ---
 

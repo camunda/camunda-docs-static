@@ -8,7 +8,7 @@ menu:
     name: "Project Setup"
     parent: "get-started-cmmn"
     identifier: "get-started-cmmn-setup"
-    pre: "Setup an Apache Maven-based process application inside eclipse and deploy it."
+    pre: "Set up an Apache Maven-based process application inside eclipse and deploy it."
 
 ---
 

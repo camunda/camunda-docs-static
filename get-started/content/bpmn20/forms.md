@@ -12,7 +12,7 @@ menu:
 
 ---
 
-In the next step, we want to add a HTML based Task Form to the application.
+In the next step, we want to add an HTML based task form to the application.
 
 
 # Add a Start Form
@@ -45,7 +45,7 @@ Open the process with the modeler. Click on the start event. In the properties v
 
 # Add a Task Form
 
-The Task Form can be added and configured the same way. Add a file named `approve-loan.html` to the `src/main/webapp/forms` directory and add the following content:
+The task form can be added and configured the same way. Add a file named `approve-loan.html` to the `src/main/webapp/forms` directory and add the following content:
 
 ```html
 <form name="approveLoan">
@@ -78,7 +78,7 @@ When you are done, save all resources, perform a Maven build and redeploy the pr
 It is best practice to perform a `clean install` build to make sure all resources are replaced with their newest version.
 {{< /note >}}
 
-Now you can open the Tasklist and start a new process instance for the loan approval process. You will notice that the custom form is displayed.
+Now you can open Tasklist and start a new process instance for the loan approval process. You will notice that the custom form is displayed.
 
 {{< img src="../img/start-form-embedded.png" >}}
 

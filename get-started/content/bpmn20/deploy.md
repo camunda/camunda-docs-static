@@ -12,12 +12,12 @@ menu:
 
 ---
 
-The next step consists in building, deploying and testing the process.
+The next step consists of building, deploying and testing the process.
 
 
 # Build the Web Application with Maven
 
-Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-0.0.1-SNAPSHOT.war` In the `target/` folder of your Maven project.
+Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-0.0.1-SNAPSHOT.war` in the `target/` folder of your Maven project.
 
 {{< note title="Hint" class="info" >}}
 If the `loan-approval-0.0.1-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
@@ -47,7 +47,7 @@ ENGINE-08050 Process application Loan Approval App successfully deployed
 
 # Verify the Deployment with Cockpit
 
-Now use Cockpit to check if the process is successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with demo / demo. Your process *Loan Approval* is visible on the start screen.
+Now use Cockpit to check if the process is successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with demo / demo. Your process *Loan Approval* is visible on the dashboard.
 
 {{< img src="../img/cockpit-loan-approval.png" >}}
 
@@ -65,7 +65,7 @@ If you now go back to [Camunda Cockpit](http://localhost:8080/camunda/app/cockpi
 
 # Configure Process Start Authorizations
 
-To allow the user *john* to see the process definition *Loan Approval* you have to go to Camunda Admin ([http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6](http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6)). Next, click on the button *Create New* to add a new authorization on the resource *process definition*. Now you can give the user *john* all permissions on process definition *approve-loan*. When you are done, submit the new authorization.
+To allow the user *john* to see the process definition *Loan Approval*, you have to go to Camunda Admin ([http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6](http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6)). Next, click on the button *Create New* to add a new authorization on the resource *process definition*. Now you can give the user *john* all permissions on process definition *approve-loan*. When you are done, submit the new authorization.
 
 {{< img src="../img/create-process-definition-authorization.png" >}}
 
@@ -73,12 +73,12 @@ Now create a second authorization for the *process instance* resource. Set the p
 
 {{< img src="../img/create-process-instance-authorization.png" >}}
 
-For further details about authorizations and how to manage them please read the following sections in the user guide: [Authorization Service](/manual/latest/user-guide/process-engine/authorization-service) and [Authorizations](/manual/latest/webapps/admin/authorization-management).
+For further details about authorizations and how to manage them, please read the following sections in the user guide: [Authorization Service](/manual/latest/user-guide/process-engine/authorization-service) and [Authorizations](/manual/latest/webapps/admin/authorization-management).
 
 
 # Work on the Task
 
-Log out of the Admin. Go to Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)) and log back in with the user credentials "john / john". Now you see the *Approve Loan* task in your Tasklist. Select the task and click on the *Diagram* tab. This displays the process diagram highlighting the User Task that is waiting for you to work on it.
+Log out of Admin. Go to Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)) and log back in with the user credentials "john / john". Now you see the *Approve Loan* task in your Tasklist. Select the task and click on the *Diagram* tab. This displays the process diagram highlighting the User Task that is waiting for you to work on it.
 
 {{< img src="../img/diagram.png" >}}
 

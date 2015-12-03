@@ -8,11 +8,11 @@ menu:
     name: "Download and Installation"
     parent: "get-started-pa"
     identifier: "get-started-pa-install"
-    pre: "Install Camunda BPM Platform and Camunda Modeler on your machine."
+    pre: "Install the Camunda BPM Platform and Camunda Modeler on your machine."
 
 ---
 
-First you need to setup your development environment and install Camunda BPM Platform and Camunda Modeler.
+First you need to set up your development environment and install the Camunda BPM Platform and Camunda Modeler.
 
 
 # Prerequisites
@@ -21,7 +21,7 @@ Make sure you have the following set of tools installed:
 
 * Java JDK 1.6+
 * Apache Maven (optional, if not installed you can use embedded Maven inside eclipse.)
-* A modern Web browser (recent Firefox, Chrome, or Internet Explorer 9+ will work fine)
+* A modern web browser (recent Firefox, Chrome, or Internet Explorer 9+ will work fine)
 
 
 # Camunda BPM Platform

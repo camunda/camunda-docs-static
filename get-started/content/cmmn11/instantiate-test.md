@@ -8,11 +8,11 @@ menu:
     name: "Instantiate and Test"
     parent: "get-started-cmmn"
     identifier: "get-started-cmmn-instantiate-and-test"
-    pre: "Use Java Code to instantiate the case definition, then, deploy and test the application."
+    pre: "Use Java code to instantiate the case definition, then deploy and test the application."
 
 ---
 
-In this step, we use Java Code to instantiate the case definition, then, deploy and test the application.
+In this step, we use Java code to instantiate the case definition, then deploy and test the application.
 
 
 # Java Code

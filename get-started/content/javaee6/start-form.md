@@ -85,7 +85,7 @@ When the form is submitted, the `camundaTaskForm.completeProcessInstanceForm()` 
 
 {{< img src="../img/pizza-order-process-start-form.png" >}}
 
-Open the process with Camunda Modeler. Click on the start event. In the properties view, set the `Form Key` property to `app:placeorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the application.
+Open the process with Camunda Modeler. Click on the start event. In the properties view, set the `Form Key` property to `app:placeorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the `app`lication.
 
 When you are done, save all resources, refresh the Eclipse project, perform a Maven build, and redeploy the process application.
 

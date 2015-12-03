@@ -8,16 +8,16 @@ menu:
     name: "Project Setup"
     parent: "get-started-spring"
     identifier: "get-started-spring-project-setup"
-    pre: "Setup Spring web application as an Apache Maven Project inside eclipse."
+    pre: "Set up Spring web application as an Apache Maven Project inside Eclipse."
 
 ---
 
-Now you are ready to set up your first process application project in eclipse.
+Now you are ready to set up your first process application project in Eclipse.
 
 
 # Set Up a Java Project
 
-We will start by setting up a Spring web application as an Apache Maven Project inside eclipse. This consists of four steps:
+We will start by setting up a Spring web application as an Apache Maven Project inside Eclipse. This consists of four steps:
 
 1. Create a new Maven Project in Eclipse
 2. Add the Camunda & Spring framework dependencies
@@ -28,7 +28,7 @@ In the following sections, we go through this process step by step.
 
 ## Create a new Maven Project in Eclipse
 
-First, we set up a new Apache Maven based project in eclipse. Let's call it *loanapproval-spring*. The screenshot to the left illustrates the settings we choose. As we are deploying a web application, make sure to select `Packaging: war`.
+First, we set up a new Apache Maven based project in Eclipse. Let's call it *loanapproval-spring*. The screenshot below illustrates the settings we choose. As we are deploying a web application, make sure to select `Packaging: war`.
 
 {{< img src="../img/eclipse-new-project.png" >}}
 

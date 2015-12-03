@@ -8,7 +8,7 @@ menu:
     name: "Project Setup"
     parent: "get-started-pa"
     identifier: "get-started-pa-setup"
-    pre: "Setup an Apache Maven-based process application inside Eclipse and deploy it."
+    pre: "Set up an Apache Maven-based process application inside Eclipse and deploy it."
 
 ---
 
@@ -89,7 +89,7 @@ Now you can perform the first build. Select the `pom.xml` in the Package Explore
 
 # Add a Process Application Class
 
-Next, you need to create a package, e.g. `org.camunda.bpm.getstarted.loanapproval` and add a Process Application class to it. The Process Application class constitutes the interface between your application and the process engine.
+Next, you need to create a package, e.g., `org.camunda.bpm.getstarted.loanapproval` and add a Process Application class to it. The Process Application class constitutes the interface between your application and the process engine.
 
 ```java
 package org.camunda.bpm.getstarted.loanapproval;

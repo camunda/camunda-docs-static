@@ -20,7 +20,7 @@ After the order has been persisted, a user can approve the order. For that, a ta
 
 # Add a CDI Controller Bean
 
-To update the persisted entity we use a named CDI Bean `ApproveOrderController`. To gather the persisted order entity, we get the order id from the process variables of the `businessProcess`. With the id we can load the order entity trough the order business logic. After the order has been updated, the detached entity state is merged by the order business logic.
+To update the persisted entity we use a named CDI Bean `ApproveOrderController`. To gather the persisted order entity, we get the order id from the process variables of the `businessProcess`. With the id we can load the order entity through the order business logic. After the order has been updated, the detached entity state is merged by the order business logic.
 
 ```java
 package org.camunda.bpm.getstarted.pizza;
@@ -193,7 +193,7 @@ On form submit, the `approveOrderController.submitForm()` method calls the EJB `
 
 {{< img src="../img/pizza-order-process-task-form.png" >}}
 
-Open the process with the modeler. Click on the *Approve Order* user task. In the properties view, set the `Form Key` property to `app:approveorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the `app` location.
+Open the process with the modeler. Click on the *Approve Order* user task. In the properties view, set the `Form Key` property to `app:approveorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the `app`lication.
 
 
 # Configure the Conditional Sequence Flows in the Process

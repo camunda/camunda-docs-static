@@ -12,11 +12,11 @@ menu:
 
 ---
 
-In this section you learn how to create your first BPMN 2.0 process with the Camunda Modeler. Start up Camunda Modeler now.
+In this section you learn how to create your first BPMN 2.0 process with the Camunda Modeler. Start up the Camunda Modeler now.
 
 # Create a new BPMN Diagram
 
-Create new BPMN diagram by clicking *File > New File > BPMN Diagram*.
+Create a new BPMN diagram by clicking *File > New File > BPMN Diagram*.
 
 {{< img src="../img/modeler-new-bpmn-diagram.png" >}}
 
@@ -33,7 +33,7 @@ Double-click on the Start Event. A text box opens. Type "Loan Request Received".
 When editing Labels, you can add line breaks by hitting `Shift + Enter`.
 {{< /note >}}
 
-Click on the start event. From its context menu, select the activity shape (oval) and drag it to a good position. Name it *Approve Loan*. Change the activity's type to *User Task* by clicking on it and using the wrench button.
+Click on the start event. From its context menu, select the activity shape (rectangle) and drag it to a good position. Name it *Approve Loan*. Change the activity type to *User Task* by clicking on it and using the wrench button.
 
 {{< img src="../img/modeler-step2.png" >}}
 
@@ -47,9 +47,9 @@ Add an End Event named *Loan Request Approved*.
 
 {{< img src="../img/modeler-step4.png" >}}
 
-Next, Open the properties view. If the properties view is not visible, select it from the menu: *Window / Show View / Other ...* This opens a dialog. From the dialog select *Properties*.
+Next, Open the properties view. If it is not already visible then click on the label on the right hand side of your screen and the properties view will be displayed.
 
-Select the User Task on the canvas. This updates the selection in the Properties View. Scroll to the Property named `Assignee`.
+Select the User Task on the canvas. This updates the selection in the properties view. Scroll to the property named `Assignee`.
 Type *john*.
 
 When you are done, save your changes.

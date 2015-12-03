@@ -12,10 +12,10 @@ menu:
 
 ---
 
-This tutorial guides you through your first steps of using camunda BPM in a Spring web application.
+This tutorial guides you through your first steps of using Camunda BPM in a Spring web application.
 
 **Target Audience**:
-In this tutorial we assume that you are familiar with the basics of Java web application development and the Spring Framework. We also assume that you have installed an eclipse distribution and the Camunda Modeler.
+In this tutorial we assume that you are familiar with the basics of Java web application development and the Spring Framework. We also assume that you have installed an Eclipse distribution and the Camunda Modeler.
 
 {{< get-code repo="camunda-get-started-spring" >}}
 
