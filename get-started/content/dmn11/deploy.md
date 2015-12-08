@@ -37,7 +37,8 @@ public class DishApplication extends ServletProcessApplication {
 
     DecisionService decisionService = processEngine.getDecisionService();
 
-    VariableMap variables = Variables.createVariables().putValue("season", "Summer");
+    VariableMap variables = Variables.createVariables()
+      .putValue("season", "Summer");
 
     decisionService.evaluateDecisionTableByKey("dish", variables);
   }
@@ -95,3 +96,15 @@ If you click on the id, you can see the historic data of the evaluation. The mat
 {{< img src="../img/cockpit-decision-history-dish-dmn.png" >}}
 
 Verify that the 4th rule was matched since the *season* variable was set to "Summer".
+
+# Next Steps
+
+Congratulations, you have now sucessfully setup a project with a DMN decision table.
+
+Next,
+
+* see how you can evaluate the decision using the [REST Api](/manual/reference/rest/decision-definition/post-evaluate/),
+* learn more about DMN by reading the [DMN Reference](/manual/reference/dmn11/),
+* learn more about the [Decision API exposed by Camunda Process Engine](/manual/user-guide/process-engine/decisions/),
+* check how you can invoke the decision from a [BPMN Business Rule Task](/manual/reference/bpmn20/tasks/business-rule-task/),
+* and a [CMMN Decision Task](/manual/reference/cmmn11/tasks/decision-task/).

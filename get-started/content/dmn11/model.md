@@ -91,4 +91,8 @@ When you are done, save your changes by clicking *File > Save File As..*. In the
 
 Return to Eclipse. Right-click the project folder and click *Refresh*. This synchronizes the new DMN file with Eclipse.
 
+In order for eclipse to automatically sychronize the workspace with the filesystem, consider [configuring auto-sync in eclipse][auto-sync].
+
 {{< get-tag repo="camunda-get-started-dmn" tag="Step-3" >}}
+
+[auto-sync]: /manual/modeler/camunda-modeler/tips/#eclipse-project-synchronization
