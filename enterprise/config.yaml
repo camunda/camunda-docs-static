@@ -5,7 +5,7 @@ title: "Camunda Enterprise"
 theme: "camunda"
 
 blackfriday:
-  plainIdAnchors: true
+  plainIDAnchors: true
 
 params:
   sections:

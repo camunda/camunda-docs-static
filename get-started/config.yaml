@@ -5,7 +5,7 @@ title: "Getting started with Camunda BPM"
 theme: "camunda"
 
 blackfriday:
-  plainIdAnchors: true
+  plainIDAnchors: true
 
 params:
   sections:
