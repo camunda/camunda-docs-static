@@ -12,7 +12,7 @@ menu:
     
 ---
 
-This tutorial guides you through modeling your first DMN 1.1 decision table and execute it with the Camunda BPM Platform.
+This tutorial guides you through modeling your first DMN 1.1 decision table and executing it with the Camunda BPM Platform.
 
 {{< note title="Standalone DMN engine" class="info" >}}
 Note that it is also possible to use the DMN engine independently from the Camunda BPM Platform. Please refer to the [User Guide](/manual/latest/user-guide/dmn-engine/embed/) and the [Example](https://github.com/camunda/camunda-bpm-examples/tree/master/dmn-engine/dmn-engine-java-main-method) for more details.

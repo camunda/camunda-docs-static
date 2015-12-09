@@ -8,7 +8,7 @@ menu:
     name: "Evaluate, Deploy and Test"
     parent: "get-started-dmn"
     identifier: "get-started-dmn-deploy"
-    pre: "Use Java Code to evaluate the decision table, then, deploy the web application to Apache Tomcat and test it with Cockpit."
+    pre: "Use Java Code to evaluate the decision table, then deploy the web application to Apache Tomcat and test it with Cockpit."
 
 ---
 
@@ -16,7 +16,7 @@ In this step, we use Java Code to evaluate the decision table. Then we deploy th
 
 # Evaluate the Decision Table
 
-In order to directly evaluate the decision table after deployment, add the following method to your DishApplication class:
+To directly evaluate the decision table after deployment, add the following method to your DishApplication class:
 
 ```java
 package org.camunda.bpm.getstarted.dish;
@@ -99,11 +99,11 @@ Verify that the 4th rule was matched since the *season* variable was set to "Sum
 
 # Next Steps
 
-Congratulations, you have now sucessfully setup a project with a DMN decision table.
+Congratulations, you have now sucessfully set up a project with a DMN decision table.
 
 Next,
 
-* see how you can evaluate the decision using the [REST Api](/manual/reference/rest/decision-definition/post-evaluate/),
+* see how you can evaluate the decision using the [REST API](/manual/reference/rest/decision-definition/post-evaluate/),
 * learn more about DMN by reading the [DMN Reference](/manual/reference/dmn11/),
 * learn more about the [Decision API exposed by Camunda Process Engine](/manual/user-guide/process-engine/decisions/),
 * check how you can invoke the decision from a [BPMN Business Rule Task](/manual/reference/bpmn20/tasks/business-rule-task/),

@@ -63,9 +63,9 @@ Click on the "+" button at the bottom of the table. In the row that was added, t
 
 {{< img src="../img/modeler-step5.png" >}}
 
-"Fall" is the condition (e.g. [input entry](/manual/latest/reference/dmn11/decision-table/rule/#input-entry-condition)) of the rule. It is an expression in [FEEL](/manual/latest/reference/dmn11/feel/) which is applied then the input value (e.g. the variable "season") is equals to "Fall".
+"Fall" is the condition (i.e., [input entry](/manual/latest/reference/dmn11/decision-table/rule/#input-entry-condition)) of the rule. It is an expression in [FEEL](/manual/latest/reference/dmn11/feel/) which is applied and then checks if the input value (i.e., the variable "season") is equal to "Fall".
 
-"Spareribs" is the conclusion (e.g. [output entry](/manual/latest/reference/dmn11/decision-table/rule/#output-entry-conclusion)) of the rule. It is a simple expression in JUEL and return the String "Spareribs".
+"Spareribs" is the conclusion (i.e., [output entry](/manual/latest/reference/dmn11/decision-table/rule/#output-entry-conclusion)) of the rule. It is a simple expression in JUEL and returns the String "Spareribs".
 
 Next, add additional rules for the remaining seasons.
  
@@ -73,7 +73,7 @@ Next, add additional rules for the remaining seasons.
  
 # Configure the Hit Policy
 
-Set the [hit policy](/manual/latest/reference/dmn11/decision-table/hit-policy/) to "UNIQUE" that specifies that only one rule can match. Verify that the the decision table contains only one rule per season.
+Set the [hit policy](/manual/latest/reference/dmn11/decision-table/hit-policy/) to "UNIQUE", which specifies that only one rule can match. Verify that the the decision table contains only one rule per season.
 
 Click on the field under the id of the table. In the dialog that pops up, open the combo box and choose the hit policy "UNIQUE".
 
@@ -91,7 +91,7 @@ When you are done, save your changes by clicking *File > Save File As..*. In the
 
 Return to Eclipse. Right-click the project folder and click *Refresh*. This synchronizes the new DMN file with Eclipse.
 
-In order for eclipse to automatically sychronize the workspace with the filesystem, consider [configuring auto-sync in eclipse][auto-sync].
+For Eclipse to automatically sychronize the workspace with the filesystem, consider [configuring auto-sync in eclipse][auto-sync].
 
 {{< get-tag repo="camunda-get-started-dmn" tag="Step-3" >}}
 
