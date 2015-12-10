@@ -73,7 +73,7 @@ Next, add additional rules for the remaining seasons.
  
 # Configure the Hit Policy
 
-Set the [hit policy](/manual/latest/reference/dmn11/decision-table/hit-policy/) to "UNIQUE", which specifies that only one rule can match. Verify that the the decision table contains only one rule per season.
+Set the [hit policy](/manual/latest/reference/dmn11/decision-table/hit-policy/) to "UNIQUE", which specifies that only one rule can match. Verify that the decision table contains only one rule per season.
 
 Click on the field under the id of the table. In the dialog that pops up, open the combo box and choose the hit policy "UNIQUE".
 
