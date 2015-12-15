@@ -36,12 +36,16 @@ downloads:
 
   selected:
     branch: "7.4"
-    version: "7.4.0"
+    version: "7.4.1"
     server: "tomcat"
 
   branches:
   - branch: "7.4"
     releases:
+    - number: "7.4.1"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14193"
+      date: "2015.12.15"
+
     - number: "7.4.0"
       note: "http://blog.camunda.org/post/2015/11/camunda-bpm-740-released/"
       date: "2015.11.30"
@@ -61,6 +65,10 @@ downloads:
 
   - branch: "7.3"
     releases:
+    - number: "7.3.4"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14090"
+      date: "2015.12.15"
+
     - number: "7.3.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13990"
       date: "2015.10.26"
