@@ -273,12 +273,12 @@ downloads:
 
 Not sure which distribution to download? Find more information about the [Full Distribution](/manual/latest/introduction/downloading-camunda/#full-distribution) and the [Standalone Web Application](/manual/latest/introduction/downloading-camunda/#standalone-web-application-distribution) in our user guide.
 
-Furthermore we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle" >}}), the [Camunda Web Modeler]({{< relref "#camunda-web-modeler" >}}) and [Camunda Enterprise Extensions]({{< relref "#enterprise-extensions" >}}) on this page.
+Furthermore, we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle" >}}), the [Camunda Web Modeler]({{< relref "#camunda-web-modeler" >}}) and [Camunda Enterprise Extensions]({{< relref "#enterprise-extensions" >}}) on this page.
 
 
 # Full Distributions and Standalone Web Applications of the Enterprise Edition
 
-This page contains the latest versions of all supported branches. In addition we provide alpha releases of the current development branch. Please note that a alpha release is not fully tested and just a snapshot of the current development state.
+This page contains the latest versions of all supported branches. In addition, we provide alpha releases of the current development branch. Please note that an alpha release is not fully tested and just a snapshot of the current development state.
 
 
 {{< ee-download >}}
@@ -297,21 +297,21 @@ This page contains the latest versions of all supported branches. In addition we
 
 There is both a community and an enterprise edition of Camunda BPM. Among these, we distinguish between four different types of releases:
 
-1. **Major Release**: The Major release contains features and bugfixes. It is fully tested and meant to be used for production systems. The Major release may contain incompatible API changes. The release is done in parallel for the community edition and for the enterprise edition.
-2. **Minor Release**: The Minor release contains features and bugfixes. It is fully tested and meant to be used for production systems. In Minor releases we add functionality in a backwards compatible manner. The release is done in parallel for the community edition and for the enterprise edition.
-3. **Development Release**: On the community branch and on the enterprise branch we release *ALPHA* versions in short iteration cycles. Development releases contain the latest features and bug fixes. The Development release is not fully tested and is a snapshot of the current development state.
-4. **Patch Release**: On the enterprise branch we perform patch releases in which we backport the latest bug fixes. Patch releases do not contain new features and are meant to be used for production systems. Patch releases are fully tested and are only available to enterprise customers.
+1. The **Major Release** contains features and bugfixes. It is fully tested and meant to be used for production systems. The Major release may contain incompatible API changes and is done in parallel for the community and the enterprise editions.
+2. The **Minor Release** contains features and bugfixes. It is fully tested and meant to be used for production systems. In Minor releases we add functionality in a backwards compatible manner. The release is done in parallel for the community and the enterprise editions.
+3. On the community branch and on the enterprise branch we release *ALPHA* versions in short iteration cycles. **Development Releases** contain the latest features and bug fixes. The Development release is not fully tested and is a snapshot of the current development state.
+4. On the enterprise branch we perform **Patch Releases**, in which we backport the latest bug fixes. Patch releases are fully tested and are meant to be used for production systems. Patch releases do not contain new features and are only available to enterprise customers.
 
-The following drawing illustrates the different release types for the community edition and the enterprise edition.
+The following drawing illustrates the different release types for the community edition and the enterprise editions.
 
 {{< img src="../img/releases.png" title="Releases" >}}
 
-Find more information about our versioning semantic [here](http://semver.org/).
+The Camunda versioning scheme follows the MAJOR.MINOR.PATCH pattern put forward by [Semantic Versioning](http://semver.org/).
 
 
 # Camunda Cycle
 
-With Camunda BPM 7.2.0 we have migrated Camunda Cycle into a standalone project. We did this to reduce the tight coupling between Camunda Cycle and the Camunda BPM platform. This eases our development efforts for Cycle and allows others to increase participation.
+With Camunda BPM 7.2.0 we migrated Camunda Cycle into a standalone project. We did this to reduce the tight coupling between Camunda Cycle and the Camunda BPM platform. This eases our development efforts for Cycle and allows others to increase participation.
 
 <table class="table">
   <thead>
@@ -342,7 +342,7 @@ With Camunda BPM 7.2.0 we have migrated Camunda Cycle into a standalone project.
 
 ## XSLT Extension
 
-Please note that this feature can be used from camunda BPM 7.2.x onwards.
+Please note that this feature can be used from Camunda BPM 7.2.x onwards.
 
 <table class="table">
   <thead>
@@ -370,7 +370,11 @@ Please note that this feature can be used from camunda BPM 7.2.x onwards.
 
 # Camunda Modeler
 
-The Camunda Modeler is an open source process modeling tool. It allows you to edit BPMN process diagrams and DMN decision tables. The Eclipse based BPMN Modeler can be integrated in your Eclipse IDE as plugin.
+Camunda Modeler is a desktop application for modeling BPMN and DMN. It allows you to model files located directly on your local file system.
+
+The Camunda Modeler is an open source process modeling tool. It is a desktop application that allows you to edit BPMN process diagrams and DMN decision tables located directly on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation.
+
+The Eclipse based BPMN Modeler can be integrated in your Eclipse IDE as a plugin.
 
 * [Camunda Modeler](http://camunda.org/download/modeler/)
 * [Deprecated: Camunda Modeler Eclipse Plugin](/manual/latest/modeler/eclipse-plugin/update-sites/)
@@ -378,7 +382,7 @@ The Camunda Modeler is an open source process modeling tool. It allows you to ed
 
 # Camunda Web Modeler
 
-The Camunda Web Modeler is an OEM version of the Signavio Process Editor. It allows you to edit BPMN 2.0 process models with your web browser. In comparison to the Camunda Modeler it is targeted at less technical people, e.g. business analysts or requirements engineers.
+The Camunda Web Modeler is an OEM version of the Signavio Process Editor. It allows you to edit BPMN 2.0 process models with your web browser. In comparison to the Camunda Modeler it is targeted at less technical people, e.g., business analysts or requirements engineers.
 
 The Camunda Web Modeler is stripped down to fulfill all necessary tasks in process automation projects and is perfectly aligned with the Camunda BPM platform.
 
