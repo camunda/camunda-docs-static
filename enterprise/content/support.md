@@ -10,13 +10,13 @@ menu:
 
 ---
 
-The Camunda Enterprise Support Guide is intended to help you get the support you need quickly and conveniently. This document includes information about contacting technical support, description of response times, and online resources.
+This guide is intended to help you get the support you need quickly and conveniently. This document includes information about contacting technical support, description of response times, and online resources.
 
 
 # How to Create an Support Issue
 
 Based on the agreed SLA (Service Level Agreement), you can contact our support service with your questions, wishes and problems.
-To create a new support ticket, follow the instructions below. To shorten the processing time, please provide us with as much information as possible.
+To create a new support issue, follow the instructions below. To shorten the processing time, please provide us with as much information as possible.
 
 {{< img src="../img/jira-create-support-issue.png" title="Create Support Issue" >}}
 
@@ -24,10 +24,11 @@ To create a new support ticket, follow the instructions below. To shorten the pr
 * Select `Create Issue`
 * Select `Support` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
 * Give the ticket a meaningful **summary**
-* You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you. Provide us with a date in case of important **deadlines** that need to be reached.
+* You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you. 
+* Provide us with a date in case of important **deadlines** that need to be reached.
 * Enter a detailed **description** of your issue. In case of Bug Reports please use the template (Reproduce steps, Problem, Expected behavior, etc.). Make use of the [JIRA text formatting]({{< relref "#text-formatting" >}}) in order to represent code snippets in a better readable way.
 * **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster.
-* For bug reprots and help requests it is important to know which **environment** you use. Inform us about the used Camunda BPM platform version, application server, database and everything else that seems to be important for your issue.
+* For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda BPM platform version, application server, database and everything else that seems to be important for your issue.
 
 
 ## Issue Types
@@ -64,7 +65,7 @@ We distinguish three types of issues:
 
 ## Priority Level
 
-Depending on the impact of a bug on your system you can prioritize issues. Please note that according to your SLA's, a prioritization is only possible for bug tickets. Feature Requests and Help Requests are always prioritized as default.
+You can prioritize issues depending on the impact of a bug on your system. Please note that according to your SLA's, a prioritization is only possible for bug tickets. Feature Requests and Help Requests are always prioritized as L3 - Default.
 
 <table class="table table-bordered">
   <thead>
@@ -76,17 +77,17 @@ Depending on the impact of a bug on your system you can prioritize issues. Pleas
   </thead>
   <tbody>
   <tr>
-    <td>L1 <img class="img-responsive" src="../img/jira-blocker.png"/>blocker</td>
+    <td>L1 <img class="img-responsive" src="../img/jira-blocker.png"/>Blocker</td>
     <td>Core components (i.e., process engine) of Camunda BPM do not work at all/produce critical errors that prevent usage in production mode.</td>
     <td><b>Bug Tickets only! Production mode only!</b></td>
   </tr>
   <tr>
-    <td>L2 <img class="img-responsive" src="../img/jira-major.png"/>critical</td>
+    <td>L2 <img class="img-responsive" src="../img/jira-major.png"/>Critical</td>
     <td>Usage of Camunda BPM seriously affected, a workaround is urgently needed. </td>
     <td><b>Bug Tickets only!</b></td>
   </tr>
   <tr>
-    <td>L3 <img class="img-responsive" src="../img/jira-minor.png"/>default</td>
+    <td>L3 <img class="img-responsive" src="../img/jira-minor.png"/>Default</td>
     <td>Non-critical errors, Help Requests, Feature Requests</td>
     <td>Bug Tickets, Feature Requests, Help Requests</td>
   </tr>
@@ -96,8 +97,8 @@ Depending on the impact of a bug on your system you can prioritize issues. Pleas
 
 ## Text Formatting
 
-JIRA offers the posibility to format text fileds and comments using the Wiki Style Renderer. This offers a variety of formatting options, among which the option of adding preformatted code to your issues. To display a preview of your text in formatted form hit the preview button at the bottom left of text fields.
-You can click the help icon or go to the JIRA [Text Formatting Notation Help](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all) in order to find additional information.
+JIRA offers the possibility to format text fields and comments using the Wiki Style Renderer. This offers a variety of formatting options, among which the option of adding preformatted code to your issues. To display a preview of your text in formatted form, hit the preview button at the bottom left of text fields.
+You can click the help icon or go to the JIRA [Text Formatting Notation Help](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all) to find additional information.
 
 
 ## Visibility of JIRA Tickets
