@@ -65,6 +65,10 @@ downloads:
 
   - branch: "7.3"
     releases:
+    - number: "7.3.5"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14291"
+      date: "2015.12.22"
+
     - number: "7.3.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14090"
       date: "2015.12.15"
