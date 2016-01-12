@@ -22,7 +22,7 @@ The condition(s) defining when the milestone is reached are modeled using Sentri
 
 Go back to eclipse and the CMMN model file. Insert the following XML:
 
-```xml
+{{< code language="xml" line="15-32,55" >}}
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
                   targetNamespace="http://cmmn.org"
@@ -82,7 +82,7 @@ Go back to eclipse and the CMMN model file. Insert the following XML:
   </cmmn:case>
 
 </cmmn:definitions>
-```
+{{< /code >}}
 
 The above does not only add a milestone but also a *sentry*. Sentries are used to capture conditions within a case and can trigger other events to occur. Here we have expressed that the milestone *Approved* is reached when both tasks have successfully completed, and if the application was sufficient and the customer received a good rating for creditworthiness.
 
@@ -114,7 +114,7 @@ public class LifecycleListener implements CaseExecutionListener {
 
 To register the listener with the milestone, update the milestone in `loan-approval.cmmn11.xml` as follows:
 
-```xml
+{{< code language="xml" line="55-60" >}}
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
                   targetNamespace="http://cmmn.org"
@@ -179,7 +179,7 @@ To register the listener with the milestone, update the milestone in `loan-appro
   </cmmn:case>
 
 </cmmn:definitions>
-```
+{{< /code >}}
 
 
 # Re-build and Deploy

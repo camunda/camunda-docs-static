@@ -19,7 +19,7 @@ In this step, we use Java code to instantiate the case definition, then deploy a
 
 In order to directly create a case instance after deployment, add the following method to your `LoanApprovalApplication` class:
 
-```java
+{{< code language="java" line="12-20" >}}
 package org.camunda.bpm.getstarted.cmmn.loanapproval;
 
 import org.camunda.bpm.application.PostDeploy;
@@ -42,7 +42,7 @@ public class LoanApprovalApplication extends ServletProcessApplication {
 
   }
 }
-```
+{{< /code >}}
 
 
 # Build the Web Application with Maven

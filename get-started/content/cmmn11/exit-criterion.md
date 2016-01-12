@@ -21,7 +21,8 @@ When a loan application is not sufficient, for example because it has formal err
 
 In the CMMN XML file, add the following sentry definition and register it for the *Provide Customer Rating* human task:
 
-```xml
+
+{{< code language="xml" line="15,35-42" >}}
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
         targetNamespace="http://cmmn.org"
@@ -96,7 +97,8 @@ In the CMMN XML file, add the following sentry definition and register it for th
   </cmmn:case>
 
 </cmmn:definitions>
-```
+{{< /code >}}
+
 
 
 # Re-build and Deploy
