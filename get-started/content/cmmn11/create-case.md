@@ -55,10 +55,11 @@ This snippet declares a *case plan model*, the essential part of any CMMN case d
 
 {{< img src="../img/cmmn-2.png" >}}
 
-As the first part of the loan application case, the loan application should be reviewed for any formal errors. We therefore add a *human task* to the case. Tasks are always specified by two parts: A *plan item* and a *plan item definition*. While the plan item definition is a blue print for the task's behavior, the plan item represents the actual task instantiation. Update your CMMN definition as follows (insert the highlighted parts at the appropriate positions or simply replace the entire content):
+As the first part of the loan application case, the loan application should be reviewed for any formal errors.  
+We therefore add a *human task* to the case. Tasks are always specified by two parts: A *plan item* and a *plan item definition*.  
+While the plan item definition is a blue print for the task's behavior, the plan item represents the actual task instantiation. Update your CMMN definition as follows (insert the highlighted parts at the appropriate positions or simply replace the entire content):
 
-```xml
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+{{< code language="xml" line="12-25" >}}<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
         targetNamespace="http://cmmn.org"
         xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
@@ -86,13 +87,11 @@ As the first part of the loan application case, the loan application should be r
     </cmmn:casePlanModel>
   </cmmn:case>
 
-</cmmn:definitions>
-```
+</cmmn:definitions>{{< /code >}}
 
 In addition, the customer's creditworthiness has to be assessed. We add another user task:
 
-```xml
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+{{< code language="xml" line="14,27-36" >}}<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
         targetNamespace="http://cmmn.org"
         xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
@@ -131,8 +130,7 @@ In addition, the customer's creditworthiness has to be assessed. We add another 
     </cmmn:casePlanModel>
   </cmmn:case>
 
-</cmmn:definitions>
-```
+</cmmn:definitions>{{< /code >}}
 
 Note how there is no direct relation between the two plan items. There is no sequence flow connecting the two tasks as in BPMN. In CMMN, this expresses that the tasks can be executed concurrently.
 
