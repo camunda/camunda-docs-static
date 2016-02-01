@@ -43,7 +43,7 @@ downloads:
   - branch: "7.5"
     releases:
     - number: "7.5.0-alpha1"
-      note: "http://blog.camunda.org/post/2016/01/camunda-bpm-750-alpha-1-released/"
+      note: "http://blog.camunda.org/post/2016/01/camunda-bpm-750-alpha1-released/"
       date: "2016.01.29"
 
   - branch: "7.4"
