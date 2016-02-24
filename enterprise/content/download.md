@@ -42,6 +42,10 @@ downloads:
   branches:
   - branch: "7.5"
     releases:
+    - number: "7.5.0-alpha2"
+      note: "http://blog.camunda.org/post/2016/02/camunda-bpm-750-alpha2-released/"
+      date: "2016.02.24"
+
     - number: "7.5.0-alpha1"
       note: "http://blog.camunda.org/post/2016/01/camunda-bpm-750-alpha1-released/"
       date: "2016.01.29"
@@ -323,35 +327,6 @@ The following drawing illustrates the different release types for the community 
 The Camunda versioning scheme follows the MAJOR.MINOR.PATCH pattern put forward by [Semantic Versioning](http://semver.org/).
 
 
-# Camunda Cycle
-
-With Camunda BPM 7.2.0 we migrated Camunda Cycle into a standalone project. We did this to reduce the tight coupling between Camunda Cycle and the Camunda BPM platform. This eases our development efforts for Cycle and allows others to increase participation.
-
-<table class="table">
-  <thead>
-    <tr>
-      <th class="col-md-2">Name</th>
-      <th class="col-md-2">Version</th>
-      <th class="col-md-2">Release Date</th>
-      <th class="col-md-2">Download</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="well">
-      <td><a href="/manual/latest/installation/cycle">Cycle for Tomcat</a></td>
-      <td>3.1.0</td>
-      <td>18.12.2014</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-[Previous Releases](https://camunda.org/enterprise-release/camunda-cycle/tomcat/)
-
-
 # Enterprise Extensions
 
 ## XSLT Extension
@@ -392,3 +367,32 @@ The Eclipse based BPMN Modeler can be integrated in your Eclipse IDE as a plugin
 
 * [Camunda Modeler](http://camunda.org/download/modeler/)
 * [Deprecated: Camunda Modeler Eclipse Plugin](/manual/latest/modeler/eclipse-plugin/update-sites/)
+
+
+# Camunda Cycle
+
+With Camunda BPM 7.2.0 we migrated Camunda Cycle into a standalone project. We did this to reduce the tight coupling between Camunda Cycle and the Camunda BPM platform. This eases our development efforts for Cycle and allows others to increase participation.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="/manual/latest/installation/cycle">Cycle for Tomcat</a></td>
+      <td>3.1.0</td>
+      <td>18.12.2014</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+[Previous Releases](https://camunda.org/enterprise-release/camunda-cycle/tomcat/)
