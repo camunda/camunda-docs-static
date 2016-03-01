@@ -52,6 +52,10 @@ downloads:
 
   - branch: "7.4"
     releases:
+    - number: "7.4.3"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14295"
+      date: "2016.03.01"
+
     - number: "7.4.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14290"
       date: "2016.01.28"
