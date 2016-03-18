@@ -36,7 +36,7 @@ downloads:
 
   selected:
     branch: "7.4"
-    version: "7.4.4"
+    version: "7.4.5"
     server: "tomcat"
 
   branches:
@@ -52,6 +52,10 @@ downloads:
 
   - branch: "7.4"
     releases:
+    - number: "7.4.5"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14491"
+      date: "2016.03.18"
+
     - number: "7.4.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14391"
       date: "2016.03.10"
