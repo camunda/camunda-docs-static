@@ -124,61 +124,33 @@ Add a file named `approveorder.xhtml` to the `src/main/webapp` folder. Add the f
 ```html
 <!DOCTYPE HTML>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-xmlns:ui="http://java.sun.com/jsf/facelets"
-xmlns:h="http://java.sun.com/jsf/html"
-xmlns:f="http://java.sun.com/jsf/core">
-
-<f:view>
-<f:metadata>
-  <!-- Start working on a task. Task Id is read internally from
-       request parameters and cached in the CDI conversation scope.
-  -->
-
-  <f:event type="preRenderView" listener="#{camundaTaskForm.startTaskForm()}" />
-</f:metadata>
-<h:head>
-  <title>Approve Order</title>
-</h:head>
-<h:body>
-  <h1>Order:</h1>
-  Customer: #{approveOrderController.orderEntity.customer}
-  Address: #{approveOrderController.orderEntity.address}
-  Pizza: #{approveOrderController.orderEntity.pizza}
-  <h:form id="submitForm">
-    <h:outputLabel>Approve Order?</h:outputLabel>
-    <h:selectBooleanCheckbox value="#{approveOrderController.orderEntity.approved}"/><br/>
-    <h:commandButton id="submit_button" value="Approve Order" action="#{approveOrderController.submitForm()}" />
-  </h:form>
-</h:body>
-</f:view>
-</html>
-</script>
-
-<script type="text/html" id="preparepizza.xhtml">
-<!DOCTYPE HTML>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
   xmlns:ui="http://java.sun.com/jsf/facelets"
   xmlns:h="http://java.sun.com/jsf/html"
   xmlns:f="http://java.sun.com/jsf/core">
 
-<f:view>
-  <f:metadata>
-    <!-- Start working on a task. Task Id is read internally from
-         request parameters and cached in the CDI conversation scope.
-    -->
+  <f:view>
+    <f:metadata>
+      <!-- Start working on a task. Task Id is read internally from
+       request parameters and cached in the CDI conversation scope.
+      -->
 
     <f:event type="preRenderView" listener="#{camundaTaskForm.startTaskForm()}" />
   </f:metadata>
   <h:head>
-    <title>Prepare Pizza</title>
+    <title>Approve Order</title>
   </h:head>
   <h:body>
-    <h1>Please prepare pizza</h1>
+    <h1>Order:</h1>
+    Customer: #{approveOrderController.orderEntity.customer}
+    Address: #{approveOrderController.orderEntity.address}
+    Pizza: #{approveOrderController.orderEntity.pizza}
     <h:form id="submitForm">
-      <h:commandButton id="submit_button" value="Done" action="#{camundaTaskForm.completeTask()}" />
+      <h:outputLabel>Approve Order?</h:outputLabel>
+      <h:selectBooleanCheckbox value="#{approveOrderController.orderEntity.approved}"/><br/>
+      <h:commandButton id="submit_button" value="Approve Order" action="#{approveOrderController.submitForm()}" />
     </h:form>
   </h:body>
-</f:view>
+  </f:view>
 </html>
 ```
 
