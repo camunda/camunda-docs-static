@@ -127,7 +127,9 @@ And register it as a Spring Bean in the application context.
                          http://www.springframework.org/schema/context/spring-context-2.5.xsd" >
   ...
   <context:annotation-config />
+
   <bean class="org.camunda.bpm.getstarted.loanapproval.Starter" />
+  <bean id="calculateInterestService" class="org.camunda.bpm.getstarted.loanapproval.CalculateInterestService" />
   ...
 </beans>
 ```
