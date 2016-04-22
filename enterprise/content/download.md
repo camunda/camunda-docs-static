@@ -28,6 +28,9 @@ downloads:
     - path: "wildfly"
       name: "WildFly"
       weight: 6
+    - path: "wildfly10"
+      name: "WildFly 10"
+      weight: 7
 
   formats:
     - zip
@@ -42,55 +45,85 @@ downloads:
   branches:
   - branch: "7.5"
     releases:
+    ### Uncomment this when released (and don't forget to set the right date ;) )
+    #- number: "7.5.0-alpha4"
+    #  note: "http://blog.camunda.org/post/2016/04/camunda-bpm-750-alpha4-released/"
+    #  date: "2016.04.30"
+
     - number: "7.5.0-alpha3"
       note: "http://blog.camunda.org/post/2016/03/camunda-bpm-750-alpha3-released/"
       date: "2016.03.30"
+      excludeservers:
+      - "wildfly10"
       
     - number: "7.5.0-alpha2"
       note: "http://blog.camunda.org/post/2016/02/camunda-bpm-750-alpha2-released/"
       date: "2016.02.24"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.5.0-alpha1"
       note: "http://blog.camunda.org/post/2016/01/camunda-bpm-750-alpha1-released/"
       date: "2016.01.29"
+      excludeservers:
+      - "wildfly10"
+
 
   - branch: "7.4"
     releases:
     - number: "7.4.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14491"
       date: "2016.03.18"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14391"
       date: "2016.03.10"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14295"
       date: "2016.03.01"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14290"
       date: "2016.01.28"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14193"
       date: "2015.12.15"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.0"
       note: "http://blog.camunda.org/post/2015/11/camunda-bpm-740-released/"
       date: "2015.11.30"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.0-alpha3"
       note: "http://blog.camunda.org/post/2015/11/ReleaseCandidateAvailable/"
       date: "2015.11.20"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.0-alpha2"
       note: "http://blog.camunda.org/2015/10/camunda-740-alpha2-released.html"
       date: "2015.09.30"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.4.0-alpha1"
       note: "http://blog.camunda.org/2015/07/camunda-bpm-740-alpha-1-released.html"
       date: "2015.07.31"
+      excludeservers:
+      - "wildfly10"
 
 
   - branch: "7.3"
@@ -98,42 +131,62 @@ downloads:
     - number: "7.3.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14291"
       date: "2015.12.22"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14090"
       date: "2015.12.15"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13990"
       date: "2015.10.26"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13892"
       date: "2015.07.01"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13793"
       date: "2015.06.12"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.0"
       note: "http://blog.camunda.org/2015/05/camunda-bpm-730-final-released.html"
       date: "2015.05.28"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.0-alpha4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13890"
       date: "2015.05.22"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.0-alpha3"
       note: "http://blog.camunda.org/2015/04/camunda-bpm-730-alpha3-released.html"
       date: "2015.04.23"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.0-alpha2"
       note: "http://blog.camunda.org/2015/03/camunda-BPM-7.3.0-alpha2-released.html"
       date: "2015.03.04"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.3.0-alpha1"
       note: "http://blog.camunda.org/2015/01/camunda-BPM-7.3.0-alpha1-released.html"
       date: "2015.01.27"
+      excludeservers:
+      - "wildfly10"
 
 
   - branch: "7.2"
@@ -141,70 +194,96 @@ downloads:
     - number: "7.2.8"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14192"
       date: "2016.01.28"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14190"
       date: "2015.09.14"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13790"
       date: "2015.08.11"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13590"
       date: "2015.05.12"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13507"
       date: "2015.03.25"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13504"
       date: "2015.01.19"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13498"
       date: "2015.01.14"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13497"
       date: "2014.12.05"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.0"
       note: "http://blog.camunda.org/2014/11/camunda-BPM-7.2.0-Final-released.html"
       date: "2014.11.28"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.0-alpha6"
       note: "http://blog.camunda.org/2014/11/camunda-bpm-720-alpha6-released.html"
       date: "2014.11.13"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.0-alpha5"
       note: "http://blog.camunda.org/2014/09/camunda-bpm-720-alpha5-released.html"
       date: "2014.09.29"
+      excludeservers:
+      - "wildfly10"
 
     - number: "7.2.0-alpha4"
       note: "http://blog.camunda.org/2014/08/camunda-bpm-720-alpha4-released.html"
       date: "2014.08.07"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.2.0-alpha3"
       note: "http://blog.camunda.org/2014/07/camunda-bpm-720-alpha3-released.html"
       date: "2014.07.17"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.2.0-alpha2"
       note: "http://blog.camunda.org/2014/06/camunda-bpm-720-alpha2-released.html"
       date: "2014.06.12"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.2.0-alpha1"
       note: "http://blog.camunda.org/2014/05/720-alpha1-released-rest-api-bugfixes.html"
       date: "2014.05.20"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
 
   - branch: "7.1"
@@ -214,84 +293,98 @@ downloads:
       date: "2015.05.12"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.9"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13502"
       date: "2015.03.31"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.8"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13496"
       date: "2015.02.17"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13494"
       date: "2014.12.01"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13491"
       date: "2014.10.08"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13392"
       date: "2014.08.20"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13295"
       date: "2014.07.23"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13294"
       date: "2014.06.20"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13291"
       date: "2014.05.28"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13290"
       date: "2014.04.14"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.0-Final"
       note: "http://camundabpm.blogspot.com/2014/03/camunda-BPM-7.1.0-Final-released.html"
       date: "2014.03.31"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.0-alpha4"
       note: "http://blog.camunda.org/2014/03/camunda-bpm-710-alpha4-released.html"
       date: "2014.03.11"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.0-alpha3"
       note: "http://blog.camunda.org/2014/02/camunda-bpm-710-alpha3-released-cockpit.html"
       date: "2014.02.20"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.0-alpha2"
       note: "http://blog.camunda.org/2014/01/camunda-bpm-710-alpha2-released.html"
       date: "2014.01.31"
       excludeservers:
       - "wildfly"
+      - "wildfly10"
 
     - number: "7.1.0-alpha1"
       note: "http://camundabpm.blogspot.com/2013/11/camunda-BPM-7.1.0-alpha1-released.html"
@@ -299,6 +392,7 @@ downloads:
       excludeservers:
       - "oracle-wls"
       - "wildfly"
+      - "wildfly10"
 
 ---
 
