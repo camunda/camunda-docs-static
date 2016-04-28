@@ -45,17 +45,16 @@ downloads:
   branches:
   - branch: "7.5"
     releases:
-    ### Uncomment this when released (and don't forget to set the right date ;) )
-    #- number: "7.5.0-alpha4"
-    #  note: "http://blog.camunda.org/post/2016/04/camunda-bpm-750-alpha4-released/"
-    #  date: "2016.04.30"
+    - number: "7.5.0-alpha4"
+      note: "http://blog.camunda.org/post/2016/04/camunda-bpm-750-alpha4-released/"
+      date: "2016.04.28"
 
     - number: "7.5.0-alpha3"
       note: "http://blog.camunda.org/post/2016/03/camunda-bpm-750-alpha3-released/"
       date: "2016.03.30"
       excludeservers:
       - "wildfly10"
-      
+
     - number: "7.5.0-alpha2"
       note: "http://blog.camunda.org/post/2016/02/camunda-bpm-750-alpha2-released/"
       date: "2016.02.24"
