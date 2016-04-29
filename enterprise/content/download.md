@@ -26,7 +26,7 @@ downloads:
       name: "Oracle WebLogic"
       weight: 5
     - path: "wildfly"
-      name: "WildFly"
+      name: "WildFly 8"
       weight: 6
     - path: "wildfly10"
       name: "WildFly 10"
@@ -47,7 +47,9 @@ downloads:
     releases:
     - number: "7.5.0-alpha4"
       note: "http://blog.camunda.org/post/2016/04/camunda-bpm-750-alpha4-released/"
-      date: "2016.04.28"
+      date: "2016.04.29"
+      excludeservers:
+      - "glassfish"
 
     - number: "7.5.0-alpha3"
       note: "http://blog.camunda.org/post/2016/03/camunda-bpm-750-alpha3-released/"
