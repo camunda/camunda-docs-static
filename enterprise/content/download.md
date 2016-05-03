@@ -135,6 +135,12 @@ downloads:
 
   - branch: "7.3"
     releases:
+    - number: "7.3.6"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14292"
+      date: "2016.05.03"
+      excludeservers:
+      - "wildfly10"
+
     - number: "7.3.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14291"
       date: "2015.12.22"
@@ -198,6 +204,12 @@ downloads:
 
   - branch: "7.2"
     releases:
+    - number: "7.2.9"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14294"
+      date: "2016.05.03"
+      excludeservers:
+      - "wildfly10"
+
     - number: "7.2.8"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14192"
       date: "2016.01.28"
