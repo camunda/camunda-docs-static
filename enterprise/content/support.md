@@ -24,10 +24,10 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * Select `Create Issue`
 * Select `Support` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
 * Give the ticket a meaningful **summary**
-* You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you. 
+* You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you.
 * Provide us with a date in case of important **deadlines** that need to be reached.
-* Enter a detailed **description** of your issue. In case of Bug Reports please use the template (Reproduce steps, Problem, Expected behavior, etc.). Make use of the [JIRA text formatting]({{< relref "#text-formatting" >}}) in order to represent code snippets in a better readable way.
-* **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster.
+* Enter a detailed **description** of your issue. Make use of the provided template in the description filed (Reproduce steps, Problem, Expected behavior, etc.). In order to represent code snippets in a more readable way use the [JIRA text formatting]({{< relref "#text-formatting" >}}).
+* **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster. If possible provide log files and stack traces as plain text file.
 * For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda BPM platform version, application server, database and everything else that seems to be important for your issue.
 
 
