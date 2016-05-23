@@ -26,9 +26,15 @@ Use the Camunda Modeler to add a service task after the user task. To do so, sel
 
 # Add a JavaDelegate Implementation
 
-Now we need to add the actual service task implementation. In the Eclipse project, add a class named `ProcessRequestDelegate` implementing the `JavaDelegate` interface:
+Now we need to add the actual service task implementation. In the Eclipse project, add a class into the package `org.camunda.bpm.getstarted.loanapproval` named `ProcessRequestDelegate` implementing the `JavaDelegate` interface:
 
 ```java
+package org.camunda.bpm.getstarted.loanapproval;
+
+import java.util.logging.Logger;
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+
 public class ProcessRequestDelegate implements JavaDelegate {
 
   private final static Logger LOGGER = Logger.getLogger("LOAN-REQUESTS");
