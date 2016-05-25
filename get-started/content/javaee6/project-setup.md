@@ -92,11 +92,11 @@ The next step consists of setting up the Maven dependencies for your new process
       <artifactId>camunda-ejb-client</artifactId>
     </dependency>
 
-    <!-- Java EE 6 Specification -->
+    <!-- Java EE 7 Specification -->
     <dependency>
       <groupId>org.jboss.spec</groupId>
-      <artifactId>jboss-javaee-web-6.0</artifactId>
-      <version>3.0.2.Final</version>
+      <artifactId>jboss-javaee-7.0</artifactId>
+      <version>1.0.3.Final</version>
       <type>pom</type>
       <scope>provided</scope>
       <exclusions>
@@ -105,8 +105,7 @@ The next step consists of setting up the Maven dependencies for your new process
           <groupId>xalan</groupId>
         </exclusion>
       </exclusions>
-    </dependency>
-
+    </dependency>   
   </dependencies>
 
   <build>
@@ -120,7 +119,7 @@ The next step consists of setting up the Maven dependencies for your new process
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
-    </plugins>
+    </plugins> 
   </build>
 
 </project>
@@ -130,7 +129,8 @@ As dependencies you need the Camunda engine and Camunda engine CDI package. The 
 
 We also use the Camunda EJB client to interact with the process engine, which provides a default implementation of the `EjbProcessApplication`. This dependency is not necessary if you want to implement your own `EjbProcessApplication`.
 
-The JBoss JavaEE spec dependency helps us to develop the application. It is only necessary during development so the `scope` is set to provided. The JBoss AS already contains this interfaces.
+The JBoss JavaEE spec dependency helps us to develop the application. It is only necessary during development so the `scope` is set to provided. The
+WildFly already contains this interfaces.
 
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`
 
@@ -160,7 +160,7 @@ This file needs to be added to the `src/main/webapp/WEB-INF` folder of the Maven
 
 ## Add a META-INF/persistence.xml Deployment Descriptor
 
-To configure JPA, we add the `META-INF/persistence.xml` file. We use the same data source as the process engine which is configured inside the `standalone.xml` of the JBoss distribution.
+To configure JPA, we add the `META-INF/persistence.xml` file. We use the same data source as the process engine which is configured inside the `standalone.xml` of the WildFly distribution.
 
 Additionally, we configure the H2 database to drop the database schema on redeployment and to log SQL queries. This configuration is useful during development.
 

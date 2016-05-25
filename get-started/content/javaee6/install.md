@@ -18,13 +18,13 @@ First you need to setup your development environment and install Camunda BPM Pla
 
 Make sure you have the following set of tools installed:
 
-* Java JDK 1.6+
+* Java JDK 1.8+
 * Apache Maven (optional, if not installed you can use embedded Maven inside eclipse.)
 * A modern Web browser (recent Firefox, Chrome, or Internet Explorer 9+ will work fine)
 
 ## Install Camunda BPM platform
 
-First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the JBoss AS 7 based distribution. Download it [here](https://camunda.org/download/).
+First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the WildFly 10 based distribution. Download it [here](https://camunda.org/download/).
 
 After having downloaded the distribution, unpack it inside a directory of your choice. We will call that directory
 `$CAMUNDA_HOME`.

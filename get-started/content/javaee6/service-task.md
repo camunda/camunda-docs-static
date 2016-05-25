@@ -159,7 +159,7 @@ public class OrderBusinessLogic {
 
 Use the properties view of the Persist Service Task in the process (see screenshot). You need to enter `${orderBusinessLogic.persistOrder(execution)}` as the `Expression` property. This will call the `persistOrder` method of the named EJB with the current execution as parameter.
 
-Build, deploy and execute the process. After completing the *Persist Order* step, check the logfile of the JBoss AS server. It will show an insert for the new order entity:
+Build, deploy and execute the process. After completing the *Persist Order* step, check the logfile of the WildFly server. It will show an insert for the new order entity:
 
 <pre class="console">
   INFO  [stdout] Hibernate: insert into OrderEntity (address, approved, customer, pizza, version, id) values (?, ?, ?, ?, ?, ?)

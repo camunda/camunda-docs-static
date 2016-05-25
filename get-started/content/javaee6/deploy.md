@@ -8,7 +8,7 @@ menu:
     name: "Deploy"
     parent: "get-started-java-ee"
     identifier: "get-started-java-ee-deploy"
-    pre: "Build and deploy the Java EE process application to JBoss AS."
+    pre: "Build and deploy the Java EE process application to WildFly."
 
 ---
 
@@ -21,11 +21,11 @@ To deploy the process application select the `pom.xml` in the Package Explorer, 
 
 If the `pizza-order.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
 
-## Deploy to JBoss AS
+## Deploy to WildFly
 
-To deploy the process application, copy and paste the `pizza-order.war` from your Maven project `target` folder to the `$CAMUNDA_HOME/server/jboss-as-VERSION/standalone/deployments` folder.
+To deploy the process application, copy and paste the `pizza-order.war` from your Maven project `target` folder to the `$CAMUNDA_HOME/server/wildfly-VERSION/standalone/deployments` folder.
 
-Check the log file of the JBoss server. If you see a log message like the following one, the deployment was successful:
+Check the log file of the WildFly server. If you see a log message like the following one, the deployment was successful:
 
 <pre class="console">
 INFO  [org.camunda.bpm.container.impl.jboss.service.ProcessApplicationDeploymentService]
