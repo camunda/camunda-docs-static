@@ -18,7 +18,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 
 # Camunda Bom (Bill of Materials)
 
-## Community Edition:
+## Community Edition
 
 ```xml
 <dependency>
@@ -30,7 +30,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 </dependency>
 ```
 
-## Enterprise Edition:
+## Enterprise Edition
 
 ```xml
 <dependency>
@@ -76,6 +76,26 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 </dependency>
 ```
 
+# Camunda DMN Engine BOM
+
+```xml
+<dependency>
+  <groupId>org.camunda.bpm.dmn</groupId>
+  <artifactId>camunda-engine-dmn-bom</artifactId>
+  <version>7.5.0</version>
+  <type>pom</type>
+  <scope>import</scope>
+</dependency>
+```
+
+# Camunda DMN
+
+```xml
+<dependency>
+  <groupId>org.camunda.bpm.dmn</groupId>
+  <artifactId>camunda-engine-dmn</artifactId>
+</dependency>
+```
 
 # Process Aplication Ejb Client
 
@@ -89,7 +109,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 
 # Camunda Nexus
 
-## Community Edition:
+## Community Edition
 
 ```xml
 <repositories>
@@ -103,7 +123,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 </repositories>
 ```
 
-## Enterprise Edition:
+## Enterprise Edition
 
 ```xml
 <repositories>
