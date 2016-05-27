@@ -38,13 +38,19 @@ downloads:
     - war
 
   selected:
-    branch: "7.4"
-    version: "7.4.6"
+    branch: "7.5"
+    version: "7.5.0"
     server: "tomcat"
 
   branches:
   - branch: "7.5"
     releases:
+    - number: "7.5.0"
+      note: "http://blog.camunda.org/post/2016/05/camunda-bpm-750-released/"
+      date: "2016.05.27"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.5.0-alpha5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14598"
       date: "2016.05.24"
