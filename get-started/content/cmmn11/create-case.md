@@ -12,128 +12,71 @@ menu:
 
 ---
 
-In this section you learn how to create your first CMMN 1.1 case in XML. Don't worry, the XML is not going to be complex.
+In this section you learn how to create your first CMMN 1.1 case. Make sure to [Install the Camunda Modeler](/manual/latest/installation/camunda-modeler) first.
 
+# Create a New CMMN 1.1 Diagram
 
-# Create an Empty CMMN 1.1 File
+Select *File / New File / CMMN Diagram* in the top-level menu of the Camunda Modeler
 
-In the eclipse *Package Explorer* select the `src/main/resources` folder. Right-click and select `New > Other ...`. Select *File*. Click Next.
+{{< img src="../img/cmmn-0.png" >}}
 
-{{< img src="../img/eclipse-new-file.png" >}}
+The Camunda Modeler creates a new CMMN diagram containing a case plan model, the essential part of any CMMN case definition. A plain task is created inside the case plan model.
 
-On the second page, you must specify the file name of the case. Insert `loan-approval.cmmn11.xml`. Click Finish.
+# Define the Case ID
 
-# Set Up the Case Plan Model
+Since we are modeling an executable case, we should give it an Id. The Id is used by the process engine as identifier for the case. It is best practice to set it to a human-readable name. Click on the case plan model, then open the properties panel if it's not open already. Type `loan_application` into the *Case Id* input field.
 
 {{< img src="../img/cmmn-1.png" >}}
 
-Open the newly created file and copy-paste the following contents into it:
-
-```xml
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
-        targetNamespace="http://cmmn.org"
-        xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
-
-  <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false"
-                        name="Loan Application"
-                        id="CasePlanModel">
-
-    </cmmn:casePlanModel>
-  </cmmn:case>
-
-</cmmn:definitions>
-```
-
-This snippet declares a *case plan model*, the essential part of any CMMN case definition.
-
+Optionally you can rename the case plan model. Change the name of the case plan model using the *Name* field in the properties panel into Loan Application. You should see that the new name is also visible in the diagram at the top latch of the case plan model.
 
 # Add Human Tasks
 
+As the first part of the case, the loan application should be reviewed for any formal errors.
+We therefore need a human task in our case. First click on the plain task, then on the screw wrench next to it. Select *Human Task* to change the type of the task.
+
 {{< img src="../img/cmmn-2.png" >}}
 
-As the first part of the loan application case, the loan application should be reviewed for any formal errors.  
-We therefore add a *human task* to the case. Tasks are always specified by two parts: A *plan item* and a *plan item definition*.  
-While the plan item definition is a blue print for the task's behavior, the plan item represents the actual task instantiation. Update your CMMN definition as follows (insert the highlighted parts at the appropriate positions or simply replace the entire content):
+Double click on the human task to edit its name. Type `Check Application` and hit enter.
 
-{{< code language="xml" line="12-25" >}}<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
-        targetNamespace="http://cmmn.org"
-        xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+In addition, the customer's creditworthiness has to be assessed. Add a second task from the palette at the left hand side to the canvas. Morph it to a human task like the *Check Application* task. Double click on it and name it `Provide Customer Rating`.
 
-  <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false"
-                        name="Loan Application"
-                        id="CasePlanModel">
-      <!-- Plan Items -->
-      <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
+{{< note title="Human Tasks" class="info" >}}
+To learn more about human tasks, consider checking the [Human Task section](/manual/latest/reference/cmmn11/tasks/human-task) of our CMMN implementation guide.
+{{< /note >}}
 
-      <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true"
-                      name="Check Application"
-                      id="HumanTask_1"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-    </cmmn:casePlanModel>
-  </cmmn:case>
+## Manual Activation Rule
 
-</cmmn:definitions>{{< /code >}}
+The next step is to define that the human tasks don't need manual activation. First click on the *Check Application* task, then again on the screw wrench and on the manual activation rule button.
 
-In addition, the customer's creditworthiness has to be assessed. We add another user task:
+{{< img src="../img/cmmn-3.png" >}}
 
-{{< code language="xml" line="14,27-36" >}}<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
-        targetNamespace="http://cmmn.org"
-        xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+The manual activation rule is now active. You can see that a marker has been placed on the human task. Now is a good time to disable manual activation and to enable automatic activation. Go to the properties panel at the right hand side and click on the *Rules* tab at the top of the panel. Then define the condition `${false}` in the *Manual Activation Rule* input field.
 
-  <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false"
-                        name="Loan Application"
-                        id="CasePlanModel">
-      <!-- Plan Items -->
-      <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
-      <cmmn:planItem definitionRef="HumanTask_2" id="PI_HumanTask_2"/>
+{{< img src="../img/cmmn-4.png" >}}
 
-      <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true"
-                      name="Check Application"
-                      id="HumanTask_1"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-      <cmmn:humanTask isBlocking="true"
-                      name="Provide Customer Rating"
-                      id="HumanTask_2"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-    </cmmn:casePlanModel>
-  </cmmn:case>
+Repeat this steps for the *Provide Customer Rating* task to activate and configure the activation rule as well.
 
-</cmmn:definitions>{{< /code >}}
+{{< note title="Manual Activation Rule" class="info" >}}
+ To learn more about the manual activation rule, consider checking the [Manual Activation Rule section](/manual/latest/reference/cmmn11/markers/manual-activation-rule/) of our CMMN implementation guide.
+{{< /note >}}
+
+## User Assignment
+
+We want both tasks to be assigned to the user `demo`, so that they later appear in the *My Tasks* section of the Camunda Tasklist. To assign the user `demo` to a task click on it and type `demo` into the *Assignee* input field in the properties panel.
+
+{{< img src="../img/cmmn-5.png" >}}
+
+{{< note title="User Assignment" class="info" >}}
+To learn more about user assignment, check the [User Assignment section](/manual/latest/reference/cmmn11/tasks/human-task/#user-assignment/) on the human task page of our CMMN implementation guide.
+{{< /note >}}
 
 Note how there is no direct relation between the two plan items. There is no sequence flow connecting the two tasks as in BPMN. In CMMN, this expresses that the tasks can be executed concurrently.
 
-To learn more about human tasks, consider checking the [Human Task section](/manual/latest/reference/cmmn11/tasks/human-task) of our CMMN implementation guide.
+# Save the CMMN 1.1 Diagram
+
+When you are done, save your changes by clicking *File > Save File As..*. In the dialog that pops up, navigate to the loan application project directory (by default this is in your Eclipse workspace path). In the project directory, place the model in the `src/main/resources` folder.
+
+Return to Eclipse. Right-click the project folder and click *Refresh*. This synchronizes the new CMMN file with Eclipse.
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-3" >}}

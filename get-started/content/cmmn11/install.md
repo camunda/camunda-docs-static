@@ -37,3 +37,7 @@ This script will start the application server and open a welcome screen in your 
 {{< note title="Get Help!" class="info" >}}
 If you have trouble setting up the Camunda BPM platform, you can ask for assistance in the [Camunda Users Forum](https://camunda.org/community/forum.html).
 {{< /note >}}
+
+# Camunda Modeler
+
+Follow the instructions in the [Camunda Modeler](/manual/latest/installation/camunda-modeler) section.

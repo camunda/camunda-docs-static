@@ -14,92 +14,13 @@ menu:
 
 When a loan application is not sufficient, for example because it has formal errors, there is no need to provide a customer rating any longer. We can express this in CMMN by adding a sentry which acts as exit criterion.
 
-{{< img src="../img/cmmn-complete.png" >}}
-
-
 # Add an Exit Sentry
 
-In the CMMN XML file, add the following sentry definition and register it for the *Provide Customer Rating* human task:
+Click on the *Check Application* task to open the context pad, then click on *Append Criterion*. Move the criterion to the top edge of the *Provide Customer Rating* task and attach it there. Click on the entry criterion and open the replace menu by clicking on the wrench. Now click on *Exit Criterion* to morph the sentry.
 
+Keep the exit criterion selected and configure the *If Part Condition* using the properties panel. Insert the following into the text input field: `${!applicationSufficient}`
 
-{{< code language="xml" line="15,35-42" >}}
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
-        targetNamespace="http://cmmn.org"
-        xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
-
-  <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false"
-                        name="Loan Application"
-                        id="CasePlanModel">
-      <!-- Plan Items -->
-      <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
-      <cmmn:planItem definitionRef="HumanTask_2" id="PI_HumanTask_2">
-        <cmmn:exitCriterion sentryRef="Sentry_2" />
-      </cmmn:planItem>
-      <cmmn:planItem definitionRef="Milestone_1" id="PI_Milestone_1">
-        <cmmn:entryCriterion sentryRef="Sentry_1" />
-      </cmmn:planItem>
-
-      <!-- Sentries -->
-      <cmmn:sentry id="Sentry_1">
-        <cmmn:planItemOnPart sourceRef="PI_HumanTask_1">
-          <cmmn:standardEvent>complete</cmmn:standardEvent>
-        </cmmn:planItemOnPart>
-        <cmmn:planItemOnPart sourceRef="PI_HumanTask_2">
-          <cmmn:standardEvent>complete</cmmn:standardEvent>
-        </cmmn:planItemOnPart>
-        <cmmn:ifPart>
-          <cmmn:condition>
-            <![CDATA[${applicationSufficient && rating > 3}]]>
-          </cmmn:condition>
-        </cmmn:ifPart>
-      </cmmn:sentry>
-      <cmmn:sentry id="Sentry_2">
-        <cmmn:planItemOnPart sourceRef="PI_HumanTask_1">
-          <cmmn:standardEvent>complete</cmmn:standardEvent>
-        </cmmn:planItemOnPart>
-        <cmmn:ifPart>
-          <cmmn:condition>${!applicationSufficient}</cmmn:condition>
-        </cmmn:ifPart>
-      </cmmn:sentry>
-
-      <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true"
-                      name="Check Application"
-                      id="HumanTask_1"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-      <cmmn:humanTask isBlocking="true"
-                      name="Provide Customer Rating"
-                      id="HumanTask_2"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-      <cmmn:milestone name="Approved" id="Milestone_1">
-        <cmmn:extensionElements>
-          <camunda:caseExecutionListener event="occur"
-            class="org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener" />
-        </cmmn:extensionElements>
-      </cmmn:milestone>
-    </cmmn:casePlanModel>
-  </cmmn:case>
-
-</cmmn:definitions>
-{{< /code >}}
-
-
+{{< img src="../img/cmmn-10.png" >}}
 
 # Re-build and Deploy
 
@@ -111,6 +32,8 @@ Go to Tasklist and access the `demo` user's tasks. As before, check the task *Ch
 
 You will notice that the task *Provide Customer Rating* has disappeared from the Tasklist. That is because the sentry has been triggered and the task's exit criterion has been fulfilled. Also, you can check the Tomcat console. This time, there is no log entry for the milestone.
 
+{{< note title="Sentries" class="info" >}}
 To learn more about sentries, consider checking the [Sentry section](/manual/latest/reference/cmmn11/sentry) in our CMMN implementation guide.
+{{< /note >}}
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-6" >}}

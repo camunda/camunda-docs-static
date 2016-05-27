@@ -12,84 +12,32 @@ menu:
 
 ---
 
-The next step consists in adding a *milestone*. In CMMN, milestones express that a certain intermediate goal in the case has been reached.
-The condition(s) defining when the milestone is reached are modeled using Sentries:
+The next step consists in adding a milestone. In CMMN, milestones express that a certain intermediate goal in the case has been reached.
+The condition(s) defining when the milestone is reached are modeled using Sentries.
 
-{{< img src="../img/cmmn-3.png" >}}
+# Defining a Milestone
 
+Go to the Camunda Modeler and create a new milestone from the palette. Double click on the milestone and name it `Approved`.
 
-# Defining a Milestone and a Sentry
+{{< img src="../img/cmmn-6.png" >}}
 
-Go back to eclipse and the CMMN model file. Insert the following XML:
+# Defining a Sentry
 
-{{< code language="xml" line="15-32,55" >}}
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
-                  targetNamespace="http://cmmn.org"
-                  xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
+Sentries are used to capture conditions within a case and can trigger other events to occur. We want to express that the *Approved* milestone is reached when both tasks have successfully completed, and if the application was sufficient and the customer received a good rating for creditworthiness.
 
-  <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false"
-                        name="Loan Application"
-                        id="CasePlanModel">
-      <!-- Plan Items -->
-      <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
-      <cmmn:planItem definitionRef="HumanTask_2" id="PI_HumanTask_2"/>
-      <cmmn:planItem definitionRef="Milestone_1" id="PI_Milestone_1">
-        <cmmn:entryCriterion sentryRef="Sentry_1" />
-      </cmmn:planItem>
+First create a criterion on the milestone. Click on the *Check Application* task, then on the *Append Criterion* button in the context pad. Move the criterion to the right and place it on the milestone. Note how the criterion is attached to the milestone and an onPart connection is created with the *complete* standard event.
 
-      <!-- Sentries -->
-      <cmmn:sentry id="Sentry_1">
-        <cmmn:planItemOnPart sourceRef="PI_HumanTask_1">
-          <cmmn:standardEvent>complete</cmmn:standardEvent>
-        </cmmn:planItemOnPart>
-        <cmmn:planItemOnPart sourceRef="PI_HumanTask_2">
-          <cmmn:standardEvent>complete</cmmn:standardEvent>
-        </cmmn:planItemOnPart>
-        <cmmn:ifPart>
-          <cmmn:condition>
-            <![CDATA[${applicationSufficient && rating > 3}]]>
-          </cmmn:condition>
-        </cmmn:ifPart>
-      </cmmn:sentry>
+Now we want to connect the *Provide Customer Rating* task with the same sentry. Select the task and click on the *Connect using Discretionary/OnPart or Association* button. Move the mouse cursor and place the end of the connection on the sentry.
 
-      <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true"
-                      name="Check Application"
-                      id="HumanTask_1"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-      <cmmn:humanTask isBlocking="true"
-                      name="Provide Customer Rating"
-                      id="HumanTask_2"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-      <cmmn:milestone name="Approved" id="Milestone_1"/>
-    </cmmn:casePlanModel>
-  </cmmn:case>
+{{< img src="../img/cmmn-7.png" >}}
 
-</cmmn:definitions>
-{{< /code >}}
+Now we can configure the two conditions (application sufficient and good rating) using the properties panel. Click on the sentry and type the following into the *If Part Condition* text input field: `${applicationSufficient && rating > 3}`
 
-The above does not only add a milestone but also a *sentry*. Sentries are used to capture conditions within a case and can trigger other events to occur. Here we have expressed that the milestone *Approved* is reached when both tasks have successfully completed, and if the application was sufficient and the customer received a good rating for creditworthiness.
-
+{{< img src="../img/cmmn-8.png" >}}
 
 # Milestone Listener
 
-Milestones are not visualized in the Camunda web applications. In order to see that the milestone occurs we add a *CaseExecutionListener*. Create a new Java class in the project:
+Milestones are not visualized in the Camunda web applications. In order to see that the milestone occurs we add a *CaseExecutionListener*. Switch to Eclipse and create a new Java class in the project:
 
 ```java
 package org.camunda.bpm.getstarted.cmmn.loanapproval;
@@ -112,75 +60,9 @@ public class LifecycleListener implements CaseExecutionListener {
 }
 ```
 
-To register the listener with the milestone, update the milestone in `loan-approval.cmmn11.xml` as follows:
+Now this listener has to be registered with the milestone. To do that switch back to the Camunda Modeler. Click on the milestone and then on the *Listeners* tab in the properties panel. Now you can create a new *Case Execution Listener* with a click on the plus button to the right. A new *Case Execution Listener* with the event type *occur* and the type *Java Class* has been created. Configure the Java class by inserting the following into the *Java Class* text input field: `org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener`
 
-{{< code language="xml" line="55-60" >}}
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cmmn:definitions id="_d7e7cad4-86f1-4c04-9dff-a9aace3afb61"
-                  targetNamespace="http://cmmn.org"
-                  xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  xmlns:camunda="http://camunda.org/schema/1.0/cmmn">
-
-  <cmmn:case id="loan_application">
-    <cmmn:casePlanModel autoComplete="false"
-                        name="Loan Application"
-                        id="CasePlanModel">
-      <!-- Plan Items -->
-      <cmmn:planItem definitionRef="HumanTask_1" id="PI_HumanTask_1"/>
-      <cmmn:planItem definitionRef="HumanTask_2" id="PI_HumanTask_2"/>
-      <cmmn:planItem definitionRef="Milestone_1" id="PI_Milestone_1">
-        <cmmn:entryCriterion sentryRef="Sentry_1" />
-      </cmmn:planItem>
-
-      <!-- Sentries -->
-      <cmmn:sentry id="Sentry_1">
-        <cmmn:planItemOnPart sourceRef="PI_HumanTask_1">
-          <cmmn:standardEvent>complete</cmmn:standardEvent>
-        </cmmn:planItemOnPart>
-        <cmmn:planItemOnPart sourceRef="PI_HumanTask_2">
-          <cmmn:standardEvent>complete</cmmn:standardEvent>
-        </cmmn:planItemOnPart>
-        <cmmn:ifPart>
-          <cmmn:condition>
-            <![CDATA[${applicationSufficient && rating > 3}]]>
-          </cmmn:condition>
-        </cmmn:ifPart>
-      </cmmn:sentry>
-
-      <!-- Plan Item Definitions -->
-      <cmmn:humanTask isBlocking="true"
-                      name="Check Application"
-                      id="HumanTask_1"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-      <cmmn:humanTask isBlocking="true"
-                      name="Provide Customer Rating"
-                      id="HumanTask_2"
-                      camunda:assignee="demo">
-        <cmmn:defaultControl>
-          <cmmn:manualActivationRule>
-            <cmmn:condition>${false}</cmmn:condition>
-          </cmmn:manualActivationRule>
-        </cmmn:defaultControl>
-      </cmmn:humanTask>
-      <cmmn:milestone name="Approved" id="Milestone_1">
-        <cmmn:extensionElements>
-          <camunda:caseExecutionListener event="occur"
-            class="org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener" />
-        </cmmn:extensionElements>
-      </cmmn:milestone>
-    </cmmn:casePlanModel>
-  </cmmn:case>
-
-</cmmn:definitions>
-{{< /code >}}
-
+{{< img src="../img/cmmn-9.png" >}}
 
 # Re-build and Deploy
 
@@ -209,7 +91,9 @@ Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transition: occur
 
 Our lifecycle listener has been notified, showing that the milestone has actually occurred.
 
+{{< note title="Milestones" class="info" >}}
 To learn more about milestones, consider checking the [Milestone section](/manual/latest/reference/cmmn11/milestone) in our CMMN implementation guide.
+{{< /note >}}
 
 {{< get-tag repo="camunda-get-started-cmmn" tag="Step-5" >}}
 
