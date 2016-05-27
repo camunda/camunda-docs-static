@@ -14,7 +14,7 @@ menu:
 
 This tutorial guides you through setting up Camunda BPM and developing your first application with a CMMN case.
 
-*Modeling CMMN: CMMN is a young standard for which there are not many modeling tools yet. Currently, Camunda does not offer a modeling tool. We have had good experiences with the <a href="http://www.cmmnwebmodeler.com/">Trisotech CMMN modeler</a> that offers a free 30 day trial. You can use it to graphically model along the steps we perform in this tutorial. However, this tutorial does not teach you how to use that modeler.*
+*Modeling CMMN: You can use our [Camunda Modeler](https://camunda.org/cmmn/tool/) to graphically model along the steps we perform in this tutorial. Currently basic CMMN 1.1 modeling is supported. More advanced features like editing properties will be available soon. To learn how to model CMMN 1.1 diagrams consider checking our [Camunda Modeler CMMN Manual](/manual/latest/modeler/camunda-modeler/cmmn).*
 
 {{< get-code repo="camunda-get-started-cmmn" >}}
 
