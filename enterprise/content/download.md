@@ -47,7 +47,7 @@ downloads:
     releases:
     - number: "7.5.0"
       note: "http://blog.camunda.org/post/2016/05/camunda-bpm-750-released/"
-      date: "2016.05.27"
+      date: "2016.05.31"
       excludeservers:
       - "glassfish"
 
