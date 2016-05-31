@@ -45,6 +45,12 @@ downloads:
   branches:
   - branch: "7.5"
     releases:
+    - number: "7.5.1"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14599"
+      date: "2016.05.31"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.5.0"
       note: "http://blog.camunda.org/post/2016/05/camunda-bpm-750-released/"
       date: "2016.05.31"
