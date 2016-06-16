@@ -153,13 +153,13 @@ downloads:
       - "wildfly10"
 
     - number: "7.4.0-alpha2"
-      note: "http://blog.camunda.org/2015/10/camunda-740-alpha2-released.html"
+      note: "http://blog.camunda.org/post/2015/10/camunda-740-alpha2-released/"
       date: "2015.09.30"
       excludeservers:
       - "wildfly10"
 
     - number: "7.4.0-alpha1"
-      note: "http://blog.camunda.org/2015/07/camunda-bpm-740-alpha-1-released.html"
+      note: "http://blog.camunda.org/post/2015/07/camunda-bpm-740-alpha-1-released/"
       date: "2015.07.31"
       excludeservers:
       - "wildfly10"
@@ -210,7 +210,7 @@ downloads:
       - "wildfly10"
 
     - number: "7.3.0"
-      note: "http://blog.camunda.org/2015/05/camunda-bpm-730-final-released.html"
+      note: "http://blog.camunda.org/post/2015/05/camunda-bpm-730-final-released/"
       date: "2015.05.28"
       excludeservers:
       - "wildfly10"
@@ -222,19 +222,19 @@ downloads:
       - "wildfly10"
 
     - number: "7.3.0-alpha3"
-      note: "http://blog.camunda.org/2015/04/camunda-bpm-730-alpha3-released.html"
+      note: "http://blog.camunda.org/post/2015/04/camunda-bpm-730-alpha3-released/"
       date: "2015.04.23"
       excludeservers:
       - "wildfly10"
 
     - number: "7.3.0-alpha2"
-      note: "http://blog.camunda.org/2015/03/camunda-BPM-7.3.0-alpha2-released.html"
+      note: "http://blog.camunda.org/post/2015/03/camunda-BPM-7.3.0-alpha2-released/"
       date: "2015.03.04"
       excludeservers:
       - "wildfly10"
 
     - number: "7.3.0-alpha1"
-      note: "http://blog.camunda.org/2015/01/camunda-BPM-7.3.0-alpha1-released.html"
+      note: "http://blog.camunda.org/post/2015/01/camunda-BPM-7.3.0-alpha1-released/"
       date: "2015.01.27"
       excludeservers:
       - "wildfly10"
@@ -303,46 +303,46 @@ downloads:
       - "wildfly10"
 
     - number: "7.2.0"
-      note: "http://blog.camunda.org/2014/11/camunda-BPM-7.2.0-Final-released.html"
+      note: "http://blog.camunda.org/post/2014/11/camunda-BPM-7.2.0-Final-released/"
       date: "2014.11.28"
       excludeservers:
       - "wildfly10"
 
     - number: "7.2.0-alpha6"
-      note: "http://blog.camunda.org/2014/11/camunda-bpm-720-alpha6-released.html"
+      note: "http://blog.camunda.org/post/2014/11/camunda-bpm-720-alpha6-released/"
       date: "2014.11.13"
       excludeservers:
       - "wildfly10"
 
     - number: "7.2.0-alpha5"
-      note: "http://blog.camunda.org/2014/09/camunda-bpm-720-alpha5-released.html"
+      note: "http://blog.camunda.org/post/2014/09/camunda-bpm-720-alpha5-released/"
       date: "2014.09.29"
       excludeservers:
       - "wildfly10"
 
     - number: "7.2.0-alpha4"
-      note: "http://blog.camunda.org/2014/08/camunda-bpm-720-alpha4-released.html"
+      note: "http://blog.camunda.org/post/2014/08/camunda-bpm-720-alpha4-released/"
       date: "2014.08.07"
       excludeservers:
       - "wildfly"
       - "wildfly10"
 
     - number: "7.2.0-alpha3"
-      note: "http://blog.camunda.org/2014/07/camunda-bpm-720-alpha3-released.html"
+      note: "http://blog.camunda.org/post/2014/07/camunda-bpm-720-alpha3-released/"
       date: "2014.07.17"
       excludeservers:
       - "wildfly"
       - "wildfly10"
 
     - number: "7.2.0-alpha2"
-      note: "http://blog.camunda.org/2014/06/camunda-bpm-720-alpha2-released.html"
+      note: "http://blog.camunda.org/post/2014/06/camunda-bpm-720-alpha2-released/"
       date: "2014.06.12"
       excludeservers:
       - "wildfly"
       - "wildfly10"
 
     - number: "7.2.0-alpha1"
-      note: "http://blog.camunda.org/2014/05/720-alpha1-released-rest-api-bugfixes.html"
+      note: "http://blog.camunda.org/post/2014/05/720-alpha1-released-rest-api-bugfixes/"
       date: "2014.05.20"
       excludeservers:
       - "wildfly"
@@ -422,35 +422,35 @@ downloads:
       - "wildfly10"
 
     - number: "7.1.0-Final"
-      note: "http://camundabpm.blogspot.com/2014/03/camunda-BPM-7.1.0-Final-released.html"
+      note: "http://blog.camunda.org/post/2014/03/camunda-BPM-7.1.0-Final-released/"
       date: "2014.03.31"
       excludeservers:
       - "wildfly"
       - "wildfly10"
 
     - number: "7.1.0-alpha4"
-      note: "http://blog.camunda.org/2014/03/camunda-bpm-710-alpha4-released.html"
+      note: "http://blog.camunda.org/post/2014/03/camunda-bpm-710-alpha4-released/"
       date: "2014.03.11"
       excludeservers:
       - "wildfly"
       - "wildfly10"
 
     - number: "7.1.0-alpha3"
-      note: "http://blog.camunda.org/2014/02/camunda-bpm-710-alpha3-released-cockpit.html"
+      note: "http://blog.camunda.org/post/2014/02/camunda-bpm-710-alpha3-released-cockpit/"
       date: "2014.02.20"
       excludeservers:
       - "wildfly"
       - "wildfly10"
 
     - number: "7.1.0-alpha2"
-      note: "http://blog.camunda.org/2014/01/camunda-bpm-710-alpha2-released.html"
+      note: "http://blog.camunda.org/post/2014/01/camunda-bpm-710-alpha2-released/"
       date: "2014.01.31"
       excludeservers:
       - "wildfly"
       - "wildfly10"
 
     - number: "7.1.0-alpha1"
-      note: "http://camundabpm.blogspot.com/2013/11/camunda-BPM-7.1.0-alpha1-released.html"
+      note: "http://blog.camunda.org/post/2013/11/camunda-BPM-7.1.0-alpha1-released/"
       date: "2013.11.28"
       excludeservers:
       - "oracle-wls"
