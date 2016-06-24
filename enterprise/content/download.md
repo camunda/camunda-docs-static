@@ -53,6 +53,12 @@ downloads:
 
   - branch: "7.5"
     releases:
+    - number: "7.5.2"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14600"
+      date: "2016.05.23"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.5.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14599"
       date: "2016.05.31"
@@ -98,6 +104,12 @@ downloads:
 
   - branch: "7.4"
     releases:
+    - number: "7.4.8"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14592"
+      date: "2016.06.23"
+      excludeservers:
+      - "wildfly10"
+
     - number: "7.4.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14592"
       date: "2016.06.13"
