@@ -39,7 +39,7 @@ downloads:
 
   selected:
     branch: "7.5"
-    version: "7.5.1"
+    version: "7.5.2"
     server: "tomcat"
 
   branches:
