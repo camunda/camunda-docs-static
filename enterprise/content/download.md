@@ -39,26 +39,33 @@ downloads:
 
   selected:
     branch: "7.5"
-    version: "7.5.2"
+    version: "7.5.3"
     server: "tomcat"
 
   branches:
   - branch: "7.6"
     releases:
-    - number: "7.6.0-alpha1"
-      note: "http://blog.camunda.org/post/2016/06/camunda-bpm-760-alpha1-released/"
-      date: "2016.06.13"
-      excludeservers:
-      - "glassfish"
-
     - number: "7.6.0-alpha2"
       note: "http://blog.camunda.org/post/2016/07/camunda-bpm-760-alpha2-released/"
       date: "2016.07.06"
       excludeservers:
       - "glassfish"
 
+    - number: "7.6.0-alpha1"
+      note: "http://blog.camunda.org/post/2016/06/camunda-bpm-760-alpha1-released/"
+      date: "2016.06.13"
+      excludeservers:
+      - "glassfish"
+
+
   - branch: "7.5"
     releases:
+    - number: "7.5.3"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14604"
+      date: "2016.07.08"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.5.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14600"
       date: "2016.06.23"
