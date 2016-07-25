@@ -12,7 +12,7 @@ menu:
 
 ---
 
-First you need to setup your development environment and install Camunda BPM Platform.
+First you need to set up your development environment and install the Camunda BPM Platform and the Camunda Modeler.
 
 
 # Prerequisites
@@ -20,7 +20,7 @@ First you need to setup your development environment and install Camunda BPM Pla
 Make sure you have the following set of tools installed:
 
 * Java JDK 1.7+,
-* Apache Maven (optional, if not installed you can use embedded Maven inside eclipse.)
+* Apache Maven (optional, if not installed you can use embedded Maven inside Eclipse.)
 * A modern web browser (recent Firefox, Chrome, or Internet Explorer 9+ will work fine)
 
 

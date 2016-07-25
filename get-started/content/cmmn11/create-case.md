@@ -12,7 +12,7 @@ menu:
 
 ---
 
-In this section you learn how to create your first CMMN 1.1 case. Make sure to [Install the Camunda Modeler](/manual/latest/installation/camunda-modeler) first.
+In this section you learn how to create your first CMMN 1.1 case. Start up the Camunda Modeler now.
 
 # Create a New CMMN 1.1 Diagram
 
@@ -28,18 +28,18 @@ Since we are modeling an executable case, we should give it an Id. The Id is use
 
 {{< img src="../img/cmmn-1.png" >}}
 
-Optionally you can rename the case plan model. Change the name of the case plan model using the *Name* field in the properties panel into Loan Application. You should see that the new name is also visible in the diagram at the top latch of the case plan model.
+Optionally you can rename the case plan model. Change the name of the case plan model into Loan Application using the *Name* field in the properties panel. You should see that the new name is also visible in the diagram in the top latch of the case plan model.
 
 # Add Human Tasks
 
 As the first part of the case, the loan application should be reviewed for any formal errors.
-We therefore need a human task in our case. First click on the plain task, then on the screw wrench next to it. Select *Human Task* to change the type of the task.
+We therefore need a human task in our case. First click on the plain task, then on the wrench next to it. Select *Human Task* to change the type of the task.
 
 {{< img src="../img/cmmn-2.png" >}}
 
 Double click on the human task to edit its name. Type `Check Application` and hit enter.
 
-In addition, the customer's creditworthiness has to be assessed. Add a second task from the palette at the left hand side to the canvas. Morph it to a human task like the *Check Application* task. Double click on it and name it `Provide Customer Rating`.
+Additionally, the customer's creditworthiness has to be assessed. Add a second task to the canvas from the palette at the left hand side. Morph it to a human task like the *Check Application* task. Double click on it and name it `Provide Customer Rating`.
 
 {{< note title="Human Tasks" class="info" >}}
 To learn more about human tasks, consider checking the [Human Task section](/manual/latest/reference/cmmn11/tasks/human-task) of our CMMN implementation guide.
@@ -47,7 +47,7 @@ To learn more about human tasks, consider checking the [Human Task section](/man
 
 ## Manual Activation Rule
 
-The next step is to define that the human tasks don't need manual activation. First click on the *Check Application* task, then again on the screw wrench and on the manual activation rule button.
+The next step is to define that the human tasks don't need manual activation. First click on the *Check Application* task, then on the wrench again and on the manual activation rule button.
 
 {{< img src="../img/cmmn-3.png" >}}
 
@@ -55,7 +55,7 @@ The manual activation rule is now active. You can see that a marker has been pla
 
 {{< img src="../img/cmmn-4.png" >}}
 
-Repeat this steps for the *Provide Customer Rating* task to activate and configure the activation rule as well.
+Repeat these steps for the *Provide Customer Rating* task to activate and configure the activation rule as well.
 
 {{< note title="Manual Activation Rule" class="info" >}}
  To learn more about the manual activation rule, consider checking the [Manual Activation Rule section](/manual/latest/reference/cmmn11/markers/manual-activation-rule/) of our CMMN implementation guide.
@@ -63,7 +63,7 @@ Repeat this steps for the *Provide Customer Rating* task to activate and configu
 
 ## User Assignment
 
-We want both tasks to be assigned to the user `demo`, so that they later appear in the *My Tasks* section of the Camunda Tasklist. To assign the user `demo` to a task click on it and type `demo` into the *Assignee* input field in the properties panel.
+We want both tasks to be assigned to the user `demo`, so that they later appear in the *My Tasks* section of the Camunda Tasklist. To assign the user `demo` to a task, click on it and type `demo` into the *Assignee* input field in the properties panel.
 
 {{< img src="../img/cmmn-5.png" >}}
 
@@ -71,7 +71,7 @@ We want both tasks to be assigned to the user `demo`, so that they later appear 
 To learn more about user assignment, check the [User Assignment section](/manual/latest/reference/cmmn11/tasks/human-task/#user-assignment/) on the human task page of our CMMN implementation guide.
 {{< /note >}}
 
-Note how there is no direct relation between the two plan items. There is no sequence flow connecting the two tasks as in BPMN. In CMMN, this expresses that the tasks can be executed concurrently.
+Note that there is no direct relation between the two plan items. There is no sequence flow connecting the two tasks as in BPMN. In CMMN, this expresses that the tasks can be executed concurrently.
 
 # Save the CMMN 1.1 Diagram
 

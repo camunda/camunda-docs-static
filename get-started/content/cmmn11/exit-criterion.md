@@ -28,7 +28,7 @@ Again, rebuild and redeploy the project.
 
 {{< img src="../img/tasklist-check-application-variable-unchecked.png" >}}
 
-Go to Tasklist and access the `demo` user's tasks. As before, check the task *Check Application*. In order to trigger the sentry, add the variable `applicationSufficient` of type `Boolean`, but this time make sure to leave the check box unchecked. Click {{< button name="primary" text="Complete" >}}.
+Go to Tasklist and access the `demo` user's tasks. As before, check the task *Check Application*. To trigger the sentry, add the variable `applicationSufficient` of type `Boolean`, but this time make sure to leave the check box unchecked. Click {{< button name="primary" text="Complete" >}}.
 
 You will notice that the task *Provide Customer Rating* has disappeared from the Tasklist. That is because the sentry has been triggered and the task's exit criterion has been fulfilled. Also, you can check the Tomcat console. This time, there is no log entry for the milestone.
 

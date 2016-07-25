@@ -17,7 +17,7 @@ In this step, we use Java code to instantiate the case definition, then deploy a
 
 # Java Code
 
-In order to directly create a case instance after deployment, add the following method to your `LoanApprovalApplication` class:
+To directly create a case instance after deployment, add the following method to your `LoanApprovalApplication` class:
 
 {{< code language="java" line="12-20" >}}
 package org.camunda.bpm.getstarted.cmmn.loanapproval;
@@ -49,16 +49,16 @@ public class LoanApprovalApplication extends ServletProcessApplication {
 
 A Process Application is an ordinary Java Web Application and is deployed in exactly the same way.
 
-Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-cmmn-0.1.0-SNAPSHOT.war` In the `target/` folder of your Maven project.
+Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-cmmn-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project.
 
 {{< note title="Hint" class="info" >}}
-If the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
+If the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in Eclipse.
 {{< /note >}}
 
 
 # Deploy to Apache Tomcat
 
-In order to deploy the process application, copy-paste the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
+To deploy the process application, copy-paste the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
 
 Check the log file of the Apache Tomcat server. If you see the following log message, the deployment was successful:
 

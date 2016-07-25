@@ -12,7 +12,7 @@ menu:
 
 ---
 
-The next step consists in adding a milestone. In CMMN, milestones express that a certain intermediate goal in the case has been reached.
+The next step consists of adding a milestone. In CMMN, milestones express that a certain intermediate goal in the case has been reached.
 The condition(s) defining when the milestone is reached are modeled using Sentries.
 
 # Defining a Milestone
@@ -23,7 +23,8 @@ Go to the Camunda Modeler and create a new milestone from the palette. Double cl
 
 # Defining a Sentry
 
-Sentries are used to capture conditions within a case and can trigger other events to occur. We want to express that the *Approved* milestone is reached when both tasks have successfully completed, and if the application was sufficient and the customer received a good rating for creditworthiness.
+Sentries are used to capture conditions within a case and can trigger other events to occur. We want to express that the *Approved* milestone is reached when both tasks have successfully completed, 
+if the application was sufficient and if the customer received a good rating for creditworthiness.
 
 First create a criterion on the milestone. Click on the *Check Application* task, then on the *Append Criterion* button in the context pad. Move the criterion to the right and place it on the milestone. Note how the criterion is attached to the milestone and an onPart connection is created with the *complete* standard event.
 
@@ -37,7 +38,7 @@ Now we can configure the two conditions (application sufficient and good rating)
 
 # Milestone Listener
 
-Milestones are not visualized in the Camunda web applications. In order to see that the milestone occurs we add a *CaseExecutionListener*. Switch to Eclipse and create a new Java class in the project:
+Milestones are not visualized in the Camunda web applications. To see that the milestone occurs we add a *CaseExecutionListener*. Switch to Eclipse and create a new Java class in the project:
 
 ```java
 package org.camunda.bpm.getstarted.cmmn.loanapproval;
@@ -72,7 +73,7 @@ When you are done, save all resources, perform a Maven build and redeploy the pr
 It is best practice to perform a `clean install` build to make sure all resources are replaced with their newest version.
 {{< /note >}}
 
-Now you can open the Tasklist and access the `demo` user's tasks. First click on the task *Check Application*. Click on `Add a variable`. In the field `Name`, enter `applicationSufficient`. For `Type`, select `Boolean`. Make sure to tick the check box that now appeared.
+Now you can open the Tasklist and access the `demo` user's tasks. First click on the task *Check Application*. Click on `Add a variable`. In the field `Name`, enter `applicationSufficient`. For `Type`, select `Boolean`. Make sure to tick the check box that now appears.
 
 {{< img src="../img/tasklist-check-application-variable.png" >}}
 
