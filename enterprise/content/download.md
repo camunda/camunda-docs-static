@@ -45,6 +45,12 @@ downloads:
   branches:
   - branch: "7.6"
     releases:
+    - number: "7.6.0-alpha3"
+      note: "http://blog.camunda.org/post/2016/08/camunda-bpm-760-alpha3-released/"
+      date: "2016.08.10"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.6.0-alpha2"
       note: "http://blog.camunda.org/post/2016/07/camunda-bpm-760-alpha2-released/"
       date: "2016.07.06"
