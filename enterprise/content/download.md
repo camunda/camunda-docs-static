@@ -299,6 +299,7 @@ This page contains the latest versions of all supported branches. In addition, w
 * [Getting Started](/get-started)
 * [Examples](/manual/latest/examples)
 * [Supported Environments](/manual/latest/introduction/supported-environments)
+* [Previous Versions](https://camunda.org/enterprise-release/)
 
 
 ## Community vs. Enterprise Releases
