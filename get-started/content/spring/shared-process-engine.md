@@ -19,7 +19,7 @@ In the last section of this tutorial we learn how to use a shared process engine
 
 So far, we explored how to set up an embedded process engine inside a web application using the Spring Framework. You can also use the Spring Framework to develop applications that use a shared process engine. As opposed to the embedded process engine, the shared process engine is controlled independently from an application and is started / stopped by the runtime container (like Apache Tomcat). This allows multiple applications (or a single modular application) to use the same process engine. You can also re-deploy individual applications independently from the process engine.
 
-In order to configure the loanapproval-spring example to work with an embedded process engine, you have to change three things:
+In order to configure the loanapproval-spring example to work with a shared process engine, you have to change three things:
 
 First, we need to set the scope of the Maven dependency of the camunda-engine dependency to `provided`. On the Camunda BPM platform the process engine library is provided as a shared library and does not need to be bundled with the application:
 
