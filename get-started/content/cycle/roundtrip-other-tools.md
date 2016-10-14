@@ -41,6 +41,16 @@ Here is an overview of BPMN 2.0 modelers we know, and the requirements they comp
     <th class="center">API</th><th>Cycle ready?</th>
   </tr>
   <tr>
+    <td><a href="http://www.boc-group.com/de/produkte/adonis/">ADONIS</a></td>
+    <td>6.1</td>
+    <td>commercial</td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center">only forward</td>
+  </tr>
+  <tr>
     <td><a href="http://www.softwareag.com/de/products/az/aris/default.asp">ARIS</a></td>
     <td></td>
     <td>commercial</td>
@@ -59,16 +69,6 @@ Here is an overview of BPMN 2.0 modelers we know, and the requirements they comp
     <td></td>
     <td></td>
     <td class="center">no</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.boc-group.com/de/produkte/adonis/">BOC Adonis</a></td>
-    <td>5.0</td>
-    <td>commercial</td>
-    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
-    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
-    <td></td>
-    <td></td>
-    <td class="center">only forward</td>
   </tr>
   <tr>
     <td><a href="http://www.businessprocessincubator.com/bpmn-2-0-modeler-for-visio.html">BPMN 2.0 modeler for Visio</a></td>
