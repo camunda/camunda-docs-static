@@ -38,7 +38,7 @@ Go back to eclipse and add a folder named `src/main/webapp/forms`. Inside this f
 </form>
 ```
 
-Open the process with the modeler. Click on the start event. In the properties view, insert `embedded:app:forms/request-loan.html` into the `Form Key` property field. This means that we want to use an `embedded` form inside the Tasklist and that the form is loaded from the `app`lication. Save the diagram and refresh the Eclipse project.
+Open the process with the modeler. Click on the start event. In the properties view, click on the `Forms` tab and insert `embedded:app:forms/request-loan.html` into the `Form Key` property field. This means that we want to use an `embedded` form inside the Tasklist and that the form is loaded from the `app`lication. Save the diagram and refresh the Eclipse project.
 
 {{< img src="../img/modeler-start-form.png" >}}
 
@@ -67,7 +67,7 @@ The task form can be added and configured the same way. Add a file named `approv
 </form>
 ```
 
-After that, open the process with the modeler again. Click on the user task. In the properties view, insert `embedded:app:forms/approve-loan.html` into the `Form Key` property field.
+After that, open the process with the modeler again. Click on the user task. In the properties view, click on the `Forms` tab and insert `embedded:app:forms/approve-loan.html` into the `Form Key` property field.
 
 
 # Re-Build and Deploy
@@ -75,10 +75,10 @@ After that, open the process with the modeler again. Click on the user task. In 
 When you are done, save all resources, perform a Maven build and redeploy the process application.
 
 {{< note title="Maven" class="info" >}}
-It is best practice to perform a `clean install` build to make sure all resources are replaced with their newest version.
+Before selecting the pom.xml in the Package Explorer of Eclipse and performing a right-click and select Run As / Maven Install, it is best practice to perform a right-click and select Run As / Maven Clean to make sure all resources are replaced with their newest version.
 {{< /note >}}
 
-Now you can open Tasklist and start a new process instance for the loan approval process. You will notice that the custom form is displayed.
+Now you go to [Tasklist](http://localhost:8080/camunda/app/tasklist) and start a new process instance for the loan approval process. You will notice that the custom form is displayed.
 
 {{< img src="../img/start-form-embedded.png" >}}
 

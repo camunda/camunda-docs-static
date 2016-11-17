@@ -22,6 +22,7 @@ Use the Camunda Modeler to add a service task after the user task. To do so, sel
 
 
 {{< img src="../img/modeler-service-task1.png" >}}
+{{< img src="../img/modeler-service-task2.png" >}}
 
 
 # Add a JavaDelegate Implementation
@@ -49,9 +50,9 @@ public class ProcessRequestDelegate implements JavaDelegate {
 
 # Configure the Class in the Process
 
-Use the properties view to reference the service task in the process (see screenshot). You need to provide the fully qualified classname of your class in the *Java Class* property field.
+Use the properties view to reference the service task in the process (see screenshot). You need to provide the fully qualified classname of your class in the *Java Class* property field. In our case this is `org.camunda.bpm.getstarted.loanapproval.ProcessRequestDelegate`.
 
-{{< img src="../img/modeler-service-task2.png" >}}
+{{< img src="../img/modeler-service-task3.png" >}}
 
 Save the process model and update it in Eclipse. Build, deploy and execute the process application. After completing the *Approve Loan* step, check the logfile of the Apache Tomcat server:
 

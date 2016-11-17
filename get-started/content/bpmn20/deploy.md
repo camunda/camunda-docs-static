@@ -17,18 +17,18 @@ The next step consists of building, deploying and testing the process.
 
 # Build the Web Application with Maven
 
-Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-0.0.1-SNAPSHOT.war` in the `target/` folder of your Maven project.
+Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project.
 
 {{< note title="Hint" class="info" >}}
-If the `loan-approval-0.0.1-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
+If the `loan-approval-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
 {{< /note >}}
 
 
 # Deploy to Apache Tomcat
 
-In order to deploy the process application, copy-paste the `loan-approval-0.0.1-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
+In order to deploy the process application, copy-paste the `loan-approval-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
 
-Check the log file of the Apache Tomcat server. If you see the following log message, the deployment was successful:
+Check the log file of the Apache Tomcat server in the `$CAMUNDA_HOME/server/apache-tomcat/logs` folder. Select the file with the name `catalina.out`. Scroll to the end of the file and if you see the following log message, the deployment was successful:
 
 <pre class="console">
 INFO org.camunda.commons.logging.BaseLogger.logInfo
@@ -65,7 +65,7 @@ If you now go back to [Camunda Cockpit](http://localhost:8080/camunda/app/cockpi
 
 # Configure Process Start Authorizations
 
-To allow the user *john* to see the process definition *Loan Approval*, you have to go to Camunda Admin ([http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6](http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6)). Next, click on the button *Create New* to add a new authorization on the resource *process definition*. Now you can give the user *john* all permissions on process definition *approve-loan*. When you are done, submit the new authorization.
+To allow the user *john* to see the process definition *Loan Approval*, you have to go to Camunda Admin ([http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6](http://localhost:8080/camunda/app/admin/default/#/authorization?resource=6)). Next, click on the button *Create new authorization* to add a new authorization on the resource *process definition*. Now you can give the user *john* all permissions on process definition *approve-loan*. When you are done, submit the new authorization.
 
 {{< img src="../img/create-process-definition-authorization.png" >}}
 
