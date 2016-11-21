@@ -52,7 +52,7 @@ The next step consists of setting up the Maven dependencies for the new project.
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.5.0</camunda.version>
+    <camunda.version>7.6.0</camunda.version>
     <spring.version>3.1.2.RELEASE</spring.version>
   </properties>
 
@@ -105,7 +105,7 @@ The next step consists of setting up the Maven dependencies for the new project.
 
 ## Add web.xml File for Bootstrapping the Spring Container
 
-Next, we add a `web.xml` file for bootstrapping the spring container. In order to do so, first add a folder named `WEB-INF` to the (preexisting) `src/main/webapp` folder of your Maven project. Inside this folder, add a file named `web.xml`:
+Next, we add a `web.xml` file for bootstrapping the spring container. In order to do so, first add a folder named `WEB-INF` to the (preexisting) `src/main/webapp` folder of your Maven project. Inside the `src/main/webapp/WEB-INF` folder, add a file named `web.xml`:
 
 ```xml
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

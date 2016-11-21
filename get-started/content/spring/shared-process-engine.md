@@ -21,20 +21,25 @@ So far, we explored how to set up an embedded process engine inside a web applic
 
 In order to configure the loanapproval-spring example to work with a shared process engine, you have to change three things:
 
-First, we need to set the scope of the Maven dependency of the camunda-engine dependency to `provided`. On the Camunda BPM platform the process engine library is provided as a shared library and does not need to be bundled with the application:
+Firstly, we need to set the scope of the Maven dependency of the camunda-engine dependency to `provided`. On the Camunda BPM platform the process engine library is provided as a shared library and does not need to be bundled with the application:
 
 ```xml
-<dependency>
-  <groupId>org.camunda.bpm</groupId>
-  <artifactId>camunda-engine</artifactId>
-  <version>${camunda.version}</version>
-  <scope>provided</scope>
-</dependency>
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+	    <groupId>org.camunda.bpm</groupId>
+	    <artifactId>camunda-bom</artifactId>
+	    <version>${camunda.version}</version>
+	    <scope>import</scope>
+	    <type>pom</type>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
 ```
 
 Furthermore, you can delete the dependencies `org.springframework:spring-jdbc`, `com.h2database:h2`, and `org.slf4j:slf4j-jdk14`.
 
-Second, you need to add a `META-INF/processes.xml` file to your application.
+Secondly, create the folder `META-INF` in the `src/main/resources` directory and add a `src/main/resources/META-INF/processes.xml` file to your application.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -54,7 +59,7 @@ Second, you need to add a `META-INF/processes.xml` file to your application.
 </process-application>
 ```
 
-And third, the `applicationContext.xml` file is adjusted so that the shared process engine is looked up and a `SpringServletProcessApplication` is bootstrapped:
+And thirdly, the `applicationContext.xml` file is adjusted so that the shared process engine is looked up and a `SpringServletProcessApplication` is bootstrapped:
 
 ```xml
 <beans xmlns="http://www.springframework.org/schema/beans"

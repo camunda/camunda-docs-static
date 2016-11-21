@@ -27,7 +27,7 @@ model and interact with the process form inside our Spring beans. In this sectio
 
 ## Model an Executable BPMN 2.0 Process
 
-We start by modeling an executable process using the Camunda Modeler. The process should look as depicted in the screenshot below.
+Start by modeling an executable process using the Camunda Modeler. The process should look as depicted in the screenshot below.
 
 {{< img src="../img/process-model.png" >}}
 
@@ -40,7 +40,7 @@ When you are done, save the process model in the `src/main/resources` folder of 
 
 ## Use Spring Auto-Deployment for BPMN 2.0 Processes
 
-For the process to be deployed, we use the auto-deployment feature provided by the Camunda engine Spring integration. In order to use this feature, modify the definition of the `processEngineConfiguration` bean inside your `src/main/webapp/WEB-INF/applicationContext.xml` file:
+For the process to be deployed, use the auto-deployment feature provided by the Camunda engine Spring integration. In order to use this feature, modify the definition of the `processEngineConfiguration` bean inside your `src/main/webapp/WEB-INF/applicationContext.xml` file:
 
 ```xml
 <bean id="processEngineConfiguration" class="org.camunda.bpm.engine.spring.SpringProcessEngineConfiguration">
@@ -55,9 +55,15 @@ For the process to be deployed, we use the auto-deployment feature provided by t
 
 ## Start a Process Instance from a Spring Bean
 
-The next step consists of starting a process instance from a Spring Bean. We will simply add a Spring Bean to the application context which injects to the process engine and starts a single process instance from an `afterPropertiesSet()` Method:
+The next step consists of starting a process instance from a Spring Bean. Firstly, create a package `org.camunda.bpm.getstarted.loanapproval`. Secondly, add the following `Starter` class to it: 
 
 ```java
+package org.camunda.bpm.getstarted.loanapproval;
+
+import org.camunda.bpm.engine.RuntimeService;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Starter implements InitializingBean {
 
   @Autowired
@@ -73,7 +79,9 @@ public class Starter implements InitializingBean {
 }
 ```
 
-We add the Spring bean to the applicationContext.xml file:
+This will simply add a Spring Bean to the application context, which injects to the process engine and starts a single process instance from an `afterPropertiesSet()` method.
+
+Add the Spring bean to the `applicationContext.xml` file:
 
 ```xml
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -90,8 +98,6 @@ We add the Spring bean to the applicationContext.xml file:
 
   <bean class="org.camunda.bpm.getstarted.loanapproval.Starter" />
 
-  ...
-
 </beans>
 ```
 
@@ -104,6 +110,11 @@ Referencing a Spring Bean from a BPMN 2.0 Service Task is simple. As shown in th
 Finally, we add the Java class implementing the `JavaDelegate` interface.
 
 ```java
+package org.camunda.bpm.getstarted.loanapproval;
+
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+
 public class CalculateInterestService implements JavaDelegate {
 
   public void execute(DelegateExecution delegate) throws Exception {
@@ -130,7 +141,7 @@ And register it as a Spring Bean in the application context.
 
   <bean class="org.camunda.bpm.getstarted.loanapproval.Starter" />
   <bean id="calculateInterestService" class="org.camunda.bpm.getstarted.loanapproval.CalculateInterestService" />
-  ...
+  
 </beans>
 ```
 
