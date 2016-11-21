@@ -72,7 +72,7 @@ After that, open the process with the modeler again. Click on the user task. In 
 
 # Re-Build and Deploy
 
-When you are done, save all resources, perform a Maven build and redeploy the process application.
+When you are done, save all resources, [perform a Maven build](../deploy/#build-the-web-application-with-maven) and [redeploy](../deploy/#deploy-to-apache-tomcat) the process application.
 
 {{< note title="Maven" class="info" >}}
 Before selecting the pom.xml in the Package Explorer of Eclipse and performing a right-click and select Run As / Maven Install, it is best practice to perform a right-click and select Run As / Maven Clean to make sure all resources are replaced with their newest version.
