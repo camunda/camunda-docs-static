@@ -49,7 +49,7 @@ public class LoanApprovalApplication extends ServletProcessApplication {
 
 A Process Application is an ordinary Java Web Application and is deployed in exactly the same way.
 
-Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-cmmn-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project.
+Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Clean` and afterwards `Run As / Maven Install`. This will generate a WAR file named `loan-approval-cmmn-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project.
 
 {{< note title="Hint" class="info" >}}
 If the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in Eclipse.
@@ -60,7 +60,7 @@ If the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` file is not visible after having 
 
 To deploy the process application, copy-paste the `loan-approval-cmmn-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
 
-Check the log file of the Apache Tomcat server. If you see the following log message, the deployment was successful:
+Check the log file of the Apache Tomcat server in the `$CAMUNDA_HOME/server/apache-tomcat/logs` folder. Select the file with the name `catalina.out`. Scroll to the end of the file and if you see the following log message, the deployment was successful:
 
 <pre class="console">
 INFO org.apache.catalina.startup.HostConfig.deployWAR

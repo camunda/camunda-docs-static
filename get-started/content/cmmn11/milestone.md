@@ -38,7 +38,7 @@ Now we can configure the two conditions (application sufficient and good rating)
 
 # Milestone Listener
 
-Milestones are not visualized in the Camunda web applications. To see that the milestone occurs we add a *CaseExecutionListener*. Switch to Eclipse and create a new Java class in the project:
+Milestones are not visualized in the Camunda web applications. To see that the milestone occurs we add a *CaseExecutionListener*. Switch to Eclipse and in the project create a new Java class in the `org.camunda.bpm.getstarted.cmmn.loanapproval` package: 
 
 ```java
 package org.camunda.bpm.getstarted.cmmn.loanapproval;
@@ -65,12 +65,14 @@ Now this listener has to be registered with the milestone. To do that switch bac
 
 {{< img src="../img/cmmn-9.png" >}}
 
+Save the changes in the modeler before continuing.
+
 # Re-build and Deploy
 
-When you are done, save all resources, perform a Maven build and redeploy the process application.
+When you are done, save all resources, [perform a Maven build](../instantiate-test/#build-the-web-application-with-maven) and [redeploy](../instantiate-test/#deploy-to-apache-tomcat) the process application.
 
-{{< note title="Hint" class="info" >}}
-It is best practice to perform a `clean install` build to make sure all resources are replaced with their newest version.
+{{< note title="Hint to Maven" class="info" >}}
+Before selecting the pom.xml in the Package Explorer of Eclipse and performing a right-click and select Run As / Maven Install, it is best practice to perform a right-click and select Run As / Maven Clean to make sure all resources are replaced with their newest version.
 {{< /note >}}
 
 Now you can open the Tasklist and access the `demo` user's tasks. First click on the task *Check Application*. Click on `Add a variable`. In the field `Name`, enter `applicationSufficient`. For `Type`, select `Boolean`. Make sure to tick the check box that now appears.
@@ -87,7 +89,7 @@ Now open the Tomcat console. You have completed the tasks and set the variables 
 
 <pre class="console">
 INFO org.camunda.bpm.getstarted.cmmn.loanapproval.LifecycleListener
-Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transition: occur
+Plan Item 'PI_Milestone_1' labeled 'Approved' has performed transition: occur 
 </pre>
 
 Our lifecycle listener has been notified, showing that the milestone has actually occurred.

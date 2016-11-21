@@ -16,15 +16,17 @@ When a loan application is not sufficient, for example because it has formal err
 
 # Add an Exit Sentry
 
-Click on the *Check Application* task to open the context pad, then click on *Append Criterion*. Move the criterion to the top edge of the *Provide Customer Rating* task and attach it there. Click on the entry criterion and open the replace menu by clicking on the wrench. Now click on *Exit Criterion* to morph the sentry.
+In the modeler, click on the *Check Application* task to open the context pad, then click on *Append Criterion*. Move the criterion to the top edge of the *Provide Customer Rating* task and attach it there. Click on the entry criterion and open the replace menu by clicking on the wrench icon {{< glyphicon name="wrench" >}}. Now click on *Exit Criterion* to morph the sentry.
 
 Keep the exit criterion selected and configure the *If Part Condition* using the properties panel. Insert the following into the text input field: `${!applicationSufficient}`
 
 {{< img src="../img/cmmn-10.png" >}}
 
+Save the changes in the modeler before continuing.
+
 # Re-build and Deploy
 
-Again, rebuild and redeploy the project.
+Again, [rebuild](../instantiate-test/#build-the-web-application-with-maven) and [redeploy](../instantiate-test/#deploy-to-apache-tomcat) the project.
 
 {{< img src="../img/tasklist-check-application-variable-unchecked.png" >}}
 

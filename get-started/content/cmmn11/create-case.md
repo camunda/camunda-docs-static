@@ -33,7 +33,7 @@ Optionally you can rename the case plan model. Change the name of the case plan 
 # Add Human Tasks
 
 As the first part of the case, the loan application should be reviewed for any formal errors.
-We therefore need a human task in our case. First click on the plain task, then on the wrench next to it. Select *Human Task* to change the type of the task.
+We therefore need a human task in our case. First click on the plain task, then on the wrench icon {{< glyphicon name="wrench" >}} next to it. Select *Human Task* to change the type of the task.
 
 {{< img src="../img/cmmn-2.png" >}}
 
@@ -47,7 +47,7 @@ To learn more about human tasks, consider checking the [Human Task section](/man
 
 ## Manual Activation Rule
 
-The next step is to define that the human tasks don't need manual activation. First click on the *Check Application* task, then on the wrench again and on the manual activation rule button.
+The next step is to define that the human tasks don't need manual activation. First click on the *Check Application* task, then on the wrench {{< glyphicon name="wrench" >}} again and on the manual activation rule button {{< glyphicon name="play" >}}.
 
 {{< img src="../img/cmmn-3.png" >}}
 
