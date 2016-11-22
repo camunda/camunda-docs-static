@@ -11,7 +11,7 @@ menu:
 
 ---
 
-First you need to setup your development environment and install Camunda BPM Platform and Camunda Modeler.
+First you need to set up your development environment and install the Camunda BPM Platform and the Camunda Modeler.
 
 
 # Prerequisites
@@ -19,12 +19,12 @@ First you need to setup your development environment and install Camunda BPM Pla
 Make sure you have the following set of tools installed:
 
 * Java JDK 1.8+
-* Apache Maven (optional, if not installed you can use embedded Maven inside eclipse.)
-* A modern Web browser (recent Firefox, Chrome, or Internet Explorer 9+ will work fine)
+* Apache Maven (optional, if not installed you can use embedded Maven inside Eclipse.)
+* A modern web browser (recent Firefox, Chrome, or Internet Explorer 9+ will work fine)
 
-## Install Camunda BPM platform
+# Install Camunda BPM platform
 
-First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the WildFly 10 based distribution. Download it [here](https://camunda.org/download/).
+First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the WildFly 10 based distribution. Download it from [the download page](https://camunda.org/download/).
 
 After having downloaded the distribution, unpack it inside a directory of your choice. We will call that directory
 `$CAMUNDA_HOME`.
@@ -39,7 +39,7 @@ If the page does not open, go to http://localhost:8080/camunda-welcome/index.htm
 If you have trouble setting up the Camunda BPM platform, you can ask for assistance in the [Forum](https://camunda.org/community/forum.html).
 {{< /note >}}
 
-## Install Camunda Modeler
+# Install Camunda Modeler
 
 Follow the instructions in the [Camunda Modeler](/manual/latest/installation/camunda-modeler) section.
 

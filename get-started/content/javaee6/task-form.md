@@ -174,6 +174,6 @@ Open the process with the modeler. Click on the *Approve Order* user task. In th
 
 Open the process with the modeler. In the properties view, set the `Condition` property of the conditional sequence flows after the exclusive gateway to `${orderBusinessLogic.getOrder(orderId).approved}` respectively `${not orderBusinessLogic.getOrder(orderId).approved}`.
 
-When you are done, save all resources, perform a Maven build and redeploy the process application. You can now approve the pizza order from the tasklist.
+When you are done, save all resources, [perform a Maven build](../deploy/#build-the-process-application), and [redeploy](../deploy/#deploy-to-wildfly) the process application. Start the process `Order Pizza` in [tasklist](http://localhost:8080/camunda/app/tasklist). Fill out the emerging form. Select the `All Tasks` element on the left side of the tasklist. An `Approve Order` task should then be listed on the tasklist. Go the task and press on {{< glyphicon name="user" text=" Claim" >}}. Now you can approve the pizza order.
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-6" >}}

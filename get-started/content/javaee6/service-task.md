@@ -21,7 +21,7 @@ After the process has been started with the new order as process variables, we w
 
 ## Add an Entity Bean to the Process Application
 
-To persist the entity with JPA, we add an entity bean to our process application. The entity class has to be annotated with `@Entity` and needs an `@Id` field. We also add a `@Version` field to the entity bean. This enables optimistic locking and ensures integrity during merges.
+To persist the entity with JPA, we add an entity bean to our process application. Create a package `org.camunda.bpm.getstarted.pizza` and the place the following `OrderEntity` class into that package:
 
 ```java
 package org.camunda.bpm.getstarted.pizza;
@@ -99,6 +99,8 @@ public class OrderEntity implements Serializable {
 }
 ```
 
+The entity class has to be annotated with `@Entity` and needs an `@Id` field. We also add a `@Version` field to the entity bean. This enables optimistic locking and ensures integrity during merges.
+
 ## Add an EJB to the Process Application
 
 The next step is to add a stateless EJB to the process application which is called by the process. In this EJB we inject the entity manager. It is used to manage our persistent objects during the session.
@@ -159,7 +161,7 @@ public class OrderBusinessLogic {
 
 Use the properties view of the Persist Service Task in the process (see screenshot). You need to enter `${orderBusinessLogic.persistOrder(execution)}` as the `Expression` property. This will call the `persistOrder` method of the named EJB with the current execution as parameter.
 
-Build, deploy and execute the process. After completing the *Persist Order* step, check the logfile of the WildFly server. It will show an insert for the new order entity:
+[Build](../deploy/#build-the-process-application), [deploy](../deploy/#deploy-to-wildfly) and start the process `Order Pizza` in [tasklist](http://localhost:8080/camunda/app/tasklist). Fill out the emerging form. Now the *Persist Order* step should have been completed automatically. Check that by looking into the logfile of the WildFly server. It will show an insert for the new order entity:
 
 <pre class="console">
   INFO  [stdout] Hibernate: insert into OrderEntity (address, approved, customer, pizza, version, id) values (?, ?, ?, ?, ?, ?)

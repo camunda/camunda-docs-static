@@ -15,13 +15,13 @@ menu:
 The next step consists in building and deploying the process application.
 
 
-# Deploy the Process Application
+# Build the Process Application
 
-To deploy the process application select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `pizza-order.war` in the `target/` folder of your Maven project.
+To deploy the process application select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Clean` and afterwards `Run As / Maven Install`. This will generate a WAR file named `pizza-order.war` in the `target/` folder of your Maven project.
 
-If the `pizza-order.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
+If the `pizza-order.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in Eclipse.
 
-## Deploy to WildFly
+# Deploy to WildFly
 
 To deploy the process application, copy and paste the `pizza-order.war` from your Maven project `target` folder to the `$CAMUNDA_HOME/server/wildfly-VERSION/standalone/deployments` folder.
 

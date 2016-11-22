@@ -59,7 +59,7 @@ A new conversation is started again before the view is rendered and the task is 
 
 Open the process with Camunda Modeler. Click on the prepare pizza user task. In the properties view, set the `Form Key` property to `app:preparepizza.jsf`.
 
-When you are done, save all resources, perform a Maven build and redeploy the process application.
+When you are done, save all resources, [perform a Maven build](../deploy/#build-the-process-application), and [redeploy](../deploy/#deploy-to-wildfly) the process application.
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-7" >}}
 
@@ -67,7 +67,7 @@ When you are done, save all resources, perform a Maven build and redeploy the pr
 
 If the user disapproves the pizza order an email is sent to inform the customer. This will be simulated by a simple log output.
 
-The EJB is extended with a method which logs an informative message for the rejection of the order.
+The EJB `OrderBusinessLogic` is extended with a method `rejectOrder`, which logs an informative message for the rejection of the order.
 
 ```html
 @Stateless
@@ -102,6 +102,11 @@ public class OrderBusinessLogic {
 
 Open the process with Camunda Modeler. Click on the reject email service task. In the properties view, set the `Expression` property to `${orderBusinessLogic.rejectOrder(execution)}`.
 
-When you are done, save all resources, perform a Maven build and redeploy the process application.
+When you are done, save all resources, [perform a Maven build](../deploy/#build-the-process-application), and [redeploy](../deploy/#deploy-to-wildfly) the process application. You can now approve and reject an order in the [tasklist](http://localhost:8080/camunda/app/tasklist). The output of the `Send Rejection Email` task can be checked by looking into the logfile of the WildFly server. It should state that a rejection email has been send:
+
+<pre class="console">
+  Sending Email:
+  Dear asdf, your order 2 of a Margarita pizza has been rejected.
+</pre>
 
 {{< get-tag repo="camunda-get-started-javaee" tag="Step-8" >}}
