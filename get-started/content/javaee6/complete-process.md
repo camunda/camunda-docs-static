@@ -102,7 +102,7 @@ public class OrderBusinessLogic {
 
 Open the process with Camunda Modeler. Click on the reject email service task. In the properties view, set the `Expression` property to `${orderBusinessLogic.rejectOrder(execution)}`.
 
-When you are done, save all resources, [perform a Maven build](../deploy/#build-the-process-application), and [redeploy](../deploy/#deploy-to-wildfly) the process application. You can now approve and reject an order in the [tasklist](http://localhost:8080/camunda/app/tasklist). The output of the `Send Rejection Email` task can be checked by looking into the logfile of the WildFly server. It should state that a rejection email has been send:
+When you are done, save all resources, [perform a Maven build](../deploy/#build-the-process-application) and [redeploy](../deploy/#deploy-to-wildfly) the process application. You can now approve and reject an order in [Tasklist](http://localhost:8080/camunda/app/tasklist). The output of the `Send Rejection Email` task can be checked by looking into the logfile of the WildFly server. It should state that a rejection email has been sent:
 
 <pre class="console">
   Sending Email:

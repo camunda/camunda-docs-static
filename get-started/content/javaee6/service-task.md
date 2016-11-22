@@ -161,7 +161,7 @@ public class OrderBusinessLogic {
 
 Use the properties view of the Persist Service Task in the process (see screenshot). You need to enter `${orderBusinessLogic.persistOrder(execution)}` as the `Expression` property. This will call the `persistOrder` method of the named EJB with the current execution as parameter.
 
-[Build](../deploy/#build-the-process-application), [deploy](../deploy/#deploy-to-wildfly) and start the process `Order Pizza` in [tasklist](http://localhost:8080/camunda/app/tasklist). Fill out the emerging form. Now the *Persist Order* step should have been completed automatically. Check that by looking into the logfile of the WildFly server. It will show an insert for the new order entity:
+[Build](../deploy/#build-the-process-application), [deploy](../deploy/#deploy-to-wildfly) and start the process `Order Pizza` in [Tasklist](http://localhost:8080/camunda/app/tasklist). Fill out the emerging form. Now the *Persist Order* step should have been completed automatically. Check that by looking into the logfile of the WildFly server. It will show an entry for the new order entity:
 
 <pre class="console">
   INFO  [stdout] Hibernate: insert into OrderEntity (address, approved, customer, pizza, version, id) values (?, ?, ?, ?, ?, ?)
