@@ -38,13 +38,20 @@ downloads:
     - war
 
   selected:
-    branch: "7.5"
-    version: "7.5.6"
+    branch: "7.6"
+    version: "7.6.0"
     server: "tomcat"
 
   branches:
   - branch: "7.6"
     releases:
+
+    - number: "7.6.0"
+      note: "http://blog.camunda.org/post/2016/11/camunda-bpm-760-released/"
+      date: "2016.11.25"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.6.0-alpha6"
       note: "http://blog.camunda.org/post/2016/11/camunda-bpm-760-alpha6-released/"
       date: "2016.11.22"
