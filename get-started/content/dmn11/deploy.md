@@ -1,33 +1,25 @@
 ---
 
-title: 'Evaluate, Deploy and Test the DMN 1.1 decision table'
+title: 'Evaluate, Deploy and Test the decision table'
 weight: 40
 
 menu:
   main:
-    name: "Evaluate, Deploy and Test"
+    name: "Evaluate and Deploy the Decision Table"
     parent: "get-started-dmn"
     identifier: "get-started-dmn-deploy"
-    pre: "Use Java Code to evaluate the decision table, then deploy the web application to Apache Tomcat and test it with Cockpit."
+    pre: "Use Java Code to evaluate the decision table, then deploy the web application to Apache Tomcat and verify the result in Cockpit."
 
 ---
 
-In this step, we use Java Code to evaluate the decision table. Then we deploy the web application to Apache Tomcat and test it with Cockpit.
+In this step, we use Java Code to evaluate the decision table. Then we deploy the web application to Apache Tomcat and verify the result in Cockpit.
 
 # Evaluate the Decision Table
 
-To directly evaluate the decision table after deployment, add the following method to your DishApplication class:
+To directly evaluate the decision table after deployment, add the following method to your Application class:
 
 ```java
-package org.camunda.bpm.getstarted.dish;
-
-import org.camunda.bpm.application.PostDeploy;
-import org.camunda.bpm.application.ProcessApplication;
-import org.camunda.bpm.application.impl.ServletProcessApplication;
-import org.camunda.bpm.engine.DecisionService;
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.Variables;
+package org.camunda.bpm.getstarted.dmn;
 
 @ProcessApplication("Dish App DMN")
 public class DishApplication extends ServletProcessApplication {
@@ -38,9 +30,13 @@ public class DishApplication extends ServletProcessApplication {
     DecisionService decisionService = processEngine.getDecisionService();
 
     VariableMap variables = Variables.createVariables()
-      .putValue("season", "Summer");
+      .putValue("season", "Spring")
+      .putValue("guestCount", 10);
 
-    decisionService.evaluateDecisionTableByKey("dish", variables);
+    DmnDecisionTableResult dishDecisionResult = decisionService.evaluateDecisionTableByKey("dish", variables);
+    String desiredDish = dishDecisionResult.getSingleEntry();
+
+    System.out.println("Desired dish: " + desiredDish);
   }
 
 }
@@ -50,16 +46,16 @@ public class DishApplication extends ServletProcessApplication {
 
 # Build the Web Application with Maven
 
-Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `dish-dmn-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project.
+Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `dinner-dmn-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project.
 
 {{< note title="Hint" class="info" >}}
-If the `dish-dmn-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
+If the `dinner-dmn-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
 {{< /note >}}
 
 
 # Deploy to Apache Tomcat
 
-In order to deploy the process application, copy-paste the `dish-dmn-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
+In order to deploy the process application, copy-paste the `dinner-dmn-0.1.0-SNAPSHOT.war` from your Maven project to the `$CAMUNDA_HOME/server/apache-tomcat/webapps` folder.
 
 Check the log file of the Apache Tomcat server. If you see the following log message, the deployment was successful:
 
@@ -67,27 +63,29 @@ Check the log file of the Apache Tomcat server. If you see the following log mes
 INFO org.camunda.commons.logging.BaseLogger.logInfo
 ENGINE-07015 Detected @ProcessApplication class 'org.camunda.bpm.getstarted.dish.DishApplication'
 INFO org.camunda.commons.logging.BaseLogger.logInfo
-ENGINE-08024 Found processes.xml file at ../webapps/dish-dmn-0.1.0-SNAPSHOT/WEB-INF/classes/META-INF/processes.xml
+ENGINE-08024 Found processes.xml file at ../webapps/dinner-dmn-0.1.0-SNAPSHOT/WEB-INF/classes/META-INF/processes.xml
 INFO org.camunda.commons.logging.BaseLogger.logInfo
-ENGINE-08023 Deployment summary for process archive 'dish-dmn':
+ENGINE-08023 Deployment summary for process archive 'dinner-dmn':
 
-        dish.dmn
+        dinnerDecisions.dmn
+
+Desired dish: Stew
 
 INFO org.camunda.commons.logging.BaseLogger.logInfo
-ENGINE-08050 Process application Dish App DMN successfully deployed
+ENGINE-08050 Process application Dinner App DMN successfully deployed
 </pre>
 
 
 # Verify the Deployment with Cockpit
 
-Now, use Cockpit to check if the decision table is successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with *demo / demo*. Your decision table *Dish* should be listed on the dashboard.
+Now, use Cockpit to check if the decision table is successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with *demo / demo*. Go to "Decisions" section. Your decision table *Dish* should be listed as deployed decision definition.
 
 {{< img src="../img/cockpit-dish-dmn.png" >}}
 
 
 # Verify the Evaluation with Cockpit
 
-On the Dashboard, click on the deployed decision table *Dish*. This opens a dialog where you see when the decision table was evaluated. 
+Click on the decision *Dish*. This opens a dialog where you see when the decision table was evaluated. 
 
 {{< img src="../img/cockpit-decision-overview-dish-dmn.png" >}}
 
@@ -95,11 +93,11 @@ If you click on the id, you can see the historic data of the evaluation. The mat
 
 {{< img src="../img/cockpit-decision-history-dish-dmn.png" >}}
 
-Verify that the 4th rule was matched since the *season* variable was set to "Summer".
+Verify that the 5th rule was matched and the output value for the desired dish is "Stew".
 
 # Next Steps
 
-Congratulations, you have now sucessfully set up a project with a DMN decision table.
+Congratulations, you have now successfully set up a project with your first DMN decision table.
 
 Next,
 

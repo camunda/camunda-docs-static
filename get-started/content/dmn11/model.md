@@ -1,6 +1,6 @@
 ---
 
-title: 'Create a DMN 1.1 Decision Table'
+title: 'Create a DMN Decision Table'
 weight: 30
 
 menu:
@@ -12,11 +12,11 @@ menu:
 
 ---
 
-In this section you learn how to create your first DMN 1.1 [decision table](/manual/latest/reference/dmn11/decision-table/) with the Camunda Modeler. The table will contain the decision logic about the desired dish for a given season.
+In this section you learn how to create your first DMN [decision table](/manual/latest/reference/dmn11/decision-table/) with the Camunda Modeler. The table will contain the decision logic about the desired dish for a given season and guest count.
 
 Now start up the Camunda Modeler.
 
-# Create a new DMN Table
+# Create a new Decision Table
 
 Create a new DMN table by clicking *File > New File > DMN Table*.
 
@@ -25,11 +25,13 @@ Create a new DMN table by clicking *File > New File > DMN Table*.
 
 # Start with the Table Header
 
-Start by setting the name of the table. Click on the top left field and type "Dish" as the [name of the table](/manual/latest/reference/dmn11/decision-table/#decision-name).
+First, click on "Enter Advanced Mode" to see and edit the technical properties. 
+
+Start by setting the name of the decision. Click on the top left field and type "Dish" as the [name of the decision](/manual/latest/reference/dmn11/decision-table/#decision-name).
 
 {{< img src="../img/modeler-step1.png" >}}
 
-Next, click on the field below and replace "decision" by "dish" to set the technical [id of the table](/manual/latest/reference/dmn11/decision-table/#decision-id) which is used to reference the decision table inside the process application.
+Next, click on the field below and replace "decision" by "dish" to set the technical [id of the decision](/manual/latest/reference/dmn11/decision-table/#decision-id) which is used to reference the decision inside the process application.
 
 To set the [label of the input](/manual/latest/reference/dmn11/decision-table/input/#input-label) click on the field under "Input" and type "Season". Same for the [output label](/manual/latest/reference/dmn11/decision-table/output/#output-label), click on the field under "Output" and type "Dish".
 
@@ -67,15 +69,15 @@ Click on the "+" button at the bottom of the table. In the row that was added, t
 
 "Spareribs" is the conclusion (i.e., [output entry](/manual/latest/reference/dmn11/decision-table/rule/#output-entry-conclusion)) of the rule. It is a simple expression in JUEL and returns the String "Spareribs".
 
-Next, add additional rules for the remaining seasons.
+Next, add a second input "How many guests" with the input expression "guestCount" and type "integer". Fill the table with additional rules for the remaining seasons.
  
 {{< img src="../img/modeler-step6.png" >}} 
  
 # Configure the Hit Policy
 
-Set the [hit policy](/manual/latest/reference/dmn11/decision-table/hit-policy/) to "UNIQUE", which specifies that only one rule can match. Verify that the decision table contains only one rule per season.
+Set the [hit policy](/manual/latest/reference/dmn11/decision-table/hit-policy/) to "UNIQUE", which specifies that only one rule can match. Verify that the decision table contains only one rule that can match the inputs.
 
-Click on the field under the id of the table. In the dialog that pops up, open the combo box and choose the hit policy "UNIQUE".
+Click on the field under the id of the decision. In the dialog that pops up, open the combo box and choose the hit policy "UNIQUE".
 
 {{< img src="../img/modeler-step7.png" >}}
 
@@ -83,9 +85,9 @@ Click on the field under the id of the table. In the dialog that pops up, open t
 The default hit policy is "UNIQUE" which is displayed as "U" in the table. If your rules are disjunct so only one rule can match then you don't need to change the hit policy.
 {{< /note >}}
 
-# Save the DMN Table
+# Save the Decision Table
 
-When you are done, save your changes by clicking *File > Save File As..*. In the dialogue that pops up, navigate to the dish application project directory (by default this is in your Eclipse workspace path). In the project directory, place the model in the `src/main/resources` folder.
+When you are done, save your changes by clicking *File > Save File As..*. In the dialogue that pops up, navigate to the application project directory (by default this is in your Eclipse workspace path). In the project directory, place the model in the `src/main/resources` folder.
 
 {{< img src="../img/modeler-save-dmn-table.png" >}}
 

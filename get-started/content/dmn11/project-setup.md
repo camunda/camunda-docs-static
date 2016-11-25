@@ -1,6 +1,6 @@
 ---
 
-title: 'Setup a Java Project for DMN 1.1'
+title: 'Setup a Java Project for DMN'
 weight: 20
 
 menu:
@@ -39,7 +39,7 @@ The next step consists of setting up the Maven dependencies for your new process
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.camunda.bpm.getstarted</groupId>
-  <artifactId>dish-dmn</artifactId>
+  <artifactId>dinner-dmn</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
@@ -48,7 +48,7 @@ The next step consists of setting up the Maven dependencies for your new process
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
-        <version>7.5.0</version>
+        <version>7.6.0</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -92,16 +92,17 @@ Now you can perform the first build. Select the `pom.xml` in the Package Explore
 
 # Add a Process Application Class
 
-Next, you need to create a package, e.g., `org.camunda.bpm.getstarted.dish` and add a Process Application class to it. The Process Application class constitutes the interface between your application and the process engine.
+Next, you need to create a package, e.g., `org.camunda.bpm.getstarted.dmn` and add a Process Application class to it. The Process Application class constitutes the interface between your application and the process engine.
 
 ```java
-package org.camunda.bpm.getstarted.dish;
+package org.camunda.bpm.getstarted.dmn;
 
 import org.camunda.bpm.application.ProcessApplication;
 import org.camunda.bpm.application.impl.ServletProcessApplication;
 
-@ProcessApplication("Dish App DMN")
-public class DishApplication extends ServletProcessApplication {
+@ProcessApplication("Dinner App DMN")
+public class DinnerApplication extends ServletProcessApplication
+{
   //empty implementation
 }
 ```
@@ -120,7 +121,7 @@ This file needs to be added to the `src/main/resources/META-INF` folder of the M
     xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
      
-  <process-archive name="dish-dmn">
+  <process-archive name="dinner-dmn">
   
     <process-engine>default</process-engine>
     <properties>
@@ -129,7 +130,7 @@ This file needs to be added to the `src/main/resources/META-INF` folder of the M
     </properties>
   </process-archive>
  
-</process-application> 
+</process-application>  
 ```
 
 At this point you have successfully set up the process application and you can start modeling your first decision table.
