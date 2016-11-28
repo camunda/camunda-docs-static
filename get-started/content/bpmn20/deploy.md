@@ -17,7 +17,9 @@ The next step consists of building, deploying and testing the process.
 
 # Build the Web Application with Maven
 
-Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project.
+Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`. This will generate a WAR file named `loan-approval-0.1.0-SNAPSHOT.war` in the `target/` folder of your Maven project. 
+
+If you saved your bpmn file from the previous chapter in `src/main/resources`, the war file includes the bpmn file, too.
 
 {{< note title="Hint" class="info" >}}
 If the `loan-approval-0.1.0-SNAPSHOT.war` file is not visible after having performed the Maven build, you need to refresh the project (F5) in eclipse.
