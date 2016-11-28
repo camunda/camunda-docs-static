@@ -22,7 +22,7 @@ To directly evaluate the decision table after deployment, add the following meth
 package org.camunda.bpm.getstarted.dmn;
 
 @ProcessApplication("Dish App DMN")
-public class DishApplication extends ServletProcessApplication {
+public class DinnerApplication extends ServletProcessApplication {
 
   @PostDeploy
   public void evaluateDecisionTable(ProcessEngine processEngine) {
@@ -85,7 +85,7 @@ Now, use Cockpit to check if the decision table is successfully deployed. Go to 
 
 # Verify the Evaluation with Cockpit
 
-Click on the decision *Dish*. This opens a dialog where you see when the decision table was evaluated. 
+Click on the decision *Dish*. This opens a dialog where you see when the decision table was evaluated.
 
 {{< img src="../img/cockpit-decision-overview-dish-dmn.png" >}}
 
