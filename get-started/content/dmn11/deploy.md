@@ -21,7 +21,7 @@ To directly evaluate the decision table after deployment, add the following meth
 ```java
 package org.camunda.bpm.getstarted.dmn;
 
-@ProcessApplication("Dish App DMN")
+@ProcessApplication("Dinner App DMN")
 public class DinnerApplication extends ServletProcessApplication {
 
   @PostDeploy
@@ -105,4 +105,5 @@ Next,
 * learn more about DMN by reading the [DMN Reference](/manual/reference/dmn11/),
 * learn more about the [Decision API exposed by Camunda Process Engine](/manual/user-guide/process-engine/decisions/),
 * check how you can invoke the decision from a [BPMN Business Rule Task](/manual/reference/bpmn20/tasks/business-rule-task/),
-* and a [CMMN Decision Task](/manual/reference/cmmn11/tasks/decision-task/).
+* and a [CMMN Decision Task](/manual/reference/cmmn11/tasks/decision-task/),
+* Bonus Step: [Decision Requirements Graph](../drg) 
