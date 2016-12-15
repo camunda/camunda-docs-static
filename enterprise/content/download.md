@@ -39,12 +39,17 @@ downloads:
 
   selected:
     branch: "7.6"
-    version: "7.6.0"
+    version: "7.6.1"
     server: "tomcat"
 
   branches:
   - branch: "7.6"
     releases:
+    - number: "7.6.1"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14698"
+      date: "2016.12.15"
+      excludeservers:
+      - "glassfish"
 
     - number: "7.6.0"
       note: "http://blog.camunda.org/post/2016/11/camunda-bpm-760-released/"
@@ -91,6 +96,12 @@ downloads:
 
   - branch: "7.5"
     releases:
+    - number: "7.5.7"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14696"
+      date: "2016.12.15"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.5.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14694"
       date: "2016.10.26"
