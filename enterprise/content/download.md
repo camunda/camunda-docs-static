@@ -39,12 +39,18 @@ downloads:
 
   selected:
     branch: "7.6"
-    version: "7.6.1"
+    version: "7.6.2"
     server: "tomcat"
 
   branches:
   - branch: "7.6"
     releases:
+    - number: "7.6.2"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14700"
+      date: "2017.01.18"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.6.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14698"
       date: "2016.12.15"
