@@ -102,6 +102,12 @@ downloads:
 
   - branch: "7.5"
     releases:
+    - number: "7.5.8"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14701"
+      date: "2017.01.24"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.5.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14696"
       date: "2016.12.15"
