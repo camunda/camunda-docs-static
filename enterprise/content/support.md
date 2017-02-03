@@ -13,7 +13,7 @@ menu:
 This guide is intended to help you get the support you need quickly and conveniently. This document includes information about contacting technical support, description of response times, and online resources.
 
 
-# How to Create an Support Issue
+# How to Create a Support Issue
 
 Based on the agreed SLA (Service Level Agreement), you can contact our support service with your questions, wishes and problems.
 To create a new support issue, follow the instructions below. To shorten the processing time, please provide us with as much information as possible.
