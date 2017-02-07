@@ -20,17 +20,20 @@ downloads:
       name: "GlassFish"
       weight: 3
     - path: "ibm-was"
-      name: "IBM WebSphere"
+      name: "IBM WebSphere 8.x"
       weight: 4
+    - path: "ibm-was9"
+      name: "IBM WebSphere 9"
+      weight: 5
     - path: "oracle-wls"
       name: "Oracle WebLogic"
-      weight: 5
+      weight: 6
     - path: "wildfly"
       name: "WildFly 8"
-      weight: 6
+      weight: 7
     - path: "wildfly10"
       name: "WildFly 10"
-      weight: 7
+      weight: 8
 
   formats:
     - zip
@@ -50,54 +53,63 @@ downloads:
       date: "2017.01.18"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14698"
       date: "2016.12.15"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.0"
       note: "http://blog.camunda.org/post/2016/11/camunda-bpm-760-released/"
       date: "2016.11.25"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.0-alpha6"
       note: "http://blog.camunda.org/post/2016/11/camunda-bpm-760-alpha6-released/"
       date: "2016.11.22"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.0-alpha5"
       note: "http://blog.camunda.org/post/2016/10/camunda-bpm-760-alpha5-released/"
       date: "2016.10.13"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.0-alpha4"
       note: "http://blog.camunda.org/post/2016/09/camunda-bpm-760-alpha4-released/"
       date: "2016.09.22"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.0-alpha3"
       note: "http://blog.camunda.org/post/2016/08/camunda-bpm-760-alpha3-released/"
       date: "2016.08.10"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.0-alpha2"
       note: "http://blog.camunda.org/post/2016/07/camunda-bpm-760-alpha2-released/"
       date: "2016.07.06"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.6.0-alpha1"
       note: "http://blog.camunda.org/post/2016/06/camunda-bpm-760-alpha1-released/"
       date: "2016.06.13"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
 
   - branch: "7.5"
@@ -107,48 +119,56 @@ downloads:
       date: "2017.01.24"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.5.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14696"
       date: "2016.12.15"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.5.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14694"
       date: "2016.10.26"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.5.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14606"
       date: "2016.08.10"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.5.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14604"
       date: "2016.07.08"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.5.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14600"
       date: "2016.06.23"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.5.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14599"
       date: "2016.05.31"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
     - number: "7.5.0"
       note: "http://blog.camunda.org/post/2016/05/camunda-bpm-750-released/"
       date: "2016.05.31"
       excludeservers:
       - "glassfish"
+      - "ibm-was9"
 
 
   - branch: "7.4"
@@ -158,66 +178,77 @@ downloads:
       date: "2016.12.15"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.10"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14693"
       date: "2016.10.26"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.8"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14601"
       date: "2016.06.23"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14592"
       date: "2016.06.13"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14590"
       date: "2016.04.29"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14491"
       date: "2016.03.18"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14391"
       date: "2016.03.10"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14295"
       date: "2016.03.01"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14290"
       date: "2016.01.28"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14193"
       date: "2015.12.15"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.4.0"
       note: "http://blog.camunda.org/post/2015/11/camunda-bpm-740-released/"
       date: "2015.11.30"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
 
   - branch: "7.3"
@@ -227,48 +258,56 @@ downloads:
       date: "2016.05.11"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.3.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14292"
       date: "2016.05.03"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.3.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14291"
       date: "2015.12.22"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.3.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14090"
       date: "2015.12.15"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.3.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13990"
       date: "2015.10.26"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.3.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13892"
       date: "2015.07.01"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.3.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13793"
       date: "2015.06.12"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.3.0"
       note: "http://blog.camunda.org/post/2015/05/camunda-bpm-730-final-released/"
       date: "2015.05.28"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
 
   - branch: "7.2"
@@ -278,66 +317,77 @@ downloads:
       date: "2016.06.14"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.9"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14294"
       date: "2016.05.03"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.8"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14192"
       date: "2016.01.28"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14190"
       date: "2015.09.14"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.6"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13790"
       date: "2015.08.11"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13590"
       date: "2015.05.12"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.4"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13507"
       date: "2015.03.25"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13504"
       date: "2015.01.19"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13498"
       date: "2015.01.14"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.1"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=13497"
       date: "2014.12.05"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
     - number: "7.2.0"
       note: "http://blog.camunda.org/post/2014/11/camunda-BPM-7.2.0-Final-released/"
       date: "2014.11.28"
       excludeservers:
       - "wildfly10"
+      - "ibm-was9"
 
 
 ---
