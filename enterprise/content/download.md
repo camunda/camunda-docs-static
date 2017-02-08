@@ -49,7 +49,7 @@ downloads:
   - branch: "7.7"
     releases:
     - number: "7.7.0-alpha1"
-      note: "http://blog.camunda.org/post/2017/02/camunda-bpm-770-alpha1-released/""
+      note: "http://blog.camunda.org/post/2017/02/camunda-bpm-770-alpha1-released/"
       date: "2017.02.08"
       excludeservers:
       - "glassfish"
