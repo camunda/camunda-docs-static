@@ -63,7 +63,6 @@ downloads:
       - "glassfish"
       - "ibm-was9"
 
-    releases:
     - number: "7.6.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14700"
       date: "2017.01.18"
