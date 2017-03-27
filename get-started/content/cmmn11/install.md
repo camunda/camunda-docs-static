@@ -22,6 +22,7 @@ Make sure you have the following set of tools installed:
 * Java JDK 1.7+,
 * Apache Maven (optional, if not installed you can use embedded Maven inside Eclipse.)
 * A modern web browser (recent Firefox, Chrome, or Internet Explorer 9+ will work fine)
+* Eclipse integrated development environment (IDE)
 
 
 # Camunda BPM Platform
