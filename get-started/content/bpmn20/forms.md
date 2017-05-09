@@ -17,7 +17,7 @@ In the next step, we want to add an HTML based task form to the application.
 
 # Add a Start Form
 
-Go back to eclipse and add a folder named `src/main/webapp/forms`. Inside this folder, add a file named `request-loan.html`. Add the following content:
+Go back to Eclipse and add a folder named `src/main/webapp/forms`. Inside this folder, add a file named `request-loan.html`. Add the following content:
 
 ```html
 <form name="requestLoan">
