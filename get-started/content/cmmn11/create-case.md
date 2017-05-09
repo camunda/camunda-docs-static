@@ -68,7 +68,7 @@ We want both tasks to be assigned to the user `demo`, so that they later appear 
 {{< img src="../img/cmmn-5.png" >}}
 
 {{< note title="User Assignment" class="info" >}}
-To learn more about user assignment, check the [User Assignment section](/manual/latest/reference/cmmn11/tasks/human-task/#user-assignment/) on the human task page of our CMMN implementation guide.
+To learn more about user assignment, check the [User Assignment section](/manual/latest/reference/cmmn11/tasks/human-task/#user-assignment) on the human task page of our CMMN implementation guide.
 {{< /note >}}
 
 Note that there is no direct relation between the two plan items. There is no sequence flow connecting the two tasks as in BPMN. In CMMN, this expresses that the tasks can be executed concurrently.

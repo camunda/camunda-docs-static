@@ -15,7 +15,7 @@ menu:
 Now you are ready to set up your first process application project in Eclipse.
 
 {{< note title="Terminology - Process vs. Case" class="info" >}}
-CMMN is a modeling language for *cases*, whereas BPMN is a language for *processes*. This tutorial is about cases. However, due to Camunda's BPMN-focused heritage, the Java project contains classes and files with names like `ProcessApplication` and `processes.xml`. These are in fact generally applicable and can be used with both processes as well as cases.
+CMMN is a modeling language for *cases*, whereas BPMN is a language for *processes*. This tutorial is about cases. However, due to Camunda's BPMN-focused heritage, the Java project contains classes and files with names like `ProcessApplication` and `processes.xml`. These are in fact generally applicable and can be used with both processes and cases.
 {{< /note >}}
 
 
@@ -52,7 +52,7 @@ The next step consists of setting up the Maven dependencies for your new process
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
-        <version>7.6.0</version>
+        <version>7.7.0</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
