@@ -26,7 +26,7 @@ Open the *Dish* decision table from the previous step. Click on the button "Show
 
 # Set the Name and the Id of the DRD
 
-Click on the top left field and replace the default [name](/manual/latest/reference/dmn11/drd/#decision-requirements-graph-name) "definitions" by "Dinner Decisions". 
+Click on the top left field and replace the default [name](/manual/latest/reference/dmn11/drg/#decision-requirements-graph-name) "definitions" by "Dinner Decisions". 
 
 {{< img src="../img/modeler-drd-step2.png" >}}
 
