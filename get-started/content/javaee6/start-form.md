@@ -12,7 +12,7 @@ menu:
 
 ---
 
-In this step, we add a start form and configure it in the BPMN 2.0 process, then, re-deploy the application and start the process about the Camunda Tasklist.
+In this step, we add a start form and configure it in the BPMN 2.0 process, then, re-deploy the application and start the process from the Camunda Tasklist.
 
 
 # Add a Start Form

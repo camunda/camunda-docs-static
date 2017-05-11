@@ -141,9 +141,9 @@ Add a file named `approveorder.xhtml` to the `src/main/webapp` folder. Add the f
   </h:head>
   <h:body>
     <h1>Order:</h1>
-    Customer: #{approveOrderController.orderEntity.customer}
-    Address: #{approveOrderController.orderEntity.address}
-    Pizza: #{approveOrderController.orderEntity.pizza}
+    <p>Customer: #{approveOrderController.orderEntity.customer}</p>
+    <p>Address: #{approveOrderController.orderEntity.address}</p>
+    <p>Pizza: #{approveOrderController.orderEntity.pizza}</p>
     <h:form id="submitForm">
       <h:outputLabel>Approve Order?</h:outputLabel>
       <h:selectBooleanCheckbox value="#{approveOrderController.orderEntity.approved}"/><br/>
