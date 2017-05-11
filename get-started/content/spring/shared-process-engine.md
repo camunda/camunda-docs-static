@@ -24,17 +24,11 @@ In order to configure the loanapproval-spring example to work with a shared proc
 Firstly, we need to set the scope of the Maven dependency of the camunda-engine dependency to `provided`. On the Camunda BPM platform the process engine library is provided as a shared library and does not need to be bundled with the application:
 
 ```xml
-<dependencyManagement>
-  <dependencies>
-    <dependency>
-	    <groupId>org.camunda.bpm</groupId>
-	    <artifactId>camunda-bom</artifactId>
-	    <version>${camunda.version}</version>
-	    <scope>import</scope>
-	    <type>pom</type>
-    </dependency>
-  </dependencies>
-</dependencyManagement>
+<dependency>
+  <groupId>org.camunda.bpm</groupId>
+  <artifactId>camunda-engine</artifactId>
+  <scope>provided</scope>
+</dependency>
 ```
 
 Furthermore, you can delete the dependencies `org.springframework:spring-jdbc`, `com.h2database:h2`, and `org.slf4j:slf4j-jdk14`.
@@ -87,12 +81,19 @@ And thirdly, the `applicationContext.xml` file is adjusted so that the shared pr
 
   <context:annotation-config />
 
-  <bean class="org.camunda.bpm.getstarted.loanapproval.Starter" />
   <bean id="calculateInterestService" class="org.camunda.bpm.getstarted.loanapproval.CalculateInterestService" />
 
 </beans>
 ```
 
+We also removed `Starter` bean declaration as we are going to use Tasklist to manualy start the process. If you prefer, you can also remove the class itself as it not used anymore.
+
+After Maven build and redeploy, process definitions will be automatically deployed. Then you can go to Tasklist, login with `demo/demo` credentials, click on `Start process` and start the `Loan approval` process. 
+You will see in Tomcat logfile:
+<pre class="console">
+Spring Bean invoked
+</pre>
+ 
 {{< get-tag repo="camunda-get-started-spring" tag="Bonus" >}}
 
 <script type="text/ng-template" id="code-annotations">
