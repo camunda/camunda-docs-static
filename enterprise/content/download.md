@@ -41,22 +41,16 @@ downloads:
     - war
 
   selected:
-    branch: "7.6"
-    version: "7.6.5"
+    branch: "7.7"
+    version: "7.7.0"
     server: "tomcat"
 
   branches:
   - branch: "7.7"
     releases:
-    - number: "7.7.0-alpha2"
-      note: "http://blog.camunda.org/post/2017/05/camunda-bpm-770-alpha2-released/"
-      date: "2017.05.19"
-      excludeservers:
-      - "glassfish"
-
-    - number: "7.7.0-alpha1"
-      note: "http://blog.camunda.org/post/2017/02/camunda-bpm-770-alpha1-released/"
-      date: "2017.02.08"
+    - number: "7.7.0"
+      note: "http://blog.camunda.org/post/2017/05/camunda-bpm-770-released/"
+      date: "2017.05.31"
       excludeservers:
       - "glassfish"
 

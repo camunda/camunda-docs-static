@@ -31,7 +31,7 @@ __Changes in Supported Environments:__
 
 ## Camunda BPM 7.7
 
-__Release Date:__ scheduled for 31st of May 2017
+__Release Date:__ 31st of May 2017
 
 __End of Maintenance:__ 30st of November 2018
 
