@@ -11,14 +11,14 @@ menu:
 ---
 
 
-This page contains important announcements from the Camunda enterprise support. In the following section we list information about changes to the supported environments and schedule end of maintenace dates for specific versions of the Camunda BPM platform. The announced end of maintenance dates are based on our standard support period of 18 month.
+This page contains important announcements from Camunda's Enterprise Support. In the following section we list information about changes to the supported environments and scheduled end of maintenance dates for specific versions of the Camunda BPM platform. The announced end of maintenance dates are based on our standard support period of 18 months.
 
 
 # List of Announcements
 
 ## Camunda BPM 7.8
 
-__Release Date:__ scheduled for 30st of November 2017
+__Release Date:__ scheduled for 30th of November 2017
 
 __End of Maintenance:__ 31st of May 2019
 
@@ -32,7 +32,7 @@ __Changes in Supported Environments:__
 
 __Release Date:__ 31st of May 2017
 
-__End of Maintenance:__ 30st of November 2018
+__End of Maintenance:__ 30th of November 2018
 
 __Changes in Supported Environments:__
 
@@ -57,11 +57,11 @@ __Changes in Supported Environments:__
 
 __Release Date:__ 31st of May 2016
 
-__End of Maintenance:__ 30st of November 2017
+__End of Maintenance:__ 30th of November 2017
 
 __Changes in Supported Environments:__
 
-* Support for Application Server Wildfly 8.2 / 10.0
+* Support for Application Server Wildfly 10.0
 * End of Support for Application Server WildFly 8.1
 * End of Support for Application Server GlassFish 3.1
 * End of Support for Database MySQL 5.1 / 5.5
@@ -82,11 +82,11 @@ __Changes in Supported Environments:__
 
 __Release Date:__ 28th of May 2015
 
-__End of Maintenance:__ 30st of November 2016
+__End of Maintenance:__ 30th of November 2016
 
 __Changes in Supported Environments:__
 
-* Support for Application Server Wildfly 8.2
+* Support for Application Server Wildfly 8.1 / 8.2
 * Support for Database MariaDB 10.0
 * Support for Database MySQL 5.5 / 5.6
 * Support for Database Oracle 12c
@@ -110,9 +110,9 @@ __Changes in Supported Environments:__
 * Support for Database PostgreSQL 9.3
 * Support for Runtime Environemt Java 8 (if supported by your application server / container)
 
-__Product Change:__ Starting with Camunda BPM 7.2.0, Camunda BPM Cycle will no longer be bundled in the distribution of our platform. We are planning to provide Camunda BPM Cycle in an own distribution before the end of 2014. After the separation, Camunda BPM Cycle will only be provided and supported for the Apache Tomcat application server.
+__Product Change:__ With Camunda BPM 7.2.0, Camunda BPM Cycle is no longer bundled in the distribution of our platform. We provide Camunda BPM Cycle in an own distribution. Since the separation, Camunda BPM Cycle is only provided and supported for the Apache Tomcat application server. You can download Cycle [here](/enterprise/download/#camunda-cycle).
 
-# What does End of Maintenance Means?
+# What does End of Maintenance Mean?
 End of maintenance means that Camunda will not perform any maintenance or release any bug fixes and patch releases related to the mentioned version after the specified date.
 In case you are planning to migrate to a more recent version of Camunda BPM, check our [Update & Migration Guide](/manual/latest/update/).
 
