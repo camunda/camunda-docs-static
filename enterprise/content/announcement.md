@@ -11,8 +11,7 @@ menu:
 ---
 
 
-This page contains announcements of the end of maintenance for the specific versions of the Camunda BPM Platform and changes of the supported environments. End of maintenance means that Camunda will not perform any maintenance or release any bug fixes and patch releases related to the mentioned version after the specified date. Please see the following sections for the full announcements.
-The announced dates are based on our standard support period of 18 month.
+This page contains important announcements from the Camunda enterprise support. In the following section we list information about changes to the supported environments and schedule end of maintenace dates for specific versions of the Camunda BPM platform. The announced end of maintenance dates are based on our standard support period of 18 month.
 
 
 # List of Announcements
@@ -113,8 +112,13 @@ __Changes in Supported Environments:__
 
 __Product Change:__ Starting with Camunda BPM 7.2.0, Camunda BPM Cycle will no longer be bundled in the distribution of our platform. We are planning to provide Camunda BPM Cycle in an own distribution before the end of 2014. After the separation, Camunda BPM Cycle will only be provided and supported for the Apache Tomcat application server.
 
+# What does End of Maintenance Means?
+End of maintenance means that Camunda will not perform any maintenance or release any bug fixes and patch releases related to the mentioned version after the specified date.
+In case you are planning to migrate to a more recent version of Camunda BPM, check our [Update & Migration Guide](/manual/latest/update/).
 
-# Why is Camunda changing the support for environments?
+Please let us know if you have any concerns or if you need help migrating to a new version.
+
+# Why is Camunda Changing the Support for Environments?
 Camunda is committed to delivering improvements and bug fixes as fast as possible. We are also committed to providing world class support for our software running in different environments. However, as new versions of databases, web browsers, etc, are released, the cost of supporting multiple environments grows exponentially, making it harder to provide the level of support our customers have come to expect from us. Therefore, we no longer support environments marked as end-of-life by the vendor, or very old versions that are no longer widely used.
 
-Please let us know if you need help migrating to a new version.
+
