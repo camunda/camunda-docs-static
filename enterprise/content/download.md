@@ -1,4 +1,4 @@
----
+
 
 title: 'Download'
 weight: 10
@@ -467,14 +467,36 @@ Please note that this feature can be used from Camunda BPM 7.2.x onwards.
 
 # Camunda Modeler
 
-Camunda Modeler is a desktop application for modeling BPMN and DMN. It allows you to model files located directly on your local file system.
+The Camunda Modeler is an open source process modeling tool based on [bpmn.io|http://bpmn.io/]. It is a desktop application that allows you to edit BPMN process diagrams, DMN decision tables and CMMN diagrams located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.org/download/modeler/).
 
-The Camunda Modeler is an open source process modeling tool. It is a desktop application that allows you to edit BPMN process diagrams and DMN decision tables located directly on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation.
 
-The Eclipse based BPMN Modeler can be integrated in your Eclipse IDE as a plugin.
+# Camunda Optimize
 
-* [Camunda Modeler](http://camunda.org/download/modeler/)
-* [Deprecated: Camunda Modeler Eclipse Plugin](/manual/latest/modeler/eclipse-plugin/update-sites/)
+Camudna Optimize is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="">Camunda Optimize</a></td>
+      <td>1.1.0</td>
+      <td>07.06.2017</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.1.0/camunda-optimize-1.1.0.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.1.0/camunda-optimize-1.1.0.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+[Previous Releases](https://camunda.org/enterprise-release/optimize/)
 
 
 # Camunda Cycle
