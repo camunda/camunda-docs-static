@@ -1,0 +1,49 @@
+{{ partial "header.html" . }}
+
+
+<div class="page-content">
+  <div class="container-fluid">
+    <div class="col-xs-12 content-header">
+      <div class="edit-on-github">
+        <a target="_blank" href="https://github.com/{{.Site.Params.github.repositoryName}}/tree/master/optimize/layouts/index.html"><i>Edit on Github</i> <span class="cam-docs-github"></span></a>
+      </div>
+      <h1 class="page-title">Camunda Optimize</h1>
+    </div>
+
+    <div class="col-xs-12 content-text">
+      Camunda Optimize is an extension to Camunda BPM for enterprise customers, that provides continuous monitoring and insights about your deployed business processes. This Big Data solution helps process owners to make informed decisions to optimize their processes.
+    </div>
+    
+    <div class="col-xs-12 content-text">
+	  <figure class="image">
+		 <span>
+			<img src="./img/frequency.png" title="Optimize Preview" />
+		 </span>
+	  </figure>
+	</div>
+
+    <div class="col-xs-12 menu-pages">
+      <dl>
+        {{ range $.Site.Menus.main }}
+          <dt>
+            <a href="{{.URL}}">{{ .Name }}</a>
+          </dt>
+          <dd>
+            {{ if .Pre}}
+              {{ trim .Pre "" | markdownify }}
+            {{ end }}
+          </dd>
+        {{ end }}
+        </dl>
+    </div>
+    
+    
+
+  </div>
+</div>
+
+<div class="page-toc">
+  {{partial "banner.html"}}
+</div>
+
+{{ partial "footer.html" . }}

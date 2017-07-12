@@ -1,7 +1,7 @@
 ---
-baseurl: "/get-started/"
+baseurl: "/optimize/"
 languageCode: "en-us"
-title: "Getting started with Camunda BPM"
+title: "Camunda Optimize"
 theme: "camunda"
 
 blackfriday:
@@ -22,8 +22,8 @@ params:
       name: "Enterprise"
       url: "/enterprise"
   section:
-    id: "get-started"
+    id: "optimize"
   github:
     repositoryName: "camunda/camunda-docs-static"
-    branch: "master/get-started"
+    branch: "master/optimize"
 ...
