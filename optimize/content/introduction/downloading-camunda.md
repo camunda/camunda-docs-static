@@ -33,7 +33,7 @@ want to get to know Optimize quickly, without any additional setup or installati
 
 To install the full distribution, please download the archive with the latest version from the Camunda Nexus repository:
 
-* [Full Optimize distribution](https://app.camunda.com/nexus/content/repositories/camunda-optimize/org/camunda/optimize/camunda-optimize/)
+* [Full Optimize distribution](/enterprise/download/#camunda-optimize)
 
 The full distribution bundles
 
@@ -46,7 +46,7 @@ See the [Installation Guide]({{< relref "technical-guide/installation/index.md" 
 
 ## Standalone Web Application Distribution
 
-You can download the fat jar, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance. 
+You can download the fat jar, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance.
 
 Get the standalone application from nexus:
 

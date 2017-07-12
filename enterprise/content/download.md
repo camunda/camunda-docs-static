@@ -472,7 +472,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
 
 # Camunda Optimize
 
-Camunda Optimize is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes.
+[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes.
 
 <table class="table">
   <thead>
@@ -485,7 +485,7 @@ Camunda Optimize is an addition to the Camunda BPM platform, that provides conti
   </thead>
   <tbody>
     <tr class="well">
-      <td>Camunda Optimize</td>
+      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>1.1.0</td>
       <td>07.06.2017</td>
       <td>
