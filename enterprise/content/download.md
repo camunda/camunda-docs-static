@@ -42,7 +42,7 @@ downloads:
 
   selected:
     branch: "7.7"
-    version: "7.7.0"
+    version: "7.7.1"
     server: "tomcat"
 
   branches:
@@ -56,6 +56,12 @@ downloads:
 
   - branch: "7.7"
     releases:
+    - number: "7.7.1"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14896"
+      date: "2017.07.13"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.7.0"
       note: "http://blog.camunda.org/post/2017/05/camunda-bpm-770-released/"
       date: "2017.05.31"
@@ -472,7 +478,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
 
 # Camunda Optimize
 
-[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes.
+[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes. Read the installation guide
 
 <table class="table">
   <thead>
