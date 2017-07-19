@@ -66,9 +66,11 @@ All three components were running on a single laptop with the following componen
 * Working Memory: 16 GB (DDR4)
 * Storage: 192 SSD (SSD)
 
-## Logistic and transport data set
+Then, the time was measured from the start of Optimize until the whole import of the data to Optimize was finished.
 
-This is a data set, which is actually used in a logistic and transport company. The set contains the following amount of instances:
+## Medium size data set
+
+The set contains the following amount of instances:
 
 <table class="table table-striped">
   <tr>
@@ -91,13 +93,13 @@ Here, you can see how the data is distributed over the different process definit
 
 Results:
 
-* **Duration of the import:** ~30 minutes    
-* **Speed of the import:** 1500-2000 database rows per seconds 
+* **Duration of importing the whole data set:** ~30 minutes    
+* **Speed of the import:** 1500-2000 database rows per seconds during the import process
  
 
-## Sales data set
+## Small data set
 
-This is a data set, which is the sales process used in Camunda. The set contains the following amount of instances:
+The set contains the following amount of instances:
 
 <table class="table table-striped">
   <tr>
@@ -120,6 +122,6 @@ Here, you can see how the data is distributed over the different process definit
 
 Results:
 
-* **Duration of the import:** ~23 minutes    
-* **Speed of the import:** 1700-2200 database rows per seconds 
+* **Duration of importing the whole data set:** ~23 minutes    
+* **Speed of the import:** 1700-2200 database rows per seconds during the import process
 
