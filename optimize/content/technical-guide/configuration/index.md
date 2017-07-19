@@ -102,7 +102,11 @@ camunda.optimize.engine.import.jobqueue.size.max=100
 ```
 * Number of threads being used to process the import jobs in the import job queue.
 ```
-camunda.optimize.engine.import.executor.thread.count=1
+camunda.optimize.engine.import.executor.thread.count=2
+```
+* Number of retries when there is a version conflict in Elasticsearch during the import.
+```
+camunda.optimize.engine.import.writer.number.of.retries=5
 ```
 * Restrict the import only for the given process definition ids. If empty, all the data is imported. The value should be a comma seperated list of process definition ids, e.g., camunda.optimize.engine.import.process-definition-list=invoice:1:6c0ae208-4a9e-11e7-ada7-0242972faccc,aProcess:2:6c0ae208-4a9e-11e7-ada7-0242972faccc
 ```
@@ -175,6 +179,10 @@ camunda.optimize.es.event.type=event
 * The name of the process instance type.
 ```
 camunda.optimize.es.process.instance.type=process-instance
+```
+* The name of the process instance (pi) tracking type that is used to find pi's that were already imported. 
+```
+camunda.optimize.es.process.instance.id.tracking.type=process-instance-id-tracking
 ```
 * The name of the variable type.
 ```
