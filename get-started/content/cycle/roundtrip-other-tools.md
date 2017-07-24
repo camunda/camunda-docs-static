@@ -121,6 +121,16 @@ Here is an overview of BPMN 2.0 modelers we know, and the requirements they comp
     <td class="center">no</td>
   </tr>
   <tr>
+    <td><a href="http://www.mid.de/leistungen/tools/innovator">Innovator</a></td>
+    <td>13.1</td>
+    <td>commercial</td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center"><i class="glyphicon glyphicon-ok"></i></td>
+    <td class="center">yes</td>
+  </tr>
+  <tr>
     <td><a href="http://www.signavio.com/">Signavio Process Editor</a></td>
     <td>7</td>
     <td>commercial</td>
