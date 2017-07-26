@@ -58,7 +58,7 @@ downloads:
     releases:
 
     - number: "7.7.2"
-      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14896"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14908"
       date: "2017.07.26"
       excludeservers:
       - "glassfish"
