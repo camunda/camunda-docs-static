@@ -35,6 +35,4 @@ Run the Camunda Optimize in the Java-runnable environment. In Camunda Optimize t
 # Java Runtime
 
 * Oracle JDK 8
-* IBM® J9 virtual machine (JVM) 8
-* OpenJDK 8
 

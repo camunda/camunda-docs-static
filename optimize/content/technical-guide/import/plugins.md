@@ -5,7 +5,7 @@ weight: 20
 
 menu:
   main:
-    name: "Plugins & Adaptibility"
+    name: "Plugins & Customization"
     identifier: "plugin-system"
     parent: "import-guide"
     pre: "Explains the principle of plugins in Optimize and how they can be added."
@@ -46,7 +46,7 @@ In order to tell maven, where to find the plugin environment, add the following 
 
 Please note: To make this work, you need to add your nexus credentials and the server to your settings.xml. 
 
-## Variable Import Adaption
+## Variable Import Customization
 
 This feature enables you to enrich or filter the variable import, e.g., if variables in Camunda contain only ids to variables in another database and you would like resolve those values to the actual values.
 
