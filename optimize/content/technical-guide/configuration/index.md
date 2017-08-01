@@ -58,7 +58,7 @@ camunda.optimize.auth.default.user=admin
 ```
 camunda.optimize.auth.default.password=admin
 ```
-* Toggles basic authentication on or off.
+* Toggles basic authentication on or off. When enabling basic authentication, please be aware that you also need to adjust the values of the properties ``camunda.optimize.auth.default.user`` and ``camunda.optimize.auth.default.password`` to a username and password from the engine that has read access to the data.
 ```
 camunda.optimize.engine.auth.enabled=false
 ```

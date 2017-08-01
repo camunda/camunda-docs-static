@@ -113,3 +113,14 @@ Or you can change the log level of specific package. E.g.,:
 By default, Camunda Optimize comes without any data available. To start using all the features of the system, you have to perform a data import from the Camunda BPM Platform. This process is triggered automatically on start.
 
 If you are interested in the details of the import, please refer to the dedicated section [Import Overview]({{< relref "technical-guide/import/import-overview.md" >}}).
+
+# Recommended additional configurations
+
+Tests have shown that the standard setup might cause problems in certain scenarios. Therefore, we recommend to conduct the following adjustments, in order to avoid those issues.
+
+## Adjust engine heap size
+
+Sending huge process definition diagrams via Rest-API might cause the engine to crash, because of the limited heap size. Thus, it is recommended to increase the heap size of the engine to at least 1 gigabyte, e.g., by adding the following java comand line property when starting the engine: 
+```bash
+-Xmx1024m
+```
