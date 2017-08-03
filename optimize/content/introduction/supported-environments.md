@@ -15,7 +15,7 @@ Run the Camunda Optimize in the Java-runnable environment. In Camunda Optimize t
 
 # Web Browser
 
-* Google Chrome latest
+* Google Chrome latest [recommended]
 * Mozilla Firefox latest
 * Internet Explorer 11
 * Microsoft Edge latest
