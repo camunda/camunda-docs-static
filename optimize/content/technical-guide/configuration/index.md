@@ -125,11 +125,11 @@ camunda.optimize.engine.import.process-definition.page.size.max=1000
 
 * Overwrites the maximum page size for process definition xml model fetching. Should be a low value, as large models will lead to memory or timeout problems.
 ```
-camunda.optimize.engine.import.process-definition-xml.page.size.max=10
+camunda.optimize.engine.import.process-definition-xml.page.size.max=4
 ```
 * Overwrites the maximum page size for historic activity instance fetching.
 ```
-camunda.optimize.engine.import.activity-instance.page.size.max=1000
+camunda.optimize.engine.import.activity-instance.page.size.max=10000
 ```
 * Overwrites the maximum page size for historic process instance fetching.
 ```
@@ -149,7 +149,7 @@ camunda.optimize.engine.import.process-definition-xml.page.size.min=1
 ```
 * Overwrites the maximum page size for historic activity instance fetching.
 ```
-camunda.optimize.engine.import.activity-instance.page.size.min=10
+camunda.optimize.engine.import.activity-instance.page.size.min=50
 ```
 
 ## Queries
