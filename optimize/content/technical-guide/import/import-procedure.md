@@ -60,6 +60,12 @@ The preparation of the import is executed by the `ImportService`. Every `ImportS
 
 The whole polling/preparation workflow of the engine data is done in pages, meaning we only fetch a certain a mount of entities. For example, we could assume that the engine has 1000 historic activity instances (HAI) and the page size is 100. As a consequence, the engine is polled 10 times. This prevents from getting out of memory and overloading the network.
 
+Polling a new page does not only consist of the `ImportService`, but there are also the `IndexHandler` and the `EntityFetcher` involded. The following figure depicts how those components are conntected with each other:
+
+{{< img src="../img/Import-Service-Polling.png" title="ImportService Polling Procedure" >}}
+
+First, the `ImportService` retrieves the newest index, which is saying where to start fetching lines in a table. In addition, a page size is calculated depending on how long the last rest call to the engine took. With the index and the page size, the fetching of the engine data is deligated to the `EnitityFetcher`. Once the `ImportService` retrieved the engine data from the fetcher, the index is updated, so we know which instances have already been scrolled. 
+
 To see how to adapt the page size of the import, have a look at the [respective section]({{< relref "technical-guide/configuration/index.md#pagination" >}}) on the configuration description.
 
 ## Cull already imported entities
