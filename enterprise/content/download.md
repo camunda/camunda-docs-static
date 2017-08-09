@@ -42,7 +42,7 @@ downloads:
 
   selected:
     branch: "7.7"
-    version: "7.7.2"
+    version: "7.7.3"
     server: "tomcat"
 
   branches:
@@ -62,6 +62,12 @@ downloads:
 
   - branch: "7.7"
     releases:
+    
+    - number: "7.7.3"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14910"
+      date: "2017.08.09"
+      excludeservers:
+      - "glassfish"
 
     - number: "7.7.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14908"
