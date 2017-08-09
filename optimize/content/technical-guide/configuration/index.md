@@ -74,6 +74,10 @@ camunda.optimize.engine.auth.password=
 ```
 camunda.optimize.engine.auth.enabled=false
 ```
+* With the specified group id, only engine users that are part of the group can access optimize.
+```
+camunda.optimize.engine.auth.access.group.id=
+```
 
 # Optimize
 
@@ -308,6 +312,10 @@ camunda.optimize.engine.history.procinst.count.endpoint=/history/process-instanc
 * The engine endpoint for the user validation.
 ```
 camunda.optimize.engine.user.validation.endpoint=/identity/verify
+```
+* The engine endpoint for the group retrieval.
+```
+camunda.optimize.engine.get.groups.endpoint=/identity/groups
 ```
 
 # Elasticsearch internal data handling/storing settings
