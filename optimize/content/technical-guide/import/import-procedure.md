@@ -68,7 +68,7 @@ Polling a new page does not only consist of the `ImportService`, but there are a
 
 {{< img src="../img/Import-Service-Polling.png" title="ImportService Polling Procedure" >}}
 
-First, the `ImportService` retrieves the newest index, which is saying where to start fetching lines in a table. In addition, a page size is calculated depending on how long the last rest call to the engine took. With the index and the page size, the fetching of the engine data is deligated to the `EnitityFetcher`. Once the `ImportService` retrieved the engine data from the fetcher, the index is updated, so we know which instances have already been scrolled.
+First, the `ImportScheduler` retrieves the newest index, which is saying where to start fetching lines in a table. This index is passed to the `ImportService` ordering to import a page of data. In addition, a page size is calculated depending on how long the last rest call to the engine took. With the index and the page size, the fetching of the engine data is deligated to the `EnitityFetcher`. Once the `ImportService` retrieved the engine data from the fetcher, it passes the number of entities that were fetched to the `ImportScheduler`. With this information the scheduler then is able to update the index, so it is recoded which instances have already been scrolled.
 
 To see how to adapt the page size of the import, have a look at the [respective section]({{< relref "technical-guide/configuration/index.md#pagination" >}}) on the configuration description.
 

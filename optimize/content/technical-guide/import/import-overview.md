@@ -31,6 +31,8 @@ What is more, one should be aware of what are the general requirements for the d
 * Optimize does not own the data of the engine. The Optimize data set can always be removed and reimported or adapted to the needs of Optimize.
 * The data is only a near real-time representation of the engine database. That means, Elasticsearch may not contain the data of the most recent time frame, e.g. the last two minutes, but all the data before should be synchronized.
 
+If you are interested in the details of the import, have a look at the designated section [Import Procedure]({{< relref "technical-guide/import/import-procedure.md#pagination" >}}).
+
 # Import performance overview
 
 This document gives an overview of how fast optimize imports certain data sets to get a feeling of the import speed of Optimize and if it meets certain demands. However, this presumably changes on different data sets and how all involved components are set up. E.g., if you deploy the Camunda platform on a different machine than Optimize and Elasticsearch the process is likely to speed up.
