@@ -132,7 +132,12 @@ camunda.optimize.es.import.handler.pages.reset.interval.value=30
 ```
 camunda.optimize.es.import.handler.pages.reset.interval.unit=Minutes
 ```
+possible values are:
+```
+Seconds, Minutes, Hours, HalfDays, Days, Weeks, Months
+```
 
+in case not supported value is provided *Minutes* will be used for interval calculation.
 
 ## Pagination
 
