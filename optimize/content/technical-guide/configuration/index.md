@@ -12,7 +12,7 @@ menu:
 
 All distributions of Camunda Optimize come with a predefined set of configuration options that can be overwritten by the user, based on current environment requirements. To do that, have a look into the folder named environment. There is one file called environment.properties with values that override the defaults optimize properties.
 
-In the following, all adjustable properties are listed with their default value and a short explanation of their purpose. 
+In the following, all adjustable properties are listed with their default value and a short explanation of their purpose.
 
 # Jetty properties
 
@@ -81,7 +81,7 @@ camunda.optimize.engine.auth.access.group.id=
 
 # Optimize
 
-Adjust properties related to the functionalities of Optimize. 
+Adjust properties related to the functionalities of Optimize.
 
 ## Import
 
@@ -126,7 +126,11 @@ camunda.optimize.es.import.handler.interval.ms=10000
 ```
 * Interval the import is started all over again, meaning only missing entities are fetched during the import restart. The data already imported is kept.
 ```
-camunda.optimize.es.import.handler.pages.reset.interval.hours=12
+camunda.optimize.es.import.handler.pages.reset.interval.value=30
+```
+* Chronological unit used to calculate index reset due date.
+```
+camunda.optimize.es.import.handler.pages.reset.interval.unit=Minutes
 ```
 
 
@@ -219,7 +223,7 @@ camunda.optimize.es.event.type=event
 ```
 camunda.optimize.es.process.instance.type=process-instance
 ```
-* The name of the process instance (pi) tracking type that is used to find pi's that were already imported. 
+* The name of the process instance (pi) tracking type that is used to find pi's that were already imported.
 ```
 camunda.optimize.es.process.instance.id.tracking.type=process-instance-id-tracking
 ```

@@ -34,9 +34,9 @@ During execution following steps are performed:
 
 # Start an import round
 
-Import process is triggered automatically after startup of Camunda Optimize in a separate thread, implemented by `ImportScheduler` class. The scheduler works in rounds. Each import round a five different schedule jobs are scheduled, which are responsible for fetching one specific type of entity, each conducted by a dedicated `ImportService`. E.g., one task is responsible to import the historic activity instances, one for the process definitions, one for the process definition xmls, one for the historic process instance and another one for historic variable instances. 
+Import process is triggered automatically after startup of Camunda Optimize in a separate thread, implemented by `ImportScheduler` class. The scheduler works in rounds. Each import round a five different schedule jobs are scheduled, which are responsible for fetching one specific type of entity, each conducted by a dedicated `ImportService`. E.g., one task is responsible to import the historic activity instances, one for the process definitions, one for the process definition xmls, one for the historic process instance and another one for historic variable instances.
 
-For each schedule job, it is checked if still new data was imported. Once all entities for one task are imported, the scheduler component will start to backoff from this job. To be more precise, the scheduling is done in increasing periods of time, controlled by "backoff" counter. At the moment, the scheduler thread will stay idle a fixed amount of milliseconds between every backoff cycle. Each round no new data could be imported, the counter is incremented. Thus, the backoff counter will act as a multiplier for the backoff time and increase the time to be idle between two import rounds. This mechanism is configurable using following properties: 
+For each schedule job, it is checked if still new data was imported. Once all entities for one task are imported, the scheduler component will start to backoff from this job. To be more precise, the scheduling is done in increasing periods of time, controlled by "backoff" counter. At the moment, the scheduler thread will stay idle a fixed amount of milliseconds between every backoff cycle. Each round no new data could be imported, the counter is incremented. Thus, the backoff counter will act as a multiplier for the backoff time and increase the time to be idle between two import rounds. This mechanism is configurable using following properties:
 
 ```
 camunda.optimize.es.import.handler.max.backoff=10
@@ -46,11 +46,15 @@ camunda.optimize.es.import.handler.max.backoff=10
 camunda.optimize.es.import.handler.interval.ms=10000
 ```
 
-In addition to the "backoff" mechanism, the import scheduler will reschedule all types of schedule jobs starting from the beginning every once in a while. Thus, in case some enities were missed out or skipped during the import, they can be added in the next import cycle. The period of time between full imports is controlled by the property:
+In addition to the "backoff" mechanism, the import scheduler will reschedule all types of schedule jobs starting from the beginning every once in a while. Thus, in case some enities were missed out or skipped during the import, they can be added in the next import cycle. The period of time between full imports is controlled by following properties:
 
 ```
-camunda.optimize.es.import.handler.pages.reset.interval.hours=12
+camunda.optimize.es.import.handler.pages.reset.interval.value=30
+camunda.optimize.es.import.handler.pages.reset.interval.unit=Minutes
 ```
+
+If you would like to rapidly update data imported into Optimize, you have to reduce this value. On the other hand if you would like import procedure to be performed
+once a day only this interval has to be increased.
 
 # Prepare the import
 
@@ -64,7 +68,7 @@ Polling a new page does not only consist of the `ImportService`, but there are a
 
 {{< img src="../img/Import-Service-Polling.png" title="ImportService Polling Procedure" >}}
 
-First, the `ImportService` retrieves the newest index, which is saying where to start fetching lines in a table. In addition, a page size is calculated depending on how long the last rest call to the engine took. With the index and the page size, the fetching of the engine data is deligated to the `EnitityFetcher`. Once the `ImportService` retrieved the engine data from the fetcher, the index is updated, so we know which instances have already been scrolled. 
+First, the `ImportService` retrieves the newest index, which is saying where to start fetching lines in a table. In addition, a page size is calculated depending on how long the last rest call to the engine took. With the index and the page size, the fetching of the engine data is deligated to the `EnitityFetcher`. Once the `ImportService` retrieved the engine data from the fetcher, the index is updated, so we know which instances have already been scrolled.
 
 To see how to adapt the page size of the import, have a look at the [respective section]({{< relref "technical-guide/configuration/index.md#pagination" >}}) on the configuration description.
 
@@ -78,9 +82,9 @@ All fetched entities are mapped to a representation that allows Optimize to quer
 
 # Execute the import
 
-Full aggregation of the data is performed by `ImportJobExecutor`, which is waiting for `ImportJob` instances to be added into the execution queue. As soon as a job is in the queue, the executor 
+Full aggregation of the data is performed by `ImportJobExecutor`, which is waiting for `ImportJob` instances to be added into the execution queue. As soon as a job is in the queue, the executor
 
-* polls the job with the new Optimize entities 
+* polls the job with the new Optimize entities
 * persists the new entities to Elasticsearch.
 
 The data from the engine and Optimize do not have a one-to-one relationship, i.e. one entity type in Optimize may consist of data aggregated from different data types of the engine. For example, the historic process instance is first mapped to an Optimize `ProcessInstance`. However, for the heatmap analysis it is also necessary for `ProcessInstance` to contain all activities that were executed in the process instance. Therefore, the Optimize is an aggregation of the engine's historic process instance and its historic activity instances (and more, but we leave that here aside for the sake of simplicity). It is important to note that data in Elasticsearch is never getting updated after initial persistence.
@@ -94,4 +98,3 @@ camunda.optimize.engine.import.jobqueue.size.max=100
 ```
 camunda.optimize.engine.import.executor.thread.count=2
 ```
-
