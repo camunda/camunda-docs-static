@@ -128,7 +128,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 ```xml
 <repositories>
   <repository>
-    <id>camunda-bpm-nexus</id>
+    <id>camunda-bpm-nexus-ee</id>
     <name>camunda-bpm-nexus</name>
     <url>
       https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee
