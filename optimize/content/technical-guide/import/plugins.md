@@ -12,7 +12,7 @@ menu:
 
 ---
 
-Optimize allows you adapt the import in order to decide which kind of data should be analyzed. 
+Optimize allows you adapt the import in order to decide which kind of data should be analyzed.
 
 Currently, we support:
 
@@ -44,7 +44,7 @@ In order to tell maven, where to find the plugin environment, add the following 
 </repositories>
 ```
 
-Please note: To make this work, you need to add your nexus credentials and the server to your settings.xml. 
+Please note: To make this work, you need to add your nexus credentials and the server to your settings.xml.
 
 ## Variable Import Customization
 
@@ -63,10 +63,20 @@ Implement this to adjust the variables to be imported. Given is a list variables
 
 Please note, that all dto class members need to be set in order, otherwise is the variable ignored as this may lead to problems during data analysis.
 
-Next, package your plugin into a jar file and then add the jar file into the _plugin_ folder of your Optimize directory. Finally, add the name of the base package of your custom VariableImportAdapter to the environment.properties file:
+Next, package your plugin into a jar file and then add the jar file into the _plugin_ folder of your Optimize directory. Finally, add the name of the base package of your custom VariableImportAdapter to the environment-config.json file:
 
-```bash
-camunda.optimize.plugin.variable.import.base.packages=YOUR_BASE_PACKAGE_NAME
+```json
+"plugin": {
+   "variableImport": {
+     /*
+     Look in the given base package list for variable import adaption plugins.
+     If empty, the import is not influenced. The value can be single value or
+     a comma seperated list of base packages, e.g., org.mycompany.myproject1,
+     org.mycompany.myproject2
+     */
+     "basePackages": ""
+   }
+ }
 ```
 
 The following shows an example of a customization of the variable import in the package ```optimize.plugin```, where every string variable is the value 'foo' assigned:
@@ -94,8 +104,18 @@ import java.util.List;
 }
 ```
 
-When now the 'MyCustomVariableImportAdapter' packaged as a jar file is added to the _plugin_ folder, we just have to add the following property to the _environment.properties_ file to make the plugin work:
+When now the 'MyCustomVariableImportAdapter' packaged as a jar file is added to the _plugin_ folder, we just have to add the following property to the _environment-config.json_ file to make the plugin work:
 
-```bash
-camunda.optimize.plugin.variable.import.base.packages=optimize.plugin
+```json
+"plugin": {
+   "variableImport": {
+     /*
+     Look in the given base package list for variable import adaption plugins.
+     If empty, the import is not influenced. The value can be single value or
+     a comma seperated list of base packages, e.g., org.mycompany.myproject1,
+     org.mycompany.myproject2
+     */
+     "basePackages": "optimize.plugin"
+   }
+ }
 ```

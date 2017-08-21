@@ -25,6 +25,7 @@ The process engine depends on the following third-party libraries:
 * [Logback](http://www.slf4j.org/) {{< RD >}}, ([Eclipse Public License 1.0][eclipse] and [GNU Lesser General Public License, version 2.1][lgpl2.1] Logging Facade
 * [Camunda BPM Model](https://github.com/camunda/camunda-bpmn-model) {{< RD >}}, [(Apache License 2.0)][apache]  for reading bpmn models.
 * [Jackson JAX-RS](http://wiki.fasterxml.com/JacksonHome) {{< RD >}}, [(Apache License 2.0)][apache] provider for JSON content type
+* [JSON Path](https://github.com/json-path/JsonPath) {{< RD >}}, [(Apache License 2.0)][apache] A Java DSL for reading JSON documents
 * [Spring Framework][spring] {{< RD >}}, [(Apache License 2.0)][apache].
 * [Elasticsearch client](https://github.com/elastic/elasticsearch) {{< RD >}}, [(Apache License 2.0)][apache] for communication with elasticsearch.
 * [Java JWT](https://github.com/auth0/java-jwt) {{< RD >}}, [(MIT)][mit]

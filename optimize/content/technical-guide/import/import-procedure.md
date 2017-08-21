@@ -38,19 +38,49 @@ Import process is triggered automatically after startup of Camunda Optimize in a
 
 For each schedule job, it is checked if still new data was imported. Once all entities for one task are imported, the scheduler component will start to backoff from this job. To be more precise, the scheduling is done in increasing periods of time, controlled by "backoff" counter. At the moment, the scheduler thread will stay idle a fixed amount of milliseconds between every backoff cycle. Each round no new data could be imported, the counter is incremented. Thus, the backoff counter will act as a multiplier for the backoff time and increase the time to be idle between two import rounds. This mechanism is configurable using following properties:
 
-```
-camunda.optimize.es.import.handler.max.backoff=10
-```
-
-```
-camunda.optimize.es.import.handler.interval.ms=10000
+```json
+  "backoff": {
+    /*
+    Interval which is used for the backoff time calculation.
+    */
+    "interval": 1000,
+    /*
+    If all jobs are backing off at the moment, this interval is used
+    to trigger general backoff
+    */
+    "value": 6000,
+    /*
+    Once all pages are consumed, the import scheduler component will
+    start scheduling fetching tasks in increasing periods of time,
+    controlled by "backoff" counter.
+    */
+    "max": 5
+  }
 ```
 
 In addition to the "backoff" mechanism, the import scheduler will reschedule all types of schedule jobs starting from the beginning every once in a while. Thus, in case some enities were missed out or skipped during the import, they can be added in the next import cycle. The period of time between full imports is controlled by following properties:
 
-```
-camunda.optimize.es.import.handler.pages.reset.interval.value=30
-camunda.optimize.es.import.handler.pages.reset.interval.unit=Minutes
+```json
+  "pages": {
+    "resetInterval": {
+      /*
+      Chronological unit used to calculate index reset due date.
+      Possible values are:
+
+      Seconds, Minutes, Hours, HalfDays, Days, Weeks, Months
+
+      in case not supported value is provided 'Minutes' will be used
+      for interval calculation.
+      */
+      "unit": "Minutes",
+      /*
+      Interval the import is started all over again, meaning only missing
+      entities are fetched during the import restart. The data already
+      imported is kept.
+      */
+      "value": 30
+    }
+  }
 ```
 
 If you would like to rapidly update data imported into Optimize, you have to reduce this value. On the other hand if you would like import procedure to be performed
@@ -91,10 +121,19 @@ The data from the engine and Optimize do not have a one-to-one relationship, i.e
 
 Also note that the Start/Preparation and the execution are actually independent from each other. They are following a [producer-consumer-pattern](https://dzone.com/articles/producer-consumer-pattern), where the `ImportService` is the producer and the `ImportJobExecutor` is the consumer. So both are executed in different threads. To adjust the processing speed of the executor, the queue size and the number of threads that are processing the import jobs can be configured:
 
-```
-camunda.optimize.engine.import.jobqueue.size.max=100
-```
-
-```
-camunda.optimize.engine.import.executor.thread.count=2
+```json
+  "import": {
+    ...
+    /*
+    Number of threads being used to process the import jobs in the import
+    job queue
+    */
+    "executorThreadCount": 2,
+    /*
+    Adjust the queue size of the import jobs created.
+    A too large value might cause memory problems.
+    */
+    "jobQueueMaxSize": 100,
+    ...
+  }
 ```
