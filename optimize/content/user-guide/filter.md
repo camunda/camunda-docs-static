@@ -15,8 +15,12 @@ Camunda Optimize allows you to perform all the analytics on a subset of process 
 
 * their start date:
 
-{{< video src="../video/date-filter.mp4" title="Date Filter" >}}
+{{< video src="../video/date-filter.mp4" title="Date Filter">}}
 
 * variable values: 
 
 {{< video src="../video/variable-filter.mp4" title="Date Filter" >}}
+
+* executed flow nodes:
+
+{{< video src="../video/flow-node-filter.mp4" title="Date Filter" >}}
