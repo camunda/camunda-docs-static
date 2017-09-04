@@ -524,11 +524,11 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
   <tbody>
 	<tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>1.3.0</td>
-      <td>31.08.2017</td>
+      <td>1.3.1</td>
+      <td>04.09.2017</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.3.0/camunda-optimize-1.3.0.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.3.0/camunda-optimize-1.3.0.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.3.1/camunda-optimize-1.3.1.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.3.1/camunda-optimize-1.3.1.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
