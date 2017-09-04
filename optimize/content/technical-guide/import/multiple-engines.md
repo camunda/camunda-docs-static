@@ -25,7 +25,7 @@ In this scenario you have multiple engines distributed in a cluster, where each 
 
 {{< img src="../img/Clustered-Engine-Shared-Database.png" title="Clustered Engine with shared Database" >}}
 
-Now it could be possible to connect each engine to Optimize. However, the would conclude that Optimize imports the data from each engine. Since every engine accesses the same data through the shared database, Optimize would import the engine data multiple times. What is more desired in this scenario is to balance the work load on each engine during the import. Therefore, it is adviced to place a load balancer between the engines and Optimize. Thus, Optimize would only commnunicate to the load balancer. The following diagramm depicts the described setup:
+Now it could be possible to connect each engine to Optimize. However, the would conclude that Optimize imports the data from each engine. Since every engine accesses the same data through the shared database, Optimize would import the engine data multiple times. What is more desired in this scenario is to balance the work load on each engine during the import. Therefore, it is adviced to place a load balancer between the engines and Optimize. Thus, Optimize would only communicate to the load balancer. The following diagramm depicts the described setup:
 
 {{< img src="../img/Multiple-Engine-Shared-Database.png" title="Multiple Engines with shared Database connected to Optimize" >}}
 
