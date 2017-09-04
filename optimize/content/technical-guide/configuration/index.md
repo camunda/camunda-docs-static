@@ -66,13 +66,6 @@ of users against the system and lifetime of web session tokens.
       logged in. Define when a token is supposed to expire.
     </td>
   </tr>
-  <tr>
-    <td>$.auth.token.secret</td>
-    <td>obfuscate</td>
-    <td>
-      Define a secret (password), which is used to hash the token.
-    </td>
-  </tr>
 </table>
 
 ## Container
