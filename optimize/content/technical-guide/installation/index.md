@@ -88,7 +88,7 @@ Default value: `http://localhost:8080/engine-rest`
 
 * $.engines.${engineAlias}.name - The name of the engine that will be used to import data
 ```
-Default value: `/engine/default`
+Default value: `default`
 ```
 
 ### Logger configuration

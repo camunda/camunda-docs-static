@@ -13,7 +13,7 @@ menu:
 
 About every month a new version of Optimize is released. In order to update to the newest version, you just need to perform the following steps:
 
-* Save the `environment.properties` and the `environment-logback.xml` files in the `environment` folder.
+* Save the `environment-config.json` and the `environment-logback.xml` files in the `environment` folder.
 * Delete the old version of Optimize .
 * [Download Optimize]({{< relref "introduction/downloading-camunda.md" >}})
 * [Install Optimize]({{< relref "technical-guide/installation/index.md" >}})

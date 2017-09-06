@@ -135,7 +135,7 @@ with it and represented by ```${engineAlias}```.
   </tr>
   <tr>
     <td>$.engines.${engineAlias}.name</td>
-    <td>/engine/default</td>
+    <td>default</td>
     <td>
       The name of the engine that will be used to import data.
     </td>
