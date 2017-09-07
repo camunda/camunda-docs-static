@@ -28,7 +28,7 @@ You can [download](https://docs.camunda.org/enterprise/download/#camunda-optimiz
 ```
 or `start-optimize.bat` with the `standalone` parameter on Windows:
 ```batch
-./start-optimize.bat standalone
+.\start-optimize.bat standalone
 ```
 
 ## Usage
