@@ -43,7 +43,7 @@ In order to set up the connections to the engines, you need add the information 
 ```json
 "engines": {
   "sales": {
-    "name": "/engine/default",
+    "name": "default",
     "rest": "http://localhost:8080/engine-rest",
     "authentication": {
       "accessGroup": "",
@@ -54,7 +54,7 @@ In order to set up the connections to the engines, you need add the information 
     "enabled": true
   },
   "marketing": {
-    "name": "/engine/default",
+    "name": "default",
     "rest": "http://localhost:1234/engine-rest",
     "authentication": {
       "accessGroup": "",
