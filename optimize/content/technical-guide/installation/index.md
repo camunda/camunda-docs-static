@@ -18,11 +18,18 @@ Before proceeding with the installation, please read the article about [supporte
 
 ## Full distribution
 
-To install the full distribution, please download the archive with the latest version from the [Camunda Nexus repository](https://app.camunda.com/nexus/content/repositories/camunda-optimize/org/camunda/optimize/camunda-optimize/) and extract it to the desired folder. After that, start Optimize by running the script `start-optimize.sh` on Linux or `start-optimize.bat` on Windows.
+To install the full distribution, please download the archive with the latest version from the [Enterprise download page](https://docs.camunda.org/enterprise/download/#camunda-optimize) and extract it to the desired folder. After that, start Optimize by running the script `start-optimize.sh` on Linux or `start-optimize.bat` on Windows.
 
 ## Standalone application
 
-You can [download](https://app.camunda.com/nexus/content/repositories/camunda-optimize/org/camunda/optimize/optimize-backend/) the fat jar, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance. You can then start your instance by running the script `start-optimize.sh` on Linux or `start-optimize.bat` on Windows.
+You can [download](https://docs.camunda.org/enterprise/download/#camunda-optimize) the archive, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance. You can then start your instance by running the script `start-optimize.sh` with the `standalone` parameter on Linux:
+```bash
+./start-optimize.sh standalone
+```
+or `start-optimize.bat` with the `standalone` parameter on Windows:
+```batch
+./start-optimize.bat standalone
+```
 
 ## Usage
 
