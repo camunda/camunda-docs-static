@@ -11,7 +11,7 @@ menu:
 
 ---
 
-In Optimize you have several possibilities to define users, which can access/log in into Optimize:
+In Optimize you have several possibilities to define users who can access/log in to Optimize:
 
 * [Define a default user](#define-a-default-user)
 * [Use the user credentials from the engine](#utilize-engine-users)
@@ -71,7 +71,7 @@ If you want to disable the default Optimize user creation, set the following pro
 
 # Utilize Engine Users
 
-From Engine Version 7.7 onwards, you can use the user credentials from the engine to access Optimize. This behavior is enabled by default. However, you might want to restrict which engine users should be able to access Optimize. For that, create an engine group with a name of your choice, which dedicated for the Optimize access. Now you can add the group id to the following property _$.engines.${engineAlias}.authentication.accessGroup_:
+From engine version 7.7 onwards, you can use the user credentials from the engine to access Optimize. This behavior is enabled by default. However, you might want to restrict which engine users should be able to access Optimize. For that, create an engine group with a name of your choice, which is dedicated for access to Optimize. Now you can add the group id to the following property:
 ```json
 "engines": {
   /*
@@ -89,13 +89,13 @@ From Engine Version 7.7 onwards, you can use the user credentials from the engin
   }
 }
 ```
-With this defined, only users that are members of the provided group, can access Optimize.
+With this defined, only users who are members of the provided group, can access Optimize.
 
 # Manually handle users
 
-You can also manually handle users by accessing elasticsearch directly.
+You can also manually handle users by accessing Elasticsearch directly. 
 
-In order to add a new user just perform a POST-request on ``/optimize/users/YOUR_USER_ID`` with the body:
+To add a new user, just perform a POST-request on ``/optimize/users/YOUR_USER_ID`` with the body:
 ```json
 {
   "username" : "YOUR_USER_NAME",
@@ -104,3 +104,4 @@ In order to add a new user just perform a POST-request on ``/optimize/users/YOUR
 ```
 
 If you want to delete a user, perform a DELETE-request on ``/optimize/users/YOUR_USER_ID``.
+

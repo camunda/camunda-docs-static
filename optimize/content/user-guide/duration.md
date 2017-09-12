@@ -1,13 +1,13 @@
 ---
 
 title: 'Duration Heatmap'
-weight: 60
+weight: 20
 
 menu:
   main:
     identifier: "duration-heatmap"
     parent: "user-guide"
-    pre: "Visualization of flow nodes avarage duration in a process"
+    pre: "Visualization of average execution duration for any activity"
 
 ---
 

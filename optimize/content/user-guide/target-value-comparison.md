@@ -1,13 +1,13 @@
 ---
 
 title: 'Target Value Comprarison'
-weight: 60
+weight: 30
 
 menu:
   main:
     identifier: "target-value-comparison"
     parent: "user-guide"
-    pre: "Visualization of flow nodes avarage duration in a process"
+    pre: "Find out which paths process instances took that reached a desired outcome"
 
 ---
 

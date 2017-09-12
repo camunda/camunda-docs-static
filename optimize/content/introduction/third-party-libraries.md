@@ -10,43 +10,39 @@ menu:
 
 ---
 
-This section covers third party libraries and their use in Optimize. For each component of Optimize, the third party libraries are listed. For each library, it is explained whether the library is a _required dependency_ or an _optional dependency_.
+This section covers third party libraries and their use in Optimize. For each component of Optimize, the third party libraries are listed. All of these libraries are required libraries that Optimize depends on for core functionality.
 
-Required dependencies are libraries Camunda depends on to provide core functionality. In the list below marked as {{< RD >}}.
+# Optimize Back End
 
-Optional dependencies are libraries Camunda can be integrated with. In the list below marked as {{< OD >}}.
+Optimize depends on the following third-party libraries:
 
-# Optimize back end
+* [Jetty Server](http://www.eclipse.org/jetty/), ([Apache License 2.0][apache] and [Eclipse Public License 1.0][eclipse]) as a embedded server.
+* [SLF4J](http://www.slf4j.org/), [(MIT)][mit] Logging Facade
+* [Logback](http://www.slf4j.org/), ([Eclipse Public License 1.0][eclipse] and [GNU Lesser General Public License, version 2.1][lgpl2.1] Logging Facade
+* [Camunda BPM Model](https://github.com/camunda/camunda-bpmn-model), [(Apache License 2.0)][apache]  for reading bpmn models.
+* [Jackson JAX-RS](http://wiki.fasterxml.com/JacksonHome), [(Apache License 2.0)][apache] provider for JSON content type
+* [JSON Path](https://github.com/json-path/JsonPath), [(Apache License 2.0)][apache] A Java DSL for reading JSON documents
+* [Spring Framework][spring], [(Apache License 2.0)][apache].
+* [Elasticsearch client](https://github.com/elastic/elasticsearch), [(Apache License 2.0)][apache] for communication with elasticsearch.
+* [Java JWT](https://github.com/auth0/java-jwt), [(MIT)][mit]
+* [Jersey](https://github.com/jersey/jersey), [(CDDL 1.1 and GPL 2.0 with Class-path Exception)](https://github.com/jersey/jersey/blob/master/LICENSE.txt)
 
-The process engine depends on the following third-party libraries:
-
-* [Jetty Server](http://www.eclipse.org/jetty/) {{< RD >}}, ([Apache License 2.0][apache] and [Eclipse Public License 1.0][eclipse]) as a embedded server.
-* [SLF4J](http://www.slf4j.org/) {{< RD >}}, [(MIT)][mit] Logging Facade
-* [Logback](http://www.slf4j.org/) {{< RD >}}, ([Eclipse Public License 1.0][eclipse] and [GNU Lesser General Public License, version 2.1][lgpl2.1] Logging Facade
-* [Camunda BPM Model](https://github.com/camunda/camunda-bpmn-model) {{< RD >}}, [(Apache License 2.0)][apache]  for reading bpmn models.
-* [Jackson JAX-RS](http://wiki.fasterxml.com/JacksonHome) {{< RD >}}, [(Apache License 2.0)][apache] provider for JSON content type
-* [JSON Path](https://github.com/json-path/JsonPath) {{< RD >}}, [(Apache License 2.0)][apache] A Java DSL for reading JSON documents
-* [Spring Framework][spring] {{< RD >}}, [(Apache License 2.0)][apache].
-* [Elasticsearch client](https://github.com/elastic/elasticsearch) {{< RD >}}, [(Apache License 2.0)][apache] for communication with elasticsearch.
-* [Java JWT](https://github.com/auth0/java-jwt) {{< RD >}}, [(MIT)][mit]
-* [Jersey](https://github.com/jersey/jersey) {{< RD >}}, [(CDDL 1.1 and GPL 2.0 with Class-path Exception)](https://github.com/jersey/jersey/blob/master/LICENSE.txt)
-
-# Optimize front end
+# Optimize Front End
 
 The Optimize Webapp includes the following third-party libraries:
 
-* [babel-polyfill](https://github.com/babel/babel/tree/master/packages/babel-polyfill) {{< RD >}}, [(MIT)][mit]
-* [bootstrap](https://github.com/twbs/bootstrap) {{< RD >}}, [(MIT)][mit]
-* [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker) {{< RD >}}, [(Apache License 2.0)][apache]
-* [bpmn-js](http://bpmn.io) {{< RD >}}, [(Custom license)](https://raw.githubusercontent.com/bpmn-io/bower-bpmn-js/v0.5.1/LICENSE)
-* [d3](https://github.com/d3/d3) {{< RD >}}, [(Custom license)](https://github.com/d3/d3/blob/master/LICENSE)
-* [d3-tip](https://github.com/Caged/d3-tip) {{< RD >}}, [(MIT)][mit]
-* [deep-copy](https://github.com/simov/deep-copy) {{< RD >}}, [(MIT)][mit]
-* [heatmap.js](https://github.com/pa7/heatmap.js) {{< RD >}}, [(MIT)][mit]
-* [jQuery](http://jquery.com/) {{< RD >}}, [(MIT)][mit]
-* [jsurl](https://github.com/Sage/jsurl) {{< RD >}}, [(MIT)][mit]
-* [lodash](https://github.com/lodash/lodash) {{< RD >}}, [(Custom license)](https://github.com/lodash/lodash/blob/master/LICENSE)
-* [redux](https://github.com/reactjs/redux) {{< RD >}}, [(MIT)][mit]
+* [babel-polyfill](https://github.com/babel/babel/tree/master/packages/babel-polyfill), [(MIT)][mit]
+* [bootstrap](https://github.com/twbs/bootstrap), [(MIT)][mit]
+* [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker), [(Apache License 2.0)][apache]
+* [bpmn-js](http://bpmn.io), [(Custom license)](https://raw.githubusercontent.com/bpmn-io/bower-bpmn-js/v0.5.1/LICENSE)
+* [d3](https://github.com/d3/d3), [(Custom license)](https://github.com/d3/d3/blob/master/LICENSE)
+* [d3-tip](https://github.com/Caged/d3-tip), [(MIT)][mit]
+* [deep-copy](https://github.com/simov/deep-copy), [(MIT)][mit]
+* [heatmap.js](https://github.com/pa7/heatmap.js), [(MIT)][mit]
+* [jQuery](http://jquery.com/), [(MIT)][mit]
+* [jsurl](https://github.com/Sage/jsurl), [(MIT)][mit]
+* [lodash](https://github.com/lodash/lodash), [(Custom license)](https://github.com/lodash/lodash/blob/master/LICENSE)
+* [redux](https://github.com/reactjs/redux), [(MIT)][mit]
 
 # Elasticsearch
 

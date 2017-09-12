@@ -12,15 +12,15 @@ menu:
 
 ---
 
-Optimize allows you adapt the import in order to decide which kind of data should be analyzed.
+Optimize allows you adapt the import, to decide which kind of data should be analyzed. 
 
 Currently, we support:
 
-* [Variable Import Adaption](#variable-import-adaption)
+* [Variable Import Customization](#variable-import-customization)
 
 ## Setup your environment
 
-First, add the optimize plugin via maven to your project:
+First, add the optimize plugin to your project via maven:
 
 ```xml
 <dependency>
@@ -30,7 +30,7 @@ First, add the optimize plugin via maven to your project:
 </dependency>
 ```
 
-In order to tell maven, where to find the plugin environment, add the following repository to your project:
+To tell maven where to find the plugin environment, add the following repository to your project:
 
 ```xml
 <repositories>
@@ -44,7 +44,7 @@ In order to tell maven, where to find the plugin environment, add the following 
 </repositories>
 ```
 
-Please note: To make this work, you need to add your nexus credentials and the server to your settings.xml.
+Please note: To make this work, you need to add your nexus credentials and the server to your settings.xml. 
 
 ## Variable Import Customization
 
@@ -59,9 +59,9 @@ public interface VariableImportAdapter {
 }
 ```
 
-Implement this to adjust the variables to be imported. Given is a list variables that would be imported, if no further action is performed. The returned list is the adapted list with the enriched/filtered variables that will be imported. In order, to create new variable instances, you can use the PluginVariableDto class ass data transfer object (dto), which is also contained in the plugin system.
+Implement this to adjust the variables to be imported. Given is a list of variables that would be imported, if no further action is performed. The returned list is the customized list with the enriched/filtered variables that will be imported. To create new variable instances, you can use the PluginVariableDto class as data transfer object (dto), which is also contained in the plugin system.
 
-Please note, that all dto class members need to be set in order, otherwise is the variable ignored as this may lead to problems during data analysis.
+Please note that all dto class members need to be set in order, otherwise the variable is ignored, as this may lead to problems during data analysis.
 
 Next, package your plugin into a jar file and then add the jar file into the _plugin_ folder of your Optimize directory. Finally, add the name of the base package of your custom VariableImportAdapter to the environment-config.json file:
 
@@ -77,7 +77,7 @@ Next, package your plugin into a jar file and then add the jar file into the _pl
  }
 ```
 
-The following shows an example of a customization of the variable import in the package ```optimize.plugin```, where every string variable is the value 'foo' assigned:
+The following shows an example of a customization of the variable import in the package ```optimize.plugin```, where every string variable is assigned the value 'foo':
 
 ```java
 package optimize.plugin;
@@ -102,7 +102,7 @@ import java.util.List;
 }
 ```
 
-When now the 'MyCustomVariableImportAdapter' packaged as a jar file is added to the _plugin_ folder, we just have to add the following property to the _environment-config.json_ file to make the plugin work:
+Now when 'MyCustomVariableImportAdapter', packaged as a jar file, is added to the _plugin_ folder, we just have to add the following property to the _environment-config.json_ file to make the plugin work:
 
 ```json
 "plugin": {

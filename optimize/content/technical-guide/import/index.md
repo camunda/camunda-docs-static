@@ -12,6 +12,4 @@ menu:
 
 ---
 
-These documents provide instructions to import of Optimize.
-
-Choose which of the following parts, you want to get to know the details:
+These documents provide instructions on importing data to Optimize.

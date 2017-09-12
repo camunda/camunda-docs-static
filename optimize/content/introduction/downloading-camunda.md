@@ -14,7 +14,7 @@ menu:
 # Prerequisites
 
 Before downloading Optimize, make sure you have a JRE (Java Runtime Environment), or better, a JDK
-(Java Development Kit) installed. It is requireds to install version Java 8.
+(Java Development Kit) installed. It is required to install Java version 8.
 
 [Download JDK 8][get-jdk]
 
@@ -23,7 +23,7 @@ Before downloading Optimize, make sure you have a JRE (Java Runtime Environment)
 
 Optimize is a flexible framework which can be used in different contexts.
 
-Please note that Optimize is an extension the Camunda BPM platform that is only available to enterprise customers.
+Please note that Optimize is an extension for the Camunda BPM platform that is only available to enterprise customers.
 
 
 ## Full Distribution
@@ -31,14 +31,14 @@ Please note that Optimize is an extension the Camunda BPM platform that is only 
 Download the full distribution if you want to use Optimize with an embedded Elasticsearch or if you
 want to get to know Optimize quickly, without any additional setup or installation steps required.
 
-To install the full distribution, please download the archive with the latest version from the Camunda Nexus repository:
+To install the full distribution, please download the archive with the latest version from the download page:
 
 * [Full Optimize distribution](/enterprise/download/#camunda-optimize)
 
 The full distribution bundles
 
 * Optimize
-* Container / Application Server itself.
+* The Container / Application Server itself
 * Elasticsearch
 
 See the [Installation Guide]({{< relref "technical-guide/installation/index.md" >}}) for additional details.
@@ -48,7 +48,7 @@ See the [Installation Guide]({{< relref "technical-guide/installation/index.md" 
 
 You can download the fat jar, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance.
 
-Get the standalone application from nexus:
+Get the standalone application from the Camunda Nexus Repository:
 
 * [Standalone Optimize distribution](/enterprise/download/#camunda-optimize)
 

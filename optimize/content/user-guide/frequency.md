@@ -1,13 +1,13 @@
 ---
 
 title: 'Frequency Heatmap'
-weight: 60
+weight: 10
 
 menu:
   main:
     identifier: "frequency-heatmap"
     parent: "user-guide"
-    pre: "Visualization of flow nodes execution frequencies in a process"
+    pre: "Visualization of flow node execution frequencies in a process"
 
 ---
 

@@ -2,13 +2,13 @@
 
 title: 'Filter'
 layout: "section-list"
-weight: 135
+weight: 50
 
 menu:
   main:
     identifier: "filter"
     parent: "user-guide"
-    pre: "Filter process instances"
+    pre: "Perform analysis based on a subset of all process instances, i.e., by variable value or start date"
 ---
 
 Camunda Optimize allows you to perform all the analytics on a subset of process instances. To do so, you can filter them by 

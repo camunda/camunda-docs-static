@@ -10,6 +10,6 @@ menu:
 
 ---
 
-This guide is for administrators and developers about how to setup Optimize and how to extend it.
+This guide is for administrators and developers and is about how to set up Optimize and how to extend it.
 
 

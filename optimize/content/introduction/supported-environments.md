@@ -11,7 +11,7 @@ menu:
 ---
 
 
-Run the Camunda Optimize in the Java-runnable environment. In Camunda Optimize the following environments are supported:
+Run Camunda Optimize in a Java-runnable environment. In Camunda Optimize the following environments are supported:
 
 # Web Browser
 
@@ -25,7 +25,7 @@ Run the Camunda Optimize in the Java-runnable environment. In Camunda Optimize t
 * Camunda Engine from version 7.4+ with REST API and history with level `full` enabled
 
 {{< note title="Supported Environments" class="info" >}}
-  Please note that there exist a limitation for versions 7.4-7.6: you can't use the engine user credentials to log into Optimize.
+  Please note that the following limitation exists for versions 7.4-7.6: you can't use the engine user credentials to log into Optimize.
 {{< /note >}}
 
 # Elasticsearch
