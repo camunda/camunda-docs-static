@@ -53,13 +53,13 @@ downloads:
       date: "2017.06.30"
       excludeservers:
       - "glassfish"
-      
+
     - number: "7.8.0-alpha2"
       note: "http://blog.camunda.org/post/2017/06/camunda-bpm-780-alpha2-released/"
       date: "2017.07.28"
       excludeservers:
       - "glassfish"
-      
+
     - number: "7.8.0-alpha3"
       note: "http://blog.camunda.org/post/2017/08/camunda-bpm-780-alpha3-released/"
       date: "2017.08.31"
@@ -68,7 +68,7 @@ downloads:
 
   - branch: "7.7"
     releases:
-    
+
     - number: "7.7.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14910"
       date: "2017.08.09"
@@ -521,8 +521,26 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
       <th class="col-md-2">Download</th>
     </tr>
   </thead>
-  <tbody>
-	<tr class="well">
+  <tbody>  
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize - Full Distribution</a></td>
+      <td>1.4.0</td>
+      <td></td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize - Standalone Distribution</a></td>
+      <td>1.4.0</td>
+      <td></td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-standalone.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+	  <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>1.3.1</td>
       <td>04.09.2017</td>

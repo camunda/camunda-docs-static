@@ -50,7 +50,15 @@ You can download the fat jar, which contains all the required files to startup C
 
 Get the standalone application from nexus:
 
-* [Standalone Optimize distribution](https://app.camunda.com/nexus/content/repositories/camunda-optimize/org/camunda/optimize/optimize-backend/)
+* [Standalone Optimize distribution](/enterprise/download/#camunda-optimize)
+
+The full distribution bundles
+
+* Optimize
+* Container / Application Server itself
+* Configuration and plugin folders
+
+See the [Installation Guide]({{< relref "technical-guide/installation/index.md#standalone-application" >}}) for additional details.
 
 [get-jdk]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 [enterprise-download-page]: /enterprise/download
