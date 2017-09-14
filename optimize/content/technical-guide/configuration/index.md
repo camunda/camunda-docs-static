@@ -313,12 +313,11 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.process-definition-list</td>
+    <td>$.engine-commons.import.process-definition-ids-to-import</td>
     <td></td>
     <td>
       Restrict the import only for the given process definition ids.
       If empty, all the data is imported.
-      The value should be a comma separated list of process definition ids
     </td>
   </tr>
   <tr>
@@ -644,9 +643,7 @@ Settings of plugin subsystem serialization format, variable import
     <td></td>
     <td>
       Look in the given base package list for variable import adaption plugins.
-      If empty, the import is not influenced. The value can be single value or
-      a comma seperated list of base packages, e.g., org.mycompany.myproject1,
-      org.mycompany.myproject2
+      If empty, the import is not influenced.
     </td>
   </tr>
   <tr>

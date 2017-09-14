@@ -70,11 +70,9 @@ Next, package your plugin into a jar file and then add the jar file into the _pl
    "variableImport": {
      /*
      Look in the given base package list for variable import adaption plugins.
-     If empty, the import is not influenced. The value can be single value or
-     a comma seperated list of base packages, e.g., org.mycompany.myproject1,
-     org.mycompany.myproject2
+     If empty, the import is not influenced.
      */
-     "basePackages": ""
+     "basePackages": []
    }
  }
 ```
@@ -111,11 +109,9 @@ When now the 'MyCustomVariableImportAdapter' packaged as a jar file is added to 
    "variableImport": {
      /*
      Look in the given base package list for variable import adaption plugins.
-     If empty, the import is not influenced. The value can be single value or
-     a comma seperated list of base packages, e.g., org.mycompany.myproject1,
-     org.mycompany.myproject2
+     If empty, the import is not influenced.
      */
-     "basePackages": "optimize.plugin"
+     "basePackages": ["optimize.plugin"]
    }
  }
 ```
