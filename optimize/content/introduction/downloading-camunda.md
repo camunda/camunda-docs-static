@@ -39,6 +39,7 @@ The full distribution bundles
 
 * Optimize
 * The Container / Application Server itself
+* Configuration files and plugin folder
 * Elasticsearch
 
 See the [Installation Guide]({{< relref "technical-guide/installation/index.md" >}}) for additional details.
@@ -52,11 +53,11 @@ Get the standalone application from the Camunda Nexus Repository:
 
 * [Standalone Optimize distribution](/enterprise/download/#camunda-optimize)
 
-The full distribution bundles
+The standalone distribution bundles
 
 * Optimize
 * Container / Application Server itself
-* Configuration and plugin folders
+* Configuration files and plugin folder
 
 See the [Installation Guide]({{< relref "technical-guide/installation/index.md#standalone-application" >}}) for additional details.
 
