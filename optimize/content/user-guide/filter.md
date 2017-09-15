@@ -13,14 +13,14 @@ menu:
 
 Camunda Optimize allows you to perform all the analytics on a subset of process instances. To do so, you can filter them by 
 
-* their start date:
+* Their start date:
 
 {{< video src="../video/date-filter.mp4" title="Date Filter">}}
 
-* variable values: 
+* Variable values: 
 
 {{< video src="../video/variable-filter.mp4" title="Date Filter" >}}
 
-* executed flow nodes:
+* Executed flow nodes:
 
 {{< video src="../video/flow-node-filter.mp4" title="Date Filter" >}}

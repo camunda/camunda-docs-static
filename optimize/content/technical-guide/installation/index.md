@@ -35,7 +35,7 @@ or `start-optimize.bat` with the `standalone` parameter on Windows:
 
 You can start using Optimize right away by opening the following URL in your browser: [http://localhost:8090](http://localhost:8090)
 
-Please note that, in order to utilize all features of Optimize, you have to configure integration with the Camunda BPM Platform and perform an import of the data. Please refer to the [import dataset](#import-of-the-dataset) section for more instructions.
+Please note that, in order to utilize all features of Optimize, you have to configure integration with the Camunda BPM Platform and perform an import of the data. Please refer to the [import section]({{< relref "technical-guide/import/index.md" >}}) for more instructions.
 
 ## Configuration
 
@@ -45,7 +45,7 @@ You can see all supported values [here]({{< relref "technical-guide/configuratio
 
 ### Optimize Container Configuration
 
-following JSON Paths correspond to settings available in the environment configuration.
+The following JSON Paths correspond to settings available in the environment configuration.
 
 * $.container.ports.http - A port number that is used by the embedded jetty server to process HTTP connections
 ```
@@ -82,11 +82,11 @@ Default value: `optimize`
 
 #### Additional considerations 
 
-Optimize will create a default user on initial startup of the application, with the username\password pair `admin\admin`. It might be a good idea to remove this user if you plan to use the system in a productive environment.
+Optimize will create a default user on initial startup of the application, with the username\password pair `admin\admin`. We highly recommend to remove this user if you plan to use the system in a productive environment.
 
 ### Camunda BPM configuration
 
-To perform an import and provide the full set of features, Optimize requires connection to the REST API of the Camunda Engine, which can be configured using the following properties. 
+To perform an import and provide the full set of features, Optimize requires connection to the REST API of the Camunda engine, which can be configured using the following properties. 
 
 * $.engines.${engineAlias}.rest - A base URL that will be used for connections to the Camunda Engine REST API
 ```
@@ -121,15 +121,15 @@ Alternatively, you can change the log level of specific package. E.g.,:
 
 By default, Optimize comes without any data available. To start using all the features of the system, you have to perform a data import from the Camunda BPM Platform. This process is triggered automatically on start.
 
-If you are interested in the details of the import, please refer to the dedicated section [Import Overview]({{< relref "technical-guide/import/import-overview.md" >}}).
+If you are interested in the details of the import, please refer to the dedicated [import overview section]({{< relref "technical-guide/import/import-overview.md" >}}).
 
 # Recommended additional configurations
 
-Tests have shown that the standard setup might cause problems in certain scenarios. Therefore, we recommend to conduct the following adjustments, in order to avoid those issues.
+Tests have shown that the standard setup might cause problems in certain scenarios. Therefore, we recommend to conduct the following adjustments, to avoid those issues.
 
 ## Adjust engine heap size
 
-Sending huge process definition diagrams via Rest-API might cause the engine to crash, because of the limited heap size. Thus, it is recommended to increase the heap size of the engine to at least 1 gigabyte, e.g., by adding the following java comand line property when starting the engine: 
+Sending huge process definition diagrams via Rest-API might cause the engine to crash, because of the limited heap size. Thus, it is recommended to increase the heap size of the engine to at least 1 gigabyte, e.g., by adding the following java command line property when starting the engine: 
 ```bash
 -Xmx1024m
 ```

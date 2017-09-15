@@ -12,7 +12,7 @@ menu:
 
 ---
 
-Optimize allows you adapt the import, to decide which kind of data should be analyzed. 
+Optimize allows you adapt the import to decide which kind of data should be analyzed. 
 
 Currently, we support:
 
@@ -20,7 +20,7 @@ Currently, we support:
 
 ## Setup your environment
 
-First, add the optimize plugin to your project via maven:
+First, add the Optimize plugin to your project via maven:
 
 ```xml
 <dependency>
@@ -44,7 +44,7 @@ To tell maven where to find the plugin environment, add the following repository
 </repositories>
 ```
 
-Please note: To make this work, you need to add your nexus credentials and the server to your settings.xml. 
+Please note: to make this work, you need to add your nexus credentials and the server to your `settings.xml`. 
 
 ## Variable Import Customization
 
@@ -59,11 +59,11 @@ public interface VariableImportAdapter {
 }
 ```
 
-Implement this to adjust the variables to be imported. Given is a list of variables that would be imported, if no further action is performed. The returned list is the customized list with the enriched/filtered variables that will be imported. To create new variable instances, you can use the PluginVariableDto class as data transfer object (dto), which is also contained in the plugin system.
+Implement this to adjust the variables to be imported. Given is a list of variables that would be imported if no further action is performed. The returned list is the customized list with the enriched/filtered variables that will be imported. To create new variable instances, you can use the PluginVariableDto class as data transfer object (dto), which is also contained in the plugin system.
 
 Please note that all dto class members need to be set in order, otherwise the variable is ignored, as this may lead to problems during data analysis.
 
-Next, package your plugin into a jar file and then add the jar file into the _plugin_ folder of your Optimize directory. Finally, add the name of the base package of your custom VariableImportAdapter to the environment-config.json file:
+Next, package your plugin into a jar file and then add the jar file to the _plugin_ folder of your Optimize directory. Finally, add the name of the base package of your custom VariableImportAdapter to the environment-config.json file:
 
 ```json
 "plugin": {

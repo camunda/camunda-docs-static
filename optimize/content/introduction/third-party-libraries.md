@@ -46,11 +46,11 @@ The Optimize Webapp includes the following third-party libraries:
 
 # Elasticsearch
 
-[Elasticsearch](https://github.com/elastic/elasticsearch) is published under [(Apache License 2.0)][apache]. You can find all third-party licenses of Elasticsearch [here](https://github.com/elastic/opensourcesoftware/tree/master/docs/elasticsearch).
+[Elasticsearch](https://github.com/elastic/elasticsearch) is published under [Apache License 2.0][apache]. You can find all third-party licenses of Elasticsearch [here](https://github.com/elastic/opensourcesoftware/tree/master/docs/elasticsearch).
 
 # Camunda BPM Platform
 
-The [Camunda BPM Platform](https://github.com/camunda/camunda-bpm-platform) is published under [(Apache License 2.0)][apache]. You can find all third-party licenses of the Camunda platform [here](https://docs.camunda.org/manual/latest/introduction/third-party-libraries/).
+The [Camunda BPM Platform](https://github.com/camunda/camunda-bpm-platform) is published under [Apache License 2.0][apache]. You can find all third-party licenses of the Camunda platform [here](https://docs.camunda.org/manual/latest/introduction/third-party-libraries/).
 
 
 [apache]: http://www.apache.org/licenses/LICENSE-2.0.html

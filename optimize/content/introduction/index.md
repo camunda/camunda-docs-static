@@ -10,7 +10,7 @@ menu:
 ---
 
 
-Welcome to the Camunda Optimize Manual! Camunda Optimize is an extension to Camunda BPM for enterprise customers. It provides continuous monitoring and insights about your deployed business processes. This Big Data solution helps process owners to make informed decisions in order to optimize their processes.
+Welcome to the Camunda Optimize manual! Camunda Optimize is an extension to Camunda BPM for enterprise customers. It provides continuous monitoring and insights about your deployed business processes. This Big Data solution helps process owners to make informed decisions in order to optimize their processes.
 
 This documentation contains information about the features provided by Camunda Optimize.
 

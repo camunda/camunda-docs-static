@@ -11,7 +11,7 @@ menu:
 ---
 
 
-Run Camunda Optimize in a Java-runnable environment. In Camunda Optimize the following environments are supported:
+Run Camunda Optimize in a Java-runnable environment. The following environments are supported:
 
 # Web Browser
 

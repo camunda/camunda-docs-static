@@ -8,7 +8,7 @@ menu:
     name: "Import Overview"
     identifier: "migration-guide-patch"
     parent: "import-guide"
-    pre: "Shows how the import works in general and an example of the import performance."
+    pre: "Shows how the import generally works and an example of  import performance."
 
 ---
 

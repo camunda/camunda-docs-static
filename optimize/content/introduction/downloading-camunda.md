@@ -23,7 +23,7 @@ Before downloading Optimize, make sure you have a JRE (Java Runtime Environment)
 
 Optimize is a flexible framework which can be used in different contexts.
 
-Please note that Optimize is an extension for the Camunda BPM platform that is only available to enterprise customers.
+Please note that Optimize is an extension to the Camunda BPM platform that is only available to enterprise customers.
 
 
 ## Full Distribution

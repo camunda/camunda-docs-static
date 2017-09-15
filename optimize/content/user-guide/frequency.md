@@ -11,8 +11,8 @@ menu:
 
 ---
 
-Camunda Optimize can display a heatmap view of your processes showing which nodes and sequence flows have the most activity. Activity is measured by the number of tokens which have been processed by the node or sequence flow. You can also access the absolute number of instances for any activity.
+Camunda Optimize can display a heatmap view of your processes, showing which nodes and sequence flows have the most activity. Activity is measured by the number of tokens which have been processed by the node or sequence flow. You can also access the absolute number of instances for any activity.
 
-Have a look here on how to display the frequency heatmap view:
+The following video displays the frequency heatmap view:
 
 {{< video src="../video/frequency.mp4" title="Frequency Heatmap" >}}

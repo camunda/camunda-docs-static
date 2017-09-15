@@ -402,8 +402,7 @@ REST API endpoint locations, timeouts, etc.
 
 ## Elasticsearch
 
-Settings related to elasticsearch such as index and type names, connection
-properties, shard settings.
+Settings related to Elasticsearch such as index and type names, connection properties and shard settings.
 
 <table class="table table-striped">
   <tr>
@@ -630,7 +629,7 @@ properties, shard settings.
 
 ## Other
 
-Settings of plugin subsystem serialization format, variable import
+Settings of plugin subsystem serialization format, variable import.
 
 <table class="table table-striped">
   <tr>

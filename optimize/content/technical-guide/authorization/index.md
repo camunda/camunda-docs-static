@@ -89,7 +89,7 @@ From engine version 7.7 onwards, you can use the user credentials from the engin
   }
 }
 ```
-With this defined, only users who are members of the provided group, can access Optimize.
+With this defined, only users who are members of the provided group can access Optimize.
 
 # Manually handle users
 
