@@ -68,6 +68,11 @@ downloads:
 
   - branch: "7.7"
     releases:
+    - number: "7.7.4"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14990"
+      date: "2017.09.27"
+      excludeservers:
+      - "glassfish"
 
     - number: "7.7.3"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14910"
@@ -521,7 +526,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
       <th class="col-md-2">Download</th>
     </tr>
   </thead>
-  <tbody>  
+  <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize - Full Distribution</a></td>
       <td>1.4.0</td>
