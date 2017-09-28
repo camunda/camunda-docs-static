@@ -16,13 +16,13 @@ This document describes the installation process of the Camunda Optimize distrib
 
 Before proceeding with the installation, please read the article about [supported environments]({{< relref "introduction/supported-environments.md" >}}).
 
-## Full Distribution 
+## Distribution with Elasticsearch
 
-To install the full distribution, please download the archive with the latest version from the [download page](/enterprise/download/#camunda-optimize) and extract it to the desired folder. After that, start Optimize by running the script `start-optimize.sh` on Linux or `start-optimize.bat` on Windows. 
+To install the distribution containing Elasticsearch, please download the archive with the latest version from the [download page](/enterprise/download/#camunda-optimize) and extract it to the desired folder. After that, start Optimize by running the script `start-optimize.sh` on Linux or `start-optimize.bat` on Windows. 
 
-## Standalone Application 
+## Distribution without Elasticsearch 
 
-You can [download](https://docs.camunda.org/enterprise/download/#camunda-optimize) the archive, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance. You can then start your instance by running the script `start-optimize.sh` with the `standalone` parameter on Linux:
+You can [download](https://docs.camunda.org/enterprise/download/#camunda-optimize) the archive, which contains all the required files to startup Camunda Optimize, and [configure](#elasticsearch-configuration) it to connect to your pre-installed Elasticsearch instance. You can then start your instance by running the script `start-optimize.sh` with the `standalone` parameter on Linux:
 ```bash
 ./start-optimize.sh standalone
 ```
