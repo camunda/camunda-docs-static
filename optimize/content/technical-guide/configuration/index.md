@@ -258,7 +258,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.activity-instance.pageSize.max</td>
+    <td>$.import.data.activity-instance.pageSize.max</td>
     <td>10000</td>
     <td>
       Overwrites the maximum page size for historic activity instance
@@ -266,7 +266,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.activity-instance.pageSize.min</td>
+    <td>$.import.data.activity-instance.pageSize.min</td>
     <td>50</td>
     <td>
       Overwrites the minimum page size for historic activity instance
@@ -274,7 +274,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.executorThreadCount</td>
+    <td>$.import.executorThreadCount</td>
     <td>2</td>
     <td>
       Number of threads being used to process the import jobs in the import
@@ -282,7 +282,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.jobQueueMaxSize</td>
+    <td>$.import.jobQueueMaxSize</td>
     <td>100</td>
     <td>
       Adjust the queue size of the import jobs created.
@@ -290,7 +290,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.pageMaxSize</td>
+    <td>$.import.pageMaxSize</td>
     <td>1000</td>
     <td>
       The data is fetched from the engine in pages. Define a default minimum
@@ -299,21 +299,21 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.process-definition.pageSize.max</td>
+    <td>$.import.data.process-definition.pageSize.max</td>
     <td>1000</td>
     <td>
       Overwrites the maximum page size for process definitions fetching.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.process-definition.pageSize.min</td>
+    <td>$.import.data.process-definition.pageSize.min</td>
     <td>10</td>
     <td>
       Overwrites the minimum page size for process definitions fetching.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.process-definition-ids-to-import</td>
+    <td>$.import.process-definition-ids-to-import</td>
     <td></td>
     <td>
       Restrict the import only for the given process definition ids.
@@ -321,7 +321,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.process-definition-xml.pageSize.max</td>
+    <td>$.import.data.process-definition-xml.pageSize.max</td>
     <td>4</td>
     <td>
       Overwrites the maximum page size for process definition xml model
@@ -330,7 +330,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.process-definition-xml.pageSize.min</td>
+    <td>$.import.data.process-definition-xml.pageSize.min</td>
     <td>1</td>
     <td>
       Overwrites the minimum page size for process definition xml model
@@ -339,7 +339,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.process-instance.pageSize.max</td>
+    <td>$.import.data.process-instance.pageSize.max</td>
     <td>1000</td>
     <td>
       Overwrites the maximum page size for historic process instance
@@ -347,7 +347,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.variable.pageSize.max</td>
+    <td>$.import.data.variable.pageSize.max</td>
     <td>1000</td>
     <td>
       Overwrites the maximum page size for historic process instance
@@ -355,7 +355,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.engine-commons.import.writer.numberOfRetries</td>
+    <td>$.import.writer.numberOfRetries</td>
     <td>5</td>
     <td>
       Number of retries when there is a version conflict in Elasticsearch
@@ -440,7 +440,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.event.type</td>
+    <td>$.import.data.activity-instance.elasticsearchType</td>
     <td>event</td>
     <td>
       The name of the event type.
@@ -468,14 +468,14 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.import.handler.backoff.interval</td>
+    <td>$.import.handler.backoff.interval</td>
     <td>1000</td>
     <td>
       Interval which is used for the backoff time calculation.
     </td>
   </tr>
   <tr>
-    <td>$.es.import.handler.backoff.value</td>
+    <td>$.import.handler.backoff.value</td>
     <td>6000</td>
     <td>
       If all jobs are backing off at the moment, this interval is used
@@ -483,7 +483,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.import.handler.backoff.max</td>
+    <td>$.import.handler.backoff.max</td>
     <td>5</td>
     <td>
       Once all pages are consumed, the import scheduler component will
@@ -492,7 +492,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.import.handler.pages.resetInterval.unit</td>
+    <td>$.import.handler.pages.resetInterval.unit</td>
     <td>Minutes</td>
     <td>
       Chronological unit used to calculate index reset due date.
@@ -505,7 +505,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.import.handler.pages.resetInterval.value</td>
+    <td>$.import.handler.pages.resetInterval.value</td>
     <td>30</td>
     <td>
       Interval the import is started all over again, meaning only missing
@@ -514,7 +514,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.import.indexType</td>
+    <td>$.import.indexType</td>
     <td>import-index</td>
     <td>
       The name of the import index type.
@@ -535,7 +535,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.procdef.indexType</td>
+    <td>$.import.data.process-definition.indexType</td>
     <td>process-definition-import-index</td>
     <td>
       The name of the import index type when a list of process definitions
@@ -543,21 +543,21 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.procdef.type</td>
+    <td>$.import.data.process-definition.elasticsearchType</td>
     <td>process-definition</td>
     <td>
       The name of the process definition type.
     </td>
   </tr>
   <tr>
-    <td>$.es.procdef.xmlType</td>
+    <td>$.import.data.process-definition-xml.elasticsearchType</td>
     <td>process-definition-xml</td>
     <td>
       The name of the process definition xml type.
     </td>
   </tr>
   <tr>
-    <td>$.es.processInstance.idTrackingType</td>
+    <td>$.import.data.process-instance.idTrackingType</td>
     <td>process-instance-id-tracking</td>
     <td>
       The name of the process instance (pi) tracking type that is used
@@ -565,7 +565,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.processInstance.type</td>
+    <td>$.import.data.process-instance.elasticsearchType</td>
     <td>process-instance</td>
     <td>
       The name of the process instance type.
@@ -618,7 +618,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.variable.type</td>
+    <td>$.import.data.variable.elasticsearchType</td>
     <td>variable</td>
     <td>
       The name of the variable type.
