@@ -78,17 +78,17 @@ You can prioritize issues depending on the impact of a bug on your system. Pleas
   <tbody>
   <tr>
     <td>L1 <img class="img-responsive" src="../img/jira-blocker.png"/>Blocker</td>
-    <td>Core components (i.e., process engine) of Camunda BPM do not work at all/produce critical errors that prevent usage in production mode.</td>
+    <td>Total failure of the core components of the contract software (specifically process engine) or occurrence of errors that make useability in the current productive operation impossible.</td>
     <td><b>Bug Tickets only! Production mode only!</b></td>
   </tr>
   <tr>
     <td>L2 <img class="img-responsive" src="../img/jira-major.png"/>Critical</td>
-    <td>Usage of Camunda BPM seriously affected, a workaround is urgently needed. </td>
+    <td>Use of the contractual software greatly restricted, troubleshooting urgently needed.</td>
     <td><b>Bug Tickets only!</b></td>
   </tr>
   <tr>
     <td>L3 <img class="img-responsive" src="../img/jira-minor.png"/>Default</td>
-    <td>Non-critical errors, Help Requests, Feature Requests</td>
+    <td>Less critical errors, help requests, feature requests.</td>
     <td>Bug Tickets, Feature Requests, Help Requests</td>
   </tr>
   </tbody>
