@@ -18,7 +18,7 @@ The full list of supported configuration parameters can be found [here](https://
 
 ## Customize configuration
 
-Let's create `application.yaml` file in `src/java/resources` folder with the following content:
+Let's create `application.yaml` file in `src/main/resources` folder with the following content:
 ```yaml
 camunda.bpm:
   admin-user:
@@ -36,7 +36,7 @@ This configuration will end up in the following:
 
 ## Build and run
 
-Now you can rebuild and rerun the application again. Don't forget to call `Maven clean` before calling `Maven install` again.
+Now you can rebuild and rerun the application again. Don't forget to call `mvn clean` before calling `mvn install` again.
 Now when you open `http://localhost:8080/` in you browser, it does not ask you for admin user creation, but asks for login and password. 
 You can use "kermit/superSecret", which we configured before, to reach Camunda web applications.
   
