@@ -14,22 +14,11 @@ This section covers third party libraries and their use in Optimize. For each co
 
 # Optimize Back End
 
-Optimize depends on the following third-party libraries:
-
-* [Jetty Server](http://www.eclipse.org/jetty/), ([Apache License 2.0][apache] and [Eclipse Public License 1.0][eclipse]) as a embedded server.
-* [SLF4J](http://www.slf4j.org/), [(MIT)][mit] Logging Facade
-* [Logback](http://www.slf4j.org/), ([Eclipse Public License 1.0][eclipse] and [GNU Lesser General Public License, version 2.1][lgpl2.1] Logging Facade
-* [Camunda BPM Model](https://github.com/camunda/camunda-bpmn-model), [(Apache License 2.0)][apache]  for reading bpmn models.
-* [Jackson JAX-RS](http://wiki.fasterxml.com/JacksonHome), [(Apache License 2.0)][apache] provider for JSON content type
-* [JSON Path](https://github.com/json-path/JsonPath), [(Apache License 2.0)][apache] A Java DSL for reading JSON documents
-* [Spring Framework][spring], [(Apache License 2.0)][apache].
-* [Elasticsearch client](https://github.com/elastic/elasticsearch), [(Apache License 2.0)][apache] for communication with elasticsearch.
-* [Java JWT](https://github.com/auth0/java-jwt), [(MIT)][mit]
-* [Jersey](https://github.com/jersey/jersey), [(CDDL 1.1 and GPL 2.0 with Class-path Exception)](https://github.com/jersey/jersey/blob/master/LICENSE.txt)
+[The following third-party libraries]({{<relref "introduction/backend-dependencies.md">}}) are included in Camunda Optimize.
 
 # Optimize Front End
 
-[The following third-party libraries]({{<relref "introduction/frontend-dependencies.md">}}) are included in the Camunda Optimize.
+[The following third-party libraries]({{<relref "introduction/frontend-dependencies.md">}}) are included in Camunda Optimize.
 
 # Elasticsearch
 
