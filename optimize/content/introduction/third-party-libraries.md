@@ -29,20 +29,7 @@ Optimize depends on the following third-party libraries:
 
 # Optimize Front End
 
-The Optimize Webapp includes the following third-party libraries:
-
-* [babel-polyfill](https://github.com/babel/babel/tree/master/packages/babel-polyfill), [(MIT)][mit]
-* [bootstrap](https://github.com/twbs/bootstrap), [(MIT)][mit]
-* [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker), [(Apache License 2.0)][apache]
-* [bpmn-js](http://bpmn.io), [(Custom license)](https://raw.githubusercontent.com/bpmn-io/bower-bpmn-js/v0.5.1/LICENSE)
-* [d3](https://github.com/d3/d3), [(Custom license)](https://github.com/d3/d3/blob/master/LICENSE)
-* [d3-tip](https://github.com/Caged/d3-tip), [(MIT)][mit]
-* [deep-copy](https://github.com/simov/deep-copy), [(MIT)][mit]
-* [heatmap.js](https://github.com/pa7/heatmap.js), [(MIT)][mit]
-* [jQuery](http://jquery.com/), [(MIT)][mit]
-* [jsurl](https://github.com/Sage/jsurl), [(MIT)][mit]
-* [lodash](https://github.com/lodash/lodash), [(Custom license)](https://github.com/lodash/lodash/blob/master/LICENSE)
-* [redux](https://github.com/reactjs/redux), [(MIT)][mit]
+[The following third-party libraries]({{<relref "introduction/frontend-dependencies.md">}}) are included in the Camunda Optimize.
 
 # Elasticsearch
 
