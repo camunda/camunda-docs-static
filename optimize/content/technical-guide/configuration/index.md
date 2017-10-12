@@ -587,15 +587,6 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
-    <td>$.es.cardinalityPrecision</td>
-    <td>10000</td>
-    <td>
-      Defines how precise the cardinality estimation is. Counts below the given
-      value are determined accurately. However, above the value the estimate
-      becomes fuzzy. Maximum supported threshold is 40 000.
-    </td>
-  </tr>
-  <tr>
     <td>$.es.settings.index.number_of_replicas</td>
     <td>0</td>
     <td>
