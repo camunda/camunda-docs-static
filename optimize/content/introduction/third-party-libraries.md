@@ -14,11 +14,11 @@ This section covers third party libraries and their use in Optimize. For each co
 
 # Optimize Back End
 
-[The following third-party libraries]({{<relref "introduction/backend-dependencies.md">}}) are included in Camunda Optimize.
+[The following third-party libraries]({{<relref "introduction/dependencies/backend-dependencies.md">}}) are included in Camunda Optimize.
 
 # Optimize Front End
 
-[The following third-party libraries]({{<relref "introduction/frontend-dependencies.md">}}) are included in Camunda Optimize.
+[The following third-party libraries]({{<relref "introduction/dependencies/frontend-dependencies.md">}}) are included in Camunda Optimize.
 
 # Elasticsearch
 
