@@ -414,7 +414,7 @@ Settings related to Elasticsearch such as index and type names, connection prope
     <td>$.es.analyzer.name</td>
     <td>case_sensitive</td>
     <td>
-      camunda.optimize.es.analyzer.name=case_sensitive
+      Defines the name of the analyzer.
     </td>
   </tr>
   <tr>
