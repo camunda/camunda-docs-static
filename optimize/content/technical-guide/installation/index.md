@@ -93,9 +93,9 @@ To perform an import and provide the full set of features, Optimize requires con
 Default value: `http://localhost:8080/engine-rest`
 ```
 
-* camunda.optimize.engine.name - The name of the engine that will be used to import data
+* $.engines.${engineAlias}.name - The name of the engine that will be used to import data
 ```
-Default value: `/engine/default`
+Default value: `default`
 ```
 
 ### Logger configuration
