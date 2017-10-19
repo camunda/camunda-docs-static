@@ -12,7 +12,7 @@ menu:
 
 ---
 
-Now you are ready to set up your first process application project in Eclipse.
+First, let's set up your first process application project in Eclipse.
 
 # Set Up a Java Project
 
@@ -20,7 +20,7 @@ We will start by setting up a Spring Boot application as an Apache Maven Project
 
 1. Create a new Maven Project in Eclipse
 2. Add the Camunda & Spring Boot dependencies
-3. Add main class as an entry point for launching Spring Boot application.
+3. Add a main class as an entry point for launching the Spring Boot application.
 
 In the following sections, we go through this process step by step.
 
@@ -39,7 +39,7 @@ When you are done, click Finish. Eclipse sets up a new Maven project. The projec
 ## Add Camunda BPM & Spring Boot Dependencies
 
 The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project. 
-We add Spring Boot BOM in "dependency management" section and Camunda Spring Boot Starter for Webapps, which will automatically include Camunda engine and webapps in the app.
+We add the Spring Boot BOM in the "dependency management" section and the Camunda Spring Boot Starter for Webapps, which will automatically include the Camunda engine and webapps in the app.
 We also use `spring-boot-maven-plugin`, which does all the magic for packaging Spring Boot application content together.
 
 ```xml
@@ -95,11 +95,11 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
 </project>
 ```
 
-## Add main class to our Spring Boot application
+## Add Main Class to our Spring Boot Application
 
-Next, we add an application class with main method, that will be the entry point for launching Spring Boot application. The class has annotation `@SpringBootApplication` on it,
-which implicitly adds several convenient features (autoconfiguration, component scan etc. - see Spring Boot docs).
-The class is added in `src/main/java` folder in `org.camunda.bpm.getstarted.loanapproval` package.
+Next, we add an application class with a main method that will be the entry point for launching the Spring Boot application. The class has the annotation `@SpringBootApplication` on it,
+which implicitly adds several convenient features (autoconfiguration, component scan, etc. - see Spring Boot docs).
+The class is added in the `src/main/java` folder in the `org.camunda.bpm.getstarted.loanapproval` package.
 
 ```java
 package org.camunda.bpm.getstarted.loanapproval;
@@ -115,21 +115,21 @@ public class WebappExampleProcessApplication {
 }
 ```
 
-## Build and run
+## Build and Run
 
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`.
 
-Our first Camunda Spring Boot application is ready now. As a result of build you will have a JAR-file in your `target` folder. This JAR is a Spring Boot application, 
-which embed inside Tomcat as a web container, Camunda engine and Camunda Web applications resources.
-When started, it will use in-memory H2 database for Camunda Engine needs.
+Our first Camunda Spring Boot application is ready now. As a result of the build, you will have a JAR-file in your `target` folder. This JAR is a Spring Boot application, 
+which embeds inside Tomcat as a web container, Camunda engine and Camunda Web applications resources.
+When started, it will use an in-memory H2 database for Camunda Engine needs.
 
-You can run the application by right-clicking on `WebappExampleProcessApplication` class and choosing `Run as / Java application`.
-Wait till you see similar line in console:
+You can run the application by right-clicking on the `WebappExampleProcessApplication` class and selecting `Run as / Java application`.
+Wait until you see a similar line in the console:
 ```text
 Started WebappExampleProcessApplication in 10.584 seconds
 ```
 Then go to [http://localhost:8080/](http://localhost:8080/) in your browser and enjoy the Camunda webapps.
 
-Another way to run the app is simply run the JAR-file with `java -jar` command.
+Another way to run the app is to simply run the JAR-file with a `java -jar` command.
 
 {{< get-tag repo="camunda-get-started-spring-boot" tag="Step-1" >}}

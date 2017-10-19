@@ -14,17 +14,17 @@ menu:
 
 In this section we learn how to deploy a process and invoke a Spring Bean from a BPMN 2.0 Service Task.
 
-# Deploy and invoke BPMN process
+# Deploy and Invoke BPMN Process
 
-Now that we know how to bootstrap the process engine within Spring Boot Application, we can add a BPMN 2.0 process
-model and interact with the process from inside our Spring beans. In this section we will
+Now that we know how to bootstrap the process engine within a Spring Boot Application, we can add a BPMN 2.0 process
+model and interact with the process from inside our Spring beans. In this section, we will
 
 1. Model an executable BPMN 2.0 process.
 2. Use Spring Boot Starter auto-deployment for BPMN 2.0 processes.
 3. Create a process application.
 4. Start a process instance from our process application.
 
-## Model an executable BPMN 2.0 process and deploy it
+## Model an Executable BPMN 2.0 Process and Deploy It
 
 Start by modeling an executable process using the Camunda Modeler. The process should look as depicted in the screenshot below.
 
@@ -37,20 +37,20 @@ If you are unfamiliar with modeling an executable process, you can read the
 
 When you are done, save the process model in the `src/main/resources` folder of your Eclipse project. Make sure to refresh the Eclipse project afterwards.
 
-Once it is saved in application classpath, it will be automatically deployed on engine startup.
+Once it is saved in the application classpath, it will be automatically deployed on engine startup.
 
-## Create process application
+## Create Process Application
 
-We recommend to declare process application in you Camunda Spring Boot application, which gives additional configuration possibilities and will help us in current demo
-to catch "post-deploy" event to start the process instance at that point.
+We recommend to declare the process application in your Camunda Spring Boot application, which gives additional configuration possibilities and will help us in the current demo
+to catch the "post-deploy" event to start the process instance at that point.
 
-To declare the process application just add `@EnableProcessApplication` annotation on your `WebappExampleProcessApplication` class and put the empty `processes.xml` file in 
-`src/main/resources/META-INF` folder. The file is required by Camunda Engine for every process applcation, but in our case it will stay empty.
+To declare the process application, just add the `@EnableProcessApplication` annotation on your `WebappExampleProcessApplication` class and put the empty `processes.xml` file in the 
+`src/main/resources/META-INF` folder. The file is required by the Camunda Engine for every process application, but in our case it will stay empty.
 
-## Start a process instance after process application is being deployed 
+## Start a Process Instance after Process Application has been Deployed
 
-The next step consists of starting a process instance from our process application class. For this we will process PostDeployEvent, which will be fired as soon as 
-our process application was deployed to Camunda engine.
+The next step consists of starting a process instance from our process application class. For this, we will process `PostDeployEvent`, which is fired as soon as 
+our process application has been deployed to the Camunda engine.
 
 ```java
 ...
@@ -64,11 +64,11 @@ our process application was deployed to Camunda engine.
 ...
 ```
 
-Notice that we can easily inject Camunda engine service via `@Autowired` annotation.
+Note that we can easily inject the Camunda engine service via the `@Autowired` annotation.
 
 ## Rebuild and test
 
-If you rebuild and restart the application, you should see the task "Check the request" in Tasklist under "All tasks" filter :
+If you rebuild and restart the application, you should see the task "Check the request" in Tasklist under the "All tasks" filter:
 
 {{< img src="../img/tasklist.png" >}}
 
