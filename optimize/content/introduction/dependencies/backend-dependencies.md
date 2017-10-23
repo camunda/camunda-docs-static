@@ -1,6 +1,6 @@
 ---
 
-title: 'Back-end dependencies'
+title: 'Back-End dependencies'
 weight: 70
 
 menu:

@@ -178,7 +178,7 @@ menu:
 * [iconv-lite@0.4.18](https://github.com/ashtuchkin/iconv-lite) (MIT)
 * [ids@0.2.0](https://github.com/Nikku) (MIT)
 * [ieee754@1.1.8](http://feross.org) (BSD-3-Clause)
-* [indexof@0.0.1](undefined) (MIT*)
+* [indexof@0.0.1](https://www.npmjs.com/package/indexof) (MIT*)
 * [inherits@2.0.1](https://github.com/isaacs/inherits) (ISC)
 * [inherits@2.0.3](https://github.com/isaacs/inherits) (ISC)
 * [interpret@1.0.1](http://goingslowly.com/) (MIT)
