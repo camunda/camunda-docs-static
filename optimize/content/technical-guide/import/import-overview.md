@@ -48,7 +48,7 @@ The following components were used within the import:
   </tr>
   <tr>
     <td>Camunda Platform</td>
-    <td>7.7.0 on a Tomcat 8.0.24</td>
+    <td>7.8.0 on a Tomcat 8.0.47</td>
   </tr>
   <tr>
     <td>Elasticsearch</td>
@@ -56,7 +56,7 @@ The following components were used within the import:
   </tr>
   <tr>
     <td>Optimize</td>
-    <td>1.0.0</td>
+    <td>1.5.0</td>
   </tr>
 </table>
 
@@ -95,9 +95,9 @@ Here you can see how the data is distributed over the different process definiti
 
 Results:
 
-* **Duration of importing the whole data set:** ~30 minutes    
-* **Speed of the import:** 1500-2000 database rows per second during the import process
- 
+* **Duration of importing the whole data set:** ~23 minutes    
+* **Speed of the import:** 1700-2200 database rows per second during the import process
+
 
 ## Small data set
 
@@ -111,10 +111,10 @@ This dataset contains the following amount of instances:
     <th>Number of Variable Instances</th>
   </tr>
   <tr>
-    <td>10</td>
-    <td>663 424</td>
-    <td>62 897</td>
-    <td>2 034 905</td>
+    <td>13</td>
+    <td>777 340</td>
+    <td>73 487</td>
+    <td>2 387 146</td>
   </tr>
 </table>
 
@@ -124,6 +124,5 @@ Here you can see how the data is distributed over the different process definiti
 
 Results:
 
-* **Duration of importing the whole data set:** ~23 minutes    
+* **Duration of importing the whole data set:** ~10 minutes    
 * **Speed of the import:** 1700-2200 database rows per second during the import process
-
