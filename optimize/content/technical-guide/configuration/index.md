@@ -267,7 +267,7 @@ REST API endpoint locations, timeouts, etc.
   </tr>
   <tr>
     <td>$.import.data.activity-instance.pageSize.min</td>
-    <td>50</td>
+    <td>1000</td>
     <td>
       Overwrites the minimum page size for historic activity instance
       fetching.

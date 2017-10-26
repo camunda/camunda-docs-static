@@ -189,7 +189,7 @@
           Overwrites the maximum page size for historic activity instance
           fetching.
           */
-          "min": 50
+          "min": 1000
         },
         /*
         The name of the event type.
