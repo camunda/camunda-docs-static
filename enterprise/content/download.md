@@ -106,6 +106,13 @@ downloads:
 
   - branch: "7.6"
     releases:
+    - number: "7.6.8"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14909"
+      date: "2017.10.26"
+      excludeservers:
+      - "glassfish"
+      - "ibm-was9"
+
     - number: "7.6.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14899"
       date: "2017.07.13"
