@@ -72,6 +72,12 @@ downloads:
       excludeservers:
       - "glassfish"
 
+    - number: "7.8.0-alpha5"
+      note: "https://blog.camunda.org/post/2017/10/camunda-bpm-780-alpha5-released/"
+      date: "2017.10.27"
+      excludeservers:
+      - "glassfish"
+
   - branch: "7.7"
     releases:
     - number: "7.7.4"
