@@ -535,6 +535,13 @@ Settings related to Elasticsearch such as index and type names, connection prope
     </td>
   </tr>
   <tr>
+    <td>$.es.reportType</td>
+    <td>report</td>
+    <td>
+      A type used to store report information
+    </td>
+  </tr>
+  <tr>
     <td>$.import.data.process-definition.indexType</td>
     <td>process-definition-import-index</td>
     <td>
