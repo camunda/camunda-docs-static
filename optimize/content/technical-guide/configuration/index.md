@@ -258,18 +258,10 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.import.data.activity-instance.pageSize.max</td>
+    <td>$.import.data.activity-instance.maxPageSize</td>
     <td>10000</td>
     <td>
       Overwrites the maximum page size for historic activity instance
-      fetching.
-    </td>
-  </tr>
-  <tr>
-    <td>$.import.data.activity-instance.pageSize.min</td>
-    <td>1000</td>
-    <td>
-      Overwrites the minimum page size for historic activity instance
       fetching.
     </td>
   </tr>
@@ -290,26 +282,19 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.import.pageMaxSize</td>
+    <td>$.import.maxPageSize</td>
     <td>1000</td>
     <td>
-      The data is fetched from the engine in pages. Define a default minimum
-      and maximum size or, to be precise, a range for the number of entities
+      The data is fetched from the engine in pages. Define maximum size 
+      or, to be precise, a range for the number of entities
       that should be fetched at once for each import type.
     </td>
   </tr>
   <tr>
-    <td>$.import.data.process-definition.pageSize.max</td>
+    <td>$.import.data.process-definition.maxPageSize</td>
     <td>1000</td>
     <td>
       Overwrites the maximum page size for process definitions fetching.
-    </td>
-  </tr>
-  <tr>
-    <td>$.import.data.process-definition.pageSize.min</td>
-    <td>10</td>
-    <td>
-      Overwrites the minimum page size for process definitions fetching.
     </td>
   </tr>
   <tr>
@@ -321,8 +306,8 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.import.data.process-definition-xml.pageSize.max</td>
-    <td>4</td>
+    <td>$.import.data.process-definition-xml.maxPageSize</td>
+    <td>2</td>
     <td>
       Overwrites the maximum page size for process definition xml model
       fetching. Should be a low value, as large models will lead to
@@ -330,16 +315,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.import.data.process-definition-xml.pageSize.min</td>
-    <td>1</td>
-    <td>
-      Overwrites the minimum page size for process definition xml model
-      fetching. Should be a low value, as large models will lead to
-      memory or timeout problems.
-    </td>
-  </tr>
-  <tr>
-    <td>$.import.data.process-instance.pageSize.max</td>
+    <td>$.import.data.process-instance.maxPageSize</td>
     <td>1000</td>
     <td>
       Overwrites the maximum page size for historic process instance
@@ -347,7 +323,7 @@ REST API endpoint locations, timeouts, etc.
     </td>
   </tr>
   <tr>
-    <td>$.import.data.variable.pageSize.max</td>
+    <td>$.import.data.variable.maxPageSize</td>
     <td>1000</td>
     <td>
       Overwrites the maximum page size for historic process instance
