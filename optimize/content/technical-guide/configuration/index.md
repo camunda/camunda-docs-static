@@ -63,7 +63,7 @@ of users against the system and lifetime of web session tokens.
     <td>15</td>
     <td>
       Optimize uses token-based authentication to keep track of which users are
-      logged in. Define when a token is supposed to expire.
+      logged in. Define the lifetime of the token in minutes.
     </td>
   </tr>
 </table>
@@ -285,7 +285,7 @@ REST API endpoint locations, timeouts, etc.
     <td>$.import.maxPageSize</td>
     <td>1000</td>
     <td>
-      The data is fetched from the engine in pages. Define maximum size 
+      The data is fetched from the engine in pages. Define maximum size
       or, to be precise, a range for the number of entities
       that should be fetched at once for each import type.
     </td>

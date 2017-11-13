@@ -21,7 +21,7 @@
     "token": {
       /*
       Optimize uses token-based authentication to keep track of which users are
-      logged in. Define when a token is supposed to expire.
+      logged in. Define the lifetime of the token in minutes.
       */
       "lifeMin": 15
     }
