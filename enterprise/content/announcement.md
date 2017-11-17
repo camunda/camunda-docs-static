@@ -24,6 +24,7 @@ __End of Maintenance:__ 31st of May 2019
 
 __Changes in Supported Environments:__
 
+* Support for Database Microsoft Sql Server 2016
 * Support for Microsoft Edge
 * End of Support for Internet Explorer 9 and 10
 
