@@ -35,6 +35,7 @@ RewriteRule ^manual/latest/reference/cmmn10/(.*) /manual/latest/reference/cmmn11
 # Get Started
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started/ [R=301,L]
 RewriteRule ^guides/getting-started-guides /get-started/ [R=301,L]
+RewriteRule ^get-started/javaee6 /get-started/javaee7 [R=301,L]
 
 # Manual (User Guide)
 RewriteRule ^(7.3|7.2|7.1|7.0)/api-references/javadoc/(.*) /javadoc/camunda-bpm-platform/$1/$2 [R=301,L]
