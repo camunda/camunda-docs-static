@@ -41,34 +41,22 @@ downloads:
     - war
 
   selected:
-    branch: "7.7"
-    version: "7.7.4"
+    branch: "7.8"
+    version: "7.8.0"
     server: "tomcat"
 
   branches:
   - branch: "7.8"
     releases:
-    - number: "7.8.0-alpha1"
-      note: "http://blog.camunda.org/post/2017/06/camunda-bpm-780-alpha1-released/"
-      date: "2017.06.30"
+    - number: "7.8.0"
+      note: "http://blog.camunda.org/post/2017/11/camunda-bpm-780-released/"
+      date: "2017.11.30"
       excludeservers:
       - "glassfish"
 
-    - number: "7.8.0-alpha2"
-      note: "http://blog.camunda.org/post/2017/07/camunda-bpm-780-alpha2-released/"
-      date: "2017.07.28"
-      excludeservers:
-      - "glassfish"
-
-    - number: "7.8.0-alpha3"
-      note: "http://blog.camunda.org/post/2017/08/camunda-bpm-780-alpha3-released/"
-      date: "2017.08.31"
-      excludeservers:
-      - "glassfish"
-
-    - number: "7.8.0-alpha4"
-      note: "http://blog.camunda.org/post/2017/09/camunda-bpm-780-alpha4-released/"
-      date: "2017.09.29"
+    - number: "7.8.0-alpha6"
+      note: "https://blog.camunda.org/post/2017/11/camunda-bpm-780-alpha6-released/"
+      date: "2017.11.17"
       excludeservers:
       - "glassfish"
 
@@ -78,9 +66,27 @@ downloads:
       excludeservers:
       - "glassfish"
 
-    - number: "7.8.0-alpha6"
-      note: "https://blog.camunda.org/post/2017/11/camunda-bpm-780-alpha6-released/"
-      date: "2017.11.17"
+    - number: "7.8.0-alpha4"
+      note: "http://blog.camunda.org/post/2017/09/camunda-bpm-780-alpha4-released/"
+      date: "2017.09.29"
+      excludeservers:
+      - "glassfish"
+
+    - number: "7.8.0-alpha3"
+      note: "http://blog.camunda.org/post/2017/08/camunda-bpm-780-alpha3-released/"
+      date: "2017.08.31"
+      excludeservers:
+      - "glassfish"
+
+    - number: "7.8.0-alpha2"
+      note: "http://blog.camunda.org/post/2017/07/camunda-bpm-780-alpha2-released/"
+      date: "2017.07.28"
+      excludeservers:
+      - "glassfish"
+
+    - number: "7.8.0-alpha1"
+      note: "http://blog.camunda.org/post/2017/06/camunda-bpm-780-alpha1-released/"
+      date: "2017.06.30"
       excludeservers:
       - "glassfish"
 
