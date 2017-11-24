@@ -16,15 +16,26 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 # List of Announcements
 
+## Camunda BPM 7.9
+
+__Release Date:__ scheduled for 31th of May 2018
+
+__End of Maintenance:__ 30th of November 2019
+
+__Changes in Supported Environments:__
+
+* Support for latest Tomcat version
+
+
 ## Camunda BPM 7.8
 
-__Release Date:__ scheduled for 30th of November 2017
+__Release Date:__ 30th of November 2017
 
 __End of Maintenance:__ 31st of May 2019
 
 __Changes in Supported Environments:__
 
-* Support for Database Microsoft Sql Server 2016
+* Support for Database Microsoft SQL Server 2016
 * Support for Microsoft Edge
 * End of Support for Internet Explorer 9 and 10
 
