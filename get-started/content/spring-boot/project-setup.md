@@ -54,7 +54,7 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>1.5.7.RELEASE</version>
+        <version>1.5.8.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -65,7 +65,7 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
-      <version>2.3.0-alpha1</version>
+      <version>2.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
