@@ -30,7 +30,7 @@ Run Camunda Optimize in a Java-runnable environment. The following environments 
 
 # Elasticsearch
 
-* Elasticsearch 5.4.0
+* Elasticsearch 6.0.0
 
 # Java Runtime
 
