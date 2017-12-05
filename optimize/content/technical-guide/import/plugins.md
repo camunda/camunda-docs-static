@@ -12,7 +12,7 @@ menu:
 
 ---
 
-Optimize allows you adapt the import to decide which kind of data should be analyzed. 
+Optimize allows you adapt the import to decide which kind of data should be analyzed.
 
 Currently, we support:
 
@@ -44,7 +44,7 @@ To tell maven where to find the plugin environment, add the following repository
 </repositories>
 ```
 
-Please note: to make this work, you need to add your nexus credentials and the server to your `settings.xml`. 
+Please note: to make this work, you need to add your nexus credentials and the server to your `settings.xml`.
 
 ## Variable Import Customization
 
@@ -63,18 +63,14 @@ Implement this to adjust the variables to be imported. Given is a list of variab
 
 Please note that all dto class members need to be set in order, otherwise the variable is ignored, as this may lead to problems during data analysis.
 
-Next, package your plugin into a jar file and then add the jar file to the _plugin_ folder of your Optimize directory. Finally, add the name of the base package of your custom VariableImportAdapter to the environment-config.json file:
+Next, package your plugin into a jar file and then add the jar file to the _plugin_ folder of your Optimize directory. Finally, add the name of the base package of your custom VariableImportAdapter to the environment-config.yaml file:
 
-```json
-"plugin": {
-   "variableImport": {
-     /*
-     Look in the given base package list for variable import adaption plugins.
-     If empty, the import is not influenced.
-     */
-     "basePackages": []
-   }
- }
+```yaml
+plugin:
+  variableImport:
+    #Look in the given base package list for variable import adaption plugins.
+    #If empty, the import is not influenced.
+    basePackages: []
 ```
 
 The following shows an example of a customization of the variable import in the package ```optimize.plugin```, where every string variable is assigned the value 'foo':
@@ -102,16 +98,12 @@ import java.util.List;
 }
 ```
 
-Now when 'MyCustomVariableImportAdapter', packaged as a jar file, is added to the _plugin_ folder, we just have to add the following property to the _environment-config.json_ file to make the plugin work:
+Now when 'MyCustomVariableImportAdapter', packaged as a jar file, is added to the _plugin_ folder, we just have to add the following property to the _environment-config.yaml_ file to make the plugin work:
 
-```json
-"plugin": {
-   "variableImport": {
-     /*
-     Look in the given base package list for variable import adaption plugins.
-     If empty, the import is not influenced.
-     */
-     "basePackages": ["optimize.plugin"]
-   }
- }
+```yaml
+plugin:
+  variableImport:
+    #Look in the given base package list for variable import adaption plugins.
+    #If empty, the import is not influenced.
+    basePackages: ['optimize.pligin']
 ```

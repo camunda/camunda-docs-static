@@ -40,31 +40,26 @@ Now you are able to connect each engine to Optimize. The data will then automati
 {{< img src="../img/Multiple-Engine-Distributed-Database.png" title="Multiple Engines connected to Optimize, each having its own Database" >}}
 
 In order to set up the connections to the engines, you need add the information to the [configuration file]({{< relref "technical-guide/configuration/index.md" >}}). For the sake of simplicity, let's assume we have two departments, sales and marketing, each having their own engine with its own database and processes. Both are accessible in the local network. The sales engine has the port `8080` and the marketing engine the port `1234`. Now an excerpt of the configuration could look as follows:
-```json
-"engines": {
-  "sales": {
-    "name": "default",
-    "rest": "http://localhost:8080/engine-rest",
-    "authentication": {
-      "accessGroup": "",
-      "enabled": false,
-      "password": "",
-      "user": ""
-    },
-    "enabled": true
-  },
-  "marketing": {
-    "name": "default",
-    "rest": "http://localhost:1234/engine-rest",
-    "authentication": {
-      "accessGroup": "",
-      "enabled": false,
-      "password": "",
-      "user": ""
-    },
-    "enabled": true
-  }
-}
+```yaml
+engines:
+  sales:
+    name: default
+    rest: http://localhost:8080/engine-rest
+    authentication:
+      accessGroup: ''
+      enabled: false
+      password: ''
+      user: ''
+    enabled: true
+  marketing:
+    name: default
+    rest: http://localhost:1234/engine-rest
+    authentication:
+      accessGroup: ''
+      enabled: false
+      password: ''
+      user: ''
+    enabled: true
 ```
 
 `sales` and `marketing` are custom names that we chose in order to later on distinguish from where the data was originally imported.

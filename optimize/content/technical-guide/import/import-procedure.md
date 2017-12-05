@@ -38,49 +38,39 @@ The import process is triggered automatically after startup of Optimize in a sep
 
 For each schedule job, it is checked if new data was imported. Once all entities for one task have been imported, the scheduler component starts to backoff from this job. To be more precise, the scheduling is done in increasing periods of time, controlled by the "backoff" counter. At the moment, the scheduler thread will stay idle a fixed amount of milliseconds between every backoff cycle. Each round in which no new data could be imported, the counter is incremented. Thus, the backoff counter will act as a multiplier for the backoff time and increase the time to be idle between two import rounds. This mechanism is configurable using the following properties:
 
-```json
-  "backoff": {
-    /*
-    Interval which is used for the backoff time calculation.
-    */
-    "interval": 1000,
-    /*
-    If all jobs are backing off at the moment, this interval is used
-    to trigger general backoff
-    */
-    "value": 6000,
-    /*
-    Once all pages are consumed, the import scheduler component will
-    start scheduling fetching tasks in increasing periods of time,
-    controlled by "backoff" counter.
-    */
-    "max": 5
-  }
+```yaml
+import:
+  handler:
+    backoff:
+      #Interval which is used for the backoff time calculation.
+      interval: 1000
+      #If all jobs are backing off at the moment, this interval is used
+      #to trigger general backoff
+      value: 6000
+      #Once all pages are consumed, the import scheduler component will
+      #start scheduling fetching tasks in increasing periods of time,
+      #controlled by "backoff" counter.
+      max: 5
 ```
 
 In addition to the "backoff" mechanism, the import scheduler will reschedule all types of schedule jobs starting from the beginning every once in a while. Thus, in case some enities were missed out or skipped during the import, they can be added in the next import cycle. The period of time between full imports is controlled by following properties:
 
-```json
-  "pages": {
-    "resetInterval": {
-      /*
-      Chronological unit used to calculate index reset due date.
-      Possible values are:
-
-      Seconds, Minutes, Hours, HalfDays, Days, Weeks, Months
-
-      in case not supported value is provided 'Minutes' will be used
-      for interval calculation.
-      */
-      "unit": "Minutes",
-      /*
-      Interval the import is started all over again, meaning only missing
-      entities are fetched during the import restart. The data already
-      imported is kept.
-      */
-      "value": 30
-    }
-  }
+```yaml
+import:
+  pages:
+    resetInterval:
+      #Chronological unit used to calculate index reloadConfiguration due date.
+      #Possible values are:
+      #
+      #Seconds, Minutes, Hours, HalfDays, Days, Weeks, Months
+      #
+      #in case not supported value is provided 'Minutes' will be used
+      #for interval calculation.
+      unit: Minutes
+      #Interval the import is started all over again, meaning only missing
+      #entities are fetched during the import restart. The data already    
+      #imported is kept.                                                   
+      value: 30
 ```
 
 If you would like to rapidly update data imported into Optimize, you have to reduce this value. On the other hand, if you would like the import procedure to be performed
@@ -121,19 +111,11 @@ The data from the engine and Optimize do not have a one-to-one relationship, i.e
 
 Also note that the Start/Preparation and the execution are actually independent from another. They follow a [producer-consumer-pattern](https://dzone.com/articles/producer-consumer-pattern), where the `ImportService` is the producer and the `ImportJobExecutor` is the consumer. So, both are executed in different threads. To adjust the processing speed of the executor, the queue size and the number of threads that process the import jobs can be configured:
 
-```json
-  "import": {
-    ...
-    /*
-    Number of threads being used to process the import jobs in the import
-    job queue
-    */
-    "executorThreadCount": 2,
-    /*
-    Adjust the queue size of the import jobs created.
-    A too large value might cause memory problems.
-    */
-    "jobQueueMaxSize": 100,
-    ...
-  }
+```yaml
+import:
+  #Number of threads being used to process the import jobs that are fetching data from the engine.
+  engineJobExecutorThreadCount: 1
+  #Adjust the queue size of the import jobs that fetch data from the engine.
+  #A too large value might cause memory problems.
+  engineJobExecutorQueueSize: 100
 ```

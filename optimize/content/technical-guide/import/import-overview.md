@@ -125,4 +125,4 @@ Here you can see how the data is distributed over the different process definiti
 Results:
 
 * **Duration of importing the whole data set:** ~10 minutes    
-* **Speed of the import:** 1700-2200 database rows per second during the import process
+* **Speed of the import:** 4000-5000 database rows per second during the import process
