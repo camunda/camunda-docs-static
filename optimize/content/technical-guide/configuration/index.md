@@ -661,6 +661,8 @@ Settings of plugin subsystem serialization format, variable import.
     <td>
       Define a custom date format that should be used
       (should be the same as in the engine)
+      please not that engine prior to 7.8 use yyyy-MM-dd'T'HH:mm:ss as default
+      date format
     </td>
   </tr>
   <tr>
