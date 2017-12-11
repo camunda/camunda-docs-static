@@ -9,6 +9,26 @@ menu:
     parent: "technical-guide"
 
 ---
+# Logging
+
+Camunda Optimize provides logging facilities that are preconfigured to use
+*INFO* logging level. Which provides minimal output of information in log files.
+ This level can be adjusted using `environment-logback.xml` configuration file.
+ In general, all log levels provided by logback are supported. Optimize itself
+ provides additional information in *DEBUG* and *TRACE* levels. Debug level of
+ logging will write information about scheduling process as well as import
+ progress into the log file. Trace level will enable writing all requests sent
+ to Engine as well as all queries towards Elasticsearch in a log file.
+
+Even though one could potentially configure logging levels for all packages, it
+is recommended to set logging levels for optimize system only using exact package
+reference.
+
+```xml
+<logger name="org.camunda.optimize" level="debug" />
+```
+
+# System configuration
 
 All distributions of Camunda Optimize come with a predefined set of configuration options that can be overwritten by the user, based on current environment requirements. To do that, have a look into the folder named environment. There is one file called environment-config.yaml with values that override the defaults optimize properties.
 
