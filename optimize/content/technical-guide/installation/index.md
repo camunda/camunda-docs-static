@@ -41,7 +41,7 @@ Please note that, in order to utilize all features of Optimize, you have to conf
 
 All distributions of Optimize come with a predefined set of configuration options that can be overwritten by the user, based on current environment requirements. To do that, have a look into the folder named `environment`. There are two files, one called `environment-config.yaml` with values that override the default Optimize properties and another called `environment-logback.xml`, which sets the logging configuration.
 
-You can see all supported values [here]({{< relref "technical-guide/configuration/index.md" >}}).
+You can see all supported values and read about logging configuration [here]({{< relref "technical-guide/configuration/index.md" >}}).
 
 ### Optimize Container Configuration
 
@@ -96,25 +96,6 @@ Default value: `http://localhost:8080/engine-rest`
 * engines.${engineAlias}.name - The name of the engine that will be used to import data
 ```
 Default value: `default`
-```
-
-### Logger configuration
-
-Adapt the file `environment-logback.xml` in the `environment` folder to change the logging configurations.
-
-For example, you can change the logging level of the root level by changing the `level` value of the following line:
-```xml
-<root level="info">
-```
-```
-Default value: `info`
-```
-
-Possible options are: trace, debug, info, warn, error, all or off.
-
-Alternatively, you can change the log level of specific package. E.g.,:
-```xml
-<logger name="org.camunda.optimize" level="warn" />
 ```
 
 ## Import of the dataset

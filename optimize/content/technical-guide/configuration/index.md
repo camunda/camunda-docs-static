@@ -657,7 +657,7 @@ Settings of plugin subsystem serialization format, variable import.
   </tr>
   <tr>
     <td>serialization.dateFormat</td>
-    <td>yyyy-MM-dd'T'HH:mm:ss</td>
+    <td>yyyy-MM-dd'T'HH:mm:ss.SSSZ</td>
     <td>
       Define a custom date format that should be used
       (should be the same as in the engine)
