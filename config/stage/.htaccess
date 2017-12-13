@@ -3,9 +3,6 @@ RewriteEngine ON
 # Default site is the optimize
 RewriteRule ^$ /optimize/
 
-# Optimize without version
-RewriteRule ^optimize/$ /optimize/ [R=301,L]
-
 # Redirect /optimize/X to /optimize/develop if folder X does not exits
 RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
