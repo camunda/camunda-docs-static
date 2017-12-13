@@ -23,6 +23,11 @@ params:
       url: "/enterprise"
   section:
     id: "optimize"
+    version: "develop"
+    versionAlias: "2.0"
+    versions:
+      - "1.5"
+      - "develop"
   github:
     repositoryName: "camunda/camunda-docs-static"
     branch: "master/optimize"
