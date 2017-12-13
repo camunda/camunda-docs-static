@@ -5,7 +5,7 @@ weight: 60
 
 menu:
   main:
-    name: "Apache Maven"
+    name: "Maven Coordinates"
     identifier: "get-started-maven"
     pre: "The most commonly used Apache Maven Coordinates for Camunda."
 
