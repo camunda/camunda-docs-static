@@ -44,9 +44,3 @@ RewriteRule ^api-references/(.*) /manual/7.3/api-references/$1 [R=301,L]
 RewriteRule ^real-life/(.*) /manual/7.3/real-life/$1 [R=301,L]
 RewriteRule ^index.html$ /manual/7.3/index.html [R=301,L]
 RewriteRule ^single-page.html$ /manual/7.3/single-page.html [R=301,L]
-
-
-# Redirect /optimize/X to /optimize/ if folder X does not exits
-RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
-RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
-RewriteRule ^optimize/(.*) /optimize/ [R=301,L]
