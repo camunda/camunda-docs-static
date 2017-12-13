@@ -1,10 +1,5 @@
 RewriteEngine ON
 
-# Redirect to HTTPS if not already
-RewriteCond %{HTTPS} !=on
-RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
-
-# Default site is the manual
 RewriteRule ^$ /manual/
 
 # Javadoc legacy? (found in old docs htaccess)
@@ -16,16 +11,17 @@ RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.8
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
 
 # Manual without version
-RewriteRule ^manual/$ /manual/7.8/ [R=301,L]
+RewriteRule ^manual/$ /manual/develop/ [R=301,L]
 
-# Redirect /manual/X to /manual/7.8 if folder X does not exits
+# Redirect /manual/X to /manual/develop if folder X does not exits
 RewriteCond %{REQUEST_URI} ^/manual/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/(.*) /manual/7.8/$1 [R=301,L]
+RewriteRule ^manual/(.*) /manual/develop/$1 [R=301,L]
 
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/enterprise /enterprise/ [R=301,L]
+
 
 # CMMN 1.0
 RewriteRule ^get-started/cmmn10/(.*) /get-started/cmmn11/$1 [R=301,L]
@@ -48,6 +44,7 @@ RewriteRule ^api-references/(.*) /manual/7.3/api-references/$1 [R=301,L]
 RewriteRule ^real-life/(.*) /manual/7.3/real-life/$1 [R=301,L]
 RewriteRule ^index.html$ /manual/7.3/index.html [R=301,L]
 RewriteRule ^single-page.html$ /manual/7.3/single-page.html [R=301,L]
+
 
 # Redirect /optimize/X to /optimize/ if folder X does not exits
 RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
