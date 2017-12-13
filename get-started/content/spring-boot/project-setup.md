@@ -12,7 +12,7 @@ menu:
 
 ---
 
-First, let's set up your first process application project in Eclipse.
+First, let's set up your first process application project in the IDE of your choice, the following description uses Eclipse.
 
 # Set Up a Java Project
 
@@ -24,9 +24,9 @@ We will start by setting up a Spring Boot application as an Apache Maven Project
 
 In the following sections, we go through this process step by step.
 
-## Create a new Maven Project in Eclipse
+## Create a new Maven Project
 
-First, we set up a new Apache Maven based project in Eclipse. Let's call it *loan-approval-spring-boot*. The screenshot below illustrates the settings we choose.
+First, we set up a new Apache Maven based project. Let's call it *loan-approval-spring-boot*. The screenshot below illustrates the settings we choose in Eclipse.
 
 {{< img src="../img/eclipse-new-project.png" >}}
 

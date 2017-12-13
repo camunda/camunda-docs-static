@@ -12,13 +12,19 @@ menu:
 
 ---
 
-Now you are ready to set up your first process application project in Eclipse.
+Now you are ready to set up your first process application project in the IDE of your choice, the following description uses Eclipse.
 
 {{< note title="Terminology - Process vs. Decisions" class="info" >}}
 DMN is a modeling language for *decisions*, whereas BPMN is a language for *processes*. This tutorial is about decisions. However, due to Camunda's BPMN-focused heritage, the Java project contains classes and files with names like `ProcessApplication` and `processes.xml`. These are in fact generally applicable and can be used with both processes and decisions.
 {{< /note >}}
 
-# Create a new Maven Project in Eclipse
+# Create a new Maven Project
+
+{{< note title="Fancy to save work and use a project template instead?" class="info" >}}
+
+You don't have to setup the project manually but can also use a Maven Archetype (which is like a project template), see [Maven Archetypes](/manual/latest/user-guide/process-applications/maven-archetypes/) for details. The archetype will create a project according to our best practices.
+
+{{< /note >}}
 
 In Eclipse, go to `File / New / Other ...`. This opens the *New Project Wizard*. In the *New Project Wizard* select `Maven / Maven Project`. Click Next.
 

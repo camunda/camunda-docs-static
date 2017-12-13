@@ -12,7 +12,7 @@ menu:
 
 ---
 
-Now you are ready to set up your first process application project in Eclipse.
+Now you are ready to set up your first process application project in Eclipse in the IDE of your choice, the following description uses Eclipse.
 
 
 # Set Up a Java Project
