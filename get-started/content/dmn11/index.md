@@ -6,7 +6,7 @@ weight: 30
 
 menu:
   main:
-    name: "DMN 1.1"
+    name: "Java + DMN"
     identifier: "get-started-dmn"
     pre: "Learn how to create a DMN 1.1 decision table using the Camunda Modeler. Package it as a web application and deploy it to an Apache Tomcat Server."
     
