@@ -24,7 +24,9 @@ __End of Maintenance:__ 30th of November 2019
 
 __Changes in Supported Environments:__
 
-* Support for latest Tomcat version
+* Support for Application Server Tomcat latest major version
+* Support for Application Server Wildfly 11
+* Support for Database MariaDB 10.2
 
 
 ## Camunda BPM 7.8
