@@ -61,7 +61,7 @@ downloads:
     releases:
     - number: "7.8.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15192"
-      date: "2018.02.13"
+      date: "2018.02.15"
       excludeservers:
       - "wildfly11"
       - "glassfish"
@@ -84,7 +84,7 @@ downloads:
     releases:
     - number: "7.7.7"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15193"
-      date: "2018.02.13"
+      date: "2018.02.15"
       excludeservers:
       - "wildfly11"
       - "glassfish"
@@ -142,7 +142,7 @@ downloads:
     releases:
     - number: "7.6.12"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15195"
-      date: "2018.02.13"
+      date: "2018.02.15"
       excludeservers:
       - "wildfly11"
       - "glassfish"
