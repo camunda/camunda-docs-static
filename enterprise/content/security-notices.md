@@ -16,6 +16,33 @@ releases of the community platform.
 
 # Notices
 
+## Notice 2
+
+**Publication Date: March 5th, 2018**
+
+Camunda support is alerting customers to a potential risk with the Camunda BPM product. A vulnerability exists that can possibly allow an attacker to perform remote execution of code.
+
+Using Camunda's API, it is possible to submit a file as a variable value in serialized form. Inside Camunda, the serialized file is deserialized which allows attackers to exploit a security vulnerability in Apache [Commons-Fileupload](https://blog.akquinet.de/2017/06/15/commons-fileupload-1-3-3-resolves-deserialisation-vulnerability-cve-2016-1000031/) which allows injecting malicious code which is executed upon deserialization.
+
+**How to determine if the installation is affected**
+
+There is one usage scenario which is affected:
+
+- Installation has Apache Commons-Fileupload on the classpath
+- AND The attacker has direct network access to the Rest API or a Camunda Webapplication (Cockpit, Admin, Tasklist) 
+- AND the attacker is able to authenticate/login with the Camunda Rest API or a Camunda Webapplication (ie. the attacker has a valid username + password).
+
+**Solution**
+
+Camunda has provided the patches v7.8.2, v7.7.7, v7.6.12 which provide one fix:
+
+* [CAM-8728](https://app.camunda.com/jira/browse/CAM-8728): Upgrade Apache Commons-Fileupload to >= 1.3.3
+  This fix updates the Apache Commons-Fileupload patch level version to a version which does not exhibit [the vulnerability described in this article](https://blog.akquinet.de/2017/06/15/commons-fileupload-1-3-3-resolves-deserialisation-vulnerability-cve-2016-1000031/).
+ 
+
+Customers are advised to apply these patches, particularly if they use Camunda in one for the scenarios described above.
+
+
 ## Notice 1
 
 **Publication Date: Feb 2nd, 2018**
@@ -31,7 +58,7 @@ There are two usage scenarios which are affected:
 Scenario 1:
 
 -  Installation has Groovy on the classpath
--  AND the attacker has direct network access to the Rest API or a Camunda Webapplication (Cockpit, Access, Tasklist)
+-  AND the attacker has direct network access to the Rest API or a Camunda Webapplication (Cockpit, Admin, Tasklist)
 -  AND the attacker is able to authenticate/login with the Camunda Rest API or a Camunda Webapplication (ie. the attacker has a valid username + password).
 
 Scenario 2:
