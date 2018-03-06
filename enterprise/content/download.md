@@ -52,7 +52,7 @@ downloads:
   - branch: "7.9"
     releases:
     - number: "7.9.0-alpha2"
-      note: "http://blog.camunda.org/post/2018/02/camunda-bpm-790-alpha2-released/"
+      note: "https://blog.camunda.com/post/2018/02/camunda-bpm-790-alpha2/"
       date: "2018.03.02"
       excludeservers:
       - "glassfish"
