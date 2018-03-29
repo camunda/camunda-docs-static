@@ -705,6 +705,26 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.0.0</td>
+      <td>Yes</td>
+      <td>29.03.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.0.0</td>
+      <td>No</td>
+      <td>29.03.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha3</td>
       <td>Yes</td>
       <td>02.03.2018</td>
@@ -763,46 +783,6 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha1/camunda-optimize-2.0.0-alpha1-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>1.5.0</td>
-      <td>Yes</td>
-      <td>27.10.2017</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.5.0/camunda-optimize-1.5.0-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.5.0/camunda-optimize-1.5.0-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>1.5.0</td>
-      <td>No</td>
-      <td>27.10.2017</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.5.0/camunda-optimize-1.5.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.5.0/camunda-optimize-1.5.0-standalone.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>1.4.0</td>
-      <td>Yes</td>
-      <td>29.09.2017</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>1.4.0</td>
-      <td>No</td>
-      <td>29.09.2017</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/1.4.0/camunda-optimize-1.4.0-standalone.tar.gz">tar.gz</a>
-      </td>
-  </tbody>
 </table>
 
 [Previous Releases](https://camunda.org/enterprise-release/optimize/)
