@@ -24,9 +24,11 @@ __End of Maintenance:__ 30th of November 2019
 
 __Changes in Supported Environments:__
 
-* Support for Application Server Tomcat latest major version
+* Support for Application Server Tomcat 9
 * Support for Application Server Wildfly 11
+* Support for Application JBoss EAP 7.1
 * Support for Database MariaDB 10.2
+* Support for Spring Boot 2.0
 
 
 ## Camunda BPM 7.8
