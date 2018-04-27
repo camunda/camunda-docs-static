@@ -54,6 +54,9 @@ downloads:
     - number: "7.9.0-alpha4"
       note: "https://blog.camunda.org/post/2017/07/camunda-bpm-790-alpha4-released/"
       date: "2018.04.27"
+        excludeservers:
+      - "glassfish"
+
     - number: "7.9.0-alpha3"
       note: "https://blog.camunda.com/post/2018/03/camunda-bpm-790-alpha3-released"
       date: "2018.03.29"
