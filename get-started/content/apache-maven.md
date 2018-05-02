@@ -1,7 +1,7 @@
 ---
 
 title: 'Apache Maven Coordinates'
-weight: 60
+weight: 8
 
 menu:
   main:

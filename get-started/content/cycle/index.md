@@ -1,7 +1,7 @@
 ---
 title: 'Get started with the BPMN 2.0 Roundtrip and Camunda Cycle'
 layout: "section-list"
-weight: 60
+weight: 6
 
 menu:
   main:

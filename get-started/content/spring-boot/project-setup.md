@@ -30,15 +30,11 @@ First, we set up a new Apache Maven based project. Let's call it *loan-approval-
 
 {{< img src="../img/eclipse-new-project.png" >}}
 
-{{< note title="Hint" class="info" >}}
-If you are unfamiliar with setting up a Maven project, read the [Set up your Project]({{< relref "bpmn20/project-setup.md" >}}) section of the BPMN 2.0 tutorial.
-{{< /note >}}
-
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
 
 ## Add Camunda BPM & Spring Boot Dependencies
 
-The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project. 
+The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project.
 We add the Spring Boot BOM in the "dependency management" section and the Camunda Spring Boot Starter for Webapps, which will automatically include the Camunda engine and webapps in the app.
 We also use `spring-boot-maven-plugin`, which does all the magic for packaging Spring Boot application content together.
 
@@ -48,7 +44,7 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
   <groupId>org.camunda.bpm.getstarted</groupId>
   <artifactId>loan-approval-spring-boot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -60,7 +56,7 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
@@ -72,7 +68,7 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
       <artifactId>h2</artifactId>
     </dependency>
   </dependencies>
-  
+
    <build>
     <plugins>
       <plugin>
@@ -91,7 +87,7 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
       </plugin>
     </plugins>
   </build>
-  
+
 </project>
 ```
 
@@ -119,7 +115,7 @@ public class WebappExampleProcessApplication {
 
 Now you can perform the first build. Select the `pom.xml` in the Package Explorer, perform a right-click and select `Run As / Maven Install`.
 
-Our first Camunda Spring Boot application is ready now. As a result of the build, you will have a JAR-file in your `target` folder. This JAR is a Spring Boot application, 
+Our first Camunda Spring Boot application is ready now. As a result of the build, you will have a JAR-file in your `target` folder. This JAR is a Spring Boot application,
 which embeds inside Tomcat as a web container, Camunda engine and Camunda Web applications resources.
 When started, it will use an in-memory H2 database for Camunda Engine needs.
 

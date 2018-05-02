@@ -2,7 +2,7 @@
 
 title: 'Get started with Camunda and the Spring Boot'
 layout: "section-list"
-weight: 45
+weight: 2
 
 menu:
   main:
@@ -15,7 +15,7 @@ menu:
 This tutorial guides you through your first steps of using Camunda BPM in a Spring Boot application.
 
 **Target Audience**:
-In this tutorial we assume that you are familiar with the basics of Java web application development and [Spring Boot](https://projects.spring.io/spring-boot/). 
+In this tutorial we assume that you are familiar with the basics of Java web application development and [Spring Boot](https://projects.spring.io/spring-boot/).
 We also assume that you have installed an Eclipse distribution and the Camunda Modeler.
 
 {{< get-code repo="camunda-get-started-spring-boot" >}}

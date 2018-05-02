@@ -2,14 +2,14 @@
 
 title: 'Get started with Camunda and DMN 1.1'
 layout: "section-list"
-weight: 30
+weight: 4
 
 menu:
   main:
-    name: "Java + DMN"
+    name: "DMN"
     identifier: "get-started-dmn"
     pre: "Learn how to create a DMN 1.1 decision table using the Camunda Modeler. Package it as a web application and deploy it to an Apache Tomcat Server."
-    
+
 ---
 
 This tutorial guides you through modeling your first DMN 1.1 decision table and executing it with the Camunda BPM Platform.

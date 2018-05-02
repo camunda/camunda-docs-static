@@ -33,7 +33,7 @@ Start by modeling an executable process using the Camunda Modeler. The process s
 
 {{< note title="Hint" class="info" >}}
 If you are unfamiliar with modeling an executable process, you can read the
-[Model a Process]({{< relref "bpmn20/model.md" >}}) section of the *Developing Process Applications* tutorial.
+[Model a Process]({{< relref "quick-start/service-task.md" >}}) section of the *Quick Start* tutorial.
 {{< /note >}}
 
 When you are done, save the process model in the `src/main/resources` folder of your Eclipse project. Make sure to refresh the Eclipse project afterwards.
@@ -55,7 +55,7 @@ For the process to be deployed, use the auto-deployment feature provided by the 
 
 ## Start a Process Instance from a Spring Bean
 
-The next step consists of starting a process instance from a Spring Bean. Firstly, create a package `org.camunda.bpm.getstarted.loanapproval`. Secondly, add the following `Starter` class to it: 
+The next step consists of starting a process instance from a Spring Bean. Firstly, create a package `org.camunda.bpm.getstarted.loanapproval`. Secondly, add the following `Starter` class to it:
 
 ```java
 package org.camunda.bpm.getstarted.loanapproval;
@@ -141,7 +141,7 @@ And register it as a Spring Bean in the application context.
 
   <bean class="org.camunda.bpm.getstarted.loanapproval.Starter" />
   <bean id="calculateInterestService" class="org.camunda.bpm.getstarted.loanapproval.CalculateInterestService" />
-  
+
 </beans>
 ```
 

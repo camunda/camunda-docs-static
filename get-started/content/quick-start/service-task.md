@@ -242,7 +242,7 @@ client.subscribe('charge-card', async function({ task, taskService }) {
 You can run the NodeJS script by using:
 
 ```sh
-npm run ./worker.js
+node ./worker.js
 ```
 {{< note title="Next Step" class="info" >}}
 Once your worker is running, you can [continue to deploy your process and start some instances](/get-started/quick-start/deploy/).

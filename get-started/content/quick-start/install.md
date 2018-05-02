@@ -12,12 +12,25 @@ menu:
 
 ---
 
-First you need to set up your development environment and install the Camunda BPM Platform and the Camunda Modeler.
+First you need to install the Camunda BPM Platform and the Camunda Modeler.
+
+In the following we will describe how to install the Camunda BPM Platform locally on your machine.
+
+{{< note title="Hint" class="info" >}}
+If you prefer, you can also run the Camunda BPM Platform with Docker:
+
+```sh
+docker pull camunda/camunda-bpm-platform:latest
+docker run -d --name camunda -p 8080:8080 camunda/camunda-bpm-platform:latest
+```
+
+Afterwards, you can directly [install the Camunda Modeler](#camunda-modeler).
+{{< /note >}}
 
 
 # Prerequisites
 
-Make sure you have the following installed:
+Please make sure you have the following installed:
 
 * Java Runtime Environment 1.7+
 
@@ -26,7 +39,6 @@ You can verify this by using your terminal, shell or command line:
 ```sh
 java -version
 ```
-
 
 # Camunda BPM Platform
 

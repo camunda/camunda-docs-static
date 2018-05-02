@@ -2,7 +2,7 @@
 
 title: 'Get started with Camunda and the Spring Framework'
 layout: "section-list"
-weight: 40
+weight: 3
 
 menu:
   main:

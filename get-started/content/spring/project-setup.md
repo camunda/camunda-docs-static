@@ -32,10 +32,6 @@ First, we set up a new Apache Maven based project in Eclipse. Let's call it *loa
 
 {{< img src="../img/eclipse-new-project.png" >}}
 
-{{< note title="Hint" class="info" >}}
-If you are unfamiliar with setting up a Maven project, read the [Set up your Project]({{< relref "bpmn20/project-setup.md" >}}) section of the BPMN 2.0 tutorial.
-{{< /note >}}
-
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
 
 ## Add Camunda BPM & Spring Framework Dependencies

@@ -32,7 +32,7 @@ Start by modeling an executable process using the Camunda Modeler. The process s
 
 {{< note title="Hint" class="info" >}}
 If you are unfamiliar with modeling an executable process, you can read the
-[Model a Process]({{< relref "bpmn20/model.md" >}}) section of the *Developing Process Applications* tutorial.
+[Model a Process]({{< relref "quick-start/service-task.md" >}}) section of the *Quick Start* tutorial.
 {{< /note >}}
 
 When you are done, save the process model in the `src/main/resources` folder of your Eclipse project. Make sure to refresh the Eclipse project afterwards.
@@ -44,12 +44,12 @@ Once it is saved in the application classpath, it will be automatically deployed
 We recommend to declare the process application in your Camunda Spring Boot application, which gives additional configuration possibilities and will help us in the current demo
 to catch the "post-deploy" event to start the process instance at that point.
 
-To declare the process application, just add the `@EnableProcessApplication` annotation on your `WebappExampleProcessApplication` class and put the empty `processes.xml` file in the 
+To declare the process application, just add the `@EnableProcessApplication` annotation on your `WebappExampleProcessApplication` class and put the empty `processes.xml` file in the
 `src/main/resources/META-INF` folder. The file is required by the Camunda Engine for every process application, but in our case it will stay empty.
 
 ## Start a Process Instance after Process Application has been Deployed
 
-The next step consists of starting a process instance from our process application class. For this, we will process `PostDeployEvent`, which is fired as soon as 
+The next step consists of starting a process instance from our process application class. For this, we will process `PostDeployEvent`, which is fired as soon as
 our process application has been deployed to the Camunda engine.
 
 ```java

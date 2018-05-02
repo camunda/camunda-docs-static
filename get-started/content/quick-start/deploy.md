@@ -78,5 +78,5 @@ If you are running on Camunda Enterprise Edition, you can also check out your co
 {{< /note >}}
 
 {{< note title="Next Step" class="info" >}}
-It could be that in edge cases, we want to involve humans in our process, [continue to learn how you can involve humans in your process](nextpage).
+It could be that in some cases, we want to involve humans in our process, [continue to learn how you can involve humans in your process](/get-started/quick-start/user-task/).
 {{< /note >}}
