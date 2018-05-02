@@ -15,6 +15,6 @@ menu:
 This tutorial guides you through modeling and implementing your first workflow with the Camunda BPM Platform.
 In this guide you can choose between implementing executable processes in Java and JavaScript.
 
-{{< get-code repo="camunda-get-started-quick-start" >}}
+{{< get-code repo="camunda-get-started-quickstart" >}}
 
 You will be guided through the following steps:

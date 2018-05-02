@@ -66,7 +66,7 @@ Finally, check the box of the *Executable* property. If you do not check this bo
 
 When you are done, save your changes by clicking *File > Save File As..* or using the *Save Button*. In the dialogue that pops up, navigate to any folder and save the diagram as e.g. `payment.bpmn`.
 
-{{< get-tag repo="camunda-get-started-language-agnostic" tag="Step-1" >}}
+{{< get-tag repo="camunda-get-started-quickstart" tag="Step-1" >}}
 
 # Implement an external task worker
 
@@ -174,7 +174,7 @@ You can run the Java application by right clicking on the class `ChargeCardWorke
 Once your worker is running, you can [continue to deploy your process and start some instances](/get-started/quick-start/deploy/).
 {{< /note >}}
 
-{{< get-tag rexepo="camunda-get-started-language-agnostic" tag="Step-2a" >}}
+{{< get-tag rexepo="camunda-get-started-quickstart" tag="Step-2a" >}}
 
 ## b) Using NodeJS
 
@@ -248,4 +248,4 @@ node ./worker.js
 Once your worker is running, you can [continue to deploy your process and start some instances](/get-started/quick-start/deploy/).
 {{< /note >}}
 
-{{< get-tag repo="camunda-get-started-language-agnostic" tag="Step-2b" >}}
+{{< get-tag repo="camunda-get-started-quickstart" tag="Step-2b" >}}

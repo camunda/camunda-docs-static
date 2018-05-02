@@ -70,4 +70,4 @@ Next, repeat the same procedure and reject the payment. Also create one instance
 Seems like you are ready for Decision Automation. Let's have a look how you can [add Business Rules to your Process](/get-started/quick-start/decision-automation/).
 {{< /note >}}
 
-{{< get-tag repo="camunda-get-started-language-agnostic" tag="Step-4" >}}
+{{< get-tag repo="camunda-get-started-quickstart" tag="Step-4" >}}

@@ -78,4 +78,4 @@ You have successfully completed the Getting Started Guide. CTA?
 {{< /note >}}
 
 
-{{< get-tag repo="camunda-get-started-language-agnostic" tag="Step-5" >}}
+{{< get-tag repo="camunda-get-started-quickstart" tag="Step-5" >}}
