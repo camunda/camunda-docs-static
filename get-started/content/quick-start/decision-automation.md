@@ -12,14 +12,14 @@ menu:
 
 ---
 
-In this section you learn how to add decision automation to your process by using BPMN 2.0 *Business Rule Tasks* and DMN 1.1 Decision Tables.
+In this section, you'll learn how to add decision automation to your process by using BPMN 2.0 *Business Rule Tasks* and DMN 1.1 Decision Tables.
 
 # Add a Business Rule Task to the Process
-Use the Camunda Modeler to open the Payment Retrieval process. Now click on the Approve Payment Task. Change the activity type to *Business Rule Task* by using the wrench button and clicking on it.
+Use the Camunda Modeler to open the Payment Retrieval process then click on the Approve Payment Task. Change the activity type to *Business Rule Task* in the wrench button menu.
 
 {{< img src="../img/modeler-businessrule-task1.png" >}}
 
-Now link the Business Rule Task to a DMN table by changing `Implementation` to `DMN` and `Decision Ref` to `approve-payment`. In order to retrieve the result of the evaluation and save it automatically as a process instance variable in our process, we need to change the `Result Variable` to `approved` and use `singleEntry` as the `Map Decision Result`.
+Next, link the Business Rule Task to a DMN table by changing `Implementation` to `DMN` and `Decision Ref` to `approve-payment` in the properties panel. In order to retrieve the result of the evaluation and save it automatically as a process instance variable in our process, we need to change the `Result Variable` to `approved` and use `singleEntry` as the `Map Decision Result` in the properties panel, as well.
 
 {{< img src="../img/modeler-businessrule-task2.png" >}}
 
@@ -31,33 +31,35 @@ Create a new DMN table by clicking *File > New File > DMN Table*.
 {{< img src="../img/modeler-new-dmn-table.png" >}}
 
 # Specify the DMN table
-First give the DMN table a Name Approve Payment and ID approve-payment. The ID has to match the Decision Ref in your BPMN process.
+First, give the DMN table the name Approve Payment and the ID approve-payment. The ID must match the `Decision Ref` in your BPMN process.
 {{< img src="../img/modeler-dmn1.png" >}}
 
-Next specify the input expressions for the DMN table. We will decide about the approval based on the item name. Your rules can also make use of the FEEL Expression Language, JUEL or Script. If you like, you can [read more about Expressions in the DMN Engine](/manual/latest/user-guide/dmn-engine/expressions-and-scripts/).
+Next, specify the input expressions for the DMN table. In this example, we'll decide whether a payment is approved based on the item name. Your rules can also make use of the FEEL Expression Language, JUEL or Script. If you like, you can [read more about Expressions in the DMN Engine](/manual/latest/user-guide/dmn-engine/expressions-and-scripts/).
+
+For the input column, use `item` as the ' *Input Expression* and `Item` as the *Input Label*:
 {{< img src="../img/modeler-dmn2.png" >}}
 
-After the input, we also should define *Name* and *Label* for our Output Column Approved:
+Next, we'll set up the output column. Use `approved` as the *Output Name* and `Approved` *Output Label* for the output column "Approved":
 {{< img src="../img/modeler-dmn3.png" >}}
 
-Let's create some rules by clicking on the plus icon on the left side of the DMN table. Also we should change the Output Column to the Data Type `boolean`:
+Let's create some rules by clicking on the plus icon on the left side of the DMN table. We should also change the Output Column to the Data Type `boolean`:
 {{< img src="../img/modeler-dmn4.png" >}}
 
-Now, your DMN table should look similar to this:
+After setup, your DMN table should look like this:
 {{< img src="../img/modeler-dmn5.png" >}}
 
 # Deploy the DMN table
-In order to deploy the Decision Table click on the deploy button in the Camunda Modeler, then give it a Deployment Name "Payment Retrieval Decision" and hit the Deploy button.
+To deploy the Decision Table, click on the Deploy button in the Camunda Modeler, give it Deployment Name "Payment Retrieval Decision", then hit the Deploy button.
 {{< img src="../img/modeler-dmn6.png" >}}
 
 # Verify the Deployment with Cockpit
-Now, use Cockpit to check if the decision table is successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with *demo / demo*. Go to "Decisions" section. Your decision table *Approve Payment* should be listed as deployed decision definition.
+Now, use Cockpit to see if the decision table was successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with *demo / demo*. Navigate to the "Decisions" section. Your decision table *Approve Payment* should be listed as deployed decision definition.
 
 {{< img src="../img/cockpit-approve-payment.png" >}}
 
 # Inspect using Cockpit and Tasklist
 
-Now, use Tasklist to start two new Process Instances and verify that depending on your input, the Process Instance will be routed differently.
+Next, use Tasklist to start two new Process Instances and verify that depending on your input, the Process Instance will be routed differently.
 To do so, go to [http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist). Log in with *demo / demo*.
 
 Click on the {{< glyphicon name="list-alt" text=" Start process" >}} button to start a process instance and choose the `Payment` process.
@@ -70,11 +72,11 @@ Next, click again on the {{< glyphicon name="list-alt" text=" Start process" >}}
 Use the generic form to add the variables as follows:
 {{< img src="../img/tasklist-dmn2.png" >}}
 
-You will see that depending on your input your worker will charge the credit car or not.
-You can also verify that the DMN tables were evaluated by using the Cockpit. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with *demo / demo*. Go to "Decisions" section. Click on Approve Payment. Check the different Decision Instances that were evaluated by clicking on the ID in the table below the table.
+You will see that depending on the input, the worker will either charge or not charge the credit card.
+You can also verify that the DMN tables were evaluated by using the Cockpit. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with *demo / demo*. Navigate to the "Decisions" section and click on Approve Payment. Check the different Decision Instances that were evaluated by clicking on the ID in the table below the table.
 
 {{< note title="Success!" class="info" >}}
-You have successfully completed the Getting Started Guide. CTA?
+Congratulations! You've' successfully completed the Camunda BPM Quick Start. Ready to continue? We recommend the [Camunda BPM documentation](https://docs.camunda.org/manual/7.8/).
 {{< /note >}}
 
 

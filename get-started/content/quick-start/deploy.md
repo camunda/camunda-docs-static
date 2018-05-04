@@ -12,11 +12,11 @@ menu:
 
 ---
 
-The next step consists of deploying the Process and starting a new instance to see that your simple process is working correctly.
+In the next step, you'll deploy the Process and start a new instance so you can see that your simple process is working correctly.
 
-# Use the Camunda Modeler for Deploying the Process
+# Use the Camunda Modeler to Deploy the Process
 
-In order to deploy the Process click on the deploy button in the Camunda Modeler, then give it a Deployment Name "Payment Retrieval" and hit the Deploy button.
+In order to deploy the Process, click on the deploy button in the Camunda Modeler, then give it the Deployment Name "Payment Retrieval" and hit the Deploy button.
 {{< img src="../img/modeler-deploy1.png" >}}
 {{< img src="../img/modeler-deploy2.png" >}}
 You should see a success message in the Camunda Modeler:
@@ -24,14 +24,14 @@ You should see a success message in the Camunda Modeler:
 
 # Verify the Deployment with Cockpit
 
-Now use Cockpit to check if the process is successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with demo / demo. Your process *Payment Retrieval* is visible on the dashboard.
+Next, use Cockpit to see if the process was successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit) and log in with demo / demo. Your process *Payment Retrieval* should be visible on the dashboard.
 
 {{< img src="../img/cockpit-payment-retrieval.png" >}}
 
 
 # Start a Process Instance
 
-In Camunda there are different ways of starting new process instances.
+In Camunda, there are different ways to start a new process instances.
 You can leverage the Camunda REST API to start a new process instance by sending a POST Request.
 
 ## a) curl / wget
@@ -40,14 +40,14 @@ You can leverage the Camunda REST API to start a new process instance by sending
 curl -H "Content-Type: application/json" -X POST -d '{"variables": {"amount": {"value":555}, "item": {"value":"item-xyz"} } }' http://localhost:8080/engine-rest/process-definition/key/payment-retrieval/start
 ```
 
-In your worker you should now see the output in your console.
+In your worker, you should now see the output in your console.
 This means you have successfully started and executed your first simple process.
 
 ## b) Rest Client
 
-If you don't feel comfortable using curl for the REST request, you can also make use of any Rest Client.
+If you don't feel comfortable using curl for the REST request, you can instead make use of any REST client.
 
-You should make a POST request to the following endpoint:
+Make a POST request to the following endpoint:
 `http://localhost:8080/engine-rest/process-definition/key/payment-retrieval/start`
 
 The JSON Body should look like this:
@@ -67,10 +67,10 @@ The JSON Body should look like this:
 *Hint:* Make sure you are setting the headers correctly to `Content-Type: application/json`
 
 
-In Postman the request could look like this:
+Here's what the request might look like in Postman:
 {{< img src="../img/postman-start-instance.png" >}}
 
-In your worker you should now see the output in your console.
+In your worker, you should now see the output in your console.
 This means you have successfully started and executed your first simple process.
 
 {{< note title="Hint" class="info" >}}
@@ -78,5 +78,5 @@ If you are running on Camunda Enterprise Edition, you can also check out your co
 {{< /note >}}
 
 {{< note title="Next Step" class="info" >}}
-It could be that in some cases, we want to involve humans in our process, [continue to learn how you can involve humans in your process](/get-started/quick-start/user-task/).
+In some cases, we might want to involve humans in our process. Move onto the next step to [learn how you can involve humans in your process](/get-started/quick-start/user-task/).
 {{< /note >}}
