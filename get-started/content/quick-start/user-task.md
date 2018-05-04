@@ -12,31 +12,31 @@ menu:
 
 ---
 
-In this section you learn how to involve humans in your process by using BPMN 2.0 *User Tasks*.
+In this section, you'll learn how to involve humans in your process by using BPMN 2.0 *User Tasks*.
 
 # Add a User Task
 We want to modify our process so that we can involve humans.
 
 To do so, open the process in the Camunda Modeler.
 
-Next, from its context menu, select the activity shape (rectangle) and drag it to a good position between the Start Event and the Service Task. Name it *Approve Payment*.
+Next, from the Modeler's left-hand menu, select the activity shape (rectangle) and drag it into position between the Start Event and the "Charge Credit Card" Service Task. Name it *Approve Payment*.
 {{< img src="../img/modeler-usertask1.png" >}}
 
-Change the activity type to *User Task* by clicking on it and using the wrench button.
+Change the activity type to *User Task* by clicking on it and using the wrench button menu.
 {{< img src="../img/modeler-usertask2.png" >}}
 
 # Configure a User Task
 
-Next, Open the properties view. If it is not already visible then click on the label on the right hand side of your screen and the properties view will be displayed.
+Next, open the properties view. If it's not already visible, click on the "Properties Panel" label on the right-hand side of the Modeler canvas.
 
-Select the User Task on the canvas. This updates the selection in the properties view. Scroll to the property named `Assignee`.
+Select the User Task on the canvas. This will update the selection in the properties view. Scroll to the property named `Assignee`.
 Type *demo*.
 {{< img src="../img/modeler-usertask3.png" >}}
 
 # Configure a basic form in the User Task
-Next, Open the properties view. If it is not already visible then click on the label on the right hand side of your screen and the properties view will be displayed.
+This step will also take place in the properties panel. If the panel is not already visible, click on the "Properties Panel" label on the right-hand side of the Modeler canvas.
 
-Select the User Task on the canvas. This updates the selection in the properties view.
+Select the User Task on the canvas. This will update the selection in the properties view.
 
 Click on the Tab `Forms` in the properties panel.
 
@@ -70,7 +70,7 @@ Field 3:
 
 # Deploy the Process
 
-Use the `Deploy` Button in the Camunda Modeler for deploying the updated process to Camunda.
+Use the `Deploy` Button in the Camunda Modeler to deploy the updated process to Camunda.
 
 # Work on the Task
 
@@ -80,19 +80,19 @@ Click on the {{< glyphicon name="list-alt" text=" Start process" >}} button to s
 {{< img src="../img/start-form-generic.png" >}}
 
 The generic form can be used whenever you have not added a dedicated form for a User Task or a Start Event.
-Click on the *Add a variable* button to get a new row. Fill in the form as shown in the screenshot. When you are done, click *Start*.
+Click on the *Add a variable* button to create a new row. Fill in the form as shown in the screenshot. When you are done, click *Start*.
 
 
-Now you see the *Approve Payment* task in your Tasklist. Select the task and click on the *Diagram* tab. This displays the process diagram highlighting the User Task that is waiting for you to work on it.
+You should now see the *Approve Payment* task in your Tasklist. Select the task and click on the *Diagram* tab. This displays the process diagram highlighting the User Task that's waiting to be worked on.
 
 {{< img src="../img/diagram.png" >}}
 
-To work on the task, select the *Form* tab. Because we have defined the variables in the Form Tab in the Camunda Modeler, the Tasklist has automatically generated form fields for us.
+To work on the task, select the *Form* tab. Because we defined the variables in the Form Tab in the Camunda Modeler, the Tasklist has automatically generated form fields for us.
 
 {{< img src="../img/task-form-generated.png" >}}
 
 {{< note title="Next Step" class="info" >}}
-Now we should make the process more dynamic and only show a User Task in certain situations. Let's have a look how you can [add Gateways to your Process](/get-started/quick-start/gateway/).
+Next, we'll make the process more dynamic and only show a User Task in certain situations. Let's have a look how you can [add Gateways to your Process](/get-started/quick-start/gateway/).
 {{< /note >}}
 
 {{< get-tag repo="camunda-get-started-quickstart" tag="Step-3" >}}

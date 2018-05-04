@@ -13,7 +13,7 @@ menu:
 ---
 
 This tutorial guides you through modeling and implementing your first workflow with the Camunda BPM Platform.
-In this guide you can choose between implementing executable processes in Java and JavaScript.
+In this guide, you'll choose between implementing executable processes in Java or JavaScript (NodeJS) using one of Camunda's ready-to-go task clients.
 
 {{< get-code repo="camunda-get-started-quickstart" >}}
 
