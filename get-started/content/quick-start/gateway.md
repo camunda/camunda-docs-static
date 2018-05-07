@@ -14,15 +14,15 @@ menu:
 
 In this section, you'll learn how to make your process more dynamic by using BPMN 2.0 *Exclusive Gateways*.
 
-# Add two Gateways
+# Add Two Gateways
 We want to modify our process so that it's more dynamic.
 
 To do so, open the process in the Camunda Modeler.
 
-Next, from the Modeler's left-hand menu, select the gateway shape (diamond) and drag it into position between between the Start Event and the Service Task. Move the User Task down and add another Gateway after it. Lastly, adjust the Sequence Flows so the model looks like this.
+Next, from the Modeler's left-hand menu, select the gateway shape (diamond) and drag it into position between between the Start Event and the Service Task. Move the User Task down and add another Gateway after it. Lastly, adjust the Sequence Flows so that the model looks like this:
 {{< img src="../img/modeler-gateway1.png" >}}
 
-Now also name the new elements correctly:
+Now also name the new elements accordingly:
 {{< img src="../img/modeler-gateway2.png" >}}
 
 # Configure the Gateways
@@ -51,7 +51,7 @@ Use the `Deploy` Button in the Camunda Modeler to deploy the updated process to 
 
 # Work on the Task
 
-Go to Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)) and log in with the user credentials "demo / demo".
+Go to Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)) and log in with the credentials "demo / demo".
 Click on the {{< glyphicon name="list-alt" text=" Start process" >}} button to start a process instance for the *Payment Retrieval* Process.
 Next, set variables for the process instance using the generic form as we learned in the *User Tasks* section.
 
@@ -64,7 +64,7 @@ You should see the *Approve Payment* task when you click on *All Tasks*.
 To work on the task, select the *Form* tab and check the *approved* checkbox so that our payment retrieval gets approved.
 We should see that our worker prints something to the console.
 
-Next, repeat the same steps, and this time, reject the payment. And also create one instance with an amount less than 1000 to confirm that the first gateway works correctly.
+Next, repeat the same steps, and this time, reject the payment. You should also create one instance with an amount less than 1000 to confirm that the first gateway works correctly.
 
 {{< note title="Next Step" class="info" >}}
 Now you're ready for Decision Automation. Let's have a look how you can [add Business Rules to your Process](/get-started/quick-start/decision-automation/).

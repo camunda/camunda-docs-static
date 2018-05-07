@@ -39,6 +39,7 @@ You can verify this by using your terminal, shell, or command line:
 ```sh
 java -version
 ```
+If you need to install Java Runtime Environment, you can [find the download from Oracle here](http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html).
 
 # Camunda BPM Platform
 
@@ -55,7 +56,7 @@ This script will start the application server and open a welcome screen in your 
 
 Download the Camunda Modeler from [the download page](https://camunda.com/download/modeler/).
 
-After downloading the modeler, simply unzip the download in a folder of your choice.
+After downloading the Modeler, simply unzip the download in a folder of your choice.
 
 After you have successfully unpacked the zip, run `camunda-modeler.exe` (for Windows users), `camunda-modeler.app` (for Mac users), or `camunda-modeler.sh` (for Linux users).
 
