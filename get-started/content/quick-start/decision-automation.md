@@ -36,7 +36,7 @@ First, give the DMN table the name Approve Payment and the ID approve-payment. T
 
 Next, specify the input expressions for the DMN table. In this example, we'll decide whether a payment is approved based on the item name. Your rules can also make use of the FEEL Expression Language, JUEL or Script. If you like, you can [read more about Expressions in the DMN Engine](/manual/latest/user-guide/dmn-engine/expressions-and-scripts/).
 
-For the input column, use `item` as the ' *Input Expression* and `Item` as the *Input Label*:
+For the input column, use `item` as the *Input Expression* and `Item` as the *Input Label*:
 {{< img src="../img/modeler-dmn2.png" >}}
 
 Next, set up the output column. Use `approved` as the *Output Name* and `Approved` as the *Output Label* for the output column "Approved":
