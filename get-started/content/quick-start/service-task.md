@@ -52,9 +52,9 @@ Open the Properties Panel within the Camunda Modeler and click on the Service Ta
 
 {{< img src="../img/modeler-step5.png" >}}
 
-Because we're modeling an executable process, we should give it an *ID* and set the `isExecutable` property to `true`. On the right hand side of the canvas, you find the properties panel. When you click on empty space on the modeling canvas, the properties panel will display the properties of the process itself.
+Because we're modeling an executable process, we should give it an *ID* and set the `isExecutable` property to `true`. On the right-hand side of the canvas, you find the properties panel. When you click on empty space on the modeling canvas, the properties panel will display the properties of the process itself.
 
-First, configure an ID for the process. Type *payment-retrieval* in the property field *Id*. The property ID is used by the process engine as identifier for the executable process, and it's best practice to set it to a human-readable name.
+First, configure an ID for the process. Type *payment-retrieval* in the property field *Id*. The property ID is used by the process engine as an identifier for the executable process, and it's best practice to set it to a human-readable name.
 
 Second, configure the Name of the process. Type *Payment Retrieval* in the property field *Name*.
 
@@ -75,7 +75,7 @@ After modeling the process, we want to execute some business logic.
 Camunda BPM is built so that your business logic can be implemented in different languages.
 You have the choice which language suits your project best.
 
-In this quick start, we'll show you how to use Camunda's out-of-the-box task clients in:
+In this quick start, we'll show you how to use Camunda's ready-to-go task clients in:
 
 - [Java](#a-using-java)
 - [NodeJS](#b-using-nodejs)
@@ -93,15 +93,15 @@ In this section, you'll learn how to implement an external task worker in Java.
 Make sure you have the following tools installed:
 
 * JDK 1.8
-* Editor for Java projects (e.g. [Eclipse](https://eclipse.org/))
+* An IDE for Java projects (e.g. [Eclipse](https://eclipse.org/))
 
 ### Create a new Maven project
 
-Start by creating a new Maven project in your Editor. If you're using Eclipse, you can follow these steps:
+Start by creating a new Maven project in your IDE. If you're using Eclipse, you can follow these steps:
 
-In Eclipse, go to File / New / Other .... This opens the New Project Wizard. In the New Project Wizard select Maven / Maven Project. Click Next.
+In Eclipse, go to File / New / Other .... This opens the New Project Wizard. In the New Project Wizard, select Maven / Maven Project. Click Next.
 
-On the first page of the New Maven Project Wizard, select Create a simple project (skip archetype selection). Click Next.
+On the first page of the New Maven Project Wizard, select Create a simple project (you can skip archetype selection). Click Next.
 
 On the second page (see screenshot), configure the Maven coordinates for the project. Since we are setting up a JAR Project, make sure to select Packaging: jar.
 
@@ -139,7 +139,7 @@ Next, we will create a new ExternalTaskClient which subscribes to the `charge-ca
 When the process engine encounters a service task that is configured to be externally handled, it creates an external task instance on which our handler will react.
 We are using [Long Polling](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/#long-polling-to-fetch-and-lock-external-tasks) in the ExternalTaskClient to make the communication more efficient.
 
-To do so, you need to create a package, e.g., *org.camunda.bpm.getstarted.chargecard* and add a Java class, e.g. *ChargeCardWorker*, to it.
+Next, you need to create a package, e.g., *org.camunda.bpm.getstarted.chargecard* and add a Java class, e.g. *ChargeCardWorker*, to it.
 
 ```java
 package org.camunda.bpm.getstarted.chargecard;
@@ -177,7 +177,7 @@ public class ChargeCardWorker {
 
 ### Run the worker
 
-You can run the Java application by right clicking on the class `ChargeCardWorker` and choose `Run as Java`.
+You can run the Java application by right clicking on the class `ChargeCardWorker` and choosing `Run as Java`.
 
 {{< note title="Next Step" class="info" >}}
 Once your worker is running, you can [continue to deploy your process and start some instances](/get-started/quick-start/deploy/).
@@ -193,7 +193,7 @@ In this section, you'll learn how to implement an external task worker in NodeJS
 
 Make sure you have the following tools installed:
 
-* NodeJS >= v8.9.4
+* NodeJS >= v8.9.4 ([Download available here](https://nodejs.org/en/download/)
 * Editor for JavaScript files (e.g. [Atom](https://atom.io/))
 
 ### Create a new NodeJS project
@@ -217,7 +217,7 @@ Next, we'll create a new ExternalTaskClient that subscribes to the `charge-card`
 When the process engine encounters a service task that's configured to be externally handled, it creates an external task instance on which our handler will react.
 We use [Long Polling](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/#long-polling-to-fetch-and-lock-external-tasks) in the ExternalTaskClient to make the communication more efficient.
 
-To do so, you need to create a new JavaScript file, e.g. `worker.js`, that looks like the following:
+Next, you need to create a new JavaScript file, e.g. `worker.js`, that looks like the following:
 
 ```javascript
 const { Client, logger } = require('camunda-external-task-client-js');

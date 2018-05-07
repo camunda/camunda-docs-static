@@ -16,7 +16,7 @@ In the next step, you'll deploy the Process and start a new instance so you can 
 
 # Use the Camunda Modeler to Deploy the Process
 
-In order to deploy the Process, click on the deploy button in the Camunda Modeler, then give it the Deployment Name "Payment Retrieval" and hit the Deploy button.
+In order to deploy the Process, click on the deploy button in the Camunda Modeler, then give it the Deployment Name "Payment Retrieval" and click the Deploy button.
 {{< img src="../img/modeler-deploy1.png" >}}
 {{< img src="../img/modeler-deploy2.png" >}}
 You should see a success message in the Camunda Modeler:
@@ -24,14 +24,14 @@ You should see a success message in the Camunda Modeler:
 
 # Verify the Deployment with Cockpit
 
-Next, use Cockpit to see if the process was successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit) and log in with demo / demo. Your process *Payment Retrieval* should be visible on the dashboard.
+Next, use Cockpit to see if the process was successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit) and log in with the credentials demo / demo. Your process *Payment Retrieval* should be visible on the dashboard.
 
 {{< img src="../img/cockpit-payment-retrieval.png" >}}
 
 
 # Start a Process Instance
 
-In Camunda, there are different ways to start a new process instances.
+In Camunda, there are different ways to start a new process instance.
 You can leverage the Camunda REST API to start a new process instance by sending a POST Request.
 
 ## a) curl / wget
@@ -78,5 +78,5 @@ If you are running on Camunda Enterprise Edition, you can also check out your co
 {{< /note >}}
 
 {{< note title="Next Step" class="info" >}}
-In some cases, we might want to involve humans in our process. Move onto the next step to [learn how you can involve humans in your process](/get-started/quick-start/user-task/).
+In some cases, we'll want to involve humans in our process. Move onto the next step to [learn how you can involve humans in your process](/get-started/quick-start/user-task/).
 {{< /note >}}

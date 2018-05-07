@@ -27,7 +27,7 @@ Change the activity type to *User Task* by clicking on it and using the wrench b
 
 # Configure a User Task
 
-Next, open the properties view. If it's not already visible, click on the "Properties Panel" label on the right-hand side of the Modeler canvas.
+Next, open the properties view. If the properties view is not already visible, click on the "Properties Panel" label on the right-hand side of the Modeler canvas.
 
 Select the User Task on the canvas. This will update the selection in the properties view. Scroll to the property named `Assignee`.
 Type *demo*.
@@ -74,13 +74,13 @@ Use the `Deploy` Button in the Camunda Modeler to deploy the updated process to 
 
 # Work on the Task
 
-Go to Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)) and log in with the user credentials "demo / demo".
+Go to Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)) and log in with the credentials "demo / demo".
 Click on the {{< glyphicon name="list-alt" text=" Start process" >}} button to start a process instance. This opens a dialog where you can select *Payment Retrieval* from the list. Now you can set variables for the process instance using a generic form.
 
 {{< img src="../img/start-form-generic.png" >}}
 
 The generic form can be used whenever you have not added a dedicated form for a User Task or a Start Event.
-Click on the *Add a variable* button to create a new row. Fill in the form as shown in the screenshot. When you are done, click *Start*.
+Click on the *Add a variable* button to create a new row. Fill in the form as shown in the screenshot. When you're done, click *Start*.
 
 
 You should now see the *Approve Payment* task in your Tasklist. Select the task and click on the *Diagram* tab. This displays the process diagram highlighting the User Task that's waiting to be worked on.
