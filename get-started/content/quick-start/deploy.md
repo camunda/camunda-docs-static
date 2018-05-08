@@ -34,7 +34,7 @@ Next, use Cockpit to see if the process was successfully deployed. Go to [http:/
 In Camunda, there are different ways to start a new process instance.
 You can leverage the Camunda REST API to start a new process instance by sending a POST Request.
 
-## a) curl / wget
+## a) curl
 
 ```sh
 curl -H "Content-Type: application/json" -X POST -d '{"variables": {"amount": {"value":555}, "item": {"value":"item-xyz"} } }' http://localhost:8080/engine-rest/process-definition/key/payment-retrieval/start
@@ -43,7 +43,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"variables": {"amount": {"
 In your worker, you should now see the output in your console.
 This means you have successfully started and executed your first simple process.
 
-## b) Rest Client
+## b) REST Client
 
 If you don't feel comfortable using curl for the REST request, you can instead make use of any REST client.
 
@@ -70,7 +70,7 @@ The JSON Body should look like this:
 Here's what the request might look like in Postman:
 {{< img src="../img/postman-start-instance.png" >}}
 
-In your worker, you should now see the output in your console.
+In your worker console (which we started in the previous section), you should now see an output.
 This means you have successfully started and executed your first simple process.
 
 {{< note title="Hint" class="info" >}}

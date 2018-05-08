@@ -78,7 +78,9 @@ You have the choice which language suits your project best.
 In this quick start, we'll show you how to use Camunda's ready-to-go task clients in:
 
 - [Java](#a-using-java)
-- [NodeJS](#b-using-nodejs)
+- [JavaScript (NodeJS)](#b-using-javascript-nodejs)
+
+If you've never worked with Java before, we recommend using the JavaScript (NodeJS) task client in this tutorial.
 
 {{< note title="Hint" class="info" >}}
 If you prefer a different programming language, you can also use Camunda's [REST API](https://docs.camunda.org/manual/7.8/user-guide/process-engine/external-tasks/#rest-api) to access API operations via HTTP.
@@ -179,13 +181,15 @@ public class ChargeCardWorker {
 
 You can run the Java application by right clicking on the class `ChargeCardWorker` and choosing `Run as Java`.
 
+Note that the worker should remain running throughout the entirety of this quick start guide.
+
 {{< note title="Next Step" class="info" >}}
 Once your worker is running, you can [continue to deploy your process and start some instances](/get-started/quick-start/deploy/).
 {{< /note >}}
 
 {{< get-tag rexepo="camunda-get-started-quickstart" tag="Step-2a" >}}
 
-## b) Using NodeJS
+## b) Using JavaScript (NodeJS)
 
 In this section, you'll learn how to implement an external task worker in NodeJS.
 
@@ -193,7 +197,7 @@ In this section, you'll learn how to implement an external task worker in NodeJS
 
 Make sure you have the following tools installed:
 
-* NodeJS >= v8.9.4 ([Download available here](https://nodejs.org/en/download/)
+* NodeJS >= v8.9.4 ([Download available here](https://nodejs.org/en/download/))
 * Editor for JavaScript files (e.g. [Atom](https://atom.io/))
 
 ### Create a new NodeJS project
@@ -253,6 +257,9 @@ You can run the NodeJS script with:
 ```sh
 node ./worker.js
 ```
+
+Note that the worker should remain running throughout the entirety of this quick start guide.
+
 {{< note title="Next Step" class="info" >}}
 Once your worker is running, you can move onto the next step to [deploy your process and start some instances](/get-started/quick-start/deploy/).
 {{< /note >}}
