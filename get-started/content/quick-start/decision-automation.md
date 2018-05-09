@@ -73,7 +73,10 @@ Use the generic form to add the variables as follows:
 {{< img src="../img/tasklist-dmn2.png" >}}
 
 You'll see that depending on the input, the worker will either charge or not charge the credit card.
-You can also verify that the DMN tables were evaluated by using the Cockpit. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with the credentials *demo / demo*. Navigate to the "Decisions" section and click on Approve Payment. Check the different Decision Instances that were evaluated by clicking on the ID in the table.
+You can also verify that the DMN tables were evaluated by using Camunda Cockpit. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with the credentials *demo / demo*. Navigate to the "Decisions" section and click on Approve Payment. Check the different Decision Instances that were evaluated by clicking on the ID in the table.
+
+A single DMN table that was executed could look like this in Camunda Cockpit:
+{{< img src="../img/cockpit-dmn-table.png" >}}
 
 {{< note title="Success!" class="info" >}}
 Congratulations! You've successfully completed the Camunda BPM Quick Start. Ready to continue? We recommend the [Camunda BPM documentation](https://docs.camunda.org/manual/7.8/).
