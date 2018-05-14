@@ -25,7 +25,7 @@ Make sure you have the following set of tools installed:
 
 # Install Camunda BPM platform
 
-First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the WildFly 10 based distribution. Download it from [the download page](https://camunda.org/download/).
+First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the WildFly 11 based distribution. Download it from [the download page](https://camunda.com/download/).
 
 After having downloaded the distribution, unpack it inside a directory of your choice. We will call that directory
 `$CAMUNDA_HOME`.
@@ -37,7 +37,7 @@ This script will start the application server and open a welcome screen in your 
 If the page does not open, go to http://localhost:8080/camunda-welcome/index.html.
 
 {{< note title="Getting Help" class="info" >}}
-If you have trouble setting up the Camunda BPM platform, you can ask for assistance in the [Forum](https://camunda.org/community/forum.html).
+If you have trouble setting up the Camunda BPM platform, you can ask for assistance in the [Forum](https://forum.camunda.org/).
 {{< /note >}}
 
 # Install Camunda Modeler

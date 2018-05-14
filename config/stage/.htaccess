@@ -11,7 +11,7 @@ RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.9
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
 
 # Manual without version
-RewriteRule ^manual/$ /manual/develop/ [R=301,L]
+RewriteRule ^manual/$ /manual/7.9/ [R=301,L]
 
 # Optimize without version
 RewriteRule ^optimize/$ /optimize/develop/ [R=301,L]

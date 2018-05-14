@@ -25,15 +25,13 @@ Create a new DMN table by clicking *File > New File > DMN Table*.
 
 # Start with the Table Header
 
-First, click on "Enter Advanced Mode" to see and edit the technical properties. 
-
 Start by setting the name of the decision. Click on the top left field and type "Dish" as the [name of the decision](/manual/latest/reference/dmn11/decision-table/#decision-name).
 
 {{< img src="../img/modeler-step1.png" >}}
 
 Next, click on the field below and replace "decision" by "dish" to set the technical [id of the decision](/manual/latest/reference/dmn11/decision-table/#decision-id) which is used to reference the decision inside the process application.
 
-To set the [label of the input](/manual/latest/reference/dmn11/decision-table/input/#input-label) click on the field under "Input" and type "Season". Same for the [output label](/manual/latest/reference/dmn11/decision-table/output/#output-label), click on the field under "Output" and type "Dish".
+To set the [label of the input](/manual/latest/reference/dmn11/decision-table/input/#input-label) click on the field under "Input" and type "Season" in the "Input Label" field. Same for the [output label](/manual/latest/reference/dmn11/decision-table/output/#output-label), click on the field under "Output" and type "Dish" in the "Output Label" field.
 
 {{< img src="../img/modeler-step2.png" >}}
 
@@ -41,27 +39,27 @@ To set the [label of the input](/manual/latest/reference/dmn11/decision-table/in
 
 Assuming that the input value for "Season" is provided by a variable with name "season", the [input expression](/manual/latest/reference/dmn11/decision-table/input/#input-expression) should be "season". 
 
-Click on the field under "Season". In the dialog that pops up, set "season" as expression and close it.
+Click on the "Season" field. In the dialog that pops up, set "season" as expression and close it.
 
 {{< img src="../img/modeler-step3.png" >}}
 
-Next, click on the field under "Dish" and set "desiredDish" as [output name](/manual/latest/reference/dmn11/decision-table/output/#output-name).
+Next, click on the "Dish" field and set "desiredDish" as [output name](/manual/latest/reference/dmn11/decision-table/output/#output-name).
 
 # Configure the Type of the Input and Output
 
 Assuming that the input value for "Season" is provided as String, the [type of the input value](/manual/latest/reference/dmn11/decision-table/input/#input-type-definition) should be "string".
 
-Click on the field under the input expression "season". Open the combo box and choose the type "string" in the dialog that pops up.
+Click on the field under the "Season" field. Open the combo box and choose the type "string" in the dialog that pops up.
 
 {{< img src="../img/modeler-step4.png" >}}
 
-Same for the [output type](/manual/latest/reference/dmn11/decision-table/output/#output-type-definition), click on the field under the output name "desiredDish" and choose "string" as type.
+Same for the [output type](/manual/latest/reference/dmn11/decision-table/output/#output-type-definition), click on the field under the "Dish" field and choose "string" as type.
 
 # Add Rules
 
 Now, add the first [rule](/manual/latest/reference/dmn11/decision-table/rule/) that specifies that the desired dish for season "Fall" is "Spareribs".
 
-Click on the "+" button at the bottom of the table. In the row that was added, type "Fall" in the input column and "Spareribs" in the output column.
+Click on the "+" button at the bottom of the table or just click anywhere on the last row. In the row that was added, type "Fall" in the input column and "Spareribs" in the output column.
 
 {{< img src="../img/modeler-step5.png" >}}
 

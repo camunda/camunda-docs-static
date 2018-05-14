@@ -20,7 +20,7 @@ The visual representation of a Decision Requirements Graph (DRG) is called Decis
 
 # Switch from Decision Table to DRD
 
-Open the *Dish* decision table from the previous step. Click on the button "Show DRD" to see the Decision Requirements Diagram (DRD). It contains a single decision with the name *Dish*.
+Open the *Dish* decision table from the previous step. Click on the button "View DRD" to see the Decision Requirements Diagram (DRD). It contains a single decision with the name *Dish*.
 
 {{< img src="../img/modeler-drd-step1.png" >}}
 
@@ -34,7 +34,7 @@ Next, click on the field below and set the [id](/manual/latest/reference/dmn11/d
 
 # Create a new Decision in the DRD
 
-Click on the decision icon of the palette to create a new decision. Then, double-click on the decision and type *Beverages* to set the name. Change the type of the decision to *Decision Table*.
+Click on the decision icon of the palette to create a new decision. Then, double-click on the decision and type *Beverages* to set the name. Change the type of the decision to *Decision Table* by clicking on the wrench icon next to the "Beverages" decision and selecting "Decision Table".
 
 {{< img src="../img/modeler-drd-step3.png" >}}
 
