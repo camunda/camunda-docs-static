@@ -51,6 +51,12 @@ downloads:
   branches:
   - branch: "7.9"
     releases:
+    - number: "7.9.0-alpha5"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15308"
+      date: "2018.05.18"
+      excludeservers:
+        - "glassfish"
+          
     - number: "7.9.0-alpha4"
       note: "https://blog.camunda.org/post/2018/04/camunda-bpm-790-alpha4-released/"
       date: "2018.04.27"
