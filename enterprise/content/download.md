@@ -44,13 +44,19 @@ downloads:
     - war
 
   selected:
-    branch: "7.8"
-    version: "7.8.6"
+    branch: "7.9"
+    version: "7.9.0"
     server: "tomcat"
 
   branches:
   - branch: "7.9"
     releases:
+    - number: "7.9.0"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15308"
+      date: "2018.05.31"
+      excludeservers:
+        - "glassfish"
+
     - number: "7.9.0-alpha5"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15308"
       date: "2018.05.18"
