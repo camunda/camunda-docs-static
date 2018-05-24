@@ -57,36 +57,6 @@ downloads:
       excludeservers:
         - "glassfish"
 
-    - number: "7.9.0-alpha5"
-      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15308"
-      date: "2018.05.18"
-      excludeservers:
-        - "glassfish"
-          
-    - number: "7.9.0-alpha4"
-      note: "https://blog.camunda.org/post/2018/04/camunda-bpm-790-alpha4-released/"
-      date: "2018.04.27"
-      excludeservers:
-      - "glassfish"
-
-    - number: "7.9.0-alpha3"
-      note: "https://blog.camunda.com/post/2018/03/camunda-bpm-790-alpha3-released"
-      date: "2018.03.29"
-      excludeservers:
-      - "glassfish"
-
-    - number: "7.9.0-alpha2"
-      note: "https://blog.camunda.com/post/2018/02/camunda-bpm-790-alpha2/"
-      date: "2018.03.02"
-      excludeservers:
-      - "glassfish"
-
-    - number: "7.9.0-alpha1"
-      note: "http://blog.camunda.org/post/2018/01/camunda-bpm-790-alpha1-released/"
-      date: "2018.02.02"
-      excludeservers:
-      - "glassfish"
-
   - branch: "7.8"
     releases:
     - number: "7.8.6"
