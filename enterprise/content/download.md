@@ -52,7 +52,7 @@ downloads:
   - branch: "7.9"
     releases:
     - number: "7.9.0"
-      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15308"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15096"
       date: "2018.05.31"
       excludeservers:
         - "glassfish"
