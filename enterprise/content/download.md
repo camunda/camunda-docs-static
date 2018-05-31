@@ -707,6 +707,26 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.1.0-alpha2</td>
+      <td>Yes</td>
+      <td>31.05.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha2/camunda-optimize-2.1.0-alpha2-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha2/camunda-optimize-2.1.0-alpha2-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.1.0-alpha2</td>
+      <td>No</td>
+      <td>31.05.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha2/camunda-optimize-2.1.0-alpha2-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha2/camunda-optimize-2.1.0-alpha2-standalone.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0-alpha1</td>
       <td>Yes</td>
       <td>27.04.2018</td>
