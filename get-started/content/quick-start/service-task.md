@@ -128,7 +128,7 @@ Your pom.xml file of your project should look like this:
 		<dependency>
 			<groupId>org.camunda.bpm</groupId>
 			<artifactId>camunda-external-task-client</artifactId>
-			<version>0.1.0-alpha1</version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 </project>
