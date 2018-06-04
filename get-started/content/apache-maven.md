@@ -144,3 +144,4 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 * [Camunda Spin](/manual/latest/reference/spin)
 * [Camunda Connect](/manual/latest/reference/connect/#maven-coordinates)
 * [Templating Engines](/manual/latest/user-guide/process-engine/templating/#install-a-template-engine-for-an-embedded-process-engine)
+* [Spring Boot Integration](/manual/latest/user-guide/spring-boot-integration/)
