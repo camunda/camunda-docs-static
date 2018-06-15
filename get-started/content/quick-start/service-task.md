@@ -187,7 +187,7 @@ Note that the worker should remain running throughout the entirety of this quick
 Once your worker is running, you can [continue to deploy your process and start some instances](/get-started/quick-start/deploy/).
 {{< /note >}}
 
-{{< get-tag rexepo="camunda-get-started-quickstart" tag="Step-2a" >}}
+{{< get-tag repo="camunda-get-started-quickstart" tag="Step-2a" >}}
 
 ## b) Using JavaScript (NodeJS)
 
