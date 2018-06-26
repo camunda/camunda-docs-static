@@ -699,6 +699,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr>
       <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
+      <th class="col-md-2">Supported Engine Versions</th>
       <th class="col-md-2">Contains Elasticsearch</th>
       <th class="col-md-2">Release Date</th>
       <th class="col-md-2">Download</th>
@@ -748,6 +749,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0</td>
+      <td>7.7+</td>
       <td>Yes</td>
       <td>29.03.2018</td>
       <td>
@@ -758,6 +760,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0</td>
+      <td>7.7+</td>
       <td>No</td>
       <td>29.03.2018</td>
       <td>
@@ -768,6 +771,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha3</td>
+      <td>7.7+</td>
       <td>Yes</td>
       <td>02.03.2018</td>
       <td>
@@ -778,6 +782,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha3</td>
+      <td>7.7+</td>
       <td>No</td>
       <td>02.03.2018</td>
       <td>
@@ -788,6 +793,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha2</td>
+      <td>7.7+</td>
       <td>Yes</td>
       <td>26.01.2018</td>
       <td>
@@ -798,6 +804,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha2</td>
+      <td>7.7+</td>
       <td>No</td>
       <td>26.01.2018</td>
       <td>
@@ -808,6 +815,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
 	<tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha1</td>
+      <td>7.7+</td>
       <td>Yes</td>
       <td>14.12.2017</td>
       <td>
@@ -818,6 +826,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha1</td>
+      <td>7.7+</td>
       <td>No</td>
       <td>14.12.2017</td>
       <td>
