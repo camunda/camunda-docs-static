@@ -692,7 +692,21 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
 
 # Camunda Optimize
 
-[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes. Read the installation guide
+[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/installation/).
+
+### Full Distribution with Elasticsearch
+
+Download the full distribution if you want to use Optimize with an embedded Elasticsearch or if you
+want to get to know Optimize quickly, without any additional setup or installation steps required.
+
+The full distribution bundles
+
+* Optimize
+* The Container / Application Server itself
+* Configuration files and plugin folder
+* Elasticsearch
+
+To install the full distribution, please download one of the following archives:
 
 <table class="table">
   <thead>
@@ -700,7 +714,6 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
       <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
-      <th class="col-md-2">Contains Elasticsearch</th>
       <th class="col-md-2">Release Date</th>
       <th class="col-md-2">Download</th>
     </tr>
@@ -709,7 +722,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0-alpha2</td>
-      <td>Yes</td>
+      <td>7.7+</td>
       <td>31.05.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha2/camunda-optimize-2.1.0-alpha2-full.zip">zip</a>&nbsp;
@@ -718,8 +731,84 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.1.0-alpha1</td>
+      <td>7.7+</td>
+      <td>27.04.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha1/camunda-optimize-2.1.0-alpha1-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha1/camunda-optimize-2.1.0-alpha1-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.0.0</td>
+      <td>7.7+</td>
+      <td>29.03.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.0.0-alpha3</td>
+      <td>7.7+</td>
+      <td>02.03.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha3/camunda-optimize-2.0.0-alpha3-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha3/camunda-optimize-2.0.0-alpha3-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.0.0-alpha2</td>
+      <td>7.7+</td>
+      <td>26.01.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha2/camunda-optimize-2.0.0-alpha2-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha2/camunda-optimize-2.0.0-alpha2-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+	<tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.0.0-alpha1</td>
+      <td>7.7+</td>
+      <td>14.12.2017</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha1/camunda-optimize-2.0.0-alpha1-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha1/camunda-optimize-2.0.0-alpha1-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+</table>
+
+### Standalone Distribution without Elasticsearch
+
+You can download the standalone Optimize distribution to use it in your production environment, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance.
+
+This distribution bundles
+
+* Optimize
+* Container / Application Server itself
+* Configuration files and plugin folder
+
+
+To get the standalone distribution, please download one of the following archives:
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Supported Engine Versions</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0-alpha2</td>
-      <td>No</td>
+      <td>7.7+</td>
       <td>31.05.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha2/camunda-optimize-2.1.0-alpha2-standalone.zip">zip</a>&nbsp;
@@ -729,17 +818,7 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0-alpha1</td>
-      <td>Yes</td>
-      <td>27.04.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha1/camunda-optimize-2.1.0-alpha1-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha1/camunda-optimize-2.1.0-alpha1-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.1.0-alpha1</td>
-      <td>No</td>
+      <td>7.7+</td>
       <td>27.04.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0-alpha1/camunda-optimize-2.1.0-alpha1-standalone.zip">zip</a>&nbsp;
@@ -750,18 +829,6 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0</td>
       <td>7.7+</td>
-      <td>Yes</td>
-      <td>29.03.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.0.0</td>
-      <td>7.7+</td>
-      <td>No</td>
       <td>29.03.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.zip">zip</a>&nbsp;
@@ -772,18 +839,6 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha3</td>
       <td>7.7+</td>
-      <td>Yes</td>
-      <td>02.03.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha3/camunda-optimize-2.0.0-alpha3-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha3/camunda-optimize-2.0.0-alpha3-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.0.0-alpha3</td>
-      <td>7.7+</td>
-      <td>No</td>
       <td>02.03.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha3/camunda-optimize-2.0.0-alpha3-standalone.zip">zip</a>&nbsp;
@@ -794,40 +849,16 @@ The Camunda Modeler is an open source process modeling tool based on [bpmn.io](h
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha2</td>
       <td>7.7+</td>
-      <td>Yes</td>
-      <td>26.01.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha2/camunda-optimize-2.0.0-alpha2-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha2/camunda-optimize-2.0.0-alpha2-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.0.0-alpha2</td>
-      <td>7.7+</td>
-      <td>No</td>
       <td>26.01.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha2/camunda-optimize-2.0.0-alpha2-standalone.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha2/camunda-optimize-2.0.0-alpha2-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
-	<tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.0.0-alpha1</td>
-      <td>7.7+</td>
-      <td>Yes</td>
-      <td>14.12.2017</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha1/camunda-optimize-2.0.0-alpha1-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha1/camunda-optimize-2.0.0-alpha1-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0-alpha1</td>
       <td>7.7+</td>
-      <td>No</td>
       <td>14.12.2017</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0-alpha1/camunda-optimize-2.0.0-alpha1-standalone.zip">zip</a>&nbsp;
