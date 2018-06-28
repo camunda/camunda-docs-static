@@ -736,7 +736,7 @@ To install the full distribution, please download one of the following archives:
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0</td>
       <td>7.8.7, 7.9.1, 7.10+</td>
-      <td>31.05.2018</td>
+      <td>29.06.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-full.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-full.tar.gz">tar.gz</a>
@@ -832,7 +832,7 @@ To get the standalone distribution, please download one of the following archive
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0</td>
       <td>7.8.7, 7.9.1, 7.10+</td>
-      <td>31.05.2018</td>
+      <td>29.06.2018</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.tar.gz">tar.gz</a>
