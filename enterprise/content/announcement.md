@@ -16,9 +16,23 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 # List of Announcements
 
+## Camunda BPM 7.10
+
+__Release Date:__ scheduled for 30th of November 2018
+
+__End of Maintenance:__ 31st of May 2020
+
+__Changes in Supported Environments:__
+
+* Support for the latest VeRsion of the Wildfly Application Server
+* Support for Java Version > 8
+* End of Support for Application Server IBM 8.0
+* End of Support for Java 6
+
+
 ## Camunda BPM 7.9
 
-__Release Date:__ scheduled for 31st of May 2018
+__Release Date:__ 31st of May 2018
 
 __End of Maintenance:__ 30th of November 2019
 
