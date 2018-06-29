@@ -49,6 +49,14 @@ downloads:
     server: "tomcat"
 
   branches:
+  - branch: "7.10"
+    releases:
+    - number: "7.10.0-alpha1"
+      note: "https://blog.camunda.org/post/2018/06/camunda-bpm-7100-alpha1-released/"
+      date: "2018.06.29"
+      excludeservers:
+      - "glassfish"
+
   - branch: "7.9"
     releases:
     - number: "7.9.1"
