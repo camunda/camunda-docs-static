@@ -24,7 +24,7 @@ __End of Maintenance:__ 31st of May 2020
 
 __Changes in Supported Environments:__
 
-* Support for the latest VeRsion of the Wildfly Application Server
+* Support for the latest Version of the Wildfly Application Server
 * Support for Java Version > 8
 * End of Support for Application Server IBM 8.0
 * End of Support for Java 6
