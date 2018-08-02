@@ -51,6 +51,12 @@ downloads:
   branches:
   - branch: "7.10"
     releases:
+    - number: "7.10.0-alpha2"
+      note: "https://blog.camunda.org/post/2018/07/camunda-bpm-7100-alpha2-released/"
+      date: "2018.08.03"
+      excludeservers:
+      - "glassfish"
+
     - number: "7.10.0-alpha1"
       note: "https://blog.camunda.org/post/2018/06/camunda-bpm-7100-alpha1-released/"
       date: "2018.06.29"
