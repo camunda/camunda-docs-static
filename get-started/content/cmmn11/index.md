@@ -2,7 +2,7 @@
 
 title: 'Get started with Camunda and CMMN 1.1'
 layout: 'section-list'
-weight: 7
+weight: 9
 
 menu:
   main:

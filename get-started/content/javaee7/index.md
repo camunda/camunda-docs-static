@@ -2,7 +2,7 @@
 
 title: 'Get Started with Camunda and Java EE 7'
 layout: "section-list"
-weight: 5
+weight: 7
 
 menu:
   main:
