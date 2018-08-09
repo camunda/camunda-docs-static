@@ -28,7 +28,7 @@ __Changes in Supported Environments:__
 * Support for Java Version > 8
 * Support for Database PostgreSQL 10.4
 * Support for Database MariaDB 10.3
-* End of Support for Application Server IBM 8.0
+* End of Support for Application Server IBM WebSphere 8.0
 * End of Support for Java 6
 
 
