@@ -45,7 +45,7 @@ downloads:
 
   selected:
     branch: "7.9"
-    version: "7.9.2"
+    version: "7.9.3"
     server: "tomcat"
 
   branches:
@@ -65,6 +65,12 @@ downloads:
 
   - branch: "7.9"
     releases:
+    - number: "7.9.3"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15324"
+      date: "2018.08.29"
+      excludeservers:
+      - "glassfish"      
+
     - number: "7.9.2"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15310"
       date: "2018.07.17"
@@ -85,6 +91,13 @@ downloads:
 
   - branch: "7.8"
     releases:
+    - number: "7.8.9"
+      note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15325"
+      date: "2018.08.29"
+      excludeservers:
+      - "wildfly11"
+      - "glassfish"
+
     - number: "7.8.8"
       note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15309"
       date: "2018.07.17"
