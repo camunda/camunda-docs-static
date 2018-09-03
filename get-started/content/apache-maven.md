@@ -32,6 +32,8 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 
 ## Enterprise Edition
 
+To use the Enterprise Edition dependencies, you have to add the [Enterprise Edition Maven Repository](#enterprise-edition-1) to your project.
+
 ```xml
 <dependency>
   <groupId>org.camunda.bpm</groupId>
@@ -137,6 +139,16 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 </repositories>
 ```
 
+Using the Enterprise Edition repository requires credentials in your Maven settings `~/.m2/settings.xml`:
+```xml
+  <servers>
+    <server>
+      <id>camunda-bpm-nexus-ee</id>
+      <username>YOUR_USERNAME</username>
+      <password>YOUR_PASSWORD</password>
+    </server>
+  </servers>
+```
 
 # Other Camunda Modules:
 
