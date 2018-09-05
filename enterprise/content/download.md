@@ -677,7 +677,7 @@ downloads:
 
 Not sure which distribution to download? Find more information about the [Full Distribution](/manual/latest/introduction/downloading-camunda/#full-distribution) and the [Standalone Web Application](/manual/latest/introduction/downloading-camunda/#standalone-web-application-distribution) in our user guide.
 
-Furthermore, we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle" >}}), the [Camunda Web Modeler]({{< relref "#camunda-web-modeler" >}}) and [Camunda Enterprise Extensions]({{< relref "#enterprise-extensions" >}}) on this page.
+Furthermore, we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle" >}}), the [Camunda Modeler]({{< relref "#camunda-modeler" >}}) and [Camunda Enterprise Extensions]({{< relref "#enterprise-extensions" >}}) on this page.
 
 # Full Distributions and Standalone Web Applications of the Enterprise Edition
 
