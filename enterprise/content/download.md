@@ -91,13 +91,6 @@ downloads:
             - "glassfish"
             - "ibm-was-85"
 
-        - number: "7.9.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15329"
-          date: "2018.09.26"
-          excludeservers:
-            - "glassfish"
-            - "ibm-was-85"
-
         - number: "7.9.3"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15324"
           date: "2018.08.29"
@@ -131,14 +124,6 @@ downloads:
         - number: "7.8.11"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15336"
           date: "2018.09.28"
-          excludeservers:
-            - "wildfly11"
-            - "glassfish"
-            - "ibm-was-85"
-
-        - number: "7.8.10"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15330"
-          date: "2018.09.26"
           excludeservers:
             - "wildfly11"
             - "glassfish"
