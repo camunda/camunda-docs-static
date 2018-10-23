@@ -1054,8 +1054,8 @@ To get the standalone distribution, please download one of the following archive
       <td>7.8.7+, 7.9.1+, 7.10+</td>
       <td>28.09.2018</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -1064,8 +1064,8 @@ To get the standalone distribution, please download one of the following archive
       <td>7.8.7+, 7.9.1+, 7.10+</td>
       <td>30.08.2018</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha2/camunda-optimize-2.2.0-alpha2-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha2/camunda-optimize-2.2.0-alpha2-standalone.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha2/camunda-optimize-2.2.0-alpha2-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha2/camunda-optimize-2.2.0-alpha2-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -1074,8 +1074,8 @@ To get the standalone distribution, please download one of the following archive
       <td>7.8.7+, 7.9.1+, 7.10+</td>
       <td>03.08.2018</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha1/camunda-optimize-2.2.0-alpha1-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha1/camunda-optimize-2.2.0-alpha1-standalone.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha1/camunda-optimize-2.2.0-alpha1-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0-alpha1/camunda-optimize-2.2.0-alpha1-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -1084,8 +1084,8 @@ To get the standalone distribution, please download one of the following archive
       <td>7.8.7+, 7.9.1+, 7.10+</td>
       <td>29.06.2018</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -1094,8 +1094,8 @@ To get the standalone distribution, please download one of the following archive
       <td>7.7+</td>
       <td>29.03.2018</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
 </table>
