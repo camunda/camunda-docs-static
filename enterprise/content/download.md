@@ -56,16 +56,16 @@ downloads:
   branches:
     - branch: "7.10"
       releases:
-      # Commented out (YAML) until 7.10.0-alpha5 is released
-      #  - number: "7.10.0-alpha5"
-      #    note: "https://blog.camunda.org/post/2018/10/camunda-bpm-7100-alpha5-released/"
-      #    date: "2018.10.25"
-      #    excludeservers:
-      #      - "wildfly11"
-      #      - "wildfly10"
-      #      - "wildfly8"
-      #      - "glassfish"
-      #      - "ibm-was"
+
+        - number: "7.10.0-alpha5"
+          note: "https://blog.camunda.org/post/2018/10/camunda-bpm-7100-alpha5-released/"
+          date: "2018.10.25"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
 
         - number: "7.10.0-alpha4"
           note: "https://blog.camunda.org/post/2018/09/camunda-bpm-7100-alpha4-released/"
