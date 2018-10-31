@@ -268,7 +268,7 @@ downloads:
             - "wildfly"
             - "wildfly11"
             - "glassfish"
-            - "ibm-was-85
+            - "ibm-was-85"
 
         - number: "7.7.9"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15294"
