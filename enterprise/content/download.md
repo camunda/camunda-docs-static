@@ -1001,6 +1001,16 @@ To install the full distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.3.0-alpha1</td>
+      <td>7.8.7+, 7.9.1+, 7.10+</td>
+      <td>02.11.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0-alpha1/camunda-optimize-2.3.0-alpha1-full.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0-alpha1/camunda-optimize-2.3.0-alpha1-full.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.2.0</td>
       <td>7.8.7+, 7.9.1+, 7.10+</td>
       <td>28.09.2018</td>
@@ -1074,6 +1084,16 @@ To get the standalone distribution, please download one of the following archive
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.3.0-alpha1</td>
+      <td>7.8.7+, 7.9.1+, 7.10+</td>
+      <td>02.11.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0-alpha1/camunda-optimize-2.3.0-alpha1-standalone.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0-alpha1/camunda-optimize-2.3.0-alpha1-standalone.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.2.0</td>
