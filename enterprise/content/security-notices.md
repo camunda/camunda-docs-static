@@ -33,7 +33,7 @@ There is a single usage scenario which is affected:
 Camunda has provided the patches v7.9.7, v7.8.12, v7.7.10 which provide the fix:
 
 * [CAM-9285](https://app.camunda.com/jira/browse/CAM-9285): Prevention of External Entity Processing.
-  This fixes the security vulnerability described [here](https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing). Further configuration options are documented [here](http://localhost:1313/manual/develop/reference/deployment-descriptors/tags/process-engine/#configuration-properties).
+  This fixes the security vulnerability described [here](https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing). Further configuration options are documented [here](https://docs.camunda.org/manual/latest/reference/deployment-descriptors/tags/process-engine/#configuration-properties).
 
 ## Notice 3
 
