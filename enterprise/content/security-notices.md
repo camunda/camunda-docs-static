@@ -18,7 +18,7 @@ releases of the community platform.
 
 ## Notice 4
 
-**Publication Date: October 31st, 2018**
+**Publication Date: November 30th, 2018**
 
 The Camunda BPM Platform has obtained a security fix related to XML eXternal Entity (XXE) Processing. A BPMN Model (XML) can be uploaded containing a reference to an external entity. When processed by a weakly configured XML parser, this attack may lead to the disclosure of confidential data, denial of service, server side request forgery etc.
 
