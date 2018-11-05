@@ -16,6 +16,25 @@ releases of the community platform.
 
 # Notices
 
+## Notice 4
+
+**Publication Date: October 31st, 2018**
+
+The Camunda BPM Platform has obtained a security fix related to XML eXternal Entity (XXE) Processing. A BPMN Model (XML) can be uploaded containing a reference to an external entity. When processed by a weakly configured XML parser, this attack may lead to the disclosure of confidential data, denial of service, server side request forgery etc.
+
+**How to determine if the installation is affected**
+
+There is a single usage scenario which is affected:
+
+* When uploading a BPMN Model (XML) that contains a reference to an external entity, a `ProcessEngineException` will be thrown. The exception message will contain the content of the external entity (ex. `/etc/passwd`).
+
+**Solution**
+
+Camunda has provided the patches v7.9.7, v7.8.12, v7.7.10 which provide the fix:
+
+* [CAM-9285](https://app.camunda.com/jira/browse/CAM-9285): Prevention of External Entity Processing.
+  This fixes the security vulnerability described [here](https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing). Further configuration options are documented [here](http://localhost:1313/manual/develop/reference/deployment-descriptors/tags/process-engine/#configuration-properties).
+
 ## Notice 3
 
 **Publication Date: September 19th, 2018**
