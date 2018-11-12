@@ -1,7 +1,6 @@
 ---
 
 title: 'Get started with Camunda and BPMN 2.0'
-layout: "section-list"
 weight: 6
 
 menu:

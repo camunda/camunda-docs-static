@@ -1,7 +1,6 @@
 ---
 
 title: 'Get started with Camunda'
-layout: "section-list"
 weight: 1
 
 menu:

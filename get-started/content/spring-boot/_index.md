@@ -1,7 +1,6 @@
 ---
 
 title: 'Get started with Camunda and the Spring Boot'
-layout: "section-list"
 weight: 2
 
 menu:

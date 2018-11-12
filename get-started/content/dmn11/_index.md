@@ -1,7 +1,6 @@
 ---
 
 title: 'Get started with Camunda and DMN 1.1'
-layout: "section-list"
 weight: 4
 
 menu:
