@@ -57,6 +57,16 @@ downloads:
     - branch: "7.10"
       releases:
 
+        - number: "7.10.0-alpha6"
+          note: ""
+          date: "2018.11.16"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.10.0-alpha5"
           note: "https://blog.camunda.org/post/2018/10/camunda-bpm-7100-alpha5-released/"
           date: "2018.10.25"
