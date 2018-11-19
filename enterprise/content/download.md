@@ -58,7 +58,7 @@ downloads:
       releases:
 
         - number: "7.10.0-alpha6"
-          note: ""
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15353"
           date: "2018.11.16"
           excludeservers:
             - "wildfly11"
