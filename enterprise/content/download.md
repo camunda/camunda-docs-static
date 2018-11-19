@@ -1,5 +1,5 @@
 ---
-title: "Download"
+title: "Enterprise Download"
 weight: 10
 
 menu:
@@ -868,19 +868,23 @@ downloads:
             - "ibm-was-85"
 ---
 
-# What Should I Download?
+On this page we provide downloads for the Camunda BPM Enterprise Platform including:
 
-Not sure which distribution to download? Find more information about the [Full Distribution](/manual/latest/introduction/downloading-camunda/#full-distribution) and the [Standalone Web Application](/manual/latest/introduction/downloading-camunda/#standalone-web-application-distribution) in our user guide.
+- [Camunda BPM]({{< relref "#camunda-bpm" >}})
+- [Camunda Optimize]({{< relref "#camunda-optimize" >}})
+- [Camunda Modeler]({{< relref "#camunda-cycle" >}})
 
-Furthermore, we provide downloads for [Camunda Cycle]({{< relref "#camunda-cycle" >}}), the [Camunda Modeler]({{< relref "#camunda-modeler" >}}) and [Camunda Enterprise Extensions]({{< relref "#enterprise-extensions" >}}) on this page.
 
-# Full Distributions and Standalone Web Applications of the Enterprise Edition
+## Camunda BPM
 
+### Full Distributions and Standalone Web Applications
 This page contains the latest versions of all supported branches. In addition, we provide alpha releases of the current development branch. Please note that an alpha release is not fully tested and just a snapshot of the current development state.
+
+Find more information about the [Full Distribution](/manual/latest/introduction/downloading-camunda/#full-distribution) and the [Standalone Web Application](/manual/latest/introduction/downloading-camunda/#standalone-web-application-distribution) in our user guide.
 
 {{< ee-download >}}
 
-## Additional Information
+### Additional Information
 
 - [Maven Coordinates](/get-started/apache-maven)
 - [Update and Migration Guide](/manual/latest/update)
@@ -888,62 +892,15 @@ This page contains the latest versions of all supported branches. In addition, w
 - [Examples](/manual/latest/examples)
 - [Supported Environments](/manual/latest/introduction/supported-environments)
 - [Previous Versions](https://camunda.org/enterprise-release/)
+- [XSLT Extension 1.0.2](https://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/1.0.2/camunda-bpm-ee-xslt-extension-1.0.2.zip)
 
-## Community vs. Enterprise Releases
-
-There is both a community and an enterprise edition of Camunda BPM. Among these, we distinguish between four different types of releases:
-
-1. **Major Release**: The Major release contains features and bugfixes. It is fully tested and meant to be used for production systems. The Major release may contain incompatible API changes. The release is done in parallel for the community edition and for the enterprise edition.
-2. **Minor Release**: The Minor release contains features and bugfixes. It is fully tested and meant to be used for production systems. In Minor releases we add functionality in a backwards compatible manner. The release is done in parallel for the community edition and for the enterprise edition.
-3. **Development Release**: On the community branch and on the enterprise branch we release _ALPHA_ versions in short iteration cycles. Development releases contain the latest features and bug fixes. The Development release is not fully tested and is a snapshot of the current development state.
-4. **Patch Release**: On the enterprise branch we perform patch releases, in which we backport the latest bug fixes. Patch releases are fully tested and are meant to be used for production systems. Patch releases do not contain new features and are only available to enterprise customers.
-
-The following drawing illustrates the different release types for the community edition and the enterprise editions.
-
-{{< img src="../img/releases.png" title="Releases" >}}
-
-The Camunda versioning scheme follows the MAJOR.MINOR.PATCH pattern put forward by [Semantic Versioning](http://semver.org/).
-
-# Enterprise Extensions
-
-## XSLT Extension
-
-Please note that this feature can be used from Camunda BPM 7.2.x onwards.
-
-<table class="table">
-  <thead>
-    <tr>
-      <th class="col-md-2">Name</th>
-      <th class="col-md-2">Version</th>
-      <th class="col-md-2">Release Date</th>
-      <th class="col-md-2">Download</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="well">
-      <td><a href="/manual/latest/user-guide/process-engine/templating/#use-xslt-as-template-engine">XSLT Extension</a></td>
-      <td>1.0.2</td>
-      <td>22.05.2015</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/1.0.2/camunda-bpm-ee-xslt-extension-1.0.2.zip">download zip file</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-[Previous Releases](https://camunda.org/enterprise-release/camunda-bpm/extensions/xslt/)
-
-# Camunda Modeler
-
-The Camunda Modeler is an open source process modeling tool based on [bpmn.io](http://bpmn.io/). It is a desktop application that allows you to edit BPMN process diagrams, DMN decision tables and CMMN diagrams located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.org/download/modeler/).
-
-# Camunda Optimize
+## Camunda Optimize
 
 [Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/installation/).
 
 ### Full Distribution with Elasticsearch
 
-Download the full distribution if you want to use Optimize with an embedded Elasticsearch or if you
+Download this distribution if you want to use Optimize with an embedded Elasticsearch or if you
 want to get to know Optimize quickly, without any additional setup or installation steps required.
 
 The full distribution bundles
@@ -1115,7 +1072,11 @@ To get the standalone distribution, please download one of the following archive
 
 [Previous Releases](https://camunda.org/enterprise-release/optimize/)
 
-# Camunda Cycle
+## Camunda Modeler
+
+The Camunda Modeler is an open source process modeling tool based on [bpmn.io](http://bpmn.io/). It is a desktop application that allows you to edit BPMN process diagrams, DMN decision tables and CMMN diagrams located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.org/download/modeler/).
+
+## Camunda Cycle
 
 With Camunda BPM 7.2.0 we migrated Camunda Cycle into a standalone project. We did this to reduce the tight coupling between Camunda Cycle and the Camunda BPM platform. This eases our development efforts for Cycle and allows others to increase participation.
 
