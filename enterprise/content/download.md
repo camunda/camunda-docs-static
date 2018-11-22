@@ -56,56 +56,13 @@ downloads:
   branches:
     - branch: "7.10"
       releases:
-
-        - number: "7.10.0-alpha6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15353"
-          date: "2018.11.16"
+        - number: "7.10.0"
+          note: ""
+          date: "2018.11.30"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.10.0-alpha5"
-          note: "https://blog.camunda.org/post/2018/10/camunda-bpm-7100-alpha5-released/"
-          date: "2018.10.25"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.10.0-alpha4"
-          note: "https://blog.camunda.org/post/2018/09/camunda-bpm-7100-alpha4-released/"
-          date: "2018.09.28"
-          excludeservers:
-            - "wildfly"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.10.0-alpha3"
-          note: "https://blog.camunda.org/post/2018/08/camunda-bpm-7100-alpha3-released/"
-          date: "2018.08.31"
-          excludeservers:
-            - "wildfly"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.10.0-alpha2"
-          note: "https://blog.camunda.org/post/2018/07/camunda-bpm-7100-alpha2-released/"
-          date: "2018.08.03"
-          excludeservers:
-            - "wildfly"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.10.0-alpha1"
-          note: "https://blog.camunda.org/post/2018/06/camunda-bpm-7100-alpha1-released/"
-          date: "2018.06.29"
-          excludeservers:
-            - "wildfly"
             - "glassfish"
             - "ibm-was"
 
