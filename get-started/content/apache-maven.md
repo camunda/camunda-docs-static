@@ -24,7 +24,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 <dependency>
   <groupId>org.camunda.bpm</groupId>
   <artifactId>camunda-bom</artifactId>
-  <version>7.9.0</version>
+  <version>7.10.0</version>
   <scope>import</scope>
   <type>pom</type>
 </dependency>
@@ -38,7 +38,7 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 <dependency>
   <groupId>org.camunda.bpm</groupId>
   <artifactId>camunda-bom</artifactId>
-  <version>7.9.0-ee</version>
+  <version>7.10.0-ee</version>
   <scope>import</scope>
   <type>pom</type>
 </dependency>
@@ -84,7 +84,7 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 <dependency>
   <groupId>org.camunda.bpm.dmn</groupId>
   <artifactId>camunda-engine-dmn-bom</artifactId>
-  <version>7.9.0</version>
+  <version>7.10.0</version>
   <type>pom</type>
   <scope>import</scope>
 </dependency>
