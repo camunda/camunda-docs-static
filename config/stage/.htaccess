@@ -13,10 +13,10 @@ RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1
 # Manual without version
 RewriteRule ^manual/$ /manual/7.10/ [R=301,L]
 
-# Redirect /manual/X to /manual/7.10 if folder X does not exits
+# Redirect /manual/X to /manual/develop if folder X does not exits
 RewriteCond %{REQUEST_URI} ^/manual/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/(.*) /manual/7.10/$1 [R=301,L]
+RewriteRule ^manual/(.*) /manual/develop/$1 [R=301,L]
 
 # Optimize without version
 RewriteRule ^optimize/$ /optimize/develop/ [R=301,L]
