@@ -78,6 +78,14 @@ downloads:
 
     - branch: "7.9"
       releases:
+        - number: "7.9.8"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15344"
+          date: "2018.12.13"
+          excludeservers:
+            - "wildfly"
+            - "glassfish"
+            - "ibm-was-85"
+
         - number: "7.9.7"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15341"
           date: "2018.11.28"
