@@ -205,7 +205,7 @@ Make sure you have the following tools installed:
 ```sh
 mkdir charge-card-worker
 cd ./charge-card-worker
-npm init charge-card-worker -y
+npm init -y
 ```
 
 ### Add Camunda External Task Client JS library
