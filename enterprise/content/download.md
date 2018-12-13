@@ -50,12 +50,22 @@ downloads:
 
   selected:
     branch: "7.10"
-    version: "7.10.0"
+    version: "7.10.1"
     server: "tomcat"
 
   branches:
     - branch: "7.10"
       releases:
+        - number: "7.10.1"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15345"
+          date: "2018.12.13"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.10.0"
           note: "https://blog.camunda.com/post/2018/11/camunda-bpm-7100-released/"
           date: "2018.11.30"
