@@ -130,6 +130,11 @@ Your pom.xml file of your project should look like this:
 			<artifactId>camunda-external-task-client</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.6.1</version>
+		</dependency>
 	</dependencies>
 </project>
 ```
@@ -156,6 +161,7 @@ public class ChargeCardWorker {
   public static void main(String[] args) {
     ExternalTaskClient client = ExternalTaskClient.create()
         .baseUrl("http://localhost:8080/engine-rest")
+        .asyncResponseTimeout(10000) // long polling timeout
         .build();
 
     // subscribe to an external task topic as specified in the process
@@ -229,7 +235,8 @@ const { Client, logger } = require('camunda-external-task-client-js');
 // configuration for the Client:
 //  - 'baseUrl': url to the Process Engine
 //  - 'logger': utility to automatically log important events
-const config = { baseUrl: 'http://localhost:8080/engine-rest', use: logger };
+//  - 'asyncResponseTimeout': long polling timeout (then a new request will be issued)
+const config = { baseUrl: 'http://localhost:8080/engine-rest', use: logger, asyncResponseTimeout: 10000 };
 
 // create a Client instance with custom configuration
 const client = new Client(config);
