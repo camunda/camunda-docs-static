@@ -26,6 +26,10 @@ RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
 RewriteRule ^optimize/(.*) /optimize/develop/$1 [R=301,L]
 
+# Optimize configuration
+RewriteRule ^optimize/develop/technical-guide/configuration/$ optimize/develop/technical-guide/setup/configuration/ [R=301,L]
+RewriteRule ^optimize/latest/technical-guide/configuration/$ optimize/latest/technical-guide/setup/configuration/ [R=301,L]
+
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/enterprise /enterprise/ [R=301,L]
