@@ -933,19 +933,19 @@ Find more information about the [Full Distribution](/manual/latest/introduction/
 
 [Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/installation/).
 
-### Full Distribution with Elasticsearch
+### Demo Distribution with Elasticsearch
 
 Download this distribution if you want to use Optimize with an embedded Elasticsearch or if you
 want to get to know Optimize quickly, without any additional setup or installation steps required.
 
-The full distribution bundles
+The demo distribution bundles
 
 - Optimize
 - The Container / Application Server itself
 - Configuration files and plugin folder
 - Elasticsearch
 
-To install the full distribution, please download one of the following archives:
+To install the demo distribution, please download one of the following archives:
 
 <table class="table">
   <thead>
@@ -958,6 +958,16 @@ To install the full distribution, please download one of the following archives:
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.3.0</td>
+      <td>7.8.13+, 7.9.7+, 7.10+</td>
+      <td>21.12.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-demo.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.3.0-alpha2</td>
@@ -1030,9 +1040,9 @@ To install the full distribution, please download one of the following archives:
     </tr>
 </table>
 
-### Standalone Distribution without Elasticsearch
+### Production Distribution without Elasticsearch
 
-You can download the standalone Optimize distribution to use it in your production environment, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance.
+You can download the production Optimize distribution to use it in your production environment, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance.
 
 This distribution bundles
 
@@ -1040,7 +1050,7 @@ This distribution bundles
 - Container / Application Server itself
 - Configuration files and plugin folder
 
-To get the standalone distribution, please download one of the following archives:
+To get the production distribution, please download one of the following archives:
 
 <table class="table">
   <thead>
@@ -1053,10 +1063,20 @@ To get the standalone distribution, please download one of the following archive
     </tr>
   </thead>
   <tbody>
-    <tr class="well">
+     <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.3.0</td>
+      <td>7.8.13+, 7.9.7+, 7.10+</td>
+      <td>21.12.2018</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.3.0-alpha2</td>
-      <td>7.8.13+, 7.9.7+, 7.10+</td>
+      <td>7.8.7+, 7.9.1+, 7.10+</td>
       <td>30.11.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0-alpha2/camunda-optimize-2.3.0-alpha2-standalone.zip">zip</a>&nbsp;
