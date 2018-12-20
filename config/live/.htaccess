@@ -24,7 +24,7 @@ RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
 RewriteRule ^manual/(.*) /manual/7.10/$1 [R=301,L]
 
 # Optimize without version
-RewriteRule ^optimize/$ /optimize/2.2/ [R=301,L]
+RewriteRule ^optimize/$ /optimize/2.3/ [R=301,L]
 
 # Redirect /optimize/X to /optimize/2.2 if folder X does not exits
 RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
