@@ -953,6 +953,7 @@ To install the demo distribution, please download one of the following archives:
       <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
+      <th class="col-md-2">Supported Elasticsearch Versions</th>
       <th class="col-md-2">Release Date</th>
       <th class="col-md-2">Download</th>
     </tr>
@@ -962,6 +963,7 @@ To install the demo distribution, please download one of the following archives:
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.3.0</td>
       <td>7.8.13+, 7.9.7+, 7.10+</td>
+      <td>6.0.0</td>
       <td>21.12.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-demo.zip">zip</a>&nbsp;
@@ -972,6 +974,7 @@ To install the demo distribution, please download one of the following archives:
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.2.0</td>
       <td>7.8.7+, 7.9.1+, 7.10+</td>
+      <td>6.0.0</td>
       <td>28.09.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-full.zip">zip</a>&nbsp;
@@ -982,6 +985,7 @@ To install the demo distribution, please download one of the following archives:
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0</td>
       <td>7.8.7+, 7.9.1+, 7.10+</td>
+      <td>6.0.0</td>
       <td>29.06.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-full.zip">zip</a>&nbsp;
@@ -992,6 +996,7 @@ To install the demo distribution, please download one of the following archives:
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0</td>
       <td>7.7+</td>
+      <td>6.0.0</td>
       <td>29.03.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.zip">zip</a>&nbsp;
@@ -1018,6 +1023,7 @@ To get the production distribution, please download one of the following archive
       <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
+      <th class="col-md-2">Supported Elasticsearch Versions</th>
       <th class="col-md-2">Release Date</th>
       <th class="col-md-2">Download</th>
     </tr>
@@ -1027,6 +1033,7 @@ To get the production distribution, please download one of the following archive
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.3.0</td>
       <td>7.8.13+, 7.9.7+, 7.10+</td>
+      <td>6.0.0</td>
       <td>21.12.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-production.zip">zip</a>&nbsp;
@@ -1036,6 +1043,7 @@ To get the production distribution, please download one of the following archive
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.2.0</td>
       <td>7.8.7+, 7.9.1+, 7.10+</td>
+      <td>6.0.0</td>
       <td>28.09.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.zip">zip</a>&nbsp;
@@ -1046,6 +1054,7 @@ To get the production distribution, please download one of the following archive
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.1.0</td>
       <td>7.8.7+, 7.9.1+, 7.10+</td>
+      <td>6.0.0</td>
       <td>29.06.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.zip">zip</a>&nbsp;
@@ -1056,6 +1065,7 @@ To get the production distribution, please download one of the following archive
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.0.0</td>
       <td>7.7+</td>
+      <td>6.0.0</td>
       <td>29.03.2018</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.zip">zip</a>&nbsp;
