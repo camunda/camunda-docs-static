@@ -32,6 +32,14 @@ RewriteRule ^optimize/latest/technical-guide/configuration/$ /optimize/latest/te
 RewriteRule ^optimize/develop/technical-guide/installation/$ /optimize/develop/technical-guide/setup/installation/ [R=301,L]
 RewriteRule ^optimize/latest/technical-guide/installation/$ /optimize/latest/technical-guide/setup/installation/ [R=301,L]
 
+# Cawemo without version
+RewriteRule ^cawemo/$ /cawemo/develop/ [R=307,L]
+
+# Redirect /cawemo/X to /cawemo/develop if folder X does not exits
+RewriteCond %{REQUEST_URI} ^/cawemo/([^/]+)
+RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
+RewriteRule ^cawemo/(.*) /cawemo/develop/$1 [R=307,L]
+
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/enterprise /enterprise/ [R=301,L]
