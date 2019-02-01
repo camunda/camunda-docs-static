@@ -949,7 +949,7 @@ Find more information about the [Full Distribution](/manual/latest/introduction/
 
 ## Camunda Optimize
 
-[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes. It helps process owners to make informed decisions to optimize their processes. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
+[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
 
 ### Demo Distribution with Elasticsearch
 
