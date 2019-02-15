@@ -16,18 +16,20 @@ This page lists the most commonly used Apache Maven Coordinates for Camunda.
 Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#browse%7C-1675593179).
 
 
-# Camunda Bom (Bill of Materials)
+# Camunda BOM (Bill of Materials)
 
 ## Community Edition
 
 ```xml
-<dependency>
-  <groupId>org.camunda.bpm</groupId>
-  <artifactId>camunda-bom</artifactId>
-  <version>7.10.0</version>
-  <scope>import</scope>
-  <type>pom</type>
-</dependency>
+<dependencyManagement>
+  <dependency>
+    <groupId>org.camunda.bpm</groupId>
+    <artifactId>camunda-bom</artifactId>
+    <version>7.10.0</version>
+    <scope>import</scope>
+    <type>pom</type>
+  </dependency>
+</dependencyManagement>
 ```
 
 ## Enterprise Edition
@@ -35,13 +37,15 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 To use the Enterprise Edition dependencies, you have to add the [Enterprise Edition Maven Repository](#enterprise-edition-1) to your project.
 
 ```xml
-<dependency>
-  <groupId>org.camunda.bpm</groupId>
-  <artifactId>camunda-bom</artifactId>
-  <version>7.10.0-ee</version>
-  <scope>import</scope>
-  <type>pom</type>
-</dependency>
+<dependencyManagement>
+  <dependency>
+    <groupId>org.camunda.bpm</groupId>
+    <artifactId>camunda-bom</artifactId>
+    <version>7.10.0-ee</version>
+    <scope>import</scope>
+    <type>pom</type>
+  </dependency>
+</dependencyManagement>
 ```
 
 {{< note title="Use the BOM!" class="info" >}}
@@ -78,19 +82,24 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 </dependency>
 ```
 
-# Camunda DMN Engine BOM
+# Camunda DMN Engine BOM (Bill of Materials)
+This BOM allows to use the DMN engine standalone without the BPMN engine and the rest of the Camunda BPM platform.
 
 ```xml
-<dependency>
-  <groupId>org.camunda.bpm.dmn</groupId>
-  <artifactId>camunda-engine-dmn-bom</artifactId>
-  <version>7.10.0</version>
-  <type>pom</type>
-  <scope>import</scope>
-</dependency>
+<dependencyManagement>
+  <dependency>
+    <groupId>org.camunda.bpm.dmn</groupId>
+    <artifactId>camunda-engine-dmn-bom</artifactId>
+    <version>7.10.0</version>
+    <type>pom</type>
+    <scope>import</scope>
+  </dependency>
+</dependencyManagement>
 ```
 
 # Camunda DMN
+This dependency allows to use DMN engine standalone without the BPMN engine and the rest of the Camunda BPM platform.
+It is not needed when using `camunda-engine` because that already contains the DMN engine.
 
 ```xml
 <dependency>
@@ -99,7 +108,7 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 </dependency>
 ```
 
-# Process Aplication Ejb Client
+# Process Aplication EJB Client
 
 ```xml
 <dependency>
