@@ -50,7 +50,7 @@ downloads:
 
   selected:
     branch: "7.10"
-    version: "7.10.2"
+    version: "7.10.3"
     server: "tomcat"
 
   branches:
