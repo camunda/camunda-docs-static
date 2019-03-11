@@ -16,20 +16,20 @@ RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.1
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
 
 # Manual without version
-RewriteRule ^manual/$ /manual/7.10/ [R=301,L]
+RewriteRule ^manual/$ /manual/latest/ [R=301,L]
 
-# Redirect /manual/X to /manual/7.10 if folder X does not exits
+# Redirect /manual/X to /manual/latest if folder X does not exist
 RewriteCond %{REQUEST_URI} ^/manual/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/(.*) /manual/7.10/$1 [R=301,L]
+RewriteRule ^manual/[^/]+(.*) /manual/latest$1 [R=307,L]
 
 # Optimize without version
-RewriteRule ^optimize/$ /optimize/2.3/ [R=301,L]
+RewriteRule ^optimize/$ /optimize/latest/ [R=301,L]
 
-# Redirect /optimize/X to /optimize/2.3 if folder X does not exits
+# Redirect /optimize/X to /optimize/latest if folder X does not exist
 RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
-RewriteRule ^optimize/(.*) /optimize/2.3/$1 [R=301,L]
+RewriteRule ^optimize/[^/]+(.*) /optimize/latest$1 [R=307,L]
 
 # Optimize technical guide
 RewriteRule ^optimize/develop/technical-guide/configuration/$ /optimize/develop/technical-guide/setup/configuration/ [R=301,L]
