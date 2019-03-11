@@ -13,18 +13,18 @@ RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1
 # Manual without version
 RewriteRule ^manual/$ /manual/7.10/ [R=301,L]
 
-# Redirect /manual/X to /manual/develop if folder X does not exits
+# Redirect /manual/X to /manual/develop if folder X does not exist
 RewriteCond %{REQUEST_URI} ^/manual/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/(.*) /manual/develop/$1 [R=301,L]
+RewriteRule ^manual/[^/]+(.*) /manual/latest$1 [R=307,L]
 
 # Optimize without version
 RewriteRule ^optimize/$ /optimize/develop/ [R=301,L]
 
-# Redirect /optimize/X to /optimize/develop if folder X does not exits
+# Redirect /optimize/X to /optimize/latest if folder X does not exist
 RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
-RewriteRule ^optimize/(.*) /optimize/develop/$1 [R=301,L]
+RewriteRule ^optimize/[^/]+(.*) /optimize/latest$1 [R=307,L]
 
 # Optimize technical guide
 RewriteRule ^optimize/develop/technical-guide/configuration/$ /optimize/develop/technical-guide/setup/configuration/ [R=301,L]
@@ -35,15 +35,20 @@ RewriteRule ^optimize/latest/technical-guide/installation/$ /optimize/latest/tec
 # Cawemo without version
 RewriteRule ^cawemo/$ /cawemo/develop/ [R=307,L]
 
-# Redirect /cawemo/X to /cawemo/develop if folder X does not exits
+# Redirect /cawemo/X to /cawemo/develop if folder X does not exist
 RewriteCond %{REQUEST_URI} ^/cawemo/([^/]+)
 RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
-RewriteRule ^cawemo/(.*) /cawemo/develop/$1 [R=307,L]
+RewriteRule ^cawemo/[^/]+(.*) /cawemo/develop$1 [R=307,L]
 
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/enterprise /enterprise/ [R=301,L]
 
+# Redirect /get-started/cmmnXX to /get-started/cmmn11 if folder cmmnXX does not exist
+# Redirect /get-started/dmnXX to /get-started/dmn11 if folder dmnXX does not exist
+RewriteCond %{REQUEST_URI} ^/get-started/(dmn|cmmn)(\d+) 
+RewriteCond %{DOCUMENT_ROOT}/get-started/%1%2 !-d
+RewriteRule ^get-started/[^/]+(.*) /get-started/%111$1 [R=307,L]
 
 # CMMN 1.0
 RewriteRule ^get-started/cmmn10/(.*) /get-started/cmmn11/$1 [R=301,L]
