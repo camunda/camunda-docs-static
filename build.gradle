@@ -1,8 +1,26 @@
-apply plugin: 'java'
-apply plugin: 'groovy'
+plugins {
+  id 'java'
+  id 'groovy'
+  id 'maven'
+  id 'net.linguica.maven-settings' version '0.5'
+}
+
+ext {
+  project_jdk = '1.8'
+  nexusUrl = System.getProperty('nexus.url', 'https://app.camunda.com/nexus')
+  mavenSettingsFile = System.getProperty('maven.settings.file', System.getProperty('user.home') + "/.m2/settings.xml")
+}
+
+mavenSettings  {
+  userSettingsFileName mavenSettingsFile
+}
 
 repositories {
-    mavenCentral()
+  maven {
+    name 'camunda-nexus'
+    url 'https://app.camunda.com/nexus/content/groups/internal/'
+  }
+  mavenLocal()
 }
 
 dependencies {
@@ -17,4 +35,9 @@ sourceSets {
     }
 }
 
+test {
+    testLogging {
+        events "PASSED", "STARTED", "FAILED", "SKIPPED"
+    }
+}
 
