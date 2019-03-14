@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.codehaus.groovy:groovy-all:2.4.15'
+    testCompile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.15'
+    testCompile 'junit:junit:4.12'
+}
+
+sourceSets {
+    test {
+        groovy.srcDirs 'test'
+    }
+}
+
+
