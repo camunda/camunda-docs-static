@@ -27,7 +27,7 @@ abstract class TestHttpRedirection {
 
     @Test
     void testLocationHeader() {
-        if (this.target == "") return
+        if (this.target == "") return // Don't test Location header if target is empty, e.g. to test 404 or 200
         assertEquals(this.getBaseURI() + this.target, this.connection.getHeaderField("Location"))
     }
 
