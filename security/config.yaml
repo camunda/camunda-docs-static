@@ -1,7 +1,7 @@
 ---
-baseURL: "/get-started/"
+baseURL: "/security/"
 languageCode: "en-us"
-title: "Getting started with Camunda BPM"
+title: "Product Security Guide"
 theme: "camunda"
 
 blackfriday:
@@ -25,10 +25,10 @@ params:
       name: "Security"
       url: "/security"
   section:
-    id: "get-started"
+    id: "security"
   github:
     repositoryName: "camunda/camunda-docs-static"
-    branch: "master/get-started"
+    branch: "master/security"
 
 outputs:
   home:
