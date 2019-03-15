@@ -22,16 +22,23 @@ repositories {
   }
   mavenLocal()
 }
-
+configurations {
+  ivy
+}
 dependencies {
     testImplementation 'org.codehaus.groovy:groovy-all:2.4.15'
     testCompile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.15'
     testCompile 'junit:junit:4.12'
+    testCompile('org.yaml:snakeyaml:1.17')
+    ivy group: 'org.apache.ivy', name: 'ivy', version: '2.4.0'
 }
 
 sourceSets {
     test {
         groovy.srcDirs 'test'
+    }
+    resources {
+        files 'test/*.yml'
     }
 }
 
@@ -41,3 +48,6 @@ test {
     }
 }
 
+tasks.withType(GroovyCompile) {
+  groovyClasspath += configurations.ivy
+}
