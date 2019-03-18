@@ -34,6 +34,9 @@ Type *demo*.
 {{< img src="../img/modeler-usertask3.png" >}}
 
 # Configure a basic form in the User Task
+{{< note title="Embedded Forms" class="info" >}}
+For this guide, we are using generated Tasks. You can also create custom forms using librarys such as [AngularJS](https://github.com/camunda/camunda-bpm-examples/tree/master/usertask/task-form-embedded) or [React](https://github.com/camunda/camunda-bpm-examples/tree/master/usertask/task-form-embedded-react).
+{{< /note >}}
 This step will also take place in the properties panel. If the panel is not already visible, click on the "Properties Panel" label on the right-hand side of the Modeler canvas.
 
 Select the User Task on the canvas. This will update the selection in the properties view.
