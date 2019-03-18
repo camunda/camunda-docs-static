@@ -43,8 +43,8 @@ sourceSets {
 }
 
 test {
-    testLogging {
-        events "PASSED", "STARTED", "FAILED", "SKIPPED"
+    afterTest { desc, result -> 
+        logger.quiet "${result.resultType}  ${desc.name} [${desc.className}]"
     }
 }
 
