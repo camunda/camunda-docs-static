@@ -15,29 +15,50 @@ RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.
 RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11 [R=301,L]
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
 
-# Manual without version
-RewriteRule ^manual/$ /manual/latest/ [R=301,L]
+# manual without version
+RewriteRule ^manual/?$ /manual/latest/ [R=301,L]
 
-# Redirect /manual/X to /manual/latest if folder X does not exist
-RewriteCond %{REQUEST_URI} ^/manual/([^/]+)
+RewriteCond %{REQUEST_URI} ^/manual((?!latest/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/[^/]+(.*) /manual/latest$1 [R=307,L]
+RewriteRule ^manual/(.*) /manual/latest/ [R=307,L]
 
-# Optimize without version
-RewriteRule ^optimize/$ /optimize/latest/ [R=301,L]
+# Redirect /manual/X to /manual/latest/X if folder X does not exist but latest/X does
+RewriteCond %{REQUEST_URI} ^/manual/((?!latest/)[^/]+)
+RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/manual/latest/%1 -d
+RewriteRule ^manual/(.*) /manual/latest/$1 [R=307,L]
 
-# Redirect /optimize/X to /optimize/latest if folder X does not exist
-RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)
-RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
-RewriteRule ^optimize/[^/]+(.*) /optimize/latest$1 [R=307,L]
+# Redirect /manual/X/Y to /manual/latest/Y if folder X does not exist but latest/Y does
+RewriteCond %{REQUEST_URI} ^/manual/((?!latest/?)[^/]+)(/[^/]+)?
+RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/manual/latest%2 -d
+RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/latest$1 [R=307,L]
+
 
 # Optimize technical guide
-RewriteRule ^optimize/develop/technical-guide/configuration/$ /optimize/develop/technical-guide/setup/configuration/ [R=301,L]
-RewriteRule ^optimize/latest/technical-guide/configuration/$ /optimize/latest/technical-guide/setup/configuration/ [R=301,L]
-RewriteRule ^optimize/(2.([3-9]|[0-9][0-9]+))/technical-guide/configuration/$ /optimize/$1/technical-guide/setup/configuration/ [R=301,L]
-RewriteRule ^optimize/develop/technical-guide/installation/$ /optimize/develop/technical-guide/setup/installation/ [R=301,L]
-RewriteRule ^optimize/latest/technical-guide/installation/$ /optimize/latest/technical-guide/setup/installation/ [R=301,L]
-RewriteRule ^optimize/(2.([3-9]|[0-9][0-9]+))/technical-guide/installation/$ /optimize/$1/technical-guide/setup/installation/ [R=301,L]
+RewriteRule ^optimize/develop/technical-guide/configuration/?$ /optimize/develop/technical-guide/setup/configuration/ [R=301,L]
+RewriteRule ^optimize/latest/technical-guide/configuration/?$ /optimize/latest/technical-guide/setup/configuration/ [R=301,L]
+RewriteRule ^optimize/develop/technical-guide/installation/?$ /optimize/develop/technical-guide/setup/installation/ [R=301,L]
+RewriteRule ^optimize/latest/technical-guide/installation/?$ /optimize/latest/technical-guide/setup/installation/ [R=301,L]
+
+# Optimize without version
+RewriteRule ^optimize/?$ /optimize/latest/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/optimize((?!latest/)[^/]+)
+RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
+RewriteRule ^optimize/(.*) /optimize/latest/ [R=307,L]
+
+# Redirect /optimize/X to /optimize/latest/X if folder X does not exist but latest/X does
+RewriteCond %{REQUEST_URI} ^/optimize/((?!latest/)[^/]+)
+RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/optimize/latest/%1 -d
+RewriteRule ^optimize/(.*) /optimize/latest/$1 [R=307,L]
+
+# Redirect /optimize/X/Y to /optimize/latest/Y if folder X does not exist but latest/Y does
+RewriteCond %{REQUEST_URI} ^/optimize/((?!latest/?)[^/]+)(/[^/]+)?
+RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/optimize/latest%2 -d
+RewriteRule ^optimize/[^/]+(/[^/]+(?:/.*))? /optimize/latest$1 [R=307,L]
 
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
@@ -59,6 +80,7 @@ RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started
 RewriteRule ^guides/getting-started-guides /get-started/ [R=301,L]
 RewriteRule ^get-started/javaee6 /get-started/javaee7 [R=301,L]
 RewriteRule ^get-started/bpmn20 /get-started/quick-start [R=301,L]
+
 
 # Manual (User Guide)
 RewriteRule ^(7.3|7.2|7.1|7.0)/api-references/javadoc/(.*) /javadoc/camunda-bpm-platform/$1/$2 [R=301,L]
