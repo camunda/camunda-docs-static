@@ -25,6 +25,16 @@ __End of Maintenance:__ 30th of November 2020
 __Changes in Supported Environments:__
 
 
+## Camunda Optimize 2.4
+
+__Release Date:__ scheduled for 29th of March 2019
+
+__End of Maintenance:__ 30th of September 2020
+
+__Changes in Supported Environments:__
+
+* Support for Elasticsearch 6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+
+* End of Support for Elasticsearch 6.0.0
 
 ## Camunda BPM 7.10
 
@@ -162,5 +172,3 @@ Please let us know if you have any concerns or if you need help migrating to a n
 
 # Why is Camunda Changing the Support for Environments?
 Camunda is committed to delivering improvements and bug fixes as fast as possible. We are also committed to providing world class support for our software running in different environments. However, as new versions of databases, web browsers, etc, are released, the cost of supporting multiple environments grows exponentially, making it harder to provide the level of support our customers have come to expect from us. Therefore, we no longer support environments marked as end-of-life by the vendor, or very old versions that are no longer widely used.
-
-
