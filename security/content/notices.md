@@ -17,6 +17,42 @@ releases of the community platform.
 
 # Notices
 
+## Notice 6
+
+**Publication Date: March 30th, 2019**
+
+The version of Jackson used by Camunda Spin was vulnerable to object deserialization flaws. Details:
+
+* https://nvd.nist.gov/vuln/search/results?adv_search=true&cpe=cpe%3a%2fa%3afasterxml%3ajackson-databind%3a2.9.7
+
+**How to determine if the installation is affected**
+
+* Camunda Spin is on the classpath
+* An attacker is able to access the REST API and has permissions to submit process variables
+* One of the following artifacts is on the classpath: axis2-transport-jms, openjpa, jboss-commons-core
+
+**Solution**
+
+Camunda has provided the releases v7.10.3 and 7.11.0-alpha2 which contain a fix.
+
+
+## Notice 5
+
+**Publication Date: March 30th, 2019**
+
+The version of Apache http-components used by Camunda Connect was vulnerable to denial-of-service and man-in-the-middle attacks. Details:
+
+* https://nvd.nist.gov/vuln/search/results?adv_search=true&cpe=cpe%3a%2fa%3aapache%3ahttpclient%3a4.3.3
+
+**How to determine if the installation is affected**
+
+* Camunda Connect is on the classpath
+* Connector service tasks are used in a process
+
+**Solution**
+
+Camunda has provided the releases v7.10.3 and 7.11.0-alpha2 which contain a fix.
+
 ## Notice 4
 
 **Publication Date: November 30th, 2018**
