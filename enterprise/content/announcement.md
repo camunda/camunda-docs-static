@@ -14,7 +14,7 @@ menu:
 This page contains important announcements from Camunda's Enterprise Support. In the following section we list information about changes to the supported environments and scheduled end of maintenance dates for specific versions of the Camunda BPM platform. The announced end of maintenance dates are based on our standard support period of 18 months.
 
 
-# List of Announcements
+# Camunda BPM Announcements
 
 ## Camunda BPM 7.11
 
@@ -24,17 +24,6 @@ __End of Maintenance:__ 30th of November 2020
 
 __Changes in Supported Environments:__
 
-
-## Camunda Optimize 2.4
-
-__Release Date:__ scheduled for 29th of March 2019
-
-__End of Maintenance:__ 30th of September 2020
-
-__Changes in Supported Environments:__
-
-* Support for Elasticsearch 6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+
-* End of Support for Elasticsearch 6.0.0
 
 ## Camunda BPM 7.10
 
@@ -163,6 +152,21 @@ __Changes in Supported Environments:__
 * Support for Runtime Environemt Java 8 (if supported by your application server / container)
 
 __Product Change:__ With Camunda BPM 7.2.0, Camunda BPM Cycle is no longer bundled in the distribution of our platform. We provide Camunda BPM Cycle in an own distribution. Since the separation, Camunda BPM Cycle is only provided and supported for the Apache Tomcat application server. You can download Cycle [here](/enterprise/download/#camunda-cycle).
+
+
+# Camunda Optimize Announcements
+
+## Camunda Optimize 2.4
+
+__Release Date:__ scheduled for 29th of March 2019
+
+__End of Maintenance:__ 30th of September 2020
+
+__Changes in Supported Environments:__
+
+* Support for Elasticsearch 6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+
+* End of Support for Elasticsearch 6.0.0
+
 
 # What does End of Maintenance Mean?
 End of maintenance means that Camunda will not perform any maintenance or release any bug fixes and patch releases related to the mentioned version after the specified date.
