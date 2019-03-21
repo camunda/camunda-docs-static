@@ -10,7 +10,8 @@ menu:
 
 ---
 
-As a core infrastructure component of our customers, the security of the software takes top priority and is maintained constantly.
+As a core infrastructure component of our customers, the security of Camunda BPM (also referred to as the 'software') takes top priority and is maintained constantly.
+
 
 # Information Security Standards
 
