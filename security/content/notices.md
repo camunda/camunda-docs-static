@@ -19,7 +19,7 @@ releases of the community platform.
 
 ## Notice 6
 
-**Publication Date: March 30th, 2019**
+**Publication Date: March 21st, 2019**
 
 The version of Jackson used by Camunda Spin was vulnerable to object deserialization flaws. Details:
 
@@ -38,7 +38,7 @@ Camunda has provided the releases v7.10.3 and 7.11.0-alpha2 which contain a fix.
 
 ## Notice 5
 
-**Publication Date: March 30th, 2019**
+**Publication Date: March 21st, 2019**
 
 The version of Apache http-components used by Camunda Connect was vulnerable to denial-of-service and man-in-the-middle attacks. Details:
 
