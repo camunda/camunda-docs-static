@@ -156,9 +156,19 @@ __Product Change:__ With Camunda BPM 7.2.0, Camunda BPM Cycle is no longer bundl
 
 # Camunda Optimize Announcements
 
+## Camunda Optimize 2.5
+
+__Release Date:__ scheduled for 28th of June 2019
+
+__End of Maintenance:__ 31st of December 2020
+
+__Changes in Supported Environments:__
+
+
+
 ## Camunda Optimize 2.4
 
-__Release Date:__ scheduled for 29th of March 2019
+__Release Date:__ 29th of March 2019
 
 __End of Maintenance:__ 30th of September 2020
 
