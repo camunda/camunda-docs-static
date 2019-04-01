@@ -135,6 +135,11 @@ Your pom.xml file of your project should look like this:
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.6.1</version>
 		</dependency>
+		<dependency>
+    			<groupId>javax.xml.bind</groupId>
+    			<artifactId>jaxb-api</artifactId>
+    			<version>2.3.1</version>
+		</dependency>
 	</dependencies>
 </project>
 ```
