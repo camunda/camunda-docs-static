@@ -8,12 +8,12 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
 RewriteRule ^$ /manual/
 
 # Javadoc legacy? (found in old docs htaccess)
-RewriteRule ^latest/api-references/java/ /manual/7.3/reference/javadoc/
+RewriteRule ^latest/api-references/java/ /manual/latest/reference/javadoc/
 
 # Javadoc
-RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11-SNAPSHOT [R=301,L]
-RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11 [R=301,L]
-RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=301,L]
+RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11-SNAPSHOT [R=307,L]
+RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11 [R=307,L]
+RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=307,L]
 
 # manual without version
 RewriteRule ^manual/?$ /manual/latest/ [R=301,L]
