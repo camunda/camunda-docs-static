@@ -6,6 +6,7 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
 
 # Default site is the manual
 RewriteRule ^$ /manual/
+ErrorDocument 404 https://docs.camunda.org/manual/
 
 # Javadoc legacy? (found in old docs htaccess)
 RewriteRule ^latest/api-references/java/ /manual/7.3/reference/javadoc/
