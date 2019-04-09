@@ -128,7 +128,7 @@ It is not needed when using `camunda-engine` because that already contains the D
     <id>camunda-bpm-nexus</id>
     <name>camunda-bpm-nexus</name>
     <url>
-      https://app.camunda.com/nexus/content/groups/public
+      https://app.camunda.com/nexus/service/rest/repository/browse/public
     </url>
   </repository>
 </repositories>

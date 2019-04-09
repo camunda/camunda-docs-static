@@ -18,7 +18,7 @@ mavenSettings  {
 repositories {
   maven {
     name 'camunda-nexus'
-    url 'https://app.camunda.com/nexus/content/groups/internal/'
+    url 'https://app.camunda.com/nexus/service/rest/repository/browse/internal/'
   }
   mavenLocal()
 }
