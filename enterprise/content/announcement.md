@@ -25,6 +25,9 @@ __End of Maintenance:__ 30th of November 2020
 __Changes in Supported Environments:__
 
 * Support for Postgres 11.1 and 11.2
+* Support for Microsoft SQL Server 2017
+* Support for JBoss EAP 7.2
+* Support for Wildfly Application Server 15
 
 
 ## Camunda BPM 7.10
