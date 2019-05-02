@@ -14,6 +14,14 @@ releases of the community platform.
 
 # Notices
 
+## Notice 8
+
+**Publication Date: May 3rd, 2019**
+
+Optimize stores a users session token in a cookie to maintain the session. While this approach simplifies user session handling, it is also vulnerable to [cross-site request forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks. To mitigate this problem, Optimize will set the [SameSite](https://www.owasp.org/index.php/SameSite) cookie flag to reduce the risk of cross-origin information leakage. Read all the details about the attack and how the cookie flag prevents it from happening in the article [Using the SameSite Cookie Attribute to Prevent CSRF Attacks](https://dzone.com/articles/using-the-same-site-cookie-attribute-to-prevent-cs).
+
+Camunda has provided a fix ([OPT-2105](https://app.camunda.com/jira/browse/OPT-2105)) with the Optimize release v2.5.0, which will be release end of June 2019.
+
 ## Notice 7
 
 **Publication Date: March 29th, 2019**
