@@ -56,6 +56,16 @@ downloads:
   branches:
     - branch: "7.11"
       releases:
+        - number: "7.11.0-alpha4"
+          note: "https://blog.camunda.com/post/2019/05/camunda-bpm-7110-alpha4-released/"
+          date: "2019.05.03"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.11.0-alpha3"
           note: "https://blog.camunda.com/post/2019/03/camunda-bpm-7110-alpha3-released/"
           date: "2019.03.28"
@@ -67,7 +77,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.11.0-alpha2"
-          note: "https://blog.camunda.com/post/2019/03/camunda-bpm-7110-alpha2-released/"                
+          note: "https://blog.camunda.com/post/2019/03/camunda-bpm-7110-alpha2-released/"
           date: "2019.03.01"
           excludeservers:
             - "wildfly11"
@@ -77,7 +87,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.11.0-alpha1"
-          note: "https://blog.camunda.com/post/2019/02/camunda-bpm-7110-alpha1-released/"                
+          note: "https://blog.camunda.com/post/2019/02/camunda-bpm-7110-alpha1-released/"
           date: "2019.02.01"
           excludeservers:
             - "wildfly11"
