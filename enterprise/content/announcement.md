@@ -25,7 +25,8 @@ __End of Maintenance:__ 30th of November 2020
 __Changes in Supported Environments:__
 
 * Support for Java 12
-* Support for Postgres 11.1 and 11.2
+* Support for Postgres 10.7, 11.1 and 11.2
+* Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 9.6 / 10.4 / 10.7
 * Support for Microsoft SQL Server 2017
 * Support for JBoss EAP 7.2
 * Support for Wildfly Application Server 15
