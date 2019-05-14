@@ -12,7 +12,7 @@ ErrorDocument 404 https://docs.camunda.org/manual/
 RewriteRule ^latest/api-references/java/ /manual/7.3/reference/javadoc/
 
 # Javadoc
-RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11-SNAPSHOT [R=307,L]
+RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11 [R=307,L] # live doesn't have -SNAPSHOT
 RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11 [R=307,L]
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=307,L]
 
@@ -81,7 +81,6 @@ RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started
 RewriteRule ^guides/getting-started-guides /get-started/ [R=301,L]
 RewriteRule ^get-started/javaee6 /get-started/javaee7 [R=301,L]
 RewriteRule ^get-started/bpmn20 /get-started/quick-start [R=301,L]
-
 
 # Manual (User Guide)
 RewriteRule ^(7.3|7.2|7.1|7.0)/api-references/javadoc/(.*) /javadoc/camunda-bpm-platform/$1/$2 [R=301,L]
