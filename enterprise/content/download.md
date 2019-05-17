@@ -57,7 +57,7 @@ downloads:
     - branch: "7.11"
       releases:
         - number: "7.11.0-alpha5"
-          note: 
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15394"
           date: "2019.05.17"
           excludeservers:
             - "wildfly11"
