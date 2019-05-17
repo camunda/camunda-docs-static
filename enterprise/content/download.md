@@ -56,6 +56,16 @@ downloads:
   branches:
     - branch: "7.11"
       releases:
+        - number: "7.11.0-alpha5"
+          note: 
+          date: "2019.05.17"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.11.0-alpha4"
           note: "https://blog.camunda.com/post/2019/05/camunda-bpm-7110-alpha4-released/"
           date: "2019.05.03"
