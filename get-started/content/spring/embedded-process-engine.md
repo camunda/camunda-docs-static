@@ -17,45 +17,100 @@ Now that you have set up the project with the correct Maven dependencies, we can
 
 # Configure an Embedded Process Engine
 
-Add the following Spring beans configuration to the `src/main/webapp/WEB-INF/applicationContext.xml` file:
+Add the following Spring beans to the `LoanApplication` class as follows:
 
-```xml
-<bean id="dataSource" class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
-  <property name="targetDataSource">
-    <bean class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
-      <property name="driverClass" value="org.h2.Driver" />
-      <property name="url"
-                value="jdbc:h2:mem:process-engine;DB_CLOSE_DELAY=1000" />
-      <property name="username" value="sa" />
-      <property name="password" value="" />
-    </bean>
-  </property>
-</bean>
+```java
+package org.camunda.bpm.getstarted.loanapproval;
 
-<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-  <property name="dataSource" ref="dataSource" />
-</bean>
+import javax.sql.DataSource;
 
-<bean id="processEngineConfiguration" class="org.camunda.bpm.engine.spring.SpringProcessEngineConfiguration">
-  <property name="processEngineName" value="engine" />
-  <property name="dataSource" ref="dataSource" />
-  <property name="transactionManager" ref="transactionManager" />
-  <property name="databaseSchemaUpdate" value="true" />
-  <property name="jobExecutorActivate" value="false" />
-</bean>
+import org.camunda.bpm.engine.HistoryService;
+import org.camunda.bpm.engine.ManagementService;
+import org.camunda.bpm.engine.ProcessEngine;
+import org.camunda.bpm.engine.RepositoryService;
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.TaskService;
+import org.camunda.bpm.engine.spring.ProcessEngineFactoryBean;
+import org.camunda.bpm.engine.spring.SpringProcessEngineConfiguration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.transaction.PlatformTransactionManager;
 
-<bean id="processEngine" class="org.camunda.bpm.engine.spring.ProcessEngineFactoryBean">
-  <property name="processEngineConfiguration" ref="processEngineConfiguration" />
-</bean>
+@Configuration
+public class LoanApplicationContext {
 
-<bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService" />
-<bean id="runtimeService" factory-bean="processEngine" factory-method="getRuntimeService" />
-<bean id="taskService" factory-bean="processEngine" factory-method="getTaskService" />
-<bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService" />
-<bean id="managementService" factory-bean="processEngine" factory-method="getManagementService" />
+  @Bean
+  public DataSource dataSource() {
+    DriverManagerDataSource dataSource = new DriverManagerDataSource();
+    dataSource.setDriverClassName("org.h2.Driver");
+    dataSource.setUrl("jdbc:h2:mem:process-engine;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE");
+    dataSource.setUsername("sa");
+    dataSource.setPassword("");
+    return dataSource;
+  }
+
+  @Bean
+  public PlatformTransactionManager transactionManager(DataSource dataSource) {
+    return new DataSourceTransactionManager(dataSource);
+  }
+
+  @Bean
+  public SpringProcessEngineConfiguration engineConfiguration(DataSource dataSource, PlatformTransactionManager transactionManager) {
+    SpringProcessEngineConfiguration configuration = new SpringProcessEngineConfiguration();
+
+    configuration.setProcessEngineName("engine");
+    configuration.setDataSource(dataSource);
+    configuration.setTransactionManager(transactionManager);
+    configuration.setDatabaseSchemaUpdate("true");
+    configuration.setJobExecutorActivate(false);
+
+    return configuration;
+  }
+
+  @Bean
+  public ProcessEngineFactoryBean engineFactory(SpringProcessEngineConfiguration engineConfiguration) {
+    ProcessEngineFactoryBean factoryBean = new ProcessEngineFactoryBean();
+    factoryBean.setProcessEngineConfiguration(engineConfiguration);
+    return factoryBean;
+  }
+
+  @Bean
+  public ProcessEngine processEngine(ProcessEngineFactoryBean factoryBean) throws Exception {
+    return factoryBean.getObject();
+  }
+
+  @Bean
+  public RepositoryService repositoryService(ProcessEngine processEngine) {
+    return processEngine.getRepositoryService();
+  }
+
+  @Bean
+  public RuntimeService runtimeService(ProcessEngine processEngine) {
+    return processEngine.getRuntimeService();
+  }
+
+  @Bean
+  public TaskService taskService(ProcessEngine processEngine) {
+    return processEngine.getTaskService();
+  }
+
+  @Bean
+  public HistoryService historyService(ProcessEngine processEngine) {
+    return processEngine.getHistoryService();
+  }
+
+  @Bean
+  public ManagementService managementService(ProcessEngine processEngine) {
+    return processEngine.getManagementService();
+  }
+}
 ```
 
-After you added these definitions to the Spring Application context, perform a full Maven build and redeploy the application. In the logfile of the Apache Tomcat server you should be able to see the initialization of the process-engine:
+This bootstraps a process engine with an in-memory H2 database and makes the engine as well as its API services available as Spring beans.
+
+After you added the beans to the application context, perform a full Maven build and redeploy the application. In the logfile of the Apache Tomcat server you should be able to see the initialization of the process-engine:
 
 <pre class="console">
 INFO org.camunda.commons.logging.BaseLogger.logInfo

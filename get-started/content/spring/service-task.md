@@ -40,22 +40,32 @@ When you are done, save the process model in the `src/main/resources` folder of 
 
 ## Use Spring Auto-Deployment for BPMN 2.0 Processes
 
-For the process to be deployed, use the auto-deployment feature provided by the Camunda engine Spring integration. In order to use this feature, modify the definition of the `processEngineConfiguration` bean inside your `src/main/webapp/WEB-INF/applicationContext.xml` file:
+For the process to be deployed, use the auto-deployment feature provided by the Camunda engine Spring integration. In order to use this feature, modify the definition of the `SpringProcessEngineConfiguration` bean inside `LoanApplicationContext` as follows:
 
-```xml
-<bean id="processEngineConfiguration" class="org.camunda.bpm.engine.spring.SpringProcessEngineConfiguration">
-  <property name="processEngineName" value="engine" />
-  <property name="dataSource" ref="dataSource" />
-  <property name="transactionManager" ref="transactionManager" />
-  <property name="databaseSchemaUpdate" value="true" />
-  <property name="jobExecutorActivate" value="false" />
-  <property name="deploymentResources" value="classpath*:*.bpmn" />
-</bean>
+```java
+@Bean
+public SpringProcessEngineConfiguration engineConfiguration(
+    DataSource dataSource,
+    PlatformTransactionManager transactionManager,
+    @Value("classpath*:*.bpmn") Resource[] deploymentResources) {
+  SpringProcessEngineConfiguration configuration = new SpringProcessEngineConfiguration();
+
+  configuration.setProcessEngineName("engine");
+  configuration.setDataSource(dataSource);
+  configuration.setTransactionManager(transactionManager);
+  configuration.setDatabaseSchemaUpdate("true");
+  configuration.setJobExecutorActivate(false);
+  configuration.setDeploymentResources(deploymentResources);
+
+  return configuration;
+}
 ```
+
+(the import for the `Resource` interface is `org.springframework.core.io.Resource`)
 
 ## Start a Process Instance from a Spring Bean
 
-The next step consists of starting a process instance from a Spring Bean. Firstly, create a package `org.camunda.bpm.getstarted.loanapproval`. Secondly, add the following `Starter` class to it:
+The next step consists of starting a process instance from a Spring Bean. Add a class called `Starter` to the `org.camunda.bpm.getstarted.loanapproval` package:
 
 ```java
 package org.camunda.bpm.getstarted.loanapproval;
@@ -81,24 +91,19 @@ public class Starter implements InitializingBean {
 
 This will simply add a Spring Bean to the application context, which injects to the process engine and starts a single process instance from an `afterPropertiesSet()` method.
 
-Add the Spring bean to the `applicationContext.xml` file:
+Add the Spring bean to the `LoanApplicationContext` class:
 
-```xml
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                         http://www.springframework.org/schema/beans/spring-beans.xsd
-                         http://www.springframework.org/schema/context
-                         http://www.springframework.org/schema/context/spring-context-2.5.xsd" >
+```java
+@Configuration
+public class LoanApplicationContext {
 
   ...
 
-  <context:annotation-config />
-
-  <bean class="org.camunda.bpm.getstarted.loanapproval.Starter" />
-
-</beans>
+  @Bean
+  public Starter starter() {
+    return new Starter();
+  }
+}
 ```
 
 ## Invoke a Spring Bean from a BPMN 2.0 Service Task
@@ -129,20 +134,21 @@ public class CalculateInterestService implements JavaDelegate {
 And register it as a Spring Bean in the application context.
 
 ```java
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                         http://www.springframework.org/schema/beans/spring-beans.xsd
-                         http://www.springframework.org/schema/context
-                         http://www.springframework.org/schema/context/spring-context-2.5.xsd" >
+@Configuration
+public class LoanApplicationContext {
+
   ...
-  <context:annotation-config />
 
-  <bean class="org.camunda.bpm.getstarted.loanapproval.Starter" />
-  <bean id="calculateInterestService" class="org.camunda.bpm.getstarted.loanapproval.CalculateInterestService" />
+  @Bean
+  public Starter starter() {
+    return new Starter();
+  }
 
-</beans>
+  @Bean
+  public CalculateInterestService calculateInterestService() {
+    return new CalculateInterestService();
+  }
+}
 ```
 
 If you redeploy the application, you should see the following message in the logfile, meaning that the service task was executed.

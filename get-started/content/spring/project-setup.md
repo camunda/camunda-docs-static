@@ -22,7 +22,7 @@ We will start by setting up a Spring web application as an Apache Maven Project 
 1. Create a new Maven Project in Eclipse
 2. Add the Camunda & Spring framework dependencies
 3. Add the web.xml file for bootstrapping the Spring container
-4. Add a Spring application context XML configuration file
+4. Add a Spring Java configuration to set up the application context
 
 In the following sections, we go through this process step by step.
 
@@ -39,8 +39,7 @@ When you are done, click Finish. Eclipse sets up a new Maven project. The projec
 The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project. We add both the Camunda BPM and the Spring Framework dependencies:
 
 ```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.camunda.bpm.getstarted</groupId>
   <artifactId>loanapproval-spring</artifactId>
@@ -48,17 +47,25 @@ The next step consists of setting up the Maven dependencies for the new project.
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.10.0</camunda.version>
-    <spring.version>3.1.2.RELEASE</spring.version>
+    <camunda.version>7.11.0</camunda.version>
+    <spring.version>4.3.24.RELEASE</spring.version>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
-  <!-- import Camunda BOM to ensure correct versions of Camunda projects -->
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
         <version>${camunda.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>${spring.version}</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -76,13 +83,23 @@ The next step consists of setting up the Maven dependencies for the new project.
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-      <version>${spring.version}</version>
+      <artifactId>spring-context</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
-      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -99,6 +116,10 @@ The next step consists of setting up the Maven dependencies for the new project.
 </project>
 ```
 
+{{< note title="Spring 5" class="info" >}}
+This guide uses Spring 4. If you prefer Spring 5, just choose a Spring version in the POM file. The tutorial should work in the same way. Note that Spring 5 requires Java 8 or higher.
+{{< /note >}}
+
 ## Add web.xml File for Bootstrapping the Spring Container
 
 Next, we add a `web.xml` file for bootstrapping the spring container. In order to do so, first add a folder named `WEB-INF` to the (preexisting) `src/main/webapp` folder of your Maven project. Inside the `src/main/webapp/WEB-INF` folder, add a file named `web.xml`:
@@ -109,8 +130,12 @@ Next, we add a `web.xml` file for bootstrapping the spring container. In order t
                     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
 
   <context-param>
+    <param-name>contextClass</param-name>
+    <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+  </context-param>
+  <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>/WEB-INF/applicationContext.xml</param-value>
+    <param-value>org.camunda.bpm.getstarted.loanapproval.LoanApplicationContext</param-value>
   </context-param>
 
   <listener>
@@ -124,14 +149,19 @@ Now you can perform the first build. Select the `pom.xml` in the Package Explore
 
 ## Add a Spring Application Context XML Configuration File
 
-Next, we add a Spring ApplicationContext XML file to the same `src/main/webapp/WEB-INF` folder. The file must be named `applicationContext.xml`. We start with an empty file:
+Next, we add a Spring ApplicationContext configuration class to the project. Create a Java class called `LoanApplicationContext` in the package `org.camunda.bpm.getstarted.loanapproval`.
 
-```xml
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                         http://www.springframework.org/schema/beans/spring-beans.xsd">
-</beans>
+We start with an empty class:
+
+```java
+package org.camunda.bpm.getstarted.loanapproval;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class LoanApplicationContext {
+
+}
 ```
 
 Congratulations, you have completed the project setup. Your project should now look as depicted in the screenshot to the left.
@@ -141,20 +171,18 @@ Congratulations, you have completed the project setup. Your project should now l
 You can now perform a full Maven build and deploy the project to a vanilla Apache Tomcat server. You should see the following log output:
 
 <pre class="console">
-INFO org.apache.catalina.startup.HostConfig.deployWAR
-Deploying web application archive ..\webapps\loanapproval-spring-0.1.0-SNAPSHOT.war
-INFOorg.springframework.web.context.ContextLoader.initWebApplicationContext
+INFORMATION org.apache.catalina.startup.HostConfig.deployWAR
+Deploying web application archive [..\webapps\loanapproval-spring-0.1.0-SNAPSHOT.war]
+INFORMATION org.springframework.web.context.ContextLoader.initWebApplicationContext
 Root WebApplicationContext: initialization started
-INFO org.springframework.context.support.AbstractApplicationContext.prepareRefresh
+INFORMATION org.springframework.web.context.support.AnnotationConfigWebApplicationContext.prepareRefresh
 Refreshing Root WebApplicationContext: startup date [DATE]; root of context hierarchy
-INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions
-Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-INFO org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons
-Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19930f2a: defining beans []; root of factory hierarchy
-INFO org.springframework.web.context.ContextLoader.initWebApplicationContext
-Root WebApplicationContext: initialization completed in 247 ms
-INFO org.apache.catalina.startup.HostConfig.deployWAR
-Deployment of web application archive ..\webapps\loanapproval-spring-0.1.0-SNAPSHOT.war has finished in 1,740 ms
+INFORMATION org.springframework.web.context.support.AnnotationConfigWebApplicationContext.loadBeanDefinitions
+Successfully resolved class for [org.camunda.bpm.getstarted.loanapproval.LoanApplicationContext]
+INFORMATION org.springframework.web.context.ContextLoader.initWebApplicationContext
+Root WebApplicationContext: initialization completed in 891 ms
+INFORMATION org.apache.catalina.startup.HostConfig.deployWAR
+Deployment of web application archive [..\webapps\loanapproval-spring-0.1.0-SNAPSHOT.war] has finished in [6.257] ms
 </pre>
 
 This means that you have set up your Spring web application correctly.

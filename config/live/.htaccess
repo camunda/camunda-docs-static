@@ -12,28 +12,28 @@ ErrorDocument 404 https://docs.camunda.org/manual/
 RewriteRule ^latest/api-references/java/ /manual/7.3/reference/javadoc/
 
 # Javadoc
-RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11 [R=307,L] # live doesn't have -SNAPSHOT
+RewriteRule ^manual/develop/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.12 [R=307,L] # live doesn't have -SNAPSHOT
 RewriteRule ^manual/latest/reference/javadoc/$ /javadoc/camunda-bpm-platform/7.11 [R=307,L]
 RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1 [R=307,L]
 
 # manual without version
-RewriteRule ^manual/?$ /manual/7.10/ [R=307,L]
+RewriteRule ^manual/?$ /manual/7.11/ [R=307,L]
 
-RewriteCond %{REQUEST_URI} ^/manual((?!7.10/)[^/]+)
+RewriteCond %{REQUEST_URI} ^/manual((?!7.11/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/(.*) /manual/7.10/ [R=307,L]
+RewriteRule ^manual/(.*) /manual/7.11/ [R=307,L]
 
-# Redirect /manual/X to /manual/7.10/X if folder X does not exist but 7.10/X does
-RewriteCond %{REQUEST_URI} ^/manual/((?!7.10/)[^/]+)
+# Redirect /manual/X to /manual/7.11/X if folder X does not exist but 7.11/X does
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.11/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/manual/7.10/%1 -d
-RewriteRule ^manual/(.*) /manual/7.10/$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/manual/7.11/%1 -d
+RewriteRule ^manual/(.*) /manual/7.11/$1 [R=307,L]
 
-# Redirect /manual/X/Y to /manual/7.10/Y if folder X does not exist but 7.10/Y does
-RewriteCond %{REQUEST_URI} ^/manual/((?!7.10/?)[^/]+)(/[^/]+)?
+# Redirect /manual/X/Y to /manual/7.11/Y if folder X does not exist but 7.11/Y does
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.11/?)[^/]+)(/[^/]+)?
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/manual/7.10%2 -d
-RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/7.10$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/manual/7.11%2 -d
+RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/7.11$1 [R=307,L]
 
 
 # Optimize technical guide
