@@ -49,8 +49,8 @@ downloads:
     - war
 
   selected:
-    branch: "7.10"
-    version: "7.10.6"
+    branch: "7.11"
+    version: "7.11.0"
     server: "tomcat"
 
   branches:
