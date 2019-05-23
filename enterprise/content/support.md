@@ -22,7 +22,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 
 * Go to our [JIRA support system](https://app.camunda.com/jira/browse/SUPPORT)
 * Select `Create Issue`
-* Select `Support` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
+* Select `camunda BPM` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
 * Give the ticket a meaningful **summary**
 * You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you.
 * Provide us with a date in case of important **deadlines** that need to be reached.
