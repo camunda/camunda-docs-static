@@ -108,7 +108,6 @@ downloads:
             - "glassfish"
             - "ibm-was"
 
-
         - number: "7.10.2"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15351"
           date: "2019.01.30"
@@ -1013,10 +1012,10 @@ On this page we provide downloads for the Camunda BPM Enterprise Platform includ
 - [Camunda Optimize]({{< relref "#camunda-optimize" >}})
 - [Camunda Modeler]({{< relref "#camunda-cycle" >}})
 
-
 ## Camunda BPM
 
 ### Full Distributions and Standalone Web Applications
+
 This page contains the latest versions of all supported branches. In addition, we provide alpha releases of the current development branch. Please note that an alpha release is not fully tested and just a snapshot of the current development state.
 
 Find more information about the [Full Distribution](/manual/latest/introduction/downloading-camunda/#full-distribution) and the [Standalone Web Application](/manual/latest/introduction/downloading-camunda/#standalone-web-application-distribution) in our user guide.
@@ -1063,6 +1062,17 @@ To install the demo distribution, please download one of the following archives:
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+        <td><a href="/optimize">Camunda Optimize</a></td>
+        <td>2.5.0-alpha2</td>
+        <td>7.9.12+, 7.10.6+, 7.11+</td>
+        <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+</td>
+        <td>29.05.2019</td>
+        <td>
+          <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.5.0-alpha2/camunda-optimize-2.5.0-alpha2-demo.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.5.0-alpha2/camunda-optimize-2.5.0-alpha2-demo.tar.gz">tar.gz</a>
+        </td>
+    </tr>
     <tr class="well">
         <td><a href="/optimize">Camunda Optimize</a></td>
         <td>2.5.0-alpha1</td>
@@ -1155,6 +1165,17 @@ To get the production distribution, please download one of the following archive
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.5.0-alpha2</td>
+      <td>7.9.12+, 7.10.6+, 7.11+</td>
+      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+</td>
+      <td>29.05.2019</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.5.0-alpha2/camunda-optimize-2.5.0-alpha2-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.5.0-alpha2/camunda-optimize-2.5.0-alpha2-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.5.0-alpha1</td>
