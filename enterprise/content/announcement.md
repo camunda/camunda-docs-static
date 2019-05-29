@@ -18,7 +18,7 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 ## Camunda BPM 7.11
 
-__Release Date:__ scheduled for 31st of May 2019
+__Release Date:__ 31st of May 2019
 
 __End of Maintenance:__ 30th of November 2020
 

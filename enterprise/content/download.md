@@ -57,7 +57,7 @@ downloads:
     - branch: "7.11"
       releases:
         - number: "7.11.0"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15343"
+          note: "https://blog.camunda.com/post/2019/05/camunda-bpm-7110-released"
           date: "2019.05.31"
           excludeservers:
             - "wildfly11"
