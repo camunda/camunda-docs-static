@@ -14,6 +14,92 @@ releases of the community platform.
 
 # Notices
 
+## Notice 12
+
+**Publication Date: May 31st, 2019**
+
+**Product affected:**
+
+Camunda BPM Spring Boot Starter
+
+**Impact:**
+
+When using the Camunda web applications via the Camunda Spring Boot Starter, no CSRF token was required for modifying requests (HTTP POST, PUT, DELETE). This made Camunda's defense against [Cross-site request forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks ineffective.
+
+**How to determine if the installation is affected**
+
+- The application uses Camunda Spring Boot Starter
+- The application uses the dependency `camunda-bpm-spring-boot-starter-webapp` or `camunda-bpm-spring-boot-starter-webapp-ee`
+
+**Solution**
+
+Camunda has provided the releases 3.3.1, 3.2.3, 3.1.3, 3.0.3 and 2.3.2 of the Spring Boot Starter which contain a fix. Note that for Spring Boot Starter 2.3 and 3.0, this requires to use Camunda versions >= 7.8.8 or >= 7.9.2.
+
+## Notice 11
+
+**Publication Date: May 31st, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+No authorizations were required to submit a license key or to read a license key's metadata (not the key itself) via Camunda Admin.
+
+**How to determine if the installation is affected**
+
+- Camunda BPMN enterprise edition is used
+- Camunda Admin is used
+
+**Solution**
+
+Camunda has provided the releases 7.11.0, 7.10.6, 7.9.12 and 7.8.14 which contain a fix.
+
+## Notice 10
+
+**Publication Date: May 31st, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+A [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerability in Camunda Tasklist was resolved that would allow an attacker to run arbitrary Javascript in the victim's browser.
+
+**How to determine if the installation is affected**
+
+- Camunda Tasklist is used
+- One of the following applies:
+  - An attacker is able to make a deployment
+  - A BPMN process or CMMN case uses an expression in a user task name and an attacker can control the expression's result
+
+**Solution**
+
+Camunda has provided the releases 7.11.0, 7.10.6, 7.9.12 and 7.8.14 which contain a fix.
+
+## Notice 9
+
+**Publication Date: May 31st, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+A [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerability in Camunda Cockpit was resolved that would allow an attacker to run arbitrary Javascript in the victim's browser.
+
+**How to determine if the installation is affected**
+
+- Camunda Cockpit is used
+- An attacker is able to deploy a BPMN process or CMMN case
+
+**Solution**
+
+Camunda has provided the releases 7.11.0, 7.10.6, 7.9.12 and 7.8.14 which contain a fix.
+
 ## Notice 8
 
 **Publication Date: May 3rd, 2019**
