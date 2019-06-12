@@ -1010,7 +1010,7 @@ On this page we provide downloads for the Camunda BPM Enterprise Platform includ
 
 - [Camunda BPM]({{< relref "#camunda-bpm" >}})
 - [Camunda Optimize]({{< relref "#camunda-optimize" >}})
-- [Camunda Modeler]({{< relref "#camunda-cycle" >}})
+- [Camunda Modeler]({{< relref "#camunda-modeler" >}})
 
 ## Camunda BPM
 
@@ -1249,31 +1249,3 @@ To get the production distribution, please download one of the following archive
 ## Camunda Modeler
 
 The Camunda Modeler is an open source process modeling tool based on [bpmn.io](http://bpmn.io/). It is a desktop application that allows you to edit BPMN process diagrams, DMN decision tables and CMMN diagrams located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.org/download/modeler/).
-
-## Camunda Cycle
-
-With Camunda BPM 7.2.0 we migrated Camunda Cycle into a standalone project. We did this to reduce the tight coupling between Camunda Cycle and the Camunda BPM platform. This eases our development efforts for Cycle and allows others to increase participation.
-
-<table class="table">
-  <thead>
-    <tr>
-      <th class="col-md-2">Name</th>
-      <th class="col-md-2">Version</th>
-      <th class="col-md-2">Release Date</th>
-      <th class="col-md-2">Download</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="well">
-      <td><a href="/manual/latest/installation/cycle">Cycle for Tomcat</a></td>
-      <td>3.1.0</td>
-      <td>18.12.2014</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default" href="https://camunda.org/enterprise-release/camunda-cycle/tomcat/3.1/camunda-cycle-distro-3.1.0.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-[Previous Releases](https://camunda.org/enterprise-release/camunda-cycle/tomcat/)
