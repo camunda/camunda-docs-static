@@ -1,9 +1,9 @@
 https://docs.camunda.org:
   /:
-    target: /manual/7.10/
+    target: /manual/7.11/
     status: 307
   /manual/:
-    target: /manual/7.10/
+    target: /manual/7.11/
     status: 307
   /optimize/:
     target: /optimize/latest/
@@ -12,7 +12,7 @@ https://docs.camunda.org:
     target: /optimize/latest/user-guide/homepage/
     status: 307
   /manual/reference/bpmn20:
-    target: /manual/7.10/reference/bpmn20
+    target: /manual/7.11/reference/bpmn20
     status: 307
   /get-started/javaee6:
     target: /get-started/javaee7
