@@ -40,6 +40,15 @@ https://docs.camunda.org:
   /optimize/latest/technical-guide/configuration/:
     target: /optimize/latest/technical-guide/setup/configuration/
     status: 301
+  /cawemo/:
+    target: /cawemo/latest/
+    status: 301
+  /cawemo/technical-guide/installation/:
+    target: /cawemo/latest/technical-guide/installation/
+    status: 307
+  /cawemo/99.0/technical-guide/installation/:
+    target: /cawemo/latest/technical-guide/installation/
+    status: 307
 
 ################################################################################
 
