@@ -87,8 +87,11 @@ https://stage.docs.camunda.org:
     target: /optimize/latest/technical-guide/setup/configuration/
     status: 301
   /cawemo/:
-    target: /cawemo/develop/
+    target: /cawemo/latest/
+    status: 301
+  /cawemo/technical-guide/installation/:
+    target: /cawemo/latest/technical-guide/installation/
     status: 307
-  /cawemo/1.0:
-    target: /cawemo/develop
+  /cawemo/99.0/technical-guide/installation/:
+    target: /cawemo/latest/technical-guide/installation/
     status: 307

@@ -58,12 +58,24 @@ RewriteRule ^optimize/[^/]+(/[^/]+(?:/.*))? /optimize/latest$1 [R=307,L]
 
 
 # Cawemo without version
-RewriteRule ^cawemo/$ /cawemo/develop/ [R=307,L]
+RewriteRule ^cawemo/?$ /cawemo/latest/ [R=301,L]
 
-# Redirect /cawemo/X to /cawemo/develop if folder X does not exist
-RewriteCond %{REQUEST_URI} ^/cawemo/([^/]+)
+RewriteCond %{REQUEST_URI} ^/cawemo((?!latest/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
-RewriteRule ^cawemo/[^/]+(.*) /cawemo/develop$1 [R=307,L]
+RewriteRule ^cawemo/(.*) /cawemo/latest/ [R=307,L]
+
+# Redirect /cawemo/X to /cawemo/latest/X if folder X does not exist but latest/X does
+RewriteCond %{REQUEST_URI} ^/cawemo/((?!latest/)[^/]+)
+RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/cawemo/latest/%1 -d
+RewriteRule ^cawemo/(.*) /cawemo/latest/$1 [R=307,L]
+
+# Redirect /cawemo/X/Y to /cawemo/latest/Y if folder X does not exist but latest/Y does
+RewriteCond %{REQUEST_URI} ^/cawemo/((?!latest/?)[^/]+)(/[^/]+)?
+RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/cawemo/latest%2 -d
+RewriteRule ^cawemo/[^/]+(/[^/]+(?:/.*))? /cawemo/latest$1 [R=307,L]
+
 
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
