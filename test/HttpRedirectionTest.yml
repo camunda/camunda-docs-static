@@ -1,3 +1,5 @@
+---
+
 https://docs.camunda.org:
   /:
     target: /manual/7.11/
@@ -38,17 +40,20 @@ https://docs.camunda.org:
   /optimize/latest/technical-guide/configuration/:
     target: /optimize/latest/technical-guide/setup/configuration/
     status: 301
+
+################################################################################
+
 https://stage.docs.camunda.org:
   /manual/:
     target: /manual/latest/
     status: 301
   /manual/reference/bpmn20:
     target: /manual/latest/reference/bpmn20
-    status: 307    
+    status: 307
   /manual/user-guide/ext-client/:
     target: /manual/latest/user-guide/ext-client/
     status: 307
-  /manual/99.0/user-guide/ext-client/:  
+  /manual/99.0/user-guide/ext-client/:
     target: /manual/latest/user-guide/ext-client/
     status: 307
   /optimize/:
@@ -87,4 +92,3 @@ https://stage.docs.camunda.org:
   /cawemo/1.0:
     target: /cawemo/develop
     status: 307
-  

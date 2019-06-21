@@ -71,7 +71,7 @@ RewriteRule ^(latest|7.3|7.2|7.1|7.0)/enterprise /enterprise/ [R=301,L]
 
 # Redirect /get-started/cmmnXX to /get-started/cmmn11 if folder cmmnXX does not exist
 # Redirect /get-started/dmnXX to /get-started/dmn11 if folder dmnXX does not exist
-RewriteCond %{REQUEST_URI} ^/get-started/(dmn|cmmn)(\d+) 
+RewriteCond %{REQUEST_URI} ^/get-started/(dmn|cmmn)(\d+)
 RewriteCond %{DOCUMENT_ROOT}/get-started/%1%2 !-d
 RewriteRule ^get-started/[^/]+(.*) /get-started/%111$1 [R=307,L]
 
