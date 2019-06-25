@@ -57,14 +57,14 @@ downloads:
     - branch: "7.11"
       releases:
         - number: "7.11.1"
-            note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15406"
-            date: "2019.06.25"
-            excludeservers:
-              - "wildfly11"
-              - "wildfly10"
-              - "wildfly8"
-              - "glassfish"
-              - "ibm-was"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15406"
+          date: "2019.06.25"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
 
         - number: "7.11.0"
           note: "https://blog.camunda.com/post/2019/05/camunda-bpm-7110-released"
@@ -78,15 +78,15 @@ downloads:
 
     - branch: "7.10"
       releases:
-      - number: "7.10.7"
-            note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15404"
-            date: "2019.06.25"
-            excludeservers:
-              - "wildfly11"
-              - "wildfly10"
-              - "wildfly8"
-              - "glassfish"
-              - "ibm-was"
+        - number: "7.10.7"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15404"
+          date: "2019.06.25"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
 
         - number: "7.10.6"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15389"
@@ -160,13 +160,13 @@ downloads:
 
     - branch: "7.9"
       releases:
-      - number: "7.9.13"
-                note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15405"
-                date: "2019.06.25"
-                excludeservers:
-                  - "wildfly"
-                  - "glassfish"
-                  - "ibm-was-85"
+        - number: "7.9.13"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15405"
+          date: "2019.06.25"
+          excludeservers:
+            - "wildfly"
+            - "glassfish"
+            - "ibm-was-85"
 
         - number: "7.9.12"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15383"
