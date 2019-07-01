@@ -24,7 +24,7 @@ Camunda BPM and Spring Boot Starter
 
 **Impact:**
 
-Previous Camunda releases have no possibility to enable the cookie flags [Secure and HttpOnly](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies) for the session and CSRF cookies that the Camunda web applications use. This in itself is not a vulnerability, however can increase the impact of other vulnerabilities. For example in combination with a cross-site scripting vulnerability, the absence of those flags would for example allow an attacker to obtain a user's session id. We therefore recommend to apply the solution explained below.
+Previous Camunda releases have no possibility to enable the cookie flags [Secure and HttpOnly](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies) for the session and CSRF cookies that the Camunda web applications use. This in itself is not a vulnerability, however can increase the impact of other vulnerabilities. For example in combination with a cross-site scripting vulnerability, the absence of those flags would allow an attacker to obtain a user's session id. We therefore recommend to apply the solution explained below.
 
 **How to determine if the installation is affected**
 
