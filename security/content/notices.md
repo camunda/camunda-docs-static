@@ -16,7 +16,7 @@ releases of the community platform.
 
 ## Notice 13
 
-**Public Date: July 1st, 2019**
+**Publication Date: July 1st, 2019**
 
 **Product affected:**
 
