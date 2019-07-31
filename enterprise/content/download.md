@@ -78,7 +78,6 @@ downloads:
             - "glassfish"
             - "ibm-was"
 
-      releases:
         - number: "7.11.1"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15406"
           date: "2019.06.25"
@@ -111,7 +110,6 @@ downloads:
             - "glassfish"
             - "ibm-was"
 
-      releases:
         - number: "7.10.7"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15404"
           date: "2019.06.25"
@@ -202,7 +200,6 @@ downloads:
              - "glassfish"
              - "ibm-was-85"
 
-      releases:
         - number: "7.9.13"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15405"
           date: "2019.06.25"
