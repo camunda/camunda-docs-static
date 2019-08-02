@@ -14,6 +14,105 @@ releases of the community platform.
 
 # Notices
 
+## Notice 17
+
+**Publication Date: August 6th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+Java's [Secure-Processing Feature](https://docs.oracle.com/javase/tutorial/jaxp/properties/backgnd.html) for XML documents was not activated in the process engine's XML parsers, meaning that no default resource limits were applied during parsing (e.g. regarding the number of attributes an XML element may have). With default JVM configurations, this allowed an attacker to deploy XML documents of arbitrary size as a denial-of-service attack.
+
+**How to determine if the installation is affected**
+
+- An attacker has access to a process deployment endpoint (e.g. REST API or Camunda web applications)
+- An attacker is authorized to perform deployments
+
+**Solution**
+
+Camunda has provided the releases v7.11.2, v7.10.8, v7.9.14 and 7.12.0-alpha2 which contain a fix.
+
+Note that with older versions, XML processing limits can already be enforced via system properties in the JVM, see https://docs.oracle.com/javase/tutorial/jaxp/limits/limits.html and https://docs.oracle.com/javase/tutorial/jaxp/properties/properties.html.
+
+**Related Documentation**
+
+* [Security Instructions for XML Processing](https://docs.camunda.org/manual/7.11/user-guide/security/#xml-security)
+
+## Notice 16
+
+**Publication Date: August 6th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+In some cases of server-side exceptions in the Camunda REST API and Camunda BPM web applications, a stacktrace could be disclosed to the client. This allows an attacker to gain insights about the structure and source code of server-side components.
+
+**How to determine if the installation is affected**
+
+- Camunda Web Applications or REST API are used
+
+**Solution**
+
+Camunda has provided the releases v7.11.2, v7.10.8, v7.9.14 and 7.12.0-alpha2 which contain a fix.
+
+
+## Notice 15
+
+**Publication Date: August 6th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+The version of dmn-js used by Camunda BPM was vulnerable to HTML Injection / Cross-site scripting flaws. Details:
+
+- https://bpmn.io/blog/posts/2019-html-injection-vulnerabilities-fixed.html
+
+**How to determine if the installation is affected**
+
+- Camunda Cockpit and DMN Live Editing is used
+- An attacker is able to trick a victim to paste crafted input into the DMN editor
+
+**Solution**
+
+Camunda has provided the releases v7.11.2, v7.10.8, v7.9.14 and 7.12.0-alpha2 which contain a fix.
+
+
+## Notice 14
+
+**Publication Date: August 6th, 2019**
+
+**Product affected:**
+
+Camunda BPM and Spring Boot Starter
+
+**Impact:**
+
+The version of Jackson used by Camunda Spin was vulnerable to object deserialization flaws. Details:
+
+- https://nvd.nist.gov/vuln/search/results?adv_search=true&cpe=cpe%3a%2fa%3afasterxml%3ajackson-databind%3a2.9.8
+
+**How to determine if the installation is affected**
+
+- Camunda Spin is on the classpath
+- An attacker is able to access the REST API or web applications and has permissions to submit process variables
+- One of the following artifacts is on the classpath: `mysql:mysql-connector-java` (8.0.14 or earlier), `org.jdom:jdom`, `org.jdom:jdom2`, `ch.qos.logback:logback-core`
+
+**Solution**
+
+Camunda has provided the releases v7.11.2, v7.10.8, v7.9.14 and 7.12.0-alpha2 which contain a fix.
+
+For users of the Camunda Spring Boot Starter, we recommend to explicitly override the version of `com.fasterxml.jackson.core:jackson-databind` to the latest, as there currently is no Spring Boot release available yet that provides the latest Jackson version.
+
+
 ## Notice 13
 
 **Publication Date: July 1st, 2019**
