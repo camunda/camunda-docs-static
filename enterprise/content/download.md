@@ -110,6 +110,16 @@ downloads:
 
     - branch: "7.10"
       releases:
+        - number: "7.10.9"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15510"
+          date: "2019.08.28
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.10.8"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15493"
           date: "2019.07.31"
@@ -202,6 +212,14 @@ downloads:
 
     - branch: "7.9"
       releases:
+        - number: "7.9.15"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15509"
+          date: "2019.07.31"
+          excludeservers:
+            - "wildfly"
+            - "glassfish"
+            - "ibm-was-85"
+
         - number: "7.9.14"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15492"
           date: "2019.07.31"
