@@ -112,7 +112,7 @@ downloads:
       releases:
         - number: "7.10.9"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15510"
-          date: "2019.08.28
+          date: "2019.08.28"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
@@ -214,7 +214,7 @@ downloads:
       releases:
         - number: "7.9.15"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15509"
-          date: "2019.07.31"
+          date: "2019.08.28"
           excludeservers:
             - "wildfly"
             - "glassfish"
