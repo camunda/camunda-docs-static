@@ -50,7 +50,7 @@ downloads:
 
   selected:
     branch: "7.11"
-    version: "7.11.2"
+    version: "7.11.3"
     server: "tomcat"
 
   branches:
@@ -88,6 +88,16 @@ downloads:
 
     - branch: "7.11"
       releases:
+        - number: "7.11.2"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15512"
+          date: "2019.08.30"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.11.2"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15495"
           date: "2019.07.31"
