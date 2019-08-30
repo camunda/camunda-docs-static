@@ -88,7 +88,7 @@ downloads:
 
     - branch: "7.11"
       releases:
-        - number: "7.11.2"
+        - number: "7.11.3"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15512"
           date: "2019.08.30"
           excludeservers:
