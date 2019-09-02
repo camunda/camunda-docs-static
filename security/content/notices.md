@@ -14,6 +14,32 @@ releases of the community platform.
 
 # Notices
 
+## Notice 18
+
+**Publication Date: September 2nd, 2019**
+
+**Product affected:**
+
+Camunda BPM and Spring Boot Starter
+
+**Impact:**
+
+The version of Jackson used by Camunda Spin was vulnerable to object deserialization flaws. Details:
+
+- https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Afasterxml&cpe_product=cpe%3A%2F%3A%3Ajackson-databind&cpe_version=cpe%3A%2F%3Afasterxml%3Ajackson-databind%3A2.9.9.1
+
+**How to determine if the installation is affected**
+
+- Camunda Spin is on the classpath
+- An attacker is able to access the REST API or web applications and has permissions to submit process variables
+- One of the following artifacts is on the classpath: `net.sf.ehcache:ehcache`, `ch.qos.logback:logback-core`
+
+**Solution**
+
+Camunda has provided the releases v7.11.3, v7.10.9, v7.9.15 and 7.12.0-alpha3 which contain a fix.
+
+For users of the Camunda Spring Boot Starter, we recommend to explicitly override the version of `com.fasterxml.jackson.core:jackson-databind` to the latest, as there currently is no Spring Boot release available yet that provides the latest Jackson version.
+
 ## Notice 17
 
 **Publication Date: August 6th, 2019**
@@ -98,7 +124,7 @@ Camunda BPM and Spring Boot Starter
 
 The version of Jackson used by Camunda Spin was vulnerable to object deserialization flaws. Details:
 
-- https://nvd.nist.gov/vuln/search/results?adv_search=true&cpe=cpe%3a%2fa%3afasterxml%3ajackson-databind%3a2.9.8
+- https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Afasterxml&cpe_product=cpe%3A%2F%3A%3Ajackson-databind&cpe_version=cpe%3A%2F%3Afasterxml%3Ajackson-databind%3A2.9.8
 
 **How to determine if the installation is affected**
 
