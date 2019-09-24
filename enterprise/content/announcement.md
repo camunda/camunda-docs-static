@@ -24,6 +24,7 @@ __End of Maintenance:__ 31st of May 2021
 
 __Changes in Supported Environments:__
 
+* Support for Java 13
 
 ## Camunda BPM 7.11
 
@@ -39,7 +40,7 @@ __Changes in Supported Environments:__
 * Support for Oracle 18c
 * Support for Microsoft SQL Server 2017
 * Support for JBoss EAP 7.2
-* Support for Wildfly Application Server 15
+* Support for Wildfly Application Server 15 / 16
 
 
 ## Camunda BPM 7.10
