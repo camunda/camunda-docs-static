@@ -50,7 +50,7 @@ downloads:
 
   selected:
     branch: "7.11"
-    version: "7.11.3"
+    version: "7.11.4"
     server: "tomcat"
 
   branches:
@@ -98,6 +98,16 @@ downloads:
 
     - branch: "7.11"
       releases:
+        - number: "7.11.4"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15516"
+          date: "2019.09.26"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.11.3"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15512"
           date: "2019.08.30"
@@ -140,6 +150,16 @@ downloads:
 
     - branch: "7.10"
       releases:
+        - number: "7.10.10"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15518"
+          date: "2019.09.26"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.10.9"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15510"
           date: "2019.08.28"
@@ -242,6 +262,14 @@ downloads:
 
     - branch: "7.9"
       releases:
+        - number: "7.9.16"
+          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15519"
+          date: "2019.08.28"
+          excludeservers:
+            - "wildfly"
+            - "glassfish"
+            - "ibm-was-85"
+
         - number: "7.9.15"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15509"
           date: "2019.08.28"
