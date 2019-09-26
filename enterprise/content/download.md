@@ -58,7 +58,7 @@ downloads:
       releases:
         - number: "7.12.0-alpha4"
           note: "https://blog.camunda.com/post/2019/09/camunda-bpm-7120-alpha4-released"
-          date: "2019.09.27"
+          date: "2019.09.26"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
