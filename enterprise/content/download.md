@@ -58,7 +58,7 @@ downloads:
       releases:
         - number: "7.12.0-alpha4"
           note: "https://blog.camunda.com/post/2019/09/camunda-bpm-7120-alpha4-released"
-          date: "2019.09.27"
+          date: "2019.09.26"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
@@ -998,6 +998,7 @@ On this page we provide downloads for the Camunda BPM Enterprise Platform includ
 
 - [Camunda BPM]({{< relref "#camunda-bpm" >}})
 - [Camunda Optimize]({{< relref "#camunda-optimize" >}})
+- [Cawemo]({{< relref "#cawemo" >}})
 - [Camunda Modeler]({{< relref "#camunda-modeler" >}})
 
 ## Camunda BPM
@@ -1052,24 +1053,13 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.6.0-alpha2</td>
+      <td>2.6.0</td>
       <td>7.9.12+, 7.10.6+, 7.11+</td>
       <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
-      <td>29.08.2019</td>
+      <td>02.10.2019</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha2/camunda-optimize-2.6.0-alpha2-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha2/camunda-optimize-2.6.0-alpha2-demo.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.6.0-alpha1</td>
-      <td>7.9.12+, 7.10.6+, 7.11+</td>
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
-      <td>02.08.2019</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha1/camunda-optimize-2.6.0-alpha1-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha1/camunda-optimize-2.6.0-alpha1-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0/camunda-optimize-2.6.0-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0/camunda-optimize-2.6.0-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -1166,24 +1156,13 @@ To get the production distribution, please download one of the following archive
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.6.0-alpha2</td>
+      <td>2.6.0</td>
       <td>7.9.12+, 7.10.6+, 7.11+</td>
       <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
-      <td>29.08.2019</td>
+      <td>02.10.2019</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha2/camunda-optimize-2.6.0-alpha2-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha2/camunda-optimize-2.6.0-alpha2-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.6.0-alpha1</td>
-      <td>7.9.12+, 7.10.6+, 7.11+</td>
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
-      <td>02.08.2019</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha1/camunda-optimize-2.6.0-alpha1-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0-alpha1/camunda-optimize-2.6.0-alpha1-production.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0/camunda-optimize-2.6.0-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0/camunda-optimize-2.6.0-production.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -1256,6 +1235,11 @@ To get the production distribution, please download one of the following archive
 
 [Previous Releases](https://camunda.org/enterprise-release/optimize/)
 
+## Cawemo
+
+[Cawemo](/cawemo) is a web-based BPMN modeling application with a focus on collaboration. It is available as a hosted SaaS application (https://cawemo.com) or as an On-Premise version for own installation. For installing the latter, please refer to the [On-Premise installation guide](https://docs.camunda.org/cawemo/latest/technical-guide/installation/).
+
+
 ## Camunda Modeler
 
-The Camunda Modeler is an open source process modeling tool based on [bpmn.io](http://bpmn.io/). It is a desktop application that allows you to edit BPMN process diagrams, DMN decision tables and CMMN diagrams located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.org/download/modeler/).
+The Camunda Modeler is an open source process modeling tool based on [bpmn.io](http://bpmn.io/). It is a desktop application that allows you to edit BPMN process diagrams, DMN decision tables and CMMN diagrams located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.com/download/modeler/).

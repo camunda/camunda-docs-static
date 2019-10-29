@@ -14,6 +14,33 @@ releases of the community platform.
 
 # Notices
 
+## Notice 19
+
+**Publication Date: September 30th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+The version of Tomcat used by the Camunda BPM Tomcat distribution is subject to various vulnerabilities. Details:
+
+- Camunda 7.11 with Tomcat 9.0.19: https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Atomcat&cpe_version=cpe%3A%2F%3Aapache%3Atomcat%3A9.0.19
+- Camunda 7.10 with Tomcat 9.0.12: https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Atomcat&cpe_version=cpe%3A%2F%3Aapache%3Atomcat%3A9.0.12
+- Camunda 7.9 with Tomcat 9.0.5: https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Atomcat&cpe_version=cpe%3A%2F%3Aapache%3Atomcat%3A9.0.5
+
+**How to determine if the installation is affected**
+
+- The Camunda BPM Tomcat distribution is used
+
+**Solution**
+
+Camunda has provided the releases v7.11.4, v7.10.10, v7.9.16 and 7.12.0-alpha4 which contain a fix.
+
+In addition, users can update their Tomcat installation to the latest version.
+
+
 ## Notice 18
 
 **Publication Date: September 2nd, 2019**
