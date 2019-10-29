@@ -100,7 +100,7 @@ downloads:
       releases:
         - number: "7.11.5"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15528"
-          date: "2019.09.26"
+          date: "2019.10.29"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
@@ -110,7 +110,7 @@ downloads:
 
         - number: "7.11.4"
           note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15516"
-          date: "2019.10.29"
+          date: "2019.09.26"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
