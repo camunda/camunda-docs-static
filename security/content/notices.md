@@ -14,6 +14,57 @@ releases of the community platform.
 
 # Notices
 
+
+## Notice 21
+
+**Publication Date: November 4th, 2019**
+
+**Product affected:**
+
+Camunda BPM and Spring Boot Starter
+
+**Impact:**
+
+The version of Jackson used by Camunda Spin was vulnerable to object deserialization flaws. Details:
+
+- https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Afasterxml&cpe_product=cpe%3A%2F%3A%3Ajackson-databind&cpe_version=cpe%3A%2F%3Afasterxml%3Ajackson-databind%3A2.9.9.3
+
+**How to determine if the installation is affected**
+
+- Camunda Spin is on the classpath
+- An attacker is able to access the REST API or web applications and has permissions to submit process variables
+- One of the following artifacts is on the classpath: `com.zaxxer:HikariCP`, `com.zaxxer:HikariCP-java6`, `commons-dbcp:commons-dbcp`, `p6spy:p6spy`, `org.ehcache:ehcache`, `log4j:apache-log4j-extra`
+
+**Solution**
+
+Camunda has provided the releases v7.11.5, v7.10.11, v7.9.17 and 7.12.0-alpha5 which contain a fix.
+
+For users of the Camunda Spring Boot Starter, we recommend to explicitly override the version of `com.fasterxml.jackson.core:jackson-databind` to the latest.
+
+
+## Notice 20
+
+**Publication Date: November 4th, 2019**
+
+**Product affected:**
+
+Camunda BPM and Spring Boot Starter
+
+**Impact:**
+
+If a  user's password is incorrectly entered multiple times, the user account is locked for a period of time before another login attempt can be made. The error message in the Camunda web applications described this situation, confirming that the user exists. This behavior is a [username enumeration vulnerability](https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/), allowing an attacker to learn which user names are valid and focussing password cracking attempts accordingly.
+
+**How to determine if the installation is affected**
+
+- The Camunda BPM web applications (Cockpit, Tasklist, Admin) are used
+- An attacker is able to access the applications' login screen
+- Users are managed in the Camunda database tables (i.e. setups using LDAP-managed users are not affected)
+
+**Solution**
+
+Camunda has provided the releases v7.11.5, v7.10.11, v7.9.17 and 7.12.0-alpha5 which contain a fix.
+
+
 ## Notice 19
 
 **Publication Date: September 30th, 2019**
