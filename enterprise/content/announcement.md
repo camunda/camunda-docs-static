@@ -191,6 +191,9 @@ __End of Maintenance:__ 30th of June 2021
 
 __Changes in Supported Environments:__
 
+* Minimum required Elasticsearch version is raised to 6.4.0
+* End of Support for Elasticsearch 6.2.X, 6.3.X releases
+
 
 ## Camunda Optimize 2.6
 
