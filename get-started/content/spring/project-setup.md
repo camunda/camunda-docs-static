@@ -47,7 +47,7 @@ The next step consists of setting up the Maven dependencies for the new project.
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.11.0</camunda.version>
+    <camunda.version>7.12.0</camunda.version>
     <spring.version>4.3.24.RELEASE</spring.version>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
