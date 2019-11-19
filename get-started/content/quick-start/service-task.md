@@ -43,7 +43,7 @@ Add an End Event named *Payment Received*.
 
 ## Configure the Service Task
 
-There are different ways to [execute service tasks](https://docs.camunda.org/manual/7.11/reference/bpmn20/tasks/service-task/) using Camunda BPM. In this guide, we'll use the external [task pattern](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/).
+There are different ways to [execute service tasks](https://docs.camunda.org/manual/latest/reference/bpmn20/tasks/service-task/) using Camunda BPM. In this guide, we'll use the external [task pattern](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/).
 Open the Properties Panel within the Camunda Modeler and click on the Service Task you just created. Change the Implementation to `External` and use `charge-card` as the Topic.
 
 {{< img src="../img/modeler-step4.png" >}}
