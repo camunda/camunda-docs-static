@@ -158,7 +158,6 @@ Using the Enterprise Edition repository requires credentials in your Maven setti
     </server>
   </servers>
 ```
-
 # Browse Camunda Nexus
 Here are the links which can be used to browse Camunda Nexus artifacts.
 
@@ -171,7 +170,6 @@ Here are the links which can be used to browse Camunda Nexus artifacts.
  {{< note title="Need login" class="info" >}}
    Please note that user needs to be logged in into the Nexus in order to access the repository.
  {{< /note >}}
-
  
 # Other Camunda Modules:
 
