@@ -167,12 +167,12 @@ This link helps you to browse the artifacts of camunda bpm community edition.
  https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/
 
 ## Enterprise Edition 
-This link helps you to browse the artifacts of camunda bpm enterprise edition. User needs to provde his credentials in order to access the repository.
+This link helps you to browse the artifacts of camunda bpm enterprise edition. User needs to login to the nexus repository before accessing the link.
 
  https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm-ee/
  
- {{< note title="Needs login" class="info" >}}
-   Please note that user needs to be logged in into the Nexus in order to access the repository.
+{{< note title="Requires login" class="info" >}}
+   Please note that the link will not be accessible if the user didn't login before hand.
  {{< /note >}}
  
 # Other Camunda Modules:
