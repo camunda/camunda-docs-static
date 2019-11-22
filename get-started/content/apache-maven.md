@@ -158,6 +158,22 @@ Using the Enterprise Edition repository requires credentials in your Maven setti
     </server>
   </servers>
 ```
+## Browse Camunda Nexus
+In order to browse the Camunda Nexus artifacts, here are the links which can be used.
+
+### Community Edition
+This link helps you to browse the artifacts of Camunda bpm community edition.
+
+ https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/
+
+### Enterprise Edition
+This link helps you to browse the artifacts of Camunda bpm enterprise edition. The user needs to login to the nexus repository before accessing the link.
+
+ https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm-ee/
+
+{{< note title="Requires login" class="info" >}}
+   Please note that the link will not be accessible if the user didn't login beforehand.
+{{< /note >}}
 
 # Other Camunda Modules:
 
