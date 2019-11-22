@@ -159,6 +159,20 @@ Using the Enterprise Edition repository requires credentials in your Maven setti
   </servers>
 ```
 
+# Browse Camunda Nexus
+Here are the links which can be used to browse Camunda Nexus artifacts.
+
+## Community Edition
+ https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/
+
+## Enterprise Edition
+ https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm-ee/
+ 
+ {{< note title="Need login" class="info" >}}
+   Please note that user needs to be logged in into the Nexus in order to access the repository.
+ {{< /note >}}
+
+ 
 # Other Camunda Modules:
 
 * [DMN Engine](/manual/latest/user-guide/dmn-engine/embed/#maven-coordinates)
