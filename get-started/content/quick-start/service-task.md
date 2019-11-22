@@ -83,7 +83,7 @@ In this quick start, we'll show you how to use Camunda's ready-to-go task client
 If you've never worked with Java before, we recommend using the JavaScript (NodeJS) task client in this tutorial.
 
 {{< note title="Hint" class="info" >}}
-If you prefer a different programming language, you can also use Camunda's [REST API](https://docs.camunda.org/manual/7.8/user-guide/process-engine/external-tasks/#rest-api) to access API operations via HTTP.
+If you prefer a different programming language, you can also use Camunda's [REST API](/manual/latest/user-guide/process-engine/external-tasks/#rest-api) to access API operations via HTTP.
 {{< /note >}}
 
 ## a) Using Java
