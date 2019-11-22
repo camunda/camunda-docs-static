@@ -49,66 +49,16 @@ downloads:
     - war
 
   selected:
-    branch: "7.11"
-    version: "7.11.5"
+    branch: "7.12"
+    version: "7.12.0"
     server: "tomcat"
 
   branches:
     - branch: "7.12"
       releases:
-        - number: "7.12.0-alpha6"
-          note: ""
-          date: "2019.11.14"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-      
-        - number: "7.12.0-alpha5"
-          note: "https://blog.camunda.com/post/2019/11/camunda-bpm-7120-alpha5-released"
-          date: "2019.10.31"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.12.0-alpha4"
-          note: "https://blog.camunda.com/post/2019/09/camunda-bpm-7120-alpha4-released"
-          date: "2019.09.26"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.12.0-alpha3"
-          note: "https://blog.camunda.com/post/2019/08/camunda-bpm-7120-alpha3-released"
-          date: "2019.08.30"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.12.0-alpha2"
-          note: "https://blog.camunda.com/post/2019/08/camunda-bpm-7120-alpha2-released"
-          date: "2019.08.02"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.12.0-alpha1"
-          note: "https://blog.camunda.com/post/2019/06/camunda-bpm-7120-alpha1-released/"
-          date: "2019.06.28"
+        - number: "7.12.0"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15387"
+          date: "2019.11.30"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
@@ -119,7 +69,7 @@ downloads:
     - branch: "7.11"
       releases:
         - number: "7.11.5"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15528"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15528"
           date: "2019.10.29"
           excludeservers:
             - "wildfly11"
@@ -129,7 +79,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.11.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15516"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15516"
           date: "2019.09.26"
           excludeservers:
             - "wildfly11"
@@ -139,7 +89,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.11.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15512"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15512"
           date: "2019.08.30"
           excludeservers:
             - "wildfly11"
@@ -149,7 +99,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.11.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15495"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15495"
           date: "2019.07.31"
           excludeservers:
             - "wildfly11"
@@ -159,7 +109,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.11.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15406"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15406"
           date: "2019.06.25"
           excludeservers:
             - "wildfly11"
@@ -181,7 +131,7 @@ downloads:
     - branch: "7.10"
       releases:
         - number: "7.10.11"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15529"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15529"
           date: "2019.10.29"
           excludeservers:
             - "wildfly11"
@@ -191,7 +141,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.10"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15518"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15518"
           date: "2019.09.26"
           excludeservers:
             - "wildfly11"
@@ -201,7 +151,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.9"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15510"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15510"
           date: "2019.08.28"
           excludeservers:
             - "wildfly11"
@@ -211,7 +161,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.8"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15493"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15493"
           date: "2019.07.31"
           excludeservers:
             - "wildfly11"
@@ -221,7 +171,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.7"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15404"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15404"
           date: "2019.06.25"
           excludeservers:
             - "wildfly11"
@@ -231,7 +181,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15389"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15389"
           date: "2019.05.21"
           excludeservers:
             - "wildfly11"
@@ -241,7 +191,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.5"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15382"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15382"
           date: "2019.04.11"
           excludeservers:
             - "wildfly11"
@@ -251,7 +201,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15377"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15377"
           date: "2019.03.25"
           excludeservers:
             - "wildfly11"
@@ -261,7 +211,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15372"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15372"
           date: "2019.02.27"
           excludeservers:
             - "wildfly11"
@@ -271,7 +221,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15351"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15351"
           date: "2019.01.30"
           excludeservers:
             - "wildfly11"
@@ -281,7 +231,7 @@ downloads:
             - "ibm-was"
 
         - number: "7.10.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15345"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15345"
           date: "2018.12.13"
           excludeservers:
             - "wildfly11"
@@ -303,7 +253,7 @@ downloads:
     - branch: "7.9"
       releases:
         - number: "7.9.17"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15530"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15530"
           date: "2019.10.29"
           excludeservers:
             - "wildfly"
@@ -311,7 +261,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.16"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15519"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15519"
           date: "2019.08.28"
           excludeservers:
             - "wildfly"
@@ -319,7 +269,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.15"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15509"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15509"
           date: "2019.08.28"
           excludeservers:
             - "wildfly"
@@ -327,7 +277,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.14"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15492"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15492"
           date: "2019.07.31"
           excludeservers:
              - "wildfly"
@@ -335,7 +285,7 @@ downloads:
              - "ibm-was-85"
 
         - number: "7.9.13"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15405"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15405"
           date: "2019.06.25"
           excludeservers:
             - "wildfly"
@@ -343,7 +293,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.12"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15383"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15383"
           date: "2019.05.21"
           excludeservers:
             - "wildfly"
@@ -351,7 +301,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.11"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15378"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15378"
           date: "2019.03.25"
           excludeservers:
             - "wildfly"
@@ -359,7 +309,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.10"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15371"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15371"
           date: "2019.02.27"
           excludeservers:
             - "wildfly"
@@ -367,7 +317,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.9"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15352"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15352"
           date: "2019.01.30"
           excludeservers:
             - "wildfly"
@@ -375,7 +325,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.8"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15344"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15344"
           date: "2018.12.13"
           excludeservers:
             - "wildfly"
@@ -383,7 +333,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.7"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15341"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15341"
           date: "2018.11.28"
           excludeservers:
             - "wildfly"
@@ -391,7 +341,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15339"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15339"
           date: "2018.10.30"
           excludeservers:
             - "wildfly"
@@ -399,7 +349,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.5"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15335"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15335"
           date: "2018.09.28"
           excludeservers:
             - "wildfly"
@@ -407,7 +357,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15324"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15324"
           date: "2018.08.29"
           excludeservers:
             - "wildfly"
@@ -415,7 +365,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15310"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15310"
           date: "2018.07.17"
           excludeservers:
             - "wildfly"
@@ -423,7 +373,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15306"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15306"
           date: "2018.06.28"
           excludeservers:
             - "wildfly"
@@ -431,7 +381,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.9.0"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15096"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15096"
           date: "2018.05.31"
           excludeservers:
             - "wildfly"
@@ -441,7 +391,7 @@ downloads:
     - branch: "7.8"
       releases:
         - number: "7.8.14"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15358"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15358"
           date: "2019.05.21"
           excludeservers:
             - "wildfly"
@@ -450,7 +400,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.13"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15348"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15348"
           date: "2018.11.28"
           excludeservers:
             - "wildfly"
@@ -459,7 +409,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.12"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15340"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15340"
           date: "2018.10.30"
           excludeservers:
             - "wildfly"
@@ -468,7 +418,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.11"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15336"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15336"
           date: "2018.09.28"
           excludeservers:
             - "wildfly"
@@ -477,7 +427,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.9"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15325"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15325"
           date: "2018.08.29"
           excludeservers:
             - "wildfly"
@@ -486,7 +436,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.8"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15309"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15309"
           date: "2018.07.17"
           excludeservers:
             - "wildfly"
@@ -495,7 +445,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.7"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15303"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15303"
           date: "2018.06.28"
           excludeservers:
             - "wildfly"
@@ -504,7 +454,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15300"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15300"
           date: "2018.04.18"
           excludeservers:
             - "wildfly"
@@ -513,7 +463,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.5"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15296"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15296"
           date: "2018.04.09"
           excludeservers:
             - "wildfly"
@@ -522,7 +472,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15293"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15293"
           date: "2018.03.16"
           excludeservers:
             - "wildfly"
@@ -531,7 +481,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15196"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15196"
           date: "2018.03.08"
           excludeservers:
             - "wildfly"
@@ -540,7 +490,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15192"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15192"
           date: "2018.02.15"
           excludeservers:
             - "wildfly"
@@ -549,7 +499,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.8.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15103"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15103"
           date: "2018.01.29"
           excludeservers:
             - "wildfly"
@@ -569,7 +519,7 @@ downloads:
     - branch: "7.7"
       releases:
         - number: "7.7.10"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15326"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15326"
           date: "2018.10.30"
           excludeservers:
             - "wildfly"
@@ -578,7 +528,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.9"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15294"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15294"
           date: "2018.07.17"
           excludeservers:
             - "wildfly"
@@ -587,7 +537,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.8"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15197"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15197"
           date: "2018.03.08"
           excludeservers:
             - "wildfly"
@@ -596,7 +546,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.7"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15193"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15193"
           date: "2018.02.15"
           excludeservers:
             - "wildfly"
@@ -605,7 +555,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15106"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15106"
           date: "2018.01.29"
           excludeservers:
             - "wildfly"
@@ -614,7 +564,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.5"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15090"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15090"
           date: "2017.12.07"
           excludeservers:
             - "wildfly"
@@ -623,7 +573,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14990"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14990"
           date: "2017.09.27"
           excludeservers:
             - "wildfly"
@@ -632,7 +582,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14910"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14910"
           date: "2017.08.09"
           excludeservers:
             - "wildfly"
@@ -641,7 +591,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14908"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14908"
           date: "2017.07.26"
           excludeservers:
             - "wildfly"
@@ -650,7 +600,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.7.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14896"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14896"
           date: "2017.07.13"
           excludeservers:
             - "wildfly"
@@ -670,7 +620,7 @@ downloads:
     - branch: "7.6"
       releases:
         - number: "7.6.13"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15198"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15198"
           date: "2018.02.15"
           excludeservers:
             - "wildfly"
@@ -680,7 +630,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.12"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15195"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15195"
           date: "2018.02.15"
           excludeservers:
             - "wildfly"
@@ -690,7 +640,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.11"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15190"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15190"
           date: "2018.01.29"
           excludeservers:
             - "wildfly"
@@ -700,7 +650,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.10"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15108"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15108"
           date: "2018.01.15"
           excludeservers:
             - "wildfly"
@@ -710,7 +660,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.9"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15100"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15100"
           date: "2017.12.06"
           excludeservers:
             - "wildfly"
@@ -720,7 +670,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.8"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14909"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14909"
           date: "2017.10.26"
           excludeservers:
             - "wildfly"
@@ -730,7 +680,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.7"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14899"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14899"
           date: "2017.07.13"
           excludeservers:
             - "wildfly"
@@ -740,7 +690,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14897"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14897"
           date: "2017.06.30"
           excludeservers:
             - "wildfly"
@@ -750,7 +700,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.5"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14891"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14891"
           date: "2017.05.22"
           excludeservers:
             - "wildfly"
@@ -760,7 +710,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14890"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14890"
           date: "2017.03.28"
           excludeservers:
             - "wildfly"
@@ -770,7 +720,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14703"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14703"
           date: "2017.03.15"
           excludeservers:
             - "wildfly"
@@ -780,7 +730,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14700"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14700"
           date: "2017.01.18"
           excludeservers:
             - "wildfly"
@@ -790,7 +740,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.6.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14698"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14698"
           date: "2016.12.15"
           excludeservers:
             - "wildfly"
@@ -812,7 +762,7 @@ downloads:
     - branch: "7.5"
       releases:
         - number: "7.5.9"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14704"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14704"
           date: "2017.12.06"
           excludeservers:
             - "wildfly"
@@ -822,7 +772,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.5.8"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14701"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14701"
           date: "2017.01.24"
           excludeservers:
             - "wildfly"
@@ -832,7 +782,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.5.7"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14696"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14696"
           date: "2016.12.15"
           excludeservers:
             - "wildfly"
@@ -842,7 +792,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.5.6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14694"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14694"
           date: "2016.10.26"
           excludeservers:
             - "wildfly"
@@ -852,7 +802,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.5.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14606"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14606"
           date: "2016.08.10"
           excludeservers:
             - "wildfly"
@@ -862,7 +812,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.5.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14604"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14604"
           date: "2016.07.08"
           excludeservers:
             - "wildfly"
@@ -872,7 +822,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.5.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14600"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14600"
           date: "2016.06.23"
           excludeservers:
             - "wildfly"
@@ -882,7 +832,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.5.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14599"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14599"
           date: "2016.05.31"
           excludeservers:
             - "wildfly"
@@ -904,7 +854,7 @@ downloads:
     - branch: "7.4"
       releases:
         - number: "7.4.11"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14695"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14695"
           date: "2016.12.15"
           excludeservers:
             - "wildfly"
@@ -914,7 +864,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.10"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14693"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14693"
           date: "2016.10.26"
           excludeservers:
             - "wildfly"
@@ -924,7 +874,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.8"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14601"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14601"
           date: "2016.06.23"
           excludeservers:
             - "wildfly"
@@ -934,7 +884,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.7"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14592"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14592"
           date: "2016.06.13"
           excludeservers:
             - "wildfly"
@@ -944,7 +894,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.6"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14590"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14590"
           date: "2016.04.29"
           excludeservers:
             - "wildfly"
@@ -954,7 +904,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.5"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14491"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14491"
           date: "2016.03.18"
           excludeservers:
             - "wildfly"
@@ -964,7 +914,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.4"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14391"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14391"
           date: "2016.03.10"
           excludeservers:
             - "wildfly"
@@ -974,7 +924,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.3"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14295"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14295"
           date: "2016.03.01"
           excludeservers:
             - "wildfly"
@@ -984,7 +934,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.2"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14290"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14290"
           date: "2016.01.28"
           excludeservers:
             - "wildfly"
@@ -994,7 +944,7 @@ downloads:
             - "ibm-was-85"
 
         - number: "7.4.1"
-          note: "https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14193"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14193"
           date: "2015.12.15"
           excludeservers:
             - "wildfly"
