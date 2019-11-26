@@ -32,14 +32,14 @@ Afterwards, you can [install the Camunda Modeler](#camunda-modeler).
 
 Please make sure you have the following installed:
 
-* Java Runtime Environment 1.7+
+* Java Runtime Environment 1.8+
 
 You can verify this by using your terminal, shell, or command line:
 
 ```sh
 java -version
 ```
-If you need to install Java Runtime Environment, you can [find the download from Oracle here](http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html).
+If you need to install Java Runtime Environment, you can [find the download from Oracle here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 # Camunda BPM Platform
 

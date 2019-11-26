@@ -12,7 +12,7 @@ menu:
 
 ---
 
-In this section, you'll learn how to add decision automation to your process by using [BPMN 2.0 *Business Rule Tasks*](https://docs.camunda.org/manual/7.8/reference/bpmn20/tasks/business-rule-task/) and [DMN 1.1 Decision Tables](https://docs.camunda.org/manual/7.8/reference/dmn11/).
+In this section, you'll learn how to add decision automation to your process by using [BPMN 2.0 *Business Rule Tasks*](/manual/latest/reference/bpmn20/tasks/business-rule-task/) and [DMN 1.1 Decision Tables](/manual/latest/reference/dmn11/).
 
 # Add a Business Rule Task to the Process
 Use the Camunda Modeler to open the Payment Retrieval process then click on the Approve Payment Task. Change the activity type to *Business Rule Task* in the wrench button menu.
@@ -79,7 +79,7 @@ A single DMN table that was executed could look like this in Camunda Cockpit:
 {{< img src="../img/cockpit-dmn-table.png" >}}
 
 {{< note title="Success!" class="info" >}}
-Congratulations! You've successfully completed the Camunda BPM Quick Start. Ready to continue? We recommend the [Camunda BPM documentation](https://docs.camunda.org/manual/7.8/).
+Congratulations! You've successfully completed the Camunda BPM Quick Start. Ready to continue? We recommend the [Camunda BPM documentation](https://docs.camunda.org/manual/latest/).
 {{< /note >}}
 
 

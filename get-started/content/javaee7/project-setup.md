@@ -69,7 +69,7 @@ The next step consists of setting up the Maven dependencies for your new process
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
-        <version>7.11.0</version>
+        <version>7.12.0</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

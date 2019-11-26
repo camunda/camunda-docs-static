@@ -43,7 +43,7 @@ Add an End Event named *Payment Received*.
 
 ## Configure the Service Task
 
-There are different ways to [execute service tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/) using Camunda BPM. In this guide, we'll use the external task pattern.
+There are different ways to [execute service tasks](https://docs.camunda.org/manual/latest/reference/bpmn20/tasks/service-task/) using Camunda BPM. In this guide, we'll use the external [task pattern](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/).
 Open the Properties Panel within the Camunda Modeler and click on the Service Task you just created. Change the Implementation to `External` and use `charge-card` as the Topic.
 
 {{< img src="../img/modeler-step4.png" >}}
@@ -83,7 +83,7 @@ In this quick start, we'll show you how to use Camunda's ready-to-go task client
 If you've never worked with Java before, we recommend using the JavaScript (NodeJS) task client in this tutorial.
 
 {{< note title="Hint" class="info" >}}
-If you prefer a different programming language, you can also use Camunda's [REST API](https://docs.camunda.org/manual/7.8/user-guide/process-engine/external-tasks/#rest-api) to access API operations via HTTP.
+If you prefer a different programming language, you can also use Camunda's [REST API](/manual/latest/user-guide/process-engine/external-tasks/#rest-api) to access API operations via HTTP.
 {{< /note >}}
 
 ## a) Using Java
@@ -128,7 +128,7 @@ Your pom.xml file of your project should look like this:
 		<dependency>
 			<groupId>org.camunda.bpm</groupId>
 			<artifactId>camunda-external-task-client</artifactId>
-			<version>1.2.0</version>
+			<version>1.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -136,9 +136,9 @@ Your pom.xml file of your project should look like this:
 			<version>1.6.1</version>
 		</dependency>
 		<dependency>
-    			<groupId>javax.xml.bind</groupId>
-    			<artifactId>jaxb-api</artifactId>
-    			<version>2.3.1</version>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
 		</dependency>
 	</dependencies>
 </project>

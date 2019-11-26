@@ -25,7 +25,7 @@ Make sure you have the following set of tools installed:
 
 # Install Camunda BPM platform
 
-First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the wildfly 16 based distribution. Download it from [the download page](https://camunda.com/download/).
+First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the wildfly 18 based distribution. Download it from [the download page](https://camunda.com/download/).
 
 After having downloaded the distribution, unpack it inside a directory of your choice. We will call that directory
 `$CAMUNDA_HOME`.
