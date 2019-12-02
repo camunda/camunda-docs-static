@@ -32,7 +32,7 @@ Double-click on the Start Event. A text box will open. Name the Start Event "Pay
 When editing Labels, you can add line breaks using `Shift + Enter`.
 {{< /note >}}
 
-Click on the start event. From its context menu, select the activity shape (rectangle). It will be placed automatically on the canvas, and you can drag it to your preferred position. Name it *Charge Credit Card*. Change the activity type to *Service Task* by clicking on the activity shape and using the wrench button.
+Click on the start event. From its context menu, select the activity shape (rounded rectangle). It will be placed automatically on the canvas, and you can drag it to your preferred position. Name it *Charge Credit Card*. Change the activity type to *Service Task* by clicking on the activity shape and using the wrench button.
 
 {{< img src="../img/modeler-step2.png" >}}
 
@@ -58,7 +58,7 @@ First, configure an ID for the process. Type *payment-retrieval* in the property
 
 Second, configure the Name of the process. Type *Payment Retrieval* in the property field *Name*.
 
-Finally, check the box next to the *Executable* property. If you don't check this box, the process definition is ignored by the process engine.
+Finally, make sure the box next to the *Executable* property is checked. If you don't check this box, the process definition is ignored by the process engine.
 
 ## Save the BPMN Diagram
 

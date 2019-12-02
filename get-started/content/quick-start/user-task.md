@@ -19,7 +19,7 @@ We want to modify our process so that we can involve humans.
 
 To do so, open the process in the Camunda Modeler.
 
-Next, from the Modeler's left-hand menu, select the activity shape (rectangle) and drag it into position between the Start Event and the "Charge Credit Card" Service Task. Name it *Approve Payment*.
+Next, from the Modeler's left-hand menu, select the activity shape (rounded rectangle) and drag it into position between the Start Event and the "Charge Credit Card" Service Task. Name it *Approve Payment*.
 {{< img src="../img/modeler-usertask1.png" >}}
 
 Change the activity type to *User Task* by clicking on it and using the wrench button menu.
