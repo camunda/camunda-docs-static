@@ -20,7 +20,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 
 {{< img src="../img/jira-create-support-issue.png" title="Create Support Issue" >}}
 
-* Go to our [JIRA support system](https://app.camunda.com/jira/browse/SUPPORT)
+* Go to our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues)
 * Select `Create Issue`
 * Select `Support` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
 * Give the ticket a meaningful **summary**
