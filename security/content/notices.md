@@ -12,8 +12,98 @@ On this page, Camunda publishes security notices _after_ fixes are available.
 Fixes are available as patches to the enterprise platform and alpha or minor
 releases of the community platform.
 
+
 # Notices
 
+## Notice 25
+
+**Publication Date: December 9th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+Camunda BPM's APIs are susceptible to object deserialization vulnerabilities. If an attacker can submit a serialized variable of type Object, they can exploit so-called *serialization gadgets*, i.e. classes that run vulnerable code during deserialization. For details, see [OWASP's description of Deserialization of untrusted data](https://www.owasp.org/index.php/Deserialization_of_untrusted_data).
+
+**How to determine if the installation is affected**
+
+- Camunda REST API or web applications are used
+- An attacker has access to the REST API or web applications to submit variables
+
+**Solution**
+
+Camunda has provided the releases v7.12.0, v7.11.7, v7.10.13 and 7.9.19 which contain a feature to whitelist allowed classes for object values.
+
+We strongly recommend to activate whitelisting in any Camunda installation that is accessible by untrusted parties. See the user guide for details: https://docs.camunda.org/manual/7.12/user-guide/security/#variable-values-from-untrusted-sources
+
+## Notice 24
+
+**Publication Date: December 9th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+A user could send an unlimited query to the Camunda REST API or web applications which loads the entire result data into main memory. This can exhaust the server's resources if the query result is large, resulting in a denial of service scenario.
+
+**How to determine if the installation is affected**
+
+- Camunda REST API or web applications are used
+- An attacker has access and permissions to load a large number of Camunda entities (e.g. tasks)
+
+**Solution**
+
+Camunda has provided the releases v7.12.0, v7.11.7, v7.10.13 and 7.9.19 which contain a feature to enforce pagination of queries.
+
+We strongly recommend to activate the pagination limit in any Camunda installation that is accessible by untrusted parties. See the user guide for details: https://docs.camunda.org/manual/7.12/user-guide/security/#maximum-results-limit-in-queries
+
+## Notice 23
+
+**Publication Date: December 9th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+The version of Jackson shipped with the Camunda EAR for Websphere was vulnerable to object deserialization flaws. Details:
+
+- https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Afasterxml&cpe_product=cpe%3A%2F%3A%3Ajackson-databind&cpe_version=cpe%3A%2F%3Afasterxml%3Ajackson-databind%3A2.6.3
+
+**How to determine if the installation is affected**
+
+- Camunda is used on IBM Websphere 8.5 or 9
+- The Camunda EAR is installed
+- An attacker is able to access the REST API or web applications and has permissions to submit process variables
+
+**Solution**
+
+Camunda has provided the releases v7.12.0, v7.11.7 and v7.10.13 which contain a fix.
+
+## Notice 22
+
+**Publication Date: December 9th, 2019**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+The login endpoint of the Camunda web applications (Cockpit, Tasklist, Admin) did not require a valid CSRF token. This allowed an attacker to trick a user to log into these applications without their knowing.
+
+**How to determine if the installation is affected**
+
+- An attacker cann access the Camunda web applications
+
+**Solution**
+
+Camunda has provided the releases v7.12.0, v7.11.5, v7.10.11 and 7.9.17, as well as Spring Boot Starter 3.4.0, 3.3.6, 3.2.8, 3.1.8, 3.0.8 which contain a fix.
 
 ## Notice 21
 
@@ -41,6 +131,7 @@ Camunda has provided the releases v7.11.5, v7.10.11, v7.9.17 and 7.12.0-alpha5 w
 
 For users of the Camunda Spring Boot Starter, we recommend to explicitly override the version of `com.fasterxml.jackson.core:jackson-databind` to the latest.
 
+**Update 9th of November**: For the Camunda Spring Boot Starter, Camunda has provided the releases 3.4.0, 3.3.5 and 3.2.7 which contain a fix.
 
 ## Notice 20
 
