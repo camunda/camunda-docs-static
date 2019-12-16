@@ -196,6 +196,7 @@ __Changes in Supported Environments:__
 * Minumum required `Camunda BPM` version is raised to 7.10.6.
 * End of Support for `Camunda BPM`7.9 releases
 * Support for `Camunda BPM` version 7.12.0
+* Support for `Adopt OpenJDK` version 8 & 11
 
 
 ## Camunda Optimize 2.6
