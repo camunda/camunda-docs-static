@@ -1083,7 +1083,7 @@ To install the demo distribution, please download one of the following archives:
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.7.0</td>
       <td>7.10.6+, 7.11+ and 7.12+</td>
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
+      <td>6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
       <td>20.12.2019</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.7.0/camunda-optimize-2.7.0-demo.zip">zip</a>&nbsp;
@@ -1197,8 +1197,7 @@ To get the production distribution, please download one of the following archive
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.7.0</td>
       <td>7.10.6+, 7.11+ and 7.12+</td>
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
+      <td>6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
       <td>20.12.2019</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.7.0/camunda-optimize-2.7.0-production.zip">zip</a>&nbsp;
