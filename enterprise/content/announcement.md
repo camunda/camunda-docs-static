@@ -193,7 +193,7 @@ __Changes in Supported Environments:__
 
 * Minimum required Elasticsearch version is raised to 6.4.0
 * End of Support for Elasticsearch 6.2.X, 6.3.X releases
-* Minumum required `Camunda BPM` version is raised to 7.10.6.
+* Minimum required `Camunda BPM` version is raised to 7.10.6.
 * End of Support for `Camunda BPM` 7.9 releases
 * Support for `Camunda BPM` version 7.12.0
 * Support for Java 13
