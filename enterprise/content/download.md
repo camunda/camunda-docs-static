@@ -1090,83 +1090,7 @@ To install the demo distribution, please download one of the following archives:
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.7.0/camunda-optimize-2.7.0-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.6.0</td>
-      <td>7.9.12+, 7.10.6+, 7.11+</td>
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
-      <td>02.10.2019</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0/camunda-optimize-2.6.0-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.6.0/camunda-optimize-2.6.0-demo.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.5.0</td>
-      <td>7.9.12+, 7.10.6+, 7.11+</td>
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
-      <td>28.06.2019</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.5.0/camunda-optimize-2.5.0-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.5.0/camunda-optimize-2.5.0-demo.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.4.0</td>
-      <td>7.8.13+, 7.9.7+, 7.10+</td>
-      <td>6.2.0+, 6.3.1+, 6.4.0+, 6.5.0+</td>
-      <td>29.03.2019</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.4.0/camunda-optimize-2.4.0-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.4.0/camunda-optimize-2.4.0-demo.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.3.0</td>
-      <td>7.8.13+, 7.9.7+, 7.10+</td>
-      <td>6.0.0</td>
-      <td>21.12.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-demo.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.2.0</td>
-      <td>7.8.7+, 7.9.1+, 7.10+</td>
-      <td>6.0.0</td>
-      <td>28.09.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.1.0</td>
-      <td>7.8.7+, 7.9.1+, 7.10+</td>
-      <td>6.0.0</td>
-      <td>29.06.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.0.0</td>
-      <td>7.7+</td>
-      <td>6.0.0</td>
-      <td>29.03.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-full.tar.gz">tar.gz</a>
-      </td>
-    </tr>
+  </tbody>
 </table>
 
 ### Production Distribution without Elasticsearch
@@ -1259,28 +1183,7 @@ To get the production distribution, please download one of the following archive
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.1.0</td>
-      <td>7.8.7+, 7.9.1+, 7.10+</td>
-      <td>6.0.0</td>
-      <td>29.06.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.1.0/camunda-optimize-2.1.0-standalone.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.0.0</td>
-      <td>7.7+</td>
-      <td>6.0.0</td>
-      <td>29.03.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.0.0/camunda-optimize-2.0.0-standalone.tar.gz">tar.gz</a>
-      </td>
-    </tr>
+  </tbody>
 </table>
 
 [Previous Releases](https://camunda.org/enterprise-release/optimize/)
