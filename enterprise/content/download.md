@@ -345,12 +345,12 @@ downloads:
     - branch: "7.9"
       releases:
         - number: "7.9.20"
-           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15691"
-           date: "2020.01.29"
-           excludeservers:
-             - "wildfly"
-             - "glassfish"
-             - "ibm-was-85"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15691"
+          date: "2020.01.29"
+          excludeservers:
+            - "wildfly"
+            - "glassfish"
+            - "ibm-was-85"
 
         - number: "7.9.19"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15594"
