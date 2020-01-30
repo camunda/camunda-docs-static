@@ -65,7 +65,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
-            
+
     - branch: "7.12"
       releases:
         - number: "7.12.1"
@@ -1093,13 +1093,13 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.7.0</td>
+      <td>3.0.0-aplha1</td>
       <td>7.10.6+, 7.11+ and 7.12+</td>
-      <td>6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
-      <td>20.12.2019</td>
+      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+</td>
+      <td>31.01.2020</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.7.0/camunda-optimize-2.7.0-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.7.0/camunda-optimize-2.7.0-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -1129,6 +1129,17 @@ To get the production distribution, please download one of the following archive
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.0.0-aplha1</td>
+      <td>7.10.6+, 7.11+ and 7.12+</td>
+      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+</td>
+      <td>31.01.2020</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>2.7.0</td>
@@ -1182,17 +1193,6 @@ To get the production distribution, please download one of the following archive
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-production.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>2.2.0</td>
-      <td>7.8.7+, 7.9.1+, 7.10+</td>
-      <td>6.0.0</td>
-      <td>28.09.2018</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.2.0/camunda-optimize-2.2.0-standalone.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
