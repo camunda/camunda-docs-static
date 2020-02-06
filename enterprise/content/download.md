@@ -1140,6 +1140,17 @@ To install the demo distribution, please download one of the following archives:
         <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>2.7.0</td>
+      <td>7.10.6+, 7.11+ and 7.12+</td>
+      <td>6.4.0+, 6.5.0+, 6.6.0+, 6.7.0+, 6.8.0+</td>
+      <td>20.12.2019</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.7.0/camunda-optimize-2.7.0-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/2.7.0/camunda-optimize-2.7.0-demo.tar.gz">tar.gz</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
