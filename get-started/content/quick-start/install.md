@@ -1,6 +1,6 @@
 ---
 
-title: 'Download and Installation'
+title: 'Download and Installation (1/6)'
 weight: 10
 
 menu:

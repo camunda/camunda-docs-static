@@ -1,6 +1,6 @@
 ---
 
-title: 'Executing automated steps'
+title: 'Executing automated steps (2/6)'
 weight: 20
 
 menu:

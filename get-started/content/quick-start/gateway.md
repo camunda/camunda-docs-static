@@ -1,6 +1,6 @@
 ---
 
-title: 'Add Gateways to the Process'
+title: 'Add Gateways to the Process (5/6)'
 weight: 50
 
 menu:

@@ -1,6 +1,6 @@
 ---
 
-title: 'Deploy the Process'
+title: 'Deploy the Process (3/6)'
 weight: 30
 
 menu:
