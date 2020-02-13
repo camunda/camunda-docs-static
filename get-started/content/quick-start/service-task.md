@@ -180,6 +180,16 @@ public class ChargeCardWorker {
           Long amount = (Long) externalTask.getVariable("amount");
           LOGGER.info("Charging credit card with an amount of '" + amount + "'€ for the item '" + item + "'...");
 
+          if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+              try {
+                  Desktop.getDesktop().browse(new URI("https://docs.camunda.org/get-started/quick-start/complete"));
+              } catch (IOException e) {
+                  e.printStackTrace();
+              } catch (URISyntaxException e) {
+                  e.printStackTrace();
+              }
+          }
+
           // Complete the task
           externalTaskService.complete(externalTask);
         })
