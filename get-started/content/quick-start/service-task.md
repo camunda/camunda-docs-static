@@ -157,6 +157,8 @@ Next, you need to create a package, e.g., *org.camunda.bpm.getstarted.chargecard
 package org.camunda.bpm.getstarted.chargecard;
 
 import java.util.logging.Logger;
+import java.awt.Desktop;
+import java.net.URI;
 
 import org.camunda.bpm.client.ExternalTaskClient;
 
@@ -178,16 +180,13 @@ public class ChargeCardWorker {
           // Get a process variable
           String item = (String) externalTask.getVariable("item");
           Long amount = (Long) externalTask.getVariable("amount");
+
           LOGGER.info("Charging credit card with an amount of '" + amount + "'€ for the item '" + item + "'...");
 
-          if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-              try {
-                  Desktop.getDesktop().browse(new URI("https://docs.camunda.org/get-started/quick-start/complete"));
-              } catch (IOException e) {
-                  e.printStackTrace();
-              } catch (URISyntaxException e) {
-                  e.printStackTrace();
-              }
+          try {
+              Desktop.getDesktop().browse(new URI("https://docs.camunda.org/get-started/quick-start/complete"));
+          } catch (Exception e) {
+              e.printStackTrace();
           }
 
           // Complete the task
@@ -232,7 +231,8 @@ npm init -y
 ### Add Camunda External Task Client JS library
 
 ```sh
-npm install -s camunda-external-task-client-js
+npm install camunda-external-task-client-js
+npm install -D open
 ```
 
 ### Implement the NodeJS script
@@ -246,6 +246,7 @@ Next, you need to create a new JavaScript file, e.g. `worker.js`, that looks lik
 
 ```javascript
 const { Client, logger } = require('camunda-external-task-client-js');
+const open = require('open');
 
 // configuration for the Client:
 //  - 'baseUrl': url to the Process Engine
@@ -265,6 +266,8 @@ client.subscribe('charge-card', async function({ task, taskService }) {
   const item = task.variables.get('item');
 
   console.log(`Charging credit card with an amount of ${amount}€ for the item '${item}'...`);
+
+  open('https://docs.camunda.org/get-started/quick-start/success');
 
   // Complete the task
   await taskService.complete(task);

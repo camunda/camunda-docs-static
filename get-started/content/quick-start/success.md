@@ -10,4 +10,4 @@ Now that you got the process running you may move on to step four to [learn how 
 
 {{< img src="../img/niall-says-congrats.png" >}}
 
-Feel free to remove the ```Desktop.getDesktop().browse()``` line if you don't want to open this page again.
+Feel free to remove the ```open()``` line if you don't want to open this page again.
