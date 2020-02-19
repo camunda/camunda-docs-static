@@ -50,7 +50,7 @@ downloads:
 
   selected:
     branch: "7.12"
-    version: "7.12.2"
+    version: "7.12.3"
     server: "tomcat"
 
   branches:
@@ -68,6 +68,16 @@ downloads:
 
     - branch: "7.12"
       releases:
+        - number: "7.12.3"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15702"
+          date: "2020.02.19"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.12.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15499"
           date: "2020.01.29"
