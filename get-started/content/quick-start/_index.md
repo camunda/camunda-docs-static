@@ -16,4 +16,4 @@ In this guide, you'll choose between implementing executable processes in Java o
 
 {{< get-code repo="camunda-get-started-quickstart" >}}
 
-You will be guided through the following steps:
+You will be guided through the following six steps:
