@@ -111,12 +111,16 @@ By clicking the watcher bubble you can see who is following the ticket. Here you
 
 # Phone Support
 
-Based on your SLA (Service Level Agreement) contract, you could also reach out to Support via 24x7 hotline telephone for Level 1 issues. The service line can be called free of charge from USA, Australia, Canada and Brazil. The German number can be used from all other countries, but in this case, the call may not be free of charge. You can find 24x7 support telephone number in your contract. 
+Based on your SLA (Service Level Agreement) contract, you could also reach out to Camunda technical support via telephone. You can find support hotline number in your contract. 
+
+The number can be called free of charge from USA, Australia, Canada and Brazil. Please note that the German number can be used from all other countries, but in this case, the call may not be free of charge.  
 
 ## How does support hotline work?
-In case of L1 issues outside business hours, you can call our 24x7 support hotline for immediate assistance from Camunda technical support team. Your call is received directly in our office (no external call center). Please find below the instructions on how to make use of hotline.
+Support hotline helps you to connect to Camunda technical support for an immediate assistance with your case. Your call is received directly in our office (no external call center). 
 
-* Dial in 24x7 telephone number
+Please find below the instructions on how to make use of support hotline.
+
+* Dial in telephone number provided in the contract
 * The IVR would ask you to enter service pin. The service pin is a 5-digit number provided with the contract. This helps us to prioritize your call. 
 * If service pin is handy, then please enter it.  
 * If you do not have service pin handy, just press the hash key (#) instead.
