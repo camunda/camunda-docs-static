@@ -109,3 +109,17 @@ JIRA tickets will be shared with all your support contacts automatically.
 
 By clicking the watcher bubble you can see who is following the ticket. Here you can add or remove watchers. Please note that you can only add users who are entitled Camunda enterprise support contacts, otherwise you will get an error message stating that the user with that email address is not found.
 
+# Phone Support
+
+Based on your SLA (Service Level Agreement) contract, you could also reach out to Support via 24x7 hotline telephone for Level 1 issues. The service line can be called free of charge from USA, Australia, Canada and Brazil. The German number can be used from all other countries, but in this case, the call may not be free of charge. You can find 24x7 support telephone number in your contract. 
+
+## How does support hotline work?
+In case of L1 issues outside business hours, you can call our 24x7 support hotline for immediate assistance from Camunda technical support team. Your call is received directly in our office (no external call center). Please find below the instructions on how to make use of hotline.
+
+* Dial in 24x7 telephone number
+* The IVR would ask you to enter service pin. The service pin is a 5-digit number provided with the contract. This helps us to prioritize your call. 
+* If service pin is handy, then please enter it.  
+* If you do not have service pin handy, just press the hash key (#) instead.
+* You will now be connected to Camunda technical support
+
+
