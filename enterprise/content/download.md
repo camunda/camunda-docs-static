@@ -1171,13 +1171,13 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.0.0-aplha1</td>
+      <td>3.0.0-alpha2</td>
       <td>7.10.6+, 7.11+ and 7.12+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+</td>
-      <td>31.01.2020</td>
+      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
+      <td>28.02.2020</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha2/camunda-optimize-3.0.0-alpha2-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha2/camunda-optimize-3.0.0-alpha2-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -1220,13 +1220,13 @@ To get the production distribution, please download one of the following archive
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.0.0-aplha1</td>
+      <td>3.0.0-alpha2</td>
       <td>7.10.6+, 7.11+ and 7.12+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+</td>
-      <td>31.01.2020</td>
+      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
+      <td>28.02.2020</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha1/camunda-optimize-3.0.0-alpha1-production.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha2/camunda-optimize-3.0.0-alpha2-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://camunda.org/enterprise-release/optimize/3.0.0-alpha2/camunda-optimize-3.0.0-alpha2-production.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
