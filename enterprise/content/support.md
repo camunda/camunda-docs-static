@@ -111,7 +111,7 @@ By clicking the watcher bubble you can see who is following the ticket. Here you
 
 # Phone Support
 
-Based on your support contract (Service Level Agreement) contract, you could also reach out to Camunda technical support via phone. You can find the support hotline number in your contract. 
+Based on your support contract (Service Level Agreement), you could also reach out to Camunda technical support via phone. You can find the support hotline number in your contract. 
 
 You can reach Technical Support by calling our Toll-Free support hotline phone number if calling from USA. Please note that the German number can be used from all other countries, but in this case, the call may not be free of charge.  
 
@@ -120,7 +120,7 @@ Support hotline helps you to connect to Camunda technical support for an immedia
 
 Please find below the instructions on how to make use of support hotline.
 
-* Dial in telephone number provided in the contract
+* Dial in phone number provided in the contract
 * The IVR would prompt you to enter service pin. The service pin is a 5-digit number provided with the contract. This helps us in authenticating you to your account.
 * If service pin is handy, then please enter it.  
 * If you do not have service pin handy, just press the hash key (#) instead.
