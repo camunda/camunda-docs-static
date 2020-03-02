@@ -158,6 +158,12 @@ Using the Enterprise Edition repository requires credentials in your Maven setti
     </server>
   </servers>
 ```
+
+Please note that there are some known issues in Artifactory while configuring Nexus repository as a Maven remote proxy.
+{{< note class="info" >}}
+   While testing the connection in Artifactory, if you get "Connection failed: Error 404: Not Found" message then you can ignore it, and continue to add the repository. The maven build should be able to download dependencies without any issues.
+{{< /note >}}
+
 ## Browse Camunda Nexus
 In order to browse the Camunda Nexus artifacts, here are the links which can be used.
 
