@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 26
+
+**Publication Date: March 3rd, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+When declaring a Maven dependency to a Camunda BPM artifact, it was possible that its dependencies would be resolved from a remote repository via HTTP protocol. HTTP is susceptible to man in the middle attacks that would allow an attacker to intercept the request and manipulate the delivered artifact, potentially leading to remote code execution in your build system. Details of this vulnerability can be found at https://medium.com/bugbountywriteup/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb.
+
+**How to determine if the installation is affected**
+
+- The Camunda artifacts are used as a dependency in your own Java project (e.g. Maven)
+- The build attempts to resolve a dependency from the repository http://repository.springsource.com/maven/bundles/external
+- An attacker is able to intercept this request
+
+Note: For example, you are not affected by this problem if your company uses a mirror for all Maven artifacts and you access the mirror safely (e.g. via HTTPS).
+
+**Solution**
+
+Camunda has provided the releases 7.13.0-alpha2, 7.12.3, 7.11.10, 7.10.16 which contain a fix.
+
 ## Notice 25
 
 **Publication Date: December 9th, 2019**
