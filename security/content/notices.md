@@ -15,6 +15,27 @@ releases of the community platform.
 
 # Notices
 
+## Notice 27
+
+**Publication Date: April 3rd, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+Optimize is a product module that uses a separate REST-API to fetch the data from the Camunda BPM runtime platform to analyze the data. However, it's possible to fetch some part of the historic data a user is not authorized to through this REST-API.
+
+**How to determine if the installation is affected**
+
+- Camunda REST API is used.
+- An attacker is a known user in the system that has full history read permission on decision and process definitions but not on tenants.
+
+**Solution**
+
+Camunda has provided the releases 7.13.0-alpha3, 7.12.4, 7.11.11, 7.10.17 which contain a fix.
+
 ## Notice 26
 
 **Publication Date: March 3rd, 2020**
