@@ -16,6 +16,17 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 # Camunda BPM Announcements
 
+## Camunda BPM 7.13
+
+__Release Date:__ scheduled for 31st of May 2020
+
+__End of Maintenance:__ 30th of November 2021
+
+__Changes in Supported Environments:__
+
+* Support for Oracle 19c (also supported as of 7.12.2+)
+* Support for PostgreSQL 12.2
+
 ## Camunda BPM 7.12
 
 __Release Date:__ scheduled for 30th of November 2019
