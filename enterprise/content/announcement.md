@@ -27,6 +27,7 @@ __Changes in Supported Environments:__
 * Support for Java 14
 * Support for Oracle 19c (also supported as of 7.12.2+)
 * Support for PostgreSQL 12.2
+* End of Support for Oracle WebLogic Server 12R1
 
 ## Camunda BPM 7.12
 
