@@ -24,6 +24,7 @@ __End of Maintenance:__ 30th of November 2021
 
 __Changes in Supported Environments:__
 
+* Support for Java 14
 * Support for Oracle 19c (also supported as of 7.12.2+)
 * Support for PostgreSQL 12.2
 
