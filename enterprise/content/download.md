@@ -58,7 +58,7 @@ downloads:
       releases:
         - number: "7.13.0-alpha3"
           note: "https://blog.camunda.com/post/2020/04/camunda-bpm-7130-alpha3-released"
-          date: "2020.04.02"
+          date: "2020.04.03"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
