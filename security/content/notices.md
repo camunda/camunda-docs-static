@@ -33,6 +33,7 @@ The version of Apache Tomcat shipped with the Camunda distributions for Tomcat a
 
 - Camunda BPM Tomcat is used *or* Camunda BPM Spring Boot Starter is used
 - The Tomcat AJP connector is enabled (this is the default configuration in Tomcat)
+- An attacker is able to access the AJP endpoint
 
 **Solution**
 
