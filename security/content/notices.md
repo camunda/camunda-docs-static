@@ -15,6 +15,55 @@ releases of the community platform.
 
 # Notices
 
+## Notice 28
+
+**Publication Date: April 6th, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions for Tomcat and transitively pulled in by the Camunda Spring Boot starter was vulnerable to remote code execution:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-1938
+
+**How to determine if the installation is affected**
+
+- Camunda BPM Tomcat is used *or* Camunda BPM Spring Boot Starter is used
+- The Tomcat AJP connector is enabled (this is the default configuration in Tomcat)
+
+**Solution**
+
+Camunda has provided the releases 7.13.0-alpha3, 7.12.4, 7.11.11, 7.10.17, Spring Boot Starter 3.4.2, Spring Boot Starter 3.3.8, Spring Boot Starter 3.2.10 which contain a fix.
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+- The AJP connector in Tomcat can be disabled in the `server.xml` configuration file. See also https://tomcat.apache.org/tomcat-9.0-doc/security-howto.html.
+
+## Notice 27
+
+**Publication Date: April 6th, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+Camunda Optimize is a product module that uses a separate REST API to fetch data from the Camunda BPM runtime platform for export. Using this API, it was possible for a user to access history data of tenants they are not permitted to access.
+
+**How to determine if the installation is affected**
+
+- Camunda REST API is used.
+- An attacker is a known user in the system that has full history read permission on decision and process definitions but not on tenants.
+
+**Solution**
+
+Camunda has provided the releases 7.13.0-alpha3, 7.12.4, 7.11.11, 7.10.17 which contain a fix.
+
 ## Notice 26
 
 **Publication Date: March 3rd, 2020**
