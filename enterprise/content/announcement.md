@@ -204,8 +204,10 @@ __End of Maintenance:__ 30th of September 2021
 
 __Changes in Supported Environments:__
 
-* Minimum required Elasticsearch version is raised to 7.0.0
-* End of Support for Elasticsearch 6.4.X, 6.5.X, 6.6.X, 6.7.X, 6.8.X releases
+* Minimum required Elasticsearch version is raised to 7.0.0. This includes at least Elasticsearch versions 7.0 - 7.6.
+* End of Support for Elasticsearch 6.4.X, 6.5.X, 6.6.X, 6.7.X, 6.8.X releases.
+* End of Support for Internet Explorer.
+* Optimize supports only the latest Edge browser version. Unfortunately, Microsoft does not update Edge to the new version through it's update system, but you have to do that manually. Either download it from the [offical page](https://www.microsoft.com/en-us/edge) and install the new version manually or ask your administrator to do that for you.
 
 ## Camunda Optimize 2.7
 
