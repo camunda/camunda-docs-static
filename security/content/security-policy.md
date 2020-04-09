@@ -15,7 +15,7 @@ As a core infrastructure component of our customers, the security of Camunda BPM
 
 # Information Security Standards
 
-The security of the areas listed in the next section is ensured based on common industry best practises. Thus, the development of the software is being influenced by standards like [OWASP Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project), [CVSS](https://www.first.org/cvss/) and others.
+The security of the areas listed in the next section is ensured based on common industry best practises. Thus, the development of the software is being influenced by standards like [OWASP Top 10](https://owasp.org/www-project-top-ten/)), [CVSS](https://www.first.org/cvss/) and others.
 
 # Organizational Aspects of Security
 
