@@ -100,12 +100,35 @@ Test history:
   <tr>
     <td><p>January 2019</p></td>
     <td>
-      <p>Camunda version: 7.10.1</p>
+      <p>Camunda BPM Platform version: 7.10.1</p>
       <p>Whitebox test with focus on (but not limited to) Camunda BPM web applications and REST API.</p>
     </td>
     <td>
       <p>No critical vulnerabilities were detected.</p>
       <p>Five lesser vulnerabilities were detected and submitted for treatment to our security issue process.</p>
+      <p>Two issues have been fixed. </p>
+      <p>Three issues have been partially fixed. </p>
+    </td>
+  </tr>
+</table>
+
+<table class="table table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Test Focus</th>
+    <th>Result Summary</th>
+  </tr>
+  <tr>
+    <td><p>January 2020</p></td>
+    <td>
+      <p>Camunda BPM Platform Version: 7.12.1-ee Camunda Optimize Version 2.7.0</p>
+      <p>Whitebox test with focus on (but not limited to) Camunda BPM web applications and REST API.</p>
+    </td>
+    <td>
+      <p>No critical vulnerabilities were detected.</p>
+      <p>Seven lower vulnerabilities were detected and submitted for treatment to our security issue process.</p>
+      <p>Two issues have been fixed. </p>
+      <p>Five issues have been partially fixed, work in progress.</p>
     </td>
   </tr>
 </table>
