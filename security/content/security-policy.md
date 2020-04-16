@@ -110,14 +110,6 @@ Test history:
       <p>Three issues have been partially fixed. </p>
     </td>
   </tr>
-</table>
-
-<table class="table table-striped">
-  <tr>
-    <th>Date</th>
-    <th>Test Focus</th>
-    <th>Result Summary</th>
-  </tr>
   <tr>
     <td><p>January 2020</p></td>
     <td>
