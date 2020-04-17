@@ -118,7 +118,7 @@ Test history:
     </td>
     <td>
       <p>No critical vulnerabilities were detected.</p>
-      <p>Seven lower vulnerabilities were detected and submitted for treatment to our security issue process.</p>
+      <p>Seven lesser vulnerabilities were detected and submitted for treatment to our security issue process.</p>
       <p>Two issues have been fixed. </p>
       <p>Five issues have been partially fixed, work in progress.</p>
     </td>
