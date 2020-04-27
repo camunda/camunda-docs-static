@@ -53,7 +53,7 @@ downloads:
 
   selected:
     branch: "7.12"
-    version: "7.12.4"
+    version: "7.12.5"
     server: "tomcat"
 
   branches:
@@ -93,6 +93,17 @@ downloads:
 
     - branch: "7.12"
       releases:
+        - number: "7.12.5"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15997"
+          date: "2020.04.27"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.12.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15790"
           date: "2020.03.26"
@@ -150,6 +161,17 @@ downloads:
 
     - branch: "7.11"
       releases:
+        - number: "7.11.12"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15998"
+          date: "2020.04.27"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.11.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15791"
           date: "2020.03.26"
@@ -273,6 +295,17 @@ downloads:
 
     - branch: "7.10"
       releases:
+        - number: "7.10.18"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15999"
+          date: "2020.04.27"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.10.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15792"
           date: "2020.03.26"
