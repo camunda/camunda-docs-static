@@ -9,6 +9,9 @@ menu:
 
 downloads:
   servers:
+    - path: "run"
+      name: "Camunda BPM Run"
+      weight: 0
     - path: "tomcat"
       name: "Apache Tomcat"
       weight: 1
@@ -42,9 +45,7 @@ downloads:
     - path: "wildfly"
       name: "WildFly"
       weight: 11
-    - path: "run"
-      name: "Camunda Run"
-      weight: 12
+
 
   formats:
     - zip
