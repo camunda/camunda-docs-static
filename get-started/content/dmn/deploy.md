@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-dmn-deploy"
     pre: "Use Java Code to evaluate the decision table, then deploy the web application to Apache Tomcat and verify the result in Cockpit."
 
+aliases: [/dmn11/deploy/]
 ---
 
 In this step, we use Java Code to evaluate the decision table. Then we deploy the web application to Apache Tomcat and verify the result in Cockpit.

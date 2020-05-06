@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-dmn-install"
     pre: "Install the Camunda BPM Platform and Camunda Modeler on your machine."
 
+aliases: [/dmn11/install/]
 ---
 
 First you need to set up your development environment and install the Camunda BPM Platform and the Camunda Modeler.

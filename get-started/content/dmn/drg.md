@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-dmn-drg"
     pre: "Model a Decision Requirements Graph based on the decision table, adjust the Java Code to evaluate it and deploy the web application."
 
+aliases: [/dmn11/drg/]
 ---
 
 In this step, we extend the previous example by a second decision *Beverages* which uses the *Dish* decision table as input. We model this dependency between the decisions within a Decision Requirements Graph (DRG) using the Camunda Modeler. Then, we adjust the Application class to evaluate the *Beverages* decision, deploy the web application to Apache Tomcat and verify the result in Cockpit.

@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-dmn-setup"
     pre: "Set up an Apache Maven-based process application inside Eclipse."
 
+aliases: [/dmn11/project-setup/]
 ---
 
 Now you are ready to set up your first process application project in the IDE of your choice, the following description uses Eclipse.
