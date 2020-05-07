@@ -120,6 +120,7 @@ Your pom.xml file of your project should look like this:
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>org.camunda.bpm.getstarted</groupId>
 	<artifactId>charge-card-worker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -128,7 +129,7 @@ Your pom.xml file of your project should look like this:
 		<dependency>
 			<groupId>org.camunda.bpm</groupId>
 			<artifactId>camunda-external-task-client</artifactId>
-			<version>1.3.0</version>
+			<version>1.3.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -217,7 +218,7 @@ In this section, you'll learn how to implement an external task worker in NodeJS
 
 Make sure you have the following tools installed:
 
-* NodeJS >= v8.9.4 ([Download available here](https://nodejs.org/en/download/))
+* NodeJS >= v10 ([Download available here](https://nodejs.org/en/download/))
 * Editor for JavaScript files (e.g. [Atom](https://atom.io/))
 
 ### Create a new NodeJS project

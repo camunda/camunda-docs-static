@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-dmn-model"
     pre: "Learn the basics of handling the Camunda Modeler and learn how to create and configure a fully executable decision table."
 
+aliases: [/dmn11/model/]
 ---
 
 In this section you learn how to create your first DMN [decision table](/manual/latest/reference/dmn11/decision-table/) with the Camunda Modeler. The table will contain the decision logic about the desired dish for a given season and guest count.

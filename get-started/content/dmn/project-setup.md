@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-dmn-setup"
     pre: "Set up an Apache Maven-based process application inside Eclipse."
 
+aliases: [/dmn11/project-setup/]
 ---
 
 Now you are ready to set up your first process application project in the IDE of your choice, the following description uses Eclipse.
@@ -54,7 +55,7 @@ The next step consists of setting up the Maven dependencies for your new process
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
-        <version>7.12.0</version>
+        <version>7.13.0</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

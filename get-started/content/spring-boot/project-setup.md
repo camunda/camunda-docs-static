@@ -45,27 +45,39 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
   <artifactId>loan-approval-spring-boot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+  <properties>
+    <camunda.spring-boot.version>7.13.0</camunda.spring-boot.version>
+    <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.2.1.RELEASE</version>
+        <version>${spring-boot.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
-
+  
   <dependencies>
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
-      <version>3.4.0</version>
+      <version>${camunda.spring-boot.version}</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>2.2.3</version>
     </dependency>
   </dependencies>
 

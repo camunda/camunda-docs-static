@@ -63,13 +63,18 @@ The next step consists of setting up the Maven dependencies for your new process
   <version>0.1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <!-- import Camunda BOM to ensure correct versions of Camunda projects -->
+  <properties>
+    <camunda.version>7.13.0</camunda.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-bom</artifactId>
-        <version>7.12.0</version>
+        <version>${camunda.version}</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -110,7 +115,7 @@ The next step consists of setting up the Maven dependencies for your new process
           <groupId>xalan</groupId>
         </exclusion>
       </exclusions>
-    </dependency>   
+    </dependency>
   </dependencies>
 
   <build>
@@ -124,10 +129,11 @@ The next step consists of setting up the Maven dependencies for your new process
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
-    </plugins> 
+    </plugins>
   </build>
 
 </project>
+
 ```
 
 As dependencies you need the Camunda engine and Camunda engine CDI package. The CDI package provide you with beans to easily interact with the process engine and the ability to resolve CDI beans from inside the BPMN process XML.
