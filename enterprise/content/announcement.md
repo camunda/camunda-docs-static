@@ -28,6 +28,8 @@ __Changes in Supported Environments:__
 * Support for Oracle 19c (also supported as of 7.12.2+)
 * Support for PostgreSQL 12.2
 * End of Support for Oracle WebLogic Server 12R1
+* The [Javascript External Task Client](https://github.com/camunda/camunda-external-task-client-js/) (version 2.0.0) requires NodeJS 10 or higher. It cannot be used with NodeJS 8 anymore.
+
 
 ## Camunda BPM 7.12
 
