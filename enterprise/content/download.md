@@ -60,6 +60,15 @@ downloads:
   branches:
     - branch: "7.13"
       releases:
+        - number: "7.13.0-alpha5"
+          date: "2020.05.13"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.13.0-alpha4"
           note: "https://blog.camunda.com/post/2020/04/camunda-bpm-7130-alpha4-released"
           date: "2020.04.29"
