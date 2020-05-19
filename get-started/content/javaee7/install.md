@@ -20,12 +20,12 @@ Make sure you have the following set of tools installed:
 
 * Java JDK 1.8+
 * Apache Maven (optional, if not installed you can use embedded Maven inside Eclipse.)
-* A modern web browser (recent Firefox, Chrome, Internet Explorer 11, or Microsoft Edge will work fine)
+* A modern web browser (latest Firefox, Chrome, or Microsoft Edge will work fine)
 * Eclipse integrated development environment (IDE)
 
 # Install Camunda BPM platform
 
-First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the wildfly 18 based distribution. Download it from [the download page](https://camunda.com/download/).
+First, download a distribution of the Camunda BPM platform. You can choose from different application servers. In this tutorial, we will use the WildFly 19 based distribution. Download it from [the download page](https://downloads.camunda.cloud/).
 
 After having downloaded the distribution, unpack it inside a directory of your choice. We will call that directory
 `$CAMUNDA_HOME`.
