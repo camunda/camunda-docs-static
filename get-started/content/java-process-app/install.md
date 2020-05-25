@@ -21,7 +21,7 @@ Make sure you have the following set of tools installed:
 
 * Java JDK 1.8+,
 * Apache Maven (optional, if not installed you can use embedded Maven inside Eclipse.)
-* A modern web browser (latest Firefox, Chrome, Microsoft Edge will work fine)
+* A modern web browser (recent Firefox, Chrome or Microsoft Edge will work fine)
 * Eclipse integrated development environment (IDE)
 
 
