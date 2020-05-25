@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-dmn-install"
     pre: "Install the Camunda BPM Platform and Camunda Modeler on your machine."
 
+aliases: [/dmn11/install/]
 ---
 
 First you need to set up your development environment and install the Camunda BPM Platform and the Camunda Modeler.
@@ -19,9 +20,9 @@ First you need to set up your development environment and install the Camunda BP
 
 Make sure you have the following set of tools installed:
 
-* Java JDK 1.7+,
+* Java JDK 1.8+,
 * Apache Maven (optional, if not installed you can use embedded Maven inside Eclipse.)
-* A modern web browser (recent Firefox, Chrome, Microsoft Edge or Internet Explorer 11 will work fine)
+* A modern web browser (recent Firefox, Chrome or Microsoft Edge will work fine)
 * Eclipse integrated development environment (IDE)
 
 

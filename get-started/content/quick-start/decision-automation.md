@@ -12,7 +12,7 @@ menu:
 
 ---
 
-In this section, you'll learn how to add decision automation to your process by using [BPMN 2.0 *Business Rule Tasks*](/manual/latest/reference/bpmn20/tasks/business-rule-task/) and [DMN 1.1 Decision Tables](/manual/latest/reference/dmn11/).
+In this section, you'll learn how to add decision automation to your process by using [BPMN 2.0 *Business Rule Tasks*](/manual/latest/reference/bpmn20/tasks/business-rule-task/) and [DMN 1.3 Decision Tables](/manual/latest/reference/dmn11/).
 
 # Add a Business Rule Task to the Process
 Use the Camunda Modeler to open the Payment Retrieval process then click on the Approve Payment Task. Change the activity type to *Business Rule Task* in the wrench button menu.
