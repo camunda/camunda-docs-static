@@ -53,58 +53,16 @@ downloads:
     - war
 
   selected:
-    branch: "7.12"
-    version: "7.12.6"
+    branch: "7.13"
+    version: "7.13.0"
     server: "tomcat"
 
   branches:
     - branch: "7.13"
       releases:
-        - number: "7.13.0-alpha5"
-          date: "2020.05.13"
+        - number: "7.13.0"
+          date: "2020.05.29"
           excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.13.0-alpha4"
-          note: "https://blog.camunda.com/post/2020/04/camunda-bpm-7130-alpha4-released"
-          date: "2020.04.29"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.13.0-alpha3"
-          note: "https://blog.camunda.com/post/2020/04/camunda-bpm-7130-alpha3-released"
-          date: "2020.04.03"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.13.0-alpha2"
-          note: "https://blog.camunda.com/post/2020/02/camunda-bpm-7130-alpha2-released"
-          date: "2020.02.28"
-          excludeservers:
-            - "run"
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-
-        - number: "7.13.0-alpha1"
-          note: "https://blog.camunda.com/post/2020/01/camunda-bpm-7130-alpha1-released"
-          date: "2020.01.30"
-          excludeservers:
-            - "run"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -114,7 +72,7 @@ downloads:
     - branch: "7.12"
       releases:
         - number: "7.12.6"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16013"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532"
           date: "2020.05.25"
           excludeservers:
             - "run"
