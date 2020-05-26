@@ -55,7 +55,7 @@ downloads:
   selected:
     branch: "7.13"
     version: "7.13.0"
-    server: "tomcat"
+    server: "run"
 
   branches:
     - branch: "7.13"
