@@ -72,7 +72,7 @@ downloads:
     - branch: "7.12"
       releases:
         - number: "7.12.6"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16013"
           date: "2020.05.25"
           excludeservers:
             - "run"
