@@ -15,6 +15,27 @@ releases of the community platform.
 
 # Notices
 
+## Notice 29
+
+**Publication Date: June 2nd, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+In the case where [variable-specific permissions](https://docs.camunda.org/manual/7.12/user-guide/process-engine/authorization-service/#default-read-variable-permissions) were enabled, it was possible for a user to access historic variable details having only the `READ_HISTORY` permission. The check for `READ_HISTORY_VARIABLE` was not enforced.
+
+**How to determine if the installation is affected**
+
+- Camunda BPM is used with enabled authorization check and enabled variable-specific permissions (configuration flag `enforceSpecificVariablePermission` set to `true`)
+- An attacker is a known user in the system that has the `READ_HISTORY` permission on a process definition.
+
+**Solution**
+
+Camunda has provided the releases 7.13.0, 7.12.5, 7.11.12 which contain a fix.
+
 ## Notice 28
 
 **Publication Date: April 6th, 2020**
