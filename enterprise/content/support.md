@@ -64,7 +64,7 @@ We distinguish three types of issues:
 
 ## Self-Service Help Request
 
-Apart from general help request, we have three types of self-service help requests. The following self-service requests allow you to recieve information faster.
+Apart from general help requests, we have three types of self-service help requests. The following self-service requests allow you to receive information faster.
 
 {{< img src="../img/self-service-request.png" title="Self Service Issue" >}}
 
@@ -82,7 +82,7 @@ Apart from general help request, we have three types of self-service help reques
   </tr>
   <tr>
     <td>I need my Camunda license key</td>
-    <td>This will provide your organization's Camunda license key</td>
+    <td>This will provide your organization's Camunda license key.</td>
   </tr>
   <tr>
     <td>I need the credentials for downloading Camunda</td>
