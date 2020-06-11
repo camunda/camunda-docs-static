@@ -208,7 +208,7 @@ __End of Maintenance:__ 31st of December 2021
 
 __Changes in Supported Environments:__
 
-* Minimum required `Camunda BPM` version is raised to 7.11.12.
+* Minimum required `Camunda BPM` version is raised to 7.11.13.
 * End of Support for `Camunda BPM` 7.10 releases
 * Support for `Camunda BPM` 7.13 releases
 
