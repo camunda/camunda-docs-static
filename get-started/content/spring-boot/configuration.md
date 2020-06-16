@@ -31,7 +31,7 @@ camunda.bpm:
 
 This configuration will result in the following:
 
-1. Admin user "kermit" with the provided password and first name will be created.
+1. Admin user "demo" with the provided password and first name will be created.
 2. Default filter with the name "All tasks" will be created for Tasklist.
 
 ## Build and Run
