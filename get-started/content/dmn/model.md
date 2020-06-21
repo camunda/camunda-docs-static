@@ -13,7 +13,7 @@ menu:
 aliases: [/dmn11/model/]
 ---
 
-In this section you learn how to create your first DMN [decision table](/manual/latest/reference/dmn11/decision-table/) with the Camunda Modeler. The table will contain the decision logic about the desired dish for a given season and guest count.
+In this section you learn how to create your first [DMN Decision Table](/manual/latest/reference/dmn11/decision-table/) with the Camunda Modeler. The table will contain the decision logic about the desired dish for a given season and guest count.
 
 Now start up the Camunda Modeler.
 
