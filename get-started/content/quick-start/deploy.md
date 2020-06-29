@@ -8,7 +8,7 @@ menu:
     name: "Deploy the Process"
     parent: "get-started-quick-start"
     identifier: "get-started-quick-start-deploy"
-    pre: "Deploy the Process to Camunda and start your first process instances."
+    pre: "Deploy the Process to Camunda and start your first process instance."
 
 ---
 
