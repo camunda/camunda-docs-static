@@ -58,6 +58,18 @@ downloads:
     server: "run"
 
   branches:
+    - branch: "7.14"
+      releases:
+        - number: "7.14.0-alpha1"
+          note: "https://blog.camunda.com/post/2020/07/camunda-bpm-7140-alpha1-released"
+          date: "2020.07.03"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
     - branch: "7.13"
       releases:
         - number: "7.13.1"
