@@ -96,4 +96,4 @@ For Eclipse to automatically sychronize the workspace with the filesystem, consi
 
 {{< get-tag repo="camunda-get-started-dmn" tag="Step-3" >}}
 
-[auto-sync]: /manual/latest/modeler/tips/#eclipse-project-synchronization
+[auto-sync]: /manual/modeler/camunda-modeler/tips/#eclipse-project-synchronization
