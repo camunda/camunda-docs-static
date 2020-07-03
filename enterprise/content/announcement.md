@@ -276,6 +276,29 @@ __Changes in Supported Environments:__
 * End of Support for Elasticsearch 6.0.0
 
 
+# Cawemo On-Premises Announcements
+
+## Cawemo On-Premises 1.3
+
+__Release Date:__ scheduled for 14th of July 2020
+
+__End of Maintenance:__ with next release, scheduled for 13th of October 2020
+
+## Cawemo On-Premises 1.2
+
+__Release Date:__ 14th of April 2020
+
+__End of Maintenance:__ 14th of July 2020
+
+## Cawemo On-Premises 1.1
+
+__Release Date:__ 13th of November 2019
+
+__End of Maintenance:__ 14th of April 2020
+
+
+
+
 # What does End of Maintenance Mean?
 End of maintenance means that Camunda will not perform any maintenance or release any bug fixes and patch releases related to the mentioned version after the specified date.
 In case you are planning to migrate to a more recent version of Camunda BPM, check our [Update & Migration Guide](/manual/latest/update/).
