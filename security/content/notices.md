@@ -15,6 +15,34 @@ releases of the community platform.
 
 # Notices
 
+## Notice 30
+
+**Publication Date: April 6th, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions and transitively pulled in by the Camunda Spring Boot starter was vulnerable to denial-of-service attacks and remote code execution:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-11996
+- https://nvd.nist.gov/vuln/detail/CVE-2020-9484
+
+**How to determine if the installation is affected**
+
+- Camunda BPM Tomcat is used *or* Camunda BPM Run is used *or* Camunda BPM Spring Boot Starter is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.14.0-alpha1, 7.13.1, 7.12.7, 7.11.14, Spring Boot Starter 3.4.4, Spring Boot Starter 3.3.10 which contain a fix.
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
 ## Notice 29
 
 **Publication Date: June 2nd, 2020**
