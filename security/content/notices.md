@@ -17,7 +17,7 @@ releases of the community platform.
 
 ## Notice 30
 
-**Publication Date: April 6th, 2020**
+**Publication Date: July 6th, 2020**
 
 **Product affected:**
 
