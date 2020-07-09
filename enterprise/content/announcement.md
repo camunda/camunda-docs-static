@@ -22,8 +22,6 @@ __Release Date:__ scheduled for 13th of October 2020
 
 __End of Maintenance:__ 13th of April 2021
 
-__Changes in Supported Environments:__
-
 
 ## Camunda BPM 7.13
 
