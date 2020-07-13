@@ -25,7 +25,7 @@ Camunda Optimize
 
 **Impact:**
 
-It was possible to collect valid usernames by interacting with the "Add User to Collection" modal of Optimize, which displayed all available Optimize users. This vulnerability could have beene used to increase the efficiency of brute force attacks.
+It was possible to collect valid usernames by interacting with the "Add User to Collection" modal of Optimize, which displayed all available Optimize users. This vulnerability could have been used to increase the efficiency of brute force attacks.
 
 **How to determine if the installation is affected**
 
@@ -33,7 +33,7 @@ It was possible to collect valid usernames by interacting with the "Add User to 
 
 **Solution**
 
-Camunda Optimize 3.1.0 has been released which contains a fix. Optimize 3.1.0 now ensures that user and group related permissions are taken into account when displaying user information in Optimize. This way only information which the current user is authorised to see is being revealed.
+Camunda Optimize 3.1.0 has been released which contains a fix. Optimize 3.1.0 now ensures that user and group related permissions are taken into account when displaying user information in Optimize. This way only information which the current user is authorized to see is being revealed.
 
 ## Notice 31
 
