@@ -16,11 +16,23 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 # Camunda BPM Announcements
 
+## Camunda BPM 7.15
+
+__Release Date:__ scheduled for 13th of April 2021
+
+__End of Maintenance:__ 11th of October 2022
+
+__Changes in Supported Environments:__
+
+* End of Support for Wildfly 10.1
+
 ## Camunda BPM 7.14
 
 __Release Date:__ scheduled for 13th of October 2020
 
-__End of Maintenance:__ 13th of April 2021
+__End of Maintenance:__ 12th of April 2022
+
+__Changes in Supported Environments:__
 
 
 ## Camunda BPM 7.13
