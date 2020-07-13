@@ -40,7 +40,7 @@ Headers added to the request responses:
 
 **How to determine if the installation is affected**
 
-- Camunda Optimize 3.1.0 is used
+- Camunda Optimize <3.1.0 is used
 
 **Solution**
 
