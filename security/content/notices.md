@@ -29,18 +29,14 @@ Over time, various client-side security mechanisms have been developed to protec
 
 Headers added to the request responses:
 
-* X-XSS-Protection (Additional protection against Cross-Site Scripting attacks; Header field: X-
- XSS Protection)
- * HTTP Strict Transport Security (Additional protection against man-in-the-middle attacks; Header field:
- Strict-Transport-Security)
- * Content Security Policy (Additional protection against Cross-Site Scripting attacks and clickjacking attacks;
- Header field: Content-Security-Policy)
- * X-Content-Type-Options (Protection against attacks based on mix-ups of MIME types; Header field:
- X-Content-Type-Options)
+* X-XSS-Protection (Additional protection against Cross-Site Scripting attacks; Header field: X-XSS Protection)
+ * HTTP Strict Transport Security (Additional protection against man-in-the-middle attacks; Header field: Strict-Transport-Security)
+ * Content Security Policy (Additional protection against Cross-Site Scripting attacks and clickjacking attacks; Header field: Content-Security-Policy)
+ * X-Content-Type-Options (Protection against attacks based on mix-ups of MIME types; Header field: X-Content-Type-Options)
 
 **How to determine if the installation is affected**
 
-- Camunda Optimize <3.1.0 is used
+- Camunda Optimize 3.1.0 is used
 
 **Solution**
 
