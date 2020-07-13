@@ -15,6 +15,37 @@ releases of the community platform.
 
 # Notices
 
+## Notice 31
+
+**Publication Date: July 14th, 2020**
+
+**Product affected:**
+
+Camunda Optimize
+
+**Impact:**
+
+Over time, various client-side security mechanisms have been developed to protect web applications from various attacks. Some of these security mechanisms are only activated if the web application sends the corresponding HTTP headers in its server responses to activate these security mechanisms. So far, Optimize did not make use of all these features. Not using these mechanisms does not in itself pose a security risk but may encourage the exploitation of other (previously undetected) vulnerabilities.
+
+Headers added to the request responses:
+
+* X-XSS-Protection (Additional protection against Cross-Site Scripting attacks; Header field: X-
+ XSS Protection)
+ * HTTP Strict Transport Security (Additional protection against man-in-the-middle attacks; Header field:
+ Strict-Transport-Security)
+ * Content Security Policy (Additional protection against Cross-Site Scripting attacks and clickjacking attacks;
+ Header field: Content-Security-Policy)
+ * X-Content-Type-Options (Protection against attacks based on mix-ups of MIME types; Header field:
+ X-Content-Type-Options)
+
+**How to determine if the installation is affected**
+
+- Camunda Optimize 3.1.0 is used
+
+**Solution**
+
+Camunda Optimize 3.1.0 has been released which contains a fix.
+
 ## Notice 30
 
 **Publication Date: July 6th, 2020**
