@@ -15,6 +15,26 @@ releases of the community platform.
 
 # Notices
 
+## Notice 32
+
+**Publication Date: July 14th, 2020**
+
+**Product affected:**
+
+Camunda Optimize
+
+**Impact:**
+
+It was possible to collect valid usernames by interacting with the "Add User to Collection" modal of Optimize, which displayed all available Optimize users. This vulnerability could have been used to increase the efficiency of brute force attacks.
+
+**How to determine if the installation is affected**
+
+- Camunda Optimize 3.0.0 or lower is used
+
+**Solution**
+
+Camunda Optimize 3.1.0 has been released which contains a fix. Optimize 3.1.0 now ensures that user and group related permissions are taken into account when displaying user information in Optimize. This way only information which the current user is authorized to see is being revealed.
+
 ## Notice 31
 
 **Publication Date: July 14th, 2020**
@@ -36,7 +56,7 @@ Headers added to the request responses:
 
 **How to determine if the installation is affected**
 
-- Camunda Optimize 3.1.0 is used
+-  Camunda Optimize 3.0.0 or lower is used
 
 **Solution**
 
