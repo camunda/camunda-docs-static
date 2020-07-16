@@ -62,6 +62,34 @@ We distinguish three types of issues:
   </tbody>
 </table>
 
+## Self-Service Help Request
+
+Apart from general help requests, we have three types of self-service help requests. The following self-service requests allow you to receive information faster.
+
+{{< img src="../img/self-service-request.png" title="Self Service Issue" >}}
+
+<table class="table table-bordered">
+  <thead>
+  <tr class="success">
+    <th>Help Request Type</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>I need the Camunda Hotline information</td>
+    <td>This will provide you the Camunda Hotline number.</td>
+  </tr>
+  <tr>
+    <td>I need my Camunda license key</td>
+    <td>This will provide your organization's Camunda license key.</td>
+  </tr>
+  <tr>
+    <td>I need the credentials for downloading Camunda</td>
+    <td>This will provide your account credentials for downloading Camunda.</td>
+  </tr>
+  </tbody>
+</table>
 
 ## Priority Level
 
