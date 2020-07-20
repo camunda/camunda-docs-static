@@ -29,12 +29,12 @@ The version of Angular JS shipped with the Camunda web applications was vulnerab
 
 - https://nvd.nist.gov/vuln/detail/CVE-2020-7676
 
-The Camunda web applications were not directly affected by this vulnerability, as they do not use the vulnerable functionality. However, custom tasklist forms or web application plugins may be affected.
+The vulnerability does not affect the Camunda web applications (Cockpit, Tasklist, Admin) directly because they do not use the vulnerable functionality. However, custom tasklist forms or web application plugins may be affected.
 
 **How to determine if the installation is affected**
 
-- The Camunda BPM web applications (Cockpit, Tasklist, Admin) are used
-- Embedded task forms or web application plugins are used
+- You are using the Camunda BPM web applications (Cockpit, Tasklist, Admin)
+- You have embedded task forms or web application plugins
 - See the NIST link above for detailed descriptions of the circumstances required to exploit the vulnerabilities
 
 **Solution**
