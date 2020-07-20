@@ -15,6 +15,32 @@ releases of the community platform.
 
 # Notices
 
+## Notice 33
+
+**Publication Date: July 20th, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+The version of Angular JS shipped with the Camunda web applications was vulnerable to cross-site-scripting attacks:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-7676
+
+The Camunda web applications were not directly affected by this vulnerability, as they do not use the vulnerable functionality. However, custom tasklist forms or web application plugins may be affected.
+
+**How to determine if the installation is affected**
+
+- The Camunda BPM web applications (Cockpit, Tasklist, Admin) are used
+- Embedded task forms or web application plugins are used
+- See the NIST link above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.14.0-alpha1, 7.13.2, 7.12.8, 7.11.15 which contain a fix.
+
 ## Notice 32
 
 **Publication Date: July 14th, 2020**
