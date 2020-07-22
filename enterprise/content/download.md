@@ -82,7 +82,6 @@ downloads:
             - "glassfish"
             - "ibm-was"
 
-      releases:
         - number: "7.13.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16190"
           date: "2020.07.16"
