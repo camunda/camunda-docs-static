@@ -69,7 +69,17 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"    
-    
+
+        - number: "7.14.0-alpha2"
+          note: "https://blog.camunda.com/post/2020/07/camunda-bpm-runtime-7140-alpha2-released"
+          date: "2020.08.11"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"    
+
     - branch: "7.13"
       releases:
         - number: "7.13.3"
