@@ -71,7 +71,7 @@ downloads:
             - "ibm-was"    
 
         - number: "7.14.0-alpha2"
-          note: "https://blog.camunda.com/post/2020/07/camunda-bpm-runtime-7140-alpha2-released"
+          note: "https://camunda.com/blog/2020/08/camunda-bpm-runtime-7-14-0-alpha2-released/"
           date: "2020.08.11"
           excludeservers:
             - "wildfly11"
