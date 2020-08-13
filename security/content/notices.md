@@ -15,6 +15,27 @@ releases of the community platform.
 
 # Notices
 
+## Notice 34
+
+**Publication Date: August 13th, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+It was possible to deploy BPMN XML models with `ELEMENT` and `ENTITY` declarations successfully. When querying for or starting the corresponding process definitions, a validation exception was raised. This enables a partial denial of service attack for these functions.
+
+**How to determine if the installation is affected**
+
+- You are using the Camunda BPM process engine
+- An attacker is able to deploy BPMN models
+
+**Solution**
+
+Camunda has provided the releases 7.14.0-alpha2, 7.13.2, 7.12.8, 7.11.15 which contain a fix. With these versions, BPMN models with the characteristics described in the *Impact* section are rejected during deployment.
+
 ## Notice 33
 
 **Publication Date: July 20th, 2020**
