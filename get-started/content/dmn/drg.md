@@ -27,15 +27,14 @@ Open the *Dish* decision table from the previous step. Click on the button "View
 
 # Set the Name and the Id of the DRD
 
-Click on the top left field and replace the default [name](/manual/latest/reference/dmn11/drg/#decision-requirements-graph-name) "definitions" by "Dinner Decisions". 
+Click somewhere on the canvas and open the Property Panel on the right. Change the [id](/manual/latest/reference/dmn11/drg/#decision-requirements-graph-id) of the DRD to "dinnerDecisions". Next, change the [name](/manual/latest/reference/dmn11/drg/#decision-requirements-graph-name) of the DRD to "Dinner Decisions".
+
 
 {{< img src="../img/modeler-drd-step2.png" >}}
 
-Next, click on the field below and set the [id](/manual/latest/reference/dmn11/drg/#decision-requirements-graph-id) to "dinnerDecisions".
-
 # Create a new Decision in the DRD
 
-Click on the decision icon of the palette to create a new decision. Then, double-click on the decision and type *Beverages* to set the name. Change the type of the decision to *Decision Table* by clicking on the wrench icon next to the "Beverages" decision and selecting "Decision Table".
+Click on the decision icon of the palette to create a new decision. Then, double-click on the decision and type *Beverages* to set the name. Change the type of the decision to *Decision Table* by clicking on the wrench icon next to the "Beverages" decision and selecting "Decision Table". Use the Property Panel on the right side again to set the id to "beverages".
 
 {{< img src="../img/modeler-drd-step3.png" >}}
 
@@ -49,7 +48,6 @@ Click on the top left icon of the *Beverages* decision to open the decision tabl
 
 Configure the *Beverages* decision table so that it has:
 
-* the id: "beverages",
 * one input with label "Dish", input expression "desiredDish" and type "string",
 * second input with label "Guests with children", input expression "guestsWithChildren" and type "boolean",
 * an output with label "Beverages", name "beverages" and type "string",
@@ -62,10 +60,10 @@ Then, fill the table with the rules.
 Save your changes and replace the existing DMN file in the `src/main/resources` folder.
 
 {{< get-tag repo="camunda-get-started-dmn" tag="Step-5" >}}
- 
+
 # Evaluate the Decision
 
-To evaluate the *Beverages* decision, we extend the existing method in your Application class and add a new variable "guestsWithChildren". 
+To evaluate the *Beverages* decision, we extend the existing method in your Application class and add a new variable "guestsWithChildren".
 
 ```java
 package org.camunda.bpm.getstarted.dmn;
@@ -125,15 +123,15 @@ ENGINE-08050 Process application Dinner App DMN successfully deployed
 
 # Verify the Evaluation with Cockpit
 
-Now, open [Cockpit](http://localhost:8080/camunda/app/cockpit) and go to the "Decisions" section. 
+Now, open [Cockpit](http://localhost:8080/camunda/app/cockpit) and go to the "Decisions" section.
 
 {{< img src="../img/cockpit-decision-overview-beverages-dmn.png" >}}
 
-Then, click on the decision *Beverages* and select an id to see the historic data of the evaluation. 
+Then, click on the decision *Beverages* and select an id to see the historic data of the evaluation.
 
 {{< img src="../img/cockpit-decision-history-beverages-dmn.png" >}}
 
-Verify that both rules were matched and the output value for the beverages is "Guiness" and "Water". 
+Verify that both rules were matched and the output value for the beverages is "Guiness" and "Water".
 
 Note that the *Dish* decision is evaluated as part of the evaluation of the *Beverages* decision. It provides the value "Stew" for the input expression "desiredDish".
 
