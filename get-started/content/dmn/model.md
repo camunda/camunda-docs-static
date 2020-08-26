@@ -17,44 +17,48 @@ In this section you learn how to create your first [DMN Decision Table](/manual/
 
 Now start up the Camunda Modeler.
 
-# Create a new Decision Table
+# Create a new Decision Diagram
 
-Create a new DMN table by clicking *File > New File > DMN Table*.
+Create a new DMN diagram by clicking *File > New File > DMN Diagram*.
 
 {{< img src="../img/modeler-new-dmn-table.png" >}}
 
 
 # Start with the Table Header
 
-Start by setting the name of the decision. Click on the top left field and type "Dish" as the [name of the decision](/manual/latest/reference/dmn11/decision-table/#decision-name).
+Start by setting the name and the id of the decision. Select the decision, open the Properties Panel on the right side and change the text to "dish" as the technical [id of the decision](/manual/latest/reference/dmn11/decision-table/#decision-id) which is used to reference the decision inside the process application.
 
 {{< img src="../img/modeler-step1.png" >}}
 
-Next, click on the field below and replace "decision" by "dish" to set the technical [id of the decision](/manual/latest/reference/dmn11/decision-table/#decision-id) which is used to reference the decision inside the process application.
+Next, click on the field below and set the [name of the decision](/manual/latest/reference/dmn11/decision-table/#decision-name) to "Dish".
 
-To set the [label of the input](/manual/latest/reference/dmn11/decision-table/input/#input-label) click on the field under "Input" and type "Season" in the "Input Label" field. Same for the [output label](/manual/latest/reference/dmn11/decision-table/output/#output-label), click on the field under "Output" and type "Dish" in the "Output Label" field.
+Now drill down into the decision table of the newly created decision by clicking the table icon on top of the decision.
 
-{{< img src="../img/modeler-step2.png" >}}
+{{< img src="../img/modeler-step2a.png" >}}
+
+To set the [label of the input](/manual/latest/reference/dmn11/decision-table/input/#input-label) double-click on the field under "When" and type "Season" in the uppermost field. Same for the [output label](/manual/latest/reference/dmn11/decision-table/output/#output-label), double-click on the field under "Then" and type "Dish" in the uppermost field.
+
+{{< img src="../img/modeler-step2b.png" >}}
 
 # Configure the Input Expression and the Output Name
 
-Assuming that the input value for "Season" is provided by a variable with name "season", the [input expression](/manual/latest/reference/dmn11/decision-table/input/#input-expression) should be "season". 
+Assuming that the input value for "Season" is provided by a variable with name "season", the [input expression](/manual/latest/reference/dmn11/decision-table/input/#input-expression) should be "season".
 
-Click on the "Season" field. In the dialog that pops up, set "season" as expression and close it.
+Double-click on the "Season" field. In the modal menu that pops up, set "season" as expression and close it.
 
 {{< img src="../img/modeler-step3.png" >}}
 
-Next, click on the "Dish" field and set "desiredDish" as [output name](/manual/latest/reference/dmn11/decision-table/output/#output-name).
+Next, double-click on the "Dish" field and set "desiredDish" as [output name](/manual/latest/reference/dmn11/decision-table/output/#output-name).
 
 # Configure the Type of the Input and Output
 
 Assuming that the input value for "Season" is provided as String, the [type of the input value](/manual/latest/reference/dmn11/decision-table/input/#input-type-definition) should be "string".
 
-Click on the field under the "Season" field. Open the combo box and choose the type "string" in the dialog that pops up.
+Double-click on the "Season" column header. Open the "Type" dropdown-menu in the modal menu and select "string".
 
 {{< img src="../img/modeler-step4.png" >}}
 
-Same for the [output type](/manual/latest/reference/dmn11/decision-table/output/#output-type-definition), click on the field under the "Dish" field and choose "string" as type.
+Same for the [output type](/manual/latest/reference/dmn11/decision-table/output/#output-type-definition), double-click on the "Dish" column header and choose "string" as type.
 
 # Add Rules
 
@@ -69,19 +73,19 @@ Click on the "+" button at the bottom of the table or just click anywhere on the
 "Spareribs" is the conclusion (i.e., [output entry](/manual/latest/reference/dmn11/decision-table/rule/#output-entry-conclusion)) of the rule. It is a simple expression in JUEL and returns the String "Spareribs".
 
 Next, add a second input "How many guests" with the input expression "guestCount" and type "integer". Fill the table with additional rules for the remaining seasons.
- 
-{{< img src="../img/modeler-step6.png" >}} 
- 
+
+{{< img src="../img/modeler-step6.png" >}}
+
 # Configure the Hit Policy
 
 Set the [hit policy](/manual/latest/reference/dmn11/decision-table/hit-policy/) to "UNIQUE", which specifies that only one rule can match. Verify that the decision table contains only one rule that can match the inputs.
 
-Click on the field under the id of the decision. In the dialog that pops up, open the combo box and choose the hit policy "UNIQUE".
+Click on the "Hit Policy" dropdown and choose the hit policy "UNIQUE".
 
 {{< img src="../img/modeler-step7.png" >}}
 
 {{< note title="Default Hit Policy" class="info" >}}
-The default hit policy is "UNIQUE" which is displayed as "U" in the table. If your rules are disjunct so only one rule can match then you don't need to change the hit policy.
+The default hit policy is "UNIQUE". If your rules are disjunct so only one rule can match then you don't need to change the hit policy.
 {{< /note >}}
 
 # Save the Decision Table
