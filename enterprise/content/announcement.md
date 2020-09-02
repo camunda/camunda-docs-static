@@ -35,6 +35,7 @@ __End of Maintenance:__ 12th of April 2022
 __Changes in Supported Environments:__
 
 * Support for Microsoft SQL Server 2019
+* Support for Wildfly Application Server 20.0
 
 ## Camunda BPM 7.13
 
