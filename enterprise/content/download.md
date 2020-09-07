@@ -60,15 +60,15 @@ downloads:
   branches:
     - branch: "7.14"
       releases:
-        - number: "7.14.0-alpha1"
-          note: "https://blog.camunda.com/post/2020/07/camunda-bpm-7140-alpha1-released"
-          date: "2020.07.03"
+        - number: "7.14.0-alpha3"
+          note: "https://camunda.com/blog/2020/09/camunda-bpm-runtime-7-14-0-alpha3-released/"
+          date: "2020.09.08"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
             - "glassfish"
-            - "ibm-was"    
+            - "ibm-was"
 
         - number: "7.14.0-alpha2"
           note: "https://camunda.com/blog/2020/08/camunda-bpm-runtime-7-14-0-alpha2-released/"
@@ -78,7 +78,17 @@ downloads:
             - "wildfly10"
             - "wildfly8"
             - "glassfish"
-            - "ibm-was"    
+            - "ibm-was"
+
+        - number: "7.14.0-alpha1"
+          note: "https://blog.camunda.com/post/2020/07/camunda-bpm-7140-alpha1-released"
+          date: "2020.07.03"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
 
     - branch: "7.13"
       releases:
