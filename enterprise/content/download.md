@@ -1571,28 +1571,6 @@ To get the production distribution, please download one of the following archive
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.2.0-alpha2</td>
-      <td>7.11.13, 7.12.6 and 7.13+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
-      <td>08.09.2020</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha2/camunda-optimize-3.2.0-alpha2-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha2/camunda-optimize-3.2.0-alpha2-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.2.0-alpha1</td>
-      <td>7.11.13, 7.12.6 and 7.13+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
-      <td>11.08.2020</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha1/camunda-optimize-3.2.0-alpha1-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha1/camunda-optimize-3.2.0-alpha1-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.1.0</td>
       <td>7.11.13, 7.12.6 and 7.13+</td>
       <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
@@ -1660,7 +1638,51 @@ To get the production distribution, please download one of the following archive
   </tbody>
 </table>
 
-[Previous Releases](https://downloads.camunda.cloud/enterprise-release/optimize/)
+
+If you're interested in the latest features, you can get a sneak peek by trying out one of the alpha releases:
+
+{{< note title="Heads Up!" class="warning" >}}
+Please note, that Optimize alpha release are not suitable for production environments and should only be used for testing.
+{{< /note >}}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Alpha Version</th>
+      <th class="col-md-2">Supported Engine Versions</th>
+      <th class="col-md-2">Supported Elasticsearch Versions</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.2.0-alpha2</td>
+      <td>7.11.13, 7.12.6 and 7.13+</td>
+      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
+      <td>08.09.2020</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha2/camunda-optimize-3.2.0-alpha2-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha2/camunda-optimize-3.2.0-alpha2-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.2.0-alpha1</td>
+      <td>7.11.13, 7.12.6 and 7.13+</td>
+      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
+      <td>11.08.2020</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha1/camunda-optimize-3.2.0-alpha1-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha1/camunda-optimize-3.2.0-alpha1-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+In case you're interested in older versions of Optimize, feel free to checkout the [Previous Releases](https://downloads.camunda.cloud/enterprise-release/optimize/).
 
 ## Cawemo
 
