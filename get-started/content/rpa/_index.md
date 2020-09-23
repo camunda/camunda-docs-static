@@ -1,17 +1,17 @@
 ---
 
-title: 'Camunda for RPA'
+title: 'RPA Orchestration'
 weight: 2
 
 menu:
   main:
-    name: "Camunda for RPA"
+    name: "RPA Orchestration"
     identifier: "rpa"
     pre: ""
 
 ---
 
-Camunda for RPA is a set of product modules that allows for orchestration of tasks that are automated using RPA technology and unattended Bots. In its current version, the RPA technology of UiPath is actively supported.
+Robotic Process Automation (RPA) orchestration is a use case that leverages capabilities from multiple Camunda product modules. It allows for the orchestration of tasks that are automated using RPA technology and unattended bots. To start, Camunda BPM actively supports UiPath but more RPA vendors will be supported in future versions.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ Running UiPath including Orchestrator, Studio, and Bots
 
 General understanding of how to execute processes with Camunda
 
-Be entitled to use Cawemo Enterprise
+Be entitled to use Camunda Enterprise
 
 ## Installation and Configuration
 
@@ -33,9 +33,19 @@ Install and run the platform (using Camunda Run?)
 
 ### RPA Bridge
 
+{{< note title="Please note: the RPA Bridge requires a valid Enterprise license." class="info" >}}
+You can obtain an <a href="https://camunda.com/download/enterprise/">Enterprise Trial license</a> for testing both the RPA Bridge and Cawemo on-premises.
+{{< /note >}}
+
 Install, configure, and run the bridge
 
 ### Cawemo Catalog
+
+{{< note title="Please note: the Catalog requires a valid Enterprise license." class="info" >}}
+You can obtain an <a href="https://camunda.com/download/enterprise/">Enterprise Trial license</a> for testing both the RPA Bridge and Cawemo on-premises.
+
+If you prefer to use cawemo.com, please <a href="https://cawemo.com/signup">sign up</a> and ask for a trial license via the "Provide feedback" form.
+{{< /note >}}
 
 Sign up and get Enterprise license enabled
 
