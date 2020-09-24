@@ -15,6 +15,27 @@ releases of the community platform.
 
 # Notices
 
+## Notice 35
+
+**Publication Date: September 24th, 2020**
+
+**Product affected:**
+
+Camunda BPM
+
+**Impact:**
+
+It was possible to submit requests to the Camunda REST API that result in errors that disclose SQL statements. Attackers can learn about the database schema and vendor in use and can focus further attacking attempts accordingly.
+
+**How to determine if the installation is affected**
+
+- You are using the Camunda BPM REST API or web applications
+- An attacker has access to the system as an authenticated user
+
+**Solution**
+
+Camunda has provided the releases 7.14.0-alpha4, 7.13.5, 7.12.11, 7.11.18 which contain a fix. With these versions, Camunda returns a generic error message for any persistence-related errors.
+
 ## Notice 34
 
 **Publication Date: August 13th, 2020**
