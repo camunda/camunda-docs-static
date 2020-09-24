@@ -44,7 +44,7 @@ In order to prepare the setup of the RPA Bridge, please
 
 Unless you already have a running Camunda BPM installation, please
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/">download Camunda Run (Enterprise)</a>
+* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/">Download Camunda Run (Enterprise)</a>
 
 You will be asked for a username and password that you have obtained together with your Enterprise license key.
 
@@ -52,19 +52,20 @@ Once you have downloaded Camunda Run, please
 
 * Unzip the archive
 * Launch the platform by executing
-  ```sh
-  # Mac OS or Linux
-  ./start.sh
-  # Windows
-  start.bat
-  ```
+
+```sh
+# Windows
+start.bat
+
+# Mac OS or Linux
+./start.sh
+```
 
 ### RPA Bridge
 
 In order to install the RPA Bridge, please:
 
 * <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/camunda-bpm-rpa-bridge">Download the RPA Bridge</a>
-
 * Unzip the archive
 * Add your Enterprise license key into a file called `camunda-license.txt` in the same folder as the  `application.yml` file
 * When using UiPath Cloud, edit in the config file `application.yml`:
@@ -75,9 +76,10 @@ In order to install the RPA Bridge, please:
 * When using UiPath On-Premises, edit in the config file `application.yml`:
   * TODO
 * Launch the RPA Bridge by
-  ```sh
-  java -jar camunda-bpm-rpa-bridge.jar
-  ```
+
+```sh
+java -jar camunda-bpm-rpa-bridge.jar
+```
 
 You should see a log message like `External Task Listener started ----`
 
@@ -100,7 +102,29 @@ When being logged in to Cawemo:
 
 ### Camunda Modeler
 
-Install "Cloud Connect" plugin and configure Cawemo credentials
+Please use the Camunda Modeler version 4.3 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.
+
+* Download the latest version of the <a href="https://camunda.org/enterprise-release/cawemo/cloud-connect-modeler-plugin/">Cloud Connect plugin</a> for Camunda Modeler
+* Extract the archive and move it to the plugins folder
+
+```sh
+# Windows
+%APPDATA%\camunda-modeler\plugins
+
+# Mac OS
+~/Library/Application Support/camunda-modeler/plugins
+
+# Linux
+~/.config/camunda-modeler/plugins
+```
+
+* Restart the Modeler and verify that the Plugins menu contains an entry "Cloud Connect"
+* Open the configuration of the Cloud Connect plugin via the menu
+* Add the following settings
+  * User ID: from the Cawemo settings page
+  * API Key: from the Cawemo settings page
+  * Sync Catalog Projects: set to `enabled`
+* Save the configuration dialog
 
 ## Usage
 
