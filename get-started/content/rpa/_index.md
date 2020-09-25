@@ -176,12 +176,15 @@ Learn more about <a target="_blank" href="https://docs.camunda.org/manual/7.13/m
 
 ### Modeling and executing a process
 
-The Camunda Modeler updates the list of available templates every TODO. In order to enforce a synchronization of the templates, click on the Cawemo logo in the upper right corner and save the configuration dialog again. You will see a notification about the templates that have been synched.
+The Camunda Modeler updates the list of available templates when being launched. In order to enforce a synchronization of the templates, click on the Cawemo logo in the upper right corner and save the configuration dialog again. You will see a notification about the templates that have been synched.
 
 In order to trigger the UiPath package from Camunda, create a new BPMN process as follows:
 
 * Create new BPMN process diagram
 * Append a new Task to the Start Event and turn it into a Service Task (remember to use the Wrench icon next to the task for changing its type)
+
+Use templates:
+
 * Click on "Catalog" in the Property Panel and you will see an overlay with a list of your templates
 * Select one template and click Apply. With the template being applied, you see a simplified Property Panel
 * For any Input Parameter:
@@ -189,7 +192,14 @@ In order to trigger the UiPath package from Camunda, create a new BPMN process a
   * Variable Assignment Value can be a String constant or a process variable that is passed via an Expression
 * For any Output Parameter:
   * Define the name of a process variable that this output value should be assigned to
-* Complete your BPMN process diagram with further elements as you see fit and finish it with an End Event
+
+Enhance your process diagram:
+
+* Complete your BPMN process diagram with further elements as you see fit (e.g. User Tasks)
+* Finish the diagram with an End Event
+
+Execute the process:
+
 * Click the Run icon in the toolbar ("Start Current Diagram") and confirm the dialogs. This will deploy the process diagram and trigger a new process instance
 * In the success notification click on "Open in Camunda Cockpit". You will see the running process instance with its current state
 
