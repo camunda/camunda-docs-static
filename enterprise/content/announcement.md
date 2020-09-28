@@ -36,6 +36,7 @@ __Changes in Supported Environments:__
 
 * Support for Microsoft SQL Server 2019
 * Support for Wildfly Application Server 20.0
+* Support for JBoss EAP 7.3
 
 ## Camunda BPM 7.13
 
