@@ -60,6 +60,16 @@ downloads:
   branches:
     - branch: "7.14"
       releases:
+        - number: "7.14.0-alpha4"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16223"
+          date: "2020.10.02"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+
         - number: "7.14.0-alpha3"
           note: "https://camunda.com/blog/2020/09/camunda-bpm-runtime-7-14-0-alpha3-released/"
           date: "2020.09.08"
