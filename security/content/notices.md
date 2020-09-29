@@ -17,7 +17,7 @@ releases of the community platform.
 
 ## Notice 35
 
-**Publication Date: September 24th, 2020**
+**Publication Date: September 29th, 2020**
 
 **Product affected:**
 
