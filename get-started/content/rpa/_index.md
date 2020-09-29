@@ -19,13 +19,21 @@ Robotic Process Automation (RPA) orchestration is a use case that leverages capa
 
 ## Requirements
 
-Knowledge requirements!!!
+### Knowledge Requirements
 
-Hardware requirements to run everything on one machine?
+In order to succeed with this getting started guide, we expect that you already know
 
-Running UiPath including Orchestrator, Studio, and Bots
+* how to run UiPath robots and trigger them from the UiPath Orchestrator
+* how to model and execute BPMN process diagrams with the Camunda stack
+* how to work with process variables as part of JUEL expressions
 
-General understanding of how to execute processes with Camunda
+In case you never executed a process model with the Camunda engine, then we recommend to start with the <a href="https://docs.camunda.org/get-started/quick-start/">Quick Start Guide</a> first.
+
+### Hardware Requirements
+
+UiPath only works with Microsoft Windows. If you don't have a dedicated Windows environment, we recommend to use a Windows virtual machine, e.g. using <a href="https://www.virtualbox.org/">Virtualbox</a>.
+
+Since this guide asks you to install and use several components, we recommend to have a computer with sufficient resources to be able to run everything in parallel. Alternatively, we encourage you to use the hosted SaaS options where available. 
 
 ## Installation and Configuration
 
@@ -100,7 +108,7 @@ For testing we recommend the use of Cawemo SaaS. Please <a href="https://cawemo.
 
 When you are using Cawemo SaaS, please open the <a href="https://cawemo.com/settings/">settings page</a> and verify in the "Details" section that your Enterprise license is active.
 
-In order to use Cawemo On-Premises, please follow this <a href="https://docs.camunda.org/cawemo/latest/technical-guide/installation/">on-premises installation guide</a>.
+In order to use Cawemo On-Premises (version 1.4 or later), please follow this <a href="https://docs.camunda.org/cawemo/latest/technical-guide/installation/">on-premises installation guide</a>.
 
 When being logged in to Cawemo:
 
@@ -113,7 +121,7 @@ When being logged in to Cawemo:
 
 Please use the Camunda Modeler version 4.3 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.
 
-* Download the latest version of the <a href="https://camunda.org/enterprise-release/cawemo/cloud-connect-modeler-plugin/">Cloud Connect plugin</a> for Camunda Modeler
+* Download version 2.0 or later of the <a href="https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/">Cloud Connect plugin</a> for Camunda Modeler
 * Extract the archive and move it to the plugins folder
 
 ```sh
@@ -172,7 +180,7 @@ In order to create a new template, you need to
 
 Templates are saved automatically and will be available immediately to the Camunda Modeler. Versioning and publishing of templates is already planned to be added soon.
 
-Learn more about <a target="_blank" href="https://docs.camunda.org/manual/7.13/modeler/element-templates/">advanced configuration options of templates</a>.
+Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/modeler/element-templates/">advanced configuration options of templates</a>.
 
 ### Modeling and executing a process
 
