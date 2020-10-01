@@ -8,7 +8,7 @@ Contains all un-versioned sections of the documentation
 
 In order to build this documentation, you first need to install [hugo][hugo] v0.50 (newer versions _may_ work).
 
-See the [hugo installation guide][hugo-installation] for more details on howto install Hugo.
+See the [hugo installation guide][hugo-installation] for more details on how to install Hugo.
 
 ## Building the Documentation
 
