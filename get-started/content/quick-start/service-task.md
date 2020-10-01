@@ -129,7 +129,7 @@ Your pom.xml file of your project should look like this:
 		<dependency>
 			<groupId>org.camunda.bpm</groupId>
 			<artifactId>camunda-external-task-client</artifactId>
-			<version>1.3.1</version>
+			<version>1.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
