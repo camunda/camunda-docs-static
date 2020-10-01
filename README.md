@@ -2,7 +2,7 @@
 
 Contains all un-versioned sections of the documentation
 
-**Important:** _do NOT change the content of `themes/camunda` directory directly!_ Instead, Change the [theme](//github.com/camunda/camunda-docs-theme).
+**Important:** _Do NOT change the content of `themes/camunda` directory directly!_ Instead, Change the [theme](//github.com/camunda/camunda-docs-theme).
 
 ## Installing Hugo
 
@@ -33,7 +33,7 @@ Hugo will automatically detect when you change a file and refresh the page in th
 
 Edit the file `config/banners.html`:
 
-add or remove a div with the attribute `data-banner`.
+Add or remove a div with the attribute `data-banner`.
 
 This is an example of a blockquote-style, html based banner. It will be visualized with a bar on the left.
 
