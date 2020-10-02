@@ -1552,7 +1552,7 @@ Find more information about the [Full Distribution](/manual/latest/introduction/
 Download this distribution if you want to use Optimize with an embedded Elasticsearch or if you
 want to get to know Optimize quickly, without any additional setup or installation steps required.
 
-The demo distribution bundles
+The demo distribution bundles:
 
 - Optimize
 - The Container / Application Server itself
@@ -1591,7 +1591,7 @@ To install the demo distribution, please download one of the following archives:
 
 You can download the production Optimize distribution to use it in your production environment, which contains all the required files to startup Camunda Optimize, and configure it to connect to your pre-installed Elasticsearch instance.
 
-This distribution bundles
+This distribution bundles:
 
 - Optimize
 - Container / Application Server itself
