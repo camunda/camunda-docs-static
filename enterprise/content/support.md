@@ -20,10 +20,10 @@ To create a new support issue, follow the instructions below. To shorten the pro
 
 {{< img src="../img/jira-create-support-issue.png" title="Create Support Issue" >}}
 
-* Go to our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues)
-* Select `Create Issue`
+* Go to our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues).
+* Select `Create Issue`.
 * Select `Support` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
-* Give the ticket a meaningful **summary**
+* Give the ticket a meaningful **summary**.
 * You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you.
 * Provide us with a date in case of important **deadlines** that need to be reached.
 * Enter a detailed **description** of your issue. Make use of the provided template in the description filed (Reproduce steps, Problem, Expected behavior, etc.). In order to represent code snippets in a more readable way use the [JIRA text formatting]({{< relref "#text-formatting" >}}).
@@ -148,7 +148,7 @@ Support hotline helps you to connect to Camunda technical support for an immedia
 
 Please find below the instructions on how to make use of support hotline.
 
-* Dial in phone number provided in the contract
+* Dial in phone number provided in the contract.
 * The IVR would prompt you to enter service pin. The service pin is a 5-digit number provided with the contract. This helps us in authenticating you to your account.
 * If service pin is handy, then please enter it.  
 * If you do not have service pin handy, just press the hash key (#) instead.
