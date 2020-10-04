@@ -38,7 +38,7 @@ Go back to Eclipse and add a folder named `src/main/webapp/forms`. Inside this f
 </form>
 ```
 
-Open the process with the modeler. Click on the start event. In the properties view, click on the `Forms` tab and insert `embedded:app:forms/request-loan.html` into the `Form Key` property field. This means that we want to use an `embedded` form inside the Tasklist and that the form is loaded from the `app`lication. Save the diagram and refresh the Eclipse project.
+Open the process with the modeler. Click on the start event. In the properties view, click on the `Forms` tab and insert `embedded:app:forms/request-loan.html` into the `Form Key` property field. This means that we want to use an `embedded` form inside the Tasklist and that the form is loaded from the application. Save the diagram and refresh the Eclipse project.
 
 {{< img src="../img/modeler-start-form.png" >}}
 

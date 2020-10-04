@@ -96,7 +96,7 @@ When you are done, save your changes by clicking *File > Save File As..*. In the
 
 Return to Eclipse. Right-click the project folder and click *Refresh*. This synchronizes the new DMN file with Eclipse.
 
-For Eclipse to automatically sychronize the workspace with the filesystem, consider [configuring auto-sync in eclipse][auto-sync].
+For Eclipse to automatically synchronize the workspace with the filesystem, consider [configuring auto-sync in eclipse][auto-sync].
 
 {{< get-tag repo="camunda-get-started-dmn" tag="Step-3" >}}
 

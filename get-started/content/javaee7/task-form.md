@@ -165,7 +165,7 @@ On form submit, the `approveOrderController.submitForm()` method calls the EJB `
 
 {{< img src="../img/pizza-order-process-task-form.png" >}}
 
-Open the process with the modeler. Click on the *Approve Order* user task. In the properties view, set the `Form Key` property to `app:approveorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the `app`lication.
+Open the process with the modeler. Click on the *Approve Order* user task. In the properties view, set the `Form Key` property to `app:approveorder.jsf`. This means that we want to use an external JSF form and that the form is loaded from the application.
 
 
 # Configure the Conditional Sequence Flows in the Process
