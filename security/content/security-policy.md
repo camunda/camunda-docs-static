@@ -56,7 +56,7 @@ New software developers are being introduced to our security policy and best pra
 
 ## Reporting Security Issues and Vulnerabilities
 
-Security vulnerabilities can be reported via the Camunda JIRA issue tracker. Find details in the [Report a Vulnerability Guide]({{< ref "/report-vulnerability.md" >}}). Reported vulnerabilities, associated documentation and the identity of reporters are treated confidentially thoughout the entire process.
+Security vulnerabilities can be reported via the Camunda JIRA issue tracker. Find details in the [Report a Vulnerability Guide]({{< ref "/report-vulnerability.md" >}}). Reported vulnerabilities, associated documentation and the identity of reporters are treated confidentially throughout the entire process.
 
 Vulnerabilities discovered by our enterprise customers are treated as bugs and the agreed SLAs apply.
 
