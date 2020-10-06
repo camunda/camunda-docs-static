@@ -52,3 +52,6 @@ This is an example of a blockquote-style, html based banner. It will be visualiz
 
 [hugo]: http://gohugo.io/
 [hugo-installation]: http://gohugo.io/overview/installing/
+
+## License
+View the LICENSE [here](https://github.com/manishgautam30/camunda-docs-static/blob/master/LICENSE).
