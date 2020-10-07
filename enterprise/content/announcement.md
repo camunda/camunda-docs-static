@@ -232,6 +232,9 @@ __End of Maintenance:__ 31st of March 2022
 __Changes in Supported Environments:__
 
 * Added support for `Elasticsearch` 7.7 and 7.8 versions
+* Minimum required `Camunda BPM` version is raised to 7.12.11.
+* End of Support for `Camunda BPM` 7.11 releases
+* Support for `Camunda BPM` 7.14 releases
 
 ## Camunda Optimize 3.1
 
