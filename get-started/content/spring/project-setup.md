@@ -47,8 +47,8 @@ The next step consists of setting up the Maven dependencies for the new project.
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.13.0</camunda.version>
-    <spring.version>4.3.24.RELEASE</spring.version>
+    <camunda.version>7.14.0</camunda.version>
+    <spring.version>5.2.8.RELEASE</spring.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -115,10 +115,6 @@ The next step consists of setting up the Maven dependencies for the new project.
 
 </project>
 ```
-
-{{< note title="Spring 5" class="info" >}}
-This guide uses Spring 4. If you prefer Spring 5, just choose a Spring version in the POM file. The tutorial should work in the same way.
-{{< /note >}}
 
 ## Add web.xml File for Bootstrapping the Spring Container
 
