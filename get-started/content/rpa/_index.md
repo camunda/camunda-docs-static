@@ -80,16 +80,28 @@ Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest
 
 In order to install the RPA Bridge, please:
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/camunda-bpm-rpa-bridge">Download the RPA Bridge</a>
+* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/">Download the RPA Bridge</a>
 * Unzip the archive
-* Add your Enterprise license key into a file called `camunda-license.txt` in the same folder as the  `application.yml` file
+* Add your Enterprise license key into a file called `camunda-license.txt` in the same folder as the `application.yml` file
 * When using UiPath Cloud, edit in the config file `application.yml`:
-  * account-name: the Account Logical Name from the API Access overlay
-  * tenant-name: the Tenant Logical Name from the API Access overlay
-  * user: the Client Id from the API Access overlay
-  * key: the User Key from the API Access overlay
+  * org.camunda.bpm.rpa.uipath-api.url: use `https://platform.uipath.com`
+  * org.camunda.bpm.rpa.uipath-api.account-name: the Account Logical Name from the API Access overlay
+  * org.camunda.bpm.rpa.uipath-api.tenant-name: the Tenant Logical Name from the API Access overlay
+  * org.camunda.bpm.rpa.uipath-api.authentication.type: `cloud`
+  * org.camunda.bpm.rpa.uipath-api.authentication.auth-url: `https://account.uipath.com/oauth/token`
+  * org.camunda.bpm.rpa.uipath-api.authentication.user: the Client Id from the API Access overlay
+  * org.camunda.bpm.rpa.uipath-api.authentication.key: the User Key from the API Access overlay
 * When using UiPath On-Premises, edit in the config file `application.yml`:
-  * TODO
+  * org.camunda.bpm.rpa.uipath-api.url: the base URL of your UiPath Orchestrator installation
+  * org.camunda.bpm.rpa.uipath-api.authentication.type: `on-premises`
+  * org.camunda.bpm.rpa.uipath-api.authentication.auth-url: `<your-URL>/api/account/authenticate`
+  * org.camunda.bpm.rpa.uipath-api.authentication.user: account username/e-mail
+  * org.camunda.bpm.rpa.uipath-api.authentication.key: account password
+* When using a job status update webhook, edit in the config file `application.yml`:
+  * org.camunda.bpm.rpa.uipath-api.status-update-method: `webhook`
+  * org.camunda.bpm.rpa.uipath-api.webhook.secret: secret used in your UiPath webhook configuration
+* When using polling to fetch job status updates, edit in the config file `application.yml`:
+  * org.camunda.bpm.rpa.uipath-api.status-update-method: `polling`
 * Launch the RPA Bridge by
 
 ```sh
