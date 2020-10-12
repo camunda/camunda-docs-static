@@ -33,7 +33,7 @@ In case you never executed a process model with the Camunda engine, then we reco
 
 UiPath only works with Microsoft Windows. If you don't have a dedicated Windows environment, we recommend to use a Windows virtual machine, e.g. using <a href="https://www.virtualbox.org/">Virtualbox</a>.
 
-Since this guide asks you to install and use several components, we recommend to have a computer with sufficient resources to be able to run everything in parallel. Alternatively, we encourage you to use the hosted SaaS options where available. 
+Since this guide asks you to install and use several components, we recommend to have a computer with sufficient resources to be able to run everything in parallel. Alternatively, we encourage you to use the hosted SaaS options where available.
 
 ## Installation and Configuration
 
@@ -51,13 +51,21 @@ In order to prepare the setup of the RPA Bridge, please
   * Tenant Logical Name
   * Client Id
 
-Learn more about <a target="_blank" href="https://docs.uipath.com/orchestrator">UiPath Orchestrator</a>.
+The API of UiPath Orchestrator requires a parameter called ‘organization unit id’ that you can obtain as follows:
+
+* Open your organization's dashboard (this does not work for the ‘Admin’ view)
+* Open your browser's developer tools
+* Open the network tab and select a request, e.g. `GetCountStats` XHR request
+* Navigate to the Request Header section of that request
+* Read the request header `x-uipath-organizationunitid`, which contains the id as a number
+
+Learn more about <a target="_blank" href="https://docs.uipath.com/orchestrator">UiPath Orchestrator</a> or visit the <a target="_blank" href="https://forum.uipath.com/">UiPath Forum</a>.
 
 ### Camunda BPM Run
 
-Unless you already have a running Camunda BPM installation, please
+Unless you already have a running Camunda BPM 7.14 or later installation, please
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/">Download Camunda Run (Enterprise)</a>
+* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.14/7.14.0/camunda-bpm-run-ee-7.14.0-ee.zip">Download Camunda Run (Enterprise)</a>
 
 You will be asked for a username and password that you have obtained together with your Enterprise license key.
 
@@ -80,16 +88,23 @@ Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest
 
 In order to install the RPA Bridge, please:
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/camunda-bpm-rpa-bridge">Download the RPA Bridge</a>
+* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">Download the RPA Bridge</a>
 * Unzip the archive
-* Add your Enterprise license key into a file called `camunda-license.txt` in the same folder as the  `application.yml` file
+* Add your Enterprise license key into a file in this location:
+  * `${user.home}/.camunda/license.txt`
 * When using UiPath Cloud, edit in the config file `application.yml`:
-  * account-name: the Account Logical Name from the API Access overlay
-  * tenant-name: the Tenant Logical Name from the API Access overlay
-  * user: the Client Id from the API Access overlay
-  * key: the User Key from the API Access overlay
-* When using UiPath On-Premises, edit in the config file `application.yml`:
-  * TODO
+  * `url`: set to `https://platform.uipath.com/`
+  * `account-name`: the Account Logical Name from the API Access overlay
+  * `tenant-name`: the Tenant Logical Name from the API Access overlay
+  * `organization-unit-id`: see above how to <a href="#uipath">retrieve your organization unit id</a>
+  * `auth-url`: switch to `https://account.uipath.com/oauth/token`
+  * `user`: the Client Id from the API Access overlay
+  * `key`: the User Key from the API Access overlay
+  * `status-update-method`: set to `polling`
+  * `webhook`: add `#` to the beginning of each line with a webhook config property to ignore the line
+* When using UiPath On-Premises, please follow the instructions in the config file `application.yml`
+* We recommend to enable simple logging by adding this as the last line to `application.yml`:
+  * `logging.level.org.camunda.bpm.rpa.bridge.externaltask: DEBUG`
 * Launch the RPA Bridge by
 
 ```sh
@@ -97,6 +112,11 @@ java -jar camunda-bpm-rpa-bridge.jar
 ```
 
 You should see a log message like `External Task Listener started ----`
+
+For trouble shooting, you can switch to extensive logging by adding this as the last line to `application.yml`:
+
+* `logging.level.org.camunda.bpm.rpa.bridge: DEBUG`
+
 
 Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-rpa-bridge/">configuring the RPA Bridge</a>.
 
@@ -121,7 +141,7 @@ When being logged in to Cawemo:
 
 Please use the Camunda Modeler version 4.3 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.
 
-* Download version 2.0 or later of the <a href="https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/">Cloud Connect plugin</a> for Camunda Modeler
+* Download version 2.0 or later of the <a href="https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/cloud-connect-2.0.0.zip">Cloud Connect plugin</a> for Camunda Modeler
 * Extract the archive and move it to the plugins folder
 
 ```sh
