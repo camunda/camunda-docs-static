@@ -53,8 +53,8 @@ downloads:
     - war
 
   selected:
-    branch: "7.13"
-    version: "7.13.5"
+    branch: "7.14"
+    version: "7.14.0"
     server: "run"
 
   branches:
