@@ -93,7 +93,7 @@ In order to install the RPA Bridge, please:
 * Add your Enterprise license key into a file called `license.txt` in the same folder as the `application.yml` file
 * When using UiPath Cloud, edit in the config file `application.yml`:
   * `license-file`: remove the comment character such that the value is `file:///${user.dir}/license.txt`
-  * `url`: set to `https://platform.uipath.com/`
+  * `uipath-api.url`: set to `https://platform.uipath.com/`
   * `account-name`: the Account Logical Name from the API Access overlay
   * `tenant-name`: the Tenant Logical Name from the API Access overlay
   * `organization-unit-id`: see above how to <a href="#uipath">retrieve your organization unit id</a>
@@ -102,7 +102,7 @@ In order to install the RPA Bridge, please:
   * `key`: the User Key from the API Access overlay
   * `status-update-method`: set to `polling`
   * `webhook`: add `#` to the beginning of each line with a webhook config property to ignore the line
-* When using UiPath On-Premises, please follow the instructions in the config file `application.yml`
+* When using UiPath On-Premises, please follow the instructions in the config file
 * We recommend to enable simple logging by adding this as the last line to `application.yml`:
   * `logging.level.org.camunda.bpm.rpa.bridge.externaltask: DEBUG`
 * Launch the RPA Bridge by
