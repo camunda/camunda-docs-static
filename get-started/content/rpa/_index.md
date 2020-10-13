@@ -90,9 +90,9 @@ In order to install the RPA Bridge, please:
 
 * <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">Download the RPA Bridge</a>
 * Unzip the archive
-* Add your Enterprise license key into a file in this location:
-  * `${user.home}/.camunda/license.txt`
+* Add your Enterprise license key into a file called `license.txt` in the same folder as the `application.yml` file
 * When using UiPath Cloud, edit in the config file `application.yml`:
+  * `license-file`: remove the comment character such that the value is `file:///${user.dir}/license.txt`
   * `url`: set to `https://platform.uipath.com/`
   * `account-name`: the Account Logical Name from the API Access overlay
   * `tenant-name`: the Tenant Logical Name from the API Access overlay
