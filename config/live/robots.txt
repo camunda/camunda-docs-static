@@ -10,4 +10,7 @@ Disallow: /manual/7.7/
 Disallow: /manual/7.8/
 Disallow: /manual/7.9/
 Disallow: /manual/7.10/
+Disallow: /manual/7.11/
+Disallow: /manual/7.12/
+Disallow: /manual/7.13/
 Disallow: /manual/develop/
