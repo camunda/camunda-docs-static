@@ -35,6 +35,10 @@ UiPath only works with Microsoft Windows. If you don't have a dedicated Windows 
 
 Since this guide asks you to install and use several components, we recommend to have a computer with sufficient resources to be able to run everything in parallel. Alternatively, we encourage you to use the hosted SaaS options where available.
 
+## Architecture Overview
+
+{{< img src="img/RPA-Orchestration-Architecture.svg" >}}
+
 ## Installation and Configuration
 
 ### UiPath
