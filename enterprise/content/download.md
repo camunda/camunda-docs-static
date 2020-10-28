@@ -54,12 +54,22 @@ downloads:
 
   selected:
     branch: "7.14"
-    version: "7.14.0"
+    version: "7.14.1"
     server: "run"
 
   branches:
     - branch: "7.14"
       releases:
+        - number: "7.14.1"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16228"
+          date: "2020.10.28"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            
         - number: "7.14.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?version=16004&projectId=10230"
           date: "2020.10.13"
@@ -72,6 +82,16 @@ downloads:
 
     - branch: "7.13"
       releases:
+        - number: "7.13.7"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16294"
+          date: "2020.10.28"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+        
         - number: "7.13.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16227"
           date: "2020.10.15"
@@ -144,6 +164,17 @@ downloads:
 
     - branch: "7.12"
       releases:
+        - number: "7.12.12"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16228"
+          date: "2020.10.28"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+        
         - number: "7.12.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16217"
           date: "2020.09.22"
@@ -278,6 +309,17 @@ downloads:
 
     - branch: "7.11"
       releases:
+        - number: "7.11.19"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16229"
+          date: "2020.10.28"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+        
         - number: "7.11.18"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16218"
           date: "2020.09.22"
