@@ -108,7 +108,7 @@ It is not needed when using `camunda-engine` because that already contains the D
 </dependency>
 ```
 
-# Process Aplication EJB Client
+# Process Application EJB Client
 
 ```xml
 <dependency>
