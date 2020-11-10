@@ -176,7 +176,7 @@ downloads:
 
     - branch: "7.12"
       releases:
-         - number: "7.12.13"
+        - number: "7.12.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16392"
           date: "2020.11.10"
           excludeservers:
