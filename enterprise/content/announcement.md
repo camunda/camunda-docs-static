@@ -223,6 +223,16 @@ __Product Change:__ With Camunda BPM 7.2.0, Camunda BPM Cycle is no longer bundl
 
 # Camunda Optimize Announcements
 
+## Camunda Optimize 3.3
+
+__Release Date:__ scheduled for 12th of January 2021
+
+__End of Maintenance:__ 30th of June 2022
+
+__Changes in Supported Environments:__
+
+* Added support for `Elasticsearch` 7.9 and 7.10 versions
+
 ## Camunda Optimize 3.2
 
 __Release Date:__ scheduled for 13th of October 2020
