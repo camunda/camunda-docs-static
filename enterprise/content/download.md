@@ -54,7 +54,7 @@ downloads:
 
   selected:
     branch: "7.14"
-    version: "7.14.2"
+    version: "7.14.1"
     server: "run"
 
   branches:
@@ -72,16 +72,6 @@ downloads:
 
     - branch: "7.14"
       releases:
-        - number: "7.14.2"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16390"
-          date: "2020.11.25"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-      
         - number: "7.14.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16228"
           date: "2020.10.28"
