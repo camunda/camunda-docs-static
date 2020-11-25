@@ -54,7 +54,7 @@ downloads:
 
   selected:
     branch: "7.14"
-    version: "7.14.1"
+    version: "7.14.2"
     server: "run"
 
   branches:
@@ -72,6 +72,16 @@ downloads:
 
     - branch: "7.14"
       releases:
+        - number: "7.14.2"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16390"
+          date: "2020.11.25"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
         - number: "7.14.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16228"
           date: "2020.10.28"
@@ -94,6 +104,16 @@ downloads:
 
     - branch: "7.13"
       releases:
+        - number: "7.13.8"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16391"
+          date: "2020.11.25"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            
         - number: "7.13.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16294"
           date: "2020.10.28"
@@ -176,6 +196,17 @@ downloads:
 
     - branch: "7.12"
       releases:
+        - number: "7.12.14"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16397"
+          date: "2020.11.25"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
         - number: "7.12.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16392"
           date: "2020.11.10"
@@ -332,6 +363,17 @@ downloads:
 
     - branch: "7.11"
       releases:
+        - number: "7.11.20"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16393"
+          date: "2020.11.25"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
         - number: "7.11.19"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16229"
           date: "2020.10.28"
