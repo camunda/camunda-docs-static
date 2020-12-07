@@ -69,6 +69,15 @@ downloads:
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
+        - number: "7.15.0-alpha2"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16494"
+          date: "2020.12.08"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
 
     - branch: "7.14"
       releases:
