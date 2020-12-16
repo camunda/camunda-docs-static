@@ -22,13 +22,15 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
 
 ```xml
 <dependencyManagement>
-  <dependency>
-    <groupId>org.camunda.bpm</groupId>
-    <artifactId>camunda-bom</artifactId>
-    <version>7.14.0</version>
-    <scope>import</scope>
-    <type>pom</type>
-  </dependency>
+  <dependencies>
+    <dependency>
+      <groupId>org.camunda.bpm</groupId>
+      <artifactId>camunda-bom</artifactId>
+      <version>7.14.0</version>
+      <scope>import</scope>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
 </dependencyManagement>
 ```
 
@@ -38,13 +40,15 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 
 ```xml
 <dependencyManagement>
-  <dependency>
-    <groupId>org.camunda.bpm</groupId>
-    <artifactId>camunda-bom</artifactId>
-    <version>7.14.0-ee</version>
-    <scope>import</scope>
-    <type>pom</type>
-  </dependency>
+  <dependencies>
+    <dependency>
+      <groupId>org.camunda.bpm</groupId>
+      <artifactId>camunda-bom</artifactId>
+      <version>7.14.0-ee</version>
+      <scope>import</scope>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
 </dependencyManagement>
 ```
 
