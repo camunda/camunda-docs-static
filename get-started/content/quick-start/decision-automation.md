@@ -26,20 +26,22 @@ Next, link the Business Rule Task to a DMN table by changing `Implementation` to
 Save your changes and deploy the updated process using the `Deploy` Button in the Camunda Modeler.
 
 # Create a DMN table using the Camunda Modeler
-Create a new DMN table by clicking *File > New File > DMN Table*.
+First, create a new DMN diagram by clicking *File > New File > DMN Diagram*.
+{{< img src="../img/modeler-new-dmn-diagram.png" >}}
 
+Now the newly created diagram will already have a decision element added to it. Select it by clicking it and then give it a name of *Approve Payment* and an ID of `approve-payment` (the decision ID must match the the `Decision Ref` in your BPMN process).
+{{< img src="../img/modeler-new-dmn-diagram-properties.png" >}}
+
+Next, create a new DMN table by clicking the table button.
 {{< img src="../img/modeler-new-dmn-table.png" >}}
 
 # Specify the DMN table
-First, give the DMN table the name Approve Payment and the ID approve-payment. The DMN table ID must match the `Decision Ref` in your BPMN process.
-{{< img src="../img/modeler-dmn1.png" >}}
+First, specify the input expressions for the DMN table. In this example, we'll decide whether a payment is approved based on the item name. Your rules can also make use of the FEEL Expression Language, JUEL or Script. If you like, you can [read more about Expressions in the DMN Engine](/manual/latest/user-guide/dmn-engine/expressions-and-scripts/).
 
-Next, specify the input expressions for the DMN table. In this example, we'll decide whether a payment is approved based on the item name. Your rules can also make use of the FEEL Expression Language, JUEL or Script. If you like, you can [read more about Expressions in the DMN Engine](/manual/latest/user-guide/dmn-engine/expressions-and-scripts/).
-
-For the input column, use `item` as the *Input Expression* and `Item` as the *Input Label*:
+For the input column, use  `Item` as the *Input Label* and `item` as the *Input Expression*:
 {{< img src="../img/modeler-dmn2.png" >}}
 
-Next, set up the output column. Use `approved` as the *Output Name* and `Approved` as the *Output Label* for the output column "Approved":
+Next, set up the output column. Use `Approved` as the *Output Label* and `approved` as the *Output Name* for the output column "Approved":
 {{< img src="../img/modeler-dmn3.png" >}}
 
 Let's create some rules by clicking on the plus icon on the left side of the DMN table. We should also change the Output Column to the Data Type `boolean`:
