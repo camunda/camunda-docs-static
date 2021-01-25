@@ -28,7 +28,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * Provide us with a date in case of important **deadlines** that need to be reached.
 * Enter a detailed **description** of your issue. Make use of the provided template in the description filed (Reproduce steps, Problem, Expected behavior, etc.). In order to represent code snippets in a more readable way use the [JIRA text formatting]({{< relref "#text-formatting" >}}).
 * **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster. If possible provide log files and stack traces as plain text file.
-* For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda BPM platform version, application server, database and everything else that seems to be important for your issue.
+* For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda Platform version, application server, database and everything else that seems to be important for your issue.
 
 
 ## Issue Types

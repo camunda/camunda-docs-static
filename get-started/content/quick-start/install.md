@@ -8,16 +8,16 @@ menu:
     name: "Download and Installation"
     parent: "get-started-quick-start"
     identifier: "get-started-quick-start-install"
-    pre: "Install the Camunda BPM Platform and Camunda Modeler on your machine."
+    pre: "Install the Camunda Platform and Camunda Modeler on your machine."
 
 ---
 
-First, you need to install the Camunda BPM Platform and the Camunda Modeler.
+First, you need to install the Camunda Platform and the Camunda Modeler.
 
-In the following section, we'll describe how to install the Camunda BPM Platform locally on your machine.
+In the following section, we'll describe how to install the Camunda Platform locally on your machine.
 
 {{< note title="Hint" class="info" >}}
-If you prefer, you can also run the Camunda BPM Platform with Docker:
+If you prefer, you can also run the Camunda Platform with Docker:
 
 ```sh
 docker pull camunda/camunda-bpm-platform:latest
@@ -41,13 +41,13 @@ java -version
 ```
 If you need to install Java Runtime Environment, you can [find the download from Oracle here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-# Camunda BPM Platform
+# Camunda Platform
 
-First, download a distribution of the Camunda BPM platform. You can choose from different distributions for [various application servers](/manual/latest/installation/full/). In this tutorial, we'll use the Apache Tomcat-based distribution. Download it from [the download page](https://camunda.com/download).
+First, download a distribution of the Camunda Platform. You can choose from different distributions for [various application servers](/manual/latest/installation/full/). In this tutorial, we'll use the Apache Tomcat-based distribution. Download it from [the download page](https://camunda.com/download).
 
 After downloading the distribution, unpack it inside a directory of your choice.
 
-After you've successfully unpacked your distribution of the Camunda BPM platform, execute the script named `start-camunda.bat` (for Windows users) or `start-camunda.sh` (for Unix users).
+After you've successfully unpacked your distribution of the Camunda Platform, execute the script named `start-camunda.bat` (for Windows users) or `start-camunda.sh` (for Unix users).
 
 This script will start the application server and open a welcome screen in your web browser. If the page does not open on its own, go to [http://localhost:8080/camunda-welcome/index.html](http://localhost:8080/camunda-welcome/index.html).
 

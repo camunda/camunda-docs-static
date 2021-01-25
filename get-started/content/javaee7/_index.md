@@ -11,7 +11,7 @@ menu:
 
 ---
 
-This tutorial guides you through setting up Camunda BPM and developing your first process application with Java EE 7.
+This tutorial guides you through setting up Camunda Platform and developing your first process application with Java EE 7.
 
 {{< get-code repo="camunda-get-started-javaee" >}}
 

@@ -15,7 +15,7 @@ menu:
 You can obtain an <a href="https://camunda.com/download/enterprise/">Enterprise Trial license</a> for testing the RPA Bridge and Cawemo on-premises.
 {{< /note >}}
 
-Robotic Process Automation (RPA) orchestration is a use case that leverages capabilities from multiple Camunda product modules. It allows for the orchestration of tasks that are automated using RPA technology and unattended bots. To start, Camunda BPM actively supports UiPath but more RPA vendors will be supported in future versions.
+Robotic Process Automation (RPA) orchestration is a use case that leverages capabilities from multiple Camunda product modules. It allows for the orchestration of tasks that are automated using RPA technology and unattended bots. To start, Camunda Platform actively supports UiPath but more RPA vendors will be supported in future versions.
 
 ## Requirements
 
@@ -65,9 +65,9 @@ The API of UiPath Orchestrator requires a parameter called ‘organization unit 
 
 Learn more about <a target="_blank" href="https://docs.uipath.com/orchestrator">UiPath Orchestrator</a> or visit the <a target="_blank" href="https://forum.uipath.com/">UiPath Forum</a>.
 
-### Camunda BPM Run
+### Camunda Platform Run
 
-Unless you already have a running Camunda BPM 7.14 or later installation, please
+Unless you already have a running Camunda Platform 7.14 or later installation, please
 
 * <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.14/7.14.0/camunda-bpm-run-ee-7.14.0-ee.zip">Download Camunda Run (Enterprise)</a>
 
@@ -86,7 +86,7 @@ start.bat
 ./start.sh
 ```
 
-Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/installation/">installing Camunda BPM</a>.
+Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/installation/">installing Camunda Platform</a>.
 
 ### RPA Bridge
 

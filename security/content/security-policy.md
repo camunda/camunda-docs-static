@@ -10,7 +10,7 @@ menu:
 
 ---
 
-As a core infrastructure component of our customers, the security of Camunda BPM (also referred to as the 'software') takes top priority and is maintained constantly.
+As a core infrastructure component of our customers, the security of Camunda Platform (also referred to as the 'software') takes top priority and is maintained constantly.
 
 
 # Information Security Standards
@@ -100,8 +100,8 @@ Test history:
   <tr>
     <td><p>January 2019</p></td>
     <td>
-      <p>Camunda BPM Platform version: 7.10.1</p>
-      <p>Whitebox test with focus on (but not limited to) Camunda BPM web applications and REST API.</p>
+      <p>Camunda Platform version: 7.10.1</p>
+      <p>Whitebox test with focus on (but not limited to) Camunda Platform web applications and REST API.</p>
     </td>
     <td>
       <p>No critical vulnerabilities were detected.</p>
@@ -113,8 +113,8 @@ Test history:
   <tr>
     <td><p>January 2020</p></td>
     <td>
-      <p>Camunda BPM Platform Version: 7.12.1-ee Camunda Optimize Version 2.7.0</p>
-      <p>Whitebox test with focus on (but not limited to) Camunda BPM web applications and REST API.</p>
+      <p>Camunda Platform Version: 7.12.1-ee Camunda Optimize Version 2.7.0</p>
+      <p>Whitebox test with focus on (but not limited to) Camunda Platform web applications and REST API.</p>
     </td>
     <td>
       <p>No critical vulnerabilities were detected.</p>

@@ -32,7 +32,7 @@ First, we set up a new Apache Maven based project. Let's call it *loan-approval-
 
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
 
-## Add Camunda BPM & Spring Boot Dependencies
+## Add Camunda Platform & Spring Boot Dependencies
 
 The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project.
 We add the Spring Boot BOM in the "dependency management" section and the Camunda Spring Boot Starter for Webapps, which will automatically include the Camunda engine and webapps in the app.
