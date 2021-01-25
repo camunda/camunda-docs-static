@@ -87,7 +87,7 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 ```
 
 # Camunda DMN Engine BOM (Bill of Materials)
-This BOM allows to use the DMN engine standalone without the BPMN engine and the rest of the Camunda BPM platform.
+This BOM allows to use the DMN engine standalone without the BPMN engine and the rest of the Camunda Platform.
 
 ```xml
 <dependencyManagement>
@@ -102,7 +102,7 @@ This BOM allows to use the DMN engine standalone without the BPMN engine and the
 ```
 
 # Camunda DMN
-This dependency allows to use DMN engine standalone without the BPMN engine and the rest of the Camunda BPM platform.
+This dependency allows to use DMN engine standalone without the BPMN engine and the rest of the Camunda Platform.
 It is not needed when using `camunda-engine` because that already contains the DMN engine.
 
 ```xml
@@ -173,12 +173,12 @@ While testing the connection in Artifactory, if you get "Connection failed: Erro
 In order to browse the Camunda Nexus artifacts, here are the links which can be used.
 
 ### Community Edition
-This link helps you to browse the artifacts of Camunda bpm community edition.
+This link helps you to browse the artifacts of Camunda Platform community edition.
 
  https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/
 
 ### Enterprise Edition
-This link helps you to browse the artifacts of Camunda bpm enterprise edition. The user needs to login to the nexus repository before accessing the link.
+This link helps you to browse the artifacts of Camunda Platform enterprise edition. The user needs to login to the nexus repository before accessing the link.
 
  https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm-ee/
 

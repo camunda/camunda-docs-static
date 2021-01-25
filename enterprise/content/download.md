@@ -10,7 +10,7 @@ menu:
 downloads:
   servers:
     - path: "run"
-      name: "Camunda BPM Run"
+      name: "Camunda Platform Run"
       weight: 0
     - path: "tomcat"
       name: "Apache Tomcat"
@@ -1674,14 +1674,14 @@ downloads:
             - "ibm-was-85"
 ---
 
-On this page we provide downloads for the Camunda BPM Enterprise Platform including:
+On this page we provide downloads for the Camunda Platform Enterprise Platform including:
 
-- [Camunda BPM]({{< relref "#camunda-bpm" >}})
+- [Camunda Platform]({{< relref "#camunda-bpm" >}})
 - [Camunda Optimize]({{< relref "#camunda-optimize" >}})
 - [Cawemo]({{< relref "#cawemo" >}})
 - [Camunda Modeler]({{< relref "#camunda-modeler" >}})
 
-## Camunda BPM
+## Camunda Platform
 
 ### Full Distributions and Standalone Web Applications
 
@@ -1703,7 +1703,7 @@ Find more information about the [Full Distribution](/manual/latest/introduction/
 
 ## Camunda Optimize
 
-[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
+[Camunda Optimize](/optimize) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
 
 ### Demo Distribution with Elasticsearch
 

@@ -28,7 +28,7 @@ In order to configure the loanapproval-spring example to work with a shared proc
 have to change three things:
 
 Firstly, we need to set the scope of the Maven dependency of the camunda-engine dependency to 
-`provided`. On the Camunda BPM platform the process engine library is provided as a shared library 
+`provided`. On the Camunda Platform the process engine library is provided as a shared library 
 and does not need to be bundled with the application:
 
 ```xml

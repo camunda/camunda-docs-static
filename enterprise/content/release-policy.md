@@ -12,7 +12,7 @@ menu:
 
 ## Community vs. Enterprise Releases
 
-There is both a community and an enterprise edition of Camunda BPM. Among these, we distinguish between four different types of releases:
+There is both a community and an enterprise edition of Camunda Platform. Among these, we distinguish between four different types of releases:
 
 1. **Major Release**: The Major release contains features and bugfixes. It is fully tested and meant to be used for production systems. The Major release may contain incompatible API changes. The release is done in parallel for the community edition and for the enterprise edition.
 2. **Minor Release**: The Minor release contains features and bugfixes. It is fully tested and meant to be used for production systems. In Minor releases we add functionality in a backwards compatible manner. The release is done in parallel for the community edition and for the enterprise edition.

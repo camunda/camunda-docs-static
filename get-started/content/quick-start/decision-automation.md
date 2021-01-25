@@ -81,7 +81,7 @@ A single DMN table that was executed could look like this in Camunda Cockpit:
 {{< img src="../img/cockpit-dmn-table.png" >}}
 
 {{< note title="Success!" class="info" >}}
-Congratulations! You've successfully completed the Camunda BPM Quick Start. Ready to continue? We recommend the [Camunda BPM documentation](https://docs.camunda.org/manual/latest/).
+Congratulations! You've successfully completed the Camunda Platform Quick Start. Ready to continue? We recommend the [Camunda Platform documentation](https://docs.camunda.org/manual/latest/).
 {{< /note >}}
 
 
