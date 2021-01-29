@@ -245,8 +245,8 @@ downloads:
 
     - branch: "7.12"
       releases:
-        - number: "7.12.16"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16599"
+        - number: "7.12.17"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16692"
           date: "2021.01.27"
           excludeservers:
             - "run"
