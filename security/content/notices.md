@@ -15,6 +15,157 @@ releases of the community platform.
 
 # Notices
 
+## Notice 41
+
+**Publication Date: November 4th, 2019**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of the MySQL JDBC driver used by the Camunda Platform Docker container was vulnerable to various attacks. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2017-3523
+- https://nvd.nist.gov/vuln/detail/CVE-2017-3589
+- https://nvd.nist.gov/vuln/detail/CVE-2018-3258
+
+**How to determine if the installation is affected**
+
+- The Camunda Platform Docker container is used
+- MySQL is used
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix. 
+
+Please have a look at the patch update guide for the potential implications of using a higher version of the MySQL JDBC driver: https://docs.camunda.org/manual/7.14/update/patch-level/#update-of-mysql-jdbc-driver-in-camunda-docker-images.
+
+## Notice 40
+
+**Publication Date: November 4th, 2019**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Jackson used by Camunda Spin was vulnerable to XML external entity (XXE) attacks. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-25649
+
+**How to determine if the installation is affected**
+
+- Camunda Spin is on the classpath
+  - Camunda distributions are used (e.g. Run, Tomcat, Wildfly)
+  - Spin is used as a project dependency
+- An attacker is able to access the REST API or web applications and has permissions to submit process variables
+- The recommended configuration for type whitelisting is not applied: https://docs.camunda.org/manual/7.14/user-guide/security/#variable-values-from-untrusted-sources
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+## Notice 39
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache Commons Codec used by Camunda Connect was vulnerable to improper input validation. Details:
+
+- https://issues.apache.org/jira/browse/CODEC-134
+
+**How to determine if the installation is affected**
+
+- The process engine is used
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+## Notice 38
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache HTTP Client used by Camunda Connect was vulnerable to an attack that a malformed request URL was interpreted incorrectly, which could lead the client to make a request against a different host. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-13956
+
+**How to determine if the installation is affected**
+
+- The process engine is used
+- Connector service tasks are used in a process and an attacker can manipulate the request URL
+- Telemetry is used and an attacker can manipulate the request URL
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+
+## Notice 37
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Resteasy used by the Camunda Tomcat distributions was vulnerable to an attack that an illegal header could be injected into the HTTP response with a crafted request. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-1695
+
+**How to determine if the installation is affected**
+
+- The Camunda Tomcat distribution is used (Camunda Run is not affected)
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+## Notice 36
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions and transitively pulled in by the Camunda Spring Boot starter was vulnerable to unauthorized exposure of file resources and information leaks between HTTP requests:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-17527
+- https://nvd.nist.gov/vuln/detail/CVE-2021-24122
+
+**How to determine if the installation is affected**
+
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
+
 ## Notice 35
 
 **Publication Date: September 29th, 2020**
