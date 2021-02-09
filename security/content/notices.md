@@ -17,7 +17,7 @@ releases of the community platform.
 
 ## Notice 41
 
-**Publication Date: November 4th, 2019**
+**Publication Date: February 9th, 2021**
 
 **Product affected:**
 
@@ -44,7 +44,7 @@ Please have a look at the patch update guide for the potential implications of u
 
 ## Notice 40
 
-**Publication Date: November 4th, 2019**
+**Publication Date: February 9th, 2021**
 
 **Product affected:**
 
