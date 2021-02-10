@@ -12,7 +12,7 @@ menu:
 
 ---
 
-This tutorial guides you through setting up Camunda BPM and developing your first application with a CMMN case.
+This tutorial guides you through setting up Camunda Platform and developing your first application with a CMMN case.
 
 {{< get-code repo="camunda-get-started-cmmn" >}}
 

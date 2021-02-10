@@ -15,13 +15,164 @@ releases of the community platform.
 
 # Notices
 
+## Notice 41
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of the MySQL JDBC driver used by the Camunda Platform Docker container was vulnerable to various attacks. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2017-3523
+- https://nvd.nist.gov/vuln/detail/CVE-2017-3589
+- https://nvd.nist.gov/vuln/detail/CVE-2018-3258
+
+**How to determine if the installation is affected**
+
+- The Camunda Platform Docker container is used
+- MySQL is used
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix. 
+
+Please have a look at the patch update guide for the potential implications of using a higher version of the MySQL JDBC driver: https://docs.camunda.org/manual/7.14/update/patch-level/#update-of-mysql-jdbc-driver-in-camunda-docker-images.
+
+## Notice 40
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Jackson used by Camunda Spin was vulnerable to XML external entity (XXE) attacks. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-25649
+
+**How to determine if the installation is affected**
+
+- Camunda Spin is on the classpath
+  - Camunda distributions are used (e.g. Run, Tomcat, Wildfly)
+  - Spin is used as a project dependency
+- An attacker is able to access the REST API or web applications and has permissions to submit process variables
+- The recommended configuration for type whitelisting is not applied: https://docs.camunda.org/manual/7.14/user-guide/security/#variable-values-from-untrusted-sources
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+## Notice 39
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache Commons Codec used by Camunda Connect was vulnerable to improper input validation. Details:
+
+- https://issues.apache.org/jira/browse/CODEC-134
+
+**How to determine if the installation is affected**
+
+- The process engine is used
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+## Notice 38
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache HTTP Client used by Camunda Connect was vulnerable to an attack that a malformed request URL was interpreted incorrectly, which could lead the client to make a request against a different host. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-13956
+
+**How to determine if the installation is affected**
+
+- The process engine is used
+- Connector service tasks are used in a process and an attacker can manipulate the request URL
+- Telemetry is used and an attacker can manipulate the request URL
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+
+## Notice 37
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Resteasy used by the Camunda Tomcat distributions was vulnerable to an attack that an illegal header could be injected into the HTTP response with a crafted request. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-1695
+
+**How to determine if the installation is affected**
+
+- The Camunda Tomcat distribution is used (Camunda Run is not affected)
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+## Notice 36
+
+**Publication Date: February 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions and transitively pulled in by the Camunda Spring Boot starter was vulnerable to unauthorized exposure of file resources and information leaks between HTTP requests:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-17527
+- https://nvd.nist.gov/vuln/detail/CVE-2021-24122
+
+**How to determine if the installation is affected**
+
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
+
 ## Notice 35
 
 **Publication Date: September 29th, 2020**
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -29,7 +180,7 @@ It was possible to submit requests to the Camunda REST API that result in errors
 
 **How to determine if the installation is affected**
 
-- You are using the Camunda BPM REST API or web applications
+- You are using the Camunda Platform REST API or web applications
 - An attacker has access to the system as an authenticated user
 
 **Solution**
@@ -42,7 +193,7 @@ Camunda has provided the releases 7.14.0-alpha4, 7.13.5, 7.12.11, 7.11.18 which 
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -50,7 +201,7 @@ It was possible to deploy BPMN XML models with `ELEMENT` and `ENTITY` declaratio
 
 **How to determine if the installation is affected**
 
-- You are using the Camunda BPM process engine
+- You are using the Camunda Platform process engine
 - An attacker is able to deploy BPMN models
 
 **Solution**
@@ -63,7 +214,7 @@ Camunda has provided the releases 7.14.0-alpha2, 7.13.2, 7.12.8, 7.11.15 which c
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -75,7 +226,7 @@ The vulnerability does not affect the Camunda web applications (Cockpit, Tasklis
 
 **How to determine if the installation is affected**
 
-- You are using the Camunda BPM web applications (Cockpit, Tasklist, Admin)
+- You are using the Camunda Platform web applications (Cockpit, Tasklist, Admin)
 - You have embedded task forms or web application plugins
 - See the NIST link above for detailed descriptions of the circumstances required to exploit the vulnerabilities
 
@@ -136,7 +287,7 @@ Camunda Optimize 3.1.0 has been released which contains a fix.
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -147,7 +298,7 @@ The version of Apache Tomcat shipped with the Camunda distributions and transiti
 
 **How to determine if the installation is affected**
 
-- Camunda BPM Tomcat is used *or* Camunda BPM Run is used *or* Camunda BPM Spring Boot Starter is used
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used
 - See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
 
 **Solution**
@@ -164,7 +315,7 @@ Other solutions:
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -172,7 +323,7 @@ In the case where [variable-specific permissions](https://docs.camunda.org/manua
 
 **How to determine if the installation is affected**
 
-- Camunda BPM is used with enabled authorization check and enabled variable-specific permissions (configuration flag `enforceSpecificVariablePermission` set to `true`)
+- Camunda Platform is used with enabled authorization check and enabled variable-specific permissions (configuration flag `enforceSpecificVariablePermission` set to `true`)
 - An attacker is a known user in the system that has the `READ_HISTORY` permission on a process definition.
 
 **Solution**
@@ -185,7 +336,7 @@ Camunda has provided the releases 7.13.0, 7.12.5, 7.11.12 which contain a fix.
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -195,7 +346,7 @@ The version of Apache Tomcat shipped with the Camunda distributions for Tomcat a
 
 **How to determine if the installation is affected**
 
-- Camunda BPM Tomcat is used *or* Camunda BPM Spring Boot Starter is used
+- Camunda Platform Tomcat is used *or* Camunda Platform Spring Boot Starter is used
 - The Tomcat AJP connector is enabled (this is the default configuration in Tomcat)
 - An attacker is able to access the AJP endpoint
 
@@ -214,11 +365,11 @@ Other solutions:
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
-Camunda Optimize is a product module that uses a separate REST API to fetch data from the Camunda BPM runtime platform for export. Using this API, it was possible for a user to access history data of tenants they are not permitted to access.
+Camunda Optimize is a product module that uses a separate REST API to fetch data from the Camunda Platform runtime platform for export. Using this API, it was possible for a user to access history data of tenants they are not permitted to access.
 
 **How to determine if the installation is affected**
 
@@ -235,11 +386,11 @@ Camunda has provided the releases 7.13.0-alpha3, 7.12.4, 7.11.11, 7.10.17 which 
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
-When declaring a Maven dependency to a Camunda BPM artifact, it was possible that its dependencies would be resolved from a remote repository via HTTP protocol. HTTP is susceptible to man in the middle attacks that would allow an attacker to intercept the request and manipulate the delivered artifact, potentially leading to remote code execution in your build system. Details of this vulnerability can be found at https://medium.com/bugbountywriteup/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb.
+When declaring a Maven dependency to a Camunda Platform artifact, it was possible that its dependencies would be resolved from a remote repository via HTTP protocol. HTTP is susceptible to man in the middle attacks that would allow an attacker to intercept the request and manipulate the delivered artifact, potentially leading to remote code execution in your build system. Details of this vulnerability can be found at https://medium.com/bugbountywriteup/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb.
 
 **How to determine if the installation is affected**
 
@@ -259,11 +410,11 @@ Camunda has provided the releases 7.13.0-alpha2, 7.12.3, 7.11.10, 7.10.16 which 
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
-Camunda BPM's APIs are susceptible to object deserialization vulnerabilities. If an attacker can submit a serialized variable of type Object, they can exploit so-called *serialization gadgets*, i.e. classes that run vulnerable code during deserialization. For details, see [OWASP's description of Deserialization of untrusted data](https://www.owasp.org/index.php/Deserialization_of_untrusted_data).
+Camunda Platform's APIs are susceptible to object deserialization vulnerabilities. If an attacker can submit a serialized variable of type Object, they can exploit so-called *serialization gadgets*, i.e. classes that run vulnerable code during deserialization. For details, see [OWASP's description of Deserialization of untrusted data](https://www.owasp.org/index.php/Deserialization_of_untrusted_data).
 
 **How to determine if the installation is affected**
 
@@ -282,7 +433,7 @@ We strongly recommend to activate whitelisting in any Camunda installation that 
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -305,7 +456,7 @@ We strongly recommend to activate the pagination limit in any Camunda installati
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -329,7 +480,7 @@ Camunda has provided the releases v7.12.0, v7.11.7 and v7.10.13 which contain a 
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -349,7 +500,7 @@ Camunda has provided the releases v7.12.0, v7.11.5, v7.10.11 and 7.9.17, as well
 
 **Product affected:**
 
-Camunda BPM and Spring Boot Starter
+Camunda Platform and Spring Boot Starter
 
 **Impact:**
 
@@ -377,7 +528,7 @@ For users of the Camunda Spring Boot Starter, we recommend to explicitly overrid
 
 **Product affected:**
 
-Camunda BPM and Spring Boot Starter
+Camunda Platform and Spring Boot Starter
 
 **Impact:**
 
@@ -385,7 +536,7 @@ If a  user's password is incorrectly entered multiple times, the user account is
 
 **How to determine if the installation is affected**
 
-- The Camunda BPM web applications (Cockpit, Tasklist, Admin) are used
+- The Camunda Platform web applications (Cockpit, Tasklist, Admin) are used
 - An attacker is able to access the applications' login screen
 - Users are managed in the Camunda database tables (i.e. setups using LDAP-managed users are not affected)
 
@@ -400,11 +551,11 @@ Camunda has provided the releases v7.11.5, v7.10.11, v7.9.17 and 7.12.0-alpha5 w
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
-The version of Tomcat used by the Camunda BPM Tomcat distribution is subject to various vulnerabilities. Details:
+The version of Tomcat used by the Camunda Platform Tomcat distribution is subject to various vulnerabilities. Details:
 
 - Camunda 7.11 with Tomcat 9.0.19: https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Atomcat&cpe_version=cpe%3A%2F%3Aapache%3Atomcat%3A9.0.19
 - Camunda 7.10 with Tomcat 9.0.12: https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Atomcat&cpe_version=cpe%3A%2F%3Aapache%3Atomcat%3A9.0.12
@@ -412,7 +563,7 @@ The version of Tomcat used by the Camunda BPM Tomcat distribution is subject to 
 
 **How to determine if the installation is affected**
 
-- The Camunda BPM Tomcat distribution is used
+- The Camunda Platform Tomcat distribution is used
 
 **Solution**
 
@@ -427,7 +578,7 @@ In addition, users can update their Tomcat installation to the latest version.
 
 **Product affected:**
 
-Camunda BPM and Spring Boot Starter
+Camunda Platform and Spring Boot Starter
 
 **Impact:**
 
@@ -453,7 +604,7 @@ For users of the Camunda Spring Boot Starter, we recommend to explicitly overrid
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -480,11 +631,11 @@ Note that with older versions, XML processing limits can already be enforced via
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
-In some cases of server-side exceptions in the Camunda REST API and Camunda BPM web applications, a stacktrace could be disclosed to the client. This allows an attacker to gain insights about the structure and source code of server-side components.
+In some cases of server-side exceptions in the Camunda REST API and Camunda Platform web applications, a stacktrace could be disclosed to the client. This allows an attacker to gain insights about the structure and source code of server-side components.
 
 **How to determine if the installation is affected**
 
@@ -501,11 +652,11 @@ Camunda has provided the releases v7.11.2, v7.10.8, v7.9.14 and 7.12.0-alpha2 wh
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
-The version of dmn-js used by Camunda BPM was vulnerable to HTML Injection / Cross-site scripting flaws. Details:
+The version of dmn-js used by Camunda Platform was vulnerable to HTML Injection / Cross-site scripting flaws. Details:
 
 - https://bpmn.io/blog/posts/2019-html-injection-vulnerabilities-fixed.html
 
@@ -525,7 +676,7 @@ Camunda has provided the releases v7.11.2, v7.10.8, v7.9.14 and 7.12.0-alpha2 wh
 
 **Product affected:**
 
-Camunda BPM and Spring Boot Starter
+Camunda Platform and Spring Boot Starter
 
 **Impact:**
 
@@ -552,7 +703,7 @@ For users of the Camunda Spring Boot Starter, we recommend to explicitly overrid
 
 **Product affected:**
 
-Camunda BPM and Spring Boot Starter
+Camunda Platform and Spring Boot Starter
 
 **Impact:**
 
@@ -566,7 +717,7 @@ Previous Camunda releases have no possibility to enable the cookie flags [Secure
 
 Camunda has provided the following releases which contain a fix:
 
-- Camunda BPM 7.12.0-alpha1, 7.11.1, 7.10.7, 7.9.13
+- Camunda Platform 7.12.0-alpha1, 7.11.1, 7.10.7, 7.9.13
 - Camunda Spring Boot Starter 3.3.2, 3.2.4, 3.1.4, 3.0.4
 
 Please see the [Cookie Security documentation](https://docs.camunda.org/manual/7.11/webapps/shared-options/cookie-security/) for details and configuration required to activate both flags.
@@ -577,7 +728,7 @@ Please see the [Cookie Security documentation](https://docs.camunda.org/manual/7
 
 **Product affected:**
 
-Camunda BPM Spring Boot Starter
+Camunda Platform Spring Boot Starter
 
 **Impact:**
 
@@ -598,7 +749,7 @@ Camunda has provided the releases 3.3.1, 3.2.3, 3.1.3, 3.0.3 and 2.3.2 of the Sp
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -606,7 +757,7 @@ No authorizations were required to submit a license key or to read a license key
 
 **How to determine if the installation is affected**
 
-- Camunda BPMN enterprise edition is used
+- Camunda Platform enterprise edition is used
 - Camunda Admin is used
 
 **Solution**
@@ -619,7 +770,7 @@ Camunda has provided the releases 7.11.0, 7.10.6, 7.9.12 and 7.8.14 which contai
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -642,7 +793,7 @@ Camunda has provided the releases 7.11.0, 7.10.6, 7.9.12 and 7.8.14 which contai
 
 **Product affected:**
 
-Camunda BPM
+Camunda Platform
 
 **Impact:**
 
@@ -716,7 +867,7 @@ Camunda has provided the releases v7.10.3 and 7.11.0-alpha2 which contain a fix.
 
 **Publication Date: November 30th, 2018**
 
-The Camunda BPM Platform has obtained a security fix related to XML eXternal Entity (XXE) Processing. A BPMN Model (XML) can be uploaded containing a reference to an external entity. When processed by a weakly configured XML parser, this attack may lead to the disclosure of confidential data, denial of service, server side request forgery etc.
+The Camunda Platform has obtained a security fix related to XML eXternal Entity (XXE) Processing. A BPMN Model (XML) can be uploaded containing a reference to an external entity. When processed by a weakly configured XML parser, this attack may lead to the disclosure of confidential data, denial of service, server side request forgery etc.
 
 **How to determine if the installation is affected**
 
@@ -735,7 +886,7 @@ Camunda has provided the patches v7.10.0, v7.9.7, v7.8.12, v7.7.10 which provide
 
 **Publication Date: September 19th, 2018**
 
-The Camunda BPM Platform has obtained security fixes related to the prevention of CSRF attacks, and support for providing _whitelist patterns_ for User, Group and Tenant IDs.
+The Camunda Platform has obtained security fixes related to the prevention of CSRF attacks, and support for providing _whitelist patterns_ for User, Group and Tenant IDs.
 
 Using the Camunda Webapps, it is possible for a user to execute unwanted actions by sumbitting a malicious request (CSRF) provided by an attacker. Furthermore, a Camunda user, with the appropriate permissions, may create new users, groups or tenant IDs with arbitrary values and lengths.
 
@@ -759,7 +910,7 @@ Camunda has provided the patches v7.10.0, v7.9.2, v7.8.8, v7.7.9 which provide t
 
 **Publication Date: March 5th, 2018**
 
-Camunda support is alerting customers to a potential risk with the Camunda BPM product. A vulnerability exists that can possibly allow an attacker to perform remote execution of code.
+Camunda support is alerting customers to a potential risk with the Camunda Platform product. A vulnerability exists that can possibly allow an attacker to perform remote execution of code.
 
 Using Camunda's API, it is possible to submit a file as a variable value in serialized form. Inside Camunda, the serialized file is deserialized which allows attackers to exploit a security vulnerability in Apache [Commons-Fileupload](https://blog.akquinet.de/2017/06/15/commons-fileupload-1-3-3-resolves-deserialisation-vulnerability-cve-2016-1000031/) which allows injecting malicious code which is executed upon deserialization.
 
@@ -784,7 +935,7 @@ Customers are advised to apply these patches, particularly if they use Camunda i
 
 **Publication Date: Feb 2nd, 2018**
 
-Camunda support is alerting customers to a potential risk with the Camunda BPM product. A vulnerability exists that can possibly allow an attacker to perform remote execution of code.
+Camunda support is alerting customers to a potential risk with the Camunda Platform product. A vulnerability exists that can possibly allow an attacker to perform remote execution of code.
 
 Using Camunda's API, it is possible to submit a Java object value as a variable value in serialized form. Inside Camunda, the object is deserialized which allows attackers to exploit a [security vulnerability in Groovy](https://www.thezdi.com/blog/2017/12/19/apache-groovy-deserialization-a-cunning-exploit-chain-to-bypass-a-patch) which allows injecting malicious code in a groovy serialized object which is executed upon deserialization.
 

@@ -43,7 +43,7 @@ Add an End Event named *Payment Received*.
 
 ## Configure the Service Task
 
-There are different ways to [execute service tasks](https://docs.camunda.org/manual/latest/reference/bpmn20/tasks/service-task/) using Camunda BPM. In this guide, we'll use the external [task pattern](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/).
+There are different ways to [execute service tasks](https://docs.camunda.org/manual/latest/reference/bpmn20/tasks/service-task/) using Camunda Platform. In this guide, we'll use the external [task pattern](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/).
 Open the Properties Panel within the Camunda Modeler and click on the Service Task you just created. Change the Implementation to `External` and use `charge-card` as the Topic.
 
 {{< img src="../img/modeler-step4.png" >}}
@@ -72,7 +72,7 @@ When you're done, save your changes by clicking *File > Save File As..* or by us
 
 After modeling the process, we want to execute some business logic.
 
-Camunda BPM is built so that your business logic can be implemented in different languages.
+Camunda Platform is built so that your business logic can be implemented in different languages.
 You have the choice which language suits your project best.
 
 In this quick start, we'll show you how to use Camunda's ready-to-go task clients in:

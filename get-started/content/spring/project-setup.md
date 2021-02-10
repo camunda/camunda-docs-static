@@ -34,9 +34,9 @@ First, we set up a new Apache Maven based project in Eclipse. Let's call it *loa
 
 When you are done, click Finish. Eclipse sets up a new Maven project. The project appears in the *Project Explorer* view.
 
-## Add Camunda BPM & Spring Framework Dependencies
+## Add Camunda Platform & Spring Framework Dependencies
 
-The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project. We add both the Camunda BPM and the Spring Framework dependencies:
+The next step consists of setting up the Maven dependencies for the new project. Maven dependencies need to be added to the `pom.xml` file of the project. We add both the Camunda Platform and the Spring Framework dependencies:
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">

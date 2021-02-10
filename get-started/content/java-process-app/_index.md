@@ -11,7 +11,7 @@ menu:
 
 ---
 
-This tutorial guides you through modelling and implementing your first BPMN 2.0 process with the Camunda BPM Platform.
+This tutorial guides you through modelling and implementing your first BPMN 2.0 process with the Camunda Platform.
 
 {{< get-code repo="camunda-get-started-java" >}}
 

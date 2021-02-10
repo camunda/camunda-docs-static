@@ -11,12 +11,12 @@ menu:
 ---
 
 
-This page contains important announcements from Camunda's Enterprise Support. In the following section we list information about changes to the supported environments and scheduled end of maintenance dates for specific versions of the Camunda BPM platform. The announced end of maintenance dates are based on our standard support period of 18 months.
+This page contains important announcements from Camunda's Enterprise Support. In the following section we list information about changes to the supported environments and scheduled end of maintenance dates for specific versions of the Camunda Platform. The announced end of maintenance dates are based on our standard support period of 18 months.
 
 
-# Camunda BPM Announcements
+# Camunda Platform Announcements
 
-## Camunda BPM 7.15
+## Camunda Platform 7.15
 
 __Release Date:__ scheduled for 13th of April 2021
 
@@ -25,9 +25,10 @@ __End of Maintenance:__ 11th of October 2022
 __Changes in Supported Environments:__
 
 * Support for WildFly Application Server 21.0
-* End of Support for WildFly 10.1
+* Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 10.13 (also supported as of 7.12.16+, 7.13.10+, 7.14.4+)
+* End of Support for Wildfly 10.1
 
-## Camunda BPM 7.14
+## Camunda Platform 7.14
 
 __Release Date:__ scheduled for 13th of October 2020
 
@@ -40,7 +41,7 @@ __Changes in Supported Environments:__
 * Support for WildFly Application Server 20.0
 * Support for JBoss EAP 7.3
 
-## Camunda BPM 7.13
+## Camunda Platform 7.13
 
 __Release Date:__ scheduled for 31st of May 2020
 
@@ -57,7 +58,7 @@ __Changes in Supported Environments:__
 * The [Javascript External Task Client](https://github.com/camunda/camunda-external-task-client-js/) (version 2.0.0) requires NodeJS 10 or higher. It cannot be used with NodeJS 8 anymore.
 
 
-## Camunda BPM 7.12
+## Camunda Platform 7.12
 
 __Release Date:__ scheduled for 30th of November 2019
 
@@ -76,7 +77,7 @@ __Changes in Supported Environments:__
 * End of Support for DB2 9.7 / 10.1
 * End of Support for Microsoft SQL Server 2008
 
-## Camunda BPM 7.11
+## Camunda Platform 7.11
 
 __Release Date:__ 31st of May 2019
 
@@ -93,7 +94,7 @@ __Changes in Supported Environments:__
 * Support for WildFly Application Server 15 / 16
 
 
-## Camunda BPM 7.10
+## Camunda Platform 7.10
 
 __Release Date:__ 30th of November 2018
 
@@ -109,7 +110,7 @@ __Changes in Supported Environments:__
 * End of Support for Java 6
 
 
-## Camunda BPM 7.9
+## Camunda Platform 7.9
 
 __Release Date:__ 31st of May 2018
 
@@ -124,7 +125,7 @@ __Changes in Supported Environments:__
 * Support for Spring Boot 2.0
 
 
-## Camunda BPM 7.8
+## Camunda Platform 7.8
 
 __Release Date:__ 30th of November 2017
 
@@ -137,7 +138,7 @@ __Changes in Supported Environments:__
 * End of Support for Internet Explorer 9 and 10
 
 
-## Camunda BPM 7.7
+## Camunda Platform 7.7
 
 __Release Date:__ 31st of May 2017
 
@@ -150,7 +151,7 @@ __Changes in Supported Environments:__
 * Support for Database PostgreSQL 9.6
 
 
-## Camunda BPM 7.6
+## Camunda Platform 7.6
 
 __Release Date:__ 25th of November 2016
 
@@ -162,7 +163,7 @@ __Changes in Supported Environments:__
 * Support for Database MariaDB Galera Cluster
 
 
-## Camunda BPM 7.5
+## Camunda Platform 7.5
 
 __Release Date:__ 31st of May 2016
 
@@ -176,7 +177,7 @@ __Changes in Supported Environments:__
 * End of Support for Database MySQL 5.1 / 5.5
 * End of Support for Java Runtime Vendor OpenJDK 6
 
-## Camunda BPM 7.4
+## Camunda Platform 7.4
 
 __Release Date:__ 30th of November 2015
 
@@ -187,7 +188,7 @@ __Changes in Supported Environments:__
 * Support for Application Server Apache Tomcat 8
 * Support for Application Server Oracle WebLogic Server 12c (12R1,12R2)
 
-## Camunda BPM 7.3
+## Camunda Platform 7.3
 
 __Release Date:__ 28th of May 2015
 
@@ -207,7 +208,7 @@ __Changes in Supported Environments:__
 * Support for Runtime Environment Sun / Oracle Hot Spot 8
 
 
-## Camunda BPM 7.2
+## Camunda Platform 7.2
 
 __Release Date:__ 28th of November 2014
 
@@ -219,7 +220,7 @@ __Changes in Supported Environments:__
 * Support for Database PostgreSQL 9.3
 * Support for Runtime Environemt Java 8 (if supported by your application server / container)
 
-__Product Change:__ With Camunda BPM 7.2.0, Camunda BPM Cycle is no longer bundled in the distribution of our platform. We provide Camunda BPM Cycle in an own distribution. Since the separation, Camunda BPM Cycle is only provided and supported for the Apache Tomcat application server. You can download Cycle [here](/enterprise/download/#camunda-cycle).
+__Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer bundled in the distribution of our platform. We provide Camunda BPM Cycle in an own distribution. Since the separation, Camunda BPM Cycle is only provided and supported for the Apache Tomcat application server. You can download Cycle [here](/enterprise/download/#camunda-cycle).
 
 
 # Camunda Optimize Announcements
@@ -244,9 +245,9 @@ __End of Maintenance:__ 31st of March 2022
 __Changes in Supported Environments:__
 
 * Added support for `Elasticsearch` 7.7 and 7.8 versions
-* Minimum required `Camunda BPM` version is raised to 7.12.11.
-* End of Support for `Camunda BPM` 7.11 releases
-* Support for `Camunda BPM` 7.14 releases
+* Minimum required `Camunda Platform` version is raised to 7.12.11.
+* End of Support for `Camunda Platform` 7.11 releases
+* Support for `Camunda Platform` 7.14 releases
 
 ## Camunda Optimize 3.1
 
@@ -256,9 +257,9 @@ __End of Maintenance:__ 31st of December 2021
 
 __Changes in Supported Environments:__
 
-* Minimum required `Camunda BPM` version is raised to 7.11.13.
-* End of Support for `Camunda BPM` 7.10 releases
-* Support for `Camunda BPM` 7.13 releases
+* Minimum required `Camunda Platform` version is raised to 7.11.13.
+* End of Support for `Camunda Platform` 7.10 releases
+* Support for `Camunda Platform` 7.13 releases
 
 ## Camunda Optimize 3.0
 
@@ -283,9 +284,9 @@ __Changes in Supported Environments:__
 
 * Minimum required Elasticsearch version is raised to 6.4.0
 * End of Support for Elasticsearch 6.2.X, 6.3.X releases
-* Minimum required `Camunda BPM` version is raised to 7.10.6.
-* End of Support for `Camunda BPM` 7.9 releases
-* Support for `Camunda BPM` version 7.12.0
+* Minimum required `Camunda Platform` version is raised to 7.10.6.
+* End of Support for `Camunda Platform` 7.9 releases
+* Support for `Camunda Platform` version 7.12.0
 * Support for Java 13
 * Support for `Adopt OpenJDK`
 * End of Support for Java 12
@@ -361,7 +362,7 @@ __End of Maintenance:__ 14th of April 2020
 
 # What does End of Maintenance Mean?
 End of maintenance means that Camunda will not perform any maintenance or release any bug fixes and patch releases related to the mentioned version after the specified date.
-In case you are planning to migrate to a more recent version of Camunda BPM, check our [Update & Migration Guide](/manual/latest/update/).
+In case you are planning to migrate to a more recent version of Camunda Platform, check our [Update & Migration Guide](/manual/latest/update/).
 
 Please let us know if you have any concerns or if you need help migrating to a new version.
 

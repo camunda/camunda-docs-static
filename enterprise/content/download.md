@@ -10,7 +10,7 @@ menu:
 downloads:
   servers:
     - path: "run"
-      name: "Camunda BPM Run"
+      name: "Camunda Platform Run"
       weight: 0
     - path: "tomcat"
       name: "Apache Tomcat"
@@ -54,7 +54,7 @@ downloads:
 
   selected:
     branch: "7.14"
-    version: "7.14.3"
+    version: "7.14.4"
     server: "run"
 
   branches:
@@ -78,9 +78,28 @@ downloads:
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
+        - number: "7.15.0-alpha3"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16697"
+          date: "2021.02.09"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
 
     - branch: "7.14"
       releases:
+        - number: "7.14.4"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16592"
+          date: "2021.01.27"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            
         - number: "7.14.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16492"
           date: "2020.12.16"
@@ -123,6 +142,16 @@ downloads:
 
     - branch: "7.13"
       releases:
+        - number: "7.13.10"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16596"
+          date: "2021.01.27"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
         - number: "7.13.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16491"
           date: "2020.12.16"
@@ -225,6 +254,17 @@ downloads:
 
     - branch: "7.12"
       releases:
+        - number: "7.12.17"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16692"
+          date: "2021.01.27"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
         - number: "7.12.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16490"
           date: "2020.12.16"
@@ -1643,14 +1683,14 @@ downloads:
             - "ibm-was-85"
 ---
 
-On this page we provide downloads for the Camunda BPM Enterprise Platform including:
+On this page we provide downloads for the Camunda Platform Enterprise Platform including:
 
-- [Camunda BPM]({{< relref "#camunda-bpm" >}})
+- [Camunda Platform]({{< relref "#camunda-bpm" >}})
 - [Camunda Optimize]({{< relref "#camunda-optimize" >}})
 - [Cawemo]({{< relref "#cawemo" >}})
 - [Camunda Modeler]({{< relref "#camunda-modeler" >}})
 
-## Camunda BPM
+## Camunda Platform
 
 ### Full Distributions and Standalone Web Applications
 
@@ -1672,7 +1712,7 @@ Find more information about the [Full Distribution](/manual/latest/introduction/
 
 ## Camunda Optimize
 
-[Camunda Optimize](/optimize) is an addition to the Camunda BPM platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
+[Camunda Optimize](/optimize) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
 
 ### Demo Distribution with Elasticsearch
 
@@ -1850,24 +1890,13 @@ Please note, that Optimize alpha release are not suitable for production environ
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.3.0-alpha2</td>
+      <td>3.4.0-alpha1</td>
       <td>7.12.11+, 7.13.5+ and 7.14+</td>
       <td>7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+</td>
-      <td>08.12.2020</td>
+      <td>09.02.2021</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.3.0-alpha2/camunda-optimize-3.3.0-alpha2-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.3.0-alpha2/camunda-optimize-3.3.0-alpha2-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.3.0-alpha1</td>
-      <td>7.12.11+, 7.13.5+ and 7.14+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
-      <td>10.11.2020</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.3.0-alpha1/camunda-optimize-3.3.0-alpha1-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.3.0-alpha1/camunda-optimize-3.3.0-alpha1-production.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.4.0-alpha1/camunda-optimize-3.4.0-alpha1-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.4.0-alpha1/camunda-optimize-3.4.0-alpha1-production.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
