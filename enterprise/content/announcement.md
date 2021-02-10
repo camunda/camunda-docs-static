@@ -24,6 +24,7 @@ __End of Maintenance:__ 11th of October 2022
 
 __Changes in Supported Environments:__
 
+* Support for WildFly Application Server 21.0
 * Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 10.13 (also supported as of 7.12.16+, 7.13.10+, 7.14.4+)
 * End of Support for Wildfly 10.1
 
@@ -37,7 +38,7 @@ __Changes in Supported Environments:__
 
 * Support for Microsoft SQL Server 2019
 * Support for CockroachDB v20.1.3
-* Support for Wildfly Application Server 20.0
+* Support for WildFly Application Server 20.0
 * Support for JBoss EAP 7.3
 
 ## Camunda Platform 7.13
@@ -51,7 +52,7 @@ __Changes in Supported Environments:__
 * Support for Java 14
 * Support for Oracle 19c (also supported as of 7.12.2+)
 * Support for PostgreSQL 12.2
-* Support for Wildfly Application Server 19.0
+* Support for WildFly Application Server 19.0
 * End of Support for Oracle WebLogic Server 12R1
 * End of Support for Internet Explorer 11
 * The [Javascript External Task Client](https://github.com/camunda/camunda-external-task-client-js/) (version 2.0.0) requires NodeJS 10 or higher. It cannot be used with NodeJS 8 anymore.
@@ -66,11 +67,11 @@ __End of Maintenance:__ 31st of May 2021
 __Changes in Supported Environments:__
 
 * Support for Java 13
-* Support for Wildfly Application Server 17 / 18
+* Support for WildFly Application Server 17 / 18
 * End of Support for Java 7
 * End of Support for JBoss Application Server 7
 * End of Support for JBoss EAP 6.1 / 6.2 / 6.3
-* End of Support for Wildfly Application Server 8.2
+* End of Support for WildFly Application Server 8.2
 * End of Support for Oracle 10
 * End of Support for PostgreSQL 9.1 / 9.3
 * End of Support for DB2 9.7 / 10.1
@@ -90,7 +91,7 @@ __Changes in Supported Environments:__
 * Support for Oracle 18c
 * Support for Microsoft SQL Server 2017
 * Support for JBoss EAP 7.2
-* Support for Wildfly Application Server 15 / 16
+* Support for WildFly Application Server 15 / 16
 
 
 ## Camunda Platform 7.10
@@ -101,7 +102,7 @@ __End of Maintenance:__ 31st of May 2020
 
 __Changes in Supported Environments:__
 
-* Support for the latest Version of the Wildfly Application Server
+* Support for the latest Version of the WildFly Application Server
 * Support for Java Version > 8
 * Support for Database PostgreSQL 10.4
 * Support for Database MariaDB 10.3
@@ -118,7 +119,7 @@ __End of Maintenance:__ 30th of November 2019
 __Changes in Supported Environments:__
 
 * Support for Application Server Tomcat 9
-* Support for Application Server Wildfly 11
+* Support for Application Server WildFly 11
 * Support for Application JBoss EAP 7.1
 * Support for Database MariaDB 10.2
 * Support for Spring Boot 2.0
@@ -170,7 +171,7 @@ __End of Maintenance:__ 30th of November 2017
 
 __Changes in Supported Environments:__
 
-* Support for Application Server Wildfly 10.0
+* Support for Application Server WildFly 10.0
 * End of Support for Application Server WildFly 8.1
 * End of Support for Application Server GlassFish 3.1
 * End of Support for Database MySQL 5.1 / 5.5
@@ -195,7 +196,7 @@ __End of Maintenance:__ 30th of November 2016
 
 __Changes in Supported Environments:__
 
-* Support for Application Server Wildfly 8.1 / 8.2
+* Support for Application Server WildFly 8.1 / 8.2
 * Support for Database MariaDB 10.0
 * Support for Database MySQL 5.5 / 5.6
 * Support for Database Oracle 12c
