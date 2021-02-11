@@ -26,6 +26,7 @@ __Changes in Supported Environments:__
 
 * Support for WildFly Application Server 21.0
 * Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 10.13 (also supported as of 7.12.16+, 7.13.10+, 7.14.4+)
+* Support for PostgreSQL compatible with PostgreSQL 10.13 (also supported as of 7.12.18+, 7.13.11+, 7.14.5+)
 * End of Support for Wildfly 10.1
 
 ## Camunda Platform 7.14
