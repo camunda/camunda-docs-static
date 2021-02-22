@@ -28,6 +28,12 @@ __Changes in Supported Environments:__
 * Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 10.13 (also supported as of 7.12.16+, 7.13.10+, 7.14.4+)
 * Support for PostgreSQL 10.13 (also supported as of 7.12.18+, 7.13.11+, 7.14.5+)
 * End of Support for Wildfly 10.1
+* End of Support for Wildfly 11
+* End of Support for Tomcat 7.0
+* End of Support for Tomcat 8.0
+* End of Support for PostgreSQL 9.4
+* End of Support for Oracle 11
+* End of Support for MariaDB 10.0
 
 ## Camunda Platform 7.14
 
