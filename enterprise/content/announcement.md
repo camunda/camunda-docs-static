@@ -24,7 +24,7 @@ __End of Maintenance:__ 11th of October 2022
 
 __Changes in Supported Environments:__
 
-* Support for WildFly Application Server 21.0
+* Support for WildFly Application Server 21.0 / 22.0
 * Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 10.13 (also supported as of 7.12.16+, 7.13.10+, 7.14.4+)
 * Support for PostgreSQL 10.13 (also supported as of 7.12.18+, 7.13.11+, 7.14.5+)
 * Support for MySQL 8.0  
