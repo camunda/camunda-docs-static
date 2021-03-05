@@ -1912,7 +1912,7 @@ To get the production distribution, please download one of the following archive
 If you're interested in the latest features, you can get a sneak peek by trying out one of the alpha releases:
 
 {{< note title="Heads Up!" class="warning" >}}
-Please note, that Optimize alpha release are not suitable for production environments and should only be used for testing.
+Please note that Optimize alpha releases are not suitable for production environments and should only be used for testing.
 {{< /note >}}
 
 <table class="table">
@@ -1927,6 +1927,17 @@ Please note, that Optimize alpha release are not suitable for production environ
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.4.0-alpha2</td>
+      <td>7.12.11+, 7.13.5+ and 7.14+</td>
+      <td>7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+</td>
+      <td>09.03.2021</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.4.0-alpha2/camunda-optimize-3.4.0-alpha2-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.4.0-alpha2/camunda-optimize-3.4.0-alpha2-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.4.0-alpha1</td>
