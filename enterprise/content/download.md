@@ -1739,6 +1739,35 @@ Find more information about the [Full Distribution](/manual/latest/introduction/
 
 {{< ee-download >}}
 
+### Camunda RPA Bridge
+
+The [Camunda RPA bridge](/user-guide/camunda-bpm-rpa-bridge) is a standalone application that allows to call RPA (robotic process automation) bots from BPMN models deployed to the Camunda Platform. Read the [installation guide](/installation/camunda-bpm-rpa-bridge) for further instructions. Consult the [Getting Started Guide](/get-started/rpa) for a hands-on introduction to setting up RPA orchestration.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Supported Engine Versions</th>
+      <th class="col-md-2">Supported RPA Vendors</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="/user-guide/camunda-bpm-rpa-bridge">Camunda RPA Bridge</a></td>
+      <td>1.0.0</td>
+      <td>7.14+</td>
+      <td>UiPath (Cloud & On-Premises)</td>
+      <td>19.10.2020</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">zip</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ### Additional Information
 
 - [Maven Coordinates](/get-started/apache-maven)
