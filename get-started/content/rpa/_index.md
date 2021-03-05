@@ -145,7 +145,7 @@ When being logged in to Cawemo:
 
 Please use the Camunda Modeler version 4.3 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.
 
-* Download version 2.0 or later of the <a href="https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/cloud-connect-2.0.0.zip">Cloud Connect plugin</a> for Camunda Modeler
+* Download version 3.0 or later of the <a href="https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/cloud-connect-3.0.0.zip">Cloud Connect plugin</a> for Camunda Modeler
 * Extract the archive and move it to the plugins folder
 
 ```sh
