@@ -15,6 +15,27 @@ releases of the community platform.
 
 # Notices
 
+## Notice 42
+
+**Publication Date: March 9th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The solution to [Notice 39](#notice-39) was not applied to the web application artifacts of the Camunda enterprise edition, meaning that they contained a vulnerable version of Apache Commons Codec.
+
+**How to determine if the installation is affected**
+
+- The Camunda Platform web applications are used
+- Camunda Enterprise edition is used
+
+**Solution**
+
+Camunda has provided the releases 7.15.0-alpha4, 7.14.5, 7.13.11, 7.12.18 which contain a fix.
+
 ## Notice 41
 
 **Publication Date: February 9th, 2021**
