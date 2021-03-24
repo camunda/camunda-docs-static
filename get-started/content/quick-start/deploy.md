@@ -18,10 +18,10 @@ In the next step, you'll deploy the Process and start a new instance so you can 
 
 In order to deploy the Process, click on the deploy button in the Camunda Modeler, then give it the Deployment Name "Payment Retrieval" and click the Deploy button. From version 3.0.0 on, you will be required to provide an URL for an Endpoint Configuration along with Deployment Details. This can be either the root endpoint to the REST API (e.g. `http://localhost:8080/engine-rest`) or an exact endpoint to the deployment creation method (e.g. `http://localhost:8080/engine-rest/deployment/create`).
 
-{{< img src="../img/modeler-deploy1.png" >}}
-{{< img src="../img/modeler-deploy2.png" >}}
+{{< img src="../img/modeler-deploy-1.png" >}}
+{{< img src="../img/modeler-deploy-2.png" >}}
 You should see a success message in the Camunda Modeler:
-{{< img src="../img/modeler-deploy3.png" >}}
+{{< img src="../img/modeler-deploy-3.png" >}}
 
 More details regarding the deployment from Camunda Modeler you can find [here](https://blog.camunda.com/post/2019/01/camunda-modeler-3.0.0-0-released/#completely-reworked-deployment-tool). For Camunda Modeler 2.2.4 and earlier, read [this blog post](https://blog.camunda.com/post/2018/03/camunda-modeler-1120-alpha-3-released/).
 
