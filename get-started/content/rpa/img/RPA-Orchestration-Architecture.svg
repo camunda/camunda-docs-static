@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="750px" height="424px" viewBox="0 0 750 424" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
     <title>RPA Ecosystem v4</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -52,15 +52,15 @@
                     <tspan x="13" y="26">Bridge Config</tspan>
                 </text>
             </g>
-            <g id="Group-Copy-8" opacity="0.5" transform="translate(260.000000, 32.000000)">
-                <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="80" height="28" rx="14"></rect>
-                <text id="Other-RPA-Bridge-Con" font-family="IBMPlexSans, IBM Plex Sans" font-size="9" font-weight="normal" line-spacing="6" fill="#000000">
-                    <tspan x="19.21" y="14">Other RPA</tspan>
-                    <tspan x="13" y="26">Bridge Config</tspan>
+            <g id="Group-Copy-8" transform="translate(260.000000, 32.000000)">
+                <rect id="Rectangle" stroke="#234F8D" fill="#E6E7E8" x="0" y="0" width="80" height="28" rx="14"></rect>
+                <text id="Autom.-Anyw.-Bridge" font-family="IBMPlexSans, IBM Plex Sans" font-size="9" font-weight="normal" line-spacing="6" fill="#000000">
+                    <tspan x="12.5" y="14">Autom. Anyw.</tspan>
+                    <tspan x="13.427" y="26">Bridge Config</tspan>
                 </text>
             </g>
             <path id="Line-Copy" d="M252.5,9.5 L252.5,13.5 L259.5,13.5 L259.5,14.5 L252.5,14.5 L252.5,18.5 L243.5,14 L252.5,9.5 Z" fill="#58595B" fill-rule="nonzero"></path>
-            <path id="Line-Copy-3" d="M252.5,41.5 L252.5,45.5 L259.5,45.5 L259.5,46.5 L252.5,46.5 L252.5,50.5 L243.5,46 L252.5,41.5 Z" fill="#58595B" fill-rule="nonzero" opacity="0.5"></path>
+            <path id="Line-Copy-3" d="M252.5,41.5 L252.5,45.5 L259.5,45.5 L259.5,46.5 L252.5,46.5 L252.5,50.5 L243.5,46 L252.5,41.5 Z" fill="#58595B" fill-rule="nonzero"></path>
         </g>
         <g id="Group-6" transform="translate(30.000000, 311.000000)">
             <g id="Group-5">
@@ -74,7 +74,7 @@
                 <g id="Group-2-Copy-2" transform="translate(0.000000, 3.000000)">
                     <rect id="Rectangle" stroke="#FB4716" fill="#E6E7E8" x="0" y="0" width="60" height="100"></rect>
                     <text id="UiPath" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" fill="#000000">
-                        <tspan x="12.138" y="54">UiPath</tspan>
+                        <tspan x="12.138" y="55">UiPath</tspan>
                     </text>
                 </g>
                 <g id="Group-4" transform="translate(76.000000, 3.000000)">
@@ -82,8 +82,8 @@
                     <g id="Group-Copy-3" transform="translate(5.000000, 4.000000)">
                         <rect id="Rectangle" stroke="#FB4716" fill="#E6E7E8" x="0" y="0" width="70" height="40" rx="14"></rect>
                         <text id="UiPath-Package-1" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                            <tspan x="17.214" y="20">UiPath</tspan>
-                            <tspan x="7.5" y="36">Package 1</tspan>
+                            <tspan x="17.714" y="19">UiPath</tspan>
+                            <tspan x="8" y="35">Package 1</tspan>
                         </text>
                     </g>
                     <text id="…" font-family="ArialMT, Arial" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
@@ -92,45 +92,47 @@
                     <g id="Group-Copy-4" transform="translate(5.000000, 56.000000)">
                         <rect id="Rectangle" stroke="#FB4716" fill="#E6E7E8" x="0" y="0" width="70" height="40" rx="14"></rect>
                         <text id="UiPath-Package-N" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                            <tspan x="17.356" y="20">UiPath</tspan>
-                            <tspan x="7" y="36">Package N</tspan>
+                            <tspan x="17.356" y="19">UiPath</tspan>
+                            <tspan x="7" y="35">Package N</tspan>
                         </text>
                     </g>
                 </g>
                 <path id="Line-Copy" d="M69,49 L68.999,53 L76,53 L76,54 L68.999,54 L69,58 L60,53.5 L69,49 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
             </g>
-            <g id="Group-5-Copy" opacity="0.502162388" transform="translate(184.000000, 0.000000)">
+            <g id="Group-5-Copy" transform="translate(184.000000, 0.000000)">
                 <g id="Group-2-Copy-4" transform="translate(3.000000, 0.000000)">
-                    <rect id="Rectangle" stroke="#939598" fill="#E6E7E8" x="0" y="0" width="60" height="100"></rect>
+                    <rect id="Rectangle" stroke="#234F8D" fill="#E6E7E8" x="0" y="0" width="60" height="100"></rect>
                     <text id="UiPath-Bot" font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#000000">
                         <tspan x="12.3662109" y="44">UiPath </tspan>
                         <tspan x="21.3691406" y="64">Bot</tspan>
                     </text>
                 </g>
                 <g id="Group-2-Copy-2" transform="translate(0.000000, 3.000000)">
-                    <rect id="Rectangle" stroke="#939598" fill="#E6E7E8" x="0" y="0" width="60" height="100"></rect>
-                    <text id="Other-RPA-Bot" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" fill="#000000">
-                        <tspan x="15.117" y="44">Other </tspan>
-                        <tspan x="8.523" y="65">RPA Bot</tspan>
+                    <rect id="Rectangle" stroke="#234F8D" fill="#E6E7E8" x="0" y="0" width="60" height="100"></rect>
+                    <text id="Auto--mation-Anywher" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" fill="#000000">
+                        <tspan x="14.85" y="29">Auto-</tspan>
+                        <tspan x="11.184" y="44">mation </tspan>
+                        <tspan x="3.024" y="59">Anywhere </tspan>
+                        <tspan x="8.148" y="80">RPA Bot</tspan>
                     </text>
                 </g>
                 <g id="Group-4" transform="translate(76.000000, 3.000000)">
                     <rect id="Rectangle-Copy" stroke="#939598" fill="#FFFFFF" x="0" y="0" width="80" height="100" rx="14"></rect>
                     <g id="Group-Copy-3" transform="translate(5.000000, 4.000000)">
-                        <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="70" height="40" rx="14"></rect>
-                        <text id="Other-RPA-Script-1" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                            <tspan x="7.5" y="20">Other RPA</tspan>
-                            <tspan x="14.454" y="36">Script 1</tspan>
+                        <rect id="Rectangle" stroke="#234F8D" fill="#E6E7E8" x="0" y="0" width="70" height="40" rx="14"></rect>
+                        <text id="AA-Script-1" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
+                            <tspan x="27.99" y="19">AA</tspan>
+                            <tspan x="15" y="35">Script 1</tspan>
                         </text>
                     </g>
                     <text id="…" font-family="ArialMT, Arial" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
                         <tspan x="34.5" y="51">…</tspan>
                     </text>
                     <g id="Group-Copy-4" transform="translate(5.000000, 56.000000)">
-                        <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="70" height="40" rx="14"></rect>
-                        <text id="Other-RPA-Script-N" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                            <tspan x="7.5" y="20">Other RPA</tspan>
-                            <tspan x="13.812" y="36">Script N</tspan>
+                        <rect id="Rectangle" stroke="#234F8D" fill="#E6E7E8" x="0" y="0" width="70" height="40" rx="14"></rect>
+                        <text id="AA-Script-N" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
+                            <tspan x="28.132" y="19">AA</tspan>
+                            <tspan x="14.5" y="35">Script N</tspan>
                         </text>
                     </g>
                 </g>
@@ -142,15 +144,15 @@
             <g id="Group" transform="translate(24.000000, 5.000000)">
                 <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="130" height="51" rx="14"></rect>
                 <text id="Process-&amp;-Decision-I" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                    <tspan x="14" y="26">Process &amp; Decision</tspan>
-                    <tspan x="27.578" y="42">Instance Data</tspan>
+                    <tspan x="14" y="25">Process &amp; Decision</tspan>
+                    <tspan x="27.578" y="41">Instance Data</tspan>
                 </text>
             </g>
             <g id="Group-Copy-2" transform="translate(186.000000, 5.000000)">
                 <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="130" height="51" rx="14"></rect>
                 <text id="Process-&amp;-Decision-D" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                    <tspan x="14" y="26">Process &amp; Decision</tspan>
-                    <tspan x="36.29" y="42">Definitions</tspan>
+                    <tspan x="14" y="25">Process &amp; Decision</tspan>
+                    <tspan x="36.29" y="41">Definitions</tspan>
                 </text>
             </g>
         </g>
@@ -174,7 +176,7 @@
             <circle id="Oval" stroke="#58595B" fill="#FFFFFF" cx="12.5" cy="27.5" r="3.5"></circle>
             <polygon id="Triangle" fill="#58595B" transform="translate(3.000000, 27.500000) scale(1, -1) translate(-3.000000, -27.500000) " points="3 24 6 31 0 31"></polygon>
         </g>
-        <g id="Group-3-Copy-2" opacity="0.5" transform="translate(232.000000, 261.000000)">
+        <g id="Group-3-Copy-2" transform="translate(232.000000, 261.000000)">
             <line x1="12.5" y1="3.38340467e-14" x2="12.5" y2="53" id="Line-2" stroke="#58595B" stroke-linecap="square"></line>
             <circle id="Oval" stroke="#58595B" fill="#FFFFFF" cx="12.5" cy="26.5" r="3.5"></circle>
             <polygon id="Triangle" fill="#58595B" transform="translate(3.000000, 26.500000) scale(1, -1) translate(-3.000000, -26.500000) " points="3 23 6 30 0 30"></polygon>
@@ -184,29 +186,29 @@
             <g id="Group-Copy-3" transform="translate(6.000000, 4.000000)">
                 <rect id="Rectangle" stroke="#FB4716" fill="#E6E7E8" x="0" y="0" width="90" height="40" rx="14"></rect>
                 <text id="UiPath-Pkg-1-Task-Te" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                    <tspan x="11.282" y="20">UiPath Pkg 1</tspan>
-                    <tspan x="6.5" y="36">Task Template</tspan>
+                    <tspan x="11.782" y="19">UiPath Pkg 1</tspan>
+                    <tspan x="7" y="35">Task Template</tspan>
                 </text>
             </g>
-            <g id="Group-Copy-6" opacity="0.5" transform="translate(114.000000, 4.000000)">
-                <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="110" height="40" rx="14"></rect>
-                <text id="Other-RPA-Script-1-T" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                    <tspan x="5.5" y="20">Other RPA Script 1</tspan>
-                    <tspan x="16.432" y="36">Task Template</tspan>
+            <g id="Group-Copy-6" transform="translate(114.000000, 4.000000)">
+                <rect id="Rectangle" stroke="#234F8D" fill="#E6E7E8" x="0" y="0" width="110" height="40" rx="14"></rect>
+                <text id="AA-Script-1-Task-Tem" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
+                    <tspan x="26.012" y="19">AA Script 1</tspan>
+                    <tspan x="17" y="35">Task Template</tspan>
                 </text>
             </g>
             <g id="Group-Copy-5" transform="translate(6.000000, 56.000000)">
                 <rect id="Rectangle" stroke="#FB4716" fill="#E6E7E8" x="0" y="0" width="90" height="40" rx="14"></rect>
                 <text id="UiPath-Pkg-N-Task-Te" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                    <tspan x="10.64" y="20">UiPath Pkg N</tspan>
-                    <tspan x="6.5" y="36">Task Template</tspan>
+                    <tspan x="11.14" y="19">UiPath Pkg N</tspan>
+                    <tspan x="7" y="35">Task Template</tspan>
                 </text>
             </g>
-            <g id="Group-Copy-7" opacity="0.5" transform="translate(114.000000, 56.000000)">
-                <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="110" height="40" rx="14"></rect>
-                <text id="Other-RPA-Script-N-T" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                    <tspan x="4.5" y="20">Other RPA Script N</tspan>
-                    <tspan x="16.074" y="36">Task Template</tspan>
+            <g id="Group-Copy-7" transform="translate(114.000000, 56.000000)">
+                <rect id="Rectangle" stroke="#234F8D" fill="#E6E7E8" x="0" y="0" width="110" height="40" rx="14"></rect>
+                <text id="AA-Script-N-Task-Tem" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
+                    <tspan x="25.37" y="19">AA Script N</tspan>
+                    <tspan x="17" y="35">Task Template</tspan>
                 </text>
             </g>
             <text id="…" font-family="ArialMT, Arial" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
@@ -229,8 +231,8 @@
         <g id="Group-Copy-2" transform="translate(541.000000, 19.000000)">
             <rect id="Rectangle" fill="#E6E7E8" x="0" y="0" width="130" height="51" rx="14"></rect>
             <text id="Process-&amp;-Decision-D" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="10" fill="#000000">
-                <tspan x="14" y="26">Process &amp; Decision</tspan>
-                <tspan x="39.776" y="42">Diagrams</tspan>
+                <tspan x="14" y="25">Process &amp; Decision</tspan>
+                <tspan x="39.776" y="41">Diagrams</tspan>
             </text>
         </g>
         <path id="Line-Copy-4" d="M606.5,70 L611,79 L607,79 L607,87 L611,87 L606.5,96 L602,87 L606,87 L606,79 L602,79 L606.5,70 Z" fill="#58595B" fill-rule="nonzero"></path>
