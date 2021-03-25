@@ -243,8 +243,8 @@ __End of Maintenance:__ 30th of September 2022
 
 __Changes in Supported Environments:__
 
-* Added support for `Elasticsearch` 7.11 versions
-* Ended support for `Elasticsearch` 7.3 and 7.4 versions
+* Added support for `Elasticsearch` 7.11 version
+* Ended support for `Elasticsearch` 7.3.x and 7.4.x as well as 7.5.0 versions
 
 ## Camunda Optimize 3.3
 
