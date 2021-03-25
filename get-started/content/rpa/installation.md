@@ -78,7 +78,10 @@ In order to install the RPA Bridge, please:
 * <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">Download the RPA Bridge</a>
 * Unzip the archive
 * Add your Enterprise license key into a file called `license.txt` in the same folder as the `application.yml` file
-* When using UiPath Cloud, edit in the config file `application.yml`:
+
+UiPath Cloud
+
+* Edit in the config file `application.yml`:
   * `license-file`: remove the comment character such that the value is `file:///${user.dir}/license.txt`
   * `uipath-api.url`: set to `https://platform.uipath.com/`
   * `account-name`: the Account Logical Name from the API Access overlay
@@ -89,10 +92,21 @@ In order to install the RPA Bridge, please:
   * `key`: the User Key from the API Access overlay
   * `status-update-method`: set to `polling`
   * `webhook`: add `#` to the beginning of each line with a webhook config property to ignore the line
-* When using UiPath On-Premises, please follow the instructions in the config file
+
+UiPath On-Premises
+
+* please follow the instructions in the config file
+
+Automation Anywhere
+
+* TODO: describe config values
+
+Logging configuration
+
 * We recommend to enable simple logging by adding this as the last line to `application.yml`:
   * `logging.level.org.camunda.bpm.rpa.bridge.externaltask: DEBUG`
-* Launch the RPA Bridge by
+
+Launch the RPA Bridge by
 
 ```sh
 java -jar camunda-bpm-rpa-bridge.jar
@@ -115,7 +129,7 @@ For testing we recommend the use of Cawemo SaaS. Please <a href="https://cawemo.
 
 When you are using Cawemo SaaS, please open the <a href="https://cawemo.com/settings/">settings page</a> and verify in the "Details" section that your Enterprise license is active.
 
-In order to use Cawemo On-Premises (version 1.4 or later), please follow this <a href="https://docs.camunda.org/cawemo/latest/technical-guide/installation/">on-premises installation guide</a>.
+In order to use Cawemo On-Premises (version 1.6 or later), please follow this <a href="https://docs.camunda.org/cawemo/latest/technical-guide/installation/">on-premises installation guide</a>.
 
 When being logged in to Cawemo:
 
@@ -126,7 +140,7 @@ When being logged in to Cawemo:
 
 ## Camunda Modeler
 
-Please use the Camunda Modeler version 4.3 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.
+Please use the Camunda Modeler version 4.7 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.
 
 * Download version 3.0 or later of the <a href="https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/cloud-connect-3.0.0.zip">Cloud Connect plugin</a> for Camunda Modeler
 * Extract the archive and move it to the plugins folder

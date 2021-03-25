@@ -21,6 +21,7 @@ menu:
 In order to succeed with this getting started guide, we expect that you already know
 
 * how to run UiPath robots and trigger them from the UiPath Orchestrator
+* TODO: add Automation Anywhere
 * how to model and execute BPMN process diagrams with the Camunda stack
 * how to work with process variables as part of JUEL expressions
 
@@ -29,5 +30,7 @@ In case you never executed a process model with the Camunda engine, then we reco
 ### Hardware Requirements
 
 UiPath only works with Microsoft Windows. If you don't have a dedicated Windows environment, we recommend to use a Windows virtual machine, e.g. using <a href="https://www.virtualbox.org/">Virtualbox</a>.
+
+TODO: add Automation Anywhere
 
 Since this guide asks you to install and use several components, we recommend to have a computer with sufficient resources to be able to run everything in parallel. Alternatively, we encourage you to use the hosted SaaS options where available.
