@@ -20,8 +20,8 @@ In the following section, we'll describe how to install the Camunda Platform loc
 If you prefer, you can also run the Camunda Platform with Docker:
 
 ```sh
-docker pull camunda/camunda-bpm-platform:latest
-docker run -d --name camunda -p 8080:8080 camunda/camunda-bpm-platform:latest
+docker pull camunda/camunda-bpm-platform:run-latest
+docker run -d --name camunda -p 8080:8080 camunda/camunda-bpm-platform:run-latest
 ```
 
 Afterwards, you can [install the Camunda Modeler](#camunda-modeler).
@@ -43,14 +43,13 @@ If you need to install Java Runtime Environment, you can [find the download from
 
 # Camunda Platform
 
-First, download a distribution of the Camunda Platform. You can choose from different distributions for [various application servers](/manual/latest/installation/full/). In this tutorial, we'll use the Apache Tomcat-based distribution. Download it from [the download page](https://camunda.com/download).
+First, download a distribution of the Camunda Platform. You can choose from different distributions for [various application servers](/manual/latest/installation/full/). In this tutorial, we'll use Camunda Platform Run. Download it from [the download page](https://camunda.com/download/).
 
 After downloading the distribution, unpack it inside a directory of your choice.
 
-After you've successfully unpacked your distribution of the Camunda Platform, execute the script named `start-camunda.bat` (for Windows users) or `start-camunda.sh` (for Unix users).
+After you've successfully unpacked your distribution of the Camunda Platform, execute the script named `start.bat` (for Windows users) or `start.sh` (for Unix users).
 
-This script will start the application server and open a welcome screen in your web browser. If the page does not open on its own, go to [http://localhost:8080/camunda-welcome/index.html](http://localhost:8080/camunda-welcome/index.html).
-
+This script will start the application server. Open your web browser and navigate to [http://localhost:8080/](http://localhost:8080/) to visit the Welcome Page. 
 
 # Camunda Modeler
 
