@@ -16,6 +16,10 @@ menu:
 
 TODO: this page is just an outline and requires proper phrasing of the content
 
+## Configuration
+
+TODO: describe how to enable the skipOutputMappingOnCanceledActivities
+
 ## Scenarios
 
 * Business Error: Bot completes as expected
