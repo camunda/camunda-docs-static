@@ -25,6 +25,8 @@ package org.camunda.bpm.getstarted.dmn;
 @ProcessApplication("Dinner App DMN")
 public class DinnerApplication extends ServletProcessApplication {
 
+  protected final static Logger LOGGER = Logger.getLogger(DinnerApplication.class.getName());
+
   @PostDeploy
   public void evaluateDecisionTable(ProcessEngine processEngine) {
 
@@ -37,7 +39,7 @@ public class DinnerApplication extends ServletProcessApplication {
     DmnDecisionTableResult dishDecisionResult = decisionService.evaluateDecisionTableByKey("dish", variables);
     String desiredDish = dishDecisionResult.getSingleEntry();
 
-    System.out.println("Desired dish: " + desiredDish);
+    LOGGER.log(Level.INFO, "\n\nDesired dish: {0}\n\n", desiredDish);
   }
 
 }
@@ -69,6 +71,8 @@ INFO org.camunda.commons.logging.BaseLogger.logInfo
 ENGINE-08023 Deployment summary for process archive 'dinner-dmn':
 
         dinnerDecisions.dmn
+
+INFO org.camunda.bpm.getstarted.dmn.DinnerApplication.evaluateDecisionTable 
 
 Desired dish: Stew
 
@@ -106,5 +110,4 @@ Next,
 * learn more about DMN by reading the [DMN Reference](/manual/reference/dmn11/),
 * learn more about the [Decision API exposed by Camunda Process Engine](/manual/user-guide/process-engine/decisions/),
 * check how you can invoke the decision from a [BPMN Business Rule Task](/manual/reference/bpmn20/tasks/business-rule-task/),
-* and a [CMMN Decision Task](/manual/reference/cmmn11/tasks/decision-task/),
 * Bonus Step: [Decision Requirements Graph](../drg) 

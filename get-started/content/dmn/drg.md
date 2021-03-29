@@ -72,6 +72,8 @@ package org.camunda.bpm.getstarted.dmn;
 public class DinnerApplication extends ServletProcessApplication
 {
 
+  protected final static Logger LOGGER = Logger.getLogger(DinnerApplication.class.getName());
+
     @PostDeploy
     public void evaluateDecisionTable(ProcessEngine processEngine) {
 
@@ -85,12 +87,12 @@ public class DinnerApplication extends ServletProcessApplication
       DmnDecisionTableResult dishDecisionResult = decisionService.evaluateDecisionTableByKey("dish", variables);
       String desiredDish = dishDecisionResult.getSingleEntry();
 
-      System.out.println("Desired dish: " + desiredDish);
+      LOGGER.log(Level.INFO, "\n\nDesired dish: {0}\n\n", desiredDish);
 
       DmnDecisionTableResult beveragesDecisionResult = decisionService.evaluateDecisionTableByKey("beverages", variables);
       List<Object> beverages = beveragesDecisionResult.collectEntries("beverages");
 
-      System.out.println("Desired beverages: " + beverages);
+      LOGGER.log(Level.INFO, "\n\nDesired beverages: {0}\n\n", beverages);
     }
 
 }
@@ -114,7 +116,12 @@ ENGINE-08023 Deployment summary for process archive 'dinner-dmn':
 
         dinnerDecisions.dmn
 
+INFO org.camunda.bpm.getstarted.dmn.DinnerApplication.evaluateDecisionTable 
+
 Desired dish: Stew
+
+INFO org.camunda.bpm.getstarted.dmn.DinnerApplication.evaluateDecisionTable 
+
 Desired beverages: [Guiness, Water]
 
 INFO org.camunda.commons.logging.BaseLogger.logInfo
