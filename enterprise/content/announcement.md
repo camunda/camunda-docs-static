@@ -245,6 +245,9 @@ __Changes in Supported Environments:__
 
 * Added support for `Elasticsearch` 7.11 version
 * Ended support for `Elasticsearch` 7.3.x and 7.4.x as well as 7.5.0 versions
+* Added support for `Camunda Platform` 7.15.x releases
+* Ended support for `Camunda Platform` 7.12.x releases
+* New Minimum required `Camunda Platform` version is 7.13.5
 
 ## Camunda Optimize 3.3
 
