@@ -53,58 +53,23 @@ downloads:
     - war
 
   selected:
-    branch: "7.14"
-    version: "7.14.6"
+    branch: "7.15"
+    version: "7.15.0"
     server: "run"
 
   branches:
     - branch: "7.15"
       releases:
-        - number: "7.15.0-alpha1"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?version=16395&projectId=10230"
-          date: "2020.11.10"
+        - number: "7.15.0"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16006"
+          date: "2021.04.13"
           excludeservers:
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
-        - number: "7.15.0-alpha2"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16494"
-          date: "2020.12.08"
-          excludeservers:
-              - "wildfly11"
-              - "wildfly10"
-              - "wildfly8"
-              - "glassfish"
-              - "ibm-was"
-        - number: "7.15.0-alpha3"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16697"
-          date: "2021.02.09"
-          excludeservers:
-              - "wildfly11"
-              - "wildfly10"
-              - "wildfly8"
-              - "glassfish"
-              - "ibm-was"
-        - number: "7.15.0-alpha4"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16698"
-          date: "2021.03.09"
-          excludeservers:
-              - "wildfly11"
-              - "wildfly10"
-              - "wildfly8"
-              - "glassfish"
-              - "ibm-was"
-        - number: "7.15.0-alpha5"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16710"
-          date: "2021.03.25"
-          excludeservers:
-              - "wildfly11"
-              - "wildfly10"
-              - "wildfly8"
-              - "glassfish"
-              - "ibm-was"
+        
 
     - branch: "7.14"
       releases:
