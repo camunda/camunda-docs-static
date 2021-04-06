@@ -12,7 +12,7 @@ menu:
 
 ---
 
-Now you are ready to set up your first process application project in Eclipse in the IDE of your choice, the following description uses Eclipse.
+Now you are ready to set up your first process application project in Eclipse or the IDE of your choice, the following description uses Eclipse.
 
 
 # Set Up a Java Project
@@ -47,7 +47,7 @@ The next step consists of setting up the Maven dependencies for the new project.
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.14.0</camunda.version>
+    <camunda.version>7.15.0</camunda.version>
     <spring.version>5.2.8.RELEASE</spring.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
