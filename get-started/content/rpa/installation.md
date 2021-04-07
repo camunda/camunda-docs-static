@@ -138,6 +138,8 @@ When being logged in to Cawemo:
 * Save the key hash for later use in the Camunda Modeler
 * Open the "User ID / Organization ID" panel to retrieve your User ID (which is not your email address)
 
+{{< img src="../img/cawemo-settings-page.png" title="Cawemo Settings Page" >}}
+
 ## Camunda Modeler
 
 Please use the Camunda Modeler version 4.7 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.

@@ -46,6 +46,8 @@ In order to create a new template, you need to
 * Create a new "Catalog Project" using the split button and give it a name
 * Inside this Catalog Project create a new "Service Task Template"
 
+{{< img src="../img/template-form-editor.png" title="Cawemo Template Form Editor" >}}
+
 Edit the template as follows:
 
 * General
@@ -62,9 +64,7 @@ Edit the template as follows:
 
 Descriptions: In order to provide details on how to use the template, explain what the UiPath package does or what values each parameter expects. The descriptions will be shown in the Camunda Modeler when the template is being used.
 
-Templates are saved automatically and will be available immediately to the Camunda Modeler. Versioning and publishing of templates is already planned to be added soon.
-
-TODO: describe publishing
+Before a template can be used in the Camunda Modeler it needs to be published once by clicking the “Publish” button in the upper right corner. If you like you can provide a name for the published version. In case you need to adjust your template later on, you can simply publish a new version of it.
 
 Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/modeler/element-templates/">advanced configuration options of templates</a>.
 
