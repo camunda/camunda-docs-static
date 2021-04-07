@@ -1764,7 +1764,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
   </thead>
   <tbody>
     <tr class="well">
-      <td>1.1.0</td>
+      <td>1.0.0</td>
       <td>7.14+</td>
       <td>UiPath (Cloud & On-Premises)</td>
       <td>19.10.2020</td>
