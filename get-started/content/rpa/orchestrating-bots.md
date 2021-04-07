@@ -66,7 +66,7 @@ Descriptions: In order to provide details on how to use the template, explain wh
 
 Before a template can be used in the Camunda Modeler it needs to be published once by clicking the “Publish” button in the upper right corner. If you like you can provide a name for the published version. In case you need to adjust your template later on, you can simply publish a new version of it.
 
-Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/modeler/element-templates/">advanced configuration options of templates</a>.
+If you want to create templates for other elements you can learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/modeler/element-templates/">advanced configuration options of templates</a>.
 
 ## Modeling and executing a process
 

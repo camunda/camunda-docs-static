@@ -39,7 +39,7 @@ add a BPMN Error to your template in the Catalog
   * ${outputParameter.startsWith("something")}
   * refer to the Output Parameters as they are named in the Output Parameter section
 * Throw Expression for technical errors
-  * ${externalTask.getErrorDetails() != ''}
+  * ${externalTask.getErrorDetails() != null}
   * don't expect the Output Parameters to be available
 
 The first Throw Expression that matches will be applied, following expressions will not be evaluated.
