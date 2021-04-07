@@ -351,11 +351,17 @@ __Changes in Supported Environments:__
 
 # Cawemo On-Premises Announcements
 
+## Cawemo On-Premises 1.6
+
+__Release Date:__ 13th of April 2021
+
+__End of Maintenance:__ with next release, scheduled for 13th of July 2021
+
 ## Cawemo On-Premises 1.5
 
 __Release Date:__ 12th of January 2021
 
-__End of Maintenance:__ with next release, scheduled for 13th of April 2021
+__End of Maintenance:__ 13th of April 2021
 
 ## Cawemo On-Premises 1.4
 
