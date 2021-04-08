@@ -14,7 +14,7 @@ RewriteRule ^manual/([^/]+)/reference/javadoc/$ /javadoc/camunda-bpm-platform/$1
 # manual without version
 RewriteRule ^manual/?$ /manual/latest/ [R=301,L]
 
-RewriteCond %{REQUEST_URI} ^/manual/((?!latest/)[^/]+)
+RewriteCond %{REQUEST_URI} ^/manual((?!latest/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
 RewriteRule ^manual/(.*) /manual/latest/ [R=307,L]
 
