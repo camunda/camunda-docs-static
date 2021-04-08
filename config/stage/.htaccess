@@ -34,7 +34,7 @@ RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/latest$1 [R=307,L]
 RewriteCond %{REQUEST_URI} ^/manual/((?!latest/?)[^/]+)(.*)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1%2 !-d
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 -d
-RewriteRule ^ manual/%1 [R=307,L]
+RewriteRule ^/manual/((?!latest/?)[^/]+)(.*) manual/$1 [R=307,L]
 
 # Optimize technical guide
 RewriteRule ^optimize/develop/technical-guide/configuration/?$ /optimize/develop/technical-guide/setup/configuration/ [R=301,L]
