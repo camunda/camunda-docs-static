@@ -69,7 +69,7 @@ Learn more about <a target="_blank" href="https://docs.uipath.com/orchestrator">
 
 Unless you already have a running Camunda Platform 7.14 or later installation, please
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.14/7.14.0/camunda-bpm-run-ee-7.14.0-ee.zip">Download Camunda Run (Enterprise)</a>
+* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.15/7.15.0/camunda-bpm-run-ee-7.15.0-ee.zip">Download Camunda Run (Enterprise)</a>
 
 You will be asked for a username and password that you have obtained together with your Enterprise license key.
 
@@ -92,7 +92,7 @@ Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest
 
 In order to install the RPA Bridge, please:
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">Download the RPA Bridge</a>
+* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.0/camunda-bpm-rpa-bridge-1.1.0.zip">Download the RPA Bridge</a>
 * Unzip the archive
 * Add your Enterprise license key into a file called `license.txt` in the same folder as the `application.yml` file
 * When using UiPath Cloud, edit in the config file `application.yml`:
