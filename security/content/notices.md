@@ -15,6 +15,37 @@ releases of the community platform.
 
 # Notices
 
+## Notice 43
+
+**Publication Date: April 13th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions and transitively pulled in by the Camunda Spring Boot starter was vulnerable to requests getting a response belonging to a different request and contained an incomplete fix for a previously addressed vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-25122
+- https://nvd.nist.gov/vuln/detail/CVE-2021-25329
+
+**How to determine if the installation is affected**
+
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.15.0, 7.14.6, 7.13.12, 7.12.19 which contain a fix. 
+
+The Camunda Spring Boot starter versions 7.13 and 3.4 work with Spring Boot 2.2, for which no patch is available that resolves this problem. We recommend to either update the Tomcat dependencies manually or moving to a higher version of Spring Boot in accordance with [Camunda's compatibility matrix](https://docs.camunda.org/manual/7.15/user-guide/spring-boot-integration/version-compatibility/).
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
+
 ## Notice 42
 
 **Publication Date: March 9th, 2021**
