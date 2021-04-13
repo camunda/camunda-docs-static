@@ -1763,15 +1763,6 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
   </thead>
   <tbody>
-    <tr class="well">
-      <td>1.0.0</td>
-      <td>7.14+</td>
-      <td>UiPath (Cloud & On-Premises)</td>
-      <td>19.10.2020</td>
-      <td>
-        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">zip</a>
-      </td>
-    </tr>
 	<tr class="well">
       <td>1.1.0</td>
       <td>7.15+</td>
@@ -1779,6 +1770,15 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
       <td>13.04.2021</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.0/camunda-bpm-rpa-bridge-1.1.0.zip">zip</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td>1.0.0</td>
+      <td>7.14+</td>
+      <td>UiPath (Cloud & On-Premises)</td>
+      <td>19.10.2020</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">zip</a>
       </td>
     </tr>
   </tbody>
