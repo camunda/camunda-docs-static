@@ -39,7 +39,7 @@ You can verify this by using your terminal, shell, or command line:
 ```sh
 java -version
 ```
-If you need to install Java Runtime Environment, you can [find the download from Oracle here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+If you need to install Java Runtime Environment, you can [find the download from Oracle here](https://www.oracle.com/technetwork/java/javase/downloads/index.html). You can also choose another JDK from [Camunda's support list](/manual/latest/introduction/supported-environments/#java-runtime).
 
 # Camunda Platform
 
