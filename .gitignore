@@ -6,3 +6,4 @@ npm-debug.log
 public/
 .gradle
 build
+_gen/
