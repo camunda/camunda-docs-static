@@ -63,7 +63,7 @@ RewriteCond %{DOCUMENT_ROOT}/optimize/latest%2 -d
 RewriteRule ^optimize/[^/]+(/[^/]+(?:/.*))? /optimize/latest$1 [R=307,L]
 
 # Redirect to selected optimize version starting page if site is unavailable
-RewriteCond %{REQUEST_URI} ^/optimize/((?!latest/?)[^/]+)(.*)
+RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)(.*)
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1%2 !-d
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1%2 !-f
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1 -d
