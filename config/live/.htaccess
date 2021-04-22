@@ -93,6 +93,12 @@ RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
 RewriteCond %{DOCUMENT_ROOT}/cawemo/latest%2 -d
 RewriteRule ^cawemo/[^/]+(/[^/]+(?:/.*))? /cawemo/latest$1 [R=307,L]
 
+# Redirect to selected Cawemo version starting page if site is unavailable
+RewriteCond %{REQUEST_URI} ^/cawemo/([^/]+)(.*)
+RewriteCond %{DOCUMENT_ROOT}/cawemo/%1%2 !-d
+RewriteCond %{DOCUMENT_ROOT}/cawemo/%1%2 !-f
+RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 -d
+RewriteRule ^cawemo/(.*) /cawemo/%1 [R=307,L]
 
 # Enterprise
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
