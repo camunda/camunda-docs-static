@@ -74,7 +74,7 @@ Use the `Deploy` Button in the Camunda Modeler to deploy the updated process to 
 
 # Work on the Task
 
-Go to Tasklist ([http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist)) and log in with the credentials "demo / demo".
+Go to Tasklist ([http://localhost:8080/camunda/app/tasklist/](http://localhost:8080/camunda/app/tasklist/)) and log in with the credentials "demo / demo".
 Click on the {{< glyphicon name="list-alt" text=" Start process" >}} button to start a process instance. This opens a dialog where you can select *Payment Retrieval* from the list. Now you can set variables for the process instance using a generic form.
 
 {{< img src="../img/start-form-generic.png" >}}

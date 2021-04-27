@@ -55,14 +55,14 @@ To deploy the Decision Table, click on the Deploy button in the Camunda Modeler,
 {{< img src="../img/modeler-dmn6.png" >}}
 
 # Verify the Deployment with Cockpit
-Now, use Cockpit to see if the decision table was successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with the credentials *demo / demo*. Navigate to the "Decisions" section. Your decision table *Approve Payment* should be listed as deployed decision definition.
+Now, use Cockpit to see if the decision table was successfully deployed. Go to [http://localhost:8080/camunda/app/cockpit/](http://localhost:8080/camunda/app/cockpit/). Log in with the credentials *demo / demo*. Navigate to the "Decisions" section. Your decision table *Approve Payment* should be listed as deployed decision definition.
 
 {{< img src="../img/cockpit-approve-payment.png" >}}
 
 # Inspect using Cockpit and Tasklist
 
 Next, use Tasklist to start two new Process Instances and verify that depending on your input, the Process Instance will be routed differently.
-To do so, go to [http://localhost:8080/camunda/app/tasklist](http://localhost:8080/camunda/app/tasklist). Log in with *demo / demo*.
+To do so, go to [http://localhost:8080/camunda/app/tasklist/](http://localhost:8080/camunda/app/tasklist/). Log in with *demo / demo*.
 
 Click on the {{< glyphicon name="list-alt" text=" Start process" >}} button to start a process instance and choose the `Payment` process.
 Use the generic form to add the variables as follows:
@@ -75,7 +75,7 @@ Use the generic form to add the variables as follows:
 {{< img src="../img/tasklist-dmn2.png" >}}
 
 You'll see that depending on the input, the worker will either charge or not charge the credit card.
-You can also verify that the DMN tables were evaluated by using Camunda Cockpit. Go to [http://localhost:8080/camunda/app/cockpit](http://localhost:8080/camunda/app/cockpit). Log in with the credentials *demo / demo*. Navigate to the "Decisions" section and click on Approve Payment. Check the different Decision Instances that were evaluated by clicking on the ID in the table.
+You can also verify that the DMN tables were evaluated by using Camunda Cockpit. Go to [http://localhost:8080/camunda/app/cockpit/](http://localhost:8080/camunda/app/cockpit/). Log in with the credentials *demo / demo*. Navigate to the "Decisions" section and click on Approve Payment. Check the different Decision Instances that were evaluated by clicking on the ID in the table.
 
 A single DMN table that was executed could look like this in Camunda Cockpit:
 {{< img src="../img/cockpit-dmn-table.png" >}}
