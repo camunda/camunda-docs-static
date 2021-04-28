@@ -66,7 +66,7 @@ We distinguish three types of issues:
 
 Apart from general help requests, we have four types of self-service help requests. The following self-service requests allow you to receive and change information faster. Select the `Help Request Type` and allow the `Description` to autopopulate then submit the ticket.
 
-{{< img src="../img/self-service-request.png" title="Self Service Issue" >}}
+{{< img src="../img/jira-self-service-request.png" title="Self Service Issue" >}}
 
 <table class="table table-bordered">
   <thead>
