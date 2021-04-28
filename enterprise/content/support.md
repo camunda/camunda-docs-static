@@ -64,7 +64,7 @@ We distinguish three types of issues:
 
 ## Self-Service Help Request
 
-Apart from general help requests, we have three types of self-service help requests. The following self-service requests allow you to receive information faster.
+Apart from general help requests, we have four types of self-service help requests. The following self-service requests allow you to receive and change information faster. Select the `Help Request Type` and allow the `Description` to autopopulate then submit the ticket.
 
 {{< img src="../img/self-service-request.png" title="Self Service Issue" >}}
 
@@ -87,6 +87,10 @@ Apart from general help requests, we have three types of self-service help reque
   <tr>
     <td>I need the credentials for downloading Camunda</td>
     <td>This will provide your account credentials for downloading Camunda.</td>
+  </tr>
+    <tr>
+    <td>I want to reset the company account password (Camunda download credentials)</td>
+    <td>This will guide you through the process of changing the password for your company account.</td>
   </tr>
   </tbody>
 </table>
