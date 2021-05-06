@@ -44,7 +44,12 @@ Feel free to also visit the [UiPath Forum](https://forum.uipath.com/) for furthe
 
 ## Automation Anywhere
 
-TODO: describe where users get Bridge config params from automation anywhere
+The RPA Bridge integrates with Automation 360 (formerly A2019).
+
+In order to prepare the setup of the RPA Bridge, please
+
+* Create or choose a user with bot runner permissions (this user's bots can be orchestrated and it will be used to run bots)
+* Remember the password of that user or alternatively [create an API key](https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/control-room-api/cloud-control-room-apikey-role.html) and write that down
 
 # Camunda Platform Run
 
@@ -79,6 +84,7 @@ In order to install the RPA Bridge, please:
 
 Edit the config file `application.yml`:
 
+* in general, lines starting with a `#` are comments and will not be considered by the Bridge
 * `license-file`: remove the comment character such that the value is `file:///${user.dir}/license.txt`
 * `camunda-api`: adjust the URL and credentials to your Camunda Platform instance if necessary
 
@@ -86,25 +92,39 @@ Edit the config file `application.yml`:
 
 Edit the config file `application.yml`:
 
-* `uipath-api.url`: set to `https://platform.uipath.com/`
-* `account-name`: the Account Logical Name from the API Access overlay
-* `tenant-name`: the Tenant Logical Name from the API Access overlay
-* `organization-unit-id`: see above how to [retrieve your organization unit id](#uipath)
-* `auth-url`: switch to `https://account.uipath.com/oauth/token`
-* `user`: the Client Id from the API Access overlay
-* `key`: the User Key from the API Access overlay
-* `status-update-method`: set to `polling`
-* `webhook`: add `#` to the beginning of each line with a webhook config property to ignore the line
+* add `#` to the beginning of each line under `automation-anywhere-api`, so it is not considered by the Bridge
+* under the `uipath-api` element, adjust the following
+  * `url`: set to `https://platform.uipath.com/`
+  * `account-name`: the Account Logical Name from the API Access overlay
+  * `tenant-name`: the Tenant Logical Name from the API Access overlay
+  * `folder-path`: adjust to the name of the folder you want to work with, in case you do **NOT** want to work with a folder called "Default"
+  * `organization-unit-id`: see above how to [retrieve your organization unit id](#uipath)
+  * under the `authentication` element, adjust the following
+    * `type`: 
+    * `auth-url`: switch to `https://account.uipath.com/oauth/token`
+    * `user`: the Client Id from the API Access overlay
+    * `key`: the User Key from the API Access overlay
+  * `status-update-method`: set to `polling`
+  * `webhook`: add `#` to the beginning of each line under `webhook`, so it is not considered by the Bridge
 
 ### UiPath On-Premises
 
 Edit the config file `application.yml`:
 
+* add `#` to the beginning of each line under `automation-anywhere-api`, so it is not considered by the Bridge
 * please follow the instructions in the config file related to UiPath On-Premises
+* for a quick start, we recommend to use `polling` for the `status-update-method`
 
 ### Automation Anywhere
 
-* TODO: describe config values
+Edit the config file `application.yml`:
+
+* add `#` to the beginning of each line under `uipath-api`, so it is not considered by the Bridge
+* under the `automation-anywhere-api` element, adjust the following
+  * `url`: set to the base URL of your Automation Anywhere Controlroom instance
+  * `user`: the name of the user with bot runner permissions, this user is starting the bots in your Automation Anywhere instance
+  * `password`: the user's password
+  * if you want to use an [API key](https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/control-room-api/cloud-authenticate-apikey.html) instead, put a `#` in front of `password`, remove the one in front of `api-key` and add your API key to that property
 
 ### Logging configuration
 
