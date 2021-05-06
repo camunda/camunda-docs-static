@@ -52,7 +52,7 @@ Edit the template as follows:
 * Implementation Type
   * Implementation Type: choose either UiPath or Automation Anywhere
   * UiPath Package Name: add the package name that you defined in UiPath Orchestrator
-  * Automation Anywhere Name: add the bot name you defined in Automation Anywhere
+  * Automation Anywhere Bot Name: add the bot name you defined in Automation Anywhere
 * Input Parameters
   * for each RPA bot input argument add one entry with the matching name
 * Output Parameters
