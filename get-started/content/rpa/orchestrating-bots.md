@@ -73,7 +73,7 @@ In order to trigger the RPA Bot from Camunda, create a new BPMN process as follo
 * Create new BPMN process diagram
 * Append a new Task to the Start Event and turn it into a Service Task (remember to use the Wrench icon next to the task for changing its type)
 
-#### Use templates
+## Use templates
 
 * Click on "Catalog" in the Property Panel and you will see an overlay with a list of your templates
 * Select one template and click Apply. With the template being applied, you see a simplified Property Panel
@@ -83,17 +83,17 @@ In order to trigger the RPA Bot from Camunda, create a new BPMN process as follo
 * For any Output Parameter:
   * Define the name of a process variable that this output value should be assigned to
 
-#### Enhance your process diagram:
+## Enhance your process diagram:
 
 * Complete your BPMN process diagram with further elements as you see fit (e.g. User Tasks)
 * Finish the diagram with an End Event
 
-#### Execute the process:
+## Execute the process:
 
 * Click the Run icon in the toolbar ("Start Current Diagram") and confirm the dialogs. This will deploy the process diagram and trigger a new process instance
 * In the success notification click on "Open in Camunda Cockpit". You will see the running process instance with its current state
 
-## UiPath
+### UiPath
 
 With the process instance running, you may observe a new Job in UiPath Orchestrator that was added by the RPA Bridge and the UiPath Robot executing the previously defined package.
 
@@ -101,6 +101,6 @@ Shortly after the Job is completed in UiPath, you can switch back to the Camunda
 
 In case of an error with the UiPath Robot, you will see a new incident for the process instance in Camunda Cockpit. Depending on the specific error, you may retry to execute the Service Task and trigger UiPath again to resolve the incident.
 
-## Automation Anywhere
+### Automation Anywhere
 
 TODO: describe how to observe the bot behaviour in Automation Anywhere
