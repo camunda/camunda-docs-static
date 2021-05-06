@@ -36,7 +36,7 @@ If the new bot uses input and/or output variables make sure to configure those v
 
 Once the RPA bot works as expected and was released make sure that the bot and all necessary resources are available publicly.
 
-In case you have trouble setting up and running your UiPath scripts via the UiPath Orchestrator please refer to the [Automation Anywhere documentation](https://docs.automationanywhere.com/).
+In case you have trouble setting up and running your Automation Anywhere scripts via the Automation Anywhere Control Room please refer to the [Automation Anywhere documentation](https://docs.automationanywhere.com/).
 
 # Adding a template to the Catalog
 
