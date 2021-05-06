@@ -30,7 +30,13 @@ In case you have trouble setting up and running your UiPath scripts via the UiPa
 
 ## Automation Anywhere
 
-TODO: describe creating a bot in automation anywhere
+Orchestrating an RPA bot in AutomationAnywhere can be done via Automation Anywhere Control Room. When creating a new bot Automation Anywhere will ask for a name for the new bot. This name will be used to reference the bot from the Cawemo Catalog and eventually from the BPMN model. Make sure it is unique in your Automation Anywhere installation to avoid unwanted behavior.
+
+If the new bot uses input and/or output variables make sure to configure those variables correctly as input or output variables in the bot editor in Automation Anywhere Control Room. To provide input variables to the bot configure input mapping for each variable that should be passed to the bot on the task through either Cawemo or the Camunda Modeler. To send output variables from the bot to Camunda configure input mapping on the task through either Cawemo or the Camunda Modeler and make sure to mark the variables as output in Automation Anywhere Control Room.
+
+Once the RPA bot works as expected and was released make sure that the bot and all necessary resources are available publicly.
+
+In case you have trouble setting up and running your UiPath scripts via the UiPath Orchestrator please refer to the [Automation Anywhere documentation](https://docs.automationanywhere.com/).
 
 # Adding a template to the Catalog
 
@@ -103,4 +109,8 @@ In case of an error with the UiPath Robot, you will see a new incident for the p
 
 ### Automation Anywhere
 
-TODO: describe how to observe the bot behaviour in Automation Anywhere
+After starting a new process instance and reaching the RPA Service Task you can see new entries in the historical activity lists in Automation Anywhere Control Room representing the started RPA bot.
+
+When the Bot is completed, you can switch back to the Camunda Cockpit and observe the progress of your process instance. Remember that you might need to switch to the History View in case your process ends after the RPA task.
+
+In case of an error with the Automation Anywhere Robot, you will see a new incident for the process instance in Camunda Cockpit. Depending on the specific error, you may retry to execute the Service Task and trigger Automation Anywhere again to resolve the incident.
