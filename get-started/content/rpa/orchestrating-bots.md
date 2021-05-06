@@ -1,26 +1,22 @@
 ---
 
-title: '3) Orchestrating RPA Bots'
+title: 'Orchestrating RPA Bots'
 weight: 30
 
 menu:
   main:
-    name: "3) Orchestrating RPA Bots"
+    name: "Orchestrating RPA Bots"
     parent: "rpa"
     identifier: "rpa-orchestrating-bots"
-    pre: ""
+    pre: "Use Cawemo and the Modeler to create reusable RPA tasks and orchestrate them with the RPA Bridge."
 
 ---
 
-<a href="/get-started/rpa/error-handling" style="float:right;">4) Error Handling --&gt;</a>
+After setting up all components in the [Installation & Configuration](../installation), we will now dive into a concrete example of setting up RPA Orchestration. If your example is already up and running and you would like to dig deeper into [Error Handling](../error-handling), go ahead.
 
-[&lt;-- 2) Installation & Configuration](/get-started/rpa/installation)
+# Creating and deploying a Bot
 
-<div style="clear:both;"></div>
-
-## Creating and deploying a Bot
-
-### UiPath
+## UiPath
 
 In order to orchestrate your RPA bots and the tasks that they automate, you need to create a UiPath package that contains the scripts that the RPA bots should execute. In UiPath these scripts are called "Process".
 
@@ -30,13 +26,13 @@ Once the UiPath script works as expected, it needs to be deployed into the UiPat
 
 Please make sure that the UiPath Orchestrator can successfully trigger a UiPath Robot to execute the given package.
 
-In case you have trouble setting up and running your UiPath scripts via the UiPath Orchestrator please refer to the <a target="_blank" href="https://docs.uipath.com/">UiPath documentation</a>.
+In case you have trouble setting up and running your UiPath scripts via the UiPath Orchestrator please refer to the [UiPath documentation](https://docs.uipath.com/).
 
-### Automation Anywhere
+## Automation Anywhere
 
 TODO: describe creating a bot in automation anywhere
 
-## Adding a template to the Catalog
+# Adding a template to the Catalog
 
 For each UiPath package that should be orchestrated, there needs to be a corresponding template in the Cawemo Catalog.
 
@@ -66,9 +62,9 @@ Descriptions: In order to provide details on how to use the template, explain wh
 
 Before a template can be used in the Camunda Modeler it needs to be published once by clicking the “Publish” button in the upper right corner. If you like you can provide a name for the published version. In case you need to adjust your template later on, you can simply publish a new version of it.
 
-If you want to create templates for other elements you can learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/modeler/element-templates/">advanced configuration options of templates</a>.
+If you want to create templates for other elements you can learn more about [advanced configuration options of templates](https://docs.camunda.org/manual/latest/modeler/element-templates/).
 
-## Modeling and executing a process
+# Modeling and executing a process
 
 The Camunda Modeler updates the list of available templates when being launched. In order to enforce a synchronization of the templates, click on the Cawemo logo in the upper right corner and save the configuration dialog again. You will see a notification about the templates that have been synched.
 
@@ -77,7 +73,7 @@ In order to trigger the RPA Bot from Camunda, create a new BPMN process as follo
 * Create new BPMN process diagram
 * Append a new Task to the Start Event and turn it into a Service Task (remember to use the Wrench icon next to the task for changing its type)
 
-Use templates:
+#### Use templates
 
 * Click on "Catalog" in the Property Panel and you will see an overlay with a list of your templates
 * Select one template and click Apply. With the template being applied, you see a simplified Property Panel
@@ -87,22 +83,24 @@ Use templates:
 * For any Output Parameter:
   * Define the name of a process variable that this output value should be assigned to
 
-Enhance your process diagram:
+#### Enhance your process diagram:
 
 * Complete your BPMN process diagram with further elements as you see fit (e.g. User Tasks)
 * Finish the diagram with an End Event
 
-Execute the process:
+#### Execute the process:
 
 * Click the Run icon in the toolbar ("Start Current Diagram") and confirm the dialogs. This will deploy the process diagram and trigger a new process instance
 * In the success notification click on "Open in Camunda Cockpit". You will see the running process instance with its current state
 
-### UiPath
+## UiPath
 
-With the process instance running, you may observe in UiPath Orchestrator the new Job that was added by the RPA Bridge and the UiPath Robot executing the previously defined package.
+With the process instance running, you may observe a new Job in UiPath Orchestrator that was added by the RPA Bridge and the UiPath Robot executing the previously defined package.
 
-In case of an error with the UiPath Robot, you will see a new incident for the process instance in Camunda Cockpit. You may retry to execute the Service Task and trigger UiPath again to resolve the incident.
+Shortly after the Job is completed in UiPath, you can switch back to the Camunda Cockpit and observe the progress of your process instance. Remember that you might need to switch to the History View in case your process ends after the RPA task.
 
-### Automation Anywhere
+In case of an error with the UiPath Robot, you will see a new incident for the process instance in Camunda Cockpit. Depending on the specific error, you may retry to execute the Service Task and trigger UiPath again to resolve the incident.
+
+## Automation Anywhere
 
 TODO: describe how to observe the bot behaviour in Automation Anywhere

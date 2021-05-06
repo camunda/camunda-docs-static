@@ -1,33 +1,29 @@
 ---
 
-title: '4) Error Handling'
+title: 'Error Handling'
 weight: 40
 
 menu:
   main:
-    name: "4) Error Handling"
+    name: "Error Handling"
     parent: "rpa"
     identifier: "rpa-error-handling"
-    pre: ""
+    pre: "Handle errors from RPA bots in the process model with the help of BPMN Errors."
 
 ---
 
-[&lt;-- 3) Orchestrating RPA Bots](/get-started/rpa/orchestrating-bots)
-
-TODO: this page is just an outline and requires proper phrasing of the content
-
-## Configuration
+# Configuration
 
 TODO: describe how to enable the skipOutputMappingOnCanceledActivities
 
-## Scenarios
+# Scenarios
 
 * Business Error: Bot completes as expected
   * analyze the output parameters to raise BPMN Errors based on their values
 * Technical Error: Bot does not complete as expected
   * if you want to prevent such failures to raise an incident, use BPMN Errors to handle them in a structured way as part of the process
 
-## Throwing BPMN Errors
+# Throwing BPMN Errors
 
 add a BPMN Error to your template in the Catalog
 
@@ -44,7 +40,7 @@ add a BPMN Error to your template in the Catalog
 
 The first Throw Expression that matches will be applied, following expressions will not be evaluated.
 
-## Catching BPMN Errors
+# Catching BPMN Errors
 
 apply template in your BPMN process model
 

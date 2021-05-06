@@ -1,36 +1,41 @@
 ---
 
-title: '1) Requirements'
+title: 'Requirements'
 weight: 10
 
 menu:
   main:
-    name: "1) Requirements"
+    name: "Requirements"
     parent: "rpa"
     identifier: "rpa-requirements"
-    pre: ""
+    pre: "Learn about the necessary preconditions to start with RPA Orchestration."
 
 ---
 
-<a href="/get-started/rpa/installation" style="float:right;">2) Installation & Configuration --&gt;</a>
+Several components are involved in setting up proper RPA Orchestration in this guide. 
+Therefore, a couple of requirements should be fulfilled before starting with this guide. 
+You can also jump ahead to the [Installation & Configuration](../installation) if you are familiar
+with the requirements already.
 
-<div style="clear:both;"></div>
-
-### Knowledge Requirements
+# Knowledge Requirements
 
 In order to succeed with this getting started guide, we expect that you already know
 
-* how to run UiPath robots and trigger them from the UiPath Orchestrator
-* TODO: add Automation Anywhere
+* how to create and trigger robots with your RPA vendor (UiPath or AutomationAnywhere)
 * how to model and execute BPMN process diagrams with the Camunda stack
 * how to work with process variables as part of JUEL expressions
 
-In case you never executed a process model with the Camunda engine, then we recommend to start with the <a href="https://docs.camunda.org/get-started/quick-start/">Quick Start Guide</a> first.
+In case you never executed a process model with the Camunda engine, then we recommend to start with the [Quick Start Guide](../../quick-start) first.
 
-### Hardware Requirements
+# Hardware Requirements
 
-UiPath only works with Microsoft Windows. If you don't have a dedicated Windows environment, we recommend to use a Windows virtual machine, e.g. using <a href="https://www.virtualbox.org/">Virtualbox</a>.
+Since this guide asks you to install and use several components, we recommend to use a system with sufficient resources to be able to run everything in parallel. Alternatively, we encourage you to use the hosted SaaS options where available.
 
-TODO: add Automation Anywhere
+## UiPath
+UiPath only works with Microsoft Windows. If you don't have a dedicated Windows environment, we recommend to use a Windows virtual machine, e.g. using [Virtualbox](https://www.virtualbox.org/).
 
-Since this guide asks you to install and use several components, we recommend to have a computer with sufficient resources to be able to run everything in parallel. Alternatively, we encourage you to use the hosted SaaS options where available.
+You can consult UiPath' [Orchestrator Requirements](https://docs.uipath.com/installation-and-upgrade/docs/orchestrator-hardware-requirements) for further details.
+
+## Automation Anywhere
+
+Automation Anywhere components can be set up on a variety of environments, please consult the [On-Premises Installation Guide](https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/deployment-planning/on-prem-install/cloud-on-prem-install.html).

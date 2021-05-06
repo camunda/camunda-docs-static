@@ -1,58 +1,56 @@
 ---
 
-title: '2) Installation & Configuration'
+title: 'Installation & Configuration'
 weight: 20
 
 menu:
   main:
-    name: "2) Installation & Configuration"
+    name: "Installation & Configuration"
     parent: "rpa"
     identifier: "rpa-installation"
-    pre: ""
+    pre: "Install and setup the components to start orchestrating bots."
 
 ---
 
-<a href="/get-started/rpa/orchestrating-bots" style="float:right;">3) Orchestrating RPA Bots --&gt;</a>
+After familiarizing with all [Requirements](../requirements), this section will dive deeper into the components involved in RPA Orchestration and how you should set them up. If your setup is already prepared, jump ahead to [Orchestrating RPA Bots](../orchestrating-bots)
 
-[&lt;-- 1) Requirements](/get-started/rpa/requirements)
+# RPA Vendor Credentials
 
-<div style="clear:both;"></div>
+In order to orchestrate RPA bots, we will connect the Camunda Platform Workflow Engine to your RPA vendor via the Camunda RPA Bridge. 
+This component will require configuration parameters in order to connect to your RPA vendor.
 
-## RPA Bot Configuration
+## UiPath
 
-### UiPath
-
-The Camunda RPA Orchestration works with the UiPath Orchestrator in either the <a target="_blank" href="https://cloud.uipath.com">Cloud</a> or On-Premises (v2019 or v2020.4). For testing purposes we recommend to use the cloud version.
+The Camunda RPA Orchestration works with the UiPath Orchestrator in either the [Cloud](https://cloud.uipath.com) or On-Premises (v2019 or v2020.4) distribution. For testing purposes we recommend to use the cloud version.
 
 In order to prepare the setup of the RPA Bridge, please
 
 * Open the ‘Admin’ view of the UiPath Orchestrator Portal
-* Open the ‘API Access’ overlay for your tenant
+* Open the ‘API Access’ overlay for your tenant (you might need to expand the tenant with the arrow next to it)
 * Copy the values for
   * User Key
   * Account Logical Name
   * Tenant Logical Name
   * Client Id
 
-The API of UiPath Orchestrator requires a parameter called ‘organization unit id’ that you can obtain as follows:
+{{< img src="../img/rpa-uipath-api-access.png" title="UiPath API Access" >}}
 
-* Open your organization's dashboard (this does not work for the ‘Admin’ view)
-* Open your browser's developer tools
-* Open the network tab and select a request, e.g. `GetCountStats` XHR request
-* Navigate to the Request Header section of that request
-* Read the request header `x-uipath-organizationunitid`, which contains the id as a number
+Furthermore, the API of UiPath Orchestrator requires a parameter called `organization-unit-id`. In short, this id relates to one specifc folder in UiPath Orchestrator that contains the RPA bots you want to orchestrate. In order to obtain it, visit your Orchestrator instance, select the folder you want to work with and fetch the id from the URL's `fid` parameter.
 
-Learn more about <a target="_blank" href="https://docs.uipath.com/orchestrator">UiPath Orchestrator</a> or visit the <a target="_blank" href="https://forum.uipath.com/">UiPath Forum</a>.
+{{< img src="../img/rpa-uipath-fid.png" title="UiPath Organization Unit ID" >}}
 
-### Automation Anywhere
+You can read more about this id and how to obtain it in the UiPath documentation on [Building API Requests](https://docs.uipath.com/orchestrator/reference/building-api-requests). 
+Feel free to also visit the [UiPath Forum](https://forum.uipath.com/) for further help.
+
+## Automation Anywhere
 
 TODO: describe where users get Bridge config params from automation anywhere
 
-## Camunda Platform Run
+# Camunda Platform Run
 
 Unless you already have a running Camunda Platform 7.14 or later installation, please
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.14/7.14.0/camunda-bpm-run-ee-7.14.0-ee.zip">Download Camunda Run (Enterprise)</a>
+* [Download Camunda Run (Enterprise)](https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.15/7.15.0/camunda-bpm-run-ee-7.15.0-ee.zip)
 
 You will be asked for a username and password that you have obtained together with your Enterprise license key.
 
@@ -69,67 +67,85 @@ start.bat
 ./start.sh
 ```
 
-Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/installation/">installing Camunda Platform</a>.
+Learn more about [Installing Camunda Platform](https://docs.camunda.org/manual/latest/installation/).
 
-## RPA Bridge
+# Camunda RPA Bridge
 
 In order to install the RPA Bridge, please:
 
-* <a href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.0/1.0.0/camunda-bpm-rpa-bridge-1.0.0.zip">Download the RPA Bridge</a>
+* [Download the RPA Bridge](https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.0/camunda-bpm-rpa-bridge-1.1.0.zip)
 * Unzip the archive
 * Add your Enterprise license key into a file called `license.txt` in the same folder as the `application.yml` file
 
-UiPath Cloud
+Edit the config file `application.yml`:
 
-* Edit in the config file `application.yml`:
-  * `license-file`: remove the comment character such that the value is `file:///${user.dir}/license.txt`
-  * `uipath-api.url`: set to `https://platform.uipath.com/`
-  * `account-name`: the Account Logical Name from the API Access overlay
-  * `tenant-name`: the Tenant Logical Name from the API Access overlay
-  * `organization-unit-id`: see above how to <a href="#uipath">retrieve your organization unit id</a>
-  * `auth-url`: switch to `https://account.uipath.com/oauth/token`
-  * `user`: the Client Id from the API Access overlay
-  * `key`: the User Key from the API Access overlay
-  * `status-update-method`: set to `polling`
-  * `webhook`: add `#` to the beginning of each line with a webhook config property to ignore the line
+* `license-file`: remove the comment character such that the value is `file:///${user.dir}/license.txt`
+* `camunda-api`: adjust the URL and credentials to your Camunda Platform instance if necessary
 
-UiPath On-Premises
+### UiPath Cloud
 
-* please follow the instructions in the config file
+Edit the config file `application.yml`:
 
-Automation Anywhere
+* `uipath-api.url`: set to `https://platform.uipath.com/`
+* `account-name`: the Account Logical Name from the API Access overlay
+* `tenant-name`: the Tenant Logical Name from the API Access overlay
+* `organization-unit-id`: see above how to [retrieve your organization unit id](#uipath)
+* `auth-url`: switch to `https://account.uipath.com/oauth/token`
+* `user`: the Client Id from the API Access overlay
+* `key`: the User Key from the API Access overlay
+* `status-update-method`: set to `polling`
+* `webhook`: add `#` to the beginning of each line with a webhook config property to ignore the line
+
+### UiPath On-Premises
+
+Edit the config file `application.yml`:
+
+* please follow the instructions in the config file related to UiPath On-Premises
+
+### Automation Anywhere
 
 * TODO: describe config values
 
-Logging configuration
+### Logging configuration
 
-* We recommend to enable simple logging by adding this as the last line to `application.yml`:
-  * `logging.level.org.camunda.bpm.rpa.bridge.externaltask: DEBUG`
+We recommend to enable simple logging by adding this as the last line to `application.yml`:
 
-Launch the RPA Bridge by
+```
+logging.level.org.camunda.bpm.rpa.bridge.externaltask: DEBUG
+```
+
+### Launch the RPA Bridge
+
+Use the following command to launch the Bridge
 
 ```sh
 java -jar camunda-bpm-rpa-bridge.jar
 ```
 
-You should see a log message like `External Task Listener started ----`
+You should see a log message like 
 
-For trouble shooting, you can switch to extensive logging by adding this as the last line to `application.yml`:
+```
+External Task Listener started ----
+```
 
-* `logging.level.org.camunda.bpm.rpa.bridge: DEBUG`
+For troubleshooting, you can switch to extensive logging by adding this as the last line to `application.yml`:
+
+```
+logging.level.org.camunda.bpm.rpa.bridge: DEBUG
+```
 
 
-Learn more about <a target="_blank" href="https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-rpa-bridge/">configuring the RPA Bridge</a>.
+Learn more about [configuring the RPA Bridge](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-rpa-bridge).
 
-## Cawemo Catalog
+# Cawemo Catalog
 
 {{< note title="Please note: you have the choice of Cawemo SaaS or On-Premises." class="info" >}}
-For testing we recommend the use of Cawemo SaaS. Please <a href="https://cawemo.com/signup">sign up</a> and ask for a trial license via the "Provide feedback" form to get started.
+For testing we recommend the use of Cawemo SaaS. Please [sign up](https://cawemo.com/signup) and ask for a trial license via the "Provide feedback" form to get started.
 {{< /note >}}
 
-When you are using Cawemo SaaS, please open the <a href="https://cawemo.com/settings/">settings page</a> and verify in the "Details" section that your Enterprise license is active.
+When you are using Cawemo SaaS, please open the [settings page](https://cawemo.com/settings) and verify in the "Details" section that your Enterprise license is active.
 
-In order to use Cawemo On-Premises (version 1.6 or later), please follow this <a href="https://docs.camunda.org/cawemo/latest/technical-guide/installation/">on-premises installation guide</a>.
+In order to use Cawemo On-Premises (version 1.6 or later), please follow this [on-premises installation guide](https://docs.camunda.org/cawemo/latest/technical-guide/installation/).
 
 When being logged in to Cawemo:
 
@@ -140,11 +156,11 @@ When being logged in to Cawemo:
 
 {{< img src="../img/cawemo-settings-page.png" title="Cawemo Settings Page" >}}
 
-## Camunda Modeler
+# Camunda Modeler
 
-Please use the Camunda Modeler version 4.7 or later. In case you don't have it yet, you can <a href="https://camunda.com/download/modeler/">download the latest version of Camunda Modeler</a>.
+Please use the Camunda Modeler version 4.7 or later. In case you don't have it yet, you can [download the latest version of Camunda Modeler](https://camunda.com/download/modeler/).
 
-* Download version 3.0 or later of the <a href="https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/cloud-connect-3.0.0.zip">Cloud Connect plugin</a> for Camunda Modeler
+* Download version 3.0 or later of the [Cloud Connect plugin](https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/cloud-connect-3.0.0.zip) for Camunda Modeler
 * Extract the archive and move it to the plugins folder
 
 ```sh
@@ -168,4 +184,4 @@ Please use the Camunda Modeler version 4.7 or later. In case you don't have it y
 
 In the upper right corner of the Modeler window you should see "Connected to Cawemo", indicating a successful connection.
 
-Learn more about <a target="_blank" href="https://docs.camunda.org/cawemo/latest/technical-guide/integrations/modeler/">connecting Camunda Modeler with Cawemo</a>.
+Learn more about [connecting Camunda Modeler with Cawemo](https://docs.camunda.org/cawemo/latest/technical-guide/integrations/modeler).
