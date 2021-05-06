@@ -47,18 +47,18 @@ In order to create a new template, you need to
 Edit the template as follows:
 
 * General
-  * Template name: Define a human readable name, such that users will understand which UiPath package this template refers to
+  * Template name: Define a human readable name, such that users will understand which RPA bot this template refers to
   * Service task label: leave empty if you do not want to give a defaul label to the BPMN service task
 * Implementation Type
   * Implementation Type: choose either UiPath or Automation Anywhere
   * UiPath Package Name: add the package name that you defined in UiPath Orchestrator
-  * Automation Anywhere Bot Name: TODO describe bot name
+  * Automation Anywhere Name: add the bot name you defined in Automation Anywhere
 * Input Parameters
-  * for each UiPath IN argument add one entry with the matching name
+  * for each RPA bot input argument add one entry with the matching name
 * Output Parameters
-  * for each UiPath OUT argument add one entry with the matching name
+  * for each RPA bot output argument add one entry with the matching name
 
-Descriptions: In order to provide details on how to use the template, explain what the UiPath package does or what values each parameter expects. The descriptions will be shown in the Camunda Modeler when the template is being used.
+Descriptions: In order to provide details on how to use the template, explain what the RPA bot does or what values each parameter expects. The descriptions will be shown in the Camunda Modeler when the template is being used.
 
 Before a template can be used in the Camunda Modeler it needs to be published once by clicking the “Publish” button in the upper right corner. If you like you can provide a name for the published version. In case you need to adjust your template later on, you can simply publish a new version of it.
 
