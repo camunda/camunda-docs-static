@@ -12,18 +12,18 @@ menu:
 
 ---
 
-After familiarizing with all [Requirements](../requirements), this section will dive deeper into the components involved in RPA Orchestration and how you should set them up. If your setup is already prepared, jump ahead to [Orchestrating RPA Bots](../orchestrating-bots)
+After familiarizing yourself with all [Requirements](../requirements), this section will dive deeper into the components involved in RPA Orchestration and how you should set them up. If your setup is already prepared, jump ahead to [Orchestrating RPA Bots](../orchestrating-bots)
 
 # RPA Vendor Credentials
 
-In order to orchestrate RPA bots, we will connect the Camunda Platform Workflow Engine to your RPA vendor via the Camunda RPA Bridge. 
-This component will require configuration parameters in order to connect to your RPA vendor.
+To orchestrate RPA bots, we will connect the Camunda Platform Workflow Engine to your RPA vendor via the Camunda RPA Bridge. 
+This component will require configuration parameters to connect to your RPA vendor.
 
 ## UiPath
 
-The Camunda RPA Orchestration works with the UiPath Orchestrator in either the [Cloud](https://cloud.uipath.com) or On-Premises (v2019 or v2020.4) distribution. For testing purposes we recommend to use the cloud version.
+The Camunda RPA Orchestration works with the UiPath Orchestrator in either the [Cloud](https://cloud.uipath.com) or On-Premises (v2019 or v2020.4) distribution. For testing purposes, we recommend using the cloud version.
 
-In order to prepare the setup of the RPA Bridge, please
+To prepare the setup of the RPA Bridge, please
 
 * Open the ‘Admin’ view of the UiPath Orchestrator Portal
 * Open the ‘API Access’ overlay for your tenant (you might need to expand the tenant with the arrow next to it)
@@ -35,7 +35,7 @@ In order to prepare the setup of the RPA Bridge, please
 
 {{< img src="../img/rpa-uipath-api-access.png" title="UiPath API Access" >}}
 
-Furthermore, the API of UiPath Orchestrator requires a parameter called `organization-unit-id`. In short, this id relates to one specifc folder in UiPath Orchestrator that contains the RPA bots you want to orchestrate. In order to obtain it, visit your Orchestrator instance, select the folder you want to work with and fetch the id from the URL's `fid` parameter.
+Furthermore, the API of UiPath Orchestrator requires a parameter called `organization-unit-id`. In short, this id relates to one specific folder in UiPath Orchestrator that contains the RPA bots you want to orchestrate. In order to obtain it, visit your Orchestrator instance, select the folder you want to work with, and fetch the id from the URL's `fid` parameter.
 
 {{< img src="../img/rpa-uipath-fid.png" title="UiPath Organization Unit ID" >}}
 
@@ -46,9 +46,9 @@ Feel free to also visit the [UiPath Forum](https://forum.uipath.com/) for furthe
 
 The RPA Bridge integrates with Automation 360 (formerly A2019).
 
-In order to prepare the setup of the RPA Bridge, please
+To prepare the setup of the RPA Bridge, please
 
-* Create or choose a user with bot runner permissions (this user's bots can be orchestrated and it will be used to run bots)
+* Create or choose a user with a bot runner license (bots available to this user can be orchestrated in Camunda and the user will be used to run bots)
 * Remember the password of that user or alternatively [create an API key](https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/control-room-api/cloud-control-room-apikey-role.html) and write that down
 
 # Camunda Platform Run
@@ -80,13 +80,13 @@ In order to install the RPA Bridge, please:
 
 * [Download the RPA Bridge](https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.0/camunda-bpm-rpa-bridge-1.1.0.zip)
 * Unzip the archive
-* Add your Enterprise license key into a file called `license.txt` in the same folder as the `application.yml` file
+* Add your Enterprise license key into a file called `license.txt` in the same folder as the `application.yml` file.
 
 Edit the config file `application.yml`:
 
-* in general, lines starting with a `#` are comments and will not be considered by the Bridge
-* `license-file`: remove the comment character such that the value is `file:///${user.dir}/license.txt`
-* `camunda-api`: adjust the URL and credentials to your Camunda Platform instance if necessary
+* In general, lines starting with a `#` are comments and will not be considered by the Bridge.
+* `license-file`: Remove the comment character. The property value should be `file:///${user.dir}/license.txt`.
+* `camunda-api`: Adjust the URL and credentials to your Camunda Platform instance if necessary.
 
 ### UiPath Cloud
 
@@ -111,16 +111,16 @@ Edit the config file `application.yml`:
 
 Edit the config file `application.yml`:
 
-* add `#` to the beginning of each line under `automation-anywhere-api`, so it is not considered by the Bridge
-* please follow the instructions in the config file related to UiPath On-Premises
-* for a quick start, we recommend to use `polling` for the `status-update-method`
+* Add `#` to the beginning of each line under `automation-anywhere-api`, so it is not considered by the Bridge.
+* Please follow the instructions in the config file related to UiPath On-Premises.
+* For a quick start, we recommend using `polling` for the `status-update-method`.
 
 ### Automation Anywhere
 
 Edit the config file `application.yml`:
 
-* add `#` to the beginning of each line under `uipath-api`, so it is not considered by the Bridge
-* under the `automation-anywhere-api` element, adjust the following
+* Add `#` to the beginning of each line under `uipath-api`, so it is not considered by the Bridge
+* under the `automation-anywhere-api` element, adjust the following:
   * `url`: set to the base URL of your Automation Anywhere Controlroom instance
   * `user`: the name of the user with bot runner permissions, this user is starting the bots in your Automation Anywhere instance
   * `password`: the user's password
@@ -128,7 +128,7 @@ Edit the config file `application.yml`:
 
 ### Logging configuration
 
-We recommend to enable simple logging by adding this as the last line to `application.yml`:
+We recommend enabling simple logging by adding this as the last line to `application.yml`:
 
 ```
 logging.level.org.camunda.bpm.rpa.bridge.externaltask: DEBUG
@@ -159,7 +159,7 @@ Learn more about [configuring the RPA Bridge](https://docs.camunda.org/manual/la
 
 # Cawemo Catalog
 
-{{< note title="Please note: you have the choice of Cawemo SaaS or On-Premises." class="info" >}}
+{{< note title="Please note: You have the choice of Cawemo SaaS or On-Premises." class="info" >}}
 For testing we recommend the use of Cawemo SaaS. Please [sign up](https://cawemo.com/signup) and ask for a trial license via the "Provide feedback" form to get started.
 {{< /note >}}
 
@@ -169,10 +169,10 @@ In order to use Cawemo On-Premises (version 1.6 or later), please follow this [o
 
 When being logged in to Cawemo:
 
-* Open the settings page
-* Create an API Key with a name "RPA Orchestration"
-* Save the key hash for later use in the Camunda Modeler
-* Open the "User ID / Organization ID" panel to retrieve your User ID (which is not your email address)
+* Open the settings page.
+* Create an API Key with the name "RPA Orchestration".
+* Save the key hash for later use in the Camunda Modeler.
+* Open the "User ID / Organization ID" panel to retrieve your User ID (which is not your email address).
 
 {{< img src="../img/cawemo-settings-page.png" title="Cawemo Settings Page" >}}
 
@@ -194,13 +194,13 @@ Please use the Camunda Modeler version 4.7 or later. In case you don't have it y
 ~/.config/camunda-modeler/plugins
 ```
 
-* Restart the Modeler and verify that the Plugins menu contains an entry "Cloud Connect"
-* Open the configuration of the Cloud Connect plugin via the menu
-* Add the following settings
+* Restart the Modeler and verify that the Plugins menu contains an entry "Cloud Connect".
+* Open the configuration of the Cloud Connect plugin via the menu.
+* Add the following settings:
   * User ID: from the Cawemo settings page
   * API Key: from the Cawemo settings page
   * Sync Catalog Projects: set to `enabled`
-* Save the configuration dialog
+* Save the configuration dialog.
 
 In the upper right corner of the Modeler window you should see "Connected to Cawemo", indicating a successful connection.
 
