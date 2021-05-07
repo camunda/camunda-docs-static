@@ -44,9 +44,9 @@ For each UiPath package that should be orchestrated, there needs to be a corresp
 
 To create a new template, you need to:
 
-* Open the "Home" view of Cawemo
-* Create a new "Catalog Project" using the split button and give it a name
-* Inside this Catalog Project create a new "Service Task Template"
+* open the "Home" view of Cawemo
+* create a new "Catalog Project" using the split button and give it a name
+* create a new "Service Task Template" inside this new catalog project
 
 {{< img src="../img/template-form-editor.png" title="Cawemo Template Form Editor" >}}
 
@@ -54,15 +54,15 @@ Edit the template as follows:
 
 * General
   * Template name: Define a human-readable name, such that users will understand which RPA bot this template refers to
-  * Service task label: leave empty if you do not want to give a default label to the BPMN service task
+  * Service task label: Leave empty if you do not want to give a default label to the BPMN service task
 * Implementation Type
-  * Implementation Type: choose either UiPath or Automation Anywhere
-  * UiPath Package Name: add the package name that you defined in UiPath Orchestrator
-  * Automation Anywhere Bot Name: add the bot name you defined in Automation Anywhere
+  * Implementation Type: Choose either UiPath or Automation Anywhere
+  * UiPath Package Name: Add the package name that you defined in UiPath Orchestrator
+  * Automation Anywhere Bot Name: Add the bot name you defined in Automation Anywhere
 * Input Parameters
-  * for each RPA bot input argument, add one entry with the matching name
+  * For each RPA bot input argument, add one entry with the matching name
 * Output Parameters
-  * for each RPA bot output argument, add one entry with the matching name
+  * For each RPA bot output argument, add one entry with the matching name
 
 Descriptions: In order to provide details on how to use the template, explain what the RPA bot does or what values each parameter expects. The descriptions will be shown in the Camunda Modeler when the template is being used.
 
