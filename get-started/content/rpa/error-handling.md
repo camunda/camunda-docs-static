@@ -14,19 +14,19 @@ menu:
 
 Now that we can [Orchestrate RPA Bots](../orchestrating-bots) let's have a look at how to react to a failing RPA bot or - generally speaking - how to handle the result of a bot as a BPMN error. Please note that the features presented here only work with a Camunda Platform 7.15 or later.
 
-# Configuration
-
-To be able to properly react to failures of RPA bots, we recommend enabling the following properties in your Camunda engine instance (e.g. an instance of Camunda Run):
-
-* `skipOutputMappingOnCanceledActivities`: Enabling this flag will ensure that output mappings created for your service tasks will not be evaluated if the task is canceled. Since the failure of an RPA bot will cancel the service task through the RPA Bridge, this will ensure that your service tasks will be properly handled even if the RPA bot does not deliver expected output parameters on failure.
-* `enableExceptionsAfterUnhandledBpmnError`: Enabling this flag will lead to an exception after throwing uncaught BPMN errors from your service task. We will get to how to throw such an error in a minute. In general, we recommend catching all BPMN Errors that can be thrown in a process. Enabling this flag will lead to processes not ending unexpectedly but rather failing with exceptions that can be observed in system logs -- this can come in handy while developing the process.
-
 # Scenarios
 
 As mentioned already, we can generally react to the result of an RPA bot execution by throwing a BPMN error. There are two main use cases for this:
 
 * Business Error: In case an RPA bot completes as expected, its output parameters might indicate that -- from a business perspective -- the execution should be treated as an exceptional case.
 * Technical Error: An RPA bot fails with a specific error message and stack trace, indicating a technical error that should be treated as an exceptional business case that can be handled in a structured way in the process model.
+
+# Configuration
+
+To be able to properly react to failures of RPA bots, we recommend enabling the following properties in your Camunda engine instance (e.g. an instance of Camunda Run):
+
+* `skipOutputMappingOnCanceledActivities`: Enabling this flag will ensure that output mappings created for your service tasks will not be evaluated if the task is canceled. Since the failure of an RPA bot will cancel the service task through the RPA Bridge, this will ensure that your service tasks will be properly handled even if the RPA bot does not deliver expected output parameters on failure.
+* `enableExceptionsAfterUnhandledBpmnError`: Enabling this flag will lead to an exception after throwing uncaught BPMN errors from your service task. We will get to how to throw such an error in a minute. In general, we recommend catching all BPMN Errors that can be thrown in a process. Enabling this flag will lead to processes not ending unexpectedly but rather failing with exceptions that can be observed in system logs -- this can come in handy while developing the process.
 
 # Throwing BPMN Errors
 
