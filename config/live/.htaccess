@@ -104,16 +104,18 @@ RewriteRule ^cawemo/(.*) /cawemo/%1 [R=307,L]
 RewriteRule ^enterprise/previous-downloads.html$ /enterprise/download/ [R=301,L]
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/enterprise /enterprise/ [R=301,L]
 
-# Redirect /get-started/cmmnXX to /get-started/cmmn11 if folder cmmnXX does not exist
 # Redirect /get-started/dmnXX to /get-started/dmn11 if folder dmnXX does not exist
-RewriteCond %{REQUEST_URI} ^/get-started/(dmn|cmmn)(\d+)
-RewriteCond %{DOCUMENT_ROOT}/get-started/%1%2 !-d
-RewriteRule ^get-started/[^/]+(.*) /get-started/%111$1 [R=307,L]
+RewriteCond %{REQUEST_URI} ^/get-started/dmn(\d+)
+RewriteCond %{DOCUMENT_ROOT}/get-started/dmn%1 !-d
+RewriteRule ^get-started/[^/]+(.*) /get-started/dmn11$1 [R=307,L]
 
 # CMMN 1.0
-RewriteRule ^get-started/cmmn10/(.*) /get-started/cmmn11/$1 [R=301,L]
+RewriteRule ^get-started/cmmn10(.*) /get-started/cmmn11$1 [R=301,L]
 RewriteRule ^manual/develop/reference/cmmn10/(.*) /manual/develop/reference/cmmn11/$1 [R=301,L]
 RewriteRule ^manual/latest/reference/cmmn10/(.*) /manual/latest/reference/cmmn11/$1 [R=301,L]
+
+# CMMN 1.1: redirect the getting started guide to the reference documentation
+RewriteRule ^get-started/cmmn11(.*) /manual/latest/reference/cmmn11/ [R=307,L]
 
 # Get Started
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started/ [R=301,L]
