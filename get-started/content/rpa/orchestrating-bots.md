@@ -32,9 +32,9 @@ In case you have trouble setting up and running your UiPath scripts via the UiPa
 
 Orchestrating an RPA bot in AutomationAnywhere can be done via Automation Anywhere Control Room. When creating a new bot Automation Anywhere will ask for a name for the new bot. This name will be used to reference the bot from the Cawemo Catalog and eventually from the BPMN model. Make sure it is unique in your Automation Anywhere installation to avoid unwanted behavior.
 
-If the new bot uses input and/or output variables, make sure to configure those variables correctly as input or output variables in the bot editor in Automation Anywhere Control Room. To provide input variables to the bot configure input mapping for each variable that should be passed to the bot on the task through either Cawemo or the Camunda Modeler. To send output variables from the bot to Camunda, configure input mapping on the task through either Cawemo or the Camunda Modeler and make sure to mark the variables as output in Automation Anywhere Control Room.
+If the new bot uses input and/or output variables, make sure to configure those variables correctly as input or output variables in the bot editor in Automation Anywhere Control Room. To provide input variables to the bot, configure input mapping for each variable that should be passed to the bot on the task through either Cawemo or the Camunda Modeler. To send output variables from the bot to Camunda, configure input mapping on the task through either Cawemo or the Camunda Modeler and make sure to mark the variables as output in the Automation Anywhere Control Room.
 
-Once the RPA bot works as expected and was released, make sure that the bot and all necessary resources are available publicly.
+Once the RPA bot works as expected and is released, make sure that the bot and all necessary resources are available publicly.
 
 In case you have trouble setting up and running your Automation Anywhere scripts via the Automation Anywhere Control Room, please refer to the [Automation Anywhere documentation](https://docs.automationanywhere.com/).
 
@@ -44,9 +44,9 @@ For each UiPath package that should be orchestrated, there needs to be a corresp
 
 To create a new template, you need to:
 
-* open the "Home" view of Cawemo
-* create a new "Catalog Project" using the split button and give it a name
-* create a new "Service Task Template" inside this new catalog project
+* Open the "Home" view of Cawemo
+* Create a new "Catalog Project" using the split button and give it a name
+* Create a new "Service Task Template" inside this new catalog project
 
 {{< img src="../img/template-form-editor.png" title="Cawemo Template Form Editor" >}}
 
@@ -109,8 +109,8 @@ In case of an error with the UiPath Robot, you will see a new incident for the p
 
 ### Automation Anywhere
 
-After starting a new process instance and reaching the RPA Service Task, you can see new entries in the historical activity lists in Automation Anywhere Control Room representing the started RPA bot.
+After starting a new process instance and reaching the RPA Service Task, you can see new entries in the historical activity lists in the Automation Anywhere Control Room representing the started RPA bot.
 
-When the bot is completed, you can switch back to the Camunda Cockpit and observe the progress of your process instance. Remember that you might need to switch to the History View in case your process ends after the RPA task.
+When the bot has completed, you can switch back to the Camunda Cockpit and observe the progress of your process instance. Remember that you might need to switch to the History View in case your process ends after the RPA task.
 
 In case of an error with the Automation Anywhere Robot, you will see a new incident for the process instance in Camunda Cockpit. Depending on the specific error, you may retry to execute the Service Task and trigger Automation Anywhere again to resolve the incident.

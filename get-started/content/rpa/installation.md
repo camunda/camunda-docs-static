@@ -120,11 +120,11 @@ Edit the config file `application.yml`:
 Edit the config file `application.yml`:
 
 * Add `#` to the beginning of each line under `uipath-api`, so it is not considered by the Bridge
-* under the `automation-anywhere-api` element, adjust the following:
+* Under the `automation-anywhere-api` element, adjust the following:
   * `url`: set to the base URL of your Automation Anywhere Controlroom instance
   * `user`: the name of the user with bot runner permissions, this user is starting the bots in your Automation Anywhere instance
   * `password`: the user's password
-  * if you want to use an [API key](https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/control-room-api/cloud-authenticate-apikey.html) instead, put a `#` in front of `password`, remove the one in front of `api-key` and add your API key to that property
+  * If you want to use an [API key](https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/control-room-api/cloud-authenticate-apikey.html) instead, put a `#` in front of `password`, remove the one in front of `api-key` and add your API key to that property
 
 ### Logging configuration
 
@@ -167,7 +167,7 @@ When you are using Cawemo SaaS, please open the [settings page](https://cawemo.c
 
 In order to use Cawemo On-Premises (version 1.6 or later), please follow this [on-premises installation guide](https://docs.camunda.org/cawemo/latest/technical-guide/installation/).
 
-When being logged in to Cawemo:
+After logging into Cawemo:
 
 * Open the settings page.
 * Create an API Key with the name "RPA Orchestration".
