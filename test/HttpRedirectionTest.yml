@@ -19,12 +19,15 @@ https://docs.camunda.org:
   /get-started/javaee6:
     target: /get-started/javaee7
     status: 301
-  /get-started/cmmn99:
-    target: /get-started/cmmn11
-    status: 307
   /get-started/cmmn10/project-setup:
     target: /get-started/cmmn11/project-setup
+    status: 301
+  /get-started/cmmn11/project-setup:
+    target: /manual/latest/reference/cmmn11/
     status: 307
+  /get-started/does-not-exist:
+    target: /manual/
+    status: 302
   /optimize/99.0/user-guide/homepage:
     target: /optimize/latest/user-guide/homepage
     status: 307
@@ -74,11 +77,11 @@ https://stage.docs.camunda.org:
   /get-started/javaee6:
     target: /get-started/javaee7
     status: 301
-  /get-started/cmmn12:
-    target: /get-started/cmmn11
-    status: 307
   /get-started/cmmn10/project-setup:
     target: /get-started/cmmn11/project-setup
+    status: 301
+  /get-started/cmmn11/project-setup:
+    target: /manual/latest/reference/cmmn11/
     status: 307
   /optimize/99.0/user-guide/homepage:
     target: /optimize/latest/user-guide/homepage
