@@ -15,6 +15,37 @@ releases of the community platform.
 
 # Notices
 
+## Notice 44
+
+**Publication Date: June 1st, 2021**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The versions of the dependencies io.netty:netty-codec-http2 and net.minidev:json-smart shipped with cawemo-restapi were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-21409
+- https://nvd.nist.gov/vuln/detail/CVE-2021-27568
+
+The dependencies jose, lodash and browserslist shipped with cawemo-webapp were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-29443
+- https://nvd.nist.gov/vuln/detail/CVE-2021-23337
+- https://nvd.nist.gov/vuln/detail/CVE-2021-23364
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.6.2 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.6.3 releases for the cawemo-restapi and cawemo-webapp Docker images which contain fixes for the above-mentioned CVE.
+
+
 ## Notice 43
 
 **Publication Date: April 13th, 2021**
