@@ -17,7 +17,7 @@ releases of the community platform.
 
 ## Notice 45
 
-**Publication Date: June 1st, 2021**
+**Publication Date: June 7th, 2021**
 
 **Product affected:**
 
