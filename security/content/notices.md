@@ -15,6 +15,31 @@ releases of the community platform.
 
 # Notices
 
+## Notice 45
+
+**Publication Date: June 1st, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of lodash shipped with Camunda Cockpit, Tasklist, and Admin was vulnerable to command injection:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-23337
+
+**How to determine if the installation is affected**
+
+- The Camunda Platform web applications are used (Cockpit, Tasklist, Admin)
+- Embedded task forms or custom plugins are used
+- The forms and plugins make use of lodash's `template` function with untrusted input
+
+**Solution**
+
+Camunda has provided the releases 7.16.0-alpha2, 7.15.2, 7.14.8, 7.13.14, 7.12.21 which contain a fix. 
+
+
 ## Notice 44
 
 **Publication Date: June 1st, 2021**
