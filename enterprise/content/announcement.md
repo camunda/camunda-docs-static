@@ -16,6 +16,24 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.16
+
+__Release Date:__ scheduled for 12th of October 2021
+
+__End of Maintenance:__ 11th of April 2023
+
+__Changes in Supported Environments:__
+
+* Support for WildFly Application Server 23.0
+* Support for Azure SQL
+* Support for Java 15
+* End of Support for Wildfly 12
+* End of Support for JBoss EAP 6.4
+* End of Support for MySQL 5.6
+* End of Support for DB2 10.5
+* End of Support for SQL Server 2012
+* End of Support for Oracle 18
+
 ## Camunda Platform 7.15
 
 __Release Date:__ scheduled for 13th of April 2021
