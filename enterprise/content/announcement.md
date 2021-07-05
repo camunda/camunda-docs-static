@@ -263,6 +263,7 @@ __Changes in Supported Environments:__
 
 * Ended support for Java 8
 * Ended support for `Elasticsearch` 7.5.x, 7.6.x and 7.7.x versions
+* Added support for `Elasticsearch` 7.12 and 7.13 versions
 
 ## Camunda Optimize 3.4
 
