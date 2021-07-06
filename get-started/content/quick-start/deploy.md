@@ -14,6 +14,10 @@ menu:
 
 In the next step, you'll deploy the Process and start a new instance so you can see that your simple process is working correctly.
 
+{{< note class="info" title="Deployment Support" >}}
+BPMN diagrams must be created for the process engine they intend to be deployed on. You cannot run a BPMN diagram modeled for Camunda Platform in Camunda Cloud, or vice versa, at this time. {{< /note >}}
+
+
 # Use the Camunda Modeler to Deploy the Process
 
 In order to deploy the Process, click on the deploy button in the Camunda Modeler, then give it the Deployment Name "Payment Retrieval" and click the Deploy button. From version 3.0.0 on, you will be required to provide an URL for an Endpoint Configuration along with Deployment Details. This can be either the root endpoint to the REST API (e.g. `http://localhost:8080/engine-rest`) or an exact endpoint to the deployment creation method (e.g. `http://localhost:8080/engine-rest/deployment/create`).
