@@ -388,6 +388,7 @@ __Release Date:__ scheduled for 12th of October 2021
 __End of Maintenance:__ 11th of January 2022
 
 __Changes in Supported Environments:__
+
 * Support for PostgreSQL 10, 11, 12, 13
 * End of Support for PostgreSQL 9.6
 
