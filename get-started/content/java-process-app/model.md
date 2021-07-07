@@ -69,8 +69,6 @@ Finally, check the box of the *Executable* property. If you do not check this bo
 
 # Save the BPMN Diagram
 
-{{< img src="../img/modeler-save-diagram.png" >}}
-
 When you are done, save your changes by clicking *File > Save File As..*. In the dialogue that pops up, navigate to the loan application project directory (by default this is in your Eclipse workspace path). In the project directory, place the model in the `src/main/resources` folder.
 
 Return to Eclipse. Right-click the project folder and click *Refresh*. This synchronizes the new BPMN file with Eclipse.

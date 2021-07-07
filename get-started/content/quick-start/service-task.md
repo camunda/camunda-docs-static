@@ -62,9 +62,7 @@ Finally, make sure the box next to the *Executable* property is checked. If you 
 
 ## Save the BPMN Diagram
 
-{{< img src="../img/modeler-save-diagram.png" >}}
-
-When you're done, save your changes by clicking *File > Save File As..* or by using the *Save Button*. In the dialogue that appears, navigate to a folder of your choice and save the diagram as something like `payment.bpmn`.
+When you're done, save your changes by clicking *File > Save File As..*. In the dialogue that appears, navigate to a folder of your choice and save the diagram as something like `payment.bpmn`.
 
 {{< get-tag repo="camunda-get-started-quickstart" tag="Step-1" >}}
 
