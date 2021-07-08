@@ -55,4 +55,28 @@ Test history:
       <p>Five issues have been partially fixed, work in progress.</p>
     </td>
   </tr>
+  <tr>
+    <td><p>March 2021</p></td>
+    <td>
+      <p>Camunda Platform Version: 7.14.5-ee Camunda Optimize Version 3.3.0</p>
+      <p>Whitebox test with focus on (but not limited to) Camunda Platform web applications and REST API.</p>
+    </td>
+    <td>
+      <p>No critical vulnerabilities were detected.</p>
+      <p>Three lesser vulnerabilities were detected and submitted for treatment to our security issue process.</p>
+      <p>Three issues have been partially fixed, work in progress.</p>
+    </td> 
+  </tr>
+  <tr>
+    <td><p>June 2021</p></td>
+    <td>
+      <p>Cawemo</p>
+      <p>Whitebox test with focus on (but not limited to) the Cawemo application and the underlying infrastructure.</p>
+    </td>
+    <td>
+      <p>No critical vulnerabilities were detected.</p>
+      <p>Five lesser vulnerabilities were detected and submitted for treatment to our security issue process.</p>
+      <p>Five issues have been partially fixed, work in progress.</p>
+    </td> 
+  </tr>  
 </table>
