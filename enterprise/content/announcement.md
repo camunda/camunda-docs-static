@@ -25,6 +25,7 @@ __End of Maintenance:__ 11th of April 2023
 __Changes in Supported Environments:__
 
 * Support for WildFly Application Server 23.0
+* Support for JBoss EAP 7.4
 * Support for Azure SQL
 * Support for Java 15
 * End of Support for Wildfly 12
