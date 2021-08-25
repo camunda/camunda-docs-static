@@ -2005,7 +2005,7 @@ To install the demo distribution, please download one of the following archives:
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.5.0</td>
       <td>7.13.5+, 7.14+, 7.15+</td>
-      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.12.0+</td>
+      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+</td>
       <td>13.07.2021</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.5.0/camunda-optimize-3.5.0-demo.zip">zip</a>&nbsp;
@@ -2043,7 +2043,7 @@ To get the production distribution, please download one of the following archive
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.5.0</td>
       <td>7.13.5+, 7.14+, 7.15+</td>
-      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.12.0+</td>
+      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+</td>
       <td>13.07.2021</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.5.0/camunda-optimize-3.5.0-production.zip">zip</a>&nbsp;
