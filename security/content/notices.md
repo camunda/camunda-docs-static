@@ -15,6 +15,39 @@ releases of the community platform.
 
 # Notices
 
+## Notice 46
+
+**Publication Date: August 31st, 2021**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The versions of apk-tools, libcrypto1.1 and libssl1.1 shipped with cawemo-restapi, cawemo-webapp and cawemo-websockets were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-3712
+- https://nvd.nist.gov/vuln/detail/CVE-2021-3711
+- https://nvd.nist.gov/vuln/detail/CVE-2021-36159
+
+The version of libcurl shipped with cawemo-websockets was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-22922
+- https://nvd.nist.gov/vuln/detail/CVE-2021-22923
+- https://nvd.nist.gov/vuln/detail/CVE-2021-22924
+- https://nvd.nist.gov/vuln/detail/CVE-2021-22925
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.7.0 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.7.1 releases for the cawemo-restapi, cawemo-webapp and cawemo-websockets Docker images which contain fixes for the above-mentioned CVE.
+
+
 ## Notice 45
 
 **Publication Date: June 7th, 2021**
