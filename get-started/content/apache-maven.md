@@ -124,6 +124,10 @@ It is not needed when using `camunda-engine` because that already contains the D
 
 # Camunda Nexus
 
+{{< note title="Deprecation!" class="danger" >}}
+  Please note that, from 15th of October 2021, the Camunda Nexus is deprecated as we're migrating over to Artifactory as our new artifact storage.
+  Nevertheless, the settings still apply as we rewrite the URLs to the new location.
+{{< /note >}}
 ## Community Edition
 
 ```xml
@@ -181,6 +185,74 @@ This link helps you to browse the artifacts of Camunda Platform community editio
 This link helps you to browse the artifacts of Camunda Platform enterprise edition. The user needs to login to the nexus repository before accessing the link.
 
  https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm-ee/
+
+{{< note title="Requires login" class="info" >}}
+   Please note that the link will not be accessible if the user didn't login beforehand.
+{{< /note >}}
+
+# Camunda Artifact Storage
+## Community Edition
+The config in the Camunda Nexus part about the [Community Edition]({{< relref "#community-edition-1" >}}) is still valid due to URL redirects.
+
+An alternative is to directly use the new URL of Artifactory.
+
+```xml
+<repositories>
+  <repository>
+    <id>camunda-bpm-nexus</id>
+    <name>camunda-bpm-nexus</name>
+    <url>
+      https://camunda.jfrog.io/artifactory/public/
+    </url>
+  </repository>
+</repositories>
+```
+
+
+## Enterprise Edition
+The config in the Camunda Nexus part about the [Enterprise Edition]({{< relref "#enterprise-edition-1" >}}) is still valid due to URL redirects.
+
+An alternative is to directly use the new URL of Artifactory.
+
+```xml
+<repositories>
+  <repository>
+    <id>camunda-bpm-nexus-ee</id>
+    <name>camunda-bpm-nexus</name>
+    <url>
+      https://camunda.jfrog.io/artifactory/camunda-bpm-ee
+    </url>
+  </repository>
+</repositories>
+```
+
+Using the Enterprise Edition repository requires credentials in your Maven settings `~/.m2/settings.xml`:
+```xml
+  <servers>
+    <server>
+      <id>camunda-bpm-nexus-ee</id>
+      <username>YOUR_USERNAME</username>
+      <password>YOUR_PASSWORD</password>
+    </server>
+  </servers>
+```
+
+## Browse Camunda Artifact Storage
+In order to browse the Camunda artifacts, here are the links which can be used.
+
+### Community Edition
+The mentioned link in the Camunda Nexus part about the [Community Edition]({{< relref "#community-edition-2" >}}) is still valid due to URL redirects.
+
+An alternative is to directly use the new URL of Artifactory.
+
+https://camunda.jfrog.io/ui/native/camunda-bpm
+
+### Enterprise Edition
+The mentioned link in the Camunda Nexus part about the [Enterprise Edition]({{< relref "#enterprise-edition-2" >}}) is still valid due to URL redirects.
+
+An alternative is to directly use the new URL of Artifactory.
+
+https://camunda.jfrog.io/ui/native/camunda-bpm-ee
 
 {{< note title="Requires login" class="info" >}}
    Please note that the link will not be accessible if the user didn't login beforehand.
