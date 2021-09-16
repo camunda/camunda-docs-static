@@ -15,6 +15,59 @@ releases of the community platform.
 
 # Notices
 
+## Notice 48
+
+**Publication Date: September 20th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The Camunda Platform web applications were vulnerable to cross-site-scripting attacks via AngularJS template injection. An attacker could craft Camunda URLs that if opened by a victim would run arbitrary Javascript code in the browsing context of the victim. For example, this would allow the attacker to make requests against the Camunda API with the permissions of the victim.
+
+
+**How to determine if the installation is affected**
+
+- You are using the Camunda Platform web applications (Cockpit, Tasklist, Admin)
+
+**Solution**
+
+Camunda has provided the releases 7.16.0-alpha5, 7.15.6, 7.14.12, 7.13.18 which contain a fix.
+
+## Notice 47
+
+**Publication Date: September 20th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions and transitively pulled in by the Camunda Spring Boot starter had various vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-41079
+- https://nvd.nist.gov/vuln/detail/CVE-2021-30639
+- https://nvd.nist.gov/vuln/detail/CVE-2021-30640
+- https://nvd.nist.gov/vuln/detail/CVE-2021-33037
+
+**How to determine if the installation is affected**
+
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.16.0-alpha5, 7.15.6, 7.14.12, 7.13.18 which contain a fix. 
+
+The Camunda Spring Boot starter versions 7.13 work with Spring Boot 2.2 and 2.3, for which no patches are available that resolve this problem. We recommend to either update the Tomcat dependencies manually or moving to a higher version of Spring Boot in accordance with [Camunda's compatibility matrix](https://docs.camunda.org/manual/7.15/user-guide/spring-boot-integration/version-compatibility/).
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
 ## Notice 46
 
 **Publication Date: August 31st, 2021**
