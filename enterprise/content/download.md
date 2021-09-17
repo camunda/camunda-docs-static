@@ -100,6 +100,16 @@ downloads:
               - "glassfish"
               - "ibm-was"
 
+	- number: "7.16.0-alpha5"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17098"
+          date: "2021.09.17"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+
     - branch: "7.15"
       releases:
         - number: "7.15.6"
