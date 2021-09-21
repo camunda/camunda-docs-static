@@ -123,11 +123,17 @@ Your pom.xml file of your project should look like this:
 	<artifactId>charge-card-worker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<camunda.external-task-client.version>7.16.0-SNAPSHOT</camunda.external-task-client.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.camunda.bpm</groupId>
 			<artifactId>camunda-external-task-client</artifactId>
-			<version>7.15.0</version>
+			<version>${camunda.external-task-client.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
