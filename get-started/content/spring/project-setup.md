@@ -47,8 +47,10 @@ The next step consists of setting up the Maven dependencies for the new project.
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.15.0</camunda.version>
-    <spring.version>5.2.8.RELEASE</spring.version>
+    <camunda.version>7.16.0</camunda.version>
+    <spring.version>5.3.10</spring.version>
+    <h2.version>1.4.200</h2.version>
+    <slf4j.version>1.7.32</slf4j.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -104,12 +106,12 @@ The next step consists of setting up the Maven dependencies for the new project.
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>1.4.190</version>
+      <version>${h2.version}</version>
     </dependency>
-    <dependency>
+    <dependency> 
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
-      <version>1.7.26</version>
+      <version>${slf4j.version}</version>
     </dependency>
   </dependencies>
 
