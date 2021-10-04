@@ -30,7 +30,7 @@ Change the activity type to *User Task* by clicking on it and using the wrench b
 Next, open the properties view. If the properties view is not already visible, click on the "Properties Panel" label on the right-hand side of the Modeler canvas.
 
 Select the User Task on the canvas. This will update the selection in the properties view. Scroll to the property named `Assignee`.
-Type *demo*.
+Type *demo* to automatically assign the task to the *demo* user once the process runs. 
 {{< img src="../img/modeler-usertask3.png" >}}
 
 # Configure a basic form in the User Task
@@ -40,37 +40,52 @@ Select the User Task on the canvas. This will update the selection in the proper
 
 Click on the Tab `Forms` in the properties panel.
 
-Add three form fields by clicking on the `plus` button:
-
+This guide uses [Camunda Forms](/manual/latest/user-guide/task-forms/#camunda-forms) to add a form to the process. 
+We will create a form file called `payment.form`. 
+Add `camunda-forms:deployment:payment.form` as the *Form Key* to link this process to the form you are about to create.
 {{< img src="../img/modeler-usertask-add.png" >}}
+
+Now, create a new form by clicking *File > New File > Form*
+You can add form fields by dragging and dropping elements from the *FORM ELEMENTS LIBRARY* on the left.
+Add the following three form fields:
 
 Field 1:
 
-  * ID: amount
-  * Type: long
-  * Label: Amount
+  * Type: Number
+  * Key: amount
+  * Field Label: Amount
 
 {{< img src="../img/modeler-usertask4.png" >}}
 
 Field 2:
 
-  * ID: item
-  * Type: string
-  * Label: Item
+  * Type: Text Field
+  * Key: item
+  * Field Label: Item
 
 {{< img src="../img/modeler-usertask5.png" >}}
 
 Field 3:
 
-  * ID: approved
-  * Type: boolean
+  * Type: Checkbox
+  * Key: approved
   * Label: Approved?
 
 {{< img src="../img/modeler-usertask6.png" >}}
 
+Now, select Camunda Platform as the execution platform in the lower left corner of the modeler and hit *Apply*.
+{{< img src="../img/modeler-platform-selection.png" >}}
+Finally, save the form as `payment.form`.
+
 # Deploy the Process
 
-Use the `Deploy` Button in the Camunda Modeler to deploy the updated process to Camunda.
+1. Switch back to the process diagram
+2. Click the {{< glyphicon name="open" text=" Deploy current diagram" >}} Button in the Camunda Modeler
+3. In the deployment panel, select the `payment.form` file under *include additional files*
+4. Click *Deploy*
+
+{{< img src="../img/modeler-deploy-form.png" >}}
+
 
 # Work on the Task
 
