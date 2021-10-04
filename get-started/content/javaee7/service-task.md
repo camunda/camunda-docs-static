@@ -21,7 +21,7 @@ After the process has been started with the new order as process variables, we w
 
 ## Add an Entity Bean to the Process Application
 
-To persist the entity with JPA, we add an entity bean to our process application. Create a package `org.camunda.bpm.getstarted.pizza` and the place the following `OrderEntity` class into that package:
+To persist the entity with JPA, we add an entity bean to our process application. Create a package `org.camunda.bpm.getstarted.pizza` and then place the following `OrderEntity` class into that package:
 
 ```java
 package org.camunda.bpm.getstarted.pizza;
