@@ -55,7 +55,7 @@ To prepare the setup of the RPA Bridge, please
 
 Unless you already have a running Camunda Platform 7.14 or later installation, please
 
-* [Download Camunda Run (Enterprise)](https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.15/7.15.0/camunda-bpm-run-ee-7.15.0-ee.zip)
+* [Download Camunda Run (Enterprise)](https://downloads.camunda.cloud/enterprise-release/camunda-bpm/run/7.16/7.16.0/camunda-bpm-run-ee-7.16.0-ee.zip)
 
 You will be asked for a username and password that you have obtained together with your Enterprise license key.
 
@@ -180,7 +180,7 @@ After logging into Cawemo:
 
 Please use the Camunda Modeler version 4.7 or later. In case you don't have it yet, you can [download the latest version of Camunda Modeler](https://camunda.com/download/modeler/).
 
-* Download version 3.0 or later of the [Cloud Connect plugin](https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/cloud-connect-3.0.0.zip) for Camunda Modeler
+* Download version 3.0 or later of the [Cloud Connect plugin](https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/) for Camunda Modeler
 * Extract the archive and move it to the plugins folder
 
 ```sh
