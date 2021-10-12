@@ -395,9 +395,19 @@ __Changes in Supported Environments:__
 
 # Cawemo On-Premises Announcements
 
+## Cawemo On-Premises 1.9
+
+__Release Date:__ scheduled for 11th of January 2022
+
+__End of Maintenance:__ 12th of April 2022
+
+__Changes in Supported Environments:__
+
+* End of Support for Cawemo Engine Plugin < 1.3
+
 ## Cawemo On-Premises 1.8
 
-__Release Date:__ scheduled for 12th of October 2021
+__Release Date:__ 12th of October 2021
 
 __End of Maintenance:__ 11th of January 2022
 
