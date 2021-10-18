@@ -254,6 +254,16 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 # Camunda Optimize Announcements
 
+## Camunda Optimize 3.7
+
+__Release Date:__ 9th of November 2021
+
+__End of Maintenance:__ 
+
+__Changes in Supported Environments:__
+
+* Added support for `Java` 17 
+
 ## Camunda Optimize 3.6
 
 __Release Date:__ 12th of October 2021
