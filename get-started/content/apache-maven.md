@@ -128,6 +128,11 @@ It is not needed when using `camunda-engine` because that already contains the D
   Please note that, from 15th of October 2021, the Camunda Nexus is deprecated as we're migrating over to Artifactory as our new artifact storage.
   Nevertheless, the settings still apply as we rewrite the URLs to the new location.
 {{< /note >}}
+
+{{< note title="Known camunda-bpm-ee workaround" class="info" >}}
+  As part of the migration, the URL of `camunda-bpm-ee` is currently not resolving artefacts.
+  Please use https://app.camunda.com/nexus/content/groups/private/ or https://camunda.jfrog.io/artifactory/private/ as an alternative solution.
+{{< /note >}}
 ## Community Edition
 
 ```xml
@@ -136,7 +141,7 @@ It is not needed when using `camunda-engine` because that already contains the D
     <id>camunda-bpm-nexus</id>
     <name>camunda-bpm-nexus</name>
     <url>
-      https://app.camunda.com/nexus/content/groups/public
+      https://app.camunda.com/nexus/content/groups/public/
     </url>
   </repository>
 </repositories>
@@ -150,7 +155,7 @@ It is not needed when using `camunda-engine` because that already contains the D
     <id>camunda-bpm-nexus-ee</id>
     <name>camunda-bpm-nexus</name>
     <url>
-      https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee
+      https://app.camunda.com/nexus/content/groups/private/
     </url>
   </repository>
 </repositories>
@@ -220,7 +225,7 @@ An alternative is to directly use the new URL of Artifactory.
     <id>camunda-bpm-nexus-ee</id>
     <name>camunda-bpm-nexus</name>
     <url>
-      https://camunda.jfrog.io/artifactory/camunda-bpm-ee
+      https://camunda.jfrog.io/artifactory/private/
     </url>
   </repository>
 </repositories>
@@ -257,6 +262,13 @@ https://camunda.jfrog.io/ui/native/camunda-bpm-ee
 {{< note title="Requires login" class="info" >}}
    Please note that the link will not be accessible if the user didn't login beforehand.
 {{< /note >}}
+
+## Known issues
+After migrating away from Nexus, we've got several reports about the `camunda-bpm-ee` URL not working.
+Therefore, we've been communicating an alternative solution by using the virtual repository `private`.
+This repository is an aggregation of other repositories, which also include the `camunda-bpm-ee` artefacts.
+
+We're actively looking into the issue, and the `private` repository can be used as a permanent solution.
 
 # Other Camunda Modules:
 
