@@ -271,7 +271,7 @@ __Changes in Supported Environments:__
 
 __Release Date:__ 13th of July 2021
 
-__End of Maintenance:__ 31th of December 2022
+__End of Maintenance:__ 31st of December 2022
 
 __Changes in Supported Environments:__
 
