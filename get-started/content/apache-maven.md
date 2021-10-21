@@ -125,13 +125,14 @@ It is not needed when using `camunda-engine` because that already contains the D
 # Camunda Nexus
 
 {{< note title="Deprecation!" class="danger" >}}
-  Please note that, from 15th of October 2021, the Camunda Nexus is deprecated as we're migrating over to Artifactory as our new artifact storage.
+  Please note that, from 15th of October 2021, the Camunda Nexus is deprecated as we've migrated to Artifactory for our new artifact storage.
   Nevertheless, the settings still apply as we rewrite the URLs to the new location.
 {{< /note >}}
 
-{{< note title="Known camunda-bpm-ee workaround" class="info" >}}
-  As part of the migration, the URL of `camunda-bpm-ee` is currently not resolving artefacts.
-  Please use https://app.camunda.com/nexus/content/groups/private/ or https://camunda.jfrog.io/artifactory/private/ as an alternative solution.
+{{< note title="Known camunda-bpm-ee issue" class="info" >}}
+  As part of the migration, the URL of "`camunda-bpm-ee`" needs an additional config of preemptively sending the authentication (see [additional config]({{< relref "#additional-config-if-used-in-conjunction-with-the-camunda-bpm-ee-url" >}})).
+
+  Please consider switching to https://camunda.jfrog.io/artifactory/private/ permanently as it doesn't require the additional config.
 {{< /note >}}
 ## Community Edition
 
@@ -170,6 +171,41 @@ Using the Enterprise Edition repository requires credentials in your Maven setti
       <password>YOUR_PASSWORD</password>
     </server>
   </servers>
+```
+
+### Additional config if used in conjunction with the camunda-bpm-ee URL.
+
+#### Maven
+```xml
+  <servers>
+    <server>
+      <id>camunda-bpm-nexus-ee</id>
+      <username>YOUR_USERNAME</username>
+      <password>YOUR_PASSWORD</password>
+      <configuration>
+        <httpConfiguration>
+          <get>
+            <usePreemptive>true</usePreemptive>
+          </get>
+        </httpConfiguration>
+    </configuration>
+    </server>
+  </servers>
+```
+#### Gradle
+```java
+repositories {
+    maven {
+        url "https://camunda.jfrog.io/artifactory/camunda-bpm-ee/"
+        credentials {
+            username "YOUR_USERNAME"
+            password "YOUR_PASSWORD"
+        }
+        authentication {
+            basic(BasicAuthentication)
+        }
+    }
+}
 ```
 
 ## Known issue with Artifactory
@@ -260,15 +296,19 @@ An alternative is to directly use the new URL of Artifactory.
 https://camunda.jfrog.io/ui/native/camunda-bpm-ee
 
 {{< note title="Requires login" class="info" >}}
-   Please note that the link will not be accessible if the user didn't login beforehand.
+   Please note that the link will not be accessible if the user didn't login prior.
 {{< /note >}}
 
 ## Known issues
-After migrating away from Nexus, we've got several reports about the `camunda-bpm-ee` URL not working.
-Therefore, we've been communicating an alternative solution by using the virtual repository `private`.
-This repository is an aggregation of other repositories, which also include the `camunda-bpm-ee` artefacts.
+After migrating away from Nexus, we've got several reports about the "`camunda-bpm-ee`" URL not working.
+Therefore, we've been communicating an alternative solution by using the virtual repository "`private`".
+This repository is an aggregation of other repositories, which also include the "`camunda-bpm-ee`" artifacts among others.
 
-We're actively looking into the issue, and the `private` repository can be used as a permanent solution.
+The root cause of the issue is that local repositories, in Artifactory, don't request authentication in Maven due to which one has to preemptively send the authentication even though it might not be requested. The advantage of the virtual repository "`private`" is that it allows forcing the authentication.
+
+Please see the following [additional config]({{< relref "#additional-config-if-used-in-conjunction-with-the-camunda-bpm-ee-url" >}}) for the required adjustments to always send the authentication if continued to be used with the "`camunda-bpm-ee`" URL.
+
+The "`private`" repository is here to stay and contains all enterprise customer artifacts.
 
 # Other Camunda Modules:
 
