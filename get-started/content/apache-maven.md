@@ -150,6 +150,9 @@ It is not needed when using `camunda-engine` because that already contains the D
 
 ## Enterprise Edition
 
+The `private` URL is a virtual repository, which aggregates a multitude of repositories.
+Those include customer enterprise artifacts and all public artifacts from `public` to make builds easier if those dependencies are needed.
+
 ```xml
 <repositories>
   <repository>
@@ -255,6 +258,9 @@ The config in the Camunda Nexus part about the [Enterprise Edition]({{< relref "
 
 An alternative is to directly use the new URL of Artifactory.
 
+The `private` URL is a virtual repository, which aggregates a multitude of repositories.
+Those include customer enterprise artifacts and all public artifacts from `public` to make builds easier if those dependencies are needed.
+
 ```xml
 <repositories>
   <repository>
@@ -300,15 +306,28 @@ https://camunda.jfrog.io/ui/native/camunda-bpm-ee
 {{< /note >}}
 
 ## Known issues
+
+### Camunda-bpm-ee URL issue
 After migrating away from Nexus, we've got several reports about the "`camunda-bpm-ee`" URL not working.
 Therefore, we've been communicating an alternative solution by using the virtual repository "`private`".
-This repository is an aggregation of other repositories, which also include the "`camunda-bpm-ee`" artifacts among others.
+This repository is an aggregation of other repositories, including the "`camunda-bpm-ee`" artifacts among other enterprise artifacts and all public artifacts.
 
 The root cause of the issue is that local repositories, in Artifactory, don't request authentication in Maven due to which one has to preemptively send the authentication even though it might not be requested. The advantage of the virtual repository "`private`" is that it allows forcing the authentication.
 
-Please see the following [additional config]({{< relref "#additional-config-if-used-in-conjunction-with-the-camunda-bpm-ee-url" >}}) for the required adjustments to always send the authentication if continued to be used with the "`camunda-bpm-ee`" URL.
+We see the `camunda-bpm-ee` URL for enterprise artifacts as technical debt. We have provided all public artifacts under the `public` URL for over 6 years but haven't changed to the same for enterprise artifacts. The enterprise products within Camunda have grown over the years, but combining them as aggregated repository was never done, which we now take the time to correct.
 
-The "`private`" repository is here to stay and contains all enterprise customer artifacts.
+Please see the following [additional config]({{< relref "#additional-config-if-used-in-conjunction-with-the-camunda-bpm-ee-url" >}}) for the required adjustments to always send the authentication if continued to be used with the "`camunda-bpm-ee`" URL or permanently switch to https://camunda.jfrog.io/artifactory/private/.
+
+The "[`private`](https://camunda.jfrog.io/artifactory/private/)" repository is here to stay and contains all enterprise customer artifacts and public artifacts.
+
+### cURL artifacts
+The files are hosted in AWS S3, therefore, Artifactory rewrites the requests to S3 and sends a 302 as the first response. For cURL this means to add the "`-L`" or "`--location`" option to follow the response.
+
+Example:
+```
+curl -LO https://camunda.jfrog.io/artifactory/camunda-bpm/org/camunda/bpm/camunda-engine-rest/7.16.0/camunda-engine-rest-7.16.0.war
+```
+
 
 # Other Camunda Modules:
 
