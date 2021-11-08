@@ -3,80 +3,100 @@ title: "Enterprise Download"
 weight: 10
 
 menu:
-main:
-name: "Download"
-identifier: "enterprise-download"
+  main:
+    name: "Download"
+    identifier: "enterprise-download"
 
 downloads:
-servers:
-- path: "run"
-name: "Camunda Platform Run"
-weight: 0
-- path: "tomcat"
-name: "Apache Tomcat"
-weight: 1
-- path: "jboss"
-name: "JBoss AS 7"
-weight: 2
-- path: "glassfish"
-name: "GlassFish"
-weight: 3
-- path: "ibm-was"
-name: "IBM WebSphere 8.x"
-weight: 4
-- path: "ibm-was-85"
-name: "IBM WebSphere 8.5"
-weight: 5
-- path: "ibm-was9"
-name: "IBM WebSphere 9"
-weight: 6
-- path: "oracle-wls"
-name: "Oracle WebLogic"
-weight: 7
-- path: "wildfly8"
-name: "WildFly 8"
-weight: 8
-- path: "wildfly10"
-name: "WildFly 10"
-weight: 9
-- path: "wildfly11"
-name: "WildFly 11"
-weight: 10
-- path: "wildfly"
-name: "WildFly"
-weight: 11
+  servers:
+    - path: "run"
+      name: "Camunda Platform Run"
+      weight: 0
+    - path: "tomcat"
+      name: "Apache Tomcat"
+      weight: 1
+    - path: "jboss"
+      name: "JBoss AS 7"
+      weight: 2
+    - path: "glassfish"
+      name: "GlassFish"
+      weight: 3
+    - path: "ibm-was"
+      name: "IBM WebSphere 8.x"
+      weight: 4
+    - path: "ibm-was-85"
+      name: "IBM WebSphere 8.5"
+      weight: 5
+    - path: "ibm-was9"
+      name: "IBM WebSphere 9"
+      weight: 6
+    - path: "oracle-wls"
+      name: "Oracle WebLogic"
+      weight: 7
+    - path: "wildfly8"
+      name: "WildFly 8"
+      weight: 8
+    - path: "wildfly10"
+      name: "WildFly 10"
+      weight: 9
+    - path: "wildfly11"
+      name: "WildFly 11"
+      weight: 10
+    - path: "wildfly"
+      name: "WildFly"
+      weight: 11
 
 
-formats:
-- zip
-- tar.gz
-- war
+  formats:
+    - zip
+    - tar.gz
+    - war
 
-selected:
-branch: "7.16"
-version: "7.16.0"
-server: "run"
+  selected:
+    branch: "7.16"
+    version: "7.16.1"
+    server: "run"
 
-branches:
-- branch: "7.17"
-releases:
-- number: "7.17.0-alpha1"
-note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17390"
-date: "2021.11.09"
-- branch: "7.16"
-releases:
-- number: "7.16.0"
-note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16599"
-date: "2021.10.12"
-excludeservers:
-- "wildfly11"
-- "wildfly10"
-- "wildfly8"
-- "glassfish"
-- "ibm-was"
+  branches:
+    - branch: "7.17"
+      releases:
+      - number: "7.17.0-alpha1"
+      note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17390"
+      date: "2021.11.09"
+    - branch: "7.16"
+      releases:
+        - number: "7.16.1"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17108"
+          date: "2021.10.27"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+
+        - number: "7.16.0"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16599"
+          date: "2021.10.12"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
 
     - branch: "7.15"
       releases:
+        - number: "7.15.7"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17092"
+          date: "2021.10.27"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+      
         - number: "7.15.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16926"
           date: "2021.09.15"
@@ -150,6 +170,16 @@ excludeservers:
 
     - branch: "7.14"
       releases:
+        - number: "7.14.13"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17091"
+          date: "2021.10.27"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
         - number: "7.14.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16928"
           date: "2021.09.15"
