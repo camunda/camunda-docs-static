@@ -58,6 +58,11 @@ version: "7.16.0"
 server: "run"
 
 branches:
+- branch: "7.17"
+releases:
+- number: "7.17.0-alpha1"
+note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17390"
+date: "2021.11.09"
 - branch: "7.16"
 releases:
 - number: "7.16.0"
