@@ -2218,8 +2218,8 @@ Please note that Optimize alpha releases are not suitable for production environ
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+</td>
       <td>08.09.2020</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha2/camunda-optimize-3.2.0-alpha2-production.zip">zip</a> 
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0-alpha2/camunda-optimize-3.2.0-alpha2-production.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.0-alpha1/camunda-optimize-3.7.0-alpha1-production.zip">zip</a> 
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.0-alpha1/camunda-optimize-3.7.0-alpha1-production.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
