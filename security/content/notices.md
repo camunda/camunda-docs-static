@@ -15,6 +15,29 @@ releases of the community platform.
 
 # Notices
 
+## Notice 50
+
+**Publication Date: December 14th, 2021**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+The Camunda Platform web applications did not set the [SameSite attribute](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) on the session cookie. This enabled Cross-Site Request Forgery (CSRF) attacks if the [token-based CSRF prevention mechanism](https://docs.camunda.org/manual/7.16/webapps/shared-options/csrf-prevention/) was compromised (e.g. by another cross-site scripting vulnerability). Adding the `SameSite` attribute to the session cookie hardens Camunda against CSRF attacks.
+
+
+**How to determine if the installation is affected**
+
+- You are using the Camunda Platform web applications (Cockpit, Tasklist, Admin)
+
+**Solution**
+
+Camunda has provided the releases 7.17.0-alpha2, 7.16.2, 7.15.8, 7.14.14 which contain a fix. 
+
+Note that on the servers Oracle Weblogic, IBM Websphere, and JBoss EAP/Wildfly, the `SameSite` attribute is not enabled by default and needs server configuration as described in the guides on [how to configure the session cookie](https://docs.camunda.org/manual/7.16/webapps/shared-options/cookie-security/#session-cookie).
+
 ## Notice 49
 
 **Publication Date: November 30th, 2021**
