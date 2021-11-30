@@ -15,6 +15,53 @@ releases of the community platform.
 
 # Notices
 
+## Notice 49
+
+**Publication Date: November 30th, 2021**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The versions of busybox and ssl_client shipped with cawemo-restapi, cawemo-webapp and cawemo-websockets were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42374
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42375
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42378
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42379
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42380
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42381
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42382
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42383
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42384
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42385
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42386
+
+The versions of org.springframework:spring-core, org.springframework:spring-tx and io.netty:netty-transport shipped with cawemo-restapi were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-22096
+- https://nvd.nist.gov/vuln/detail/CVE-2021-37136
+- https://nvd.nist.gov/vuln/detail/CVE-2021-37137
+
+The version of json-schema shipped with cawemo-webapp was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-3918
+
+The version of symfony/http-kernel shipped with cawemo-websockets was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-41267
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.8.0 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.8.1 releases for the cawemo-restapi, cawemo-webapp and cawemo-websockets Docker images which contain fixes for the above-mentioned CVE.
+
 ## Notice 48
 
 **Publication Date: September 20th, 2021**
