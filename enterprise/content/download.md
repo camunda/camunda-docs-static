@@ -71,6 +71,17 @@ downloads:
           - "ibm-was"
           - "jboss"
 
+      - number: "7.17.0-alpha2"
+        note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17403"
+        date: "2021.12.13"
+        excludeservers:
+          - "wildfly11"
+          - "wildfly10"
+          - "wildfly8"
+          - "glassfish"
+          - "ibm-was"
+          - "jboss"
+
     - branch: "7.16"
       releases:
         - number: "7.16.2"
