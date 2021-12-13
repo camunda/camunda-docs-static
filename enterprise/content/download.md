@@ -2043,7 +2043,25 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
   </thead>
   <tbody>
-	<tr class="well">
+    <tr class="well">
+      <td>1.1.2</td>
+      <td>7.15+</td>
+      <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
+      <td>13.12.2021</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.2/camunda-bpm-rpa-bridge-1.1.2.zip">zip</a>
+      </td>
+    </tr>
+    <tr class="well">
+      <td>1.1.1</td>
+      <td>7.15+</td>
+      <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
+      <td>28.05.2021</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.1/camunda-bpm-rpa-bridge-1.1.1.zip">zip</a>
+      </td>
+    </tr>
+    <tr class="well">
       <td>1.1.0</td>
       <td>7.15+</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
