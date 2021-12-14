@@ -2135,13 +2135,13 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.6.3</td>
+      <td>3.6.4</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+</td>
-      <td>29.11.2021</td>
+      <td>14.12.2021</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.3/camunda-optimize-3.6.3-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.3/camunda-optimize-3.6.3-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.4/camunda-optimize-3.6.4-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.4/camunda-optimize-3.6.4-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -2171,6 +2171,17 @@ To get the production distribution, please download one of the following archive
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.6.4</td>
+      <td>7.14+, 7.15+, 7.16+</td>
+      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+</td>
+      <td>14.12.2021</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.4/camunda-optimize-3.6.4-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.4/camunda-optimize-3.6.4-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.6.3</td>
