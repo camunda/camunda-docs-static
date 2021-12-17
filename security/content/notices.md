@@ -15,6 +15,78 @@ releases of the community platform.
 
 # Notices
 
+## Notice 52
+
+**Publication Date: December 17th, 2021**
+
+**Product components affected**
+
+Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, IAM.
+
+**Impact**
+
+Camunda Run, Camunda RPA Bridge, and Camunda Optimize and IAM bundle log4j libraries for which the following CVEs have been published:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+* https://nvd.nist.gov/vuln/detail/CVE-2021-45046
+
+Specifically, the products bundle log4j-api and log4j-to-slf4j. However, **the products do not bundle the log4j-core
+library** which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run,
+Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM to be affected by the vulnerability.
+
+If you make use of any Camunda Optimize Demo Distribution, be aware that the bundled Elasticsearch is also affected by
+this CVE. However, according to Elastic no remote code execution is possible on Elasticsearch nodes, see the [Elastic Security Announcement](https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476/1).
+
+If you are using any of the Camunda Spring Boot Starters and [switched the default logging system to Log4J2](https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.logging.log4j), make
+sure to either update your version of Log4J as described in the following [Spring Boot article](https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot) or switch to a
+different logging implementation as described in the [Spring Boot guide](https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.logging).
+
+Still, Camunda recommends applying fixes as mentioned in Solutions below.
+
+**How to determine if the installation is affected**
+
+You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix
+
+* Camunda Platform Runtime 7.17.0-alpha2, 7.16.3, 7.15.9, and 7.14.15
+* Camunda RPA Bridge 1.1.3
+* Camunda Optimize 3.6.4
+* Cawemo 1.8.3
+* IAM 1.1.10
+
+## Notice 51
+
+**Publication Date: December 17th, 2021**
+
+**Product components affected**
+
+Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, IAM
+
+**Impact**
+
+Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo and IAM bundle logback libraries for which the following vulnerability was reported:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2021-42550
+
+Camunda recommends applying fixes as mentioned in Solutions below.
+
+**How to determine if the installation is affected**
+
+You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix
+
+* Camunda Platform Runtime 7.17.0-alpha2, 7.16.3, 7.15.9, and 7.14.15
+* Camunda RPA Bridge 1.1.3
+* Camunda Optimize 3.6.4
+* Cawemo 1.8.3
+* IAM 1.1.10
+
 ## Notice 50
 
 **Publication Date: December 14th, 2021**
