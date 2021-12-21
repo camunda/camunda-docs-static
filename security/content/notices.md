@@ -15,6 +15,35 @@ releases of the community platform.
 
 # Notices
 
+## Notice 53
+
+**Publication Date: December 21st, 2021**
+
+**Product affected**
+
+Cawemo On-Premises
+
+**Impact**
+
+The version of `netty-codec-http` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2021-43797
+
+The version of `laravel/framework` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2021-43808
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.8.3 or lower is used.
+* See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.8.4 releases for the `cawemo-restapi` and `cawemo-websockets` Docker images which contain fixes
+for the above-mentioned CVEs. 
+
+
 ## Notice 52
 
 **Publication Date: December 17th, 2021**
