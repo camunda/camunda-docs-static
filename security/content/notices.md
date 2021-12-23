@@ -30,7 +30,7 @@ has been published:
 
 * https://nvd.nist.gov/vuln/detail/CVE-2021-45105
 
-Similar to the [security notice 52][#notice-52] on Dec 17th, 2021. The products do not bundle the log4j-core library 
+Similar to the [security notice 52](#notice-52) on Dec 17th, 2021. The products do not bundle the log4j-core library 
 which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run, 
 Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM to be affected by the vulnerability.
 
