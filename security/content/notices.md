@@ -15,6 +15,40 @@ releases of the community platform.
 
 # Notices
 
+## Notice 54
+
+**Publication Date: December 23rd, 2021**
+
+**Product components affected:**
+
+Camunda Run, Camunda RPA Bridge, Camunda Optimize
+
+**Impact:**
+
+Camunda Run, Camunda RPA Bridge, and Camunda Optimize bundle log4j libraries for which the following CVEs 
+has been published:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2021-45105
+
+Similar to the [security notice 52][#notice-52] on Dec 17th, 2021. The products do not bundle the log4j-core library 
+which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run, 
+Camunda RPA Bridge, or Camunda Optimize to be affected by the vulnerability.
+
+Still, Camunda recommends applying fixes as mentioned in Solutions below.
+
+**How to determine if the installation is affected**
+
+You are using Camunda Run, Camunda RPA Bridge, or Camunda Optimize.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Automation Platform 7.16.4, 7.15.10, and 7.14.16
+* Camunda RPA Bridge 1.1.4
+* Camunda Optimize 3.6.5
+
+
 ## Notice 53
 
 **Publication Date: December 21st, 2021**
