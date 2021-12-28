@@ -93,6 +93,7 @@ downloads:
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
+              - "jboss"
       
         - number: "7.16.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17406"
@@ -103,6 +104,7 @@ downloads:
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
+              - "jboss"
       
         - number: "7.16.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17292"
@@ -113,6 +115,7 @@ downloads:
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
+              - "jboss"
       
         - number: "7.16.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17108"
@@ -123,6 +126,7 @@ downloads:
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
+              - "jboss"
 
         - number: "7.16.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16599"
@@ -133,6 +137,7 @@ downloads:
               - "wildfly8"
               - "glassfish"
               - "ibm-was"
+              - "jboss"
 
     - branch: "7.15"
       releases:
