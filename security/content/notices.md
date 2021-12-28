@@ -116,7 +116,7 @@ You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
 
 Camunda has provided the following releases which contain a fix
 
-* Camunda Platform Runtime 7.17.0-alpha2, 7.16.3, 7.15.9, and 7.14.15
+* Camunda Platform Runtime 7.16.3, 7.15.9, and 7.14.15
 * Camunda RPA Bridge 1.1.3
 * Camunda Optimize 3.6.4
 * Cawemo 1.8.3
@@ -146,7 +146,7 @@ You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
 
 Camunda has provided the following releases which contain a fix
 
-* Camunda Platform Runtime 7.17.0-alpha2, 7.16.3, 7.15.9, and 7.14.15
+* Camunda Platform Runtime 7.16.3, 7.15.9, and 7.14.15
 * Camunda RPA Bridge 1.1.3
 * Camunda Optimize 3.6.4
 * Cawemo 1.8.3
