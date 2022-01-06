@@ -2382,7 +2382,31 @@ In case you're interested in older versions of Optimize, feel free to checkout t
 
 ## Cawemo
 
-[Cawemo](/cawemo) is a web-based BPMN modeling application with a focus on collaboration. It is available as a hosted SaaS application (https://cawemo.com) or as an On-Premise version for own installation. For installing the latter, please refer to the [On-Premise installation guide](https://docs.camunda.org/cawemo/latest/technical-guide/installation/).
+[Cawemo](/cawemo) is a web-based BPMN modeling application with a focus on collaboration.
+It is available as a hosted SaaS application (https://cawemo.com) or as an On-Premise version for own installation.
+For installing the latter, please download one of the following archives and read the [installation guide](/cawemo/latest/technical-guide/installation/) for further instructions.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2">Name</th>
+      <th class="col-md-2">Version</th>
+      <th class="col-md-2">Release Date</th>
+      <th class="col-md-2">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><a href="/cawemo">Cawemo On-Premises</a></td>
+      <td>1.9.0</td>
+      <td>11.01.2022</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.0.zip">zip</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.0.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Camunda Modeler
 
