@@ -2230,13 +2230,13 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.6.5</td>
+      <td>3.7.0</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
-      <td>21.12.2021</td>
+      <td>11.01.2022</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.5/camunda-optimize-3.6.5-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.5/camunda-optimize-3.6.5-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.0/camunda-optimize-3.7.0-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.0/camunda-optimize-3.7.0-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -2266,6 +2266,17 @@ To get the production distribution, please download one of the following archive
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.7.0</td>
+      <td>7.14+, 7.15+, 7.16+</td>
+      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
+      <td>11.01.2022</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.0/camunda-optimize-3.7.0-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.0/camunda-optimize-3.7.0-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.6.5</td>
