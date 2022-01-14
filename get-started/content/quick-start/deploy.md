@@ -44,7 +44,7 @@ You can leverage the Camunda REST API to start a new process instance by sending
 ## a) curl
 
 ```sh
-curl -H "Content-Type: application/json" -X POST -d '{"variables": {"amount": {"value":555,"type":"long"}, "item": {"value":"item-xyz"} } }' http://localhost:8080/engine-rest/process-definition/key/payment-retrieval/start
+curl -H "Content-Type: application/json" -X POST -d '{"variables": {"amount": {"value":555,"type":"integer"}, "item": {"value":"item-xyz"} } }' http://localhost:8080/engine-rest/process-definition/key/payment-retrieval/start
 ```
 
 In your worker, you should now see the output in your console.
@@ -63,7 +63,7 @@ The JSON Body should look like this:
 	"variables": {
 		"amount": {
 			"value":555,
-			"type":"long"
+			"type":"integer"
 		},
 		"item": {
 			"value": "item-xyz"
