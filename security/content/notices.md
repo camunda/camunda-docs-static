@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 55
+
+**Publication Date: January 14th, 2022**
+
+**Product affected:**
+
+Camunda Platform
+
+**Impact:**
+
+Camunda Spin was vulnerable to XML external entity (XXE) attacks when XML variables were used.
+
+**How to determine if the installation is affected**
+
+- Camunda Spin is on the classpath
+  - Camunda distributions are used (e.g. Run, Tomcat, Wildfly)
+  - Spin is used as a project dependency
+- An attacker is able to access the REST API or web applications and has permissions to submit process variables
+
+**Solution**
+
+Camunda has provided the releases 7.17.0-alpha3, 7.16.4, 7.15.10, 7.14.16 which contain a fix.
+
+
 ## Notice 54
 
 **Publication Date: December 23rd, 2021**
@@ -44,7 +68,7 @@ You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
 
 Camunda has provided the following releases which contain a fix:
 
-* Camunda Automation Platform 7.16.4, 7.15.10, and 7.14.16
+* Camunda Automation Platform 7.17.0-alpha3, 7.16.4, 7.15.10, and 7.14.16
 * Camunda RPA Bridge 1.1.4
 * Camunda Optimize 3.6.5
 * Cawemo 1.8.4
@@ -116,7 +140,7 @@ You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
 
 Camunda has provided the following releases which contain a fix
 
-* Camunda Platform Runtime 7.16.3, 7.15.9, and 7.14.15
+* Camunda Platform Runtime 7.17.0-alpha3, 7.16.3, 7.15.9, and 7.14.15
 * Camunda RPA Bridge 1.1.3
 * Camunda Optimize 3.6.4
 * Cawemo 1.8.3
@@ -146,7 +170,7 @@ You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
 
 Camunda has provided the following releases which contain a fix
 
-* Camunda Platform Runtime 7.16.3, 7.15.9, and 7.14.15
+* Camunda Platform Runtime 7.17.0-alpha3, 7.16.3, 7.15.9, and 7.14.15
 * Camunda RPA Bridge 1.1.3
 * Camunda Optimize 3.6.4
 * Cawemo 1.8.3
