@@ -42,10 +42,18 @@ Click on the Tab `Forms` in the properties panel.
 
 This guide uses [Camunda Forms](/manual/latest/user-guide/task-forms/#camunda-forms) to add a form to the process. 
 We will create a form file called `payment.form`. 
-Add `camunda-forms:deployment:payment.form` as the *Form Key* to link this process to the form you are about to create.
+Set the following fields to link this process to the form you are about to create:
+
+* Type: Camunda Forms
+* Form Ref: payment-form
+* Binding: deployment
+
 {{< img src="../img/modeler-usertask-add.png" >}}
 
-Now, create a new form by clicking *File > New File > Form*
+Now, create a new form by clicking *File > New File > Form* and add `payment-form` as the `Id` field.
+
+{{< img src="../img/modeler-usertask-form.png" >}}
+
 You can add form fields by dragging and dropping elements from the *FORM ELEMENTS LIBRARY* on the left.
 Add the following three form fields:
 
