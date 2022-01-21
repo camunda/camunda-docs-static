@@ -15,6 +15,42 @@ releases of the community platform.
 
 # Notices
 
+## Notice 56
+
+**Publication Date: January 21th, 2022**
+
+**Product affected:**
+
+Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, IAM
+
+**Impact:**
+
+Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, and IAM bundle log4j libraries for which the following CVE 
+has been published:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2021-44832
+
+Similar to the [security notice 54](#notice-54) on Dec 23rd, 2021, **the products do not bundle the log4j-core library** 
+which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run, 
+Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM to be affected by the vulnerability.
+
+Still, Camunda recommends applying fixes as mentioned in Solutions below.
+
+**How to determine if the installation is affected**
+
+You are using Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.17.0-alpha3, 7.16.5, 7.15.11, and 7.14.17
+* Camunda RPA Bridge 1.1.5
+* Camunda Optimize 3.7.0
+* Cawemo 1.9.0
+* IAM 1.1.12
+
+
 ## Notice 55
 
 **Publication Date: January 14th, 2022**
