@@ -16,6 +16,16 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.17
+
+__Release Date:__ scheduled for 12th of April 2022
+
+__End of Maintenance:__ 11th of October 2023
+
+__Changes in Supported Environments:__
+
+* Support for MariaDB 10.6
+
 ## Camunda Platform 7.16
 
 __Release Date:__ scheduled for 12th of October 2021
