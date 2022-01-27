@@ -890,6 +890,17 @@ downloads:
 
     - branch: "7.11"
       releases:
+        - number: "7.11.21"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16693"
+          date: "2022.01.28"
+          excludeservers:
+            - "run"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+      
         - number: "7.11.20"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16393"
           date: "2020.11.25"
