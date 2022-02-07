@@ -61,6 +61,17 @@ downloads:
     - branch: "7.17"
       releases:
 
+      - number: "7.17.0-alpha4"
+        note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17439"
+        date: "2022.02.08"
+        excludeservers:
+          - "wildfly11"
+          - "wildfly10"
+          - "wildfly8"
+          - "glassfish"
+          - "ibm-was"
+          - "jboss"
+
       - number: "7.17.0-alpha3"
         note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17432"
         date: "2022.01.10"
