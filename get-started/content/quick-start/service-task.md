@@ -16,7 +16,7 @@ In this section, you'll learn how to create your first BPMN 2.0 process with the
 
 # Create a new BPMN Diagram
 
-Create a new BPMN diagram by clicking *File > New File > BPMN Diagram*.
+Create a new BPMN diagram by clicking *File > New File > BPMN Diagram (Camunda Platform)*.
 
 {{< img src="../img/modeler-new-bpmn-diagram.png" >}}
 
