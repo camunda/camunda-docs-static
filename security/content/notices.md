@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 57
+
+**Publication Date: February 8th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+When connected to LDAP, Camunda Platform Run logged sensitive LDAP connection configuration options during startup. 
+
+**How to determine if the installation is affected**
+
+* You use Camunda Platform Run
+* You connect Camunda Platform Run to LDAP for user management
+* An attacker has access to the log output
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.17.0-alpha4, 7.16.5, 7.15.11, and 7.14.17
+
 ## Notice 56
 
 **Publication Date: January 21th, 2022**
