@@ -24,7 +24,18 @@ __End of Maintenance:__ 11th of October 2023
 
 __Changes in Supported Environments:__
 
+* Support for Java 17
 * Support for MariaDB 10.6
+* Support for Weblogic 14
+* Support for DB2 11.5
+* Support for H2 2.x
+* End of Support for H2 1.4
+* End of Support for IBM Websphere 8.5
+* End of Support for MariaDB 10.2
+* End of Support for MariaDB Galera Cluster
+* End of Support for PostgreSQL 9.6 (and compatible Amazon Aurora versions)
+* End of Support for Java 9, 10, 12, 13, 14, 15
+
 
 ## Camunda Platform 7.16
 
