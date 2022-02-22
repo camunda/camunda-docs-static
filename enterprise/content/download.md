@@ -16,7 +16,7 @@ downloads:
       name: "Apache Tomcat"
       weight: 1
     - path: "jboss"
-      name: "JBoss AS 7"
+      name: "JBoss AS 7 / Red Hat JBoss EAP 6"
       weight: 2
     - path: "glassfish"
       name: "GlassFish"
@@ -43,7 +43,7 @@ downloads:
       name: "WildFly 11"
       weight: 10
     - path: "wildfly"
-      name: "WildFly"
+      name: "WildFly / Red Hat JBoss EAP 7"
       weight: 11
 
 
