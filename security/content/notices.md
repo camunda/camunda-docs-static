@@ -15,6 +15,51 @@ releases of the community platform.
 
 # Notices
 
+## Notice 58
+
+**Publication Date: March 2nd, 2022**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of netty-tcnative-classes shipped with cawemo-restapi was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-43797
+- https://nvd.nist.gov/vuln/detail/CVE-2019-16869
+- https://nvd.nist.gov/vuln/detail/CVE-2015-2156
+- https://nvd.nist.gov/vuln/detail/CVE-2021-37136
+- https://nvd.nist.gov/vuln/detail/CVE-2014-3488
+- https://nvd.nist.gov/vuln/detail/CVE-2021-37137
+- https://nvd.nist.gov/vuln/detail/CVE-2019-20445
+- https://nvd.nist.gov/vuln/detail/CVE-2019-20444
+- https://nvd.nist.gov/vuln/detail/CVE-2021-21295
+- https://nvd.nist.gov/vuln/detail/CVE-2021-21409
+- https://nvd.nist.gov/vuln/detail/CVE-2021-21290
+
+The version of min-dash shipped with cawemo-webapp was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-23460
+
+The version of node-fetch shipped with cawemo-webapp was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-0235
+
+The version of follow-redirects shipped with cawemo-webapp was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-0155
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.0 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.1 releases for the cawemo-restapi and cawemo-webapp Docker images which contain fixes for the above-mentioned CVEs.
+
 ## Notice 57
 
 **Publication Date: February 8th, 2022**
