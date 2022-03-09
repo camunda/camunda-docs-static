@@ -15,6 +15,56 @@ releases of the community platform.
 
 # Notices
 
+## Notice 60
+
+**Publication Date: March 9th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The Tomcat and Wildfly distributions include the H2 console web application that is vulnerable to remote code execution attacks.
+
+**How to determine if the installation is affected**
+
+* You use either the Tomcat or Wildfly distribution
+* An attacker can access the h2 console path (e.g. `https://<host>/h2` by default)
+* Note that this is independent if h2 is actually used as the Camunda database
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix, as of which the h2 console is only accessible for localhost connections:
+
+* Camunda Platform 7.17.0-alpha5, 7.16.6, 7.15.12, and 7.14.18
+
+As an alternative solution on lower versions, you can remove the h2 web application from the application server.
+
+## Notice 59
+
+**Publication Date: March 9th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Jackson used by Camunda Platform 7 was vulnerable to Denial of Service attacks.
+
+**How to determine if the installation is affected**
+
+* You use the Camunda Platform 7 REST API
+* An attacker is able to submit process variables
+* The Java serialization format for variables is enabled
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.17.0-alpha5, 7.16.6, 7.15.12, and 7.14.18
+
 ## Notice 58
 
 **Publication Date: March 2nd, 2022**
