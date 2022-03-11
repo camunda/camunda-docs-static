@@ -28,7 +28,7 @@ __Changes in Supported Environments:__
 * Support for MariaDB 10.6
 * Support for Weblogic 14
 * Support for DB2 11.5
-* Support for H2 2.x
+* Support for H2 2.0
 * Support for DB2 11.5
 * End of Support for H2 1.4
 * End of Support for IBM Websphere 8.5
