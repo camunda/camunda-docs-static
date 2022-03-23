@@ -7,121 +7,131 @@ menu:
     identifier: "enterprise-portal"
 ---
 
+<<<<<<< HEAD
 This guide is intended to help you navigate our new Camunda Enterprise Customer Portal. This document includes information about how to get access, how to download the license keys, create temporary license keys and manage support contacts for our support JIRA.
+=======
+This guide helps you navigate our Camunda Enterprise Customer Portal. This document includes information about how to gain access, download the license keys, create temporary license keys, and manage support contacts for our support JIRA.
+>>>>>>> c2b13f4 (docs(portal): technical review of documentation)
 
-Please note that support will continue to be provided via our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues).
+Note that support will continue to be provided via our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues).
 
-**Disclaimer**: the Camunda Enterprise Portal is currently in closed beta. If you would like to be part of the beta users, please contact your Customer Success Manager or email customer-success@camunda.com.
+**Disclaimer**: The Camunda Enterprise Portal is currently in closed beta. If you would like to join the beta users, contact your Customer Success Manager or email customer-success@camunda.com.
 
-
-## How is the Portal Organized?
+## How the Portal is organized
 
 The Portal is divided into the following areas:
 
-**Dashboard:** works as the home page of the Portal. In this area, you can:
+### Dashboard
 
- * Check out important updates/news (e.g. new product releases)
- * Find quick links to relevant areas/pages (e.g. JIRA, Manuals, Best Practices)
- * Check pinned content
+This works as the home page of the Portal. In this area, you can:
 
-**Content & Resources:** central repository for case studies, blog posts, demos, and other content. You can filter content using the top filters and pin content.
+- Check out important updates/news (e.g. new product releases).
+- Find quick links to relevant areas/pages (e.g. JIRA, Manuals, Best Practices).
+- Check pinned content.
 
-**Playbooks:** compilations of resources available under Content & Resources
+### Content & Resources
 
-**Training & Certification:** area with links to Camunda Academy, Custom Training Requests, and Open Trainings.
+This is the central repository for case studies, blog posts, demos, and other content. You can filter content using the top filters and pin content.
 
-**Products & Best Practices:** section that links to Best Practices and Success Paths. Under this section, selected admin users from the customers (enabled by their Customer Success Manager) will be able to access some additional areas:
+### Playbooks
 
-* **Subscription Overview:** page where admin users can find subscription information (e.g. SLA and SLA Timezone), usage limits (e.g. PIs/DIs/TUs included), and support contact limits (e.g. number of full support contacts included).
-    
-* **License Key Manager:** area where your company’s license key(s) will be available to download. Additionally, admin users will be able to create temporary license keys for development (valid for 90 days).
-    
-* **Support Contact Manager:** page where the admin users can add/remove/edit the support contacts who can access JIRA support.
+This area includes compilations of resources available under **Content & Resources**.
 
+### Training & Certification
 
-## Who can have access?
+This is an area with links to Camunda Academy, Custom Training Requests, and Open Trainings.
 
-**All support contacts at your company who have access to our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/).  
+### Products & Best Practices
+
+This is the section that links to Best Practices and Success Paths. Under this section, selected admin users from the customers (enabled by their Customer Success Manager) are able to access some additional areas, including the following:
+
+- **Subscription Overview**: Admin users can find subscription information (e.g. SLA and SLA timezone), usage limits (e.g. PIs, DIs, TUs included), and support contact limits (e.g. number of full support contacts included).
+- **License Key Manager**: This is where your company’s license key(s) are available to download. Additionally, admin users are able to create temporary license keys for development (valid for 90 days).
+- **Support Contact Manager**: The page where the admin users can add, remove, and edit the support contacts who can access JIRA support.
+
+## Who can have access
+
+All support contacts at your company who have access to our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/) have access.  
   
-Some areas (e.g. License Key Manager) are only available for people your company nominated as admins. Please contact your Customer Success Manager for more details.**
+Some areas (e.g. License Key Manager) are only available for people your company nominates as admins. Contact your Customer Success Manager for more details.
 
-## How to login?
+## How to log in
 
-Go to [customers.camunda.com](http://customers.camunda.com) and use the same login credentials you are using for our [JIRA support system.](https://jira.camunda.com/projects/SUPPORT)
+To log in, go to [customers.camunda.com](http://customers.camunda.com) and use the same login credentials you use for our [JIRA support system](https://jira.camunda.com/projects/SUPPORT).
 
-## How to Access my Subscription Details?
+## How to access subscription details
 
-Selected admin users from the customers (enabled by their Customer Success Manager) will be able to access the Subscription Overview page.  
+1. Log in to the [Customer Portal](https://customers.camunda.com/).
+2. Go to the [Subscription Overview page](https://connect.camunda.com/knowledge-base/subscription-overview/).
+
+Selected admin users from the customers (enabled by their Customer Success Manager) are able to access the **Subscription Overview** page.  
   
-Under that page, you can find subscription information (e.g. SLA and SLA Timezone), usage limits (e.g. PIs/DIs/TUs included), and support contact limits (e.g. number of full support contacts included).
+Under that page, you can find subscription information (e.g. SLA and SLA Timezone), usage limits (e.g. PIs, DIs, TUs included), and support contact limits (e.g. number of full support contacts included).
 
 {{< img src="../img/portal_subscription_overview.png" title="Subscription Overview" >}}
 
-* Login to the [Customer Portal](https://customers.camunda.com/)
-* Go to the [Subscription Overview page](https://connect.camunda.com/knowledge-base/subscription-overview/)
+## How to retrieve your license key
 
-## How to Retrieve Your License Key?
-
-Selected admin users from the customers (enabled by their Customer Success Manager) will be able download their license key from the Portal.
+Selected admin users from the customers (enabled by their Customer Success Manager) are able to download their license key from the Portal.
 
 {{< img src="../img/portal_download_license_key.png" title="Download License Key" >}}
 
-* Login to the [Customer Portal](https://customers.camunda.com/)
-* Go to the [License Key Manager page](https://connect.camunda.com/knowledge-base/license-key-management/)
-* Under the Current License find your current license.
-* Click the button Download to export as txt file
+1. Log in to the [Customer Portal](https://customers.camunda.com/).
+2. Go to the [License Key Manager page](https://connect.camunda.com/knowledge-base/license-key-management/).
+3. Under **Current License**, find your current license.
+4. Click **Download** to export as a `txt` file.
 
-## How to Create a Temporary License Key?
+## How to create a temporary license key
 
-Selected admin users from the customers (enabled by their Customer Success Manager) will be able to create temporary license keys for development (valid for 90 days).
+Selected admin users from the customers (enabled by their Customer Success Manager) are able to create temporary license keys for development (valid for 90 days).
 
 {{< img src="../img/portal_create_temp_license_key.png" title="Create Temporary License Key" >}}
 
-*   Login to the [Customer Portal](https://customers.camunda.com/)
-*   Go to the [License Key Manager page](https://connect.camunda.com/knowledge-base/license-key-management/)
-*   Select Add temporary license
-*   Review the pop-up message and click Yes to proceed
-*   Retrieve the new license key under the Other Licenses area and click the button Download to download it
+1. Log in to the [Customer Portal](https://customers.camunda.com/).
+2. Go to the [License Key Manager page](https://connect.camunda.com/knowledge-base/license-key-management/).
+3. Select **Add temporary license**.
+4. Review the pop-up message and click **Yes**.
+5. Retrieve the new license key under **Other Licenses** and click **Download** to download it.
 
-## How to Create a Support Contact?
+## How to create a support contact
 
-Selected admin users from the customers (enabled by their Customer Success Manager) will be able to create new support contacts for the [JIRA support system](https://jira.camunda.com/projects/SUPPORT/).
+Selected admin users from the customers (enabled by their Customer Success Manager) are able to create new support contacts for the [JIRA support system](https://jira.camunda.com/projects/SUPPORT/).
 
 {{< img src="../img/portal_create_support_contact.png" title="Create Support Contact" >}}
 
-* Login to the [Customer Portal](https://customers.camunda.com/)
-* Go to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/)
-*  Click New Support Contact (a new tab will open)
-*  In the new tab, enter the requested information
-	*  First Name
-	*  Last Name
-	*  Email
-	*  Project Role
-	* Read-Only (select Yes if the user should only see tickets but not create)
-*  Once all information was entered, click Create
-    
-Navigate back to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/)  and the new contact should be available on the page
+1. Log in to the [Customer Portal](https://customers.camunda.com/).
+2. Go to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/).
+3. Click **New Support Contact** (a new tab will open).
+4. In the new tab, enter the requested information:
+   - First Name
+   - Last Name
+   - Email
+   - Project Role
+   - Read-Only (select **Yes** if the user should only see tickets but not create new tickets.)
+5. Once all information is entered, click **Create**.
 
-## How to change a Support Contact?
+Navigate back to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/) where the new contact will be available.
 
-Selected admin users from the customers (enabled by their Customer Success Manager) will be able to change a support contact between full access (where users can create tickets) and read-only for the [JIRA support system](https://jira.camunda.com/projects/SUPPORT/.
+## How to change a support contact
+
+Selected admin users from the customers (enabled by their Customer Success Manager) are able to change a support contact between full access (where users can create tickets) and read-only for the [JIRA support system](https://jira.camunda.com/projects/SUPPORT/).
 
 {{< img src="../img/portal_edit_support_contact.png" title="Edit Support Contact" >}}
 
-* Login to the [Customer Portal](https://customers.camunda.com/)    
-*  Go to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/)
-*  Find the support contact under the Current Support Contacts area
-*  Click Change Access
-*  Review the pop-up message and click Yes to proceed
+1. Log in to the [Customer Portal](https://customers.camunda.com/).
+2. Go to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/).
+3. Find the support contact under **Current Support Contacts**.
+4. Click **Change Access**.
+5. Review the pop-up message and click **Yes**.
 
-## How to delete a Support Contact?
+## How to delete a support contact
 
-Selected admin users from the customers (enabled by their Customer Success Manager) will be able to delete an existing support contact in the [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues).
+Selected admin users from the customers (enabled by their Customer Success Manager) are able to delete an existing support contact in the [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues).
 
 {{< img src="../img/portal_delete_support_contact.png" title="Delete Support Contact" >}}
 
--   Login to the [Customer Portal](https://customers.camunda.com/)
--   Go to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/)
--   Find the support contact under the Current Support Contacts area
--   Click Delete
--   Review the pop-up message and click Yes to proceed
+1. Log in to the [Customer Portal](https://customers.camunda.com/).
+2. Go to the [Support Contact Manager page](https://connect.camunda.com/knowledge-base/support-contact-management/).
+3. Find the support contact under **Current Support Contacts**.
+4. Click **Delete**.
+5. Review the pop-up message and click **Yes**.
