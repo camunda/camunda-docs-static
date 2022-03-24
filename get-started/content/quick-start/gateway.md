@@ -19,7 +19,7 @@ We want to modify our process so that it's more dynamic.
 
 To do so, open the process in the Camunda Modeler.
 
-Next, from the Modeler's left-hand menu, select the gateway shape (diamond) and drag it into position between the Start Event and the Service Task. Move the User Task down and add another Gateway after it. Lastly, adjust the Sequence Flows so that the model looks like this:
+Next, from the Modeler's left-hand menu, select the gateway shape (diamond) and drag it into position between the Start Event and the Service Task. (Use the create space tool again as needed.) Move the User Task down and add another Gateway after it. Lastly, adjust the Sequence Flows so that the model looks like this:
 {{< img src="../img/modeler-gateway1.png" >}}
 
 Now also name the new elements accordingly:

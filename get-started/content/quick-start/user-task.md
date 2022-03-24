@@ -19,6 +19,8 @@ We want to modify our process so that we can involve humans.
 
 To do so, open the process in the Camunda Modeler.
 
+Select the create/remove space tool (<||>) from the Modeler's left-hand menu, and use it to create space between the Start Event and the "Charge Credit Card" Service Task (click and drag the cursor to the right). 
+
 Next, from the Modeler's left-hand menu, select the activity shape (rounded rectangle) and drag it into position between the Start Event and the "Charge Credit Card" Service Task. Name it *Approve Payment*.
 {{< img src="../img/modeler-usertask1.png" >}}
 
@@ -105,6 +107,8 @@ Click on the {{< glyphicon name="list-alt" text=" Start process" >}} button to s
 The generic form can be used whenever you have not added a dedicated form for a User Task or a Start Event.
 Click on the *Add a variable* button to create a new row. Fill in the form as shown in the screenshot. When you're done, click *Start*.
 
+{{< note class="info" title="Hint" >}}
+If you don't see any tasks in your Tasklist, you might need a filter. Add one by clicking *Add a simple filter* on the left. {{< /note >}}
 
 You should now see the *Approve Payment* task in your Tasklist. Select the task and click on the *Diagram* tab. This displays the process diagram highlighting the User Task that's waiting to be worked on.
 

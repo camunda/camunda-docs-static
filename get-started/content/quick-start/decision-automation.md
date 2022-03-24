@@ -38,7 +38,7 @@ Next, create a new DMN table by clicking the table button.
 # Specify the DMN table
 First, specify the input expressions for the DMN table. In this example, we'll decide whether a payment is approved based on the item name. Your rules can also make use of the FEEL Expression Language, JUEL or Script. If you like, you can [read more about Expressions in the DMN Engine](/manual/latest/user-guide/dmn-engine/expressions-and-scripts/).
 
-For the input column, use  `Item` as the *Input Label* and `item` as the *Input Expression*:
+Double click *Input* to configure the input column. Use  `Item` as the *Input Label* and `item` as the *Input Expression*:
 {{< img src="../img/modeler-dmn2.png" >}}
 
 Next, set up the output column. Use `Approved` as the *Output Label* and `approved` as the *Output Name* for the output column "Approved":
