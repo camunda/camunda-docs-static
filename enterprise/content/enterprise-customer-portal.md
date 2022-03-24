@@ -15,7 +15,7 @@ This guide helps you navigate our Camunda Enterprise Customer Portal. This docum
 
 Note that support will continue to be provided via our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues).
 
-**Disclaimer**: The Camunda Enterprise Portal is currently in closed beta. If you would like to join the beta users, contact your Customer Success Manager or email customer-success@camunda.com.
+**Disclaimer**: The Camunda Enterprise Portal is currently in closed beta. If you would like to join the beta users, contact your Customer Success Manager or email [customer-success@camunda.com](mailto:customer-success@camunda.com).
 
 ## How the Portal is organized
 
