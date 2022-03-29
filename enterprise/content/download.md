@@ -118,7 +118,7 @@ downloads:
 
     - branch: "7.16"
       releases:
-      - number: "7.16.7"
+        - number: "7.16.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17447"
           date: "2022.03.31"
           excludeservers:
