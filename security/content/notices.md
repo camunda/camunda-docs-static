@@ -15,6 +15,98 @@ releases of the community platform.
 
 # Notices
 
+## Notice 65
+
+**Publication Date: April 7th, 2022**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-webmvc` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22965
+
+However, as of now, we were not able to identify a possible exploit of this vulnerability in Cawemo via the particular
+exploit described in the [official blog post](https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement).
+
+At least two of the prerequisites do not apply to Cawemo: "Apache Tomcat as the Servlet container" and "Packaged as a
+traditional WAR (in contrast to a Spring Boot executable jar)" (Cawemo is packaged as an executable jar with an embedded
+Undertow).
+
+Nevertheless, we updated Cawemo to Spring Boot 2.6.6 / Spring MVC 5.3.18 (which includes a fix for the CVE).
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.1 or lower is used
+- See the linked blog post above for a detailed description of the circumstances required to exploit the vulnerability
+
+**Solution**
+
+Camunda has provided the 1.9.2 release for the `cawemo-restapi` Docker image which contains a fix.
+
+## Notice 64
+
+**Publication Date: April 7th, 2022**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `busybox` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-28391
+
+The version of `openssl` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-0778
+
+The version of `zlib` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2018-25032
+
+The version of `jackson-databind` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-36518
+
+The version of `postgresql` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-21724
+- https://nvd.nist.gov/vuln/detail/CVE-2022-26520
+
+The version of `ansi-regex` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-3807
+
+The version of `minimist` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-44906
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-23308
+
+The version of `guzzlehttp/psr7` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24775
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.1 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.2 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 63
 
 **Publication Date: April 1st, 2022**
