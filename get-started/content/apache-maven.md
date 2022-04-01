@@ -125,7 +125,7 @@ It is not needed when using `camunda-engine` because that already contains the D
 
 ## Artifactory
 {{< note title="General Info" class="info" >}}
-  We have recently migrated from Nexus to Artifactory, see the [blog post](https://camunda.com/blog/2021/09/nexus-to-artifactory-an-infrastructural-digest/) for insights.
+  We have recently updated our Artifactory domain name, see the [blog post](https://camunda.com/blog/2022/03/a-new-domain-name-for-camunda-artifactory/) for insights.
 {{< /note >}}
 ### Community Edition
 The config in the Camunda Nexus part about the [Community Edition]({{< relref "#community-edition-1" >}}) is still valid due to URL redirects.
