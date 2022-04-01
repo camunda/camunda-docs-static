@@ -15,6 +15,107 @@ releases of the community platform.
 
 # Notices
 
+## Notice 63
+
+**Publication Date: April 1st, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of the PostgreSQL JDBC driver used in the Camunda Platform 7 Docker images had multiple vulnerabilities:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2018-10936
+* https://nvd.nist.gov/vuln/detail/CVE-2020-13692
+* https://nvd.nist.gov/vuln/detail/CVE-2022-21724
+
+**How to determine if the installation is affected**
+
+* You use the Camunda Docker images
+* You connect to a PostgreSQL database
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.17.0-alpha5, 7.16.7, 7.15.13, and 7.14.19
+
+## Notice 62
+
+**Publication Date: April 1st, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions, RPA Bridge, and transitively pulled in by the Camunda Spring Boot starter had two vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-42340
+- https://nvd.nist.gov/vuln/detail/CVE-2022-23181
+
+**How to determine if the installation is affected**
+
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter *or* Camunda RPA Bridge is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.17.0-alpha6, 7.16.7, 7.15.13, 7.14.19, RPA Bridge 1.1.6 which contain a fix. 
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
+## Notice 61
+
+**Publication Date: April 1st, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The Docker images for Camunda Platform 7 contained system libraries with reported vulnerabilities.
+
+libexpat:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2022-25235
+* https://nvd.nist.gov/vuln/detail/CVE-2022-25236
+* https://nvd.nist.gov/vuln/detail/CVE-2022-25313
+* https://nvd.nist.gov/vuln/detail/CVE-2022-25314
+* https://nvd.nist.gov/vuln/detail/CVE-2022-25315
+* https://nvd.nist.gov/vuln/detail/CVE-2022-23852
+* https://nvd.nist.gov/vuln/detail/CVE-2022-23990
+* https://nvd.nist.gov/vuln/detail/CVE-2021-45960
+* https://nvd.nist.gov/vuln/detail/CVE-2021-46143
+* https://nvd.nist.gov/vuln/detail/CVE-2022-22822
+* https://nvd.nist.gov/vuln/detail/CVE-2022-22823
+* https://nvd.nist.gov/vuln/detail/CVE-2022-22824
+* https://nvd.nist.gov/vuln/detail/CVE-2022-22825
+* https://nvd.nist.gov/vuln/detail/CVE-2022-22826
+* https://nvd.nist.gov/vuln/detail/CVE-2022-22827
+
+openssl:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2022-0778
+
+**How to determine if the installation is affected**
+
+* You use the Camunda Docker images
+* Due to the low-level nature of these vulnerabilities, we cannot reliably assess if Camunda installations are practically affected. We generally recommend to update for this reason.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.17.0-alpha6, 7.16.7, 7.15.13, and 7.14.19
+
+
 ## Notice 60
 
 **Publication Date: March 9th, 2022**
