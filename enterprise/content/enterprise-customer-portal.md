@@ -7,11 +7,7 @@ menu:
     identifier: "enterprise-portal"
 ---
 
-<<<<<<< HEAD
-This guide is intended to help you navigate our new Camunda Enterprise Customer Portal. This document includes information about how to get access, how to download the license keys, create temporary license keys and manage support contacts for our support JIRA.
-=======
 This guide helps you navigate our Camunda Enterprise Customer Portal. This document includes information about how to gain access, download the license keys, create temporary license keys, and manage support contacts for our support JIRA.
->>>>>>> c2b13f4 (docs(portal): technical review of documentation)
 
 Note that support will continue to be provided via our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues).
 
