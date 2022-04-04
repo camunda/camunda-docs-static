@@ -49,7 +49,8 @@ After downloading the distribution, unpack it inside a directory of your choice.
 
 {{< note class="info" title="Additional requirement for Java 9 or above" >}}
 If you are using Java 9 or above, you additionally need a JAXB implementation. Download the [jaxb-impl dependency](https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar) and copy it to the following path of the `camunda-bpm-run` application:
-`/camunda-bpm-run-7.x.x/configuration/userlib` {{< /note >}}
+`/camunda-bpm-run-7.x.x/configuration/userlib`
+{{< /note >}}
 
 After you've successfully unpacked your distribution of the Camunda Platform, execute the script named `start.bat` (for Windows users) or `start.sh` (for Unix users).
 

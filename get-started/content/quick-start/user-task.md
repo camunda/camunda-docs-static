@@ -108,7 +108,8 @@ The generic form can be used whenever you have not added a dedicated form for a 
 Click on the *Add a variable* button to create a new row. Fill in the form as shown in the screenshot. When you're done, click *Start*.
 
 {{< note class="info" title="Hint" >}}
-If you don't see any tasks in your Tasklist, you might need a filter. Add one by clicking *Add a simple filter* on the left. {{< /note >}}
+If you don't see any tasks in your Tasklist, you might need a filter. Add one by clicking *Add a simple filter* on the left.
+{{< /note >}}
 
 You should now see the *Approve Payment* task in your Tasklist. Select the task and click on the *Diagram* tab. This displays the process diagram highlighting the User Task that's waiting to be worked on.
 
