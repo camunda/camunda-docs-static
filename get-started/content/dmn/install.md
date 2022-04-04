@@ -38,7 +38,7 @@ This script will start the application server and open a welcome screen in your 
 
 {{< note title="Getting Help" class="info" >}}
 If you have trouble setting up the Camunda Platform, you can ask for assistance in the [Camunda Users Forum](https://forum.camunda.org/).
-
+{{< /note >}}
 
 # Camunda Modeler
 
