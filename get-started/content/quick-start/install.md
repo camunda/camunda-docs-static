@@ -39,18 +39,17 @@ You can verify this by using your terminal, shell, or command line:
 ```sh
 java -version
 ```
-If you need to install Java Runtime Environment, you can [find the download from Oracle here](https://www.oracle.com/technetwork/java/javase/downloads/index.html). You can also choose another JDK from [Camunda's support list](/manual/latest/introduction/supported-environments/#java-runtime).
+If you need to install Java Runtime Environment, you can [find the download from Oracle here](https://www.oracle.com/technetwork/java/javase/downloads/index.html). 
+
+{{< note class="info" title="Supported Java versions" >}}
+Make sure to use a Java version from [Camunda's list of supported environments](/manual/latest/introduction/supported-environments/#java-runtime).
+{{< /note >}}
 
 # Camunda Platform
 
 First, download a distribution of the Camunda Platform. You can choose from different distributions for [various application servers](/manual/latest/installation/full/). In this tutorial, we'll use Camunda Platform Run. Download it from [the download page](https://camunda.com/download/).
 
 After downloading the distribution, unpack it inside a directory of your choice.
-
-{{< note class="info" title="Additional requirement for Java 9 or above" >}}
-If you are using Java 9 or above, you additionally need a JAXB implementation. Download the [jaxb-impl dependency](https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar) and copy it to the following path of the `camunda-bpm-run` application:
-`/camunda-bpm-run-7.x.x/configuration/userlib`
-{{< /note >}}
 
 After you've successfully unpacked your distribution of the Camunda Platform, execute the script named `start.bat` (for Windows users) or `start.sh` (for Unix users).
 
