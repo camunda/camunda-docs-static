@@ -29,9 +29,9 @@ To prepare the setup of the RPA Bridge, please
 * Open the ‘API Access’ overlay for your tenant (you might need to expand the tenant with the arrow next to it)
 * Copy the values for
   * User Key
-  * Account Logical Name
-  * Tenant Logical Name
-  * Client Id
+  * Organization ID
+  * Tenant Name
+  * Client ID
 
 {{< img src="../img/rpa-uipath-api-access.png" title="UiPath API Access" >}}
 
@@ -95,14 +95,14 @@ Edit the config file `application.yml`:
 * add `#` to the beginning of each line under `automation-anywhere-api`, so it is not considered by the Bridge
 * under the `uipath-api` element, adjust the following
   * `url`: set to `https://platform.uipath.com/`
-  * `account-name`: the Account Logical Name from the API Access overlay
-  * `tenant-name`: the Tenant Logical Name from the API Access overlay
+  * `account-name`: the Organization ID from the API Access overlay
+  * `tenant-name`: the Tenant Name from the API Access overlay
   * `folder-path`: adjust to the name of the folder you want to work with, in case you do **NOT** want to work with a folder called "Default"
   * `organization-unit-id`: see above how to [retrieve your organization unit id](#uipath)
   * under the `authentication` element, adjust the following
      * `type`: set to `cloud`
      * `auth-url`: switch to `https://account.uipath.com/oauth/token`
-     * `user`: the Client Id from the API Access overlay
+     * `user`: the Client ID from the API Access overlay
      * `key`: the User Key from the API Access overlay
   * `status-update-method`: set to `polling`
   * `webhook`: add `#` to the beginning of each line under `webhook`, so it is not considered by the Bridge
