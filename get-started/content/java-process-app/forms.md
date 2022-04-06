@@ -1,74 +1,73 @@
 ---
 
-title: 'Adding HTML Start and Task Forms to a BPMN 2.0 Process'
+title: 'Adding Start and Task Forms to a BPMN 2.0 Process'
 weight: 50
 
 menu:
   main:
-    name: "HTML Forms"
+    name: "Forms"
     parent: "get-started-pa"
     identifier: "get-started-pa-forms"
-    pre: "Add simple HTML based Forms to the Process."
+    pre: "Add simple Forms to the Process."
 
 ---
 
-In the next step, we want to add an HTML based task form to the application.
+In the next step, we want to add a task form to the application.
 
 
 # Add a Start Form
 
-Go back to Eclipse and add a folder named `src/main/webapp/forms`. Inside this folder, add a file named `request-loan.html`. Add the following content:
+Create a new form in Camunda Modeler and set its id to `request-loan`. 
 
-```html
-<form name="requestLoan">
-  <div class="form-group">
-    <label for="customerId">Customer ID</label>
-    <input class="form-control"
-           cam-variable-type="String"
-           cam-variable-name="customerId"
-           name="customerId" />
-  </div>
-  <div class="form-group">
-    <label for="amount">Amount</label>
-    <input class="form-control"
-           cam-variable-type="Double"
-           cam-variable-name="amount"
-           name="amount" />
-  </div>
-</form>
-```
+Add a **Text Field**, set the **Field Label** to `Customer ID` and the **Key** to `customerId`.
 
-Open the process with the modeler. Click on the start event. In the properties view, click on the `Forms` tab and insert `embedded:app:forms/request-loan.html` into the `Form Key` property field. This means that we want to use an `embedded` form inside the Tasklist and that the form is loaded from the application. Save the diagram and refresh the Eclipse project.
+Add a **Number Field**, set the **Field Label** to `Amount` and the **Key** to `amount`.
+
+Save the form with the file name `request-loan.form` to `src/main/resources`.
+
+{{< img src="../img/form-builder-start-form.png" >}}
+
+Open the process with the modeler. Click on the start event. In the properties panel, click on `Forms` select `Camunda Forms` as type, insert `request-loan` into the `Form reference` field, and choose `latest` as binding. This means Tasklist uses the latest deployed version of the form. Save the diagram and refresh the Eclipse project.
 
 {{< img src="../img/modeler-start-form.png" >}}
 
 
 # Add a Task Form
 
-The task form can be added and configured the same way. Add a file named `approve-loan.html` to the `src/main/webapp/forms` directory and add the following content:
+You can add and configure the task form in a similar way with the difference, 
+that you set its id to `approve-loan` and select the **Disabled** checkbox in both fields.
 
-```html
-<form name="approveLoan">
-  <div class="form-group">
-    <label for="customerId">Customer ID</label>
-    <input class="form-control"
-           cam-variable-type="String"
-           cam-variable-name="customerId"
-           name="customerId"
-           readonly="true" />
-  </div>
-  <div class="form-group">
-    <label for="amount">Amount</label>
-    <input class="form-control"
-           cam-variable-type="Double"
-           cam-variable-name="amount"
-           name ="amount" />
-  </div>
-</form>
+Save the form with the file name `approve-loan.form` to `src/main/resources`.
+
+After that, open the process with the modeler. Click on the user task. In the properties panel, click on `Forms` select `Camunda Forms` as type, insert `approve-loan` into the `Form reference` field, and choose `latest` as binding.
+
+# Adjust the deployment descriptor file
+
+Adjust the `META-INF/processes.xml` deployment descriptor file by adding the form resources:
+
+```xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<process-application
+        xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <process-archive name="loan-approval">
+    <process-engine>default</process-engine>
+    
+    <resource>loan-approval.bpmn</resource>
+    <resource>request-loan.form</resource>
+    <resource>approve-loan.form</resource>
+    
+    <properties>
+      <property name="isDeleteUponUndeploy">false</property>
+      <property name="isScanForProcessDefinitions">true</property>
+    </properties>
+  </process-archive>
+
+</process-application>
 ```
-
-After that, open the process with the modeler again. Click on the user task. In the properties view, click on the `Forms` tab and insert `embedded:app:forms/approve-loan.html` into the `Form Key` property field.
-
 
 # Re-Build and Deploy
 
