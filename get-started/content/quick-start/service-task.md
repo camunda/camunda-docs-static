@@ -124,7 +124,7 @@ Your pom.xml file of your project should look like this:
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<camunda.external-task-client.version>7.16.0</camunda.external-task-client.version>
+		<camunda.external-task-client.version>7.17.0</camunda.external-task-client.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
