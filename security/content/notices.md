@@ -164,7 +164,7 @@ Other solutions:
 
 ## Notice 61
 
-**Publication Date: April 1st, 2022**
+**Publication Date: April 1st, 2022 (updated April 11th, 2022)**
 
 **Product affected:**
 
@@ -195,6 +195,10 @@ libexpat:
 openssl:
 
 * https://nvd.nist.gov/vuln/detail/CVE-2022-0778
+
+libxml2: 
+
+* https://nvd.nist.gov/vuln/detail/CVE-2022-23308
 
 **How to determine if the installation is affected**
 
