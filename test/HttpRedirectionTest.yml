@@ -10,9 +10,6 @@ https://docs.camunda.org:
   /optimize/:
     target: /optimize/latest/
     status: 301
-  /optimize/user-guide/homepage/:
-    target: /optimize/latest/user-guide/homepage/
-    status: 307
   /manual/reference/bpmn20:
     target: /manual/7.17/reference/bpmn20
     status: 307
@@ -28,21 +25,6 @@ https://docs.camunda.org:
   /get-started/does-not-exist:
     target: /manual/
     status: 302
-  /optimize/99.0/user-guide/homepage:
-    target: /optimize/latest/user-guide/homepage
-    status: 307
-  /optimize/develop/technical-guide/configuration:
-    target: /optimize/develop/technical-guide/setup/configuration/
-    status: 301
-  /optimize/develop/technical-guide/installation:
-    target: /optimize/develop/technical-guide/setup/installation/
-    status: 301
-  /optimize/latest/technical-guide/installation:
-    target: /optimize/latest/technical-guide/setup/installation/
-    status: 301
-  /optimize/latest/technical-guide/configuration/:
-    target: /optimize/latest/technical-guide/setup/configuration/
-    status: 301
   /cawemo/:
     target: /cawemo/latest/
     status: 301
@@ -71,9 +53,6 @@ https://stage.docs.camunda.org:
   /optimize/:
     target: /optimize/latest/
     status: 301
-  /optimize/user-guide/homepage/:
-    target: /optimize/latest/user-guide/homepage/
-    status: 307
   /get-started/javaee6:
     target: /get-started/javaee7
     status: 301
@@ -83,21 +62,6 @@ https://stage.docs.camunda.org:
   /get-started/cmmn11/project-setup:
     target: /manual/latest/reference/cmmn11/
     status: 307
-  /optimize/99.0/user-guide/homepage:
-    target: /optimize/latest/user-guide/homepage
-    status: 307
-  /optimize/develop/technical-guide/configuration:
-    target: /optimize/develop/technical-guide/setup/configuration/
-    status: 301
-  /optimize/develop/technical-guide/installation:
-    target: /optimize/develop/technical-guide/setup/installation/
-    status: 301
-  /optimize/latest/technical-guide/installation:
-    target: /optimize/latest/technical-guide/setup/installation/
-    status: 301
-  /optimize/latest/technical-guide/configuration/:
-    target: /optimize/latest/technical-guide/setup/configuration/
-    status: 301
   /cawemo/:
     target: /cawemo/latest/
     status: 301

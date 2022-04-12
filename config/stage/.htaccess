@@ -37,12 +37,6 @@ RewriteCond %{DOCUMENT_ROOT}/manual/%1%2 !-f
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 -d
 RewriteRule ^manual/(.*) /manual/%1 [R=307,L]
 
-# Optimize technical guide
-RewriteRule ^optimize/develop/technical-guide/configuration/?$ /optimize/develop/technical-guide/setup/configuration/ [R=301,L]
-RewriteRule ^optimize/latest/technical-guide/configuration/?$ /optimize/latest/technical-guide/setup/configuration/ [R=301,L]
-RewriteRule ^optimize/develop/technical-guide/installation/?$ /optimize/develop/technical-guide/setup/installation/ [R=301,L]
-RewriteRule ^optimize/latest/technical-guide/installation/?$ /optimize/latest/technical-guide/setup/installation/ [R=301,L]
-
 # Optimize without version
 RewriteRule ^optimize/?$ /optimize/latest/ [R=301,L]
 
