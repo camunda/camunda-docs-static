@@ -15,6 +15,36 @@ releases of the community platform.
 
 # Notices
 
+## Notice 66
+
+**Publication Date: May 2nd, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of the Spring Framework used in Camunda Platform 7 was vulnerable to log entry insertion:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2021-22096
+* https://nvd.nist.gov/vuln/detail/CVE-2021-22060
+
+**How to determine if the installation is affected**
+
+* You use any of the following modules: 
+  * Standalone web applications
+  * Weblogic integration
+  * Websphere integration
+  * RPA Bridge
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.17.0, 7.16.6, 7.15.12, and 7.14.18
+* RPA Bridge 1.1.6
+
 ## Notice 65
 
 **Publication Date: April 7th, 2022**
@@ -621,7 +651,7 @@ Camunda has provided the releases 7.16.0-alpha5, 7.15.6, 7.14.12, 7.13.18 which 
 
 ## Notice 47
 
-**Publication Date: September 20th, 2021**
+**Publication Date: September 20th, 2021 (updated May 2nd, 2022)**
 
 **Product affected:**
 
@@ -629,7 +659,7 @@ Camunda Platform
 
 **Impact:**
 
-The version of Apache Tomcat shipped with the Camunda distributions and transitively pulled in by the Camunda Spring Boot starter had various vulnerabilities:
+The version of Apache Tomcat shipped with the Camunda distributions, shipped with the Camunda RPA Bridge, and transitively pulled in by the Camunda Spring Boot starter had various vulnerabilities:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2021-41079
 - https://nvd.nist.gov/vuln/detail/CVE-2021-30639
@@ -638,12 +668,12 @@ The version of Apache Tomcat shipped with the Camunda distributions and transiti
 
 **How to determine if the installation is affected**
 
-- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used *or* Camunda RPA Bridge is used
 - See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
 
 **Solution**
 
-Camunda has provided the releases 7.16.0-alpha5, 7.15.6, 7.14.12, 7.13.18 which contain a fix. 
+Camunda has provided the releases 7.16.0-alpha5, 7.15.6, 7.14.12, 7.13.18, RPA Bridge 1.1.6 which contain a fix. 
 
 The Camunda Spring Boot starter versions 7.13 work with Spring Boot 2.2 and 2.3, for which no patches are available that resolve this problem. We recommend to either update the Tomcat dependencies manually or moving to a higher version of Spring Boot in accordance with [Camunda's compatibility matrix](https://docs.camunda.org/manual/7.15/user-guide/spring-boot-integration/version-compatibility/).
 
