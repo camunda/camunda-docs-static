@@ -2244,6 +2244,15 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
   </thead>
   <tbody>
     <tr class="well">
+      <td>1.1.7</td>
+      <td>7.15+</td>
+      <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
+      <td>29.04.2022</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.7/camunda-bpm-rpa-bridge-1.1.7.zip">zip</a>
+      </td>
+    </tr>
+    <tr class="well">
       <td>1.1.6</td>
       <td>7.15+</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
