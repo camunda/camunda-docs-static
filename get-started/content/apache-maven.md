@@ -127,6 +127,9 @@ It is not needed when using `camunda-engine` because that already contains the D
 {{< note title="General Info" class="info" >}}
   We have recently updated our Artifactory domain name, see the [blog post](https://camunda.com/blog/2022/03/a-new-domain-name-for-camunda-artifactory/) for insights.
 {{< /note >}}
+
+Camunda relies on JFrog Artifactory to provide Camunda artifacts to users at [artifacts.camunda.com](https://artifacts.camunda.com/). The artifact data is stored in [Amazon S3](https://aws.amazon.com/s3/) storage and gets served by [artifacts.camunda.com](https://artifacts.camunda.com/) via redirects to AWS S3. Users must be able to connect to both endpoints for artifact retrieval.
+
 ### Community Edition
 The config in the Camunda Nexus part about the [Community Edition]({{< relref "#community-edition-1" >}}) is still valid due to URL redirects.
 
