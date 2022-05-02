@@ -15,6 +15,99 @@ releases of the community platform.
 
 # Notices
 
+## Notice 70
+
+**Publication Date: May 10th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Resteasy used by the Camunda Platform 7 REST API and web applications had an information disclosure vulnerability. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-20289
+
+**How to determine if the installation is affected**
+
+- The Camunda Platform 7 Tomcat distribution is used
+- An attacker can make requests to the REST API or web application endpoints
+
+**Solution**
+
+Camunda has provided the releases 7.18.0-alpha1, 7.17.1, 7.16.8, 7.15.14 which contain a fix.
+
+## Notice 69
+
+**Publication Date: May 10th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of the MySQL JDBC connector included in the Camunda Platform 7 Docker images had two known vulnerabilities. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-2471
+- https://nvd.nist.gov/vuln/detail/CVE-2022-21363
+
+**How to determine if the installation is affected**
+
+- The Camunda Platform 7 Docker containers are used
+- MySQL is used for the database connection
+
+**Solution**
+
+Camunda has provided the releases 7.18.0-alpha1, 7.17.1, 7.16.8, 7.15.14 which contain a fix.
+
+## Notice 68
+
+**Publication Date: May 10th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of the Spring Framework used by various Camunda components was vulnerable to remote code execution attacks. This vulnerability is known as *Spring4Shell*. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22965
+- https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement
+
+**How to determine if the installation is affected**
+
+- Camunda Platform 7 is not directly affected by this vulnerability (see our [forum announcement](https://forum.camunda.io/t/spring-remote-code-execution-rce-vulnerability-spring4shell/33848)). We are making this announcement due to the high popularity of the vulnerability.
+
+**Solution**
+
+Camunda has provided the releases 7.18.0-alpha1, 7.17.1, 7.16.8, 7.15.14, 7.14.20, RPA Bridge 1.1.7 that update Spring to a version that is not vulnerable.
+
+## Notice 67
+
+**Publication Date: May 10th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Apache HTTP Client used by the Java external task client was vulnerable to an attack that a malformed request URL was interpreted incorrectly, which could lead the client to make a request against a different host. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-13956
+
+**How to determine if the installation is affected**
+
+- The Java external task client is used
+- An attacker can manipulate the request URL
+
+**Solution**
+
+Camunda has provided the releases 7.18.0-alpha1, 7.17.1, 7.16.8, 7.15.14 which contain a fix.
+
 ## Notice 66
 
 **Publication Date: May 2nd, 2022**
