@@ -58,6 +58,19 @@ downloads:
     server: "run"
 
   branches:
+    - branch: "7.18"
+      releases:
+        - number: "7.18.0-alpha1"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17695"
+          date: "2022.05.09"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "jboss"
+        
     - branch: "7.17"
       releases:
         - number: "7.17.1"
