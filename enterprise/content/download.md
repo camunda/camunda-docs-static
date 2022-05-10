@@ -69,6 +69,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-85"
             - "jboss"
         
     - branch: "7.17"
@@ -82,6 +83,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-85"
             - "jboss"
 
         - number: "7.17.0"
@@ -93,6 +95,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-85"
             - "jboss"
           
     - branch: "7.16"
