@@ -223,7 +223,17 @@ downloads:
               - "jboss"
 
     - branch: "7.15"
-      releases:    
+      releases:
+        - number: "7.15.15"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17694"
+          date: "2022.05.31"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+      
         - number: "7.15.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17591"
           date: "2022.04.29"
