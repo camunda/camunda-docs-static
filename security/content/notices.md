@@ -15,6 +15,55 @@ releases of the community platform.
 
 # Notices
 
+## Notice 72
+
+**Publication Date: May 31st, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Jackson included in Camunda Platform 7 was vulnerable to denial of service attacks. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2020-36518
+
+**How to determine if the installation is affected**
+
+- One of the following modules is used:
+  - Web applications
+  - REST API
+  - Camunda Spin
+- An attacker can submit a very large JSON payload to any of the modules' APIs
+
+**Solution**
+
+Camunda has provided the releases 7.18.0-alpha1, 7.17.2, 7.16.9, 7.15.15 which contain a fix.
+
+## Notice 71
+
+**Publication Date: May 31st, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Groovy included in the Camunda Platform 7 Run, Tomcat, Weblogic,  Websphere, Wildfly distributions had a local privilege escalation vulnerability. Details:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-20289
+
+**How to determine if the installation is affected**
+
+- One of the Camunda Platform 7 Run, Tomcat, Weblogic,  Websphere, Wildfly distributions is used
+- An attacker can make control the content of a Groovy script in a process
+
+**Solution**
+
+Camunda has provided the releases 7.18.0-alpha1, 7.17.2, 7.16.9, 7.15.15 which contain a fix.
+
 ## Notice 70
 
 **Publication Date: May 10th, 2022**
