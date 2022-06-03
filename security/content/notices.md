@@ -15,6 +15,76 @@ releases of the community platform.
 
 # Notices
 
+## Notice 73
+
+**Publication Date: June 2nd, 2022**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `async` shipped with `cawemo-webapp` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-43138
+
+The version of `moment` shipped with `cawemo-webapp` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24785
+
+The version of `netty-codec-http` shipped with `cawemo-restapi` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24823
+
+The version of `spring-security-core` shipped with `cawemo-restapi` was affected by the
+following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22978
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22976
+
+The version of `spring-core` shipped with `cawemo-restapi` was affected by the
+following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22970
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22971
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22968
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the
+following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-22576
+- https://nvd.nist.gov/vuln/detail/CVE-2022-27774
+- https://nvd.nist.gov/vuln/detail/CVE-2022-27776
+- https://nvd.nist.gov/vuln/detail/CVE-2022-27775
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-29824
+
+The version of `xz-libs` shipped with `cawemo-websockets` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-1271
+
+The version of `guzzlehttp/guzzle` shipped with `cawemo-websockets` was affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-29248
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.2 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.3 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images which contain fixes for the above-mentioned CVEs.
+
 ## Notice 72
 
 **Publication Date: May 31st, 2022**
