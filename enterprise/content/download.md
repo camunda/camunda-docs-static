@@ -71,6 +71,18 @@ downloads:
             - "ibm-was"
             - "ibm-was-85"
             - "jboss"
+
+        - number: "7.18.0-alpha2"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17704"
+          date: "2022.06.14"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
         
     - branch: "7.17"
       releases:
