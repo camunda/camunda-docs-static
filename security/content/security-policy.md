@@ -29,7 +29,7 @@ Test history:
     <th>Test Focus</th>
     <th>Result Summary</th>
   </tr>
-  <tr>
+    <tr>
     <td><p>June 2022</p></td>
     <td>
       <p>Camunda Automation Platform Version: 7.17.0-ee Camunda Optimize Version 3.8.0</p>
@@ -37,10 +37,14 @@ Test history:
     </td>
     <td>
       <p>No critical vulnerabilities were detected.</p>
-      <p>Two lesser vulnerabilities were detected and submitted for treatment to our security issue process.</p>
-      <p>Two issues have been fixed.</p>
-      <p>Two issues have been partially fixed, work in progress.</p>
-    </td> 
+      <p>Two lesser vulnerabilities were detected and submitted for treatment to our security issue process:
+      <ul>
+        <li>One issues have been fixed.</li>
+        <li>One issues have been partially fixed, work in progress.</li>
+      </ul>        
+      </p>
+      <p>One general security advice was given.</p>
+    </td>
   </tr>
   <tr>
     <td><p>December 2021</p></td>
