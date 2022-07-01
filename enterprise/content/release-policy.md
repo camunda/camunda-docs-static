@@ -10,6 +10,8 @@ menu:
 
 ---
 
+Camunda Platform 7 follows the [Camunda release policy](https://camunda.com/release-policy/) with some specific clarifications which can be found below.
+
 ## Community vs. Enterprise Releases
 
 There is both a community and an enterprise edition of Camunda Platform. Among these, we distinguish between four different types of releases:
