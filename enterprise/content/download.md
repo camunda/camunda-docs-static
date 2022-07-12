@@ -2425,6 +2425,8 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
 
 [Camunda Optimize](/optimize) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
 
+Optimize is released monthly, and you can find a list of download options below. Learn more about our [versioning policy](https://docs.camunda.io/docs/self-managed/optimize-deployment/version-policy/#version-policy).
+
 ### Demo Distribution with Elasticsearch
 
 Download this distribution if you want to use Optimize with an embedded Elasticsearch or if you
@@ -2453,13 +2455,13 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.8.4</td>
+      <td>3.9.0-preview-1</td>
       <td>7.15+, 7.16+, 7.17+</td>
       <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-      <td>01.06.2022</td>
+      <td>12.07.2022</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.8.4/camunda-optimize-3.8.4-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.8.4/camunda-optimize-3.8.4-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -2489,6 +2491,17 @@ To get the production distribution, please download one of the following archive
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.9.0-preview-1</td>
+      <td>7.15+, 7.16+, 7.17+</td>
+      <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
+      <td>12.07.2022</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
     <tr class="well">
       <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.8.4</td>
