@@ -16,6 +16,24 @@ This page contains important announcements from Camunda's Enterprise Support. In
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.18
+
+__Release Date:__ scheduled for 11th of October 2022
+
+__End of Maintenance:__ 10th of April 2024
+
+__Changes in Supported Environments:__
+
+* Support for PostgreSQL 14
+* Support for H2 2.1 (also supported as of 7.17.3+)
+* Support for IBM Websphere Liberty 22
+* End of Support for IBM DB2 11.1
+* End of Support for PostgreSQL 10
+* End of Support for Amazon Aurora PostgreSQL 10
+* End of Support for Microsoft SQL Server 2014
+* End of Support for WildFly Application Server 13
+* End of Support for Oracle WebLogic Server 12c (12R2)
+
 ## Camunda Platform 7.17
 
 __Release Date:__ scheduled for 12th of April 2022
