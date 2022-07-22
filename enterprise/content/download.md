@@ -54,7 +54,7 @@ downloads:
 
   selected:
     branch: "7.17"
-    version: "7.17.2"
+    version: "7.17.3"
     server: "run"
 
   branches:
@@ -98,6 +98,18 @@ downloads:
         
     - branch: "7.17"
       releases:
+        - number: "7.17.3"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17699"
+          date: "2022.07.22"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17692"
           date: "2022.05.31"
@@ -248,6 +260,16 @@ downloads:
 
     - branch: "7.15"
       releases:
+        - number: "7.15.16"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17701"
+          date: "2022.07.22"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+
         - number: "7.15.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17694"
           date: "2022.05.31"
