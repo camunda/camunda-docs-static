@@ -15,6 +15,59 @@ releases of the community platform.
 
 # Notices
 
+## Notice 75
+
+**Publication Date: August 9th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The H2 console application included in the Camunda Tomcat and Wildfly distributions was vulnerable to remote code execution.
+
+**How to determine if the installation is affected**
+
+* You use the Camunda Tomcat or Wildfly distribution
+* An attacker can make a localhost connection to the H2 console application (note that the H2 console application refuses remote requests)
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.18.0-alpha4 and 7.17.3
+
+As an alternative solution, you can remove the h2 web application from your Tomcat or Wildfly server.
+
+## Notice 74
+
+**Publication Date: August 9th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The Docker images for Camunda Platform 7 contained system libraries with reported vulnerabilities.
+
+libcurl:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2022-32206
+
+**How to determine if the installation is affected**
+
+* You use the Camunda Docker images
+* Due to the low-level nature of these vulnerabilities, we cannot reliably assess if Camunda installations are practically affected. We generally recommend to update for this reason.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+
+* Camunda Platform 7.18.0-alpha4, 7.17.3, 7.16.10, and 7.15.16
+
+
 ## Notice 73
 
 **Publication Date: June 2nd, 2022**
