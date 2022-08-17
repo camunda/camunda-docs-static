@@ -27,6 +27,7 @@ __Changes in Supported Environments:__
 * Support for PostgreSQL 14
 * Support for H2 2.1 (also supported as of 7.17.3+)
 * Support for IBM Websphere Liberty 22
+* Support for PostgreSQL 14
 * End of Support for IBM DB2 11.1
 * End of Support for PostgreSQL 10
 * End of Support for Amazon Aurora PostgreSQL 10
