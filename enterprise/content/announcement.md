@@ -32,6 +32,7 @@ __Changes in Supported Environments:__
 * End of Support for Amazon Aurora PostgreSQL 10
 * End of Support for Microsoft SQL Server 2014
 * End of Support for WildFly Application Server 13
+* End of Support for JBoss EAP 7.0 / 7.1
 * End of Support for Oracle WebLogic Server 12c (12R2)
 
 ## Camunda Platform 7.17
