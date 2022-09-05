@@ -329,7 +329,7 @@ downloads:
 
     - branch: "7.15"
       releases:
-        - number: "7.15.17"
+        - number: "7.15.18"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17807"
           date: "2022.09.05"
           excludeservers:
