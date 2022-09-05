@@ -54,7 +54,7 @@ downloads:
 
   selected:
     branch: "7.17"
-    version: "7.17.4"
+    version: "7.17.5"
     server: "run"
 
   branches:
@@ -110,6 +110,18 @@ downloads:
         
     - branch: "7.17"
       releases:
+        - number: "7.17.5"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17805"
+          date: "2022.09.05"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17790"
           date: "2022.08.29"
@@ -172,6 +184,17 @@ downloads:
           
     - branch: "7.16"
       releases:
+        - number: "7.16.12"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17806"
+          date: "2022.09.05"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+              - "jboss"        
+
         - number: "7.16.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17793"
           date: "2022.08.29"
@@ -182,6 +205,7 @@ downloads:
               - "glassfish"
               - "ibm-was"
               - "jboss"
+
         - number: "7.16.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17700"
           date: "2022.07.25"
@@ -305,6 +329,16 @@ downloads:
 
     - branch: "7.15"
       releases:
+        - number: "7.15.17"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17807"
+          date: "2022.09.05"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+
         - number: "7.15.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17792"
           date: "2022.08.29"
