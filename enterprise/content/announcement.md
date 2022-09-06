@@ -25,6 +25,7 @@ __End of Maintenance:__ 10th of April 2024
 __Changes in Supported Environments:__
 
 * Support for PostgreSQL 14
+* Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 11 (also supported as of 7.17.6+)
 * Support for H2 2.1 (also supported as of 7.17.3+)
 * Support for IBM Websphere Liberty 22
 * End of Support for IBM DB2 11.1
