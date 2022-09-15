@@ -15,6 +15,98 @@ releases of the community platform.
 
 # Notices
 
+## Notice 76
+
+**Publication Date: September 15th, 2022**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `postgresql` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-31197
+
+The version of `snakeyaml` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-38752
+
+The version of `undertow-core` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-2053
+
+The versions of `libcrypto1.1`, and `libssl1.1` shipped with `cawemo-restapi` were affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-2097
+
+The version of `zlib` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37434
+
+The version of `moment` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-31129
+
+The version of `passport` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-25896
+
+The versions of `libcrypto1.1`, and `libssl1.1` shipped with `cawemo-webapp` were affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-2097
+
+The version of `zlib` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37434
+
+The version of `guzzlehttp/guzzle` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-31042
+- https://nvd.nist.gov/vuln/detail/CVE-2022-31043
+- https://nvd.nist.gov/vuln/detail/CVE-2022-31091
+- https://nvd.nist.gov/vuln/detail/CVE-2022-31090
+
+The version of `busybox` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-30065
+
+The versions of `openssl`, `libcrypto1.1`, and `libssl1.1` shipped with `cawemo-websockets` were affected by the
+following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-2097
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-32205
+- https://nvd.nist.gov/vuln/detail/CVE-2022-32206
+- https://nvd.nist.gov/vuln/detail/CVE-2022-32207
+- https://nvd.nist.gov/vuln/detail/CVE-2022-32208
+- https://nvd.nist.gov/vuln/detail/CVE-2022-35252
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-3209
+
+The version of `ssl_client` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-30065
+
+The version of `zlib` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37434
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.3 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.4 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 75
 
 **Publication Date: August 9th, 2022**
