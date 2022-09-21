@@ -124,16 +124,14 @@ It is not needed when using `camunda-engine` because that already contains the D
 # Camunda Artifact Storage
 
 ## Artifactory
-{{< note title="General Info" class="info" >}}
-  We have recently updated our Artifactory domain name, see the [blog post](https://camunda.com/blog/2022/03/a-new-domain-name-for-camunda-artifactory/) for insights.
+{{< note title="Important" class="danger" >}}
+  Please make sure to switch the Artifactory domain name by the 30th of September 2022. Otherwise you won't be able to retrieve artifacts anymore.
+  See the [blog post](https://camunda.com/blog/2022/03/a-new-domain-name-for-camunda-artifactory/) for insights.
 {{< /note >}}
 
 Camunda relies on JFrog Artifactory to provide Camunda artifacts to users at [artifacts.camunda.com](https://artifacts.camunda.com/). The artifact data is stored in [Amazon S3](https://aws.amazon.com/s3/) storage and gets served by [artifacts.camunda.com](https://artifacts.camunda.com/) via redirects to AWS S3. Users must be able to connect to both endpoints for artifact retrieval.
 
 ### Community Edition
-The config in the Camunda Nexus part about the [Community Edition]({{< relref "#community-edition-1" >}}) is still valid due to URL redirects.
-
-An alternative is to directly use the new URL of Artifactory.
 
 ```xml
 <repositories>
@@ -149,12 +147,8 @@ An alternative is to directly use the new URL of Artifactory.
 
 
 ### Enterprise Edition
-The config in the Camunda Nexus part about the [Enterprise Edition]({{< relref "#enterprise-edition-1" >}}) is still valid due to URL redirects.
-
-An alternative is to directly use the new URL of Artifactory.
-
-The `private` URL is a virtual repository, which aggregates a multitude of repositories.
-Those include customer enterprise artifacts and all public artifacts from `public` to make builds easier if those dependencies are needed.
+The [private](https://artifacts.camunda.com/artifactory/private/) URL is a virtual repository, which aggregates a multitude of repositories.
+Those include customer enterprise artifacts and all public artifacts from [public](https://artifacts.camunda.com/artifactory/public/) to make builds easier if you need those dependencies.
 
 ```xml
 <repositories>
@@ -180,19 +174,15 @@ Using the Enterprise Edition repository requires credentials in your Maven setti
 ```
 
 ### Browse Camunda Artifact Storage
-In order to browse the Camunda artifacts, here are the links which can be used.
+In order to browse the Camunda artifacts, here are the links which you can use.
 
 #### Community Edition
-The mentioned link in the Camunda Nexus part about the [Community Edition]({{< relref "#community-edition-2" >}}) is still valid due to URL redirects.
-
-An alternative is to directly use the new URL of Artifactory.
+This link helps you to browse the artifacts of Camunda Platform community edition.
 
 https://artifacts.camunda.com/ui/native/camunda-bpm
 
 #### Enterprise Edition
-The mentioned link in the Camunda Nexus part about the [Enterprise Edition]({{< relref "#enterprise-edition-2" >}}) is still valid due to URL redirects.
-
-An alternative is to directly use the new URL of Artifactory.
+This link helps you to browse the artifacts of Camunda Platform enterprise edition. The user needs to login before accessing the link.
 
 https://artifacts.camunda.com/ui/native/camunda-bpm-ee
 
@@ -202,19 +192,6 @@ https://artifacts.camunda.com/ui/native/camunda-bpm-ee
 
 ### Known issues
 
-#### Camunda-bpm-ee URL issue
-After migrating away from Nexus, we've got several reports about the "`camunda-bpm-ee`" URL not working.
-Therefore, we've been communicating an alternative solution by using the virtual repository "`private`".
-This repository is an aggregation of other repositories, including the "`camunda-bpm-ee`" artifacts among other enterprise artifacts and all public artifacts.
-
-The root cause of the issue is that local repositories, in Artifactory, don't request authentication in Maven due to which one has to preemptively send the authentication even though it might not be requested. The advantage of the virtual repository "`private`" is that it allows forcing the authentication.
-
-We see the `camunda-bpm-ee` URL for enterprise artifacts as technical debt. We have provided all public artifacts under the `public` URL for over 6 years but haven't changed to the same for enterprise artifacts. The enterprise products within Camunda have grown over the years, but combining them as aggregated repository was never done, which we now take the time to correct.
-
-Please see the following [additional config]({{< relref "#additional-config-if-used-in-conjunction-with-the-camunda-bpm-ee-url" >}}) for the required adjustments to always send the authentication if continued to be used with the "`camunda-bpm-ee`" URL or permanently switch to https://artifacts.camunda.com/artifactory/private/.
-
-The "[`private`](https://artifacts.camunda.com/artifactory/private/)" repository is here to stay and contains all enterprise customer artifacts and public artifacts.
-
 #### cURL artifacts
 The files are hosted in AWS S3, therefore, Artifactory rewrites the requests to S3 and sends a 302 as the first response. For cURL this means to add the "`-L`" or "`--location`" option to follow the response.
 
@@ -222,118 +199,6 @@ Example:
 ```
 curl -LO https://artifacts.camunda.com/artifactory/camunda-bpm/org/camunda/bpm/camunda-engine-rest/7.16.0/camunda-engine-rest-7.16.0.war
 ```
-## (Deprecated) Nexus
-
-{{< note title="Deprecation!" class="danger" >}}
-  Please note that, from 15th of October 2021, the Camunda Nexus is deprecated as we've migrated to Artifactory for our new artifact storage.
-  Nevertheless, the settings still apply as we rewrite the URLs to the new location.
-  The docs will be rewritten in the future and the Nexus part will be removed.
-{{< /note >}}
-
-{{< note title="Known camunda-bpm-ee issue" class="info" >}}
-  As part of the migration, the URL of "`camunda-bpm-ee`" needs an additional config of preemptively sending the authentication (see [additional config]({{< relref "#additional-config-if-used-in-conjunction-with-the-camunda-bpm-ee-url" >}})).
-
-  Please consider switching to https://artifacts.camunda.com/artifactory/private/ permanently as it doesn't require the additional config.
-{{< /note >}}
-### Community Edition
-
-```xml
-<repositories>
-  <repository>
-    <id>camunda-bpm-nexus</id>
-    <name>camunda-bpm-nexus</name>
-    <url>
-      https://artifacts.camunda.com/artifactory/public/
-    </url>
-  </repository>
-</repositories>
-```
-
-### Enterprise Edition
-
-The `private` URL is a virtual repository, which aggregates a multitude of repositories.
-Those include customer enterprise artifacts and all public artifacts from `public` to make builds easier if those dependencies are needed.
-
-```xml
-<repositories>
-  <repository>
-    <id>camunda-bpm-nexus-ee</id>
-    <name>camunda-bpm-nexus</name>
-    <url>
-      https://artifacts.camunda.com/artifactory/private/
-    </url>
-  </repository>
-</repositories>
-```
-
-Using the Enterprise Edition repository requires credentials in your Maven settings `~/.m2/settings.xml`:
-```xml
-  <servers>
-    <server>
-      <id>camunda-bpm-nexus-ee</id>
-      <username>YOUR_USERNAME</username>
-      <password>YOUR_PASSWORD</password>
-    </server>
-  </servers>
-```
-
-#### Additional config if used in conjunction with the camunda-bpm-ee URL.
-
-##### Maven
-```xml
-  <servers>
-    <server>
-      <id>camunda-bpm-nexus-ee</id>
-      <username>YOUR_USERNAME</username>
-      <password>YOUR_PASSWORD</password>
-      <configuration>
-        <httpConfiguration>
-          <get>
-            <usePreemptive>true</usePreemptive>
-          </get>
-        </httpConfiguration>
-    </configuration>
-    </server>
-  </servers>
-```
-##### Gradle
-```java
-repositories {
-    maven {
-        url "https://artifacts.camunda.com/artifactory/camunda-bpm-ee/"
-        credentials {
-            username "YOUR_USERNAME"
-            password "YOUR_PASSWORD"
-        }
-        authentication {
-            basic(BasicAuthentication)
-        }
-    }
-}
-```
-
-### Known issue with Artifactory
-
-Please find below the known issue in Artifactory while configuring Nexus repository as a Maven remote proxy.
-
-While testing the connection in Artifactory, if you get "Connection failed: Error 404: Not Found" message then you can ignore it, and continue to add the repository. The maven build should be able to download dependencies without any issues.
-
-### Browse Camunda Nexus
-In order to browse the Camunda Nexus artifacts, here are the links which can be used.
-
-#### Community Edition
-This link helps you to browse the artifacts of Camunda Platform community edition.
-
- https://artifacts.camunda.com/artifactory/camunda-bpm/
-
-#### Enterprise Edition
-This link helps you to browse the artifacts of Camunda Platform enterprise edition. The user needs to login to the nexus repository before accessing the link.
-
- https://artifacts.camunda.com/artifactory/camunda-bpm-ee/
-
-{{< note title="Requires login" class="info" >}}
-   Please note that the link will not be accessible if the user didn't login beforehand.
-{{< /note >}}
 
 # Other Camunda Modules:
 
