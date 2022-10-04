@@ -53,76 +53,16 @@ downloads:
     - war
 
   selected:
-    branch: "7.17"
-    version: "7.17.6"
+    branch: "7.18"
+    version: "7.18.0"
     server: "run"
 
   branches:
     - branch: "7.18"
       releases:
-        - number: "7.18.0-alpha1"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17695"
-          date: "2022.05.09"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.18.0-alpha2"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17704"
-          date: "2022.06.14"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.18.0-alpha3"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17712"
-          date: "2022.07.11"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.18.0-alpha4"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17794"
-          date: "2022.08.09"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.18.0-alpha5"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17813"
-          date: "2022.09.13"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.18.0-alpha6"
-          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17824"
-          date: "2022.09.23"
+        - number: "7.18.0"
+          note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17394"
+          date: "2022.10.11"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
