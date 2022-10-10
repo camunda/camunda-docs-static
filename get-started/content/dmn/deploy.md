@@ -107,7 +107,7 @@ Congratulations, you have now successfully set up a project with your first DMN 
 Next,
 
 * see how you can evaluate the decision using the [REST API](/manual/reference/rest/decision-definition/post-evaluate/),
-* learn more about DMN by reading the [DMN Reference](/manual/reference/dmn11/),
+* learn more about DMN by reading the [DMN Reference](/manual/reference/dmn/),
 * learn more about the [Decision API exposed by Camunda Process Engine](/manual/user-guide/process-engine/decisions/),
 * check how you can invoke the decision from a [BPMN Business Rule Task](/manual/reference/bpmn20/tasks/business-rule-task/),
 * Bonus Step: [Decision Requirements Graph](../drg) 
