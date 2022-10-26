@@ -13,6 +13,19 @@ menu:
 
 This page contains important announcements from Camunda's Enterprise Support. In the following section we list information about changes to the supported environments and scheduled end of maintenance dates for specific versions of the Camunda Platform. The announced end of maintenance dates are based on our standard support period of 18 months.
 
+## Caumunda Extended Support Offering
+Camunda recommends that new projects be developed on Camunda Platform 8. We will continue to maintain and support Camunda Platform 7 according to the below schedule.
+
+__Camunda Platform 7 - Full Support (April 2022 - April 2027)__
+- Incremental feature improvements
+- Critical security/bug fixes
+- Maintain supported environments
+
+__Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
+- Critical security/bug fixes
+- Maintain supported environments
+
+*If you require Camunda Extended Maintenance Support contact your assigned Customer Success Manager.
 
 # Camunda Platform Announcements
 
