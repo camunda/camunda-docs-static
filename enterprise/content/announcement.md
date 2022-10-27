@@ -17,13 +17,15 @@ This page contains important announcements from Camunda's Enterprise Support. In
 Camunda recommends that new projects be developed on Camunda Platform 8. We will continue to maintain and support Camunda Platform 7 according to the below schedule.
 
 __Camunda Platform 7 - Full Support (April 2022 - April 2027)__
-- Incremental feature improvements
-- Critical security/bug fixes
-- Maintain supported environments
+
+* Incremental feature improvements
+* Critical security/bug fixes
+* Maintain supported environments
 
 __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
-- Critical security/bug fixes
-- Maintain supported environments
+
+* Critical security/bug fixes
+* Maintain supported environments
 
 *If you require Camunda Extended Maintenance Support contact your assigned Customer Success Manager.
 
