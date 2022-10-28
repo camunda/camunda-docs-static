@@ -2542,10 +2542,10 @@ To install the demo distribution, please download one of the following archives:
       <td>3.9.2</td>
       <td>7.16+, 7.17+, 7.18+</td>
       <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-      <td>13.10.2022</td>
+      <td>27.10.2022</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.1/camunda-optimize-3.9.1-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.1/camunda-optimize-3.9.1-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -2580,7 +2580,7 @@ To get the production distribution, please download one of the following archive
       <td>3.9.2</td>
       <td>7.16+, 7.17+, 7.18+</td>
       <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-      <td>13.10.2022</td>
+      <td>27.10.2022</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-production.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-production.tar.gz">tar.gz</a>
