@@ -16,8 +16,8 @@ RewriteRule ^manual/develop/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platfor
 RewriteRule ^manual/latest/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.18/$1 [R=307,L] # Bump on first alpha release
 RewriteRule ^manual/([^/]+)/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/$1/$2 [R=307,L]
 
-# Camunda Forms Redirect: 7.18 - 7.27
-RewriteRule ^manual/(7\.(1[89]|2[0-7])|develop|latest)/reference/forms/camunda-forms/$ https://docs.camunda.io/docs/guides/utilizing-forms/ [R=301,L]
+# Camunda Forms Redirect: 7.17 - 7.27
+RewriteRule ^manual/(7\.(1[7-9]|2[0-7])|develop|latest)/reference/forms/camunda-forms/$ https://docs.camunda.io/docs/guides/utilizing-forms/ [R=301,L]
 
 # manual without version
 RewriteRule ^manual/?$ /manual/7.18/ [R=307,L]
