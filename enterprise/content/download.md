@@ -2521,7 +2521,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
 
 ## Camunda Optimize
 
-[Camunda Optimize](/optimize) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
+[Camunda Optimize](https://docs.camunda.io/optimize/components/what-is-optimize/) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.io/optimize/self-managed/optimize-deployment/install-and-start/).
 
 Optimize is released monthly, and you can find a list of download options below. Learn more about our [versioning policy](https://docs.camunda.io/docs/self-managed/optimize-deployment/version-policy/#version-policy).
 
@@ -2542,7 +2542,6 @@ To install the demo distribution, please download one of the following archives:
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
       <th class="col-md-2">Supported Elasticsearch Versions</th>
@@ -2552,7 +2551,6 @@ To install the demo distribution, please download one of the following archives:
   </thead>
   <tbody>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.9.2</td>
       <td>7.16+, 7.17+, 7.18+</td>
       <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
@@ -2580,7 +2578,6 @@ To get the production distribution, please download one of the following archive
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
       <th class="col-md-2">Supported Elasticsearch Versions</th>
@@ -2590,7 +2587,6 @@ To get the production distribution, please download one of the following archive
   </thead>
   <tbody>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.9.2</td>
       <td>7.16+, 7.17+, 7.18+</td>
       <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
@@ -2601,7 +2597,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.9.0-preview-2</td>
       <td>7.15+, 7.16+, 7.17+</td>
       <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
@@ -2612,7 +2607,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.9.0-preview-1</td>
       <td>7.15+, 7.16+, 7.17+</td>
       <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
@@ -2623,7 +2617,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.8.5</td>
       <td>7.15+, 7.16+, 7.17+</td>
       <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
@@ -2634,7 +2627,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.7.3</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
@@ -2645,7 +2637,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.6.6</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
@@ -2656,7 +2647,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.6.0</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+</td>
@@ -2667,7 +2657,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr> 
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.5.0</td>
       <td>7.13.5+, 7.14+, 7.15+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+</td>
@@ -2678,7 +2667,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.4.0</td>
       <td>7.13.5+, 7.14+, 7.15+</td>
       <td>7.5.1+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+</td>
@@ -2689,7 +2677,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.3.0</td>
       <td>7.12.11+, 7.13.5+ and 7.14+</td>
       <td>7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+</td>
@@ -2700,7 +2687,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.2.0</td>
       <td>7.12.11+, 7.13.5+ and 7.14+</td>
       <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
@@ -2711,7 +2697,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.1.0</td>
       <td>7.11.13, 7.12.6 and 7.13+</td>
       <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
@@ -2722,7 +2707,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.0.0</td>
       <td>7.10.6+, 7.11+ and 7.12+</td>
       <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
@@ -2744,7 +2728,6 @@ Please note that Optimize alpha releases are not suitable for production environ
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2">Name</th>
       <th class="col-md-2">Alpha Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
       <th class="col-md-2">Supported Elasticsearch Versions</th>
@@ -2754,7 +2737,6 @@ Please note that Optimize alpha releases are not suitable for production environ
   </thead>
   <tbody>
     <tr class="well">
-        <td><a href="/optimize">Camunda Optimize</a></td>
         <td>3.10.0-alpha1</td>
         <td>7.16+, 7.17+, 7.18+</td>
         <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
