@@ -317,8 +317,9 @@ __Release Date:__ 27th of October 2022
 
 __End of Maintenance:__ 31st of December 2024
 
-* Dropped support for `Elasticsearch` 7.10.0, 7.11.0 and 7.12.0
 * Added support for  `Camunda Platform` 7.18
+* Dropped support for  `Camunda Platform` 7.15
+* Dropped support for `Elasticsearch` 7.10.0, 7.11.0 and 7.12.0
 
 ## Camunda Optimize 3.8.0
 
