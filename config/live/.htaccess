@@ -24,7 +24,8 @@ RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
 RewriteRule ^manual/(.*) /manual/7.18/ [R=307,L]
 
 # OpenAPI docs
-RewriteRule ^manual/(latest|develop)/reference/rest/specification/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/ [R=301,L,NE]
+RewriteRule ^manual/(latest|develop)/reference/rest/specification/(.*)$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/$2 [R=301,L,NE]
+RewriteRule ^manual/([^/]+)/reference/rest/specification/(.*)$ /rest/camunda-bpm-platform/$1/$2 [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/authorization/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Authorization [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/authorization/delete/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Authorization/operation/deleteAuthorization [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/authorization/get-check/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Authorization/operation/isUserAuthorized [R=301,L,NE]
