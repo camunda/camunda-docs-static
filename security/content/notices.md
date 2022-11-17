@@ -15,6 +15,57 @@ releases of the community platform.
 
 # Notices
 
+## Notice 78
+
+**Publication Date: November 17th, 2022**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `jackson-databind` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-42003
+- https://nvd.nist.gov/vuln/detail/CVE-2022-42004
+
+The version of `spring-security-core` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-31692
+
+The version of `undertow-core` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-1259
+- https://nvd.nist.gov/vuln/detail/CVE-2022-2764
+
+The version of `deep-object-diff` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-41713
+
+The version of `minimatch` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-3517
+
+The version of `react/http` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-36032
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-42915
+- https://nvd.nist.gov/vuln/detail/CVE-2022-42916
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.4 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.5 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 77
 
 **Publication Date: October 12th, 2022**
