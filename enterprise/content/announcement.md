@@ -40,6 +40,12 @@ __End of Maintenance:__ 8th of October 2024
 __Changes in Supported Environments:__
 
 * Support for PostgreSQL 15
+* Support for WildFly Application Server 27
+* End of Support for PostgreSQL 11
+* End of Support for MariaDB 10.3
+* End of Support for MySQL 5.7
+* End of Support for Microsoft SQL Server 2016
+* End of Support for Java 8
 
 ## Camunda Platform 7.18
 
