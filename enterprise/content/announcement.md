@@ -31,6 +31,16 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.19
+
+__Release Date:__ scheduled for 11th of April 2023
+
+__End of Maintenance:__ 8th of October 2024
+
+__Changes in Supported Environments:__
+
+* Support for PostgreSQL 15
+
 ## Camunda Platform 7.18
 
 __Release Date:__ scheduled for 11th of October 2022
