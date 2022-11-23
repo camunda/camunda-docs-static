@@ -39,7 +39,7 @@ __End of Maintenance:__ 8th of October 2024
 
 __Changes in Supported Environments:__
 
-* Support for PostgreSQL 15
+* Support for PostgreSQL 15 (also supported as of 7.18.2+)
 * Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 13
 * End of Support for PostgreSQL 11
 * End of Support for MariaDB 10.3
