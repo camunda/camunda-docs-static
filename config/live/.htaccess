@@ -157,6 +157,7 @@ RewriteRule ^manual/(latest|develop)/reference/rest/group/post-create/$ /rest/ca
 RewriteRule ^manual/(latest|develop)/reference/rest/group/post-query-count/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Group/operation/queryGroupCount [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/group/post-query/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Group/operation/postQueryGroups [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/group/put-update/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Group/operation/updateGroup [R=301,L,NE]
+RewriteRule ^manual/(latest|develop)/reference/rest/history/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Historic-Activity-Instance [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/history/activity-instance/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Historic-Activity-Instance [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/history/activity-instance/get-activity-instance-query-count/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Historic-Activity-Instance/operation/getHistoricActivityInstancesCount [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/history/activity-instance/get-activity-instance-query/$ /rest/camunda-bpm-platform/7.19-SNAPSHOT/#tag/Historic-Activity-Instance/operation/getHistoricActivityInstances [R=301,L,NE]
