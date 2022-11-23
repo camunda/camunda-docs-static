@@ -31,6 +31,22 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.19
+
+__Release Date:__ scheduled for 11th of April 2023
+
+__End of Maintenance:__ 8th of October 2024
+
+__Changes in Supported Environments:__
+
+* Support for PostgreSQL 15
+* Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 13
+* End of Support for PostgreSQL 11
+* End of Support for MariaDB 10.3
+* End of Support for MySQL 5.7
+* End of Support for Microsoft SQL Server 2016
+* End of Support for Java 8
+
 ## Camunda Platform 7.18
 
 __Release Date:__ scheduled for 11th of October 2022
