@@ -58,6 +58,20 @@ downloads:
     server: "run"
 
   branches:
+    - branch: "7.19"
+      releases:
+        - number: "7.19.0-alpha1"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha1+"
+          date: "2022.11.08"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
     - branch: "7.18"
       releases:
         - number: "7.18.0"
@@ -2507,7 +2521,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
 
 ## Camunda Optimize
 
-[Camunda Optimize](/optimize) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/).
+[Camunda Optimize](https://docs.camunda.io/optimize/components/what-is-optimize/) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.io/optimize/self-managed/optimize-deployment/install-and-start/).
 
 Optimize is released monthly, and you can find a list of download options below. Learn more about our [versioning policy](https://docs.camunda.io/docs/self-managed/optimize-deployment/version-policy/#version-policy).
 
@@ -2528,7 +2542,6 @@ To install the demo distribution, please download one of the following archives:
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
       <th class="col-md-2">Supported Elasticsearch Versions</th>
@@ -2538,14 +2551,13 @@ To install the demo distribution, please download one of the following archives:
   </thead>
   <tbody>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.9.0-preview-1</td>
-      <td>7.15+, 7.16+, 7.17+</td>
-      <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-      <td>12.07.2022</td>
+      <td>3.9.2</td>
+      <td>7.16+, 7.17+, 7.18+</td>
+      <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
+      <td>27.10.2022</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -2566,7 +2578,6 @@ To get the production distribution, please download one of the following archive
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2">Name</th>
       <th class="col-md-2">Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
       <th class="col-md-2">Supported Elasticsearch Versions</th>
@@ -2576,18 +2587,16 @@ To get the production distribution, please download one of the following archive
   </thead>
   <tbody>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.9.0-preview-1</td>
-      <td>7.15+, 7.16+, 7.17+</td>
-      <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-      <td>12.07.2022</td>
+      <td>3.9.2</td>
+      <td>7.16+, 7.17+, 7.18+</td>
+      <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
+      <td>27.10.2022</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-production.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.2/camunda-optimize-3.9.2-production.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.9.0-preview-2</td>
       <td>7.15+, 7.16+, 7.17+</td>
       <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
@@ -2598,7 +2607,16 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
+      <td>3.9.0-preview-1</td>
+      <td>7.15+, 7.16+, 7.17+</td>
+      <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
+      <td>12.07.2022</td>
+      <td>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-preview-1/camunda-optimize-3.9.0-preview-1-production.tar.gz">tar.gz</a>
+      </td>
+    </tr>
+    <tr class="well">
       <td>3.8.5</td>
       <td>7.15+, 7.16+, 7.17+</td>
       <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
@@ -2609,7 +2627,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.7.3</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
@@ -2620,7 +2637,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.6.6</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
@@ -2631,7 +2647,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.6.0</td>
       <td>7.14+, 7.15+, 7.16+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+</td>
@@ -2642,7 +2657,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr> 
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.5.0</td>
       <td>7.13.5+, 7.14+, 7.15+</td>
       <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+</td>
@@ -2653,7 +2667,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.4.0</td>
       <td>7.13.5+, 7.14+, 7.15+</td>
       <td>7.5.1+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+</td>
@@ -2664,7 +2677,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.3.0</td>
       <td>7.12.11+, 7.13.5+ and 7.14+</td>
       <td>7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+</td>
@@ -2675,7 +2687,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.2.0</td>
       <td>7.12.11+, 7.13.5+ and 7.14+</td>
       <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
@@ -2686,7 +2697,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.1.0</td>
       <td>7.11.13, 7.12.6 and 7.13+</td>
       <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
@@ -2697,7 +2707,6 @@ To get the production distribution, please download one of the following archive
       </td>
     </tr>
     <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
       <td>3.0.0</td>
       <td>7.10.6+, 7.11+ and 7.12+</td>
       <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
@@ -2719,7 +2728,6 @@ Please note that Optimize alpha releases are not suitable for production environ
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2">Name</th>
       <th class="col-md-2">Alpha Version</th>
       <th class="col-md-2">Supported Engine Versions</th>
       <th class="col-md-2">Supported Elasticsearch Versions</th>
@@ -2729,51 +2737,19 @@ Please note that Optimize alpha releases are not suitable for production environ
   </thead>
   <tbody>
     <tr class="well">
-        <td><a href="/optimize">Camunda Optimize</a></td>
-        <td>3.9.0-alpha4</td>
-        <td>7.15+, 7.16+, 7.17+</td>
-        <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-        <td>13.09.2022</td>
+        <td>3.10.0-alpha1</td>
+        <td>7.16+, 7.17+, 7.18+</td>
+        <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
+        <td>08.11.2022</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha4/camunda-optimize-3.9.0-alpha4-production.zip">zip</a> 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha4/camunda-optimize-3.9.0-alpha4-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.10.0-alpha1/camunda-optimize-3.10.0-alpha1-production.zip">zip</a>&nbsp; 
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.10.0-alpha1/camunda-optimize-3.10.0-alpha1-production.tar.gz">tar.gz</a>
         </td>
     </tr>
-  <tr class="well">
-        <td><a href="/optimize">Camunda Optimize</a></td>
-        <td>3.9.0-alpha3</td>
-        <td>7.15+, 7.16+, 7.17+</td>
-        <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-        <td>09.08.2022</td>
-        <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha3/camunda-optimize-3.9.0-alpha3-production.zip">zip</a> 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha3/camunda-optimize-3.9.0-alpha3-production.tar.gz">tar.gz</a>
-        </td>
-      </tr>
-   <tr class="well">
-        <td><a href="/optimize">Camunda Optimize</a></td>
-        <td>3.9.0-alpha2</td>
-        <td>7.15+, 7.16+, 7.17+</td>
-        <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-        <td>10.05.2022</td>
-        <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha2/camunda-optimize-3.9.0-alpha2-production.zip">zip</a> 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha2/camunda-optimize-3.9.0-alpha2-production.tar.gz">tar.gz</a>
-        </td>
-      </tr>
-    <tr class="well">
-      <td><a href="/optimize">Camunda Optimize</a></td>
-      <td>3.9.0-alpha1</td>
-      <td>7.15+, 7.16+, 7.17+</td>
-      <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-      <td>10.05.2022</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha1/camunda-optimize-3.9.0-alpha1-production.zip">zip</a> 
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.0-alpha1/camunda-optimize-3.9.0-alpha1-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
+ 
   </tbody>
 </table>
+
 
 In case you're interested in older versions of Optimize, feel free to checkout the [Previous Releases](https://downloads.camunda.cloud/enterprise-release/optimize/).
 
@@ -2795,11 +2771,11 @@ For installing the latter, please download one of the following archives and rea
   <tbody>
     <tr class="well">
       <td><a href="/cawemo">Cawemo On-Premises</a></td>
-      <td>1.9.4</td>
-      <td>15.09.2022</td>
+      <td>1.9.5</td>
+      <td>17.11.2022</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.4.zip">zip</a>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.4.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.5.zip">zip</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.5.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>

@@ -124,7 +124,7 @@ Your pom.xml file of your project should look like this:
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<camunda.external-task-client.version>7.17.0</camunda.external-task-client.version>
+		<camunda.external-task-client.version>7.18.0</camunda.external-task-client.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -138,7 +138,7 @@ Your pom.xml file of your project should look like this:
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
-			<version>1.6.1</version>
+			<version>1.7.36</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
