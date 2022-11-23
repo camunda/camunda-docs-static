@@ -31,6 +31,22 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.19
+
+__Release Date:__ scheduled for 11th of April 2023
+
+__End of Maintenance:__ 8th of October 2024
+
+__Changes in Supported Environments:__
+
+* Support for PostgreSQL 15 (also supported as of 7.18.1+)
+* Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 13
+* End of Support for PostgreSQL 11
+* End of Support for MariaDB 10.3
+* End of Support for MySQL 5.7
+* End of Support for Microsoft SQL Server 2016
+* End of Support for Java 8
+
 ## Camunda Platform 7.18
 
 __Release Date:__ scheduled for 11th of October 2022
@@ -311,6 +327,16 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 # Camunda Optimize Announcements
 
+## Camunda Optimize 3.9.2
+
+__Release Date:__ 27th of October 2022
+
+__End of Maintenance:__ 31st of December 2024
+
+* Added support for  `Camunda Platform` 7.18
+* Dropped support for  `Camunda Platform` 7.15
+* Dropped support for `Elasticsearch` 7.10.0, 7.11.0 and 7.12.0
+
 ## Camunda Optimize 3.8.0
 
 __Release Date:__ 12th of April 2022
@@ -487,7 +513,7 @@ __Changes in Supported Environments:__
 
 __Release Date:__ 11th of January 2022
 
-__End of Maintenance:__ 12th of July 2022
+__End of Maintenance:__ 17th of November 2022
 
 __Changes in Supported Environments:__
 
