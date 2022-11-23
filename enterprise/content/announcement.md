@@ -46,6 +46,7 @@ __Changes in Supported Environments:__
 * End of Support for MySQL 5.7
 * End of Support for Microsoft SQL Server 2016
 * End of Support for Java 8
+* End of Support for NodeJS 10 for the [Javascript External Task Client](https://github.com/camunda/camunda-external-task-client-js/). Version 3.0.0 requires NodeJS 18 or higher.
 
 ## Camunda Platform 7.18
 
