@@ -12,7 +12,7 @@ menu:
 
 As a core infrastructure component of our customers, the security of Camunda Platform (also referred to as the 'software') takes top priority and is maintained constantly.
 
-For information on our Camunda Security Policy, see [camunda.com/security](https://camunda.com/security). 
+For information on our Camunda Security Policy, visit the [Camunda Trust Center](https://camunda.com/trust-center/). 
 
 
 ## Penetration Testing
