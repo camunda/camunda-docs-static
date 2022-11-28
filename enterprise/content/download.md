@@ -100,7 +100,7 @@ downloads:
 
     - branch: "7.17"
       releases:
-      - number: "7.17.7"
+        - number: "7.17.7"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.7+is%3Aclosed+"
           date: "2022.11.30"
           excludeservers:
