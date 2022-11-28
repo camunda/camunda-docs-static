@@ -54,7 +54,7 @@ downloads:
 
   selected:
     branch: "7.18"
-    version: "7.18.0"
+    version: "7.18.1"
     server: "run"
 
   branches:
@@ -74,6 +74,18 @@ downloads:
 
     - branch: "7.18"
       releases:
+        - number: "7.18.1"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.1+is%3Aclosed+"
+          date: "2022.11.30"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.18.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17394"
           date: "2022.10.11"
@@ -88,6 +100,18 @@ downloads:
 
     - branch: "7.17"
       releases:
+      - number: "7.17.7"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.7+is%3Aclosed+"
+          date: "2022.11.30"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17810"
           date: "2022.09.29"
@@ -162,6 +186,17 @@ downloads:
           
     - branch: "7.16"
       releases:
+        - number: "7.16.14"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.14+is%3Aclosed+"
+          date: "2022.11.30"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+              - "jboss" 
+
         - number: "7.16.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17811"
           date: "2022.09.29"
