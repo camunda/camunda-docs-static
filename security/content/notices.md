@@ -15,6 +15,29 @@ releases of the community platform.
 
 # Notices
 
+## Notice 79
+
+**Publication Date: December 1st, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of the Got library used by the Javascript external task client was vulnerable to a redirect attack. Details:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2022-33987
+
+**How to determine if the installation is affected**
+
+* You use [camunda-external-task-client-js](https://github.com/camunda/camunda-external-task-client-js)
+* An attacker is able modify the response of a HTTP request issued by the external task client
+
+**Solution**
+
+Camunda has provided the releases 2.3.1 and 2.2.1 which contain a fix.
+
 ## Notice 78
 
 **Publication Date: November 17th, 2022**
