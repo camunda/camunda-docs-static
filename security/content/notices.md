@@ -36,7 +36,7 @@ The version of the Got library used by the Javascript external task client was v
 
 **Solution**
 
-Camunda has provided the releases 2.3.1 and 2.2.1 which contain a fix.
+Camunda has provided the releases 2.3.1 and 2.2.1 of the External Task Client Javascript which contain a fix.
 
 ## Notice 78
 
