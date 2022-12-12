@@ -72,7 +72,6 @@ downloads:
             - "ibm-was-85"
             - "jboss"
 
-      releases:
         - number: "7.19.0-alpha2"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha2"
           date: "2022.12.13"
