@@ -15,6 +15,29 @@ releases of the community platform.
 
 # Notices
 
+## Notice 80
+
+**Publication Date: December 15th, 2022**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Scala shipped with the FEEL engine in Camunda Platform 7 was vulnerable to an object deserialization flaw. Details:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2022-36944
+
+**How to determine if the installation is affected**
+
+* The engine configuration property `javaSerializationFormatEnabled` is set to `true` (default `false`)
+* An attacker is able to access the REST API or web applications and has permissions to submit process variables
+
+**Solution**
+
+Camunda has provided the releases 7.19.0-alpha2, 7.18.1, 7.17.7, and 7.16.14 which contain a fix.
+
 ## Notice 79
 
 **Publication Date: December 1st, 2022**
