@@ -43,7 +43,7 @@ __Changes in Supported Environments:__
 * Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 13 / 14
 * End of Support for PostgreSQL 11
 * End of Support for Amazon Aurora PostgreSQL 11
-* End of Support for Redhat Wildfly 14
+* End of Support for Wildfly 14
 * End of Support for MariaDB 10.3
 * End of Support for MySQL 5.7
 * End of Support for Microsoft SQL Server 2016
