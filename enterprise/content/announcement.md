@@ -40,12 +40,13 @@ __End of Maintenance:__ 8th of October 2024
 __Changes in Supported Environments:__
 
 * Support for PostgreSQL 15 (also supported as of 7.18.1+)
-* Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 13
+* Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 13 / 14
 * End of Support for PostgreSQL 11
+* End of Support for Amazon Aurora PostgreSQL 11
+* End of Support for Wildfly 14
 * End of Support for MariaDB 10.3
 * End of Support for MySQL 5.7
 * End of Support for Microsoft SQL Server 2016
-* End of Support for Java 8
 * End of Support for NodeJS 10 for the [Javascript External Task Client](https://github.com/camunda/camunda-external-task-client-js/). Version 3.0.0 requires NodeJS 18 or higher.
 
 ## Camunda Platform 7.18
