@@ -100,18 +100,6 @@ downloads:
 
     - branch: "7.18"
       releases:
-        - number: "7.18.2"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.2+is%3Aclosed+"
-          date: "2022.12.21"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
         - number: "7.18.1"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.1+is%3Aclosed+"
           date: "2022.11.30"
