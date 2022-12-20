@@ -98,8 +98,6 @@ downloads:
             - "ibm-was-85"
             - "jboss"
 
-    - branch: "7.18"
-      releases:
         - number: "7.18.1"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.1+is%3Aclosed+"
           date: "2022.11.30"
