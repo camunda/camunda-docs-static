@@ -97,7 +97,7 @@ Apart from general help requests, we have four types of self-service help reques
 
 ## Priority Level
 
-You can prioritize issues depending on the impact of a bug on your system. Please note that according to your SLA's, a prioritization is only possible for bug tickets. Feature Requests and Help Requests are always prioritized as L3 - Default.
+You can prioritize issues depending on the impact of an issue on your system. Feature Requests and Help Requests are always prioritized as L3 - Default.
 
 <table class="table table-bordered">
   <thead>
@@ -111,17 +111,18 @@ You can prioritize issues depending on the impact of a bug on your system. Pleas
   <tr>
     <td>L1 <img class="img-responsive" src="../img/jira-blocker.png"/>Blocker</td>
     <td>Total failure of the core components of the contract software (specifically process engine) or occurrence of errors that make useability in the current productive operation impossible.</td>
-    <td><b>Bug Tickets only! Production mode only!</b></td>
+    <td><b>Production mode only!</b><br>Bug Reports, Help Requests
+	</td>
   </tr>
   <tr>
     <td>L2 <img class="img-responsive" src="../img/jira-major.png"/>Critical</td>
     <td>Use of the contractual software greatly restricted, troubleshooting urgently needed.</td>
-    <td><b>Bug Tickets only!</b></td>
+    <td>Bug Reports, Help Requests</td>
   </tr>
   <tr>
     <td>L3 <img class="img-responsive" src="../img/jira-minor.png"/>Default</td>
     <td>Less critical errors, help requests, feature requests.</td>
-    <td>Bug Tickets, Feature Requests, Help Requests</td>
+    <td>Bug Reports, Feature Requests, Help Requests</td>
   </tr>
   </tbody>
 </table>
