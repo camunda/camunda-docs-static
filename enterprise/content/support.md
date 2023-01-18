@@ -97,7 +97,7 @@ Apart from general help requests, we have four types of self-service help reques
 
 ## Priority Level
 
-You can prioritize issues depending on the impact of an issue on your system. Feature Requests and Help Requests are always prioritized as L3 - Default.
+You can prioritize issues depending on the impact of an issue on your system. Feature Requests are always prioritized as L3 - Default.
 
 <table class="table table-bordered">
   <thead>
