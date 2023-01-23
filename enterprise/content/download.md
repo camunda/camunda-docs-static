@@ -86,6 +86,18 @@ downloads:
 
     - branch: "7.18"
       releases:
+        - number: "7.18.3"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.3+is%3Aclosed+"
+          date: "2023.01.25"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.18.2"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.2+is%3Aclosed+"
           date: "2022.12.21"
@@ -124,6 +136,18 @@ downloads:
 
     - branch: "7.17"
       releases:
+        - number: "7.17.9"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.9+is%3Aclosed+"
+          date: "2023.01.25"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.8"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.8+is%3Aclosed+"
           date: "2022.12.21"
@@ -222,6 +246,17 @@ downloads:
           
     - branch: "7.16"
       releases:
+        - number: "7.16.16"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.16+is%3Aclosed+"
+          date: "2023.01.25"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+              - "jboss"
+
         - number: "7.16.15"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.15+is%3Aclosed+"
           date: "2022.12.21"
@@ -2498,6 +2533,15 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
   </thead>
   <tbody>
+    <tr class="well">
+      <td>1.1.9</td>
+      <td>7.15+</td>
+      <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
+      <td>25.01.2023</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.9/camunda-bpm-rpa-bridge-1.1.9.zip">zip</a>
+      </td>
+    </tr>
     <tr class="well">
       <td>1.1.8</td>
       <td>7.15+</td>
