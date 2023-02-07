@@ -15,6 +15,51 @@ releases of the community platform.
 
 # Notices
 
+## Notice 81
+
+**Publication Date: February 8th, 2023**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `io.netty:netty-codec-http` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-41915
+
+The version of `postgresql` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-41946
+
+The version of `json5` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-46175
+
+The version of `qs` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24999
+
+The version of `symfony/http-kernel` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24894
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://avd.aquasec.com/nvd/cve-2022-43551
+- https://avd.aquasec.com/nvd/cve-2022-43552
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.5 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.6 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 80
 
 **Publication Date: December 15th, 2022**
