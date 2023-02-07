@@ -517,7 +517,7 @@ __Changes in Supported Environments:__
 
 __Release Date:__ 11th of January 2022
 
-__End of Maintenance:__ 17th of November 2022
+__End of Maintenance:__ 1st of October 2024
 
 __Changes in Supported Environments:__
 
