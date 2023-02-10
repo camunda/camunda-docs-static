@@ -2855,13 +2855,13 @@ Please note that Optimize alpha releases are not suitable for production environ
   </thead>
   <tbody>
     <tr class="well">
-        <td>3.10.0-alpha3</td>
+        <td>3.10.0-alpha4</td>
         <td>7.17+, 7.18+</td>
         <td>7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-        <td>13.12.2022</td>
+        <td>14.02.2023</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.10.0-alpha3/camunda-optimize-3.10.0-alpha3-production.zip">zip</a>&nbsp; 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.10.0-alpha3/camunda-optimize-3.10.0-alpha3-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.10.0-alpha4/camunda-optimize-3.10.0-alpha4-production.zip">zip</a>&nbsp; 
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.10.0-alpha4/camunda-optimize-3.10.0-alpha4-production.tar.gz">tar.gz</a>
         </td>
     </tr>
  
