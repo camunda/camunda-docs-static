@@ -15,6 +15,27 @@ releases of the community platform.
 
 # Notices
 
+## Notice 83
+
+**Publication Date: February 14th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The Camunda Spring Boot starter and Camunda Run could write the hashed password of the administrator user to the application log on startup.
+
+**How to determine if the installation is affected**
+
+- Camunda Spring Boot starter *or* Camunda Run is used
+- The configuration property `camunda.bpm.admin-user.id` or `camunda.bpm.admin-user.password` is used
+
+**Solution**
+
+Camunda has provided the releases 7.19.0-alpha3, 7.18.3, 7.17.9, 7.16.16 which contain a fix. 
+
 ## Notice 82
 
 **Publication Date: February 14th, 2023**
