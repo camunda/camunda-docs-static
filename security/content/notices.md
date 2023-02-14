@@ -15,6 +15,35 @@ releases of the community platform.
 
 # Notices
 
+## Notice 82
+
+**Publication Date: February 14th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda distributions, RPA Bridge, and transitively pulled in by the Camunda Spring Boot starter had three vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-43980
+- https://nvd.nist.gov/vuln/detail/CVE-2022-42252
+- https://nvd.nist.gov/vuln/detail/CVE-2022-45143
+
+**How to determine if the installation is affected**
+
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter *or* Camunda RPA Bridge is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.19.0-alpha3, 7.18.2, 7.17.8, 7.16.15, RPA Bridge 1.1.9 which contain a fix. 
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
 ## Notice 81
 
 **Publication Date: February 8th, 2023**
