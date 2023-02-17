@@ -2849,6 +2849,12 @@ To get the production distribution, please download one of the following archive
   </tbody>
 </table>
 
+{{< note title="ELASTICSEARCH SUPPORT" class="warning" >}}
+Elastic's Elasticsearch is the only supported version of Elastic compatible with Optimize.
+
+AWS Opensearch is not supported at this time.
+{{< /note >}}
+
 If you're interested in the latest features, you can get a sneak peek by trying out one of the alpha releases:
 
 {{< note title="Heads Up!" class="warning" >}}
