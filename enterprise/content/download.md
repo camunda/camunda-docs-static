@@ -98,7 +98,7 @@ downloads:
 
     - branch: "7.18"
       releases:
-          - number: "7.18.5"
+        - number: "7.18.5"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.5+is%3Aclosed+"
           date: "2023.02.22"
           excludeservers:
