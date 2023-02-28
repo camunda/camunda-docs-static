@@ -2708,7 +2708,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
 
 [Camunda Optimize](https://docs.camunda.io/optimize/components/what-is-optimize/) is an addition to the Camunda Platform, that provides continuous monitoring and insights about your deployed business processes and decision tables. It helps process owners to make informed decisions to optimize their processes and decisions. Read the [installation guide](https://docs.camunda.io/optimize/self-managed/optimize-deployment/install-and-start/).
 
-Optimize is released monthly, and you can find a list of download options below. Learn more about our [versioning policy](https://docs.camunda.io/docs/self-managed/optimize-deployment/version-policy/#version-policy).
+Learn more about our [versioning policy](https://docs.camunda.io/docs/self-managed/optimize-deployment/version-policy/#version-policy).
 
 ### Demo Distribution with Elasticsearch
 
