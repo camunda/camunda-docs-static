@@ -36,11 +36,11 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 # Camunda Platform Announcements
 
 ## Camunda Platform 7.19
-
 __Release Date:__ scheduled for 11th of April 2023
 
 __End of Maintenance:__ 8th of October 2024
 
+### Camunda Automation Platform
 __Changes in Supported Environments:__
 
 * Support for Wildfly 27
@@ -54,6 +54,16 @@ __Changes in Supported Environments:__
 * End of Support for MySQL 5.7
 * End of Support for Microsoft SQL Server 2016
 * End of Support for NodeJS 10 for the [Javascript External Task Client](https://github.com/camunda/camunda-external-task-client-js/). Version 3.0.0 requires NodeJS 18 or higher.
+
+### Camunda Optimize
+__Changes in Supported Environments:__
+
+* Support for ElasticSearch 8
+
+__Futher Changes:__
+
+* Maintenance support of Optimize 3.7 is extended until October 2023
+
 
 ## Camunda Platform 7.18
 
