@@ -367,7 +367,7 @@ __Changes in Supported Environments:__
 * *Extension of maintenance
   * Camunda does NOT officially support OpenSearch, but it was technically possible to use it with Optimize 3.7.
   * For the benefit of our Optimize customers using OpenSearch we have extended the maintenance of the 3.7 release by 3 months to October 2023.
-  * In October 2023, we plan to deliver 3.11, including OpenSearch support and a direct migration from 3.7 to 3.11.
+  * In October 2023, we plan to deliver 3.11, which will include OpenSearch support and a direct migration from 3.7 to 3.11.
 
 ## Camunda Optimize 3.6.5
 
