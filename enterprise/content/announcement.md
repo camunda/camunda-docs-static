@@ -358,12 +358,16 @@ __End of Maintenance:__ 30th of September 2023
 
 __Release Date:__ 11th of January 2022
 
-__End of Maintenance:__ 30th of June 2023
+__End of Maintenance:__ 30th of June 2023 (Extended to 11th of October 2023*)
 
 __Changes in Supported Environments:__
 
 * Added support for `Elasticsearch` 7.16.2+
 * Note: `Elasticsearch` 7.16.0 and 7.16.1 are known to not work with Optimize because of the following [regression](https://github.com/elastic/elasticsearch/issues/81696)
+* *Extension of maintenance
+  * Camunda does NOT officially support OpenSearch, but it was technically possible to use it with Optimize 3.7.
+  * For the benefit of our Optimize customers using OpenSearch we have extended the maintenance of the 3.7 release by 3 months to October 2023.
+  * In October 2023, we plan to deliver 3.11, which will include OpenSearch support and a direct migration from 3.7 to 3.11.
 
 ## Camunda Optimize 3.6.5
 
