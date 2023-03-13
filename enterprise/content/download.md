@@ -98,7 +98,7 @@ downloads:
 
         - number: "7.19.0-alpha4"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha4"
-          date: "2023.03.13"
+          date: "2023.03.14"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
