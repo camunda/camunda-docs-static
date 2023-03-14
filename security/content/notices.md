@@ -15,6 +15,31 @@ releases of the community platform.
 
 # Notices
 
+## Notice 84
+
+**Publication Date: March 14th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Jackson shipped with the Camunda distributions had two vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-42003
+- https://nvd.nist.gov/vuln/detail/CVE-2022-42004
+
+**How to determine if the installation is affected**
+
+- You use a Camunda installation with variables of type `json` or object variables that are serialized as JSON
+- You use a custom `DataFormatConfigurator` that activates the deserialization feature `UNWRAP_SINGLE_VALUE_ARRAYS` on the Jackson ObjectMapper
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.19.0-alpha4, 7.18.5, 7.17.10, 7.16.17 which contain a fix.
+
 ## Notice 83
 
 **Publication Date: February 14th, 2023**
