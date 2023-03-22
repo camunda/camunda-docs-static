@@ -1,11 +1,12 @@
 ---
 
 title: 'Get started with Camunda and the Spring Framework'
-weight: 3
+weight: 10
 
 menu:
   main:
     name: "Spring Framework"
+    parent: "get-started-archive"
     identifier: "get-started-spring"
     pre: "Get started with using Camunda Platform in a Spring Web Application."
 
