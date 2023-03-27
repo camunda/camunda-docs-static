@@ -54,7 +54,7 @@ downloads:
 
   selected:
     branch: "7.18"
-    version: "7.18.5"
+    version: "7.18.6"
     server: "run"
 
   branches:
@@ -122,6 +122,18 @@ downloads:
 
     - branch: "7.18"
       releases:
+        - number: "7.18.6"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.6+is%3Aclosed+"
+          date: "2023.03.29"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.18.5"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.5+is%3Aclosed+"
           date: "2023.02.22"
@@ -196,6 +208,18 @@ downloads:
 
     - branch: "7.17"
       releases:
+        - number: "7.17.11"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.11+is%3Aclosed+"
+          date: "2023.03.29"
+          excludeservers:
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.10"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.10+is%3Aclosed+"
           date: "2023.02.22"
@@ -318,6 +342,17 @@ downloads:
           
     - branch: "7.16"
       releases:
+        - number: "7.16.18"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.18+is%3Aclosed+"
+          date: "2023.03.29"
+          excludeservers:
+              - "wildfly11"
+              - "wildfly10"
+              - "wildfly8"
+              - "glassfish"
+              - "ibm-was"
+              - "jboss"
+
         - number: "7.16.17"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.17+is%3Aclosed+"
           date: "2023.02.22"
