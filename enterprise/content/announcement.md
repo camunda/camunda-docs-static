@@ -44,7 +44,7 @@ __End of Maintenance:__ 8th of October 2024
 __Changes in Supported Environments:__
 
 * Support for Wildfly 27
-* Support for Quarkus 2.1x
+* Support for Quarkus 2.16
 * Support for PostgreSQL 15 (also supported as of 7.18.1+)
 * Support for Amazon Aurora PostgreSQL compatible with PostgreSQL 13 / 14
 * End of Support for PostgreSQL 11
