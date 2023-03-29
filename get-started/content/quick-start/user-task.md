@@ -90,7 +90,7 @@ Finally, save the form as `payment.form`.
 # Deploy the Process
 
 1. Switch back to the process diagram
-2. Click the {{< glyphicon name="open" text=" Deploy current diagram" >}} Button in the Camunda Modeler
+2. Click the Deploy button in the Camunda Modeler
 3. In the deployment panel, select the `payment.form` file under *include additional files*
 4. Click *Deploy*
 
