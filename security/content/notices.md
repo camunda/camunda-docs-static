@@ -15,6 +15,56 @@ releases of the community platform.
 
 # Notices
 
+## Notice 86
+
+**Publication Date: March 29th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Apache Tomcat shipped with the Camunda Tomcat distribution, Camunda Run, and transitively pulled in by the Camunda Spring Boot starter had a vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-24998
+
+**How to determine if the installation is affected**
+
+- Camunda Platform Tomcat is used *or* Camunda Platform Run is used *or* Camunda Platform Spring Boot Starter is used
+- See the NIST link above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided the releases 7.19.0-alpha4, 7.18.6, 7.17.11, 7.16.18 which contain a fix.
+
+Other solutions:
+
+- Tomcat and Spring Boot can be updated independently of Camunda to the latest patch level
+
+## Notice 85
+
+**Publication Date: March 29th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+In previous versions of Camunda, it was possible that a user remained logged in to the web applications (Cockpit, Tasklist, Admin) after their account was deleted.
+
+**How to determine if the installation is affected**
+
+- You use the Camunda web applications (Cockpit, Tasklist, Admin)
+- The attacker is an authenticated user of the system
+
+**Solution**
+
+Camunda has provided the releases 7.19.0-alpha5, 7.18.6, 7.17.11, 7.16.18 which contain a fix.
+
+You can find details on the solution and how to configure it in [our security guide](https://docs.camunda.org/manual/7.18/user-guide/security/#authentication-cache).
+
 ## Notice 84
 
 **Publication Date: March 14th, 2023**
