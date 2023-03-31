@@ -9,40 +9,52 @@ menu:
 
 downloads:
   servers:
-    - path: "run"
+    - id: "run"
+      path: "run"
       name: "Camunda Platform Run"
       weight: 0
-    - path: "tomcat"
+    - id: "tomcat"
+      path: "tomcat"
       name: "Apache Tomcat"
       weight: 1
-    - path: "jboss"
+    - id: "jboss"
+      path: "jboss"
       name: "JBoss AS 7 / Red Hat JBoss EAP 6"
       weight: 2
-    - path: "glassfish"
+    - id: "glassfish"
+      path: "glassfish"
       name: "GlassFish"
       weight: 3
-    - path: "ibm-was"
+    - id: "ibm-was"
+      path: "ibm-was"
       name: "IBM WebSphere 8.x"
       weight: 4
-    - path: "ibm-was-85"
+    - id: "ibm-was-85"
+      path: "ibm-was-85"
       name: "IBM WebSphere 8.5"
       weight: 5
-    - path: "ibm-was9"
+    - id: "ibm-was9"
+      path: "ibm-was9"
       name: "IBM WebSphere 9"
       weight: 6
-    - path: "oracle-wls"
+    - id: "oracle-wls"
+      path: "oracle-wls"
       name: "Oracle WebLogic"
       weight: 7
-    - path: "wildfly8"
+    - id: "wildfly8"
+      path: "wildfly8"
       name: "WildFly 8"
       weight: 8
-    - path: "wildfly10"
+    - id: "wildfly10"
+      path: "wildfly10"
       name: "WildFly 10"
       weight: 9
-    - path: "wildfly11"
+    - id: "wildfly11"
+      path: "wildfly11"
       name: "WildFly 11"
       weight: 10
-    - path: "wildfly"
+    - id: "wildfly"
+      path: "wildfly"
       name: "WildFly / Red Hat JBoss EAP 7"
       weight: 11
     - id: "wildfly-jakartaee"
