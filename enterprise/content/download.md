@@ -53,64 +53,16 @@ downloads:
     - war
 
   selected:
-    branch: "7.18"
-    version: "7.18.6"
+    branch: "7.19"
+    version: "7.19.0"
     server: "run"
 
   branches:
     - branch: "7.19"
       releases:
-        - number: "7.19.0-alpha1"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha1+"
-          date: "2022.11.08"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.19.0-alpha2"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha2"
-          date: "2022.12.13"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.19.0-alpha3"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha3"
-          date: "2023.02.13"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.19.0-alpha4"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha4"
-          date: "2023.03.14"
-          excludeservers:
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "jboss"
-
-        - number: "7.19.0-alpha5"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0-alpha5"
-          date: "2023.03.31"
+        - number: "7.19.0"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0+"
+          date: "2023.04.11"
           excludeservers:
             - "wildfly11"
             - "wildfly10"
