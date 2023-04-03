@@ -9,42 +9,58 @@ menu:
 
 downloads:
   servers:
-    - path: "run"
+    - id: "run"
+      path: "run"
       name: "Camunda Platform Run"
       weight: 0
-    - path: "tomcat"
+    - id: "tomcat"
+      path: "tomcat"
       name: "Apache Tomcat"
       weight: 1
-    - path: "jboss"
+    - id: "jboss"
+      path: "jboss"
       name: "JBoss AS 7 / Red Hat JBoss EAP 6"
       weight: 2
-    - path: "glassfish"
+    - id: "glassfish"
+      path: "glassfish"
       name: "GlassFish"
       weight: 3
-    - path: "ibm-was"
+    - id: "ibm-was"
+      path: "ibm-was"
       name: "IBM WebSphere 8.x"
       weight: 4
-    - path: "ibm-was-85"
+    - id: "ibm-was-85"
+      path: "ibm-was-85"
       name: "IBM WebSphere 8.5"
       weight: 5
-    - path: "ibm-was9"
+    - id: "ibm-was9"
+      path: "ibm-was9"
       name: "IBM WebSphere 9"
       weight: 6
-    - path: "oracle-wls"
+    - id: "oracle-wls"
+      path: "oracle-wls"
       name: "Oracle WebLogic"
       weight: 7
-    - path: "wildfly8"
+    - id: "wildfly8"
+      path: "wildfly8"
       name: "WildFly 8"
       weight: 8
-    - path: "wildfly10"
+    - id: "wildfly10"
+      path: "wildfly10"
       name: "WildFly 10"
       weight: 9
-    - path: "wildfly11"
+    - id: "wildfly11"
+      path: "wildfly11"
       name: "WildFly 11"
       weight: 10
-    - path: "wildfly"
+    - id: "wildfly"
+      path: "wildfly"
       name: "WildFly / Red Hat JBoss EAP 7"
       weight: 11
+    - id: "wildfly-jakartaee"
+      path: "wildfly"
+      name: "WildFly"
+      weight: 12
 
 
   formats:
@@ -64,6 +80,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0+"
           date: "2023.04.11"
           excludeservers:
+            - "wildfly"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -78,6 +95,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.6+is%3Aclosed+"
           date: "2023.03.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -90,6 +108,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.5+is%3Aclosed+"
           date: "2023.02.22"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -102,6 +121,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.4+is%3Aclosed+"
           date: "2023.02.03"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -114,6 +134,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.3+is%3Aclosed+"
           date: "2023.01.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -126,6 +147,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.2+is%3Aclosed+"
           date: "2022.12.21"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -138,6 +160,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.1+is%3Aclosed+"
           date: "2022.11.30"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -150,6 +173,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17394"
           date: "2022.10.11"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -164,6 +188,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.11+is%3Aclosed+"
           date: "2023.03.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -176,6 +201,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.10+is%3Aclosed+"
           date: "2023.02.22"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -188,6 +214,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.9+is%3Aclosed+"
           date: "2023.01.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -200,6 +227,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.8+is%3Aclosed+"
           date: "2022.12.21"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -212,6 +240,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.7+is%3Aclosed+"
           date: "2022.11.30"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -224,6 +253,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17810"
           date: "2022.09.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -236,6 +266,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17805"
           date: "2022.09.05"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -248,6 +279,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17699"
           date: "2022.07.22"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -260,6 +292,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17692"
           date: "2022.05.31"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -272,6 +305,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17593"
           date: "2022.04.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -284,6 +318,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16007"
           date: "2022.04.05"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -298,6 +333,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.18+is%3Aclosed+"
           date: "2023.03.29"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -309,6 +345,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.17+is%3Aclosed+"
           date: "2023.02.22"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -320,6 +357,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.16+is%3Aclosed+"
           date: "2023.01.25"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -331,6 +369,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.15+is%3Aclosed+"
           date: "2022.12.21"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -342,6 +381,7 @@ downloads:
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.16.14+is%3Aclosed+"
           date: "2022.11.30"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -353,6 +393,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17811"
           date: "2022.09.29"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -364,6 +405,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17806"
           date: "2022.09.05"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -375,6 +417,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17700"
           date: "2022.07.25"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -386,6 +429,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17693"
           date: "2022.05.31"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -397,6 +441,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17592"
           date: "2022.04.29"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -408,6 +453,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17447"
           date: "2022.03.31"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -419,6 +465,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17438"
           date: "2022.02.25"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -430,6 +477,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17431"
           date: "2022.01.21"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -441,6 +489,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17422"
           date: "2021.12.22"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -452,6 +501,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17406"
           date: "2021.12.17"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -463,6 +513,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17292"
           date: "2021.11.26"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -474,6 +525,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17108"
           date: "2021.10.27"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -485,6 +537,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16599"
           date: "2021.10.12"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -498,6 +551,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17812"
           date: "2022.09.29"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -508,6 +562,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17807"
           date: "2022.09.05"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -518,6 +573,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17701"
           date: "2022.07.22"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -528,6 +584,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17694"
           date: "2022.05.31"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -538,6 +595,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17591"
           date: "2022.04.29"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -548,6 +606,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17446"
           date: "2022.03.31"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -558,6 +617,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17437"
           date: "2022.02.25"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -568,6 +628,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17430"
           date: "2022.01.21"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -578,6 +639,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17423"
           date: "2021.12.22"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -588,6 +650,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17408"
           date: "2021.12.17"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -598,6 +661,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17291"
           date: "2021.11.26"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -608,6 +672,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17092"
           date: "2021.10.27"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -618,6 +683,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16926"
           date: "2021.09.15"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -628,6 +694,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16911"
           date: "2021.08.25"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -638,6 +705,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16900"
           date: "2021.07.28"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -648,6 +716,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16801"
           date: "2021.06.28"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -658,6 +727,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16795"
           date: "2021.05.28"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -668,6 +738,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16791"
           date: "2021.04.28"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -678,6 +749,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16006"
           date: "2021.04.13"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -691,6 +763,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17590"
           date: "2022.04.29"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -701,6 +774,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17445"
           date: "2022.03.31"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -711,6 +785,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17436"
           date: "2022.02.25"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -721,6 +796,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17429"
           date: "2022.01.21"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -731,6 +807,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17424"
           date: "2021.12.22"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -741,6 +818,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17407"
           date: "2021.12.17"
           excludeservers:
+              - "wildfly-jakartaee"
               - "wildfly11"
               - "wildfly10"
               - "wildfly8"
@@ -751,6 +829,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17290"
           date: "2021.11.26"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -761,6 +840,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17091"
           date: "2021.10.27"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -771,6 +851,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16928"
           date: "2021.09.15"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -781,6 +862,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16910"
           date: "2021.08.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -791,6 +873,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16901"
           date: "2021.07.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -801,6 +884,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16803"
           date: "2021.06.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -811,6 +895,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16796"
           date: "2021.05.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -821,6 +906,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16720"
           date: "2021.04.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -831,6 +917,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16701"
           date: "2021.03.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -841,6 +928,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16690"
           date: "2021.02.24"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -851,6 +939,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16592"
           date: "2021.01.27"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -861,6 +950,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16492"
           date: "2020.12.16"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -871,6 +961,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16390"
           date: "2020.11.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -881,6 +972,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16228"
           date: "2020.10.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -891,6 +983,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?version=16004&projectId=10230"
           date: "2020.10.13"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -903,6 +996,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16929"
           date: "2021.09.15"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -913,6 +1007,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16909"
           date: "2021.08.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -923,6 +1018,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16905"
           date: "2021.07.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -933,6 +1029,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16804"
           date: "2021.06.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -943,6 +1040,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16797"
           date: "2021.05.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -953,6 +1051,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16721"
           date: "2021.04.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -963,6 +1062,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16702"
           date: "2021.03.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -973,6 +1073,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16691"
           date: "2021.02.24"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -983,6 +1084,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16596"
           date: "2021.01.27"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -993,6 +1095,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16491"
           date: "2020.12.16"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1003,6 +1106,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16391"
           date: "2020.11.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1013,6 +1117,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16294"
           date: "2020.10.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1023,6 +1128,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16227"
           date: "2020.10.15"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1033,6 +1139,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16216"
           date: "2020.09.22"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1043,6 +1150,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16208"
           date: "2020.08.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1053,6 +1161,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16195"
           date: "2020.07.22"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1063,6 +1172,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16190"
           date: "2020.07.16"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1073,6 +1183,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16094"
           date: "2020.06.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1083,6 +1194,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532"
           date: "2020.05.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1095,6 +1207,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16798"
           date: "2021.05.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1105,6 +1218,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16722"
           date: "2021.04.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1115,6 +1229,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16703"
           date: "2021.03.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1125,6 +1240,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16696"
           date: "2021.02.24"
           excludeservers:
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1136,6 +1252,7 @@ downloads:
           date: "2021.01.27"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1147,6 +1264,7 @@ downloads:
           date: "2020.12.16"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1158,6 +1276,7 @@ downloads:
           date: "2020.11.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1169,6 +1288,7 @@ downloads:
           date: "2020.11.10"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1180,6 +1300,7 @@ downloads:
           date: "2020.10.28"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1191,6 +1312,7 @@ downloads:
           date: "2020.09.22"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1202,6 +1324,7 @@ downloads:
           date: "2020.08.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1213,6 +1336,7 @@ downloads:
           date: "2020.07.22"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1224,6 +1348,7 @@ downloads:
           date: "2020.07.16"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1235,6 +1360,7 @@ downloads:
           date: "2020.06.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1246,6 +1372,7 @@ downloads:
           date: "2020.05.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1257,6 +1384,7 @@ downloads:
           date: "2020.04.27"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1268,6 +1396,7 @@ downloads:
           date: "2020.03.26"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1279,6 +1408,7 @@ downloads:
           date: "2020.02.19"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1290,6 +1420,7 @@ downloads:
           date: "2020.01.29"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1301,6 +1432,7 @@ downloads:
           date: "2019.12.17"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1312,6 +1444,7 @@ downloads:
           date: "2019.11.30"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1325,6 +1458,7 @@ downloads:
           date: "2022.01.28"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1336,6 +1470,7 @@ downloads:
           date: "2020.11.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1347,6 +1482,7 @@ downloads:
           date: "2020.10.28"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1358,6 +1494,7 @@ downloads:
           date: "2020.09.22"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1369,6 +1506,7 @@ downloads:
           date: "2020.08.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1380,6 +1518,7 @@ downloads:
           date: "2020.07.22"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1391,6 +1530,7 @@ downloads:
           date: "2020.07.16"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1402,6 +1542,7 @@ downloads:
           date: "2020.06.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1413,6 +1554,7 @@ downloads:
           date: "2020.05.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1424,6 +1566,7 @@ downloads:
           date: "2020.04.27"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1435,6 +1578,7 @@ downloads:
           date: "2020.03.26"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1446,6 +1590,7 @@ downloads:
           date: "2020.02.20"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1457,6 +1602,7 @@ downloads:
           date: "2020.01.29"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1468,6 +1614,7 @@ downloads:
           date: "2019.12.17"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1479,6 +1626,7 @@ downloads:
           date: "2019.12.04"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1490,6 +1638,7 @@ downloads:
           date: "2019.10.29"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1501,6 +1650,7 @@ downloads:
           date: "2019.09.26"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1512,6 +1662,7 @@ downloads:
           date: "2019.08.30"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1523,6 +1674,7 @@ downloads:
           date: "2019.07.31"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1534,6 +1686,7 @@ downloads:
           date: "2019.06.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1545,6 +1698,7 @@ downloads:
           date: "2019.05.31"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1558,6 +1712,7 @@ downloads:
           date: "2020.05.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1570,6 +1725,7 @@ downloads:
           date: "2020.04.27"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1581,6 +1737,7 @@ downloads:
           date: "2020.03.26"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1592,6 +1749,7 @@ downloads:
           date: "2020.02.20"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1603,6 +1761,7 @@ downloads:
           date: "2020.01.29"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1614,6 +1773,7 @@ downloads:
           date: "2019.12.17"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1625,6 +1785,7 @@ downloads:
           date: "2019.12.04"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1636,6 +1797,7 @@ downloads:
           date: "2019.10.29"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1647,6 +1809,7 @@ downloads:
           date: "2019.09.26"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1658,6 +1821,7 @@ downloads:
           date: "2019.08.28"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1669,6 +1833,7 @@ downloads:
           date: "2019.07.31"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1680,6 +1845,7 @@ downloads:
           date: "2019.06.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1691,6 +1857,7 @@ downloads:
           date: "2019.05.21"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1702,6 +1869,7 @@ downloads:
           date: "2019.04.11"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1713,6 +1881,7 @@ downloads:
           date: "2019.03.25"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1724,6 +1893,7 @@ downloads:
           date: "2019.02.27"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1735,6 +1905,7 @@ downloads:
           date: "2019.01.30"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1746,6 +1917,7 @@ downloads:
           date: "2018.12.13"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1757,6 +1929,7 @@ downloads:
           date: "2018.11.30"
           excludeservers:
             - "run"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "wildfly8"
@@ -1769,6 +1942,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15691"
           date: "2020.01.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1778,6 +1952,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15594"
           date: "2019.12.04"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1787,6 +1962,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15530"
           date: "2019.10.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1796,6 +1972,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15519"
           date: "2019.08.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1805,6 +1982,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15509"
           date: "2019.08.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1814,6 +1992,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15492"
           date: "2019.07.31"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1823,6 +2002,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15405"
           date: "2019.06.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1832,6 +2012,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15383"
           date: "2019.05.21"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1841,6 +2022,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15378"
           date: "2019.03.25"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1850,6 +2032,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15371"
           date: "2019.02.27"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1859,6 +2042,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15352"
           date: "2019.01.30"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1868,6 +2052,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15344"
           date: "2018.12.13"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1877,6 +2062,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15341"
           date: "2018.11.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1886,6 +2072,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15339"
           date: "2018.10.30"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1895,6 +2082,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15335"
           date: "2018.09.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1904,6 +2092,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15324"
           date: "2018.08.29"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1913,6 +2102,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15310"
           date: "2018.07.17"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1922,6 +2112,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15306"
           date: "2018.06.28"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1931,6 +2122,7 @@ downloads:
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15096"
           date: "2018.05.31"
           excludeservers:
+            - "wildfly-jakartaee"
             - "run"
             - "wildfly"
             - "glassfish"
@@ -1944,6 +2136,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -1954,6 +2147,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -1964,6 +2158,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -1974,6 +2169,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -1984,6 +2180,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -1994,6 +2191,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2004,6 +2202,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2014,6 +2213,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2024,6 +2224,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2034,6 +2235,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2044,6 +2246,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2054,6 +2257,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2064,6 +2268,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2074,6 +2279,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2086,6 +2292,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2096,6 +2303,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2106,6 +2314,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2116,6 +2325,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2126,6 +2336,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2136,6 +2347,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2146,6 +2358,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2156,6 +2369,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2166,6 +2380,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2176,6 +2391,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2186,6 +2402,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
@@ -2198,6 +2415,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2209,6 +2427,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2220,6 +2439,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2231,6 +2451,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2242,6 +2463,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2253,6 +2475,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2264,6 +2487,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2275,6 +2499,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2286,6 +2511,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2297,6 +2523,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2308,6 +2535,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2319,6 +2547,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2330,6 +2559,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2341,6 +2571,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2354,6 +2585,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2365,6 +2597,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2376,6 +2609,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2387,6 +2621,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2398,6 +2633,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2409,6 +2645,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2420,6 +2657,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2431,6 +2669,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2442,6 +2681,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
@@ -2455,6 +2695,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2466,6 +2707,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2477,6 +2719,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2488,6 +2731,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2499,6 +2743,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2510,6 +2755,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2521,6 +2767,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2532,6 +2779,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2543,6 +2791,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2554,6 +2803,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
@@ -2565,6 +2815,7 @@ downloads:
           excludeservers:
             - "run"
             - "wildfly"
+            - "wildfly-jakartaee"
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
