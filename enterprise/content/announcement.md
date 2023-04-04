@@ -51,7 +51,6 @@ __Changes in Supported Environments:__
 * End of Support for JBoss Redhat EAP 7.2 / 7.3
 * End of Support for PostgreSQL 12 / 13
 * End of Support for Amazon Aurora PostgreSQL 12
-* End of Support for MariaDB 10.4
 * End of Support for Oracke 12c
 
 __Removed support for Modules:__
