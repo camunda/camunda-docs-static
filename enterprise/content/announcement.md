@@ -47,10 +47,10 @@ __Changes in Supported Environments:__
 * Support for Quarkus 3.x
 * End of Support for Java 8
 * End of Support for Quarkus 2.x
-* End of Support for Wildfly 14 - 25
+* End of Support for Wildfly 14 / 15 / 16 / 17 / 18 / 19 / 20 / 21 / 22 / 24 / 25
 * End of Support for JBoss Redhat EAP 7.2 / 7.3
 * End of Support for PostgreSQL 12 / 13
-* End of Support for Amazon Aurora PostgreSQL
+* End of Support for Amazon Aurora PostgreSQL 12
 * End of Support for MariaDB 10.4
 * End of Support for Oracke 12c
 
