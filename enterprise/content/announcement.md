@@ -57,7 +57,7 @@ __Removed support for Modules:__
 
 * End of Support for Camunda RPA Bridge
 * End of Support for XSLT script engine
-* End of Support for Velocity. XQuey Script Engines
+* End of Support for Velocity. XQuery Script Engines
 * End of Support for Standalone Web Application Distribution
 Note that this does not affect previous Camunda versions, i.e. 7.19 and before.
 
