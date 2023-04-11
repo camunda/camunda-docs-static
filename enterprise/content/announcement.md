@@ -59,6 +59,7 @@ __Removed support for Modules:__
 * End of Support for XSLT script engine
 * End of Support for Velocity and XQuery Script Engines
 * End of Support for Standalone Web Application Distribution
+
 Note that this does not affect previous Camunda versions, i.e. 7.19 and before.
 
 ## Camunda Platform 7.19
