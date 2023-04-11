@@ -39,7 +39,7 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 __Release Date:__ scheduled for 10th of October 2023
 
-__End of Maintenance:__ 8th of April 2025
+__End of Maintenance:__ 9th of April 2025
 
 __Changes in Supported Environments:__
 
@@ -65,7 +65,7 @@ Note that this does not affect previous Camunda versions, i.e. 7.19 and before.
 
 __Release Date:__ scheduled for 11th of April 2023
 
-__End of Maintenance:__ 8th of October 2024
+__End of Maintenance:__ 9th of October 2024
 
 __Changes in Supported Environments:__
 
