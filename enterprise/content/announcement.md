@@ -37,7 +37,7 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 ## Camunda Platform 7.20
 
-__Release Date:__ scheduled for 11th of October 2023
+__Release Date:__ scheduled for 10th of October 2023
 
 __End of Maintenance:__ 8th of April 2025
 
