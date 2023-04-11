@@ -35,11 +35,37 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.20
+
+__Release Date:__ scheduled for 10th of October 2023
+
+__End of Maintenance:__ 9th of April 2025
+
+__Changes in Supported Environments:__
+
+* Support for SpringBoot 3.x
+* Support for Quarkus 3.x
+* End of Support for Java 8
+* End of Support for Quarkus 2.x
+* End of Support for WildFly 15 / 16 / 17 / 18 / 19 / 20 / 21 / 22 / 24 / 25
+* End of Support for JBoss EAP 7.2 / 7.3
+* End of Support for PostgreSQL 12 / 13
+* End of Support for Amazon Aurora PostgreSQL 12
+* End of Support for Oracle 12c
+
+__Removed support for Modules:__
+
+* End of Support for Camunda RPA Bridge
+* End of Support for XSLT script engine
+* End of Support for Velocity and XQuery Script Engines
+* End of Support for Standalone Web Application Distribution
+Note that this does not affect previous Camunda versions, i.e. 7.19 and before.
+
 ## Camunda Platform 7.19
 
 __Release Date:__ scheduled for 11th of April 2023
 
-__End of Maintenance:__ 8th of October 2024
+__End of Maintenance:__ 9th of October 2024
 
 __Changes in Supported Environments:__
 
