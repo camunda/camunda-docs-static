@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 87
+
+**Publication Date: April 11th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of the Quarkus Dev UI, part of Camunda's supported version of the Quarkus framework, had two vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-4116
+- https://nvd.nist.gov/vuln/detail/CVE-2022-4147
+
+**How to determine if the installation is affected**
+
+- You use the Camunda Quarkus extension
+- You use the [Quarkus Dev UI](https://quarkus.io/guides/dev-ui)
+
+**Solution**
+
+Camunda has provided the release 7.19.0 which contains a fix.
+
 ## Notice 86
 
 **Publication Date: March 29th, 2023**
