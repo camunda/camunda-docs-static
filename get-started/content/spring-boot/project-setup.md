@@ -46,8 +46,8 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <camunda.spring-boot.version>7.18.0</camunda.spring-boot.version>
-    <spring-boot.version>2.7.3</spring-boot.version>
+    <camunda.spring-boot.version>7.19.0</camunda.spring-boot.version>
+    <spring-boot.version>2.7.10</spring-boot.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>

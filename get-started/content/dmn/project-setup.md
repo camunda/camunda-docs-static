@@ -51,7 +51,7 @@ The next step consists of setting up the Maven dependencies for your new process
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.18.0</camunda.version>
+    <camunda.version>7.19.0</camunda.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -88,7 +88,7 @@ The next step consists of setting up the Maven dependencies for your new process
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <version>2.3</version>
+        <version>3.3.2</version>
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
