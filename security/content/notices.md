@@ -15,6 +15,74 @@ releases of the community platform.
 
 # Notices
 
+## Notice 88
+
+**Publication Date: April 21st, 2023**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-core` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-20861
+- https://nvd.nist.gov/vuln/detail/CVE-2023-20863
+
+The version of `snakeyaml` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-1471
+
+The version of `@sideway/formula` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-25166
+
+The version of `guzzlehttp/psr7` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-29197
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-4203
+- https://nvd.nist.gov/vuln/detail/CVE-2022-4304
+- https://nvd.nist.gov/vuln/detail/CVE-2022-4450
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0215
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0216
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0217
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0286
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0401
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0464
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0465
+- https://nvd.nist.gov/vuln/detail/CVE-2023-0466
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-23914
+- https://nvd.nist.gov/vuln/detail/CVE-2023-23915
+- https://nvd.nist.gov/vuln/detail/CVE-2023-23916
+- https://nvd.nist.gov/vuln/detail/CVE-2023-27533
+- https://nvd.nist.gov/vuln/detail/CVE-2023-27534
+- https://nvd.nist.gov/vuln/detail/CVE-2023-27535
+- https://nvd.nist.gov/vuln/detail/CVE-2023-27536
+- https://nvd.nist.gov/vuln/detail/CVE-2023-27537
+- https://nvd.nist.gov/vuln/detail/CVE-2023-27538
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28484
+- https://nvd.nist.gov/vuln/detail/CVE-2023-29469
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.6 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.7 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 87
 
 **Publication Date: April 11th, 2023**
