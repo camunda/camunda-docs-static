@@ -70,12 +70,25 @@ downloads:
 
   selected:
     branch: "7.19"
-    version: "7.19.0"
+    version: "7.19.1"
     server: "run"
 
   branches:
     - branch: "7.19"
       releases:
+        - number: "7.19.1"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.1+"
+          date: "2023.04.28"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.19.0"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.0+"
           date: "2023.04.11"
@@ -91,6 +104,19 @@ downloads:
 
     - branch: "7.18"
       releases:
+        - number: "7.18.7"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.7+is%3Aclosed+"
+          date: "2023.04.28"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.18.6"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.6+is%3Aclosed+"
           date: "2023.03.29"
@@ -184,6 +210,19 @@ downloads:
 
     - branch: "7.17"
       releases:
+        - number: "7.17.12"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.12+is%3Aclosed+"
+          date: "2023.04.28"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.11"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.11+is%3Aclosed+"
           date: "2023.03.29"
