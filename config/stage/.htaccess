@@ -568,7 +568,7 @@ RewriteRule ^get-started/cmmn11(.*) /manual/latest/reference/cmmn11/ [R=307,L]
 # Get Started
 RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started/ [R=301,L]
 RewriteRule ^guides/getting-started-guides /get-started/ [R=301,L]
-RewriteRule ^get-started/javaee6 /get-started/javaee7 [R=301,L]
+RewriteRule ^get-started/javaee6 /get-started/archive/javaee7 [R=301,L]
 RewriteRule ^get-started/bpmn20 /get-started/quick-start [R=301,L]
 RewriteRule ^get-started/javaee7$ /get-started/archive/javaee7 [R=301,L]
 RewriteRule ^get-started/spring$ /get-started/archive/spring [R=301,L]
