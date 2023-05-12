@@ -369,12 +369,14 @@ __Release Date:__ 11th of May 2023
 __End of Maintenance:__ 8th of October 2024
 
 __Changes in Supported Environments:__
+
 * Added support for `Elasticsearch` 8.5 and 8.6
 * Dropped support for `Elasticsearch` 7.13.0, 7.14.0 and 7.15.0
 * Added support for  `Camunda Platform` 7.19
 * Dropped support for  `Camunda Platform` 7.16
 
 __Others__
+
 * The option to customize the UI header is removed. Details can be found: [Update notes](https://docs.camunda.io/optimize/self-managed/optimize-deployment/migration-update/3.9-to-3.10/#changes-in-the-configuration)
 
 ## Camunda Optimize 3.9.4
