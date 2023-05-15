@@ -53,7 +53,7 @@ __Changes in Supported Environments:__
 * End of Support for PostgreSQL 12 / 13
 * End of Support for Amazon Aurora PostgreSQL 12
 * End of Support for Oracle 12c
-* End of Support for Sping 5
+* End of Support for Sping 4
 
 __Removed support for Modules:__
 
