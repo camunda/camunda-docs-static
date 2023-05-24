@@ -70,7 +70,7 @@ downloads:
 
   selected:
     branch: "7.19"
-    version: "7.19.1"
+    version: "7.19.2"
     server: "run"
 
   branches:
@@ -91,6 +91,19 @@ downloads:
 
     - branch: "7.19"
       releases:
+        - number: "7.19.2"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.2+"
+          date: "2023.05.26"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.19.1"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.1+"
           date: "2023.04.28"
@@ -119,6 +132,19 @@ downloads:
 
     - branch: "7.18"
       releases:
+        - number: "7.18.8"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.8+is%3Aclosed+"
+          date: "2023.05.26"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.18.7"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.7+is%3Aclosed+"
           date: "2023.04.28"
@@ -225,6 +251,19 @@ downloads:
 
     - branch: "7.17"
       releases:
+        - number: "7.17.13"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.13+is%3Aclosed+"
+          date: "2023.05.26"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.12"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.12+is%3Aclosed+"
           date: "2023.04.28"
@@ -2908,6 +2947,15 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
   </thead>
   <tbody>
+      <tr class="well">
+      <td>1.1.10</td>
+      <td>7.15+</td>
+      <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
+      <td>26.05.2023</td>
+      <td>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.9/camunda-bpm-rpa-bridge-1.1.10.zip">zip</a>
+      </td>
+    </tr>
     <tr class="well">
       <td>1.1.9</td>
       <td>7.15+</td>
