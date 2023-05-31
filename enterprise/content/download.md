@@ -91,6 +91,19 @@ downloads:
 
     - branch: "7.19"
       releases:
+        - number: "7.19.3"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.3+"
+          date: "2023.06.02"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.19.2"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.2+"
           date: "2023.05.26"
@@ -132,6 +145,18 @@ downloads:
 
     - branch: "7.18"
       releases:
+        - number: "7.18.9"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.9+is%3Aclosed+"
+          date: "2023.06.02"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-8
+
         - number: "7.18.8"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.8+is%3Aclosed+"
           date: "2023.05.26"
@@ -251,6 +276,19 @@ downloads:
 
     - branch: "7.17"
       releases:
+        - number: "7.17.14"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.14+is%3Aclosed+"
+          date: "2023.06.02"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "jboss"
+
         - number: "7.17.13"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.13+is%3Aclosed+"
           date: "2023.05.26"
