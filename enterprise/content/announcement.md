@@ -45,7 +45,8 @@ __Changes in Supported Environments:__
 
 * Support for SpringBoot 3.x
 * Support for Quarkus 3.x
-* End of Support for Java 8 (Camunda Run will be released using Java 17 instead of Java 8)
+* End of Support for Java 8
+* Camunda Run requires Java 17 instead of Java 8
 * End of Support for Spring Boot 2.x
 * End of Support for Quarkus 2.x
 * End of Support for WildFly 15 / 16 / 17 / 18 / 19 / 20 / 21 / 22 / 24 / 25
