@@ -45,8 +45,12 @@ __Changes in Supported Environments:__
 
 * Support for SpringBoot 3.x
 * Support for Quarkus 3.x
+* Support for Camunda Run Java 17
 * End of Support for Java 8
+* End of Support for Camunda Run Java 8 and Java 11
+* End of Support for Spring Boot 2.x
 * End of Support for Quarkus 2.x
+* End of Support for IBM WebSphere Application Server 9.0
 * End of Support for WildFly 15 / 16 / 17 / 18 / 19 / 20 / 21 / 22 / 24 / 25
 * End of Support for JBoss EAP 7.2 / 7.3
 * End of Support for PostgreSQL 12 / 13
