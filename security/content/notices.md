@@ -15,6 +15,73 @@ releases of the community platform.
 
 # Notices
 
+## Notice 91
+
+**Publication Date: June 6th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The Camunda web applications had a [path traversal vulnerability](https://owasp.org/www-community/attacks/Path_Traversal) that allowed an attacker to read files from the JVM's classpath (e.g. classes, configuration files, BPMN models - depending on use) and the Camunda web applications' directory (e.g. web.xml deployment descriptor). In addition, on IBM Websphere 9, an attacker could read files from the file system that the system user running the JVM process could access.
+
+**How to determine if the installation is affected**
+
+- You use the Camunda web applications
+- An attacker has access to the REST API endpoints exposed by the Camunda web application backend
+
+**Solution**
+
+Camunda has provided the releases 7.20.0-alpha2, 7.19.3, 7.18.9, 7.17.14 which contain a fix. Note that the fix introduces a change that [requires migrating Java-based web application plugins](https://docs.camunda.org/manual/7.19/update/patch-level/#7-19-2-to-7-19-3-7-18-8-to-7-18-9-7-17-13-to-7-17-14).
+
+## Notice 90
+
+**Publication Date: June 6th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of AngularJS, included in the Camunda web applications, had a Regular Expression Denial of Service (ReDoS) vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-26116
+
+**How to determine if the installation is affected**
+
+- You use the Camunda web applications
+- An attacker can make a victim provide forged input to the web application
+
+**Solution**
+
+Camunda has provided the releases 7.20.0-alpha2, 7.19.2, 7.18.8, 7.17.13 which contain a fix.
+
+## Notice 89
+
+**Publication Date: June 6th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Tomcat, included in the Camunda Tomcat distribution, had one vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28708
+
+**How to determine if the installation is affected**
+
+- You use the Camunda Tomcat distribution
+- You configure the servlet filter `RemoteIpFilter` in Tomcat and/or a deployed web application
+
+**Solution**
+
+Camunda has provided the releases 7.20.0-alpha2, 7.19.2, 7.18.8, 7.17.13 which contain a fix.
+
 ## Notice 88
 
 **Publication Date: April 21st, 2023**
