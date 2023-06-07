@@ -26,7 +26,7 @@ To persist the entity with JPA, we add an entity bean to our process application
 {{< note title="Camunda dropped support for handling JPA entities as variables." class="warning" >}}
 Camunda Automation Platform 7.19 is the last release that supports handling JPA entities as variables
 
-You need to add a process engine plugin to achieve some of the next steps in the guide: [example](https://github.com/camunda/camunda-bpm-examples/tree/master/process-engine-plugin)
+You need to add a process engine plugin to achieve some of the next steps in the guide: [example](https://github.com/camunda/camunda-bpm-examples/tree/master/process-engine-plugin/handling-jpa-variables).
 {{< /note >}}
 
 
