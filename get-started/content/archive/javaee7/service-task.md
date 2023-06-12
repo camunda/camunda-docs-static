@@ -23,6 +23,14 @@ After the process has been started with the new order as process variables, we w
 
 To persist the entity with JPA, we add an entity bean to our process application. Create a package `org.camunda.bpm.getstarted.pizza` and then place the following `OrderEntity` class into that package:
 
+{{< note title="Camunda dropped support for handling JPA entities as variables." class="warning" >}}
+Camunda Automation Platform 7.19 is the last release that supports handling JPA entities as variables
+
+You need to add a process engine plugin to achieve some of the next steps in the guide.
+Have a look at the [7.20 update guide](/manual/develop/user-guide/update/minor/719-to-720/#breaking-change-discontinue-support-for-handling-jpa-entities-as-variables) for more information.
+{{< /note >}}
+
+
 ```java
 package org.camunda.bpm.getstarted.pizza;
 
