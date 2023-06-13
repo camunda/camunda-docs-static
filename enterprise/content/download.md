@@ -2999,7 +2999,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
   <tbody>
       <tr class="well">
       <td>1.1.10</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>26.05.2023</td>
       <td>
@@ -3008,7 +3008,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.9</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>25.01.2023</td>
       <td>
@@ -3017,7 +3017,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.8</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>05.10.2022</td>
       <td>
@@ -3026,7 +3026,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.7</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>29.04.2022</td>
       <td>
@@ -3035,7 +3035,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.6</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>30.03.2022</td>
       <td>
@@ -3044,7 +3044,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.5</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>19.01.2022</td>
       <td>
@@ -3053,7 +3053,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.4</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>21.12.2021</td>
       <td>
@@ -3062,7 +3062,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.3</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>15.12.2021</td>
       <td>
@@ -3071,7 +3071,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.2</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>13.12.2021</td>
       <td>
@@ -3080,7 +3080,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.1</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>28.05.2021</td>
       <td>
@@ -3089,7 +3089,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.1.0</td>
-      <td>7.15+</td>
+      <td>7.15 - 7.19</td>
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>13.04.2021</td>
       <td>
@@ -3098,7 +3098,7 @@ The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a
     </tr>
     <tr class="well">
       <td>1.0.0</td>
-      <td>7.14+</td>
+      <td>7.14 - 7.19</td>
       <td>UiPath (Cloud & On-Premises)</td>
       <td>19.10.2020</td>
       <td>
