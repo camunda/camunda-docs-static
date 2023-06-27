@@ -15,6 +15,63 @@ releases of the community platform.
 
 # Notices
 
+## Notice 92
+
+**Publication Date: June 27th, 2023**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `netty-handler` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-34462
+
+The version of `spring-boot-autoconfigure` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-20883
+
+The version of `semver` shipped with `cawemo-webapp` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2022-25883
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-1255
+- https://nvd.nist.gov/vuln/detail/CVE-2023-2650
+
+The version of `react/http` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-26044
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28319
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28320
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28321
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28322
+
+The versions of `ncurses-libs` and `ncurses-terminfo-base` shipped with `cawemo-websockets` were affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-29491
+
+The version of `openssl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-1255
+- https://nvd.nist.gov/vuln/detail/CVE-2023-2650
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.7 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.8 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 91
 
 **Publication Date: June 6th, 2023**

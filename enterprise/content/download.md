@@ -3388,11 +3388,11 @@ For installing the latter, please download one of the following archives and rea
   <tbody>
     <tr class="well">
       <td><a href="/cawemo">Cawemo On-Premises</a></td>
-      <td>1.9.7</td>
-      <td>21.04.2023</td>
+      <td>1.9.8</td>
+      <td>27.06.2023</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.7.zip">zip</a>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.7.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.8.zip">zip</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.8.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
