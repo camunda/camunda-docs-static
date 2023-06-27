@@ -25,15 +25,15 @@ Cawemo On-Premises
 
 **Impact:**
 
-The version of `netty-handler` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+The version of `netty-handler` shipped with `cawemo-restapi` was affected by the following vulnerability:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2023-34462
 
-The version of `spring-boot-autoconfigure` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+The version of `spring-boot-autoconfigure` shipped with `cawemo-restapi` was affected by the following vulnerability:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2023-20883
 
-The version of `semver` shipped with `cawemo-webapp` was affected by the following vulnerabilities:
+The version of `semver` shipped with `cawemo-webapp` was affected by the following vulnerability:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2022-25883
 
