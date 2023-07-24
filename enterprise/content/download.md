@@ -3428,4 +3428,4 @@ For installing the latter, please download one of the following archives and rea
 
 ## Camunda Modeler
 
-The Camunda Modeler is an open source process modeling tool based on [bpmn.io](http://bpmn.io/). It is a desktop application that allows you to edit BPMN process diagrams, DMN decision tables and CMMN diagrams located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.com/download/modeler/).
+The Camunda Modeler is an open source process modeling tool based on [bpmn.io](http://bpmn.io/). It is a desktop application that allows you to edit BPMN process diagrams, DMN decisions, and Forms located on your local file system. Find more information in the [Camunda Modeler](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/) documentation and the Camunda Modeler [download page](http://camunda.com/download/modeler/).
