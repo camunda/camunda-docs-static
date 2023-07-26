@@ -155,7 +155,7 @@ logging.level.org.camunda.bpm.rpa.bridge: DEBUG
 ```
 
 
-Learn more about [configuring the RPA Bridge](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-rpa-bridge).
+Learn more about [configuring the RPA Bridge](https://docs.camunda.org/manual/7.19/user-guide/camunda-bpm-rpa-bridge).
 
 # Cawemo Catalog
 

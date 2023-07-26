@@ -3050,7 +3050,13 @@ Find more information about the [Full Distribution](/manual/latest/introduction/
 
 ### Camunda RPA Bridge
 
-The [Camunda RPA bridge](/manual/latest/user-guide/camunda-bpm-rpa-bridge/) is a standalone application that allows to call RPA (robotic process automation) bots from BPMN models deployed to the Camunda Platform. Read the [installation guide](/manual/latest/installation/camunda-bpm-rpa-bridge) for further instructions. Consult the [Getting Started Guide](/get-started/rpa) for a hands-on introduction to setting up RPA orchestration.
+The [Camunda RPA bridge](/manual/7.19/user-guide/camunda-bpm-rpa-bridge/) is a standalone application that allows to call RPA (robotic process automation) bots from BPMN models deployed to the Camunda Platform. Read the [installation guide](/manual/7.19/installation/camunda-bpm-rpa-bridge) for further instructions. Consult the [Getting Started Guide](/get-started/rpa) for a hands-on introduction to setting up RPA orchestration.
+
+{{< note title="Camunda discontinues the maintenance of the Camunda RPA bridge." class="warning" >}}
+Camunda Automation Platform 7.19 is the last release maintaining compatibility with the Camunda RPA bridge. Camunda Automation Platform 7.19 and Camunda RPA bridge will be maintained for another 18 months until Oct 2024.
+
+The Camunda RPA Bridge is replaced by RPA [Out-of-the-box Connectors](https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/available-connectors-overview/) in Camunda 8.
+{{< /note >}}
 
 <table class="table">
   <thead>
