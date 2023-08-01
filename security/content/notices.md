@@ -15,6 +15,40 @@ releases of the community platform.
 
 # Notices
 
+## Notice 93
+
+**Publication Date: August 1st, 2023**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-security-config` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-34034
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-2975
+- https://nvd.nist.gov/vuln/detail/CVE-2023-3446
+
+The version of `openssl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-2975
+- https://nvd.nist.gov/vuln/detail/CVE-2023-3446
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.8 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.9 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 92
 
 **Publication Date: June 27th, 2023**
