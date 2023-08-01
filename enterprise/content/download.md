@@ -3436,7 +3436,7 @@ Please note that Optimize alpha releases are not suitable for production environ
   </tbody>
 </table>
 
-In case you're interested in older versions of Optimize, feel free to checkout the [Previous Releases](https://downloads.camunda.cloud/enterprise-release/optimize/).
+In case you're interested in older versions of Optimize, feel free to check out the [Previous Releases](https://downloads.camunda.cloud/enterprise-release/optimize/).
 
 ## Cawemo
 
@@ -3456,11 +3456,11 @@ For installing the latter, please download one of the following archives and rea
   <tbody>
     <tr class="well">
       <td><a href="/cawemo">Cawemo On-Premises</a></td>
-      <td>1.9.8</td>
-      <td>27.06.2023</td>
+      <td>1.9.9</td>
+      <td>01.08.2023</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.8.zip">zip</a>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.8.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.9.zip">zip</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.9.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
