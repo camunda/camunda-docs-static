@@ -105,6 +105,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
           excludeformats:
             - "war"
@@ -119,6 +120,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
           excludeformats:
             - "war"
@@ -133,6 +135,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
           excludeformats:
             - "war"
@@ -150,6 +153,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.19.4"
@@ -163,6 +167,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.19.3"
@@ -176,6 +181,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.19.2"
@@ -189,6 +195,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.19.1"
@@ -202,6 +209,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.19.0"
@@ -215,6 +223,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
     - branch: "7.18"
@@ -229,6 +238,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "ibm-was-8"
 
         - number: "7.18.9"
@@ -241,6 +251,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "ibm-was-8"
 
         - number: "7.18.8"
@@ -254,6 +265,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.7"
@@ -267,6 +279,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.6"
@@ -280,6 +293,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.5"
@@ -293,6 +307,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.4"
@@ -306,6 +321,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.3"
@@ -319,6 +335,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.2"
@@ -332,6 +349,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.1"
@@ -345,6 +363,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.18.0"
@@ -358,6 +377,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
     - branch: "7.17"
@@ -373,6 +393,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.14"
@@ -386,6 +407,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.13"
@@ -399,6 +421,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.12"
@@ -412,6 +435,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.11"
@@ -425,6 +449,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.10"
@@ -438,6 +463,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.9"
@@ -451,6 +477,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.8"
@@ -464,6 +491,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.7"
@@ -477,6 +505,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.6"
@@ -490,6 +519,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.5"
@@ -503,6 +533,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.3"
@@ -516,6 +547,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.2"
@@ -529,6 +561,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.1"
@@ -542,6 +575,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.17.0"
@@ -555,6 +589,7 @@ downloads:
             - "glassfish"
             - "ibm-was"
             - "ibm-was-85"
+            - "ibm-was-liberty"
             - "jboss"
 
     - branch: "7.16"
@@ -569,6 +604,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.17"
@@ -581,6 +617,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.16"
@@ -593,6 +630,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.15"
@@ -605,6 +643,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.14"
@@ -617,6 +656,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.13"
@@ -629,6 +669,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.12"
@@ -641,6 +682,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.10"
@@ -653,6 +695,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.9"
@@ -665,6 +708,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.8"
@@ -677,6 +721,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.7"
@@ -689,6 +734,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.6"
@@ -701,6 +747,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.5"
@@ -713,6 +760,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.4"
@@ -725,6 +773,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.3"
@@ -737,6 +786,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.2"
@@ -749,6 +799,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.1"
@@ -761,6 +812,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
         - number: "7.16.0"
@@ -773,6 +825,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
             - "jboss"
 
     - branch: "7.15"
@@ -787,6 +840,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.18"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17807"
@@ -798,6 +852,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.16"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17701"
@@ -809,6 +864,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17694"
@@ -820,6 +876,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17591"
@@ -831,6 +888,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17446"
@@ -842,6 +900,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17437"
@@ -853,6 +912,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17430"
@@ -864,6 +924,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17423"
@@ -875,6 +936,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17408"
@@ -886,6 +948,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17291"
@@ -897,6 +960,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17092"
@@ -908,6 +972,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16926"
@@ -919,6 +984,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16911"
@@ -930,6 +996,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16900"
@@ -941,6 +1008,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16801"
@@ -952,6 +1020,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16795"
@@ -963,6 +1032,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16791"
@@ -974,6 +1044,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.15.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16006"
@@ -985,6 +1056,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
     - branch: "7.14"
       releases:
@@ -998,6 +1070,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.19"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17445"
@@ -1009,6 +1082,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.18"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17436"
@@ -1020,6 +1094,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17429"
@@ -1031,6 +1106,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.16"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17424"
@@ -1042,6 +1118,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17407"
@@ -1053,6 +1130,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17290"
@@ -1064,6 +1142,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=17091"
@@ -1075,6 +1154,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16928"
@@ -1086,6 +1166,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16910"
@@ -1097,6 +1178,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16901"
@@ -1108,6 +1190,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16803"
@@ -1119,6 +1202,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16796"
@@ -1130,6 +1214,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16720"
@@ -1141,6 +1226,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16701"
@@ -1152,6 +1238,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16690"
@@ -1163,6 +1250,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16592"
@@ -1174,6 +1262,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16492"
@@ -1185,6 +1274,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16390"
@@ -1196,6 +1286,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16228"
@@ -1207,6 +1298,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.14.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?version=16004&projectId=10230"
@@ -1218,6 +1310,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
     - branch: "7.13"
       releases:
@@ -1231,6 +1324,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16909"
@@ -1242,6 +1336,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.16"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16905"
@@ -1253,6 +1348,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16804"
@@ -1264,6 +1360,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16797"
@@ -1275,6 +1372,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16721"
@@ -1286,6 +1384,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16702"
@@ -1297,6 +1396,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16691"
@@ -1308,6 +1408,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16596"
@@ -1319,6 +1420,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16491"
@@ -1330,6 +1432,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16391"
@@ -1341,6 +1444,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16294"
@@ -1352,6 +1456,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16227"
@@ -1363,6 +1468,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16216"
@@ -1374,6 +1480,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16208"
@@ -1385,6 +1492,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16195"
@@ -1396,6 +1504,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16190"
@@ -1407,6 +1516,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16094"
@@ -1418,6 +1528,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.13.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532"
@@ -1429,6 +1540,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
     - branch: "7.12"
       releases:
@@ -1442,6 +1554,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.20"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16722"
@@ -1453,6 +1566,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.19"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16703"
@@ -1464,6 +1578,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.18"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16696"
@@ -1475,6 +1590,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16692"
@@ -1487,6 +1603,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16490"
@@ -1499,6 +1616,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16397"
@@ -1511,6 +1629,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16392"
@@ -1523,6 +1642,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16228"
@@ -1535,6 +1655,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16217"
@@ -1547,6 +1668,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16210"
@@ -1559,6 +1681,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16201"
@@ -1571,6 +1694,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16191"
@@ -1583,6 +1707,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16096"
@@ -1595,6 +1720,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16013"
@@ -1607,6 +1733,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15997"
@@ -1619,6 +1746,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15790"
@@ -1631,6 +1759,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15702"
@@ -1643,6 +1772,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15499"
@@ -1655,6 +1785,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15593"
@@ -1667,6 +1798,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.12.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15387"
@@ -1679,6 +1811,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
     - branch: "7.11"
       releases:
@@ -1693,6 +1826,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.20"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16393"
@@ -1705,6 +1839,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.19"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16229"
@@ -1717,6 +1852,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.18"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16218"
@@ -1729,6 +1865,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16212"
@@ -1741,6 +1878,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.16"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16202"
@@ -1753,6 +1891,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16192"
@@ -1765,6 +1904,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16097"
@@ -1777,6 +1917,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=16014"
@@ -1789,6 +1930,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15998"
@@ -1801,6 +1943,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15791"
@@ -1813,6 +1956,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15697"
@@ -1825,6 +1969,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15611"
@@ -1837,6 +1982,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15600"
@@ -1849,6 +1995,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15596"
@@ -1861,6 +2008,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15528"
@@ -1873,6 +2021,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15516"
@@ -1885,6 +2034,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15512"
@@ -1897,6 +2047,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15495"
@@ -1909,6 +2060,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15406"
@@ -1921,6 +2073,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.11.0"
           note: "https://blog.camunda.com/post/2019/05/camunda-bpm-7110-released"
@@ -1933,6 +2086,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
     - branch: "7.10"
       releases:
@@ -1947,6 +2101,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.18"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15999"
@@ -1959,6 +2114,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15792"
@@ -1971,6 +2127,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.16"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15701"
@@ -1983,6 +2140,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15610"
@@ -1995,6 +2153,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15601"
@@ -2007,6 +2166,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15595"
@@ -2019,6 +2179,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15529"
@@ -2031,6 +2192,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15518"
@@ -2043,6 +2205,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15510"
@@ -2055,6 +2218,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15493"
@@ -2067,6 +2231,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15404"
@@ -2079,6 +2244,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15389"
@@ -2091,6 +2257,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15382"
@@ -2103,6 +2270,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15377"
@@ -2115,6 +2283,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15372"
@@ -2127,6 +2296,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15351"
@@ -2139,6 +2309,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15345"
@@ -2151,6 +2322,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
         - number: "7.10.0"
           note: "https://blog.camunda.com/post/2018/11/camunda-bpm-7100-released/"
@@ -2163,6 +2335,7 @@ downloads:
             - "wildfly8"
             - "glassfish"
             - "ibm-was"
+            - "ibm-was-liberty"
 
     - branch: "7.9"
       releases:
@@ -2175,6 +2348,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.19"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15594"
@@ -2185,6 +2359,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.17"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15530"
@@ -2195,6 +2370,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.16"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15519"
@@ -2205,6 +2381,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.15"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15509"
@@ -2215,6 +2392,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.14"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15492"
@@ -2225,6 +2403,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15405"
@@ -2235,6 +2414,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15383"
@@ -2245,6 +2425,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15378"
@@ -2255,6 +2436,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.10"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15371"
@@ -2265,6 +2447,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15352"
@@ -2275,6 +2458,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15344"
@@ -2285,6 +2469,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15341"
@@ -2295,6 +2480,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15339"
@@ -2305,6 +2491,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15335"
@@ -2315,6 +2502,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15324"
@@ -2325,6 +2513,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15310"
@@ -2335,6 +2524,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15306"
@@ -2345,6 +2535,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.9.0"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15096"
@@ -2355,6 +2546,7 @@ downloads:
             - "wildfly"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
     - branch: "7.8"
       releases:
@@ -2368,6 +2560,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.13"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15348"
@@ -2379,6 +2572,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.12"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15340"
@@ -2390,6 +2584,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.11"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15336"
@@ -2401,6 +2596,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15325"
@@ -2412,6 +2608,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15309"
@@ -2423,6 +2620,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15303"
@@ -2434,6 +2632,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15300"
@@ -2445,6 +2644,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15296"
@@ -2456,6 +2656,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15293"
@@ -2467,6 +2668,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15196"
@@ -2478,6 +2680,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15192"
@@ -2489,6 +2692,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15103"
@@ -2500,6 +2704,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.8.0"
           note: "http://blog.camunda.org/post/2017/11/camunda-bpm-780-released/"
@@ -2511,6 +2716,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
     - branch: "7.7"
       releases:
@@ -2524,6 +2730,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.9"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15294"
@@ -2535,6 +2742,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.8"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15197"
@@ -2546,6 +2754,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.7"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15193"
@@ -2557,6 +2766,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.6"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15106"
@@ -2568,6 +2778,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.5"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15090"
@@ -2579,6 +2790,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.4"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14990"
@@ -2590,6 +2802,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.3"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14910"
@@ -2601,6 +2814,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.2"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14908"
@@ -2612,6 +2826,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.1"
           note: "https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14896"
@@ -2623,6 +2838,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
         - number: "7.7.0"
           note: "http://blog.camunda.org/post/2017/05/camunda-bpm-770-released/"
@@ -2634,6 +2850,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was-85"
+            - "ibm-was-liberty"
 
     - branch: "7.6"
       releases:
@@ -2647,6 +2864,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.12"
@@ -2659,6 +2877,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.11"
@@ -2671,6 +2890,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.10"
@@ -2683,6 +2903,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.9"
@@ -2695,6 +2916,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.8"
@@ -2707,6 +2929,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.7"
@@ -2719,6 +2942,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.6"
@@ -2731,6 +2955,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.5"
@@ -2743,6 +2968,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.4"
@@ -2755,6 +2981,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.3"
@@ -2767,6 +2994,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.2"
@@ -2779,6 +3007,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.1"
@@ -2791,6 +3020,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.6.0"
@@ -2803,6 +3033,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
     - branch: "7.5"
@@ -2817,6 +3048,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.8"
@@ -2829,6 +3061,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.7"
@@ -2841,6 +3074,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.6"
@@ -2853,6 +3087,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.4"
@@ -2865,6 +3100,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.3"
@@ -2877,6 +3113,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.2"
@@ -2889,6 +3126,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.1"
@@ -2901,6 +3139,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.5.0"
@@ -2913,6 +3152,7 @@ downloads:
             - "wildfly11"
             - "glassfish"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
     - branch: "7.4"
@@ -2927,6 +3167,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.10"
@@ -2939,6 +3180,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.8"
@@ -2951,6 +3193,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.7"
@@ -2963,6 +3206,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.6"
@@ -2975,6 +3219,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.5"
@@ -2987,6 +3232,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.4"
@@ -2999,6 +3245,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.3"
@@ -3011,6 +3258,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.2"
@@ -3023,6 +3271,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.1"
@@ -3035,6 +3284,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 
         - number: "7.4.0"
@@ -3047,6 +3297,7 @@ downloads:
             - "wildfly11"
             - "wildfly10"
             - "ibm-was9"
+            - "ibm-was-liberty"
             - "ibm-was-85"
 ---
 
