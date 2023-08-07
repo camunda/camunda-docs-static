@@ -15,6 +15,42 @@ releases of the community platform.
 
 # Notices
 
+## Notice 94
+
+**Publication Date: August 8th, 2023**
+
+**Product affected:**
+
+Camunda Platform 7
+
+**Impact:**
+
+The version of Swagger UI included in Camunda Platform Run had a number of third-party library vulnerabilities:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2020-15168
+* https://nvd.nist.gov/vuln/detail/CVE-2021-3664
+* https://nvd.nist.gov/vuln/detail/CVE-2021-3801
+* https://nvd.nist.gov/vuln/detail/CVE-2021-23648
+* https://nvd.nist.gov/vuln/detail/CVE-2021-32723
+* https://nvd.nist.gov/vuln/detail/CVE-2022-0235
+* https://nvd.nist.gov/vuln/detail/CVE-2022-0512
+* https://nvd.nist.gov/vuln/detail/CVE-2022-0639
+* https://nvd.nist.gov/vuln/detail/CVE-2022-0686
+* https://nvd.nist.gov/vuln/detail/CVE-2022-0691
+* https://nvd.nist.gov/vuln/detail/CVE-2022-1365
+* https://nvd.nist.gov/vuln/detail/CVE-2022-24999
+* https://nvd.nist.gov/vuln/detail/CVE-2022-25927
+
+**How to determine if the installation is affected**
+
+- You use Camunda Platform Run
+- Swagger UI is activated in your deployment of Run
+- An attacker has access to Swagger UI or can influence a user of Swagger UI
+
+**Solution**
+
+Camunda has provided the releases 7.20.0-alpha4, 7.19.5, 7.18.10, 7.17.15 which contain a fix.
+
 ## Notice 93
 
 **Publication Date: August 1st, 2023**
