@@ -3656,7 +3656,7 @@ Elastic's Elasticsearch is the only supported version of Elastic compatible with
 AWS Opensearch is not supported at this time.
 {{< /note >}}
 
-If you're interested in the latest features, you can get a sneak peek by trying out one of the alpha releases:
+If you're interested in the latest features, you can get a sneak peek by trying out the latest alpha release:
 
 {{< note title="Heads Up!" class="warning" >}}
 Please note that Optimize alpha releases are not suitable for production environments and should only be used for testing.
@@ -3681,36 +3681,6 @@ Please note that Optimize alpha releases are not suitable for production environ
         <td>
           <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha4/camunda-optimize-3.11.0-alpha4-production.zip">zip</a>&nbsp; 
           <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha4/camunda-optimize-3.11.0-alpha4-production.tar.gz">tar.gz</a>
-        </td>
-    </tr>
-    <tr class="well">
-        <td>3.11.0-alpha3</td>
-        <td>7.18+, 7.19+</td>
-        <td>7.16.2+, 7.17.0+, 8.7.0+, 8.8.0+</td>
-        <td>11.07.2023</td>
-        <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha3/camunda-optimize-3.11.0-alpha3-production.zip">zip</a>&nbsp; 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha3/camunda-optimize-3.11.0-alpha3-production.tar.gz">tar.gz</a>
-        </td>
-    </tr>
-    <tr class="well">
-        <td>3.11.0-alpha2</td>
-        <td>7.18+, 7.19+</td>
-        <td>7.16.2+, 7.17.0+, 8.5.0+, 8.6.0+</td>
-        <td>13.06.2023</td>
-        <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha2/camunda-optimize-3.11.0-alpha2-production.zip">zip</a>&nbsp; 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha2/camunda-optimize-3.11.0-alpha2-production.tar.gz">tar.gz</a>
-        </td>
-    </tr>
-    <tr class="well">
-        <td>3.11.0-alpha1</td>
-        <td>7.18+, 7.19+</td>
-        <td>7.16.2+, 7.17.0+, 8.5.0+, 8.6.0+</td>
-        <td>09.05.2023</td>
-        <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha1/camunda-optimize-3.11.0-alpha1-production.zip">zip</a>&nbsp; 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.0-alpha1/camunda-optimize-3.11.0-alpha1-production.tar.gz">tar.gz</a>
         </td>
     </tr>
   </tbody>
