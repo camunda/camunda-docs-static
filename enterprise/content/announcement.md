@@ -46,6 +46,7 @@ __Changes in Supported Environments:__
 * Support for SpringBoot 3.1
 * Support for Quarkus 3.1
 * Support for Camunda Run Java 17
+* Support for WildFly 29
 * End of Support for Java 8
 * End of Support for Camunda Run Java 8 and Java 11
 * End of Support for Spring Boot 2.x
