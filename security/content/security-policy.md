@@ -29,7 +29,24 @@ Test history:
     <th>Test Focus</th>
     <th>Result Summary</th>
   </tr>
-    <tr>
+  <tr>
+    <td><p>April 2023</p></td>
+    <td>
+      <p>Camunda Automation Platform Version: 7.19.0-ee</p>
+      <p>External security assessment using the graybox approach to test the Camunda Automation Platform web applications and REST API.</p>
+    </td>
+    <td>
+      <p>No critical vulnerabilities were detected.</p>
+      <p>Three lesser vulnerabilities were detected and submitted for treatment to our security issue process:
+      <ul>
+        <li>One issues has been fixed.</li>
+        <li>One issues has been partially fixed, work in progress.</li>
+        <li>One issue was given as general security advice.</li>
+      </ul> 
+      </p>       
+    </td>
+  </tr>
+  <tr>
     <td><p>June 2022</p></td>
     <td>
       <p>Camunda Automation Platform Version: 7.17.0-ee Camunda Optimize Version 3.8.0</p>
