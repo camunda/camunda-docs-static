@@ -73,7 +73,7 @@ downloads:
 
   selected:
     branch: "7.19"
-    version: "7.19.5"
+    version: "7.19.6"
     server: "run"
 
   branches:
@@ -142,6 +142,20 @@ downloads:
 
     - branch: "7.19"
       releases:
+        - number: "7.19.6"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.6+"
+          date: "2023.08.31"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was-liberty"
+            - "jboss"
+
         - number: "7.19.5"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.5+"
           date: "2023.07.26"
@@ -228,6 +242,19 @@ downloads:
 
     - branch: "7.18"
       releases:
+        - number: "7.18.11"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.11+is%3Aclosed+"
+          date: "2023.08.31"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-liberty"
+            - "ibm-was-8"
+
         - number: "7.18.10"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.18.10+is%3Aclosed+"
           date: "2023.07.26"
@@ -382,6 +409,20 @@ downloads:
 
     - branch: "7.17"
       releases:
+        - number: "7.17.16"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.16+is%3Aclosed+"
+          date: "2023.08.31"
+          excludeservers:
+            - "wildfly-jakartaee"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was-liberty"
+            - "jboss"
+
         - number: "7.17.15"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+label%3Aversion%3A7.17.15+is%3Aclosed+"
           date: "2023.07.26"
