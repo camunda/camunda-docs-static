@@ -3499,7 +3499,6 @@ The Camunda RPA Bridge is replaced by RPA [Out-of-the-box Connectors](https://do
 - [Examples](/manual/latest/examples)
 - [Supported Environments](/manual/latest/introduction/supported-environments)
 - [Previous Versions](https://downloads.camunda.cloud/enterprise-release/)
-- [XSLT Extension 1.0.2](https://downloads.camunda.cloud/enterprise-release/camunda-bpm/extensions/xslt/1.0.2/camunda-bpm-ee-xslt-extension-1.0.2.zip)
 
 ## Camunda Optimize
 
