@@ -376,7 +376,7 @@ __End of Maintenance:__ 9th of October 2024
 __Changes in Supported Environments:__
 
 * Added support for `Elasticsearch` 8.5, 8.6
-* Dropped support for `Elasticsearch` 7.13.0, 7.14.0 and 7.15.0
+* Dropped support for `Elasticsearch` 7.13, 7.14 and 7.15
 * Added support for  `Camunda Platform` 7.19
 * Dropped support for  `Camunda Platform` 7.16
 
@@ -392,7 +392,7 @@ __End of Maintenance:__ 10th of April 2023
 
 * Added support for  `Camunda Platform` 7.18
 * Dropped support for  `Camunda Platform` 7.15
-* Dropped support for `Elasticsearch` 7.10.0, 7.11.0 and 7.12.0
+* Dropped support for `Elasticsearch` 7.10, 7.11 and 7.12
 
 ## Camunda Optimize 3.8
 
@@ -400,8 +400,8 @@ __Release Date:__ 12th of April 2022
 
 __End of Maintenance:__ 11th of October 2023
 
-* Dropped support for `Elasticsearch` 7.8.0 and 7.9.0
-* Added support for `Elasticsearch` 7.17.0
+* Dropped support for `Elasticsearch` 7.8 and 7.9
+* Added support for `Elasticsearch` 7.17
 
 ## Camunda Optimize 3.7
 
@@ -426,7 +426,7 @@ __End of Maintenance:__ 31st of March 2023
 
 __Changes in Supported Environments:__
 
-* Added support for `Elasticsearch` 7.14 and 7.15 versions
+* Added support for `Elasticsearch` 7.14, 7.15, 7.16.2+ versions
 * Added support for `Camunda Platform` 7.16.x releases
 * Ended support for `Camunda Platform` 7.13.x releases
 * New minimum required `Camunda Platform` version is 7.14.0
@@ -440,7 +440,7 @@ __End of Maintenance:__ 31st of December 2022
 __Changes in Supported Environments:__
 
 * Ended support for Java 8
-* Ended support for `Elasticsearch` 7.5.x, 7.6.x and 7.7.x versions
+* Ended support for `Elasticsearch` 7.5, 7.6 and 7.7 versions
 * Added support for `Elasticsearch` 7.12 and 7.13 versions
 
 ## Camunda Optimize 3.4
@@ -452,7 +452,7 @@ __End of Maintenance:__ 30th of September 2022
 __Changes in Supported Environments:__
 
 * Added support for `Elasticsearch` 7.11 version
-* Ended support for `Elasticsearch` 7.3.x and 7.4.x as well as 7.5.0 versions
+* Ended support for `Elasticsearch` 7.3 and 7.4 as well as 7.5 versions
 * Added support for `Camunda Platform` 7.15.x releases
 * Ended support for `Camunda Platform` 7.12.x releases
 * New Minimum required `Camunda Platform` version is 7.13.5
