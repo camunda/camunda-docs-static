@@ -126,7 +126,7 @@ downloads:
             - "war"
         - number: "7.20.0-alpha2"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.20.0-alpha2"
-          date: "2023.05.09"
+          date: "2023.06.06"
           excludeservers:
             - "wildfly"
             - "wildfly11"
@@ -141,7 +141,7 @@ downloads:
             - "war"
         - number: "7.20.0-alpha1"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.20.0-alpha1"
-          date: "2023.06.06"
+          date: "2023.05.09"
           excludeservers:
             - "wildfly"
             - "wildfly11"
