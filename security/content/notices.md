@@ -15,6 +15,32 @@ releases of the community platform.
 
 # Notices
 
+## Notice 95
+
+**Publication Date: September 14th, 2023**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `libcrypto3` and `libssl3` shipped with `cawemo-restapi`, `cawemo-webapp` and `cawemo-websockets` were affected by the following vulnerability:
+- https://avd.aquasec.com/nvd/cve-2023-3817
+
+The version of `busybox`, `busybox-binsh` and `ssl_client` shipped with `cawemo-restapi` and `cawemo-websockets` were affected by the following vulnerability:
+- https://avd.aquasec.com/nvd/cve-2022-48174
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.9 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.10 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 94
 
 **Publication Date: August 8th, 2023**
