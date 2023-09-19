@@ -26,9 +26,11 @@ Cawemo On-Premises
 **Impact:**
 
 The version of `libcrypto3` and `libssl3` shipped with `cawemo-restapi`, `cawemo-webapp` and `cawemo-websockets` were affected by the following vulnerability:
+
 - https://avd.aquasec.com/nvd/cve-2023-3817
 
 The version of `busybox`, `busybox-binsh` and `ssl_client` shipped with `cawemo-restapi` and `cawemo-websockets` were affected by the following vulnerability:
+
 - https://avd.aquasec.com/nvd/cve-2022-48174
 
 **How to determine if the installation is affected**
