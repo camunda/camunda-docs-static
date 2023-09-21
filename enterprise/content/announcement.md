@@ -61,7 +61,7 @@ __End of Maintenance:__ 9th of April 2025
 __Changes in Supported Environments:__
 
 * Support for SpringBoot 3.1
-* Support for Quarkus 3.4
+* Support for Quarkus 3.2
 * Support for Camunda Run Java 17
 * Support for WildFly 29
 * End of Support for Java 8
