@@ -1,11 +1,12 @@
 ---
 
 title: 'RPA Orchestration'
-weight: 5
+weight: 40
 
 menu:
   main:
     name: "RPA Orchestration"
+    parent: "get-started-archive"
     identifier: "rpa"
     pre: ""
 
