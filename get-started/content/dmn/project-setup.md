@@ -51,9 +51,9 @@ The next step consists of setting up the Maven dependencies for your new process
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.19.0</camunda.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <camunda.version>7.20.0</camunda.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <dependencyManagement>

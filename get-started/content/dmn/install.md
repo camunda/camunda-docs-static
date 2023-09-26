@@ -20,7 +20,7 @@ First you need to set up your development environment and install the Camunda Pl
 
 Make sure you have the following set of tools installed:
 
-* Java JDK 1.8+,
+* Java JDK 11+,
 * Apache Maven (optional, if not installed you can use embedded Maven inside Eclipse.)
 * A modern web browser (recent Firefox, Chrome or Microsoft Edge will work fine)
 * Eclipse integrated development environment (IDE)
