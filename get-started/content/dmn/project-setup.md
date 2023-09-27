@@ -52,8 +52,7 @@ The next step consists of setting up the Maven dependencies for your new process
 
   <properties>
     <camunda.version>7.20.0</camunda.version>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.release>11</maven.compiler.release>
   </properties>
 
   <dependencyManagement>
@@ -85,6 +84,11 @@ The next step consists of setting up the Maven dependencies for your new process
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
