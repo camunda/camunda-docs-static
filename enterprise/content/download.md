@@ -73,7 +73,7 @@ downloads:
 
   selected:
     branch: "7.19"
-    version: "7.19.6"
+    version: "7.19.7"
     server: "run"
 
   branches:
@@ -172,6 +172,20 @@ downloads:
 
     - branch: "7.19"
       releases:
+        - number: "7.19.7"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.7+"
+          date: "2023.09.29"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was-liberty"
+            - "jboss"
+
         - number: "7.19.6"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.19.6+"
           date: "2023.08.31"
