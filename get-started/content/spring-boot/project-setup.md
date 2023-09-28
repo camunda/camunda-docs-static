@@ -14,6 +14,10 @@ menu:
 
 First, let's set up your first process application project in the IDE of your choice, the following description uses Eclipse.
 
+# Requirements
+
+The project requires Java 17.
+
 # Set Up a Java Project
 
 We will start by setting up a Spring Boot application as an Apache Maven Project inside Eclipse. This consists of three steps:
@@ -46,10 +50,9 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <camunda.spring-boot.version>7.19.0</camunda.spring-boot.version>
-    <spring-boot.version>2.7.10</spring-boot.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <camunda.spring-boot.version>7.20.0</camunda.spring-boot.version>
+    <spring-boot.version>3.1.4</spring-boot.version>
+    <maven.compiler.release>17</maven.compiler.release>
   </properties>
   
   <dependencyManagement>
@@ -77,7 +80,7 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-impl</artifactId>
-      <version>2.3.6</version>
+      <version>4.0.3</version>
     </dependency>
   </dependencies>
 
@@ -97,6 +100,11 @@ We also use `spring-boot-maven-plugin`, which does all the magic for packaging S
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
       </plugin>
     </plugins>
   </build>
