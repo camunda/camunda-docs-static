@@ -575,9 +575,11 @@ RewriteRule ^(latest|7.3|7.2|7.1|7.0)/guides/getting-started-guides /get-started
 RewriteRule ^guides/getting-started-guides /get-started/ [R=301,L]
 RewriteRule ^get-started/javaee6 /get-started/archive/javaee7 [R=301,L]
 RewriteRule ^get-started/bpmn20 /get-started/quick-start [R=301,L]
-RewriteRule ^get-started/javaee7$ /get-started/archive/javaee7 [R=301,L]
+RewriteRule ^get-started/javaee7(.*) /get-started/archive/javaee7$1 [R=301,L]
 RewriteRule ^get-started/spring$ /get-started/archive/spring [R=301,L]
-RewriteRule ^get-started/java-process-app$ /get-started/archive/java-process-app [R=301,L]
+RewriteRule ^get-started/spring/(.*) /get-started/archive/spring/$1 [R=301,L]
+RewriteRule ^get-started/java-process-app(.*) /get-started/archive/java-process-app$1 [R=301,L]
+RewriteRule ^get-started/rpa(.*) /get-started/archive/rpa$1 [R=301,L]
 
 # Manual (User Guide)
 RewriteRule ^(7.3|7.2|7.1|7.0)/api-references/javadoc/(.*) /javadoc/camunda-bpm-platform/$1/$2 [R=301,L]

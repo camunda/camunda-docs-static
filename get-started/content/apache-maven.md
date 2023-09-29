@@ -26,7 +26,7 @@ Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#br
     <dependency>
       <groupId>org.camunda.bpm</groupId>
       <artifactId>camunda-bom</artifactId>
-      <version>7.19.0</version>
+      <version>7.20.0</version>
       <scope>import</scope>
       <type>pom</type>
     </dependency>
@@ -44,7 +44,7 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
     <dependency>
       <groupId>org.camunda.bpm</groupId>
       <artifactId>camunda-bom</artifactId>
-      <version>7.19.0-ee</version>
+      <version>7.20.0-ee</version>
       <scope>import</scope>
       <type>pom</type>
     </dependency>
@@ -94,7 +94,7 @@ This BOM allows to use the DMN engine standalone without the BPMN engine and the
   <dependency>
     <groupId>org.camunda.bpm.dmn</groupId>
     <artifactId>camunda-engine-dmn-bom</artifactId>
-    <version>7.19.0</version>
+    <version>7.20.0</version>
     <type>pom</type>
     <scope>import</scope>
   </dependency>
@@ -197,7 +197,7 @@ The files are hosted in AWS S3, therefore, Artifactory rewrites the requests to 
 
 Example:
 ```
-curl -LO https://artifacts.camunda.com/artifactory/camunda-bpm/org/camunda/bpm/camunda-engine-rest/7.16.0/camunda-engine-rest-7.16.0.war
+curl -LO https://artifacts.camunda.com/artifactory/camunda-bpm/org/camunda/bpm/camunda-engine-rest/7.20.0/camunda-engine-rest-7.20.0.war
 ```
 
 # Other Camunda Modules:
