@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 96
+
+**Publication Date: October 3rd, 2023**
+
+**Product affected:**
+
+Camunda Desktop Modeler
+
+**Impact:**
+
+The version of `libwebp` shipped with Camunda Desktop Modeler was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-4863
+
+**How to determine if the installation is affected**
+
+- Camunda Modeler 5.15.1 or lower is used
+
+**Solution**
+
+Camunda has provided the following release which contains a fix:
+
+- [Camunda Desktop Modeler 5.15.2](https://downloads.camunda.cloud/release/camunda-modeler/5.15.2/)
+
 ## Notice 95
 
 **Publication Date: September 14th, 2023**
@@ -423,7 +447,7 @@ The Camunda Spring Boot starter and Camunda Run could write the hashed password 
 
 **Solution**
 
-Camunda has provided the releases 7.19.0-alpha3, 7.18.3, 7.17.9, 7.16.16 which contain a fix. 
+Camunda has provided the releases 7.19.0-alpha3, 7.18.3, 7.17.9, 7.16.16 which contain a fix.
 
 ## Notice 82
 
@@ -448,7 +472,7 @@ The version of Apache Tomcat shipped with the Camunda distributions, RPA Bridge,
 
 **Solution**
 
-Camunda has provided the releases 7.19.0-alpha3, 7.18.2, 7.17.8, 7.16.15, RPA Bridge 1.1.9 which contain a fix. 
+Camunda has provided the releases 7.19.0-alpha3, 7.18.2, 7.17.8, 7.16.15, RPA Bridge 1.1.9 which contain a fix.
 
 Other solutions:
 
@@ -995,7 +1019,7 @@ The version of the Spring Framework used in Camunda Platform 7 was vulnerable to
 
 **How to determine if the installation is affected**
 
-* You use any of the following modules: 
+* You use any of the following modules:
   * Standalone web applications
   * Weblogic integration
   * Websphere integration
@@ -1149,7 +1173,7 @@ The version of Apache Tomcat shipped with the Camunda distributions, RPA Bridge,
 
 **Solution**
 
-Camunda has provided the releases 7.17.0-alpha6, 7.16.7, 7.15.13, 7.14.19, RPA Bridge 1.1.6 which contain a fix. 
+Camunda has provided the releases 7.17.0-alpha6, 7.16.7, 7.15.13, 7.14.19, RPA Bridge 1.1.6 which contain a fix.
 
 Other solutions:
 
@@ -1189,7 +1213,7 @@ openssl:
 
 * https://nvd.nist.gov/vuln/detail/CVE-2022-0778
 
-libxml2: 
+libxml2:
 
 * https://nvd.nist.gov/vuln/detail/CVE-2022-23308
 
@@ -1310,7 +1334,7 @@ Camunda Platform 7
 
 **Impact:**
 
-When connected to LDAP, Camunda Platform Run logged sensitive LDAP connection configuration options during startup. 
+When connected to LDAP, Camunda Platform Run logged sensitive LDAP connection configuration options during startup.
 
 **How to determine if the installation is affected**
 
@@ -1334,13 +1358,13 @@ Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, IAM
 
 **Impact:**
 
-Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, and IAM bundle log4j libraries for which the following CVE 
+Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, and IAM bundle log4j libraries for which the following CVE
 has been published:
 
 * https://nvd.nist.gov/vuln/detail/CVE-2021-44832
 
-Similar to the [security notice 54](#notice-54) on Dec 23rd, 2021, **the products do not bundle the log4j-core library** 
-which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run, 
+Similar to the [security notice 54](#notice-54) on Dec 23rd, 2021, **the products do not bundle the log4j-core library**
+which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run,
 Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM to be affected by the vulnerability.
 
 Still, Camunda recommends applying fixes as mentioned in Solutions below.
@@ -1394,13 +1418,13 @@ Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, IAM
 
 **Impact:**
 
-Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, and IAM bundle log4j libraries for which the following CVE 
+Camunda Run, Camunda RPA Bridge, Camunda Optimize, Cawemo, and IAM bundle log4j libraries for which the following CVE
 has been published:
 
 * https://nvd.nist.gov/vuln/detail/CVE-2021-45105
 
-Similar to the [security notice 52](#notice-52) on Dec 17th, 2021, **the products do not bundle the log4j-core library** 
-which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run, 
+Similar to the [security notice 52](#notice-52) on Dec 17th, 2021, **the products do not bundle the log4j-core library**
+which contains the vulnerability referred to by the CVE. As a result, Camunda does not consider Camunda Run,
 Camunda RPA Bridge, Camunda Optimize, Cawemo, or IAM to be affected by the vulnerability.
 
 Still, Camunda recommends applying fixes as mentioned in Solutions below.
@@ -1446,7 +1470,7 @@ The version of `laravel/framework` shipped with `cawemo-websockets` was affected
 **Solution**
 
 Camunda has provided 1.8.4 releases for the `cawemo-restapi` and `cawemo-websockets` Docker images which contain fixes
-for the above-mentioned CVEs. 
+for the above-mentioned CVEs.
 
 
 ## Notice 52
@@ -1540,7 +1564,7 @@ The Camunda Platform web applications did not set the [SameSite attribute](https
 
 **Solution**
 
-Camunda has provided the releases 7.17.0-alpha2, 7.16.2, 7.15.8, 7.14.14 which contain a fix. 
+Camunda has provided the releases 7.17.0-alpha2, 7.16.2, 7.15.8, 7.14.14 which contain a fix.
 
 Note that on the servers Oracle Weblogic, IBM Websphere, and JBoss EAP/Wildfly, the `SameSite` attribute is not enabled by default and needs server configuration as described in the guides on [how to configure the session cookie](https://docs.camunda.org/manual/7.16/webapps/shared-options/cookie-security/#session-cookie).
 
@@ -1636,7 +1660,7 @@ The version of Apache Tomcat shipped with the Camunda distributions, shipped wit
 
 **Solution**
 
-Camunda has provided the releases 7.16.0-alpha5, 7.15.6, 7.14.12, 7.13.18, RPA Bridge 1.1.6 which contain a fix. 
+Camunda has provided the releases 7.16.0-alpha5, 7.15.6, 7.14.12, 7.13.18, RPA Bridge 1.1.6 which contain a fix.
 
 The Camunda Spring Boot starter versions 7.13 work with Spring Boot 2.2 and 2.3, for which no patches are available that resolve this problem. We recommend to either update the Tomcat dependencies manually or moving to a higher version of Spring Boot in accordance with [Camunda's compatibility matrix](https://docs.camunda.org/manual/7.15/user-guide/spring-boot-integration/version-compatibility/).
 
@@ -1699,7 +1723,7 @@ The version of lodash shipped with Camunda Cockpit, Tasklist, and Admin was vuln
 
 **Solution**
 
-Camunda has provided the releases 7.16.0-alpha2, 7.15.2, 7.14.8, 7.13.14, 7.12.21 which contain a fix. 
+Camunda has provided the releases 7.16.0-alpha2, 7.15.2, 7.14.8, 7.13.14, 7.12.21 which contain a fix.
 
 
 ## Notice 44
@@ -1755,7 +1779,7 @@ The version of Apache Tomcat shipped with the Camunda distributions and transiti
 
 **Solution**
 
-Camunda has provided the releases 7.15.0, 7.14.6, 7.13.12, 7.12.19 which contain a fix. 
+Camunda has provided the releases 7.15.0, 7.14.6, 7.13.12, 7.12.19 which contain a fix.
 
 The Camunda Spring Boot starter versions 7.13 and 3.4 work with Spring Boot 2.2, for which no patch is available that resolves this problem. We recommend to either update the Tomcat dependencies manually or moving to a higher version of Spring Boot in accordance with [Camunda's compatibility matrix](https://docs.camunda.org/manual/7.15/user-guide/spring-boot-integration/version-compatibility/).
 
@@ -1808,7 +1832,7 @@ The version of the MySQL JDBC driver used by the Camunda Platform Docker contain
 
 **Solution**
 
-Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix. 
+Camunda has provided the releases 7.15.0-alpha3, 7.14.4, 7.13.10, 7.12.17 which contain a fix.
 
 Please have a look at the patch update guide for the potential implications of using a higher version of the MySQL JDBC driver: https://docs.camunda.org/manual/7.14/update/patch-level/#update-of-mysql-jdbc-driver-in-camunda-docker-images.
 
