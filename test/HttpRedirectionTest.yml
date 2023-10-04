@@ -2,16 +2,16 @@
 
 https://docs.camunda.org:
   /:
-    target: /manual/7.19/
+    target: /manual/7.20/
     status: 307
   /manual/:
-    target: /manual/7.19/
+    target: /manual/7.20/
     status: 307
   /optimize/:
     target: /optimize/latest/
     status: 301
   /manual/reference/bpmn20:
-    target: /manual/7.19/reference/bpmn20
+    target: /manual/7.20/reference/bpmn20
     status: 307
   /get-started/javaee6:
     target: /get-started/archive/javaee7
