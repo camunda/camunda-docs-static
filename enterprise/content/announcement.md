@@ -428,7 +428,7 @@ __End of Maintenance:__ 10th of April 2024
 
 __Release Date:__ 12th of April 2022
 
-__End of Maintenance:__ 11th of October 2023
+__End of Maintenance:__ 9th of October 2023
 
 * Dropped support for `Elasticsearch` 7.8 and 7.9
 * Added support for `Elasticsearch` 7.17
@@ -437,7 +437,7 @@ __End of Maintenance:__ 11th of October 2023
 
 __Release Date:__ 11th of January 2022
 
-__End of Maintenance:__ 30th of June 2023 (Extended to 11th of October 2023*)
+__End of Maintenance:__ 30th of June 2023 (Extended to 8th of April 2024*)
 
 __Changes in Supported Environments:__
 
