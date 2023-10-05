@@ -418,7 +418,7 @@ __Others__
 
 __Release Date:__ 11th of October 2022
 
-__End of Maintenance:__ 10th of April 2023
+__End of Maintenance:__ 10th of April 2024
 
 * Added support for  `Camunda Platform` 7.18
 * Dropped support for  `Camunda Platform` 7.15
