@@ -3548,7 +3548,7 @@ To get the production distribution, please download one of the following archive
     </tr>
     <tr class="well">
       <td>3.10.6</td>
-      <td>7.18+, 7.19+</td>
+      <td>7.17+, 7.18+, 7.19+</td>
       <td>7.16.2+, 7.17.0+, 8.5.0+, 8.6.0+</td>
       <td>10.10.2023</td>
       <td>
