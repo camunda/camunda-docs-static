@@ -69,6 +69,8 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 
 # Camunda Engine Spring Integration
 
+The `camunda-engine` Spring integration for Spring Framework 5:
+
 ```xml
 <dependency>
   <groupId>org.camunda.bpm</groupId>
@@ -76,6 +78,14 @@ To use the Enterprise Edition dependencies, you have to add the [Enterprise Edit
 </dependency>
 ```
 
+The `camunda-engine` Spring integration for Spring Framework 6:
+
+```xml
+<dependency>
+  <groupId>org.camunda.bpm</groupId>
+  <artifactId>camunda-engine-spring-6</artifactId>
+</dependency>
+```
 
 # Camunda Engine CDI Integration
 
