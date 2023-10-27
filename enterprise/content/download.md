@@ -3398,7 +3398,7 @@ The Camunda RPA Bridge is replaced by RPA [Out-of-the-box Connectors](https://do
       <td>UiPath (Cloud & On-Premises), Automation Anywhere Automation 360 (formerly A2019)</td>
       <td>27.10.2023</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.9/camunda-bpm-rpa-bridge-1.1.10.zip">zip</a>
+        <a class="btn btn-sm btn-default" href="https://downloads.camunda.cloud/enterprise-release/camunda-bpm/rpa/1.1/1.1.10/camunda-bpm-rpa-bridge-1.1.10.zip">zip</a>
       </td>
     </tr>
     <tr class="well">
