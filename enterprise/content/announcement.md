@@ -392,7 +392,7 @@ __End of Maintenance:__ 9th of April 2025
 
 __Changes in Supported Environments:__
 
-* Added support for `Elasticsearch` 8.7, 8.8
+* Added support for `Elasticsearch` 8.8
 * Dropped support for `Elasticsearch` 7.16, 7.17, 8.5 and 8.6
 * Added support for  `Camunda Platform` 7.20
 * Dropped support for  `Camunda Platform` 7.17
