@@ -15,6 +15,51 @@ releases of the community platform.
 
 # Notices
 
+## Notice 98
+
+**Publication Date: November 14th, 2023**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-restapi`, `cawemo-webapp` and `cawemo-websockets` were affected by the following vulnerabilities:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-5363
+- https://nvd.nist.gov/vuln/detail/CVE-2023-5678
+
+The version of `zod` shipped with `cawemo-webapp` was affected by the following vulnerability:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-4316
+
+The version of `axios` shipped with `cawemo-webapp` was affected by the following vulnerability:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-45857
+
+The version of `@babel/traverse` shipped with `cawemo-webapp` was affected by the following vulnerability:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-45133
+
+The version of `openssl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-5363
+- https://nvd.nist.gov/vuln/detail/CVE-2023-5678
+
+The version of `nghttp2-libs` shipped with `cawemo-websockets` was affected by the following vulnerability:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-44487
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-38545
+- https://nvd.nist.gov/vuln/detail/CVE-2023-38039
+- https://nvd.nist.gov/vuln/detail/CVE-2023-38546
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.10 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.11 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 97
 
 **Publication Date: November 13th, 2023**
