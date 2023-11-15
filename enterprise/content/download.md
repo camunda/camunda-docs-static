@@ -3789,8 +3789,8 @@ For installing the latter, please download one of the following archives and rea
       <td>1.9.10</td>
       <td>14.09.2023</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.10.zip">zip</a>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.10.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.11.zip">zip</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.11.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
