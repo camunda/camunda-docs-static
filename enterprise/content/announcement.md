@@ -42,7 +42,6 @@ __Release Date:__ scheduled for 8th of April 2024
 __End of Maintenance:__ 12th of October 2025
 
 __Changes in Supported Environments:__
-* End of Support Oracle Weblogic WLS 14
 * End of Support MariaDB
 
 ## Camunda Platform 7.21
