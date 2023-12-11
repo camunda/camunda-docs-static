@@ -3656,13 +3656,13 @@ To get the production distribution, please download one of the following archive
   </thead>
   <tbody>
     <tr class="well">
-      <td>3.11.3</td>
+      <td>3.11.4</td>
       <td>7.18+, 7.19+, 7.20+</td> 
       <td>8.8.0+</td>
       <td>15.11.2023</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.3/camunda-optimize-3.11.3-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.3/camunda-optimize-3.11.3-production.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.4/camunda-optimize-3.11.4-production.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.4/camunda-optimize-3.11.4-production.tar.gz">tar.gz</a>
       </td>
     </tr>
     <tr class="well">
@@ -3683,106 +3683,6 @@ To get the production distribution, please download one of the following archive
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.5/camunda-optimize-3.9.5-production.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.9.5/camunda-optimize-3.9.5-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.8.6</td>
-      <td>7.15+, 7.16+, 7.17+</td>
-      <td>7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+, 7.17.0+</td>
-      <td>23.11.2022</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.8.6/camunda-optimize-3.8.6-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.8.6/camunda-optimize-3.8.6-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.7.3</td>
-      <td>7.14+, 7.15+, 7.16+</td>
-      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
-      <td>11.03.2022</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.3/camunda-optimize-3.7.3-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.7.3/camunda-optimize-3.7.3-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.6.6</td>
-      <td>7.14+, 7.15+, 7.16+</td>
-      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+, 7.16.2+</td>
-      <td>01.02.2021</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.6/camunda-optimize-3.6.6-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.6/camunda-optimize-3.6.6-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.6.0</td>
-      <td>7.14+, 7.15+, 7.16+</td>
-      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+, 7.14.0+, 7.15.0+</td>
-      <td>13.10.2021</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.0/camunda-optimize-3.6.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.6.0/camunda-optimize-3.6.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr> 
-    <tr class="well">
-      <td>3.5.0</td>
-      <td>7.13.5+, 7.14+, 7.15+</td>
-      <td>7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+, 7.12.0+, 7.13.0+</td>
-      <td>13.07.2021</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.5.0/camunda-optimize-3.5.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.5.0/camunda-optimize-3.5.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.4.0</td>
-      <td>7.13.5+, 7.14+, 7.15+</td>
-      <td>7.5.1+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+, 7.11.0+</td>
-      <td>13.04.2021</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.4.0/camunda-optimize-3.4.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.4.0/camunda-optimize-3.4.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.3.0</td>
-      <td>7.12.11+, 7.13.5+ and 7.14+</td>
-      <td>7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+, 7.9.0+, 7.10.0+</td>
-      <td>12.01.2021</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.3.0/camunda-optimize-3.3.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.3.0/camunda-optimize-3.3.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.2.0</td>
-      <td>7.12.11+, 7.13.5+ and 7.14+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+, 7.7.0+, 7.8.0+</td>
-      <td>13.10.2020</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0/camunda-optimize-3.2.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.2.0/camunda-optimize-3.2.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.1.0</td>
-      <td>7.11.13, 7.12.6 and 7.13+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
-      <td>14.07.2020</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.1.0/camunda-optimize-3.1.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.1.0/camunda-optimize-3.1.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.0.0</td>
-      <td>7.10.6+, 7.11+ and 7.12+</td>
-      <td>7.0.0+, 7.1.0+, 7.2.0+, 7.3.0+, 7.4.0+, 7.5.0+, 7.6.0+</td>
-      <td>02.04.2020</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.0.0/camunda-optimize-3.0.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.0.0/camunda-optimize-3.0.0-production.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
