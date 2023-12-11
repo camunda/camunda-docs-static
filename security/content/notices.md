@@ -15,6 +15,28 @@ releases of the community platform.
 
 # Notices
 
+## Notice 99
+
+**Publication Date: December 11th, 2023**
+
+**Product affected**
+
+Camunda Platform 7
+
+**Impact**
+
+Camunda Spring Boot Starter and Camunda Run had an [Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html) vulnerability that allowed an attacker, for example, to read information about the admin user (user id, first name, last name, and email) which could lead to a targeted brute-force attack to guess the password of the admin user or to send phishing emails to the admin user.
+
+**How to determine if the installation is affected**
+
+* You use Camunda Spring Boot Starter or Camunda Run.
+* Your application logs logging statements on severity `INFO`.
+* An attacker has access to your application logs.
+
+**Solution**
+
+Camunda has provided the releases 7.21.0-alpha2, 7.20.2, 7.19.9, 7.18.13 which contain a fix.
+
 ## Notice 98
 
 **Publication Date: November 14th, 2023**
