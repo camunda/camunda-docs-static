@@ -15,6 +15,28 @@ releases of the community platform.
 
 # Notices
 
+## Notice 100
+
+**Publication Date: December 11th, 2023**
+
+**Product affected**
+
+Camunda Platform 7
+
+**Impact**
+
+The version of `axios`, included in the Camunda Run SwaggerUI, had a Cross-Site Request Forgery (CSRF) vulnerability:
+
+https://nvd.nist.gov/vuln/detail/CVE-2023-45857
+
+**How to determine if the installation is affected**
+
+You expose Camunda Run SwaggerUI publicly by operating it without the `--production` flag or in combination with the `--swaggerui` flag.
+
+**Solution**
+
+Camunda has provided the releases 7.21.0-alpha2, 7.20.2, 7.19.9, 7.18.13 which contain a fix.
+
 ## Notice 99
 
 **Publication Date: December 11th, 2023**
