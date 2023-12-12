@@ -31,15 +31,15 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 * Critical security/bug fixes
 * Maintain supported environments
 
-*If you require Camunda Extended Maintenance Support contact your assigned Customer Success Manager.
+*If you require Camunda Extended Maintenance Support, contact your assigned Customer Success Manager.
 
 # Camunda Platform Announcements
 
 ## Camunda Platform 7.22
 
-__Release Date:__ scheduled for 8th of April 2024
+__Release Date:__ scheduled for 8th of October 2024
 
-__End of Maintenance:__ 12th of October 2025
+__End of Maintenance:__ 14th of April 2026
 
 __Changes in Supported Environments:__
 * End of Support MariaDB
