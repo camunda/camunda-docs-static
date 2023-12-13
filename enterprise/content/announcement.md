@@ -31,32 +31,43 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 * Critical security/bug fixes
 * Maintain supported environments
 
-*If you require Camunda Extended Maintenance Support contact your assigned Customer Success Manager.
+*If you require Camunda Extended Maintenance Support, contact your assigned Customer Success Manager.
 
 # Camunda Platform Announcements
+
+## Camunda Platform 7.22
+
+__Release Date:__ scheduled for 8th of October 2024
+
+__End of Maintenance:__ 14th of April 2026
+
+__Changes in Supported Environments:__
+* End of Support MariaDB
 
 ## Camunda Platform 7.21
 
 __Release Date:__ scheduled for 9th of April 2024
 
-__End of Maintenance:__ 8th of October 2025
+__End of Maintenance:__ 14th of October 2025
 
 __Changes in Supported Environments:__
-
+* Support for Java 21
 * Support for SpringBoot 3.2 (Support is also provided for Camunda 7.20 as a patch)
-* Support for Quarkus 3.x
-* Support for WildFly 3x
+* Support for Quarkus 3.x LTS
+* Support for Oracle 23c LTS
+* Support for WildFly 31
 * Support for PostgreSQL 16 (Support is also provided for Camunda 7.20 as a patch)
 * Support for Amazon Aurora PostgreSQL 15
 * End of Support for Spring Boot 3.1
 * End of Support for Quarkus 3.1
 * End of Support for WildFly 27 / 29
+* End of Support Cockroach DB
 
 ## Camunda Platform 7.20
 
 __Release Date:__ scheduled for 10th of October 2023
 
-__End of Maintenance:__ 9th of April 2025
+__End of Maintenance:__ 8th of April 2025
 
 __Changes in Supported Environments:__
 
