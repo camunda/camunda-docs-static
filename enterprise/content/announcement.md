@@ -54,7 +54,6 @@ __Changes in Supported Environments:__
 * Support for Java 21
 * Support for SpringBoot 3.2 (Support is also provided for Camunda 7.20 as a patch)
 * Support for Quarkus 3.x LTS
-* Support for Oracle 23c LTS
 * Support for WildFly 31
 * Support for PostgreSQL 16 (Support is also provided for Camunda 7.20 as a patch)
 * Support for Amazon Aurora PostgreSQL 15
