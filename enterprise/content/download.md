@@ -3623,7 +3623,7 @@ To install the demo distribution, please download one of the following archives:
       <td>3.11.5</td>
       <td>7.18+, 7.19+, 7.20+</td>
       <td>8.8.0+</td>
-      <td>03.01.2024</td>
+      <td>09.01.2024</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.5/camunda-optimize-3.11.5-demo.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.5/camunda-optimize-3.11.5-demo.tar.gz">tar.gz</a>
@@ -3659,7 +3659,7 @@ To get the production distribution, please download one of the following archive
       <td>3.11.5</td>
       <td>7.18+, 7.19+, 7.20+</td> 
       <td>8.8.0+</td>
-      <td>03.01.2024</td>
+      <td>09.01.2024</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.5/camunda-optimize-3.11.5-production.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.5/camunda-optimize-3.11.5-production.tar.gz">tar.gz</a>
