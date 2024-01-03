@@ -15,6 +15,43 @@ releases of the community platform.
 
 # Notices
 
+## Notice 101
+
+**Publication Date: January 3rd, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The versions of `ch.qos.logback:logback-classic` and `ch.qos.logback:logback-core` shipped with `cawemo-restapi` were affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-6378
+
+The version of `ch.qos.logback:logback-core` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-6481
+
+The version of `org.springframework.boot:spring-boot` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-34055
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+- https://nvd.nist.gov/vuln/detail/CVE-2023-46218
+- https://nvd.nist.gov/vuln/detail/CVE-2023-46219
+
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.11 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.12 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 100
 
 **Publication Date: December 11th, 2023**
