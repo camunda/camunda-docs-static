@@ -38,6 +38,7 @@ The version of `org.springframework.boot:spring-boot` shipped with `cawemo-resta
 - https://nvd.nist.gov/vuln/detail/CVE-2023-34055
 
 The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2023-46218
 - https://nvd.nist.gov/vuln/detail/CVE-2023-46219
 
