@@ -51,6 +51,7 @@ __Release Date:__ scheduled for 9th of April 2024
 __End of Maintenance:__ 14th of October 2025
 
 __Changes in Supported Environments:__
+
 * Support for Java 21
 * Support for SpringBoot 3.2 (Support is also provided for Camunda 7.20 as a patch)
 * Support for Quarkus 3.x LTS
