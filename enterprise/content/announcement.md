@@ -42,6 +42,7 @@ __Release Date:__ scheduled for 8th of October 2024
 __End of Maintenance:__ 14th of April 2026
 
 __Changes in Supported Environments:__
+
 * End of Support MariaDB
 
 ## Camunda Platform 7.21
