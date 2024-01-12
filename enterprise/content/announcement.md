@@ -612,6 +612,10 @@ __Changes in Supported Environments:__
 
 # Cawemo On-Premises Announcements
 
+## End of Life Notification
+
+**Effective 30th April 2027**
+
 ## Cawemo On-Premises 1.9
 
 __Release Date:__ 11th of January 2022
@@ -675,8 +679,33 @@ __Release Date:__ 13th of November 2019
 
 __End of Maintenance:__ 14th of April 2020
 
+# Cawemo SaaS Announcements
 
+## End of Life Notification
 
+**Effective 30th April 2024**
+
+As part of our ongoing commitment to enhance collaboration between Business and IT teams, we at Camunda have been diligently working to evolve our product offerings.
+
+In line with this vision and based on insightful customer conversations, we have already combined the power of Cawemo and our Desktop Modeler to create Web Modeler, which is the successor to Cawemo. The Web Modeler is designed to significantly improve time to value for both developers and business users by fostering a unified environment that enhances collaboration.
+
+**Key Transition Information:**
+
+End of Life for Cawemo SaaS: Effective 30th April 2024, the Cawemo SaaS service will be retired for all customers and users. This decision aligns with our strategic focus on delivering an integrated, comprehensive modeling experience.
+
+Data Access and Transition Deadline: This means that you have until the 30th of April to export your data and transition to one of the options outlined below. Please be advised that after the 30th of April, you will not be able to access data within Cawemo SaaS. In line with our data retention policy, your data will be stored for an additional 30 days after this date. It is crucial to export any required data before the 30th of April to ensure you retain access to your information.
+
+**Transition Options:**
+
+Move to our Web Modeler: Experience the combined power of Cawemo and our Desktop Modeler in a seamless, collaborative environment.
+
+Move to our Desktop Modeler: Opt for a standalone BPMN modeling experience.
+
+Move to Cawemo On-Premise: Continue with the familiar Cawemo environment. Please note that support for Cawemo On-Premise aligns with [Camunda 7 timelines](https://docs.camunda.org/enterprise/announcement/).
+
+To assist in your transition, we have prepared comprehensive documentation, which can be accessed at [Migrating from Cawemo](https://docs.camunda.io/docs/guides/migrating-from-cawemo/).
+
+We understand that change can be challenging, and our team is dedicated to ensuring a smooth transition for you and your organization. For any queries or support during this transition phase, please do not hesitate to reach out to your account team.
 
 # What does End of Maintenance Mean?
 End of maintenance means that Camunda will not perform any maintenance or release any bug fixes and patch releases related to the mentioned version after the specified date.
