@@ -614,7 +614,7 @@ __Changes in Supported Environments:__
 
 ## End of Life Notification
 
-**Effective 30th April 2027**
+Cawemo On-Premises will continue to receive support, aligned with the Camunda 7 extended support timelines. For detailed information on these timelines and the support scope, please refer to the [Camunda 7 Extended Support Offering](https://docs.camunda.org/enterprise/announcement/#camunda-extended-support-offering).
 
 ## Cawemo On-Premises 1.9
 
