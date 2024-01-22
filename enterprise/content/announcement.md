@@ -697,9 +697,9 @@ Data Access and Transition Deadline: This means that you have until the 30th of 
 
 **Transition Options:**
 
-Move to [Web Modeler](/docs/components/modeler/web-modeler/new-web-modeler.md): Experience the combined power of Cawemo and our Desktop Modeler in a seamless, collaborative environment. For modeling only or Camunda 8 processes.
+Move to [Web Modeler](https://docs.camunda.io/docs/components/modeler/web-modeler/new-web-modeler): Experience the combined power of Cawemo and our Desktop Modeler in a seamless, collaborative environment. For modeling only or Camunda 8 processes.
 
-Move to [Desktop Modeler](/components/modeler/desktop-modeler/install-the-modeler.md): Opt for a standalone BPMN modeling experience. Support both Camunda 7 and Camunda 8 processes.
+Move to [Desktop Modeler](https://docs.camunda.io/docs/components/modeler/desktop-modeler/install-the-modeler): Opt for a standalone BPMN modeling experience. Support both Camunda 7 and Camunda 8 processes.
 
 Move to Cawemo On-Premise: Continue with the familiar Cawemo environment, For modeling only or Camunda 7 processes. Please note that support for Cawemo On-Premise aligns with Camunda 7 timelines.
 
