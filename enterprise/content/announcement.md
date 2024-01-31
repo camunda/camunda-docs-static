@@ -55,12 +55,12 @@ __Changes in Supported Environments:__
 
 * Support for Java 21
 * Support for SpringBoot 3.2 (Support is also provided for Camunda 7.20 as a patch)
-* Support for Quarkus 3.x LTS
+* Support for Quarkus 3.8 LTS
 * Support for WildFly 31
 * Support for PostgreSQL 16 (Support is also provided for Camunda 7.20 as a patch)
 * Support for Amazon Aurora PostgreSQL 15
 * End of Support for Spring Boot 3.1
-* End of Support for Quarkus 3.1
+* End of Support for Quarkus 3.2
 * End of Support for WildFly 27 / 29
 * End of Support Cockroach DB
 
@@ -73,7 +73,7 @@ __End of Maintenance:__ 8th of April 2025
 __Changes in Supported Environments:__
 
 * Support for SpringBoot 3.1
-* Support for Quarkus 3.2
+* Support for Quarkus 3.2 LTS
 * Support for Camunda Run Java 17
 * Support for WildFly 29
 * End of Support for Java 8
