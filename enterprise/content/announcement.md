@@ -60,7 +60,7 @@ __Changes in Supported Environments:__
 * Support for PostgreSQL 16 (Support is also provided for Camunda 7.20 as a patch)
 * Support for Amazon Aurora PostgreSQL 15
 * End of Support for Spring Boot 3.1
-* End of Support for Quarkus 3.2
+* End of Support for Quarkus 3.2 LTS
 * End of Support for WildFly 27 / 29
 * End of Support Cockroach DB
 
