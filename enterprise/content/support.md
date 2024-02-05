@@ -34,6 +34,13 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster. If possible provide log files and stack traces as plain text file.
 * For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda version, application server, database and everything else that seems to be important for your issue.
 
+# Feature changes in new JIRA version
+* Comments would not be editable
+* Comments will appear in reverse chronological order (newest on top)
+* Uploaded Attachments can not be deleted
+* Priority, Description and Environment will be editable via “Edit” link on the right side of the page
+* Some of the fields such as Assignee, Priority are sometimes not displayed immediately when ticket is created. Once you refresh, all these fields should get displayed on right side of the page.
+
 
 ## Issue Types
 
