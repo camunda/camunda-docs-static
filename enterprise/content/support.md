@@ -34,7 +34,8 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster. If possible provide log files and stack traces as plain text file.
 * For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda version, application server, database and everything else that seems to be important for your issue.
 
-# Feature changes in new JIRA version
+# Changes in  JIRA Data Center version
+* UI (User Interface) will look different
 * Comments would not be editable
 * Comments will appear in reverse chronological order (newest on top)
 * Uploaded Attachments can not be deleted
