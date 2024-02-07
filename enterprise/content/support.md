@@ -30,7 +30,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * Provide a meaningful **summary** to the ticket.
 * You can assign a [**priority**]({{< relref "#priority-level" >}}) to your ticket, depending on the impact an issue causes on your system.
 * Provide us with a date in case of important **deadlines** that need to be reached.
-* Enter a detailed **description** of your issue. Make use of the provided template in the description filed (Reproduce steps, Problem, Expected behavior, etc.). 
+* Enter a detailed **description** of your issue. Use the provided template in the description field (Steps to reproduce, Problem, Expected behavior, etc.). 
 * **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster. If possible provide log files and stack traces as plain text file.
 * For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda version, application server, database and everything else that seems to be important for your issue.
 
