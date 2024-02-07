@@ -27,7 +27,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 {{< img src="../img/jira-help-request-create-issue.png" title="Create Bug Report" >}}
 * Bug Report page looks as follows:
 {{< img src="../img/jira-bug-report-create-issue.png" title="Create Bug Report" >}}
-* Give the ticket a meaningful **summary**.
+* Provide a meaningful **summary** to the ticket.
 * You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on the impact of an issue on your system.
 * Provide us with a date in case of important **deadlines** that need to be reached.
 * Enter a detailed **description** of your issue. Make use of the provided template in the description filed (Reproduce steps, Problem, Expected behavior, etc.). 
