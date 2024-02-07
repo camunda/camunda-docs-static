@@ -35,7 +35,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda version, application server, database and everything else that seems to be important for your issue.
 
 
-# Changes in  JIRA 
+## Changes in  JIRA 
 * UI(User Interface) looks different
 * For traceability reasons, comments will not be editable and uploaded attachments can not be deleted. You can request an assigned support agent to update/delete if needed.
 * Comments will appear in reverse chronological order (newest on top)
