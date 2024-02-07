@@ -40,7 +40,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * For traceability reasons, comments will not be editable and uploaded attachments can not be deleted. You can request an assigned support agent to update/delete if needed.
 * Comments will appear in reverse chronological order (newest on top)
 * Priority, Description and Environment will be editable via “Edit” link on the right side of the page
-* You might need to refresh the page in case any of the standard fields (Assignee, Priority etc.) are not displayed immediately after creating the ticket.
+* You might need to refresh the page if any standard fields (Assignee, Priority, etc.) are not displayed immediately after creating the ticket.
 
 
 ## Issue Types
