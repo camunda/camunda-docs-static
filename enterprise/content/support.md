@@ -25,7 +25,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 {{< img src="../img/jira-select-issue-type.png" title="Select Issue Type" >}}
 * Help Request page looks as follows:
 {{< img src="../img/jira-help-request-create-issue.png" title="Create Bug Report" >}}
-* Bug Report page looks like as follows:
+* Bug Report page looks as follows:
 {{< img src="../img/jira-bug-report-create-issue.png" title="Create Bug Report" >}}
 * Give the ticket a meaningful **summary**.
 * You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on the impact of an issue on your system.
