@@ -23,7 +23,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 {{< img src="../img/jira-support-issue.png" title="Create Support Issue" >}}
 * Choose the desired [issue type]({{< relref "#issue-types" >}}).
 {{< img src="../img/jira-select-issue-type.png" title="Select Issue Type" >}}
-* Help Request page looks like as follows:
+* Help Request page looks as follows:
 {{< img src="../img/jira-help-request-create-issue.png" title="Create Bug Report" >}}
 * Bug Report page looks like as follows:
 {{< img src="../img/jira-bug-report-create-issue.png" title="Create Bug Report" >}}
