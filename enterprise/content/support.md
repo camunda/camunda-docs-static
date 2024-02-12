@@ -24,7 +24,7 @@ To create a new support issue, follow the instructions below. To shorten the pro
 * Choose the desired [issue type]({{< relref "#issue-types" >}}).
 {{< img src="../img/jira-select-issue-type.png" title="Select Issue Type" >}}
 * Help Request page looks as follows:
-{{< img src="../img/jira-help-request-create-issue.png" title="Create Bug Report" >}}
+{{< img src="../img/jira-help-request-create-issue.png" title="Create Help Request" >}}
 * Bug Report page looks as follows:
 {{< img src="../img/jira-bug-report-create-issue.png" title="Create Bug Report" >}}
 * Provide a meaningful **summary** to the ticket.
@@ -78,7 +78,7 @@ We distinguish three types of issues:
 
 Apart from general help requests, we have four types of self-service help requests. The following self-service requests allow you to receive and change information faster. Select the `Help Request Type` and allow the `Description` to autopopulate then submit the ticket.
 
-{{< img src="../img/jira-self-service-request.png" title="Self Service Issue" >}}
+{{< img src="../img/jira-self-service-help-request.png" title="Self Service Issue" >}}
 
 <table class="table table-bordered">
   <thead>
