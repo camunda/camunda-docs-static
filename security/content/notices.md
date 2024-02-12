@@ -15,6 +15,46 @@ releases of the community platform.
 
 # Notices
 
+## Notice 103
+
+**Publication Date: February 12th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-restapi` were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-6129
+- CVE-2023-6237
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-webapp` were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-6129
+- CVE-2023-6237
+
+The version of `follow-redirects` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-26159
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-websockets` were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-6129
+- CVE-2023-6237
+
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.12 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.13 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 102
 
 **Publication Date: February 12th, 2024**
