@@ -15,6 +15,35 @@ releases of the community platform.
 
 # Notices
 
+## Notice 102
+
+**Publication Date: February 12th, 2024**
+
+**Product affected**
+
+Camunda 7
+
+**Impact**
+
+The version of Logback shipped with Camunda Run, Camunda RPA Bridge, and transitively pulled in by the Camunda Spring Boot Starter had a denial-of-service vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-6378
+
+Logback versions 1.3.12 and 1.4.12 already tried to fix `CVE-2023-6378` but were still affected by:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-6481
+
+The Camunda releases listed under the **Solution** section fix both CVEs `CVE-2023-6378` as well as `CVE-2023-6481`.
+
+**How to determine if the installation is affected**
+
+- Camunda RPA Bridge, Camunda Run or Camunda Spring Boot Starter is used **AND** the `logback-receiver` component is enabled and also reachable by the attacker.
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities.
+
+**Solution**
+
+Camunda has provided the releases 7.21.0-alpha3, 7.20.3, 7.19.10, 7.18.14, and RPA Bridge 1.1.11, which contain a fix.
+
 ## Notice 101
 
 **Publication Date: January 3rd, 2024**
