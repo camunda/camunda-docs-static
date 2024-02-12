@@ -18,17 +18,29 @@ This guide is intended to help you get the support you need quickly and convenie
 Based on the agreed SLA (Service Level Agreement), you can contact our support service with your questions, wishes and problems.
 To create a new support issue, follow the instructions below. To shorten the processing time, please provide us with as much information as possible.
 
-{{< img src="../img/jira-create-support-issue.png" title="Create Support Issue" >}}
-
 * Go to our [JIRA support system](https://jira.camunda.com/projects/SUPPORT/queues)
-* Select `Create Issue`
-* Select `Support` as **project** and choose the desired [issue type]({{< relref "#issue-types" >}}).
-* Give the ticket a meaningful **summary**
-* You can give your ticket a [**priority**]({{< relref "#priority-level" >}}) depending on how urgent the issue is for you.
+* Select `Camunda Enterprise Support`
+{{< img src="../img/jira-support-issue.png" title="Create Support Issue" >}}
+* Choose the desired [issue type]({{< relref "#issue-types" >}}).
+{{< img src="../img/jira-select-issue-type.png" title="Select Issue Type" >}}
+* Help Request page looks as follows:
+{{< img src="../img/jira-help-request-create-issue.png" title="Create Bug Report" >}}
+* Bug Report page looks as follows:
+{{< img src="../img/jira-bug-report-create-issue.png" title="Create Bug Report" >}}
+* Provide a meaningful **summary** to the ticket.
+* You can assign a [**priority**]({{< relref "#priority-level" >}}) to your ticket, depending on the impact an issue causes on your system.
 * Provide us with a date in case of important **deadlines** that need to be reached.
-* Enter a detailed **description** of your issue. Make use of the provided template in the description filed (Reproduce steps, Problem, Expected behavior, etc.). In order to represent code snippets in a more readable way use the [JIRA text formatting]({{< relref "#text-formatting" >}}).
+* Enter a detailed **description** of your issue. Use the provided template in the description field (Steps to reproduce, Problem, Expected behavior, etc.). 
 * **Attachments** like screenshots, log files, stack traces or BPMN files help us to find and reproduce your bug faster. If possible provide log files and stack traces as plain text file.
-* For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda Platform version, application server, database and everything else that seems to be important for your issue.
+* For bug reports and help requests, it is important to know which **environment** you use. Inform us about the used Camunda version, application server, database and everything else that seems to be important for your issue.
+
+
+## Changes in  JIRA 
+* UI(User Interface) looks different
+* For traceability reasons, comments will not be editable and uploaded attachments can not be deleted. You can request an assigned support agent to update/delete if needed.
+* Comments will appear in reverse chronological order (newest on top)
+* Priority, Description and Environment will be editable via the **Edit** link on the right side of the page
+* You might need to refresh the page if any standard fields (Assignee, Priority, etc.) are not displayed immediately after creating the ticket.
 
 
 ## Issue Types
@@ -127,20 +139,6 @@ You can prioritize issues depending on the impact of an issue on your system. Fe
   </tbody>
 </table>
 
-
-## Text Formatting
-
-JIRA offers the possibility to format text fields and comments using the Wiki Style Renderer. This offers a variety of formatting options, among which the option of adding preformatted code to your issues. To display a preview of your text in formatted form, hit the preview button at the bottom left of text fields.
-You can click the help icon or go to the JIRA [Text Formatting Notation Help](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all) to find additional information.
-
-
-## Visibility of JIRA Tickets
-
-JIRA tickets will be shared with all your support contacts automatically.
-
-{{< img src="../img/jira-watcher.png" title="JIRA Watcher" >}}
-
-By clicking the watcher bubble you can see who is following the ticket. Here you can add or remove watchers. Please note that you can only add users who are entitled Camunda enterprise support contacts, otherwise you will get an error message stating that the user with that email address is not found.
 
 # Phone Support
 
