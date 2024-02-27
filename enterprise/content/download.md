@@ -73,7 +73,7 @@ downloads:
 
   selected:
     branch: "7.20"
-    version: "7.20.3"
+    version: "7.20.4"
     server: "run"
 
   branches:
