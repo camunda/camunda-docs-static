@@ -15,6 +15,28 @@ releases of the community platform.
 
 # Notices
 
+## Notice 104
+
+**Publication Date: March 1st, 2024**
+
+**Product affected**
+
+Camunda 7
+
+**Impact**
+
+The version of `follow-redirects`, included in the Camunda Run SwaggerUI had an Improper Input Validation vulnerability:
+
+https://nvd.nist.gov/vuln/detail/CVE-2023-26159
+
+**How to determine if the installation is affected**
+
+You expose Camunda Run SwaggerUI publicly by operating it without the `--production` flag or in combination with the `--swaggerui` flag.
+
+**Solution**
+
+Camunda has provided the releases 7.21.0-alpha3, 7.20.4, 7.19.11, 7.18.15, which contain a fix.
+
 ## Notice 103
 
 **Publication Date: February 12th, 2024**
