@@ -3745,13 +3745,13 @@ To install the demo distribution, please download one of the following archives:
   </thead>
   <tbody>
     <tr class="well">
-      <td>3.12.1</td>
+gi      <td>3.12.2</td>
       <td>7.18+, 7.19+, 7.20+</td>
       <td>8.9.0+</td>
-      <td>13.02.2024</td>
+      <td>12.03.2024</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.1/camunda-optimize-3.12.1-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.1/camunda-optimize-3.12.1-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.2/camunda-optimize-3.12.2-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.2/camunda-optimize-3.12.2-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
