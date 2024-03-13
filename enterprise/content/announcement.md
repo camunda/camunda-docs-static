@@ -35,6 +35,22 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.24 LTS
+
+__Release Date:__ scheduled for 14th of October 2025
+
+__End of Maintenance:__ 13th of April 2027
+
+__Changes in Supported Environments:__
+
+## Camunda Platform 7.23
+
+__Release Date:__ scheduled for 8th of April 2025
+
+__End of Maintenance:__ 12th of October 2026
+
+__Changes in Supported Environments:__
+
 ## Camunda Platform 7.22
 
 __Release Date:__ scheduled for 8th of October 2024
@@ -43,7 +59,17 @@ __End of Maintenance:__ 14th of April 2026
 
 __Changes in Supported Environments:__
 
+* Support for Apache Tomcat 10
+* Support for Quarkus 3.x LTS
+* Support for Redhat Wildfly 33
+* Support for Redhat JBoss EAP 8
+* Support for Microsoft SQL Server 2022
 * End of Support MariaDB
+* End of Support Quarkus 3.8 LTS
+* End of Support Redhat Wildfly 31
+* End of Support PostgreSQL 13
+* End of Support Amazon Aurora PostgreSQL 13
+* End of Support Groovy 2.5
 
 ## Camunda Platform 7.21
 
