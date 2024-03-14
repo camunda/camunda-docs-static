@@ -33,6 +33,10 @@ __Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
 
 *If you require Camunda Extended Maintenance Support, contact your assigned Customer Success Manager.
 
+{{< note title="Camunda 7 Community Edition" class="warning" >}}
+See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-camunda-7-community-edition-end-of-life-announced/50921).
+{{< /note >}}
+
 # Camunda Platform Announcements
 
 ## Camunda Platform 7.22
