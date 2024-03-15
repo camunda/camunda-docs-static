@@ -47,7 +47,7 @@ __Changes in Supported Environments:__
 
 __Release Date:__ scheduled for 8th of April 2025
 
-__End of Maintenance:__ 12th of October 2026
+__End of Maintenance:__ 13th of October 2026
 
 __Changes in Supported Environments:__
 
