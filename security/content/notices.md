@@ -15,6 +15,46 @@ releases of the community platform.
 
 # Notices
 
+## Notice 105
+
+**Publication Date: March 15th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-web` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-22243
+
+The version of `postgresql` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-1597
+
+The version of `jose` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-28176
+
+The version of `follow-redirects` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-28849
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-25062
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.14 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.15 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 104
 
 **Publication Date: March 1st, 2024**
