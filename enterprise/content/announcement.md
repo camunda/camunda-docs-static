@@ -66,7 +66,7 @@ __Changes in Supported Environments:__
 * Support for Microsoft SQL Server 2022
 * End of Support MariaDB
 * End of Support Quarkus 3.8 LTS
-* End of Support Redhat Wildfly 31
+* End of Support WildFly Application Server 31
 * End of Support PostgreSQL 13
 * End of Support Amazon Aurora PostgreSQL 13
 * End of Support Groovy 2.5
