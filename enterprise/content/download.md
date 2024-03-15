@@ -3880,7 +3880,7 @@ For installing the latter, please download one of the following archives and rea
     <tr class="well">
       <td><a href="/cawemo">Cawemo On-Premises</a></td>
       <td>1.9.15</td>
-      <td>14.03.2024</td>
+      <td>15.03.2024</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.15.zip">zip</a>
         <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.15.tar.gz">tar.gz</a>
