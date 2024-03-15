@@ -61,8 +61,8 @@ __Changes in Supported Environments:__
 
 * Support for Apache Tomcat 10
 * Support for Quarkus 3.x LTS
-* Support for Redhat Wildfly 33
-* Support for Redhat JBoss EAP 8
+* Support for WildFly Application Server 33
+* Support for JBoss EAP 8
 * Support for Microsoft SQL Server 2022
 * End of Support MariaDB
 * End of Support Quarkus 3.8 LTS
