@@ -32,7 +32,7 @@ Afterwards, you can [install the Camunda Modeler](#camunda-modeler).
 
 Please make sure you have the following installed:
 
-* Java Runtime Environment 1.8+
+* Java Runtime Environment 11
 
 You can verify this by using your terminal, shell, or command line:
 

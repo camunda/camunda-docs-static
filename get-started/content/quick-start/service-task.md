@@ -92,7 +92,7 @@ In this section, you'll learn how to implement an external task worker in Java.
 
 Make sure you have the following tools installed:
 
-* JDK 1.8
+* JDK 11
 * An IDE for Java projects (e.g. [Eclipse](https://eclipse.org/))
 
 ### Create a new Maven project
@@ -124,9 +124,9 @@ Your pom.xml file of your project should look like this:
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<camunda.external-task-client.version>7.20.0</camunda.external-task-client.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<camunda.external-task-client.version>7.21.0</camunda.external-task-client.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
 
 	<dependencies>
