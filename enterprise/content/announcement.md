@@ -400,6 +400,12 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 # Camunda Optimize Announcements
 
+## Camunda Optimize 3.13
+
+__Release Date:__ 9th of April 2024
+
+__End of Maintenance:__ 4th of March 2026
+
 ## Camunda Optimize 3.12
 
 __Release Date:__ 9th of January 2024
