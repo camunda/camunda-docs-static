@@ -15,6 +15,42 @@ releases of the community platform.
 
 # Notices
 
+## Notice 106
+
+**Publication Date: April 08th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `netty-coded-http` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-29025
+
+The version of `spring-web` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-22259
+
+The version of `spring-security-core` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-22257
+
+The version of `c-ares` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-25629
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.15 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.16 releases for the `cawemo-restapi`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 105
 
 **Publication Date: March 15th, 2024**
