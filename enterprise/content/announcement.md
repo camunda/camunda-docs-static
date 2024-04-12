@@ -26,12 +26,12 @@ __Camunda Platform 7 - Full Support (April 2022 - April 2027)__
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (As part of the minor releases till October 2025; then as part of the patch releases)
 
-__Camunda Platform 7 - Extended Maintenance Support (April 2027+*)__
+__Camunda Platform 7 - Extended Support (April 2027+*)__
 
 * Critical security/bug fixes
 * Maintain supported environments
 
-*If you require Camunda Extended Maintenance Support, contact your assigned Customer Success Manager.
+*If you require Camunda Extended Support, contact your assigned Customer Success Manager.
 
 {{< note title="Camunda 7 Community Edition" class="warning" >}}
 See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-camunda-7-community-edition-end-of-life-announced/50921).
@@ -48,6 +48,8 @@ __End of Maintenance:__ 14th of April 2026
 __Changes in Supported Environments:__
 
 * End of Support MariaDB
+
+Retiring Telemetry
 
 ## Camunda Platform 7.21
 
