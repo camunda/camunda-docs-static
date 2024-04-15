@@ -77,6 +77,24 @@ downloads:
     server: "run"
 
   branches:
+    - branch: "7.22"
+      releases:
+        - number: "7.22.0-alpha2"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is0X0P+0issue+is0X0P+0closed+label0X0P+0version0X0P+07.22.0-alpha2"
+          date: "2023.12.26"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+          excludeformats:
+            - "war" 
+
     - branch: "7.21"
       releases:
         - number: "7.21.0"
