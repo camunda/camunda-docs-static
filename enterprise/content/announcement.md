@@ -442,7 +442,7 @@ __End of Maintenance:__ 7th of July 2025
 
 __Changes in Supported Environments:__
 
-* Added support for `Elasticsearch` 8.9
+* Added support for `Elasticsearch` 8.9+
 * Dropped support for `Elasticsearch` 8.8
 
 ## Camunda Optimize 3.11
