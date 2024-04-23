@@ -39,7 +39,7 @@ See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-c
 
 # Camunda Platform Announcements
 
-## Camunda Platform 7.24 LTS
+## Camunda Platform 7.24 LTS (Long term support)
 
 __Release Date:__ scheduled for 14th of October 2025
 
@@ -75,7 +75,9 @@ __Changes in Supported Environments:__
 * End of Support Amazon Aurora PostgreSQL 13
 * End of Support Groovy 2.5
 
-Retiring Telemetry
+Other changes:
+* Deactivating Camunda [Telemetry](https://docs.camunda.org/manual/7.21/introduction/telemetry/)
+* Removing Swagger from Camunda 7 Run [Getting Started Experience](https://docs.camunda.org/manual/7.21/reference/rest/openapi/#getting-started-experience)
 
 ## Camunda Platform 7.21
 
