@@ -15,6 +15,55 @@ releases of the community platform.
 
 # Notices
 
+## Notice 108
+
+**Publication Date: May 3rd, 2024**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of AngularJS, included in the Camunda web applications, had a backtracking vulnerability:
+
+https://nvd.nist.gov/vuln/detail/CVE-2024-21490
+
+**How to determine if the installation is affected**
+
+- You use the Camunda 7 web applications.
+- You use a custom plugin that utilizes the AngularJS `ng-srcset` directive.
+- An attacker can provide forged input to the custom plugin that passes it to the `ng-srcset` directive.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+Camunda 7.19.12, 7.20.5, 7.21.0-alpha3.
+
+## Notice 107
+
+**Publication Date: May 3rd, 2024**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of the PostgreSQL JDBC driver used in the Camunda Platform 7 Docker images had a vulnerability:
+
+https://nvd.nist.gov/vuln/detail/CVE-2024-1597
+
+**How to determine if the installation is affected**
+
+* You use the Camunda 7 Docker images.
+* You connect to a PostgreSQL database.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+Camunda 7.19.12, 7.20.5, 7.21.0-alpha4
+
 ## Notice 106
 
 **Publication Date: April 08th, 2024**
