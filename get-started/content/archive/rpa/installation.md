@@ -159,12 +159,6 @@ Learn more about [configuring the RPA Bridge](https://docs.camunda.org/manual/7.
 
 # Cawemo Catalog
 
-{{< note title="Please note: You have the choice of Cawemo SaaS or On-Premises." class="info" >}}
-For testing we recommend the use of Cawemo SaaS. Please [sign up](https://cawemo.com/signup) and ask for a trial license via the "Provide feedback" form to get started.
-{{< /note >}}
-
-When you are using Cawemo SaaS, please open the [settings page](https://cawemo.com/settings) and verify in the "Details" section that your Enterprise license is active.
-
 In order to use Cawemo On-Premises (version 1.6 or later), please follow this [on-premises installation guide](https://docs.camunda.org/cawemo/latest/technical-guide/installation/).
 
 After logging into Cawemo:
