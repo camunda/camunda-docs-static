@@ -3865,8 +3865,8 @@ In case you're interested in older versions of Optimize, feel free to check out 
 ## Cawemo
 
 [Cawemo](/cawemo) is a web-based BPMN modeling application with a focus on collaboration.
-It is available as a hosted SaaS application (https://cawemo.com) or as an on-premises version for own installation.
-For installing the latter, please download one of the following archives and read the [installation guide](/cawemo/latest/technical-guide/installation/) for further instructions.
+It is available as an on-premises version for own installation.
+Please download one of the following archives and read the [installation guide](/cawemo/latest/technical-guide/installation/) for further instructions.
 
 <table class="table">
   <thead>
