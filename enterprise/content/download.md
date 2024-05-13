@@ -79,7 +79,7 @@ downloads:
   branches:
     - branch: "7.22"
       releases:
-        - number: "7.22.0-alpha2"
+        - number: "7.22.0-alpha1"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue++is%3Aclosed+label%3Aversion%3A7.22.0-alpha1"
           date: "2024.05.14"
           excludeservers:
