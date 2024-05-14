@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 110
+
+**Publication Date: May 14th, 2024**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of the MySQL JDBC connector included in the Camunda 7 Docker images had a vulnerability:
+
+https://nvd.nist.gov/vuln/detail/CVE-2023-22102
+
+**How to determine if the installation is affected**
+
+- The Camunda Platform 7 Docker containers are used.
+- MySQL is used for the database connection.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+Camunda 7.19.12, 7.20.5, 7.21.1, 7.22.0-alpha1
+
 ## Notice 109
 
 **Publication Date: May 13th, 2024**
