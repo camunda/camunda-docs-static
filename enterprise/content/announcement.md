@@ -27,6 +27,7 @@ __Camunda Platform 7 - Full Support (April 2022 - April 2027)__
 * Maintain supported environments (As part of the minor releases till October 2025; then as part of the patch releases)
 
 __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
+
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (As part of the patch releases)
 
