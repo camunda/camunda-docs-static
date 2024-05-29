@@ -131,7 +131,7 @@ downloads:
 
         - number: "7.21.0"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.21.0"
-          date: "2024.4.9"
+          date: "2024.04.09"
           excludeservers:
             - "wildfly"
             - "wildfly11"
