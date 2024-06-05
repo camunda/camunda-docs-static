@@ -3822,7 +3822,7 @@ To install the demo distribution, please download one of the following archives:
       <td>3.13.2</td>
       <td>7.19+, 7.20+. 7.21+</td>
       <td>8.9.0+</td>
-      <td>13.05.2024</td>
+      <td>09.04.2024</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.2/camunda-optimize-3.13.2-demo.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.2/camunda-optimize-3.13.2-demo.tar.gz">tar.gz</a>
@@ -3858,7 +3858,7 @@ To get the production distribution, please download one of the following archive
       <td>3.13.2</td>
       <td>7.19+, 7.20+, 7.21+</td>
       <td>8.9.0+</td>
-      <td>13.05.2024</td>
+      <td>09.04.2024</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.2/camunda-optimize-3.13.0-production.zip">zip</a>&nbsp;
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.2/camunda-optimize-3.13.0-production.tar.gz">tar.gz</a>
@@ -3924,7 +3924,7 @@ Please note that Optimize alpha releases are not suitable for production environ
         <td>3.14.0-alpha2</td>
         <td>7.19+, 7.20+, 7.21.0+</td>
         <td>8.9.0+</td>
-        <td>13.05.2024</td>
+        <td>11.06.2024</td>
         <td>
           <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0-alpha2/camunda-optimize-3.14.0-alpha2-production.zip">zip</a>&nbsp; 
           <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0-alpha2/camunda-optimize-3.14.0-alpha2-production.tar.gz">tar.gz</a>
