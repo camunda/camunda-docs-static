@@ -15,6 +15,28 @@ releases of the community platform.
 
 # Notices
 
+## Notice 111
+
+**Publication Date: June 12th, 2024**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+Camunda [Forms](https://docs.camunda.io/docs/guides/utilizing-forms/) contained a Regular Expression Denial of Service (ReDoS) vulnerability, which could render the page unresponsive.
+
+**How to determine if the installation is affected**
+
+- You are using Camunda [Forms](https://docs.camunda.io/docs/guides/utilizing-forms/).
+- An attacker can deploy a specially crafted Camunda Form.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+Camunda 7.19.13, 7.20.6, 7.21.2, 7.22.0-alpha2.
+
 ## Notice 110
 
 **Publication Date: May 14th, 2024**
