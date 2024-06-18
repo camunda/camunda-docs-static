@@ -69,12 +69,11 @@ __End of Maintenance:__ 14th of April 2026
 __Changes in Supported Environments:__
 
 * Support for Apache Tomcat 10
-* Support for Quarkus 3.x LTS
 * Support for WildFly Application Server 33
 * Support for JBoss EAP 8
 * Support for Microsoft SQL Server 2022
+* Support for Oracle 23ai
 * End of Support MariaDB
-* End of Support Quarkus 3.8 LTS
 * End of Support WildFly Application Server 31
 * End of Support PostgreSQL 13
 * End of Support Amazon Aurora PostgreSQL 13
