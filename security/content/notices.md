@@ -15,6 +15,49 @@ releases of the community platform.
 
 # Notices
 
+## Notice 112
+
+**Publication Date: June 28th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-restapi`, `cawemo-webapp` and `cawemo-websockets` were affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-4603
+
+The versions of `busybox`, `busybox-binsh` and `ssl_client` shipped with `cawemo-restapi`, `cawemo-webapp` and `cawemo-websockets` were affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2023-42363
+- https://nvd.nist.gov/vuln/detail/CVE-2023-42364
+- https://nvd.nist.gov/vuln/detail/CVE-2023-42365
+- https://nvd.nist.gov/vuln/detail/CVE-2023-42366
+
+The version of `undertow-core` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-6162
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-34459
+
+The version of `openssl` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-4603
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.17 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.18 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 111
 
 **Publication Date: June 12th, 2024**
