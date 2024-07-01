@@ -15,6 +15,54 @@ releases of the community platform.
 
 # Notices
 
+## Notice 114
+
+**Publication Date: July 1st, 2024**
+
+**Product affected**
+
+Camunda 7
+
+**Impact:**
+
+The version of `angular-translate`, included in the Camunda web applications, had a cross-site scripting (XSS) vulnerability:
+
+https://nvd.nist.gov/vuln/detail/CVE-2024-33665
+
+**How to determine if the installation is affected**
+
+- You use the Camunda 7 web applications.
+- You use a custom plugin that introduces custom translation strings.
+- An attacker can provide forged input to the custom plugin that passes it to the `angular-translate` library.
+
+**Solution**
+
+Camunda has provided the releases 7.22.0-alpha3, 7.21.3, 7.20.7, 7.19.14 which contain a fix.
+
+## Notice 113
+
+**Publication Date: July 1st, 2024**
+
+**Product affected**
+
+Camunda 7
+
+**Impact**
+
+The version of Apache Tomcat shipped with the Camunda Tomcat distribution, Camunda Run, and transitively pulled in by the Camunda Spring Boot starter had the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-23672
+- https://nvd.nist.gov/vuln/detail/CVE-2024-24549
+
+**How to determine if the installation is affected**
+
+- Camunda 7 Tomcat is used or Camunda 7 Run is used or Camunda 7 Spring Boot Starter is used.
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities.
+
+**Solution**
+
+Camunda has provided the releases 7.22.0-alpha3, 7.21.3, 7.20.7, 7.19.14 which contain a fix.
+
 ## Notice 112
 
 **Publication Date: June 28th, 2024**
