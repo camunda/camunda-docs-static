@@ -758,8 +758,6 @@ Move to [Desktop Modeler](https://docs.camunda.io/docs/components/modeler/deskto
 
 Move to Cawemo On-Premise: Continue with the familiar Cawemo environment, For modeling only or Camunda 7 processes. Please note that support for Cawemo On-Premise aligns with Camunda 7 timelines.
 
-To assist in your transition, we have prepared comprehensive documentation, which can be accessed at [Migrating from Cawemo](https://docs.camunda.io/docs/guides/migrating-from-cawemo/).
-
 We understand that change can be challenging, and our team is dedicated to ensuring a smooth transition for you and your organization. For any queries or support during this transition phase, please do not hesitate to reach out to your account team.
 
 # What does End of Maintenance Mean?
