@@ -141,9 +141,9 @@ Your pom.xml file of your project should look like this:
 			<version>1.7.36</version>
 		</dependency>
 		<dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.3.1</version>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>4.0.2</version>
 		</dependency>
 	</dependencies>
 </project>
