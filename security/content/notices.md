@@ -25,10 +25,13 @@ Cawemo On-Premises
 
 **Impact:**
 
-The version of `spring-boot` shipped with `cawemo-restapi` was affected by the following vulnerability:
+The version of the Java runtime shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-21147
+
+The version of `spring-security-core` shipped with `cawemo-restapi` was affected by the following vulnerability:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2024-38810
-- https://nvd.nist.gov/vuln/detail/CVE-2024-21147
 
 The version of `axios` shipped with `cawemo-webapp` was affected by the following vulnerability:
 
