@@ -15,6 +15,29 @@ releases of the community platform.
 
 # Notices
 
+## Notice 117
+
+**Publication Date: September 16th, 2024**
+
+**Product affected**
+
+Camunda 7
+
+**Impact**
+
+The version of Apache Tomcat shipped with the Camunda Tomcat distribution, Camunda Run, and transitively pulled in by the Camunda Spring Boot starter had the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-34750
+
+**How to determine if the installation is affected**
+
+- Camunda 7 Tomcat is used or Camunda 7 Run is used or Camunda 7 Spring Boot Starter is used.
+- See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided the releases 7.22.0-alpha5, 7.21.4, 7.20.8, 7.19.15 which contain a fix.
+
 ## Notice 116
 
 **Publication Date: August 30th, 2024**
