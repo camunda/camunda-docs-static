@@ -434,6 +434,7 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 # Camunda Optimize Announcements
 
+
 ## Camunda Optimize 3.14
 
 __Release Date:__ Scheduled for 8th of October 2024
@@ -444,6 +445,7 @@ __Changes in Supported Environments:__
 
 * Dropped support for `Java` 17 and `Java` 20
 * New minimum required `Java` version is 21
+* This release supports an extended feature set in Optimize that is available on OpenSearch. Full support is committed for the next release in Jan 2025.
 
 ## Camunda Optimize 3.13
 
@@ -515,7 +517,7 @@ __End of Maintenance:__ 9th of October 2023
 
 __Release Date:__ 11th of January 2022
 
-__End of Maintenance:__ 30th of June 2023 (Extended to 8th of October 2024*)
+__End of Maintenance:__ 30th of June 2023 (Extended to 9th of April 2025*)
 
 __Changes in Supported Environments:__
 
