@@ -52,6 +52,9 @@ __End of Maintenance:__ 13th of April 2027
 
 __Changes in Supported Environments:__
 
+* End of Support Apache Tomcat 9
+* End of Support JBoss EAP 7.4
+
 ## Camunda Platform 7.23
 
 __Release Date:__ scheduled for 8th of April 2025
@@ -59,6 +62,14 @@ __Release Date:__ scheduled for 8th of April 2025
 __End of Maintenance:__ 13th of October 2026
 
 __Changes in Supported Environments:__
+
+* Support for WildFly Application Server 35
+* Support for Amazon Aurora PostgreSQL 16
+* Support for SpringBoot 3.4 (Support is also provided for Camunda 7.22 as a patch)
+* End of Support PostgreSQL 13
+* End of Support WildFly Application Server 23 + 26
+* End of Support Oracle Weblogic 14
+* End of Support PostgreSQL 13
 
 ## Camunda Platform 7.22
 
@@ -75,7 +86,6 @@ __Changes in Supported Environments:__
 * Support for Oracle 23ai
 * End of Support MariaDB
 * End of Support WildFly Application Server 31
-* End of Support PostgreSQL 13
 * End of Support Amazon Aurora PostgreSQL 13
 * End of Support Groovy 2.5
 
