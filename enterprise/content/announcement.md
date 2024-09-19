@@ -84,12 +84,16 @@ __Changes in Supported Environments:__
 * Support for JBoss EAP 8
 * Support for Microsoft SQL Server 2022
 * Support for Oracle 23ai
+* Support for H2 2.3
+* Support for Groovy 4.0
 * End of Support MariaDB
 * End of Support WildFly Application Server 31
 * End of Support Amazon Aurora PostgreSQL 13
-* End of Support Groovy 2.5
+* End of Support Groovy 2.4
+* End of Support H2 2.1
 
 Other changes:
+
 * Deactivating Camunda [Telemetry](https://docs.camunda.org/manual/7.21/introduction/telemetry/)
 * Removing Swagger from Camunda 7 Run [Getting Started Experience](https://docs.camunda.org/manual/7.21/reference/rest/openapi/#getting-started-experience)
 
