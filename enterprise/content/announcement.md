@@ -79,7 +79,7 @@ __Changes in Supported Environments:__
 * End of Support WildFly Application Server 31
 * End of Support PostgreSQL 13
 * End of Support Amazon Aurora PostgreSQL 13
-* End of Support Groovy 2.5
+* End of Support Groovy 2.4
 * End of Support H2 2.1
 
 Other changes:
