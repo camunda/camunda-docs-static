@@ -13,7 +13,7 @@ menu:
 
 This page lists the most commonly used Apache Maven Coordinates for Camunda.
 
-Most Camunda artifacts are pushed to [maven central](http://search.maven.org/#browse%7C-1675593179).
+Most Camunda artifacts are pushed to [maven central](https://central.sonatype.com/).
 
 
 # Camunda BOM (Bill of Materials)
