@@ -65,11 +65,12 @@ __Changes in Supported Environments:__
 
 * Support for WildFly Application Server 35
 * Support for Amazon Aurora PostgreSQL 16
-* Support for SpringBoot 3.4 (Support is also provided for Camunda 7.22 as a patch)
+* Support for Spring Boot 3.4 (Support is also provided for Camunda 7.22 as a patch)
 * End of Support PostgreSQL 13
 * End of Support WildFly Application Server 23 + 26
 * End of Support Oracle Weblogic 14
 * End of Support PostgreSQL 13
+* End of Support for Spring Boot 3.3
 
 ## Camunda Platform 7.22
 
@@ -86,11 +87,13 @@ __Changes in Supported Environments:__
 * Support for Oracle 23ai
 * Support for H2 2.3
 * Support for Groovy 4.0
+* Support for Spring Boot 3.3
 * End of Support MariaDB
 * End of Support WildFly Application Server 31
 * End of Support Amazon Aurora PostgreSQL 13
 * End of Support Groovy 2.4
 * End of Support H2 2.1
+* End of Support for Spring Boot 3.2
 
 Other changes:
 
