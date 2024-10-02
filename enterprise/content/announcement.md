@@ -454,7 +454,7 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 ## Camunda Optimize 3.14
 
-__Release Date:__ Scheduled for 8th of October 2024
+__Release Date:__ 8th of October 2024
 
 __End of Maintenance:__ 14th of April 2026
 
@@ -462,13 +462,23 @@ __Changes in Supported Environments:__
 
 * Dropped support for `Java` 17 and `Java` 20
 * New minimum required `Java` version is 21
+* Added support for `Elasticsearch` 8.13+
+* Dropped support for `Elasticsearch` 8.9
+* Added support for  `Camunda Platform` 7.22
+* Dropped support for  `Camunda Platform` 7.19
 * This release supports an extended feature set in Optimize that is available on OpenSearch. Full support is committed for the next release in Jan 2025.
+
 
 ## Camunda Optimize 3.13
 
 __Release Date:__ 9th of April 2024
 
 __End of Maintenance:__ 14th of October 2025
+
+__Changes in Supported Environments:__
+
+* Added support for  `Camunda Platform` 7.21
+* Dropped support for  `Camunda Platform` 7.18
 
 ## Camunda Optimize 3.12
 
@@ -494,6 +504,8 @@ __Changes in Supported Environments:__
 * Added support for  `Camunda Platform` 7.20
 * Dropped support for  `Camunda Platform` 7.17
 
+__Others__
+
 ## Camunda Optimize 3.10
 
 __Release Date:__ 11th of April 2023
@@ -507,8 +519,6 @@ __Changes in Supported Environments:__
 * Added support for  `Camunda Platform` 7.19
 * Dropped support for  `Camunda Platform` 7.16
 
-__Others__
-
 * The option to customize the UI header is removed. Details can be found: [Update notes](https://docs.camunda.io/optimize/self-managed/optimize-deployment/migration-update/3.9-to-3.10/#changes-in-the-configuration)
 
 ## Camunda Optimize 3.9
@@ -516,6 +526,8 @@ __Others__
 __Release Date:__ 11th of October 2022
 
 __End of Maintenance:__ 10th of April 2024
+
+__Changes in Supported Environments:__
 
 * Added support for  `Camunda Platform` 7.18
 * Dropped support for  `Camunda Platform` 7.15
@@ -526,6 +538,8 @@ __End of Maintenance:__ 10th of April 2024
 __Release Date:__ 12th of April 2022
 
 __End of Maintenance:__ 9th of October 2023
+
+__Changes in Supported Environments:__
 
 * Dropped support for `Elasticsearch` 7.8 and 7.9
 * Added support for `Elasticsearch` 7.17
