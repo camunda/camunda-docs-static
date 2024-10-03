@@ -454,7 +454,7 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 ## Camunda Optimize 3.14
 
-__Release Date:__ Scheduled for 8th of October 2024
+__Release Date:__ 8th of October 2024
 
 __End of Maintenance:__ 14th of April 2026
 
@@ -462,13 +462,23 @@ __Changes in Supported Environments:__
 
 * Dropped support for `Java` 17 and `Java` 20
 * New minimum required `Java` version is 21
+* Added support for `Elasticsearch` 8.13+
+* Dropped support for `Elasticsearch` 8.9
+* Added support for  `Camunda Platform` 7.22
+* Dropped support for  `Camunda Platform` 7.19
 * This release supports an extended feature set in Optimize that is available on OpenSearch. Full support is committed for the next release in Jan 2025.
+
 
 ## Camunda Optimize 3.13
 
 __Release Date:__ 9th of April 2024
 
 __End of Maintenance:__ 14th of October 2025
+
+__Changes in Supported Environments:__
+
+* Added support for  `Camunda Platform` 7.21
+* Dropped support for  `Camunda Platform` 7.18
 
 ## Camunda Optimize 3.12
 
@@ -494,7 +504,9 @@ __Changes in Supported Environments:__
 * Added support for  `Camunda Platform` 7.20
 * Dropped support for  `Camunda Platform` 7.17
 
-## Camunda Optimize 3.10
+## Others
+
+### Camunda Optimize 3.10
 
 __Release Date:__ 11th of April 2023
 
@@ -507,30 +519,32 @@ __Changes in Supported Environments:__
 * Added support for  `Camunda Platform` 7.19
 * Dropped support for  `Camunda Platform` 7.16
 
-__Others__
-
 * The option to customize the UI header is removed. Details can be found: [Update notes](https://docs.camunda.io/optimize/self-managed/optimize-deployment/migration-update/3.9-to-3.10/#changes-in-the-configuration)
 
-## Camunda Optimize 3.9
+### Camunda Optimize 3.9
 
 __Release Date:__ 11th of October 2022
 
 __End of Maintenance:__ 10th of April 2024
 
+__Changes in Supported Environments:__
+
 * Added support for  `Camunda Platform` 7.18
 * Dropped support for  `Camunda Platform` 7.15
 * Dropped support for `Elasticsearch` 7.10, 7.11 and 7.12
 
-## Camunda Optimize 3.8
+### Camunda Optimize 3.8
 
 __Release Date:__ 12th of April 2022
 
 __End of Maintenance:__ 9th of October 2023
 
+__Changes in Supported Environments:__
+
 * Dropped support for `Elasticsearch` 7.8 and 7.9
 * Added support for `Elasticsearch` 7.17
 
-## Camunda Optimize 3.7
+### Camunda Optimize 3.7
 
 __Release Date:__ 11th of January 2022
 
@@ -545,7 +559,7 @@ __Changes in Supported Environments:__
   * For the benefit of our Optimize customers using OpenSearch we have extended the maintenance of the 3.7 release by 3 months to October 2023.
   * In October 2023, we plan to deliver 3.11, which will include OpenSearch support and a direct migration from 3.7 to 3.11.
 
-## Camunda Optimize 3.6
+### Camunda Optimize 3.6
 
 __Release Date:__ 12th of October 2021
 
@@ -558,7 +572,7 @@ __Changes in Supported Environments:__
 * Ended support for `Camunda Platform` 7.13.x releases
 * New minimum required `Camunda Platform` version is 7.14.0
 
-## Camunda Optimize 3.5
+### Camunda Optimize 3.5
 
 __Release Date:__ 13th of July 2021
 
@@ -570,7 +584,7 @@ __Changes in Supported Environments:__
 * Ended support for `Elasticsearch` 7.5, 7.6 and 7.7 versions
 * Added support for `Elasticsearch` 7.12 and 7.13 versions
 
-## Camunda Optimize 3.4
+### Camunda Optimize 3.4
 
 __Release Date:__ 13th of April 2021
 
@@ -584,7 +598,7 @@ __Changes in Supported Environments:__
 * Ended support for `Camunda Platform` 7.12.x releases
 * New Minimum required `Camunda Platform` version is 7.13.5
 
-## Camunda Optimize 3.3
+### Camunda Optimize 3.3
 
 __Release Date:__ 12th of January 2021
 
@@ -595,7 +609,7 @@ __Changes in Supported Environments:__
 * Added support for `Elasticsearch` 7.9 and 7.10 versions
 * Ended support for `Elasticsearch` 7.0, 7.1 and 7.2 versions
 
-## Camunda Optimize 3.2
+### Camunda Optimize 3.2
 
 __Release Date:__ 13th of October 2020
 
@@ -608,7 +622,7 @@ __Changes in Supported Environments:__
 * End of Support for `Camunda Platform` 7.11 releases
 * Support for `Camunda Platform` 7.14 releases
 
-## Camunda Optimize 3.1
+### Camunda Optimize 3.1
 
 __Release Date:__ 14th of July 2020
 
@@ -620,7 +634,7 @@ __Changes in Supported Environments:__
 * End of Support for `Camunda Platform` 7.10 releases
 * Support for `Camunda Platform` 7.13 releases
 
-## Camunda Optimize 3.0
+### Camunda Optimize 3.0
 
 __Release Date:__ 3rd of April 2020
 
@@ -633,7 +647,7 @@ __Changes in Supported Environments:__
 * End of Support for Internet Explorer.
 * Optimize supports only the latest Edge browser version. Unfortunately, Microsoft does not update Edge to the new version through it's update system, but you have to do that manually. Either download it from the [offical page](https://www.microsoft.com/en-us/edge) and install the new version manually or ask your administrator to do that for you.
 
-## Camunda Optimize 2.7
+### Camunda Optimize 2.7
 
 __Release Date:__ 20th of December 2019
 
@@ -651,7 +665,7 @@ __Changes in Supported Environments:__
 * End of Support for Java 12
 
 
-## Camunda Optimize 2.6
+### Camunda Optimize 2.6
 
 __Release Date:__ 2nd of October 2019
 
@@ -660,7 +674,7 @@ __End of Maintenance:__ 31st of March 2021
 __Changes in Supported Environments:__
 
 
-## Camunda Optimize 2.5
+### Camunda Optimize 2.5
 
 __Release Date:__ 28th of June 2019
 
@@ -672,7 +686,7 @@ __Changes in Supported Environments:__
 * Support for Java 12
 
 
-## Camunda Optimize 2.4
+### Camunda Optimize 2.4
 
 __Release Date:__ 29th of March 2019
 
