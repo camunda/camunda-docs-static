@@ -124,7 +124,7 @@ Your pom.xml file of your project should look like this:
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<camunda.external-task-client.version>7.21.0</camunda.external-task-client.version>
+		<camunda.external-task-client.version>7.22.0</camunda.external-task-client.version>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
@@ -222,7 +222,7 @@ In this section, you'll learn how to implement an external task worker in NodeJS
 
 Make sure you have the following tools installed:
 
-* NodeJS >= v10 ([Download available here](https://nodejs.org/en/download/))
+* NodeJS >= v16 ([Download available here](https://nodejs.org/en/download/))
 * Editor for JavaScript files (e.g. [Atom](https://atom.io/))
 
 ### Create a new NodeJS project
@@ -231,6 +231,21 @@ Make sure you have the following tools installed:
 mkdir charge-card-worker
 cd ./charge-card-worker
 npm init -y
+```
+
+### Update package.json to enable ES modules
+Add the following "type" field to your package.json file:
+
+``` json
+{
+// ...
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+// ...
+}
 ```
 
 ### Add Camunda External Task Client JS library
@@ -250,8 +265,8 @@ We use [Long Polling](https://docs.camunda.org/manual/latest/user-guide/process-
 Next, you need to create a new JavaScript file, e.g. `worker.js`, that looks like the following:
 
 ```javascript
-const { Client, logger } = require('camunda-external-task-client-js');
-const open = require('open');
+import { Client, logger } from 'camunda-external-task-client-js';
+import open from 'open';
 
 // configuration for the Client:
 //  - 'baseUrl': url to the Process Engine
