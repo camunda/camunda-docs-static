@@ -7,7 +7,7 @@ ErrorDocument 404 https://stage.docs.camunda.org/manual/latest/
 RewriteRule ^latest/api-references/java/ /manual/latest/reference/javadoc/
 
 # Javadoc
-RewriteRule ^manual/develop/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.22-SNAPSHOT/$1 [R=307,L]
+RewriteRule ^manual/develop/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.23-SNAPSHOT/$1 [R=307,L]
 RewriteRule ^manual/latest/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.22/$1 [R=307,L] # Bump on first alpha release
 RewriteRule ^manual/([^/]+)/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/$1/$2 [R=307,L]
 
