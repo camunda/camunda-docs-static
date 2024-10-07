@@ -15,6 +15,50 @@ releases of the community platform.
 
 # Notices
 
+## Notice 118
+
+**Publication Date: October 7th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `libcrypto3`, `libssl3`, and `openssl` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-6119
+
+The version of `spring-webmvc` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-38816
+
+The version of `path-to-regexp` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://github.com/pillarjs/path-to-regexp/security/advisories/GHSA-9wv6-86v2-598j
+
+The version of `@sentry/browser` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://github.com/getsentry/sentry-javascript/security/advisories/GHSA-593m-55hh-j8gv
+
+The version of `@cookie` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://github.com/jshttp/cookie/security/advisories/GHSA-pxg6-pf52-xh8x
+
+The version of `libcrypto3`, `libssl3`, and `openssl` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-6119
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.20 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities
+
+**Solution**
+
+Camunda has provided 1.9.21 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 117
 
 **Publication Date: September 16th, 2024**
