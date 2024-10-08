@@ -25,7 +25,7 @@ Cawemo On-Premises
 
 **Impact:**
 
-The version of `libcrypto3`, `libssl3`, and `openssl` shipped with `cawemo-restapi` was affected by the following vulnerability:
+The versions of `libcrypto3`, `libssl3`, and `openssl` shipped with `cawemo-restapi` were affected by the following vulnerability:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2024-6119
 
