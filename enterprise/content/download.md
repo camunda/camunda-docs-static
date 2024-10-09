@@ -3952,94 +3952,96 @@ This distribution bundles
 To get the production distribution, please download one of the following archives:
 
 <table class="table">
-  <thead>
-    <tr>
-      <th class="col-md-2">Version</th>
-      <th class="col-md-2">Supported Engine Versions</th>
-      <th class="col-md-2">Supported Elasticsearch Versions</th>
-      <th class="col-md-2">Release Date</th>
-      <th class="col-md-2">Download</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="well">
-      <td>3.14.0</td>
-      <td>7.20+, 7.21+, 7.22+</td>
-      <td>8.13.0+</td>
-      <td>08.10.2024</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0/camunda-optimize-3.14.0-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0/camunda-optimize-3.14.0-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.13.6</td>
-      <td>7.19+, 7.20+, 7.21+</td>
-      <td>8.9.0+</td>
-      <td>08.10.2024</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.6/camunda-optimize-3.13.6-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.6/camunda-optimize-3.13.6-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>    
-    <tr class="well">
-      <td>3.12.9</td>
-      <td>7.18+, 7.19+, 7.20+</td>
-      <td>8.9.0+</td>
-      <td>08.10.2024</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.9/camunda-optimize-3.12.9-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.9/camunda-optimize-3.12.9-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-    <tr class="well">
-      <td>3.11.14</td>
-      <td>7.18+, 7.19+, 7.20+</td> 
-      <td>8.8.0+</td>
-      <td>08.10.2024</td>
-      <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.14/camunda-optimize-3.11.14-production.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.14/camunda-optimize-3.11.14-production.tar.gz">tar.gz</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{{< note title="ELASTICSEARCH SUPPORT" class="warning" >}}
-Elastic's Elasticsearch is the only supported version of Elastic compatible with Optimize.
-
-AWS Opensearch is not supported at this time.
-{{< /note >}}
-
-If you're interested in the latest features, you can get a sneak peek by trying out the latest alpha release:
-
-{{< note title="Heads Up!" class="warning" >}}
-Please note that Optimize alpha releases are not suitable for production environments and should only be used for testing.
-{{< /note >}}
-
-<table class="table">
-  <thead>
-    <tr>
-      <th class="col-md-2">Alpha Version</th>
-      <th class="col-md-2">Supported Engine Versions</th>
-      <th class="col-md-2">Supported Elasticsearch Versions</th>
-      <th class="col-md-2">Release Date</th>
-      <th class="col-md-2">Download</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="well">
-        <td>3.14.0-alpha5</td>
-        <td>7.19+, 7.20+, 7.21.0+</td>
-        <td>8.9.0+</td>
-        <td>10.09.2024</td>
+    <thead>
+      <tr>
+        <th class="col-md-2">Version</th>
+        <th class="col-md-2">Supported Engine Versions</th>
+        <th class="col-md-2">Supported Elasticsearch Versions</th>
+        <th class="col-md-2">Supported AWS OpenSearch Versions</th>
+        <th class="col-md-2">Release Date</th>
+        <th class="col-md-2">Download</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="well">
+        <td>3.14.0</td>
+        <td>7.20+, 7.21+, 7.22+</td>
+        <td>8.13.0+</td>
+        <td>2.9+</td>
+        <td>08.10.2024</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0-alpha5/camunda-optimize-3.14.0-alpha5-production.zip">zip</a>&nbsp; 
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0-alpha5/camunda-optimize-3.14.0-alpha5-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0/camunda-optimize-3.14.0-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0/camunda-optimize-3.14.0-production.tar.gz">tar.gz</a>
         </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+      <tr class="well">
+        <td>3.13.6</td>
+        <td>7.19+, 7.20+, 7.21+</td>
+        <td>8.9.0+</td>
+        <td>-</td> 
+        <td>08.10.2024</td>
+        <td>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.6/camunda-optimize-3.13.6-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.6/camunda-optimize-3.13.6-production.tar.gz">tar.gz</a>
+        </td>
+      </tr>    
+      <tr class="well">
+        <td>3.12.9</td>
+        <td>7.18+, 7.19+, 7.20+</td>
+        <td>8.9.0+</td>
+        <td>-</td> 
+        <td>08.10.2024</td>
+        <td>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.9/camunda-optimize-3.12.9-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.9/camunda-optimize-3.12.9-production.tar.gz">tar.gz</a>
+        </td>
+      </tr>
+      <tr class="well">
+        <td>3.11.14</td>
+        <td>7.18+, 7.19+, 7.20+</td> 
+        <td>8.8.0+</td>
+        <td>-</td> 
+        <td>08.10.2024</td>
+        <td>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.14/camunda-optimize-3.11.14-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.14/camunda-optimize-3.11.14-production.tar.gz">tar.gz</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  If you're interested in the latest features, you can get a sneak peek by trying out the latest alpha release:
+  
+  {{< note title="Heads Up!" class="warning" >}}
+  Please note that Optimize alpha releases are not suitable for production environments and should only be used for testing.
+  {{< /note >}}
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="col-md-2">Alpha Version</th>
+        <th class="col-md-2">Supported Engine Versions</th>
+        <th class="col-md-2">Supported Elasticsearch Versions</th>
+        <th class="col-md-2">Supported AWS OpenSearch Versions</th>
+        <th class="col-md-2">Release Date</th>
+        <th class="col-md-2">Download</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="well">
+          <td>3.14.0-alpha5</td>
+          <td>7.19+, 7.20+, 7.21.0+</td>
+          <td>8.9.0+</td>
+          <td>2.9+</td> 
+          <td>10.09.2024</td>
+          <td>
+            <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0-alpha5/camunda-optimize-3.14.0-alpha5-production.zip">zip</a>&nbsp; 
+            <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.0-alpha5/camunda-optimize-3.14.0-alpha5-production.tar.gz">tar.gz</a>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+
 
 In case you're interested in older versions of Optimize, feel free to check out the [Previous Releases](https://downloads.camunda.cloud/enterprise-release/optimize/).
 
