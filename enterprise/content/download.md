@@ -3975,14 +3975,14 @@ To get the production distribution, please download one of the following archive
         </td>
       </tr>
       <tr class="well">
-        <td>3.13.6</td>
+        <td>3.13.7</td>
         <td>7.19+, 7.20+, 7.21+</td>
         <td>8.9.0+</td>
         <td>-</td> 
-        <td>08.10.2024</td>
+        <td>11.10.2024</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.6/camunda-optimize-3.13.6-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.6/camunda-optimize-3.13.6-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.7/camunda-optimize-3.13.7-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.7/camunda-optimize-3.13.7-production.tar.gz">tar.gz</a>
         </td>
       </tr>    
       <tr class="well">
