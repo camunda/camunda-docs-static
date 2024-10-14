@@ -27,7 +27,7 @@ Camunda 7
 
 The version of Apache Tomcat shipped with the Camunda Tomcat distribution, Camunda Run, and transitively pulled in by the Camunda Spring Boot starter had the following vulnerability:
 
-- https://nvd.nist.gov/vuln/detail/CVE-2024-38286
+- [CVE-2024-38286](https://lists.apache.org/thread/8xm50bvr6rhbjkdtbxl5x4d20dpfy83p)
 
 **How to determine if the installation is affected**
 
