@@ -15,6 +15,29 @@ releases of the community platform.
 
 # Notices
 
+## Notice 120
+
+**Publication Date: October 18th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-8096
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.21 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerability
+
+**Solution**
+
+Camunda has provided the 1.9.22 release for the `cawemo-websockets` Docker image which contains a fix for the above-mentioned CVE.
+
 ## Notice 119
 
 **Publication Date: October 14th, 2024**
