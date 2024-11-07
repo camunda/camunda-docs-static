@@ -15,6 +15,42 @@ releases of the community platform.
 
 # Notices
 
+## Notice 121
+
+**Publication Date: November 8th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-context` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-38820
+
+The version of `spring-security-web` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-38821
+
+The versions of `libcrypto3` and `libssl3` shipped with `cawemo-restapi` and `cawemo-webapp` were affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-9143
+
+The versions of `libcrypto3`, `libssl3`, and `openssl` shipped with `cawemo-websockets` were affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-9143
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.22 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerability
+
+**Solution**
+
+Camunda has provided 1.9.23 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 120
 
 **Publication Date: October 18th, 2024**
