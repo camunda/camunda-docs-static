@@ -20,7 +20,7 @@ RewriteRule ^manual/([^/]+)/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platfor
 RewriteRule ^manual/(7\.(1[6-9]|2[0-7])|develop|latest)/reference/forms/camunda-forms/$ https://docs.camunda.io/docs/guides/utilizing-forms/ [R=301,L]
 
 # Redirect enterprise portal
-RewriteRule ^enterprise/enterprise-customer-portal/$ https://docs.camunda.org/enterprise/support/ [R=301,L]
+RewriteRule ^enterprise/enterprise-customer-portal/$ https://camunda.com/services/enterprise-support-guide/ [R=301,L]
 
 # manual without version
 RewriteRule ^manual/?$ /manual/7.22/ [R=307,L]
