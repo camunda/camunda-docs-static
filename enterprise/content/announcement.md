@@ -64,6 +64,7 @@ __End of Maintenance:__ 13th of October 2026
 __Changes in Supported Environments:__
 
 * Support for WildFly Application Server 35
+* Support for Support PostgreSQL 17
 * Support for Amazon Aurora PostgreSQL 16
 * Support for Spring Boot 3.4 (Support is also provided for Camunda 7.22 as a patch)
 * End of Support PostgreSQL 13
@@ -84,6 +85,7 @@ __Changes in Supported Environments:__
 * Support for WildFly Application Server 33
 * Support for JBoss EAP 8
 * Support for Microsoft SQL Server 2022
+* Support for Postgres 17
 * Support for Oracle 23ai
 * Support for H2 2.3
 * Support for Groovy 4.0
