@@ -452,6 +452,18 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 # Camunda Optimize Announcements
 
+## Camunda Optimize 3.xx LTS (Long term support)
+
+## Camunda Optimize 3.15
+
+__Release Date:__ 14th of January 2025
+
+__End of Maintenance:__ 7th of July 2026
+
+__Changes in Supported Environments:__
+
+* Add `Amazon OpenSearch 2.9+` full support
+
 
 ## Camunda Optimize 3.14
 
