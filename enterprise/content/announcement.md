@@ -458,7 +458,7 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 __Release Date:__ 14th of January 2025
 
-__End of Maintenance:__ 7th of July 2026
+__End of Maintenance:__ 14th of July 2026
 
 __Changes in Supported Environments:__
 
