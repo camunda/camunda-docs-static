@@ -4129,7 +4129,7 @@ Please download one of the following archives and read the [installation guide](
     <tr class="well">
       <td><a href="/cawemo">Cawemo On-Premises</a></td>
       <td>1.9.24</td>
-      <td>08.11.2024</td>
+      <td>05.12.2024</td>
       <td>
         <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.24.zip">zip</a>
         <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.24.tar.gz">tar.gz</a>
