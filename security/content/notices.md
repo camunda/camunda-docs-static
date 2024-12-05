@@ -15,6 +15,42 @@ releases of the community platform.
 
 # Notices
 
+## Notice 122
+
+**Publication Date: December 5th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `netty` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-47535
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-9681
+
+The version of `symfony/http-foundation` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-50345
+
+The version of `symfony/process` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-51736
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.23 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerability
+
+**Solution**
+
+Camunda has provided 1.9.24 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 121
 
 **Publication Date: November 8th, 2024**
