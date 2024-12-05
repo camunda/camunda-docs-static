@@ -25,7 +25,7 @@ Cawemo On-Premises
 
 **Impact:**
 
-The version of `netty` shipped with `cawemo-restapi` was affected by the following vulnerability:
+The version of `netty-common` shipped with `cawemo-restapi` was affected by the following vulnerability:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2024-47535
 
