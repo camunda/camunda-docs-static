@@ -4109,14 +4109,14 @@ To get the production distribution, please download one of the following archive
     </thead>
     <tbody>
       <tr class="well">
-          <td>3.15.0-alpha1</td>
+          <td>3.15.0-alpha2</td>
           <td>7.20+, 7.21+, 7.22+</td>
           <td>8.13.0+</td>
           <td>2.9+</td> 
-          <td>12.11.2024</td>
+          <td>10.12.2024</td>
           <td>
-            <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.0-alpha1/camunda-optimize-3.15.0-alpha1-production.zip">zip</a>&nbsp; 
-            <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.0-alpha1/camunda-optimize-3.15.0-alpha1-production.tar.gz">tar.gz</a>
+            <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.0-alpha2/camunda-optimize-3.15.0-alpha2-production.zip">zip</a>&nbsp; 
+            <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.0-alpha2/camunda-optimize-3.15.0-alpha2-production.tar.gz">tar.gz</a>
           </td>
       </tr>
     </tbody>
