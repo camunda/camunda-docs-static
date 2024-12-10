@@ -15,6 +15,61 @@ releases of the community platform.
 
 # Notices
 
+## Notice 124
+
+**Publication Date: December 10th, 2024**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of Bootstrap, included in the Camunda web applications, had Cross-Site-Scripting (XSS) vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-6484
+- https://nvd.nist.gov/vuln/detail/CVE-2024-6485
+- https://nvd.nist.gov/vuln/detail/CVE-2024-6531
+
+**How to determine if the installation is affected**
+
+- You use the Camunda 7 web applications.
+- You use a custom plugin that utilizes the following components of Bootstrap:
+  - Carousel component where the attributes `data-slide` and `data-slide-to` can be exploited through the `href` attribute.
+  - Button compenent which can be exploited through the `data-loading-text` attribute.
+- An attacker can provide forged input to the custom plugin that passes it to the `href` or `data-loading-text` attributes.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+Camunda 7.20.9, 7.21.6, 7.22.1, 7.23.0-alpha2.
+
+## Notice 123
+
+**Publication Date: December 10th, 2024**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of AngularJS, included in the Camunda web applications, had two content spoofing vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-8372
+- https://nvd.nist.gov/vuln/detail/CVE-2024-8373
+
+**How to determine if the installation is affected**
+
+- You use the Camunda 7 web applications.
+- You use a custom plugin that utilizes the `<source>` HTML tag or the AngularJS `ng-srcset` directive.
+- An attacker can provide forged input to the custom plugin that passes it to the `<source>` HTML tag or the `ng-srcset` directive.
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+Camunda 7.20.9, 7.21.6, 7.22.1, 7.23.0-alpha2.
+
 ## Notice 122
 
 **Publication Date: December 5th, 2024**
