@@ -71,6 +71,7 @@ __Changes in Supported Environments:__
 * End of Support WildFly Application Server 23 + 26
 * End of Support Oracle Weblogic 14
 * End of Support Spring Boot 3.3
+* End of Support Amazon Aurora PostgreSQL 13
 
 ## Camunda Platform 7.22
 
