@@ -15,6 +15,43 @@ releases of the community platform.
 
 # Notices
 
+## Notice 125
+
+**Publication Date: January 7th, 2024**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `org.asynchttpclient:async-http-client` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-53990
+
+The version of `logback-core` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-12798
+- https://nvd.nist.gov/vuln/detail/CVE-2024-12801
+
+The version of `libcurl` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-11053
+
+The version of `league/commonmark` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://github.com/advisories/GHSA-c2pc-g5qf-rfrf
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.24 or lower is used
+- See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerability
+
+**Solution**
+
+Camunda has provided 1.9.25 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 124
 
 **Publication Date: December 10th, 2024**
