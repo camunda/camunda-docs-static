@@ -4055,7 +4055,7 @@ To get the production distribution, please download one of the following archive
         </td>
       </tr>
       <tr class="well">
-        <td>3.13.9</td>
+        <td>3.13.10</td>
         <td>7.19+, 7.20+, 7.21+</td>
         <td>8.9.0+</td>
         <td>-</td> 
@@ -4066,7 +4066,7 @@ To get the production distribution, please download one of the following archive
         </td>
       </tr>    
       <tr class="well">
-        <td>3.12.12</td>
+        <td>3.12.13</td>
         <td>7.18+, 7.19+, 7.20+</td>
         <td>8.9.0+</td>
         <td>-</td> 
@@ -4077,7 +4077,7 @@ To get the production distribution, please download one of the following archive
         </td>
       </tr>
       <tr class="well">
-        <td>3.11.17</td>
+        <td>3.11.18</td>
         <td>7.18+, 7.19+, 7.20+</td> 
         <td>8.8.0+</td>
         <td>-</td> 
