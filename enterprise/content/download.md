@@ -4061,8 +4061,8 @@ To get the production distribution, please download one of the following archive
         <td>-</td> 
         <td>10.12.2024</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.9/camunda-optimize-3.13.9-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.9/camunda-optimize-3.13.9-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.9/camunda-optimize-3.13.10-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.9/camunda-optimize-3.13.10-production.tar.gz">tar.gz</a>
         </td>
       </tr>    
       <tr class="well">
@@ -4072,8 +4072,8 @@ To get the production distribution, please download one of the following archive
         <td>-</td> 
         <td>10.12.2024</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.12/camunda-optimize-3.12.12-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.12/camunda-optimize-3.12.12-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.12/camunda-optimize-3.12.13-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.12/camunda-optimize-3.12.13-production.tar.gz">tar.gz</a>
         </td>
       </tr>
       <tr class="well">
@@ -4083,8 +4083,8 @@ To get the production distribution, please download one of the following archive
         <td>-</td> 
         <td>10.12.2024</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.17/camunda-optimize-3.11.17-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.17/camunda-optimize-3.11.17-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.17/camunda-optimize-3.11.18-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.11.17/camunda-optimize-3.11.18-production.tar.gz">tar.gz</a>
         </td>
       </tr>
     </tbody>
