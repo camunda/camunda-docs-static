@@ -15,9 +15,33 @@ releases of the community platform.
 
 # Notices
 
+## Notice 126
+
+**Publication Date: February 4th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `dom-iterator` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://avd.aquasec.com/nvd/cve-2024-21541
+
+**How to determine if the installation is affected**
+
+- Cawemo On-Premises 1.9.25 or lower is used
+- See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.26 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fix for the above-mentioned CVE.
+
 ## Notice 125
 
-**Publication Date: January 7th, 2024**
+**Publication Date: January 7th, 2025**
 
 **Product affected:**
 
