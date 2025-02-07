@@ -37,7 +37,7 @@ The version of `dom-iterator` shipped with `cawemo-webapp` was affected by the f
 **Solution**
 
 Camunda has provided 1.9.26 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
-which contain fix for the above-mentioned CVE.
+which contain a fix for the above-mentioned CVE.
 
 ## Notice 125
 
