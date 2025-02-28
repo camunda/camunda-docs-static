@@ -20,7 +20,7 @@ Camunda recommends that new projects be developed on Camunda Platform 8. We will
 
 {{< img src="../img/camunda_extended_support.png" title="Extended Support Offering" >}}
 
-__Camunda Platform 7 (including Optimize) - Full Support (April 2022 - April 2027)__
+__Camunda Platform 7 (including Optimize) - Full Support (April 2022 - April 2030)__
 
 * Incremental feature improvements (Last minor release October 2025)
 * Critical security/bug fixes (Patch releases)
