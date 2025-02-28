@@ -31,10 +31,12 @@ __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (As part of the patch releases)
 
-__Camunda Platform 7 (including Optimize) and Cawemo On-Premises - Extended Support (April 2027+*)__
+__Camunda Platform 7 Extended Support__
 
 * Critical security/bug fixes
 * Maintain supported environments
+
+
 
 *If you require Camunda Extended Support, contact your assigned Customer Success Manager.
 
