@@ -15,6 +15,29 @@ releases of the community platform.
 
 # Notices
 
+## Notice 127
+
+**Publication Date: March 4th, 2025**
+
+**Product affected:**
+
+Optimize 3
+
+**Impact:**
+
+The version of `io.netty:netty-common` shipped with Optimize 3 was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-47535
+
+**How to determine if the installation is affected**
+
+You use the following Optimize versions or lower: 3.15.0-alpha1, 3.14.2, 3.13.8, 3.12.11, 3.11.16
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+Camunda Optimize 3.15.0-alpha2, 3.14.3, 3.13.9, 3.12.12, 3.11.17
+
 ## Notice 126
 
 **Publication Date: February 4th, 2025**
