@@ -15,6 +15,81 @@ releases of the community platform.
 
 # Notices
 
+## Notice 131
+
+**Publication Date: March 10th, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of Tomcat shipped with the Camunda 7 Tomcat and Run Docker Images was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-56337
+- https://nvd.nist.gov/vuln/detail/CVE-2024-50379
+
+**How to determine if the installation is affected**
+
+* You use the Camunda 7 Tomcat or Run Docker images.
+* You use the following Camunda 7 versions or lower: 7.20.10, 7.21.7, 7.22.2, 7.23.0-alpha3
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.20.11, 7.21.8, 7.22.3, 7.23.0-alpha4
+
+## Notice 130
+
+**Publication Date: March 10th, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of `DOMPurify` shipped with the Camunda 7 Webapps was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-45801
+- https://nvd.nist.gov/vuln/detail/CVE-2024-47875
+
+**How to determine if the installation is affected**
+
+* You use the Camunda 7 Webapps.
+* You use the following Camunda 7 versions or lower: 7.20.10, 7.21.7, 7.22.2, 7.23.0-alpha3
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.20.11, 7.21.8, 7.22.3, 7.23.0-alpha4
+
+## Notice 129
+
+**Publication Date: March 5th, 2025**
+
+**Product affected:**
+
+Optimize 3
+
+**Impact:**
+
+The version of `io.netty:netty-handler` shipped with Optimize 3 was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-24970
+
+**How to determine if the installation is affected**
+
+You use the following Optimize versions or lower: 3.11.19, 3.12.14, 3.13.11, 3.14.2, 3.15.0
+
+**Solution**
+
+Camunda has provided the following releases which contain a fix:
+Camunda Optimize 3.11.20, 3.12.15, 3.13.12, 3.14.3, 3.15.1
+
 ## Notice 128
 
 **Publication Date: March 5th, 2025**
