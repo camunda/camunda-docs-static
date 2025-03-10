@@ -15,7 +15,7 @@ releases of the community platform.
 
 # Notices
 
-## Notice 131
+## Notice 130
 
 **Publication Date: March 10th, 2025**
 
@@ -41,7 +41,7 @@ Camunda has provided the following releases, which contain a fix:
 
 Camunda 7.20.11, 7.21.8, 7.22.3, 7.23.0-alpha4
 
-## Notice 130
+## Notice 129
 
 **Publication Date: March 10th, 2025**
 
@@ -66,29 +66,6 @@ The version of `DOMPurify` shipped with the Camunda 7 Webapps was affected by th
 Camunda has provided the following releases, which contain a fix:
 
 Camunda 7.20.11, 7.21.8, 7.22.3, 7.23.0-alpha4
-
-## Notice 129
-
-**Publication Date: March 5th, 2025**
-
-**Product affected:**
-
-Optimize 3
-
-**Impact:**
-
-The version of `io.netty:netty-handler` shipped with Optimize 3 was affected by the following vulnerability:
-
-- https://nvd.nist.gov/vuln/detail/CVE-2025-24970
-
-**How to determine if the installation is affected**
-
-You use the following Optimize versions or lower: 3.11.19, 3.12.14, 3.13.11, 3.14.2, 3.15.0
-
-**Solution**
-
-Camunda has provided the following releases which contain a fix:
-Camunda Optimize 3.11.20, 3.12.15, 3.13.12, 3.14.3, 3.15.1
 
 ## Notice 128
 
