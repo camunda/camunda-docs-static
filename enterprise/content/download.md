@@ -79,6 +79,21 @@ downloads:
   branches:
     - branch: "7.23"
       releases:
+        - number: "7.23.0-alpha4"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+reason%3A%22completed%22+label%3Aversion%3A7.23.0-alpha4a"
+          date: "2025.03.11"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+          excludeformats:
+            - "war"
         - number: "7.23.0-alpha3"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+reason%3A%22completed%22+label%3Aversion%3A7.23.0-alpha3"
           date: "2025.02.11"
