@@ -54,8 +54,11 @@ __End of Maintenance:__ 13th of April 2027
 
 __Changes in Supported Environments:__
 
+* Support for Spring Boot 3.5 (Support is also provided for Camunda 7.23 as a patch)
+* End of Support Spring 5
 * End of Support Apache Tomcat 9
 * End of Support JBoss EAP 7.4
+* End of Support PostgreSQL 14
 
 ## Camunda Platform 7.23
 
