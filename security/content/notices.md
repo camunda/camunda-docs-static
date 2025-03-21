@@ -15,6 +15,98 @@ releases of the community platform.
 
 # Notices
 
+## Notice 134
+
+**Publication Date: March 11th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-boot` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-24970
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.26 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.27 releases for the `cawemo-restapi` Docker images which contain a fix for the above-mentioned CVE.
+
+## Notice 133
+
+**Publication Date: March 11th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-boot` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-25193
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.26 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.27 releases for the `cawemo-restapi` Docker images which contain a fix for the above-mentioned CVE.
+
+## Notice 132
+
+**Publication Date: March 11th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `koa` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-25200
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.26 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.27 releases for the `cawemo-webapp` Docker images which contain a fix for the above-mentioned CVE.
+
+## Notice 131
+
+**Publication Date: March 11th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `axios` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-27152
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.26 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.27 releases for the `cawemo-webapp` Docker images which contain a fix for the above-mentioned CVE.
+
 ## Notice 131
 
 **Publication Date: March 13th, 2025**
