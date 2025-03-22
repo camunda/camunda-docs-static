@@ -15,6 +15,60 @@ releases of the community platform.
 
 # Notices
 
+## Notice 132
+
+**Publication Date: March 24th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `io.netty:netty-common` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-25193
+
+The version of `io.netty:netty-handler` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-24970
+
+The version of `anchorme` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2021-23411
+
+The version of `axios` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-27152
+
+The version of `koa` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-25200
+
+The version of `curl/libcurl` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-0167
+- https://nvd.nist.gov/vuln/detail/CVE-2025-0665
+- https://nvd.nist.gov/vuln/detail/CVE-2025-0725
+
+The version of `musl/musl-dev` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-26519
+
+The version of `openssl/libcrypto3` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-12797
+- https://nvd.nist.gov/vuln/detail/CVE-2024-13176
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.26 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.27 releases for the `cawemo-webapp` Docker images which contain a fix for the above-mentioned CVE.
+
 ## Notice 131
 
 **Publication Date: March 13th, 2025**

@@ -108,7 +108,7 @@ downloads:
             - "ibm-was9"
             - "jboss"
           excludeformats:
-            - "war"        
+            - "war"
         - number: "7.23.0-alpha2"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+reason%3A%22completed%22+label%3Aversion%3A7.23.0-alpha2"
           date: "2024.12.10"
@@ -4248,11 +4248,11 @@ Please download one of the following archives and read the [installation guide](
   <tbody>
     <tr class="well">
       <td><a href="/cawemo">Cawemo On-Premises</a></td>
-      <td>1.9.26</td>
-      <td>04.02.2025</td>
+      <td>1.9.27</td>
+      <td>11.03.2025</td>
       <td>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.26.zip">zip</a>
-        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.26.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.27.zip">zip</a>
+        <a class="btn btn-sm btn-default" href="https://docs.camunda.org/cawemo/1.9/download/cawemo-1.9.27.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
