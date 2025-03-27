@@ -47,7 +47,7 @@ Make sure to use a Java version from [Camunda's list of supported environments](
 
 # Camunda Platform
 
-First, download a distribution of the Camunda Platform. You can choose from different distributions for [various application servers](/manual/latest/installation/full/). In this tutorial, we'll use Camunda Platform Run. Download it from [the download page](https://camunda.com/download/).
+First, download a distribution of the Camunda Platform. You can choose from different distributions for [various application servers](/manual/latest/installation/full/). In this tutorial, we'll use Camunda Platform Run. Download it from [the download page](https://camunda.com/download/platform-7).
 
 After downloading the distribution, unpack it inside a directory of your choice.
 
