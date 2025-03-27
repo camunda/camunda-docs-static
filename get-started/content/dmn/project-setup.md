@@ -51,7 +51,7 @@ The next step consists of setting up the Maven dependencies for your new process
   <packaging>war</packaging>
 
   <properties>
-    <camunda.version>7.22.0</camunda.version>
+    <camunda.version>7.23.0</camunda.version>
     <maven.compiler.release>11</maven.compiler.release>
   </properties>
 
@@ -75,9 +75,9 @@ The next step consists of setting up the Maven dependencies for your new process
     </dependency>
 
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.0.1</version>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
