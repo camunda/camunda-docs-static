@@ -80,8 +80,7 @@ downloads:
     - branch: "7.23"
       releases:
         - number: "7.23.0"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+reason%3A%22completed%22+label%3Aversion%3A7.23.0-alpha5"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.0"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.0"
           date: "2025.04.08"
           excludeservers:
             - "wildfly"
