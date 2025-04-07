@@ -14,7 +14,7 @@ params:
       name: "Get Started"
       url: "/get-started"
     - id: "manual"
-      name: "Camunda Platform 7"
+      name: "Camunda 7"
       url: "/manual"
     - id: "optimize"
       name: "Optimize"

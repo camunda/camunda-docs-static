@@ -1,7 +1,7 @@
 ---
 baseURL: "/get-started/"
 languageCode: "en-us"
-title: "Getting started with Camunda Platform"
+title: "Getting started with Camunda 7"
 theme: "camunda"
 
 blackfriday:
@@ -14,7 +14,7 @@ params:
       name: "Get Started"
       url: "/get-started"
     - id: "manual"
-      name: "Camunda Platform 7"
+      name: "Camunda 7"
       url: "/manual"
     - id: "optimize"
       name: "Optimize"
