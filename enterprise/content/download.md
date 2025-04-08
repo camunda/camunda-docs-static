@@ -2,6 +2,8 @@
 title: "Enterprise Download"
 weight: 10
 
+robotsdisallow: true
+
 menu:
   main:
     name: "Download"

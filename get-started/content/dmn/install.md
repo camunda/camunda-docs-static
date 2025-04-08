@@ -11,6 +11,7 @@ menu:
     pre: "Install the Camunda Platform and Camunda Modeler on your machine."
 
 aliases: [/dmn11/install/]
+robotsdisallow: true
 ---
 
 First you need to set up your development environment and install the Camunda Platform and the Camunda Modeler.
