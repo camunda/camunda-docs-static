@@ -15,6 +15,32 @@ releases of the community platform.
 
 # Notices
 
+## Notice 133
+
+**Publication Date: April 9th, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of Spring Security shipped with Camunda 7 Run was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-22228
+
+**How to determine if the installation is affected**
+
+* You use Camunda 7 Run with the `--oauth2` flag on startup.
+  * E.g., `./start.sh --webapps --rest --oauth2`
+* You use the following Camunda 7 versions or lower: 7.22.3, 7.23.0-alpha4
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.22.4, 7.23.0
+
 ## Notice 132
 
 **Publication Date: March 24th, 2025**
