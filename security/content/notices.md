@@ -15,6 +15,59 @@ releases of the community platform.
 
 # Notices
 
+## Notice 135
+
+**Publication Date: April 10th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `org.springframework.security:spring-security-crypto` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-22228
+
+The version of `@babel/helpers` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-27789
+
+The version of `axios` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://cwe.mitre.org/data/definitions/918.html
+
+The version of `@babel/runtime` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-27789
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-27113
+
+The version of `binutils` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-0840
+
+The version of `c-ares` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-31498
+
+The version of `xz/xz-libs` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-31115
+
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.27 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.29 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 134
 
 **Publication Date: April 10th, 2025**
