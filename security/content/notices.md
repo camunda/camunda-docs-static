@@ -15,6 +15,28 @@ releases of the community platform.
 
 # Notices
 
+## Notice 134
+
+**Publication Date: April 10th, 2025**
+
+**Product affected:**
+
+Optimize 3
+
+**Impact:**
+
+Camunda Optimize 3 was affected by an Insufficient Session Expiration vulnerability, which allowed an attacker to craft a valid JWT token and caused Optimize to incorrectly honor the request and return data.
+
+**How to determine if the installation is affected**
+
+You use the following Camunda Optimize 3 versions or lower: 3.11.20, 3.12.15, 3.13.12, 3.14.3, 3.15.1
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda Optimize 3.11.21, 3.12.16, 3.13.13, 3.14.4, 3.15.2.
+
 ## Notice 133
 
 **Publication Date: April 9th, 2025**
