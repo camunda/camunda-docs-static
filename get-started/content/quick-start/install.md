@@ -10,6 +10,7 @@ menu:
     identifier: "get-started-quick-start-install"
     pre: "Install the Camunda Platform and Camunda Modeler on your machine."
 
+robotsdisallow: true
 ---
 
 First, you need to install the Camunda Platform and the Camunda Modeler.
