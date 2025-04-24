@@ -4110,7 +4110,7 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td>3.15.2</td>
-      <td>7.20+, 7.21+, 7.22+</td>
+      <td>7.21+, 7.22+, 7.23+</td>
       <td>8.13.0+</td>
       <td>10.04.2025</td>
       <td>
@@ -4147,7 +4147,7 @@ To get the production distribution, please download one of the following archive
     <tbody>
       <tr class="well">
         <td>3.15.2</td>
-        <td>7.20+, 7.21+, 7.22+</td>
+        <td>7.21+, 7.22+, 7.23+</td>
         <td>8.13.0+</td>
         <td>2.9+</td>
         <td>10.04.2025</td>
