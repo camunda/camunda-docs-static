@@ -75,7 +75,7 @@ downloads:
 
   selected:
     branch: "7.23"
-    version: "7.23.0"
+    version: "7.23.1"
     server: "run"
 
   branches:
