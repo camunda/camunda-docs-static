@@ -72,7 +72,7 @@ The version of `sqlite/sqlite-libs` shipped with `cawemo-websockets` was affecte
 
 **Solution**
 
-Camunda has provided 1.9.29 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+Camunda has provided 1.9.30 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
 which contain fixes for the above-mentioned CVEs.
 
 ## Notice 136
