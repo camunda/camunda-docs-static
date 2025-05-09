@@ -15,7 +15,7 @@ releases of the community platform.
 
 # Notices
 
-## Notice 137
+## Notice 138
 
 **Publication Date: May 9th, 2025**
 
@@ -74,6 +74,30 @@ The version of `sqlite/sqlite-libs` shipped with `cawemo-websockets` was affecte
 
 Camunda has provided 1.9.30 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
 which contain fixes for the above-mentioned CVEs.
+
+## Notice 137
+
+**Publication Date: May 9th, 2025**
+
+**Product affected:**
+
+Optimize 3
+
+**Impact:**
+
+Camunda Optimize 3 Docker image used a JDK version that was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-21587
+
+**How to determine if the installation is affected**
+
+You use the following Camunda Optimize 3 version or lower: 3.12.16, 3.13.13, 3.14.4, 3.15.2.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda Optimize 3.12.17, 3.13.14, 3.14.5, 3.15.3
 
 ## Notice 136
 
