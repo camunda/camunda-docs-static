@@ -15,6 +15,66 @@ releases of the community platform.
 
 # Notices
 
+## Notice 138
+
+**Publication Date: May 9th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `xz/xz-libs` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-31115
+
+The version of `c-ares/c-ares` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-31498
+
+The version of `xz/xz-libs` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-31115
+
+The version of `vite` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-30208
+
+The version of `vite` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-31125
+
+The version of `vite` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-32395
+
+The version of `vite` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-31486
+
+The version of `perl` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-56406
+
+The version of `esbuild` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://github.com/advisories/GHSA-67mh-4wv8-2f99
+
+The version of `sqlite/sqlite-libs` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-29087
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.29 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.30 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 137
 
 **Publication Date: May 9th, 2025**
