@@ -20,7 +20,7 @@ Camunda recommends that new projects be developed on Camunda Platform 8. We will
 
 {{< img src="../img/camunda_extended_support.png" title="Extended Support Offering" >}}
 
-__Camunda Platform 7 (including Optimize) - Full Support (Until April 2032)__
+__Camunda Platform 7 (including Optimize) - Full Support (Until April 2030)__
 
 * Incremental feature improvements (Until last minor release October 2025)
 * Critical security/bug fixes (Patch releases)
@@ -31,7 +31,7 @@ __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (As part of the patch releases)
 
-__Camunda Platform 7 Extended Support__
+__Camunda Platform 7 Extended Support (April 2030 - April 2032)__ 
 
 * Critical security/bug fixes
 * Maintain supported environments
@@ -50,7 +50,7 @@ See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-c
 
 __Release Date:__ scheduled for 14th of October 2025
 
-__End of Maintenance:__ 13th of April 2032
+__End of Maintenance:__ 13th of April 2030 (Extended Support until April 2032)
 
 __Changes in Supported Environments:__
 
