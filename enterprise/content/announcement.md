@@ -20,11 +20,11 @@ Camunda recommends that new projects be developed on Camunda Platform 8. We will
 
 {{< img src="../img/camunda_extended_support.png" title="Extended Support Offering" >}}
 
-__Camunda Platform 7 (including Optimize) - Full Support (Until April 2030)__
+__Camunda Platform 7 (including Optimize) - Full Support (Until April 2032)__
 
 * Incremental feature improvements (Until last minor release October 2025)
 * Critical security/bug fixes (Patch releases)
-* Maintain supported environments (As part of the minor releases till October 2025; then as part of the patch releases)
+* Maintain supported environments (Delivered as part of the minor releases till October 2025; then as part of the patch releases)
 
 __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 
