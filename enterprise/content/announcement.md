@@ -50,7 +50,7 @@ See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-c
 
 __Release Date:__ scheduled for 14th of October 2025
 
-__End of Maintenance:__ 13th of April 2027
+__End of Maintenance:__ 13th of April 2032
 
 __Changes in Supported Environments:__
 
