@@ -137,7 +137,7 @@ downloads:
 
     - branch: "7.22"
       releases:
-       - number: "7.22.5"
+        - number: "7.22.5"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.5"
           date: "2025.05.30"
           excludeservers:
@@ -249,7 +249,7 @@ downloads:
             - "ibm-was9"
             - "jboss"
           excludeformats:
-            - "war
+            - "war"
 
         - number: "7.21.9"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.21.9"
