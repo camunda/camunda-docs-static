@@ -72,9 +72,9 @@ __Changes in Supported Environments:__
 * Support for PostgreSQL 17 (Support is also provided for Camunda 7.22 as a patch)
 * Support for Amazon Aurora PostgreSQL 16
 * Support for Spring Boot 3.4 (Support is also provided for Camunda 7.22 as a patch)
-* End of Support IBM WebSphere Liberty
-* End of Support WildFly Application Server 23 + 26
-* End of Support Oracle Weblogic 14
+* End of Support IBM WebSphere Liberty (Container-Managed Process Engine)
+* End of Support WildFly Application Server 23 + 26 (Container-Managed Process Engine)
+* End of Support Oracle Weblogic 14 (Container-Managed Process Engine)
 * End of Support Spring Boot 3.3
 * End of Support Amazon Aurora PostgreSQL 13
 
