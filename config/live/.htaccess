@@ -13,7 +13,7 @@ RewriteRule ^latest/api-references/java/ /manual/7.3/reference/javadoc/
 
 # Javadoc
 RewriteRule ^manual/develop/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.24-SNAPSHOT/$1 [R=307,L]
-RewriteRule ^manual/latest/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.24/$1 [R=307,L] # Bump on first alpha release
+RewriteRule ^manual/latest/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.23/$1 [R=307,L] # Bump on first alpha release
 RewriteRule ^manual/([^/]+)/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/$1/$2 [R=307,L]
 
 # Camunda Forms Redirect: 7.16 - 7.27
@@ -26,11 +26,11 @@ RewriteRule ^enterprise/enterprise-customer-portal/$ https://camunda.com/service
 RewriteRule ^enterprise/support/$ https://camunda.com/services/enterprise-support-guide/ [R=301,L]
 
 # manual without version
-RewriteRule ^manual/?$ /manual/7.24/ [R=307,L]
+RewriteRule ^manual/?$ /manual/7.23/ [R=307,L]
 
-RewriteCond %{REQUEST_URI} ^/manual((?!7.24/)[^/]+)
+RewriteCond %{REQUEST_URI} ^/manual((?!7.23/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/(.*) /manual/7.24/ [R=307,L]
+RewriteRule ^manual/(.*) /manual/7.23/ [R=307,L]
 
 # OpenAPI docs
 RewriteRule ^manual/(latest|develop)/reference/rest/specification/(.*)$ /rest/camunda-bpm-platform/7.24-SNAPSHOT/$2 [R=301,L,NE]
@@ -485,20 +485,20 @@ RewriteRule ^manual/(latest|develop)/reference/rest/variable-instance/post-query
 RewriteRule ^manual/(latest|develop)/reference/rest/variable-instance/post-query/$ /rest/camunda-bpm-platform/7.24-SNAPSHOT/#tag/Variable-Instance/operation/queryVariableInstances [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/version/$ /rest/camunda-bpm-platform/7.24-SNAPSHOT/#tag/Version [R=301,L,NE]
 
-# Redirect /manual/X to /manual/7.24/X if folder X does not exist but 7.24/X does
-RewriteCond %{REQUEST_URI} ^/manual/((?!7.24/)[^/]+)
+# Redirect /manual/X to /manual/7.23/X if folder X does not exist but 7.23/X does
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.23/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/manual/7.24/%1 -d
-RewriteRule ^manual/(.*) /manual/7.24/$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/manual/7.23/%1 -d
+RewriteRule ^manual/(.*) /manual/7.23/$1 [R=307,L]
 
-# Redirect /manual/X/Y to /manual/7.24/Y if folder X does not exist but 7.24/Y does
-RewriteCond %{REQUEST_URI} ^/manual/((?!7.24/?)[^/]+)(/[^/]+)?
+# Redirect /manual/X/Y to /manual/7.23/Y if folder X does not exist but 7.23/Y does
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.23/?)[^/]+)(/[^/]+)?
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/manual/7.24%2 -d
-RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/7.24$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/manual/7.23%2 -d
+RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/7.23$1 [R=307,L]
 
 # Redirect to selected version starting page if site is unavailable
-RewriteCond %{REQUEST_URI} ^/manual/((?!7.24/?)[^/]+)(.*)
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.23/?)[^/]+)(.*)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1%2 !-d
 RewriteCond %{DOCUMENT_ROOT}/manual/%1%2 !-f
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 -d
