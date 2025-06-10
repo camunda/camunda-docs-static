@@ -1,0 +1,33 @@
+name: Create Screenshots PR
+
+on:
+  workflow_dispatch:
+  # push:
+
+jobs:
+  create_screenshots-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate fake file
+        run: |
+          mkdir -p test-folder
+          echo "This is a fake file to test the workflow. Created in camunda-docs-static:CREATE_SCREENSHOTS_PR.yml" > test-folder/fake-file.txt
+
+      - name: Download Screenshots
+        run: |
+          gh run download -R camunda/camunda-docs-modeler-screenshots 15556081101
+
+      ### PR creation
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "TESTING Update Screenshots"
+          body: "This PR updates the screenshots in the documentation."
+          base: master
+          draft: true
+          branch: update-screenshots
+          commit-message: "Update screenshots"
