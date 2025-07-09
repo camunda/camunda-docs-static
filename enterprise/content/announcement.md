@@ -60,6 +60,23 @@ __Changes in Supported Environments:__
 * End of Support JBoss EAP 7.4
 * End of Support PostgreSQL 14
 
+### Environment Update Release – 10/2026
+
+__Release Date:__ scheduled for xxth of October 2026
+__Patch Version:__ TBD
+__Changes in Supported Environments:__
+
+* Support for Tomcat 11.
+
+### Environment Update Release – 10/2026
+
+
+__Release Date:__ scheduled for xxth of April 2026
+__Patch Version:__ TBD
+__Changes in Supported Environments:__
+
+* Support for Tomcat 12.
+
 ## Camunda Platform 7.23
 
 __Release Date:__ scheduled for 8th of April 2025
