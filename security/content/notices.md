@@ -26,35 +26,45 @@ Cawemo On-Premises
 **Impact:**
 
 The version of `spring-webs` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-41234
 
 The version of `spring-boot-actuator-autoconfigure` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-22235
 
 The version of `spring-security-crypto` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-22234 
 
 The version of `spring-context` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-22233 
 
 The version of `org.postgresql:postgresql` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-49146 
 
 The version of `node.js` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
 - https://www.cve.org/CVERecord?id=CVE-2025-23166
 
 `cawemo-websockets`
 The version of `league/commonmark` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-46734
 
 The version of `libxml2/libxml2` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-32414
 - https://nvd.nist.gov/vuln/detail/CVE-2025-32415
 
 The version of `openssl/libcrypto3` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
 - https://nvd.nist.gov/vuln/detail/CVE-2025-4575
 
 The version of `node.js` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
 - https://www.cve.org/CVERecord?id=CVE-2025-23166
 - https://nvd.nist.gov/vuln/detail/CVE-2025-23165
 
