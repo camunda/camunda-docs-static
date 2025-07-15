@@ -13,6 +13,10 @@ menu:
 
 This page contains important announcements from Camunda's Enterprise Support. In the following section we list information about changes to the supported environments and scheduled end of maintenance dates for specific versions of the Camunda Platform. The announced end of maintenance dates are based on our standard support period of 18 months.
 
+{{< note title="Camunda 7 Community Edition" class="warning" >}}
+See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-camunda-7-community-edition-end-of-life-announced/50921).
+{{< /note >}}
+
 ## Camunda Extended Support Offering
 
 
@@ -26,23 +30,20 @@ __Camunda Platform 7 (including Optimize) - Full Support (Until April 2030)__
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (Delivered as part of the minor releases till October 2025; then as part of the patch releases)
 
+__Camunda Platform 7 - Extended Support* (April 2030 - April 2032)__ 
+
+* Critical security/bug fixes
+* Maintain supported environments
+
 __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (As part of the patch releases)
 
-__Camunda Platform 7 Extended Support (April 2030 - April 2032)__ 
-
-* Critical security/bug fixes
-* Maintain supported environments
-
-
 
 *If you require Camunda Extended Support, contact your assigned Customer Success Manager.
 
-{{< note title="Camunda 7 Community Edition" class="warning" >}}
-See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-camunda-7-community-edition-end-of-life-announced/50921).
-{{< /note >}}
+
 
 # Camunda Platform Announcements
 
@@ -52,6 +53,18 @@ __Release Date:__ scheduled for 14th of October 2025
 
 __End of Maintenance:__ 13th of April 2030 (Extended Support until April 2032)
 
+### Environment Update Release – 10/2026
+
+__Release Date:__ scheduled for xxth of October 2026
+__Patch Version:__ TBD
+__Changes in Supported Environments:__
+
+TBD
+
+### Environment Update Release – 04/2026
+
+__Release Date:__ scheduled for xxth of April 2026
+__Patch Version:__ TBD
 __Changes in Supported Environments:__
 
 * Support for Spring Boot 3.5 (Support is also provided for Camunda 7.23 as a patch)
@@ -59,23 +72,6 @@ __Changes in Supported Environments:__
 * End of Support Apache Tomcat 9
 * End of Support JBoss EAP 7.4
 * End of Support PostgreSQL 14
-
-### Environment Update Release – 10/2026
-
-__Release Date:__ scheduled for xxth of October 2026
-__Patch Version:__ TBD
-__Changes in Supported Environments:__
-
-* Support for Tomcat 11.
-
-### Environment Update Release – 10/2026
-
-
-__Release Date:__ scheduled for xxth of April 2026
-__Patch Version:__ TBD
-__Changes in Supported Environments:__
-
-* Support for Tomcat 12.
 
 ## Camunda Platform 7.23
 
