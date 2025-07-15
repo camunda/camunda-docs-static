@@ -47,7 +47,8 @@ __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 
 # Camunda Platform Announcements
 
-## Camunda Platform 7.24 LTS (Long term support)
+## Camunda Platform 7.24 LTS
+Camunda 7.24 LTS (Long Term Support) is the last minor release of Camunda 7. No new feature-adding releases of Camunda 7 will be built anymore.
 
 __Release Date:__ scheduled for 14th of October 2025
 
