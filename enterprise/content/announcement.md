@@ -47,6 +47,18 @@ __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 
 # Camunda Platform Announcements
 
+## Camunda Platform 7.24 LTS - Environment Update Release 
+
+### Environment Update Release – 04/2026
+
+__Release Date:__ scheduled for 13th of October 2026
+__Patch Version:__ TBD
+__Changes in Supported Environments:__
+
+* Support for MariaDB 10.6
+* Support for Oracle Weblogic 14.1.2.x
+* Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
+
 ## Camunda Platform 7.24 LTS
 Camunda 7.24 LTS (Long Term Support) is the last minor release of Camunda 7. No new feature-adding releases of Camunda 7 will be built anymore.
 
@@ -54,18 +66,6 @@ __Release Date:__ scheduled for 14th of October 2025
 
 __End of Maintenance:__ 13th of April 2030 (Extended Support until April 2032)
 
-### Environment Update Release – 10/2026
-
-__Release Date:__ scheduled for xxth of October 2026
-__Patch Version:__ TBD
-__Changes in Supported Environments:__
-
-TBD
-
-### Environment Update Release – 04/2026
-
-__Release Date:__ scheduled for xxth of April 2026
-__Patch Version:__ TBD
 __Changes in Supported Environments:__
 
 * Support for Spring Boot 3.5 (Support is also provided for Camunda 7.23 as a patch)
@@ -73,6 +73,7 @@ __Changes in Supported Environments:__
 * End of Support Apache Tomcat 9
 * End of Support JBoss EAP 7.4
 * End of Support PostgreSQL 14
+
 
 ## Camunda Platform 7.23
 
