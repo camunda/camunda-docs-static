@@ -473,9 +473,7 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 # Camunda Optimize Announcements
 
-## Camunda Optimize 3.xx LTS (Long term support)
-
-## Camunda Optimize 3.15
+## Camunda Optimize 3.15 LTS (Long term support)
 
 __Release Date:__ 14th of January 2025
 
