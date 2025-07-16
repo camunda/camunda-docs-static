@@ -10,7 +10,7 @@ menu:
 
 ---
 
-Camunda Platform 7 follows the [Camunda release policy](https://camunda.com/release-policy/) with some specific clarifications which can be found below.
+Camunda follows the [Camunda release policy](https://camunda.com/release-policy/) with some specific clarifications which can be found below.
 
 ## Camunda 7.24 LTS Release Policy
 Camunda 7.24 LTS (Long Term Support) is the last minor release of Camunda 7. The Camunda 7.24 LTS support provides the following releases:
