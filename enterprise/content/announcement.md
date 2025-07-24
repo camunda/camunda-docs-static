@@ -51,7 +51,7 @@ __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 
 ### Environment Update Release – 04/2026
 
-__Release Date:__ scheduled for 13th of October 2026
+__Release Date:__ scheduled for 7th of April 2026
 __Patch Version:__ TBD
 __Changes in Supported Environments:__
 
