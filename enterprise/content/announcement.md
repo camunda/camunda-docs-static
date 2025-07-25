@@ -13,6 +13,10 @@ menu:
 
 This page contains important announcements from Camunda's Enterprise Support. In the following section we list information about changes to the supported environments and scheduled end of maintenance dates for specific versions of the Camunda Platform. The announced end of maintenance dates are based on our standard support period of 18 months.
 
+{{< note title="Camunda 7 Community Edition" class="warning" >}}
+See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-camunda-7-community-edition-end-of-life-announced/50921).
+{{< /note >}}
+
 ## Camunda Extended Support Offering
 
 
@@ -26,27 +30,37 @@ __Camunda Platform 7 (including Optimize) - Full Support (Until April 2030)__
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (Delivered as part of the minor releases till October 2025; then as part of the patch releases)
 
+__Camunda Platform 7 - Extended Support* (April 2030 - April 2032)__ 
+
+* Critical security/bug fixes
+* Maintain supported environments
+
 __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 
 * Critical security/bug fixes (Patch releases)
 * Maintain supported environments (As part of the patch releases)
 
-__Camunda Platform 7 Extended Support (April 2030 - April 2032)__ 
-
-* Critical security/bug fixes
-* Maintain supported environments
-
-
 
 *If you require Camunda Extended Support, contact your assigned Customer Success Manager.
 
-{{< note title="Camunda 7 Community Edition" class="warning" >}}
-See details in the [Camunda Forum](https://forum.camunda.io/t/important-update-camunda-7-community-edition-end-of-life-announced/50921).
-{{< /note >}}
+
 
 # Camunda Platform Announcements
 
-## Camunda Platform 7.24 LTS (Long term support)
+## Camunda Platform 7.24 LTS - Environment Update Release 
+
+### Environment Update Release – 04/2026
+
+__Release Date:__ scheduled for 7th of April 2026
+__Patch Version:__ TBD
+__Changes in Supported Environments:__
+
+* Support for MariaDB 10.6
+* Support for Oracle Weblogic 14.1.2.x
+* Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
+
+## Camunda Platform 7.24 LTS
+Camunda 7.24 LTS (Long Term Support) is the last minor release of Camunda 7. No new feature-adding releases of Camunda 7 will be built anymore.
 
 __Release Date:__ scheduled for 14th of October 2025
 
@@ -59,6 +73,7 @@ __Changes in Supported Environments:__
 * End of Support Apache Tomcat 9
 * End of Support JBoss EAP 7.4
 * End of Support PostgreSQL 14
+
 
 ## Camunda Platform 7.23
 
@@ -458,9 +473,7 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 
 # Camunda Optimize Announcements
 
-## Camunda Optimize 3.xx LTS (Long term support)
-
-## Camunda Optimize 3.15
+## Camunda Optimize 3.15 LTS (Long term support)
 
 __Release Date:__ 14th of January 2025
 

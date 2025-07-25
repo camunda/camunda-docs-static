@@ -10,19 +10,10 @@ menu:
 
 ---
 
-Camunda Platform 7 follows the [Camunda release policy](https://camunda.com/release-policy/) with some specific clarifications which can be found below.
+Camunda follows the [Camunda release policy](https://camunda.com/release-policy/) with some specific clarifications which can be found below.
 
-## Community vs. Enterprise Releases
+## Camunda 7.24 LTS Release Policy
+Camunda 7.24 LTS (Long Term Support) is the last minor release of Camunda 7. The Camunda 7.24 LTS support provides the following releases:
 
-There is both a community and an enterprise edition of Camunda Platform. Among these, we distinguish between four different types of releases:
-
-1. **Major Release**: The Major release contains features and bugfixes. It is fully tested and meant to be used for production systems. The Major release may contain incompatible API changes. The release is done in parallel for the community edition and for the enterprise edition.
-2. **Minor Release**: The Minor release contains features and bugfixes. It is fully tested and meant to be used for production systems. In Minor releases we add functionality in a backwards compatible manner. The release is done in parallel for the community edition and for the enterprise edition.
-3. **Development Release**: On the community branch and on the enterprise branch we release _ALPHA_ versions in short iteration cycles. Development releases contain the latest features and bug fixes. The Development release is not fully tested and is a snapshot of the current development state.
-4. **Patch Release**: On the enterprise branch we perform patch releases, in which we backport the latest bug fixes. Patch releases are fully tested and are meant to be used for production systems. Patch releases do not contain new features and are only available to enterprise customers.
-
-The following drawing illustrates the different release types for the community edition and the enterprise editions.
-
-{{< img src="../img/releases.png" title="Releases" >}}
-
-The Camunda versioning scheme follows the MAJOR.MINOR.PATCH pattern put forward by [Semantic Versioning](http://semver.org/).
+- **Environment Update Releases**: We perform one Environment Update release in April and one in October each year as long as Camunda 7.24 is supported. Both releases contain environment updates and bugfixes. They are fully tested and meant to be used for production systems. If new environment versions are not compatible with the current supported version, we support both versions for a grace period in parallel. All environment updates and grace periods will be announced in the [Support announcements](/announcement).
+- **Patch Releases**: On the enterprise branch we perform patch releases, in which we backport the latest bug fixes. Patch releases are fully tested and are meant to be used for production systems. Patch releases do not contain new features and are only available to enterprise customers.
