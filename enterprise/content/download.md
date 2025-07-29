@@ -75,7 +75,7 @@ downloads:
 
   selected:
     branch: "7.23"
-    version: "7.23.3"
+    version: "7.23.4"
     server: "run"
 
   branches:
@@ -101,6 +101,24 @@ downloads:
       
     - branch: "7.23"
       releases:
+        - number: "7.23.4"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.4"
+          date: "2025.07.30"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+            - "oracle-wls"
+            - "ibm-was-liberty"
+          excludeformats:
+            - "war"
+
         - number: "7.23.3"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.3"
           date: "2025.06.27"
@@ -175,6 +193,22 @@ downloads:
 
     - branch: "7.22"
       releases:
+        - number: "7.22.7"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.7"
+          date: "2025.07.30"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+          excludeformats:
+            - "war"
+
         - number: "7.22.6"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.6"
           date: "2025.06.27"
@@ -289,6 +323,22 @@ downloads:
 
     - branch: "7.21"
       releases:
+        - number: "7.21.12"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.21.12"
+          date: "2025.07.30"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+          excludeformats:
+            - "war"
+
         - number: "7.21.11"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.21.11"
           date: "2025.06.27"
