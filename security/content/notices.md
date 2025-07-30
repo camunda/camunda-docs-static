@@ -15,6 +15,81 @@ releases of the community platform.
 
 # Notices
 
+## Notice 142
+
+**Publication Date: July 30th, 2025**
+
+**Product affected:**
+
+Optimize 3
+
+**Impact:**
+
+Camunda Optimize 3 Docker image used a JDK version that was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-30749
+- https://nvd.nist.gov/vuln/detail/CVE-2025-50059
+
+**How to determine if the installation is affected**
+
+You use the following Camunda Optimize 3 versions or lower: 3.15.5, 3.14.6, 3.13.17
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda Optimize 3.15.6, 3.14.7, 3.13.18
+
+## Notice 141
+
+**Publication Date: July 30th, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of Tomcat shipped with the Camunda 7 Tomcat and Run Docker Images was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-53506
+
+**How to determine if the installation is affected**
+
+* You use the Camunda 7 Tomcat or Run Docker images **AND** you enabled HTTP2 in your Tomcat configuration.
+* You use the following Camunda 7 versions or lower: 7.23.3, 7.22.6, 7.21.11.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.23.4, 7.22.7, 7.21.12.
+
+## Notice 140
+
+**Publication Date: July 30th, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of Tomcat shipped with the Camunda 7 Tomcat and Run Docker Images was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-48988
+
+**How to determine if the installation is affected**
+
+* You use the Camunda 7 Tomcat or Run Docker images.
+* You use the following Camunda 7 versions or lower: 7.23.2, 7.22.5, 7.21.10.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+7.23.3, 7.22.6, 7.21.11.
+
 ## Notice 139
 
 **Publication Date: July 9th, 2025**
