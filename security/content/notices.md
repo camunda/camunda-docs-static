@@ -15,6 +15,59 @@ releases of the community platform.
 
 # Notices
 
+## Notice 143
+
+**Publication Date: August 13th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `commons-lang3` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-48924
+
+The version of `jakarta.mail` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-7962
+
+The version of `form-data` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-7783
+
+The version of `linkifyjs` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-8101
+
+The version of `formidable` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-46653
+
+The version of `koa` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-7783
+
+The version of `sqlite/sqlite-libs` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-6965
+
+The version of `binutils/binutils` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-1153
+- https://nvd.nist.gov/vuln/detail/CVE-2025-3198
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.31 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided 1.9.32 releases for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images 
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 142
 
 **Publication Date: July 30th, 2025**
