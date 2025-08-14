@@ -476,10 +476,11 @@ __Product Change:__ With Camunda Platform 7.2.0, Camunda BPM Cycle is no longer 
 # Camunda Optimize Announcements
 
 ## Camunda Optimize 3.15 LTS (Long term support)
+Camunda Optimize 3.15 LTS (Long Term Support) is the last minor release of Optimize for Camunda 7. No new feature-adding releases of Camunda Optimize will be built anymore.
 
 __Release Date:__ 14th of January 2025
 
-__End of Maintenance:__ 14th of July 2026
+__End of Maintenance:__ 13th of April 2030
 
 __Changes in Supported Environments:__
 
