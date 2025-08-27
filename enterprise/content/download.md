@@ -4378,25 +4378,25 @@ To get the production distribution, please download one of the following archive
         </td>
       </tr>
       <tr class="well">
-        <td>3.14.7</td>
+        <td>3.14.8</td>
         <td>7.20+, 7.21+, 7.22+</td>
         <td>8.13.0+</td>
         <td>2.9+</td>
-        <td>30.07.2025</td>
+        <td>28.08.2025</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.7/camunda-optimize-3.14.7-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.7/camunda-optimize-3.14.7-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.8/camunda-optimize-3.14.8-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.8/camunda-optimize-3.14.8-production.tar.gz">tar.gz</a>
         </td>
       </tr>
       <tr class="well">
-        <td>3.13.18</td>
+        <td>3.13.19</td>
         <td>7.19+, 7.20+, 7.21+</td>
         <td>8.9.0+</td>
         <td>-</td> 
-        <td>12.08.2025</td>
+        <td>28.08.2025</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.18/camunda-optimize-3.13.18-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.18/camunda-optimize-3.13.18-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.19/camunda-optimize-3.13.19-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.19/camunda-optimize-3.13.19-production.tar.gz">tar.gz</a>
         </td>
       </tr>    
       <tr class="well">
