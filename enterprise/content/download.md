@@ -4399,17 +4399,7 @@ To get the production distribution, please download one of the following archive
           <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.13.19/camunda-optimize-3.13.19-production.tar.gz">tar.gz</a>
         </td>
       </tr>    
-      <tr class="well">
-        <td>3.12.20</td>
-        <td>7.18+, 7.19+, 7.20+</td>
-        <td>8.9.0+</td>
-        <td>-</td> 
-        <td>08.07.2025</td>
-        <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.20/camunda-optimize-3.12.20-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.12.20/camunda-optimize-3.12.20-production.tar.gz">tar.gz</a>
-        </td>
-      </tr>
+      
     
     </tbody>
   </table>
