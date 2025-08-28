@@ -15,6 +15,31 @@ releases of the community platform.
 
 # Notices
 
+## Notice 144
+
+**Publication Date: August 28th, 2025**
+
+**Product affected:**
+
+Optimize 3
+
+**Impact:**
+
+Camunda Optimize 3 was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-5115
+- https://nvd.nist.gov/vuln/detail/CVE-2025-55163
+
+**How to determine if the installation is affected**
+
+You use the following Camunda Optimize 3 versions or lower: 3.15.6, 3.14.7, 3.13.18
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda Optimize 3.15.7, 3.14.8, 3.13.19
+
 ## Notice 143
 
 **Publication Date: August 13th, 2025**
