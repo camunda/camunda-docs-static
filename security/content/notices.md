@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 145
+
+**Publication Date: September 1st, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of `spring-webmvc` shipped with Camunda 7 Run was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-41242
+
+**How to determine if the installation is affected**
+
+You disabled security features in the `production.yml` configuration **AND** you use the following Camunda Run versions or lower: 7.23.4, 7.22.7, 7.21.12.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.23.5, 7.22.8, 7.21.13.
+
 ## Notice 144
 
 **Publication Date: August 28th, 2025**
