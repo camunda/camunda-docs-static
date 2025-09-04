@@ -15,6 +15,30 @@ releases of the community platform.
 
 # Notices
 
+## Notice 146
+
+**Publication Date: September 4th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `spring-beans` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-41242
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.32 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided a 1.9.33 release for the `cawemo-restapi` Docker image
+which contains fixes for the above-mentioned CVE.
+
 ## Notice 145
 
 **Publication Date: September 1st, 2025**
