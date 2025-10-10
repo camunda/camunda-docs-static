@@ -74,50 +74,16 @@ downloads:
     - war
 
   selected:
-    branch: "7.23"
-    version: "7.23.5"
+    branch: "7.24"
+    version: "7.24.0"
     server: "run"
 
   branches:
     - branch: "7.24"
       releases:
-        - number: "7.24.0-alpha3"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+reason%3A%22completed%22+label%3Aversion%3A7.24.0-alpha3"
-          date: "2025.09.29"
-          excludeservers:
-            - "wildfly"
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "ibm-was9"
-            - "jboss"
-            - "oracle-wls"
-            - "ibm-was-liberty"
-          excludeformats:
-            - "war"
-        - number: "7.24.0-alpha2"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+reason%3A%22completed%22+label%3Aversion%3A7.24.0-alpha2"
-          date: "2025.08.12"
-          excludeservers:
-            - "wildfly"
-            - "wildfly11"
-            - "wildfly10"
-            - "wildfly8"
-            - "glassfish"
-            - "ibm-was"
-            - "ibm-was-85"
-            - "ibm-was9"
-            - "jboss"
-            - "oracle-wls"
-            - "ibm-was-liberty"
-          excludeformats:
-            - "war"
-        - number: "7.24.0-alpha1"
-          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue%20is%3Aclosed%20label%3Aversion%3A7.24.0-alpha1"
-          date: "2025.06.10"
+        - number: "7.24.0"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue%20label%3Aversion%3A7.24.0%20is%3Aclosed"
+          date: "2025.10.14"
           excludeservers:
             - "wildfly"
             - "wildfly11"
