@@ -15,6 +15,53 @@ releases of the community platform.
 
 # Notices
 
+## Notice 147
+
+**Publication Date: October 10th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `logback-core` shipped with `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-11226
+
+The version of `netty-codec-http` shipped with `cawemo-restapi` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-58056
+- https://nvd.nist.gov/vuln/detail/CVE-2025-58057
+
+The version of `axios` shipped with `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-58754
+
+The version of `libxml2` shipped with `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-6021
+- https://nvd.nist.gov/vuln/detail/CVE-2025-6170
+- https://nvd.nist.gov/vuln/detail/CVE-2025-49794
+- https://nvd.nist.gov/vuln/detail/CVE-2025-49795
+- https://nvd.nist.gov/vuln/detail/CVE-2025-49796
+
+The version of `libcrypto3` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-9230
+- https://nvd.nist.gov/vuln/detail/CVE-2025-9231
+- https://nvd.nist.gov/vuln/detail/CVE-2025-9232
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.33 or lower is used.
+* See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities.
+
+**Solution**
+
+Camunda has provided a 1.9.34 release for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 146
 
 **Publication Date: September 4th, 2025**
