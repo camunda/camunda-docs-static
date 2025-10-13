@@ -102,13 +102,13 @@ The version of `spring-webmvc` shipped with Camunda 7 Run was affected by the fo
 
 **How to determine if the installation is affected**
 
-You disabled security features in the `production.yml` configuration **AND** you use the following Camunda Run versions or lower: 7.23.4, 7.22.7, 7.21.12.
+You disabled security features in the `production.yml` configuration **AND** you use the following Camunda Run versions or lower: 7.24.0-alpha2, 7.23.4, 7.22.7, 7.21.12.
 
 **Solution**
 
 Camunda has provided the following releases, which contain a fix:
 
-Camunda 7.23.5, 7.22.8, 7.21.13.
+Camunda 7.24.0, 7.23.5, 7.22.8, 7.21.13.
 
 ## Notice 144
 
