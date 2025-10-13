@@ -507,17 +507,17 @@ RewriteRule ^optimize/latest/?(.*)$ /optimize/3.15/$1 [R=301,L]
 RewriteRule ^optimize/develop/?(.*)$ /optimize/3.15/$1 [R=301,L]
 RewriteRule ^optimize/(.*) /optimize/3.15/ [R=307,L]
 
-# Redirect /optimize/X to /optimize/latest/X if folder X does not exist but latest/X does
-RewriteCond %{REQUEST_URI} ^/optimize/((?!latest/)[^/]+)
+# Redirect /optimize/X to /optimize/3.15/X if folder X does not exist but 3.15/X does
+RewriteCond %{REQUEST_URI} ^/optimize/((?!3\.15/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/optimize/latest/%1 -d
-RewriteRule ^optimize/(.*) /optimize/latest/$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/optimize/3.15/%1 -d
+RewriteRule ^optimize/(.*) /optimize/3.15/$1 [R=307,L]
 
-# Redirect /optimize/X/Y to /optimize/latest/Y if folder X does not exist but latest/Y does
-RewriteCond %{REQUEST_URI} ^/optimize/((?!latest/?)[^/]+)(/[^/]+)?
+# Redirect /optimize/X/Y to /optimize/3.15/Y if folder X does not exist but 3.15/Y does
+RewriteCond %{REQUEST_URI} ^/optimize/((?!3\.15/?)[^/]+)(/[^/]+)?
 RewriteCond %{DOCUMENT_ROOT}/optimize/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/optimize/latest%2 -d
-RewriteRule ^optimize/[^/]+(/[^/]+(?:/.*))? /optimize/latest$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/optimize/3.15%2 -d
+RewriteRule ^optimize/[^/]+(/[^/]+(?:/.*))? /optimize/3.15$1 [R=307,L]
 
 # Redirect to selected optimize version starting page if site is unavailable
 RewriteCond %{REQUEST_URI} ^/optimize/([^/]+)(.*)
