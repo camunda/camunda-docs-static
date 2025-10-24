@@ -39,16 +39,16 @@ https://docs.camunda.org:
 
 https://stage.docs.camunda.org:
   /manual/:
-    target: /manual/latest/
+    target: /manual/7.24/
     status: 301
   /manual/reference/bpmn20:
-    target: /manual/latest/reference/bpmn20
+    target: /manual/7.24/reference/bpmn20
     status: 307
   /manual/user-guide/ext-client/:
-    target: /manual/latest/user-guide/ext-client/
+    target: /manual/7.24/user-guide/ext-client/
     status: 307
   /manual/99.0/user-guide/ext-client/:
-    target: /manual/latest/user-guide/ext-client/
+    target: /manual/7.24/user-guide/ext-client/
     status: 307
   /optimize/:
     target: /optimize/3.15/
