@@ -4,7 +4,7 @@ RewriteRule ^$ /manual/
 ErrorDocument 404 https://stage.docs.camunda.org/manual/latest/
 
 # Javadoc legacy? (found in old docs htaccess)
-RewriteRule ^latest/api-references/java/ /manual/latest/reference/javadoc/
+RewriteRule ^latest/api-references/java/ /manual/7.24/reference/javadoc/
 
 # Javadoc
 RewriteRule ^manual/develop/reference/javadoc/(.*)$ /javadoc/camunda-bpm-platform/7.24-SNAPSHOT/$1 [R=307,L]
@@ -21,11 +21,18 @@ RewriteRule ^enterprise/enterprise-customer-portal/$ https://camunda.com/service
 RewriteRule ^enterprise/support/$ https://camunda.com/services/enterprise-support-guide/ [R=301,L]
 
 # manual without version
-RewriteRule ^manual/?$ /manual/latest/ [R=301,L]
+RewriteRule ^manual/?$ /manual/7.24/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/manual((?!latest/)[^/]+)
-RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteRule ^manual/(.*) /manual/latest/ [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/7.24/%1 !-d
+RewriteRule ^manual/(.*) /manual/7.24/ [R=307,L]
+
+# Redirect /manual/latest to /manual/7.24 (no more releases)
+RewriteRule ^manual/latest/?(.*)$ /manual/7.24/$1 [R=301,L]
+
+# Redirect /manual/develop to /manual/7.24 (no more releases)
+RewriteRule ^manual/develop/?(.*)$ /manual/7.24/$1 [R=301,L]
+
 
 # OpenAPI docs
 RewriteRule ^manual/(latest|develop)/reference/rest/specification/(.*)$ /rest/camunda-bpm-platform/7.24-SNAPSHOT/$2 [R=301,L,NE]
@@ -480,17 +487,17 @@ RewriteRule ^manual/(latest|develop)/reference/rest/variable-instance/post-query
 RewriteRule ^manual/(latest|develop)/reference/rest/variable-instance/post-query/$ /rest/camunda-bpm-platform/7.24-SNAPSHOT/#tag/Variable-Instance/operation/queryVariableInstances [R=301,L,NE]
 RewriteRule ^manual/(latest|develop)/reference/rest/version/$ /rest/camunda-bpm-platform/7.24-SNAPSHOT/#tag/Version [R=301,L,NE]
 
-# Redirect /manual/X to /manual/latest/X if folder X does not exist but latest/X does
-RewriteCond %{REQUEST_URI} ^/manual/((?!latest/)[^/]+)
+# Redirect /manual/X to /manual/7.24/X if folder X does not exist but 7.24/X does
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.24/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/manual/latest/%1 -d
-RewriteRule ^manual/(.*) /manual/latest/$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/manual/7.24/%1 -d
+RewriteRule ^manual/(.*) /manual/7.24/$1 [R=307,L]
 
-# Redirect /manual/X/Y to /manual/latest/Y if folder X does not exist but latest/Y does
-RewriteCond %{REQUEST_URI} ^/manual/((?!latest/?)[^/]+)(/[^/]+)?
+# Redirect /manual/X/Y to /manual/7.24/Y if folder X does not exist but 7.24/Y does
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.24/?)[^/]+)(/[^/]+)?
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/manual/latest%2 -d
-RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/latest$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/manual/7.24%2 -d
+RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/7.24 [R=307,L]
 
 # Redirect to selected version starting page if site is unavailable
 RewriteCond %{REQUEST_URI} ^/manual/((?!latest/?)[^/]+)(.*)
