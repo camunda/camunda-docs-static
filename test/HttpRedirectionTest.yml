@@ -51,7 +51,7 @@ https://stage.docs.camunda.org:
     target: /manual/latest/user-guide/ext-client/
     status: 307
   /optimize/:
-    target: /optimize/latest/
+    target: /optimize/3.15/
     status: 301
   /get-started/javaee6:
     target: /get-started/archive/javaee7
