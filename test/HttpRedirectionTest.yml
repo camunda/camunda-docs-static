@@ -63,11 +63,11 @@ https://stage.docs.camunda.org:
     target: /manual/latest/reference/cmmn11/
     status: 307
   /cawemo/:
-    target: /cawemo/latest/
+    target: /cawemo/1.9/
     status: 301
   /cawemo/technical-guide/installation/:
-    target: /cawemo/latest/technical-guide/installation/
+    target: /cawemo/1.9/technical-guide/installation/
     status: 307
   /cawemo/99.0/technical-guide/installation/:
-    target: /cawemo/latest/technical-guide/installation/
+    target: /cawemo/1.9/technical-guide/installation/
     status: 307
