@@ -531,23 +531,29 @@ RewriteCond %{DOCUMENT_ROOT}/optimize/%1 -d
 RewriteRule ^optimize/(.*) /optimize/%1 [R=307,L]
 
 # Cawemo without version
-RewriteRule ^cawemo/?$ /cawemo/latest/ [R=301,L]
+RewriteRule ^cawemo/?$ /cawemo/1.9/ [R=301,L]
 
-RewriteCond %{REQUEST_URI} ^/cawemo((?!latest/)[^/]+)
+RewriteCond %{REQUEST_URI} ^/cawemo((?!1\.9/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
-RewriteRule ^cawemo/(.*) /cawemo/latest/ [R=307,L]
+RewriteRule ^cawemo/(.*) /cawemo/1.9/ [R=307,L]
 
-# Redirect /cawemo/X to /cawemo/latest/X if folder X does not exist but latest/X does
-RewriteCond %{REQUEST_URI} ^/cawemo/((?!latest/)[^/]+)
-RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/cawemo/latest/%1 -d
-RewriteRule ^cawemo/(.*) /cawemo/latest/$1 [R=307,L]
+# Redirect /cawemo/latest to /cawemo/1.9 (no more releases)
+RewriteRule ^cawemo/latest/?(.*)$ /cawemo/1.9/$1 [R=301,L]
 
-# Redirect /cawemo/X/Y to /cawemo/latest/Y if folder X does not exist but latest/Y does
-RewriteCond %{REQUEST_URI} ^/cawemo/((?!latest/?)[^/]+)(/[^/]+)?
+# Redirect /cawemo/develop to /cawemo/1.9 (no more releases)
+RewriteRule ^cawemo/develop/?(.*)$ /cawemo/1.9/$1 [R=301,L]
+
+# Redirect /cawemo/X to /cawemo/1.9/X if folder X does not exist but 1.9/X does
+RewriteCond %{REQUEST_URI} ^/cawemo/((?!1\.9/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
-RewriteCond %{DOCUMENT_ROOT}/cawemo/latest%2 -d
-RewriteRule ^cawemo/[^/]+(/[^/]+(?:/.*))? /cawemo/latest$1 [R=307,L]
+RewriteCond %{DOCUMENT_ROOT}/cawemo/1.9/%1 -d
+RewriteRule ^cawemo/(.*) /cawemo/1.9/$1 [R=307,L]
+
+# Redirect /cawemo/X/Y to /cawemo/1.9/Y if folder X does not exist but 1.9/Y does
+RewriteCond %{REQUEST_URI} ^/cawemo/((?!1\.9/?)[^/]+)(/[^/]+)?
+RewriteCond %{DOCUMENT_ROOT}/cawemo/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/cawemo/1.9%2 -d
+RewriteRule ^cawemo/[^/]+(/[^/]+(?:/.*))? /cawemo/1.9$1 [R=307,L]
 
 # Redirect to selected Cawemo version starting page if site is unavailable
 RewriteCond %{REQUEST_URI} ^/cawemo/([^/]+)(.*)
