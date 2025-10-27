@@ -8,7 +8,7 @@ https://docs.camunda.org:
     target: /manual/7.24/
     status: 307
   /optimize/:
-    target: /optimize/latest/
+    target: /optimize/3.15/
     status: 301
   /manual/reference/bpmn20:
     target: /manual/7.24/reference/bpmn20
