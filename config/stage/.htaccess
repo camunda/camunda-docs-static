@@ -24,7 +24,7 @@ RewriteRule ^enterprise/support/$ https://camunda.com/services/enterprise-suppor
 RewriteRule ^manual/?$ /manual/7.24/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/manual((?!latest/)[^/]+)
-RewriteCond %{DOCUMENT_ROOT}/7.24/%1 !-d
+RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
 RewriteRule ^manual/(.*) /manual/7.24/ [R=307,L]
 
 # Redirect /manual/latest to /manual/7.24 (no more releases)
