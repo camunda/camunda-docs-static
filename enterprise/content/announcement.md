@@ -52,14 +52,14 @@ Camunda 7.24 LTS (Long Term Support) is the last minor release of Camunda 7. No 
 
 ### Environment Update Release – 04/2026
 
-__Release Date:__ scheduled for 7th of April 2026
+__Release Date:__ April 2026
 
 __Patch Version:__ TBD
 
 __Changes in Supported Environments:__
 
 * Support for MariaDB 10.6
-* Support for Oracle Weblogic 14.1.2.x
+* Support for Oracle WebLogic 14.1.2.x
 * Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
 * Support for Spring Boot 4.0
 * End of Support Spring Boot 3.5
@@ -73,6 +73,7 @@ __End of Maintenance:__ 13th of April 2030 (Extended Support until April 2032)
 __Changes in Supported Environments:__
 
 * Support for Spring Boot 3.5 (Support is also provided for Camunda 7.23 as a patch)
+  * Superseded by Spring Boot 4.0 support in April/2026
 * End of Support Spring 5
 * End of Support Apache Tomcat 9
 * End of Support JBoss EAP 7.4
