@@ -4364,7 +4364,7 @@ To install the demo distribution, please download one of the following archives:
   <tbody>
     <tr class="well">
       <td>3.15.8</td>
-      <td>7.21+, 7.22+, 7.23+</td>
+      <td>7.22+, 7.23+, 7.24+</td>
       <td>8.16.0+</td>
       <td>31.10.2025</td>
       <td>
