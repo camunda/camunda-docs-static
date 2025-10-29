@@ -500,7 +500,7 @@ RewriteCond %{DOCUMENT_ROOT}/manual/7.24%2 -d
 RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/7.24 [R=307,L]
 
 # Redirect to selected version starting page if site is unavailable
-RewriteCond %{REQUEST_URI} ^/manual/((?!latest/?)[^/]+)(.*)
+RewriteCond %{REQUEST_URI} ^/manual/((?!7\.24/?)[^/]+)(.*)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1%2 !-d
 RewriteCond %{DOCUMENT_ROOT}/manual/%1%2 !-f
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 -d
