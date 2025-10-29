@@ -494,7 +494,7 @@ RewriteCond %{DOCUMENT_ROOT}/manual/7.24/%1 -d
 RewriteRule ^manual/(.*) /manual/7.24/$1 [R=307,L]
 
 # Redirect /manual/X/Y to /manual/7.24/Y if folder X does not exist but 7.24/Y does
-RewriteCond %{REQUEST_URI} ^/manual/((?!7\.24/?)[^/]+)(/[^/]+)?
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.24/?)[^/]+)(/[^/]+)?
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
 RewriteCond %{DOCUMENT_ROOT}/manual/7.24%2 -d
 RewriteRule ^manual/[^/]+(/[^/]+(?:/.*))? /manual/7.24 [R=307,L]
