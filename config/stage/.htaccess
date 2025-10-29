@@ -488,7 +488,7 @@ RewriteRule ^manual/(latest|develop)/reference/rest/variable-instance/post-query
 RewriteRule ^manual/(latest|develop)/reference/rest/version/$ /rest/camunda-bpm-platform/7.24-SNAPSHOT/#tag/Version [R=301,L,NE]
 
 # Redirect /manual/X to /manual/7.24/X if folder X does not exist but 7.24/X does
-RewriteCond %{REQUEST_URI} ^/manual/((?!7\.24/)[^/]+)
+RewriteCond %{REQUEST_URI} ^/manual/((?!7.24/)[^/]+)
 RewriteCond %{DOCUMENT_ROOT}/manual/%1 !-d
 RewriteCond %{DOCUMENT_ROOT}/manual/7.24/%1 -d
 RewriteRule ^manual/(.*) /manual/7.24/$1 [R=307,L]
