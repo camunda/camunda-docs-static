@@ -61,6 +61,8 @@ __Changes in Supported Environments:__
 * Support for MariaDB 10.6
 * Support for Oracle Weblogic 14.1.2.x
 * Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
+* Support for Spring Boot 4.0
+* End of Support Spring Boot 3.5
 
 ## Camunda Platform 7.24 LTS
 
