@@ -94,7 +94,6 @@ downloads:
             - "ibm-was-85"
             - "ibm-was9"
             - "jboss"
-            - "oracle-wls"
             - "ibm-was-liberty"
           excludeformats:
             - "war"
