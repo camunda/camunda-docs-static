@@ -50,7 +50,20 @@ __Cawemo On-Premises - Maintenance Support (May 2024 - April 2027)__
 ## Camunda Platform 7.24 LTS - Environment Update Release 
 Camunda 7.24 LTS (Long Term Support) is the last minor release of Camunda 7. No new feature-adding releases of Camunda 7 will be built anymore.
 
-### Environment Update Release – 04/2026
+### Environment Update Release – October 2026
+
+__Release Date:__ October 2026
+
+__Patch Version:__ TBD
+
+__Changes in Supported Environments:__
+
+* Support for Spring Boot 4.1
+* Support for WildFly Application Server 39
+  * Replaces WildFly Application Server 38 in the upfront configured distribution and the Docker image.
+* Support for Quarkus 3.3X LTS
+
+### Environment Update Release – April 2026
 
 __Release Date:__ April 2026
 
@@ -62,6 +75,9 @@ __Changes in Supported Environments:__
 * Support for Oracle WebLogic 14.1.2.x
 * Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
 * Support for Spring Boot 4.0
+* Support for WildFly Application Server 38
+  * Replaces WildFly Application Server 37 in the upfront configured distribution and the Docker image.
+* Support for Quarkus 3.33 LTS
 * End of Support Spring Boot 3.5
 
 ## Camunda Platform 7.24 LTS
@@ -74,6 +90,7 @@ __Changes in Supported Environments:__
 
 * Support for Spring Boot 3.5 (Support is also provided for Camunda 7.23 as a patch)
   * Superseded by Spring Boot 4.0 support in April/2026
+* Support for WildFly Application Server 37 
 * End of Support Spring 5
 * End of Support Apache Tomcat 9
 * End of Support JBoss EAP 7.4
