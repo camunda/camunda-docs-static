@@ -119,6 +119,23 @@ downloads:
 
     - branch: "7.23"
       releases:
+        - number: "7.23.7"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.7"
+          date: "2025.11.28"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+            - "oracle-wls"
+            - "ibm-was-liberty"
+          excludeformats:
+
         - number: "7.23.6"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.6"
           date: "2025.10.31"
