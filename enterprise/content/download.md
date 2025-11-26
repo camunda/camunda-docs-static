@@ -75,12 +75,30 @@ downloads:
 
   selected:
     branch: "7.24"
-    version: "7.24.1"
+    version: "7.24.2"
     server: "run"
 
   branches:
     - branch: "7.24"
       releases:
+        - number: "7.24.2"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue%20label%3Aversion%3A7.24.2%20is%3Aclosed"
+          date: "2025.11.28"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+            - "oracle-wls"
+            - "ibm-was-liberty"
+          excludeformats:
+            - "war"
+      
         - number: "7.24.1"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue%20label%3Aversion%3A7.24.1%20is%3Aclosed"
           date: "2025.10.31"
@@ -135,6 +153,7 @@ downloads:
             - "oracle-wls"
             - "ibm-was-liberty"
           excludeformats:
+            - "war"
 
         - number: "7.23.6"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.6"
@@ -264,6 +283,21 @@ downloads:
 
     - branch: "7.22"
       releases:
+        - number: "7.22.10"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.10"
+          date: "2025.11.28"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+          excludeformats:
+            - "war"
         - number: "7.22.9"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.9"
           date: "2025.10.31"
