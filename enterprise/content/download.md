@@ -4468,7 +4468,7 @@ To install the demo distribution, please download one of the following archives:
     <tr class="well">
       <td>3.15.9</td>
       <td>7.22+, 7.23+, 7.24+</td>
-      <td>8.16.0+</td>
+      <td>8.17.0+</td>
       <td>28.11.2025</td>
       <td>
         <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-demo.zip">zip</a>&nbsp;
@@ -4505,7 +4505,7 @@ To get the production distribution, please download one of the following archive
       <tr class="well">
         <td>3.15.9</td>
         <td>7.22+, 7.23+, 7.24+</td>
-        <td>8.16.0+</td>
+        <td>8.17.0+</td>
         <td>2.9+</td>
         <td>28.11.2025</td>
         <td>
