@@ -4466,13 +4466,13 @@ To install the demo distribution, please download one of the following archives:
   </thead>
   <tbody>
     <tr class="well">
-      <td>3.15.8</td>
+      <td>3.15.9</td>
       <td>7.22+, 7.23+, 7.24+</td>
-      <td>8.16.0+</td>
-      <td>31.10.2025</td>
+      <td>8.17.0+</td>
+      <td>28.11.2025</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -4503,25 +4503,25 @@ To get the production distribution, please download one of the following archive
     </thead>
     <tbody>
       <tr class="well">
-        <td>3.15.8</td>
+        <td>3.15.9</td>
         <td>7.22+, 7.23+, 7.24+</td>
-        <td>8.16.0+</td>
+        <td>8.17.0+</td>
         <td>2.9+</td>
-        <td>31.10.2025</td>
+        <td>28.11.2025</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-production.tar.gz">tar.gz</a>
         </td>
       </tr>
       <tr class="well">
-        <td>3.14.9</td>
+        <td>3.14.10</td>
         <td>7.20+, 7.21+, 7.22+</td>
         <td>8.13.0+</td>
         <td>2.9+</td>
-        <td>31.10.2025</td>
+        <td>28.11.2025</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.9/camunda-optimize-3.14.9-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.9/camunda-optimize-3.14.9-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.10/camunda-optimize-3.14.10-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.10/camunda-optimize-3.14.10-production.tar.gz">tar.gz</a>
         </td>
       </tr> 
     
