@@ -58,7 +58,7 @@ __Patch Version:__ TBD
 
 __Changes in Supported Environments:__
 
-* Support for MariaDB 10.6
+* Support for MariaDB 10.6, 11.8.
 * Support for Oracle Weblogic 14.1.2.x
 * Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
 
