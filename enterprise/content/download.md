@@ -75,12 +75,30 @@ downloads:
 
   selected:
     branch: "7.24"
-    version: "7.24.1"
+    version: "7.24.2"
     server: "run"
 
   branches:
     - branch: "7.24"
       releases:
+        - number: "7.24.2"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue%20label%3Aversion%3A7.24.2%20is%3Aclosed"
+          date: "2025.11.28"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+            - "oracle-wls"
+            - "ibm-was-liberty"
+          excludeformats:
+            - "war"
+      
         - number: "7.24.1"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue%20label%3Aversion%3A7.24.1%20is%3Aclosed"
           date: "2025.10.31"
@@ -117,6 +135,24 @@ downloads:
 
     - branch: "7.23"
       releases:
+        - number: "7.23.7"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.7"
+          date: "2025.11.28"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+            - "oracle-wls"
+            - "ibm-was-liberty"
+          excludeformats:
+            - "war"
+
         - number: "7.23.6"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.23.6"
           date: "2025.10.31"
@@ -245,6 +281,21 @@ downloads:
 
     - branch: "7.22"
       releases:
+        - number: "7.22.10"
+          note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.10"
+          date: "2025.11.28"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+          excludeformats:
+            - "war"
         - number: "7.22.9"
           note: "https://github.com/camunda/camunda-bpm-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Aversion%3A7.22.9"
           date: "2025.10.31"
@@ -4413,13 +4464,13 @@ To install the demo distribution, please download one of the following archives:
   </thead>
   <tbody>
     <tr class="well">
-      <td>3.15.8</td>
+      <td>3.15.9</td>
       <td>7.22+, 7.23+, 7.24+</td>
-      <td>8.16.0+</td>
-      <td>31.10.2025</td>
+      <td>8.17.0+</td>
+      <td>28.11.2025</td>
       <td>
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-demo.zip">zip</a>&nbsp;
-        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-demo.tar.gz">tar.gz</a>
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-demo.zip">zip</a>&nbsp;
+        <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-demo.tar.gz">tar.gz</a>
       </td>
     </tr>
   </tbody>
@@ -4450,25 +4501,25 @@ To get the production distribution, please download one of the following archive
     </thead>
     <tbody>
       <tr class="well">
-        <td>3.15.8</td>
+        <td>3.15.9</td>
         <td>7.22+, 7.23+, 7.24+</td>
-        <td>8.16.0+</td>
+        <td>8.17.0+</td>
         <td>2.9+</td>
-        <td>31.10.2025</td>
+        <td>28.11.2025</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.8/camunda-optimize-3.15.8-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.15.9/camunda-optimize-3.15.9-production.tar.gz">tar.gz</a>
         </td>
       </tr>
       <tr class="well">
-        <td>3.14.9</td>
+        <td>3.14.10</td>
         <td>7.20+, 7.21+, 7.22+</td>
         <td>8.13.0+</td>
         <td>2.9+</td>
-        <td>31.10.2025</td>
+        <td>28.11.2025</td>
         <td>
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.9/camunda-optimize-3.14.9-production.zip">zip</a>&nbsp;
-          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.9/camunda-optimize-3.14.9-production.tar.gz">tar.gz</a>
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.10/camunda-optimize-3.14.10-production.zip">zip</a>&nbsp;
+          <a class="btn btn-sm btn-default optimize-download" href="https://downloads.camunda.cloud/enterprise-release/optimize/3.14.10/camunda-optimize-3.14.10-production.tar.gz">tar.gz</a>
         </td>
       </tr> 
     
