@@ -505,6 +505,7 @@ __End of Maintenance:__ 13th of April 2030
 __Changes in Supported Environments:__
 
 * Added `Amazon OpenSearch 2.9+` full support
+* Added `Elasticsearch 8.17+` full support
 * Added `Camunda Engine version 7.24.0+` full support
 
 
