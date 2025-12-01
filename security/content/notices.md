@@ -15,6 +15,79 @@ releases of the community platform.
 
 # Notices
 
+## Notice 150
+
+**Publication Date: December 1st, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of Tomcat shipped with Camunda 7 was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-48989
+- https://nvd.nist.gov/vuln/detail/CVE-2025-55752
+
+**How to determine if the installation is affected**
+
+You use the Tomcat distribution or Docker image **AND** the following Camunda versions or lower: 7.24.1, 7.23.6, 7.22.9.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.24.2, 7.23.7, 7.22.10.
+
+## Notice 149
+
+**Publication Date: December 1st, 2025**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of JDK 17 shipped with Camunda 7 was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-53066
+
+**How to determine if the installation is affected**
+
+You use a Camunda Docker image **AND** the following Camunda versions or lower: 7.24.1, 7.23.6, 7.22.9.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.24.2, 7.23.7, 7.22.10.
+
+## Notice 148
+
+**Publication Date: December 1st, 2025**
+
+**Product affected:**
+
+Optimize 3
+
+**Impact:**
+
+The JDK version shipped with Camunda Optimize 3 was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-53066
+
+**How to determine if the installation is affected**
+
+You use the following Camunda Optimize 3 versions or lower: 3.15.8, 3.14.9
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda Optimize 3.15.9, 3.14.10
+
 ## Notice 147
 
 **Publication Date: October 10th, 2025**
