@@ -15,6 +15,35 @@ releases of the community platform.
 
 # Notices
 
+## Notice 151
+
+**Publication Date: December 8th, 2025**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `busybox` shipped with `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2024-58251
+- https://nvd.nist.gov/vuln/detail/CVE-2025-46394
+
+The version of `symfony/http-foundation` shipped with `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-64500
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.36 or lower is used.
+* See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities.
+
+**Solution**
+
+Camunda has provided a 1.9.36 release for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 150
 
 **Publication Date: December 1st, 2025**
