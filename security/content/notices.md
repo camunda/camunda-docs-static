@@ -36,7 +36,7 @@ The version of `symfony/http-foundation` shipped with `cawemo-websockets` was af
 
 **How to determine if the installation is affected**
 
-* Cawemo On-Premises 1.9.36 or lower is used.
+* Cawemo On-Premises 1.9.35 or lower is used.
 * See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities.
 
 **Solution**
