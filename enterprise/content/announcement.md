@@ -74,6 +74,7 @@ __Changes in Supported Environments:__
 * Support for MariaDB 10.6, 11.8
 * Support for Oracle WebLogic 14.1.2.x
 * Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
+* Support for Amazon Aurora PostgreSQL 17
 * Support for Spring Boot 4.0
 * Support for WildFly Application Server 38
   * Replaces WildFly Application Server 37 in the upfront configured distribution and the Docker image.
@@ -90,7 +91,7 @@ __Changes in Supported Environments:__
 
 * Support for Spring Boot 3.5 (Support is also provided for Camunda 7.23 as a patch)
   * Superseded by Spring Boot 4.0 support in April/2026
-* Support for WildFly Application Server 37 
+* Support for WildFly Application Server 37
 * End of Support Spring 5
 * End of Support Apache Tomcat 9
 * End of Support JBoss EAP 7.4
