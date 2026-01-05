@@ -75,6 +75,7 @@ __Changes in Supported Environments:__
 * Support for Oracle WebLogic 14.1.2.x
 * Support for PostgreSQL 18 (Support is also provided for Camunda 7.23 as a patch)
 * Support for Amazon Aurora PostgreSQL 17
+* Support for Spring 7
 * Support for Spring Boot 4.0
   * **Heads-up:** This is a breaking change.
 * Support for WildFly Application Server 39
@@ -82,6 +83,7 @@ __Changes in Supported Environments:__
 * Support for Quarkus 3.33 LTS
 * End of Support Spring Boot 3.5
   * **Heads-up:** This is a breaking change.
+* End of Support Spring 6
 
 ## Camunda Platform 7.24 LTS
 
