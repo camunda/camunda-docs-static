@@ -15,53 +15,7 @@ releases of the community platform.
 
 # Notices
 
-## Notice 155
-
-**Publication Date: January 8th, 2026**
-
-**Product affected:**
-
-Cawemo On-Premises
-
-**Impact:**
-
-The version of `lib sodium` used by `cawemo-websockets` was affected by the following vulnerability:
-
-- https://nvd.nist.gov/vuln/detail/CVE-2025-69277
-
-**How to determine if the installation is affected**
-
-* Cawemo On-Premises 1.9.36 or lower is used
-* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
-
-**Solution**
-
-Camunda has provided a 1.9.37 release that contains the fix.
-
-## Notice 154
-
-**Publication Date: January 8th, 2026**
-
-**Product affected:**
-
-Cawemo On-Premises
-
-**Impact:**
-
-The version of `c-ares` used by `cawemo-websockets` was affected by the following vulnerability:
-
-- https://nvd.nist.gov/vuln/detail/CVE-2025-62408
-
-**How to determine if the installation is affected**
-
-* Cawemo On-Premises 1.9.36 or lower is used
-* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
-
-**Solution**
-
-Camunda has provided a 1.9.37 release that contains the fix.
-
-## Notice 153
+## Notice 152
 
 **Publication Date: January 8th, 2026**
 
@@ -75,37 +29,27 @@ The version of `io.netty:netty-codec-http` used by `cawemo-restapi` was affected
 
 - https://nvd.nist.gov/vuln/detail/CVE-2025-67735
 
-**How to determine if the installation is affected**
-
-* Cawemo On-Premises 1.9.36 or lower is used
-* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
-
-**Solution**
-
-Camunda has provided a 1.9.37 release that contains the fix.
-
-## Notice 152
-
-**Publication Date: January 8th, 2026**
-
-**Product affected:**
-
-Cawemo On-Premises
-
-**Impact:**
-
 The version of `qs` used by `cawemo-webapp` was affected by the following vulnerability:
 
 - https://nvd.nist.gov/vuln/detail/CVE-2025-15284
 
+The version of `c-ares` used by `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-62408
+
+The version of `lib sodium` used by `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-69277
+
 **How to determine if the installation is affected**
 
-* Cawemo On-Premises 1.9.36 or lower is used
-* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+* Cawemo On-Premises 1.9.36 or lower is used.
+* See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities.
 
 **Solution**
 
-Camunda has provided a 1.9.37 release that contains the fix.
+Camunda has provided a 1.9.37 release for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
 
 ## Notice 151
 
