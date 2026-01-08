@@ -15,6 +15,29 @@ releases of the community platform.
 
 # Notices
 
+## Notice 152
+
+**Publication Date: January 8th, 2026**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `qs` used by `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15284
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.36 or lower is used
+* See the NIST link above for detailed description of the circumstances required to exploit the vulnerability.
+
+**Solution**
+
+Camunda has provided a 1.9.37 release that contains the fix.
+
 ## Notice 151
 
 **Publication Date: December 8th, 2025**
