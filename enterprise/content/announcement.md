@@ -62,6 +62,8 @@ __Changes in Supported Environments:__
 * Support for WildFly Application Server 41
   * Replaces WildFly Application Server 39 in the upfront configured distribution and the Docker image.
 * Support for Quarkus 3.3X LTS
+* End of Support Spring 6
+* End of Support Spring Boot 3.5
 
 ### Environment Update Release – April 2026
 
@@ -77,13 +79,9 @@ __Changes in Supported Environments:__
 * Support for Amazon Aurora PostgreSQL 17
 * Support for Spring 7
 * Support for Spring Boot 4.0
-  * **Heads-up:** This is a breaking change.
 * Support for WildFly Application Server 39
   * Replaces WildFly Application Server 37 in the upfront configured distribution and the Docker image.
 * Support for Quarkus 3.33 LTS
-* End of Support Spring Boot 3.5
-  * **Heads-up:** This is a breaking change.
-* End of Support Spring 6
 
 ## Camunda Platform 7.24 LTS
 
