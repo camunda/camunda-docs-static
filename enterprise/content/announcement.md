@@ -64,6 +64,9 @@ __Changes in Supported Environments:__
 * Support for Quarkus 3.3X LTS
 * End of Support Spring 6
 * End of Support Spring Boot 3.5
+* Support for Tomcat 11
+  * Replaces Tomcat 10 in the upfront configured distribution and the Docker image.
+  * This will be shipped earlier than October and will be announced via [Patch Level Update Guide]({{< ref "https://docs.camunda.org/manual/7.24/update/patch-level/" >}}).
 
 ### Environment Update Release – April 2026
 
