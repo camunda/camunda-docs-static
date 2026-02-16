@@ -15,6 +15,79 @@ releases of the community platform.
 
 # Notices
 
+## Notice 153
+
+**Publication Date: February 16th, 2026**
+
+**Product affected:**
+
+Cawemo On-Premises
+
+**Impact:**
+
+The version of `io.undertow:undertow-core` used by `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-12543
+
+The version of `logback-core` used by `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2026-1225
+
+The version of `openssl/libcrypto3` used by `cawemo-restapi` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15467
+
+The version of `lodash` used by `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-13465
+
+The version of `openssl/libcrypto3` used by `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15467
+
+The version of `axios` used by `cawemo-webapp` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2026-25639
+
+The version of `curl/libcurl-openssl4` and `curl/curl` used by `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-13034
+- https://nvd.nist.gov/vuln/detail/CVE-2025-14017
+- https://nvd.nist.gov/vuln/detail/CVE-2025-14524
+- https://nvd.nist.gov/vuln/detail/CVE-2025-14819
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15079
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15224
+
+The version of `laravel/reverb` used by `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2026-23524
+
+The version of `glibc` used by `cawemo-websockets` was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15281
+- https://nvd.nist.gov/vuln/detail/CVE-2026-0861
+- https://nvd.nist.gov/vuln/detail/CVE-2026-0915
+
+The version of `openssl/libcrypto3` used by `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15467
+- https://nvd.nist.gov/vuln/detail/CVE-2025-66199
+- https://nvd.nist.gov/vuln/detail/CVE-2025-69419
+
+The version of `symfony/process` used by `cawemo-websockets` was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2026-24739
+
+**How to determine if the installation is affected**
+
+* Cawemo On-Premises 1.9.37 or lower is used.
+* See the NIST links above for detailed descriptions of the circumstances required to exploit the vulnerabilities.
+
+**Solution**
+
+Camunda has provided a 1.9.38 release for the `cawemo-restapi`, `cawemo-webapp`, and `cawemo-websockets` Docker images
+which contain fixes for the above-mentioned CVEs.
+
 ## Notice 152
 
 **Publication Date: January 8th, 2026**
