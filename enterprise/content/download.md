@@ -75,12 +75,29 @@ downloads:
 
   selected:
     branch: "7.24"
-    version: "7.24.3"
+    version: "7.24.4"
     server: "run"
 
   branches:
     - branch: "7.24"
       releases:
+        - number: "7.24.4"
+          note:
+          date: "2026.02.25"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+            - "ibm-was-liberty"
+          excludeformats:
+            - "war"
+
         - number: "7.24.3"
           note:
           date: "2026.01.23"
@@ -153,6 +170,24 @@ downloads:
 
     - branch: "7.23"
       releases:
+        - number: "7.23.9"
+          note:
+          date: "2026.02.25"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+            - "oracle-wls"
+            - "ibm-was-liberty"
+          excludeformats:
+            - "war"
+
         - number: "7.23.8"
           note:
           date: "2026.01.23"
@@ -317,6 +352,22 @@ downloads:
 
     - branch: "7.22"
       releases:
+        - number: "7.22.12"
+          note:
+          date: "2026.02.25"
+          excludeservers:
+            - "wildfly"
+            - "wildfly11"
+            - "wildfly10"
+            - "wildfly8"
+            - "glassfish"
+            - "ibm-was"
+            - "ibm-was-85"
+            - "ibm-was9"
+            - "jboss"
+          excludeformats:
+            - "war"
+
         - number: "7.22.11"
           note:
           date: "2026.01.23"
