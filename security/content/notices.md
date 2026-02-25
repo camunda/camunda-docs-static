@@ -32,8 +32,7 @@ The version of Tomcat shipped with Camunda 7 was affected by the following vulne
 
 **How to determine if the installation is affected**
 
-You use the Tomcat distribution from 11.0.0-M1 through 11.0.14, from 10.1.0-M1 through 10.1.49, from 9.0.0-M1 through 9.0.112 
-or Docker image **AND** the following Camunda versions or lower: 7.24.3, 7.23.8, 7.22.11.
+You use the following Camunda versions or lower: 7.24.3, 7.23.8, 7.22.11 **AND** you use the Camunda Run, Tomcat, or Docker images.
 
 **Solution**
 
