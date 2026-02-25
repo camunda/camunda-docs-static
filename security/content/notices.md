@@ -30,6 +30,9 @@ The version of Tomcat shipped with Camunda 7 was affected by the following vulne
 - https://nvd.nist.gov/vuln/detail/CVE-2025-66614
 - https://nvd.nist.gov/vuln/detail/CVE-2026-24734
 
+The version of Alpine Linux used by Camunda 7 was affected by the following vulnerabilities:
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15467
+
 **How to determine if the installation is affected**
 
 You use the following Camunda versions or lower: 7.24.3, 7.23.8, 7.22.11 **AND** you use the Camunda Run, Tomcat, or Docker images.
