@@ -15,6 +15,59 @@ releases of the community platform.
 
 # Notices
 
+## Notice 155
+
+**Publication Date: February 26th, 2026**
+
+**Product affected:**
+
+Camunda 7, Optimize 3
+
+**Impact:**
+
+The version of Alpine Linux used by Camunda 7 and Optimize 3 was affected by the following vulnerability:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-15467
+
+**How to determine if the installation is affected**
+
+You are affected if **any** of the following applies:
+
+- You use the following Camunda 7 versions or lower: 7.24.3, 7.23.8, 7.22.11 **AND** you use the Camunda 7 Docker images.
+- You use the following Camunda Optimize 3 versions or lower: 3.15.10, 3.14.11 **AND** you use the Camunda Optimize 3 Docker images.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+- Camunda 7: 7.22.12, 7.23.9, 7.24.4.
+- Optimize 3: 3.15.11, 3.14.12.
+
+## Notice 154
+
+**Publication Date: February 26th, 2026**
+
+**Product affected:**
+
+Camunda 7
+
+**Impact:**
+
+The version of Tomcat shipped with Camunda 7 was affected by the following vulnerabilities:
+
+- https://nvd.nist.gov/vuln/detail/CVE-2025-66614
+- https://nvd.nist.gov/vuln/detail/CVE-2026-24734
+
+**How to determine if the installation is affected**
+
+You use the following Camunda 7 versions or lower: 7.24.3, 7.23.8, 7.22.11 **AND** you use the Camunda Run or Tomcat.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+Camunda 7.22.12, 7.23.9, 7.24.4.
+
 ## Notice 153
 
 **Publication Date: February 16th, 2026**
