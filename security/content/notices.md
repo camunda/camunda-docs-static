@@ -60,7 +60,7 @@ The version of Tomcat shipped with Camunda 7 was affected by the following vulne
 
 **How to determine if the installation is affected**
 
-You use the following Camunda 7 versions or lower: 7.24.3, 7.23.8, 7.22.11 **AND** you use the Camunda Run, Tomcat, or Docker distributions.
+You use the following Camunda 7 versions or lower: 7.24.3, 7.23.8, 7.22.11 **AND** you use the Camunda Run or Tomcat.
 
 **Solution**
 
