@@ -64,9 +64,6 @@ __Changes in Supported Environments:__
 * Support for Quarkus 3.3X LTS
 * End of Support Spring 6
 * End of Support Spring Boot 3.5
-* Support for Tomcat 11
-  * Replaces Tomcat 10 in the upfront configured distribution and the Docker image.
-  * Tomcat 11 support will be shipped earlier than October and will be announced via [Patch Level Update Guide](https://docs.camunda.org/manual/7.24/update/patch-level/).
 
 ### Environment Update Release – April 2026
 
@@ -85,6 +82,9 @@ __Changes in Supported Environments:__
 * Support for WildFly Application Server 39
   * Replaces WildFly Application Server 37 in the upfront configured distribution and the Docker image.
 * Support for Quarkus 3.33 LTS
+* Support for Tomcat 11
+  * Replaces Tomcat 10 in the upfront configured distribution and the Docker image.
+  * Please read the [Patch Level Update Guide](https://docs.camunda.org/manual/7.24/update/patch-level/) for any breaking changes.
 
 ## Camunda Platform 7.24 LTS
 
