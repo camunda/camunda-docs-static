@@ -62,6 +62,7 @@ __Changes in Supported Environments:__
 * Support for WildFly Application Server 41
   * Replaces WildFly Application Server 39 in the upfront configured distribution and the Docker image.
 * Support for Quarkus 3.3X LTS
+* End of Support Quarkus 3.33 LTS
 * End of Support Spring 6
 * End of Support Spring Boot 3.5
 
@@ -82,6 +83,7 @@ __Changes in Supported Environments:__
 * Support for WildFly Application Server 39
   * Replaces WildFly Application Server 37 in the upfront configured distribution and the Docker image.
 * Support for Quarkus 3.33 LTS
+* End of Support Quarkus 3.27 LTS
 * Support for Tomcat 11
   * Replaces Tomcat 10 in the upfront configured distribution and the Docker image.
   * Please read the [Patch Level Update Guide](https://docs.camunda.org/manual/7.24/update/patch-level/) for any breaking changes.
