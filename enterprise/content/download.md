@@ -189,7 +189,7 @@ downloads:
       releases:
         - number: "7.23.10"
           note:
-          date: "2026.03.17"
+          date: "2026.03.18"
           excludeservers:
             - "wildfly"
             - "wildfly11"
