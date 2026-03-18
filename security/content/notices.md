@@ -15,6 +15,34 @@ releases of the community platform.
 
 # Notices
 
+## Notice 156
+
+**Publication Date: March 18th, 2026**
+
+**Product affected:**
+
+Camunda 7, Optimize 3
+
+**Impact:**
+
+Camunda 7 and Optimize 3 were affected by the following vulnerability:
+
+- https://github.com/advisories/GHSA-72hv-8253-57qq
+
+**How to determine if the installation is affected**
+
+You are affected if **any** of the following applies:
+
+- You use the following Camunda 7 versions or lower: 7.24.4, 7.23.9, 7.22.12.
+- You use the following Camunda Optimize 3 versions or lower: 3.15.11, 3.14.12.
+
+**Solution**
+
+Camunda has provided the following releases, which contain a fix:
+
+- Camunda 7: 7.22.13, 7.23.10, 7.24.5.
+- Optimize 3: 3.14.13, 3.15.12.
+
 ## Notice 155
 
 **Publication Date: February 26th, 2026**
